@@ -1,11 +1,10 @@
 ---
+title: Données sensibles
 tags: [notion, donnees-sensibles, classification, anonymisation, cloisonnement]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-red-teaming]
 ---
-
-# Données sensibles
 
 Données dont la divulgation, l'altération ou l'usage détourné causerait un préjudice — à une personne, à l'organisation ou à un tiers — et qui appellent pour cette raison un traitement technique distinct des autres.
 

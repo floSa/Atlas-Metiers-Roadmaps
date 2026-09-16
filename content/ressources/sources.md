@@ -1,11 +1,10 @@
 ---
+title: D'où vient ce corpus
 tags: [ressources, sources, methode, extraction, verification, reference]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh
 ---
-
-# D'où vient ce corpus
 
 > [!abstract] La page qui rend le reste auditable. D'où viennent les 3 216 ressources amont, comment elles ont été extraites, à quelle date, avec quels outils, et comment tout rejouer. Si une affirmation de ce corpus vous paraît douteuse, c'est ici qu'on trouve de quoi la vérifier soi-même.
 

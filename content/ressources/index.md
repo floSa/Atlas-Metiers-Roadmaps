@@ -1,11 +1,10 @@
 ---
+title: Ressources
 tags: [ressources, index, moc, sources, reference]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh
 ---
-
-# Ressources
 
 > [!abstract] L'entrée unique vers les sources du corpus, classées par **usage** et non par métier. 198 adresses choisies et commentées dans un catalogue amont de 3 216, toutes vérifiées le jour de la publication. Ce qu'on lit pour démarrer, ce qu'on lit pour approfondir, ce qui fait référence, et ce qu'on relit.
 

@@ -1,11 +1,10 @@
 ---
+title: Ingénierie de prompt
 tags: [notion, prompt, llm, instruction, contexte]
 date: 2026-09-16
 statut: actif
 appelee-par: [ai-product-builder, ai-red-teaming]
 ---
-
-# Ingénierie de prompt
 
 Pratique consistant à écrire les instructions et à organiser le contexte fournis à un modèle de manière à obtenir un comportement fiable et reproductible.
 

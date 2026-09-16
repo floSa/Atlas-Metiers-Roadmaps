@@ -1,11 +1,10 @@
 ---
+title: BPMN
 tags: [notion, bpmn, processus, notation, cartographie]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer]
 ---
-
-# BPMN
 
 Notation graphique normalisée pour représenter un processus métier : ce qui se fait, dans quel ordre, par qui, et ce qui déclenche ou interrompt chaque étape.
 

@@ -1,11 +1,10 @@
 ---
+title: Conteneurisation
 tags: [notion, conteneurisation, docker, kubernetes, deploiement]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-red-teaming]
 ---
-
-# Conteneurisation
 
 Empaquetage d'une application avec ses dépendances dans une image exécutable isolée du système hôte, de manière à ce qu'elle se comporte de la même façon partout où elle tourne.
 

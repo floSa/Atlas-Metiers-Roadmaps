@@ -1,11 +1,10 @@
 ---
+title: Roadmap — AI Agents
 tags: [roadmap, agents, llm, mcp, orchestration, ia, reference]
 date: 2026-08-03
 statut: actif
 source: https://roadmap.sh/ai-agents
 ---
-
-# Roadmap — AI Agents
 
 > [!abstract] Le parcours complet pour concevoir, construire et exploiter des agents LLM — de la boucle perception/raisonnement/action jusqu'aux tests, à l'observabilité et à la sécurité — destiné à un développeur qui sait déjà coder et qui veut mettre un agent en production, pas une démo.
 

@@ -1,11 +1,10 @@
 ---
+title: Collecte de données
 tags: [notion, collecte, extraction, api, csv, moissonnage]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst]
 ---
-
-# Collecte de données
 
 Opération consistant à rapatrier le bon sous-ensemble de données dans son environnement de travail en sachant précisément d'où il vient, de quand il date et ce qu'il exclut.
 

@@ -1,11 +1,10 @@
 ---
+title: Tests logiciels
 tags: [notion, tests, qualite-logicielle, ingenierie]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder, ai-red-teaming]
 ---
-
-# Tests logiciels
 
 Code écrit pour vérifier automatiquement qu'un autre code fait ce qu'on attend de lui, et continuera de le faire après avoir été modifié.
 

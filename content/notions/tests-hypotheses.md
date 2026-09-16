@@ -1,11 +1,10 @@
 ---
+title: Tests d'hypothèses
 tags: [notion, statistiques, tests, inference, p-value]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst]
 ---
-
-# Tests d'hypothèses
 
 Procédure qui évalue si un écart observé sur un échantillon est compatible avec l'hypothèse qu'il n'existe aucun écart réel dans la population — et rien de plus que cela.
 

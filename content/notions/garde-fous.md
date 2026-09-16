@@ -1,11 +1,10 @@
 ---
+title: Garde-fous
 tags: [notion, garde-fous, securite, llm, moderation]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder, ai-red-teaming]
 ---
-
-# Garde-fous
 
 Dispositifs placés autour d'un modèle pour contraindre ce qui entre, ce qui sort et ce que le système a le droit de faire, de manière à ce qu'une défaillance du modèle ne devienne pas une défaillance du système.
 

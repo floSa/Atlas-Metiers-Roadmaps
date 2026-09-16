@@ -1,11 +1,10 @@
 ---
+title: Réingénierie de processus
 tags: [notion, bpr, processus, simplification, organisation]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer]
 ---
-
-# Réingénierie de processus
 
 Démarche qui consiste à remettre en cause l'enchaînement des étapes d'un processus — les supprimer, les fusionner, les réordonner — avant d'envisager de les outiller.
 

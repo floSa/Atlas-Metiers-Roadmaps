@@ -1,11 +1,10 @@
 ---
+title: Injection de prompt
 tags: [notion, injection-de-prompt, securite, llm, attaque]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder, ai-red-teaming]
 ---
-
-# Injection de prompt
 
 Attaque qui exploite le fait qu'un modèle de langage ne dispose d'aucun mécanisme pour distinguer une instruction émise par son concepteur d'une instruction présente dans les données qu'il lit.
 

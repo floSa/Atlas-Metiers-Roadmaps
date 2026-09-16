@@ -1,11 +1,10 @@
 ---
+title: Cadrage du besoin
 tags: [notion, cadrage, besoin, specification, conseil]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder, data-analyst, bi-analyst]
 ---
-
-# Cadrage du besoin
 
 Travail de transformation d'une demande formulée en langage courant en un énoncé vérifiable : ce qui doit être produit, pour qui, à partir de quoi, et à quel seuil on considère que c'est réussi.
 

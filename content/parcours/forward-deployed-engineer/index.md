@@ -1,29 +1,12 @@
 ---
+title: Forward Deployed Engineer
 tags: [parcours, forward-deployed-engineer, fde, ia, conseil, deploiement, terrain]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/forward-deployed-engineer
 ---
 
-# Forward Deployed Engineer
-
 > [!abstract] Le métier qui consiste à s'installer chez le client, comprendre comment son travail se fait réellement, et livrer un système d'IA qui tient dans son infrastructure et dans ses habitudes. Ce dossier s'adresse à un ingénieur logiciel qui veut basculer vers le terrain, à un consultant qui veut cesser de s'arrêter au slide, et à quiconque doit recruter ou cadrer ce profil sans se tromper sur ce qu'il recouvre.
-
-## Lire la provenance
-
-Trois origines cohabitent dans ce dossier, et le lecteur doit pouvoir les distinguer.
-
-| Signal | Origine |
-|---|---|
-| Nœud plein dans un schéma | roadmap.sh/forward-deployed-engineer, capture du 16 septembre 2026 |
-| Nœud **en vert pointillé** | Absent de la roadmap amont — vient du brief de commande ou d'un apport propre |
-| `> [!tip] Ajout 2026` | Apport propre : ce que ni l'amont ni le brief ne disent |
-| `> [!warning] Piège` | Erreur constatée sur le terrain, signalée comme telle |
-| Mention « le brief pose… » dans le texte | Provient du cahier des charges de commande, pas de l'amont |
-
-Le métier est récent. Une bonne partie de ce qui circule à son sujet est du contenu promotionnel produit par des éditeurs qui vendent de la prestation. Quand une affirmation relève de la pratique rapportée et non d'un consensus établi, c'est écrit.
-
----
 
 ## Le métier en une page
 
@@ -39,8 +22,6 @@ Ce qui le distingue des rôles voisins tient en une phrase :
 | **Forward Deployed Engineer** | l'adoption réelle d'un système en production chez un tiers | quand le client s'en sert sans lui |
 
 La conséquence est brutale : un FDE peut livrer un système techniquement irréprochable et échouer complètement. Le critère de réussite n'est pas « ça marche », c'est « ils s'en servent encore dans six mois, et sans moi ».
-
----
 
 ## La carte
 

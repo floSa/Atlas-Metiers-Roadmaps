@@ -1,11 +1,10 @@
 ---
+title: Ressources — Données
 tags: [ressources, donnees, sql, entrepot, bi, visualisation, gouvernance, reference]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/data-engineer
 ---
-
-# Ressources — Données
 
 > [!abstract] SQL, entrepôt, transformation, orchestration, restitution et gouvernance. Les sources qui tiennent sur la durée — documentation de moteur, manuels de référence, projets libres qu'on peut déployer soi-même — plutôt que les comparatifs d'éditeurs.
 

@@ -1,11 +1,10 @@
 ---
+title: Séries temporelles
 tags: [notion, series-temporelles, saisonnalite, prevision, calendrier]
 date: 2026-09-16
 statut: actif
 appelee-par: [bi-analyst, data-analyst]
 ---
-
-# Séries temporelles
 
 Suites de valeurs indexées par le temps, dont l'analyse consiste d'abord à séparer ce qui relève de la tendance de fond, de la récurrence saisonnière et du résidu.
 

@@ -1,11 +1,10 @@
 ---
+title: Phase 2 — Rationalisation et arbitrage technologique
 tags: [parcours, forward-deployed-engineer, fde, arbitrage, bpr, evaluation, roi]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/forward-deployed-engineer
 ---
-
-# Phase 2 — Rationalisation et arbitrage technologique
 
 > [!abstract] La phase courte qui décide de la valeur de tout le reste : simplifier le processus avant d'écrire une ligne de code, puis trancher entre automatisation déterministe et IA générative. C'est l'endroit où se commet l'erreur de cadrage la plus coûteuse du métier, et c'est aussi le seul moment où elle ne coûte encore rien à corriger.
 

@@ -1,11 +1,10 @@
 ---
+title: MCP — Model Context Protocol
 tags: [notion, mcp, protocole, agents, outils]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder, ai-red-teaming]
 ---
-
-# MCP — Model Context Protocol
 
 Protocole ouvert qui normalise la façon dont une application à base de modèle découvre et invoque des capacités extérieures — outils, ressources, invites — exposées par des serveurs indépendants.
 

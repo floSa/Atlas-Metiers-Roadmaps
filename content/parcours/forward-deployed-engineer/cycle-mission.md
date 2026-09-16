@@ -1,11 +1,10 @@
 ---
+title: Le cycle d'intervention
 tags: [parcours, forward-deployed-engineer, fde, cycle-mission, methode, conseil]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/forward-deployed-engineer
 ---
-
-# Le cycle d'intervention
 
 > [!abstract] La colonne vertébrale du métier : quatre phases, leurs livrables, et surtout les portes de sortie qui autorisent à passer à la suivante. C'est la page à lire avant les quatre pages de détail, parce qu'elle dit ce qui circule entre les phases et pourquoi une mission qui saute une étape échoue toujours au même endroit.
 

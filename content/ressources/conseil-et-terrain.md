@@ -1,11 +1,10 @@
 ---
+title: Ressources — Conseil et terrain
 tags: [ressources, conseil, fde, processus, bpmn, parties-prenantes, conformite, reference]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/forward-deployed-engineer
 ---
-
-# Ressources — Conseil et terrain
 
 > [!abstract] Cadrage du besoin, modélisation de processus, jeu des parties prenantes, conformité, sortie de mission. La famille la plus mal servie par l'amont, et celle où la sélection a le plus écarté : sur un sujet neuf et rentable, le contenu promotionnel déguisé en pédagogie est la norme.
 

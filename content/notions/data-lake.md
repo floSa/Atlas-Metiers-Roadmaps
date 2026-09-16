@@ -1,11 +1,10 @@
 ---
+title: Data lake et lakehouse
 tags: [notion, data-lake, lakehouse, stockage, formats]
 date: 2026-09-16
 statut: actif
 appelee-par: [bi-analyst]
 ---
-
-# Data lake et lakehouse
 
 Stockage de fichiers bruts à bas coût, dans leur format d'origine et sans schéma imposé à l'écriture — et, dans sa forme récente, la couche de table qui lui rend les garanties d'une base.
 

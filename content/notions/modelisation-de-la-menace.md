@@ -1,11 +1,10 @@
 ---
+title: Modélisation de la menace
 tags: [notion, menace, threat-modeling, risque, securite]
 date: 2026-09-16
 statut: actif
 appelee-par: [ai-red-teaming, forward-deployed-engineer]
 ---
-
-# Modélisation de la menace
 
 Exercice structuré qui répond, dans cet ordre, à trois questions : qui attaque et avec quels moyens, par où il entre, et ce qu'il obtient s'il réussit.
 

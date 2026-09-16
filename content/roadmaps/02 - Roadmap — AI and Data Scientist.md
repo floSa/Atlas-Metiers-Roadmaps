@@ -1,11 +1,10 @@
 ---
+title: Roadmap — AI and Data Scientist
 tags: [roadmap, data-science, machine-learning, deep-learning, mlops, ia, reference]
 date: 2026-08-03
 statut: actif
 source: https://roadmap.sh/ai-data-scientist
 ---
-
-# Roadmap — AI and Data Scientist
 
 > [!abstract] Le parcours généraliste qui mène des mathématiques à la mise en production de modèles : socle quantitatif, code, analyse exploratoire, machine learning, deep learning, MLOps. C'est la note pivot du dossier Roadmaps — les autres creusent une branche, celle-ci donne la carte.
 

@@ -1,11 +1,10 @@
 ---
+title: Roadmap — Data Engineer
 tags: [roadmap, data-engineering, pipelines, sql, cloud, ia, reference]
 date: 2026-08-03
 statut: actif
 source: https://roadmap.sh/data-engineer
 ---
-
-# Roadmap — Data Engineer
 
 > [!abstract] Le parcours complet de la plomberie data — générer, stocker, ingérer, transformer, orchestrer et servir la donnée — pour qui veut construire les fondations sur lesquelles reposent l'analytics, le ML et les systèmes RAG.
 

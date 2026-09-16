@@ -1,25 +1,12 @@
 ---
+title: Ressources — IA générative
 tags: [ressources, ia-generative, llm, rag, agents, mcp, securite, reference]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/ai-engineer
 ---
 
-# Ressources — IA générative
-
 > [!abstract] Les sources qui servent vraiment quand on construit sur des modèles de langage : documentation d'éditeur, spécifications, articles fondateurs, outillage d'évaluation et de red teaming. Sélection commentée, pas annuaire.
-
-## Comment lire ce tableau
-
-`officiel` = documentation de celui qui publie l'outil · `norme` = texte réglementaire ou
-spécification · `article` = analyse ou publication de recherche · `code` = dépôt ·
-`cours` = parcours structuré.
-
-Le **niveau** est celui du lecteur attendu, pas celui de la ressource : `débutant`
-suppose qu'on découvre le sujet, `confirmé` qu'on a déjà mis quelque chose en
-production et qu'on cherche à le durcir.
-
----
 
 ## Les API de modèles
 

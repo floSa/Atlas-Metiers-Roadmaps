@@ -1,11 +1,10 @@
 ---
+title: Embeddings et bases vectorielles
 tags: [notion, embeddings, vecteurs, recherche-semantique, rag]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder]
 ---
-
-# Embeddings et bases vectorielles
 
 Représentation d'un texte, d'une image ou d'un son par un vecteur numérique tel que la proximité géométrique traduise une proximité de sens — et les bases de données conçues pour chercher rapidement les plus proches voisins dans cet espace.
 

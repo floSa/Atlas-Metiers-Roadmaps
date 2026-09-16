@@ -1,11 +1,10 @@
 ---
+title: pandas
 tags: [notion, pandas, python, manipulation-tabulaire, outillage]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst]
 ---
-
-# pandas
 
 Bibliothèque Python de manipulation de données tabulaires en mémoire, organisée autour du DataFrame — un tableau indexé dont les colonnes sont typées.
 

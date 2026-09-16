@@ -1,11 +1,10 @@
 ---
+title: Apprentissage non supervisé
 tags: [notion, machine-learning, apprentissage-non-supervise, clustering, segmentation]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst, ai-red-teaming]
 ---
-
-# Apprentissage non supervisé
 
 Famille de méthodes qui cherchent une structure dans des données sans étiquette : regrouper les observations qui se ressemblent, réduire le nombre de dimensions, ou repérer ce qui s'écarte du reste.
 

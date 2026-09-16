@@ -1,11 +1,10 @@
 ---
+title: Gouvernance de l'IA
 tags: [notion, gouvernance, ai-act, conformite, risque]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-red-teaming]
 ---
-
-# Gouvernance de l'IA
 
 Ensemble des dispositifs — inventaire, classification par risque, documentation, supervision humaine, responsabilités nommées — qui rendent une organisation capable de dire ce que font ses systèmes d'IA et qui en répond.
 

@@ -1,11 +1,10 @@
 ---
+title: Qualité des données
 tags: [notion, qualite-des-donnees, gouvernance, data, nettoyage]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-red-teaming, data-analyst, bi-analyst]
 ---
-
-# Qualité des données
 
 Ensemble des propriétés mesurables qui déterminent si une donnée peut porter la décision qu'on lui demande de porter — et des tests qui vérifient ces propriétés en continu plutôt qu'à la découverte d'un écart.
 

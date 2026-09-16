@@ -1,11 +1,10 @@
 ---
+title: Phase 1 — Audit et cartographie in situ
 tags: [parcours, forward-deployed-engineer, fde, audit, bpmn, cadrage, terrain]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/forward-deployed-engineer
 ---
-
-# Phase 1 — Audit et cartographie in situ
 
 > [!abstract] La phase où l'on regarde les gens travailler. Elle produit la carte du processus réel, l'inventaire de ce qui existe et la liste des cas limites — trois livrables sans lesquels tout ce qui suit est une hypothèse. C'est la phase la plus sous-estimée du métier, et celle dont les erreurs coûtent le plus cher parce qu'elles se découvrent en production.
 

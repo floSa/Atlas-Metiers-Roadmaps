@@ -1,11 +1,10 @@
 ---
+title: Statistiques descriptives
 tags: [notion, statistiques, description, distribution, data]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst]
 ---
-
-# Statistiques descriptives
 
 Ensemble des mesures qui résument un jeu de données observé — position, dispersion, forme — sans prétendre généraliser à une population plus large.
 

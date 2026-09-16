@@ -1,11 +1,10 @@
 ---
+title: Socle technique — et à quelle profondeur
 tags: [parcours, forward-deployed-engineer, fde, socle-technique, ingenierie, ia]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/forward-deployed-engineer
 ---
-
-# Socle technique — et à quelle profondeur
 
 > [!abstract] La roadmap amont réduit le socle technique à sept renvois vers d'autres roadmaps : Linux, frontend, backend, DSA, system design, AI engineering, DevOps. Renvoyer ne coûte rien et n'informe personne. Cette page dit, pour chaque domaine, **quelle profondeur est réellement attendue chez un FDE** — c'est la seule information utile, parce qu'un FDE qui vise partout le niveau maximum n'arrivera jamais sur le terrain.
 

@@ -1,11 +1,10 @@
 ---
+title: Rédaction technique
 tags: [notion, redaction, documentation, decision, communication]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-red-teaming]
 ---
-
-# Rédaction technique
 
 Production d'écrits destinés à être utilisés — spécification, note de décision, documentation d'exploitation, constat d'audit — dont le critère de qualité est qu'ils permettent d'agir sans leur auteur.
 

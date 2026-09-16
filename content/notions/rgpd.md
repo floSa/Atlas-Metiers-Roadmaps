@@ -1,11 +1,10 @@
 ---
+title: RGPD
 tags: [notion, rgpd, conformite, donnees-personnelles, droit]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-red-teaming, ai-product-builder, data-analyst, bi-analyst]
 ---
-
-# RGPD
 
 Le règlement général sur la protection des données encadre tout traitement de données se rapportant à une personne physique identifiée ou identifiable, et impose que chaque traitement ait une finalité déclarée, une base légale, une durée de conservation et un responsable nommé.
 

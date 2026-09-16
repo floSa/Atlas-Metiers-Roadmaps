@@ -1,11 +1,10 @@
 ---
+title: Tableur
 tags: [notion, tableur, excel, analyse, outillage]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst]
 ---
-
-# Tableur
 
 Outil de manipulation de données en grille où la donnée, le calcul et la présentation occupent le même espace — ce qui fait à la fois sa rapidité et sa limite.
 

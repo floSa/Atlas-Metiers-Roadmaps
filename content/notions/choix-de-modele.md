@@ -1,11 +1,10 @@
 ---
+title: Choix de modèle
 tags: [notion, choix-de-modele, llm, arbitrage, cout]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder]
 ---
-
-# Choix de modèle
 
 Décision portant sur le modèle qui traitera une tâche donnée — famille, taille, mode de raisonnement, hébergement — à partir de contraintes qui ne sont presque jamais uniquement de qualité.
 

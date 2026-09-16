@@ -1,11 +1,10 @@
 ---
+title: Conception d'API
 tags: [notion, api, rest, contrat, integration]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder, ai-red-teaming]
 ---
-
-# Conception d'API
 
 Définition du contrat par lequel un système expose ses capacités à un autre : les ressources, les opérations, les formats, les erreurs et les règles d'évolution.
 

@@ -1,11 +1,10 @@
 ---
+title: Lignage des données
 tags: [notion, lignage, catalogue, tracabilite, gouvernance]
 date: 2026-09-16
 statut: actif
 appelee-par: [bi-analyst]
 ---
-
-# Lignage des données
 
 Traçabilité du chemin parcouru par une donnée, de sa source jusqu'à l'indicateur affiché : par quelles tables elle passe, quelles transformations lui sont appliquées, et ce qui dépend d'elle en aval.
 

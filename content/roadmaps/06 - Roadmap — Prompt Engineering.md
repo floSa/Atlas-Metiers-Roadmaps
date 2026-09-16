@@ -1,11 +1,10 @@
 ---
+title: Roadmap — Prompt Engineering
 tags: [roadmap, prompt-engineering, llm, context-engineering, ia, reference]
 date: 2026-08-03
 statut: actif
 source: https://roadmap.sh/prompt-engineering
 ---
-
-# Roadmap — Prompt Engineering
 
 > [!abstract] Le parcours qui va du vocabulaire LLM aux prompts de production — configuration du modèle, sorties structurées, techniques de prompting, évaluation et défense contre le prompt injection — pour quiconque construit des applications au-dessus d'un modèle plutôt que de simplement le tchatter.
 

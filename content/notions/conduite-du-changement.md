@@ -1,11 +1,10 @@
 ---
+title: Conduite du changement
 tags: [notion, conduite-du-changement, adoption, resistance, organisation]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, bi-analyst]
 ---
-
-# Conduite du changement
 
 Travail visant à ce qu'un système nouveau soit réellement utilisé par ceux dont il modifie le travail — ce qui suppose de traiter les raisons pour lesquelles ils pourraient ne pas le faire.
 

@@ -1,11 +1,10 @@
 ---
+title: Roadmap — AI Engineer
 tags: [roadmap, ai-engineer, llm, rag, agents, mcp, ia, reference]
 date: 2026-08-03
 statut: actif
 source: https://roadmap.sh/ai-engineer
 ---
-
-# Roadmap — AI Engineer
 
 > [!abstract] Construire des produits sur des modèles pré-entraînés : APIs, prompt et context engineering, embeddings, RAG, agents, MCP, multimodal, sécurité et mise en production — pour un ingénieur qui veut livrer, pas entraîner un modèle.
 

@@ -1,11 +1,10 @@
 ---
+title: Régression linéaire
 tags: [notion, statistiques, regression, moindres-carres, modelisation]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst]
 ---
-
-# Régression linéaire
 
 Méthode qui estime une grandeur continue comme une combinaison pondérée de variables explicatives, en choisissant les poids qui minimisent la somme des carrés des écarts aux observations.
 

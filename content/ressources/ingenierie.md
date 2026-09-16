@@ -1,11 +1,10 @@
 ---
+title: Ressources — Ingénierie
 tags: [ressources, ingenierie, git, ci-cd, conteneurisation, cloud, api, observabilite, reference]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/mlops
 ---
-
-# Ressources — Ingénierie
 
 > [!abstract] Le socle qui ne change pas de nom tous les six mois : versionnement, intégration continue, conteneurs, API, déploiement, supervision. Presque tout ici est de la documentation officielle, parce que c'est le domaine où elle est bonne et où les intermédiaires n'ajoutent rien.
 

@@ -1,11 +1,10 @@
 ---
+title: SQL
 tags: [notion, sql, bases-de-donnees, requete, data]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder, data-analyst, bi-analyst]
 ---
-
-# SQL
 
 Langage déclaratif d'interrogation et de manipulation des bases relationnelles : on décrit le résultat voulu, le moteur choisit comment l'obtenir.
 

@@ -1,11 +1,10 @@
 ---
+title: Visualisation de données
 tags: [notion, visualisation, graphique, restitution, lisibilite]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst]
 ---
-
-# Visualisation de données
 
 Représentation graphique de valeurs, choisie pour qu'une question précise se lise sans calcul mental — et non pour illustrer un propos déjà écrit.
 

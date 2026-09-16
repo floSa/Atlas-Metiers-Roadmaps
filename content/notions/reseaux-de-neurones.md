@@ -1,11 +1,10 @@
 ---
+title: Réseaux de neurones
 tags: [notion, reseaux-de-neurones, deep-learning, machine-learning]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, ai-red-teaming]
 ---
-
-# Réseaux de neurones
 
 Modèles composés de couches de transformations linéaires suivies de fonctions non linéaires, dont les paramètres sont ajustés par descente de gradient sur l'erreur observée.
 

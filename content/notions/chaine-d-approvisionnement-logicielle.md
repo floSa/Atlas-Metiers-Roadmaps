@@ -1,11 +1,10 @@
 ---
+title: Chaîne d'approvisionnement logicielle
 tags: [notion, supply-chain, dependances, poids-de-modele, provenance]
 date: 2026-09-16
 statut: actif
 appelee-par: [ai-red-teaming, forward-deployed-engineer]
 ---
-
-# Chaîne d'approvisionnement logicielle
 
 Ensemble de ce qu'un système exécute sans l'avoir écrit : bibliothèques, images de base, poids de modèles, serveurs d'outils, extensions — et les mécanismes qui permettent de savoir d'où cela vient et si cela a été altéré.
 

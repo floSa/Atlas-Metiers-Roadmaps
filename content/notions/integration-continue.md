@@ -1,11 +1,10 @@
 ---
+title: Intégration continue
 tags: [notion, integration-continue, ci-cd, livraison, ingenierie]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder, ai-red-teaming]
 ---
-
-# Intégration continue
 
 Pratique consistant à fusionner fréquemment le travail dans une branche commune, en faisant exécuter automatiquement, à chaque fusion, la chaîne de vérifications qui décide si le résultat est livrable.
 

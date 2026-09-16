@@ -1,11 +1,10 @@
 ---
+title: Python pour la data
 tags: [notion, python, environnement, notebooks, outillage]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst]
 ---
-
-# Python pour la data
 
 L'environnement de travail Python d'un analyste : le langage, la gestion des dépendances, les carnets de calcul et les bibliothèques qui gravitent autour de la manipulation de données.
 

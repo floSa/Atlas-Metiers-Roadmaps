@@ -1,11 +1,10 @@
 ---
+title: Orchestration de flux
 tags: [notion, orchestration, airflow, dag, ordonnancement]
 date: 2026-09-16
 statut: actif
 appelee-par: [bi-analyst]
 ---
-
-# Orchestration de flux
 
 Coordination des traitements d'un système de données : dans quel ordre ils s'exécutent, sous quelle condition, que faire quand l'un échoue, et comment rejouer ce qui n'a pas abouti.
 

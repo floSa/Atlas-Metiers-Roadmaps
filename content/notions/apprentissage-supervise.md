@@ -1,11 +1,10 @@
 ---
+title: Apprentissage supervisé
 tags: [notion, machine-learning, apprentissage-supervise, classification, regression]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst, ai-red-teaming]
 ---
-
-# Apprentissage supervisé
 
 Famille de méthodes qui apprennent une fonction reliant des variables d'entrée à une étiquette connue, à partir d'exemples déjà étiquetés, dans le but de prédire cette étiquette sur des cas nouveaux.
 

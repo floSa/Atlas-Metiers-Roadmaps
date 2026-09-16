@@ -29,12 +29,8 @@ export const defaultContentPageLayout: PageLayout = {
       condition: (page) => page.fileData.slug !== "index",
     }),
     Component.ArticleTitle(),
-    // Ni date, ni temps de lecture, ni tags en tete de page : le lecteur doit voir
-    // le contenu sans avoir a defiler.
-    Component.ConditionalRender({
-      component: Component.ContentMeta(),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
+    // Ni date, ni temps de lecture, ni tags : ce sont des metadonnees de
+    // fabrication, elles n'apprennent rien au lecteur d'une fiche metier.
   ],
   left: [
     // Le graphe prend la place du titre de site : il sert de reperage permanent,
@@ -65,7 +61,7 @@ export const defaultContentPageLayout: PageLayout = {
 }
 
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
+  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle()],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),

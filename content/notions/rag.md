@@ -1,11 +1,10 @@
 ---
+title: RAG — génération augmentée par la récupération
 tags: [notion, rag, recuperation, llm, corpus]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder, ai-red-teaming]
 ---
-
-# RAG — génération augmentée par la récupération
 
 Architecture qui va chercher, au moment de la requête, les extraits de documents pertinents dans un corpus, puis les place dans le contexte du modèle pour qu'il réponde à partir de ce qu'on lui a fourni plutôt que de ce qu'il a mémorisé.
 

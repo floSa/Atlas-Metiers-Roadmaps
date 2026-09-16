@@ -1,11 +1,10 @@
 ---
+title: R et le tidyverse
 tags: [notion, r, tidyverse, dplyr, ggplot2, statistiques]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst]
 ---
-
-# R et le tidyverse
 
 Langage conçu pour la statistique, et l'ensemble cohérent de bibliothèques — dplyr, tidyr, ggplot2 — qui en font un outil d'analyse de données à part entière.
 

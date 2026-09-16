@@ -1,11 +1,10 @@
 ---
+title: Compétences relationnelles et politiques
 tags: [parcours, forward-deployed-engineer, fde, parties-prenantes, politique, changement, communication]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/forward-deployed-engineer
 ---
-
-# Compétences relationnelles et politiques
 
 > [!abstract] La partie du métier qui décide de l'issue des missions et dont on parle mal, parce qu'elle est traitée soit comme un vernis de savoir-vivre, soit comme de la manœuvre. Ce n'est ni l'un ni l'autre : lire une organisation, aligner des intérêts divergents et défendre un arbitrage devant une direction sont des compétences professionnelles, qui s'apprennent et se travaillent comme les autres.
 

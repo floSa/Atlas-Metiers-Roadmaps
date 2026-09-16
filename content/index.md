@@ -4,6 +4,7 @@ date: 2026-09-16
 statut: actif
 ---
 
+
 Se former sur les métiers de l'IA et de la data : ce qu'il faut savoir faire, et où l'apprendre gratuitement.
 
 | Métier | En deux mots |

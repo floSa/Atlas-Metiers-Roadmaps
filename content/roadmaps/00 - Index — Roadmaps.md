@@ -1,11 +1,10 @@
 ---
+title: 00 — Index — Roadmaps
 tags: [roadmap, index, moc, ia, datascience, reference]
 date: 2026-08-03
 statut: actif
 source: https://roadmap.sh
 ---
-
-# 00 — Index — Roadmaps
 
 > [!abstract] Huit parcours d'apprentissage roadmap.sh, transposés en notes de référence : chaque note reprend l'intégralité de l'arbre d'origine sous forme de schémas Mermaid, puis l'explique et le complète avec l'état de l'art d'août 2026.
 

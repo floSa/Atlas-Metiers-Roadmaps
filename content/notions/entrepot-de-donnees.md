@@ -1,11 +1,10 @@
 ---
+title: Entrepôt de données
 tags: [notion, entrepot, data-warehouse, data-mart, architecture-decisionnelle]
 date: 2026-09-16
 statut: actif
 appelee-par: [bi-analyst]
 ---
-
-# Entrepôt de données
 
 Base de données organisée pour l'analyse plutôt que pour la transaction : elle conserve l'historique, agrège des sources multiples et sert des lectures massives sans perturber les systèmes de production.
 

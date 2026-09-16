@@ -1,11 +1,10 @@
 ---
+title: Arbitrage déterministe / probabiliste
 tags: [notion, arbitrage, automatisation, ia-generative, conception]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder]
 ---
-
-# Arbitrage déterministe / probabiliste
 
 Décision, prise étape par étape sur un processus, de traiter chaque étape par un mécanisme dont le résultat est vérifiable par construction — script, requête, webhook, moteur de règles, RPA — ou par un modèle dont le résultat est probable.
 

@@ -1,11 +1,10 @@
 ---
+title: Analyse de cohorte
 tags: [notion, cohorte, retention, composition, analyse]
 date: 2026-09-16
 statut: actif
 appelee-par: [bi-analyst, data-analyst]
 ---
-
-# Analyse de cohorte
 
 Méthode qui regroupe les individus par période d'entrée puis suit leur comportement dans le temps, de manière à comparer des groupes ayant le même âge plutôt que la même date.
 

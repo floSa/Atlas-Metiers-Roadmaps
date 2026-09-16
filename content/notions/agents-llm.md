@@ -1,11 +1,10 @@
 ---
+title: Agents à base de LLM
 tags: [notion, agents, llm, outils, autonomie]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder]
 ---
-
-# Agents à base de LLM
 
 Systèmes où un modèle de langage décide lui-même, à chaque tour, s'il répond ou s'il appelle un outil, et boucle sur le résultat obtenu jusqu'à ce qu'une condition d'arrêt soit atteinte.
 

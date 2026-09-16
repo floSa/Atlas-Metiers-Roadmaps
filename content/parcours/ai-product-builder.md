@@ -1,11 +1,10 @@
 ---
+title: AI Product Builder
 tags: [parcours, ai-product-builder, produit, vibe-coding, prototypage, deploiement, ia]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/ai-product-builder
 ---
-
-# Parcours — AI Product Builder
 
 > [!abstract] Livrer un produit logiciel en s'appuyant sur des outils de génération de code : cadrer, prototyper, générer, reprendre le code généré, tester avec de vrais utilisateurs, déployer. Pour qui veut mettre un produit en ligne vite sans découvrir six mois plus tard qu'il a construit une maquette non maintenable — pas pour qui veut concevoir un système IA, c'est l'autre métier.
 

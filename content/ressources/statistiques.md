@@ -1,11 +1,10 @@
 ---
+title: Ressources — Statistiques et méthode
 tags: [ressources, statistiques, machine-learning, methode, causalite, reference]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/ai-data-scientist
 ---
-
-# Ressources — Statistiques et méthode
 
 > [!abstract] Ce qu'il faut pour ne pas se tromper : distributions, tests, régression, causalité, protocole d'évaluation. C'est la famille où les sources les plus anciennes sont les meilleures — un manuel de statistique de 2019 n'a pas vieilli, un article sur les LLM de 2024 si.
 

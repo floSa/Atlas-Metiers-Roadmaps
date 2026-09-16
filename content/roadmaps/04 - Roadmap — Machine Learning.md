@@ -1,11 +1,10 @@
 ---
+title: Roadmap — Machine Learning
 tags: [roadmap, machine-learning, deep-learning, statistiques, ia, reference]
 date: 2026-08-03
 statut: actif
 source: https://roadmap.sh/machine-learning
 ---
-
-# Roadmap — Machine Learning
 
 > [!abstract] Le parcours complet du ML classique et fondamental : maths, Python, données, familles d'algorithmes, évaluation rigoureuse et deep learning — pour qui veut construire des modèles qui tiennent en production, pas seulement suivre l'engouement du moment.
 

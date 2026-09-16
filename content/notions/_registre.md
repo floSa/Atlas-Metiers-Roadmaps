@@ -1,10 +1,9 @@
 ---
+title: Registre des notions
 tags: [registre, notions, convention]
 date: 2026-09-16
 statut: actif
 ---
-
-# Registre des notions
 
 > [!abstract] Le contrat qui empêche cinq rédactions parallèles de produire cinq
 > explications divergentes de la même chose. Une notion transverse porte **un slug et

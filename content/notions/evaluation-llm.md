@@ -1,11 +1,10 @@
 ---
+title: Évaluation des systèmes à base de LLM
 tags: [notion, evaluation, llm, qualite, mesure]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder, ai-red-teaming]
 ---
-
-# Évaluation des systèmes à base de LLM
 
 Pratique consistant à mesurer le comportement d'un système génératif sur un jeu de cas fixé, avec des critères décidés à l'avance, de façon rejouable à chaque changement de prompt, de modèle, d'outil ou de corpus.
 

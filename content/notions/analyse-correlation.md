@@ -1,11 +1,10 @@
 ---
+title: Analyse de corrélation
 tags: [notion, statistiques, correlation, causalite]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst]
 ---
-
-# Analyse de corrélation
 
 Mesure de l'intensité et du sens du lien statistique entre deux variables — et de rien d'autre.
 

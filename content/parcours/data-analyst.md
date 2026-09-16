@@ -1,11 +1,10 @@
 ---
+title: Data Analyst
 tags: [parcours, data-analyst, analyse-de-donnees, statistiques, visualisation, data, reference]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/data-analyst
 ---
-
-# Parcours — Data Analyst
 
 > [!abstract] Le métier de celui à qui on pose une question et qui rend une réponse chiffrée, datée, défendable. Cadrage de la question, collecte, nettoyage, exploration, analyse, restitution. Pour qui veut faire décider quelqu'un d'autre à partir de données, et non construire l'infrastructure décisionnelle ni entraîner des modèles.
 

@@ -1,11 +1,10 @@
 ---
+title: Modélisation dimensionnelle
 tags: [notion, modelisation-dimensionnelle, faits, dimensions, granularite]
 date: 2026-09-16
 statut: actif
 appelee-par: [bi-analyst]
 ---
-
-# Modélisation dimensionnelle
 
 Organisation des données analytiques en tables de faits — les événements mesurables — et tables de dimensions — les axes selon lesquels on les découpe — de manière à rendre les questions métier exprimables sans connaître le système source.
 

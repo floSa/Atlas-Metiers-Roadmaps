@@ -1,11 +1,10 @@
 ---
+title: Métriques d'évaluation en apprentissage automatique
 tags: [notion, metriques, evaluation, classification, machine-learning]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst]
 ---
-
-# Métriques d'évaluation en apprentissage automatique
 
 Mesures qui résument la performance d'un modèle sur des données qu'il n'a pas vues, chacune privilégiant un type d'erreur différent.
 

@@ -1,11 +1,10 @@
 ---
+title: Phase 3 — Développement, intégration et industrialisation
 tags: [parcours, forward-deployed-engineer, fde, industrialisation, integration, securite, exploitation]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/forward-deployed-engineer
 ---
-
-# Phase 3 — Développement, intégration et industrialisation
 
 > [!abstract] La phase longue : livrer des briques logicielles résilientes **dans l'infrastructure du client**, les brancher sur des systèmes qui n'ont pas été conçus pour ça, faire valider la sécurité des données et amener le tout jusqu'à des utilisateurs réels. La difficulté n'est presque jamais le modèle. Elle est dans le branchement, dans les droits d'accès et dans la mise en service.
 

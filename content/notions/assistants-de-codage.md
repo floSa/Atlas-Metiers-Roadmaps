@@ -1,11 +1,10 @@
 ---
+title: Assistants de codage
 tags: [notion, assistants-de-codage, generation-de-code, outillage, productivite]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, ai-product-builder]
 ---
-
-# Assistants de codage
 
 Outils qui écrivent, modifient ou expliquent du code à partir d'instructions en langage naturel, en disposant du contexte du projet — Claude Code, Cursor, Codex et leurs équivalents.
 

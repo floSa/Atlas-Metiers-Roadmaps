@@ -1,11 +1,10 @@
 ---
+title: Phase 4 — Sortie de mission et transfert
 tags: [parcours, forward-deployed-engineer, fde, transfert, maintenance, sortie-de-mission]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/forward-deployed-engineer
 ---
-
-# Phase 4 — Sortie de mission et transfert
 
 > [!abstract] La phase que personne ne planifie et où la plupart des missions perdent ce qu'elles ont produit. Le système tourne, la démonstration a convaincu, le FDE part — et six mois plus tard le système est gelé parce que personne n'ose le modifier. Cette page traite la sortie comme une phase à part entière, avec ses livrables et son critère de réussite : l'équipe cliente a corrigé un incident sans aide.
 

@@ -1,11 +1,10 @@
 ---
+title: Systèmes patrimoniaux
 tags: [notion, legacy, erp, crm, interfacage, integration]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer]
 ---
-
-# Systèmes patrimoniaux
 
 Applications anciennes qui portent encore une activité réelle — ERP, CRM, bases métier, progiciels spécifiques — et qu'on doit intégrer sans pouvoir les remplacer.
 

@@ -1,11 +1,10 @@
 ---
+title: Traitement distribué
 tags: [notion, traitement-distribue, spark, duckdb, polars, parquet, volume]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst]
 ---
-
-# Traitement distribué
 
 Répartition d'un calcul sur plusieurs machines quand les données ne tiennent plus sur une seule — et, avant cela, l'ensemble des moyens d'éviter d'en arriver là.
 

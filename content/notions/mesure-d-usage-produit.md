@@ -1,11 +1,10 @@
 ---
+title: Mesure d'usage produit
 tags: [notion, produit, instrumentation, entonnoir, retention, activation]
 date: 2026-09-16
 statut: actif
 appelee-par: [ai-product-builder, data-analyst]
 ---
-
-# Mesure d'usage produit
 
 Instrumentation des actions réelles des utilisateurs dans un produit — entrée dans un parcours, abandon, complétion, retour — et les indicateurs qu'on en tire pour arbitrer ce qu'on construit ensuite.
 

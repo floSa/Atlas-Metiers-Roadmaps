@@ -1,11 +1,10 @@
 ---
+title: Observabilité
 tags: [notion, observabilite, traces, supervision, exploitation]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder, ai-red-teaming]
 ---
-
-# Observabilité
 
 Capacité à reconstituer ce qu'un système a fait, à partir de ce qu'il a émis — traces, journaux et métriques — sans avoir à le reproduire ni à le modifier.
 

@@ -1,11 +1,10 @@
 ---
+title: Traitement du langage naturel
 tags: [notion, nlp, texte, verbatim, classification]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst]
 ---
-
-# Traitement du langage naturel
 
 Ensemble des méthodes qui permettent d'extraire de l'information exploitable à partir de texte écrit en langue naturelle : classer, résumer, extraire des entités, mesurer une proximité de sens.
 

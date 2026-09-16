@@ -1,11 +1,10 @@
 ---
+title: Affinage de modèle
 tags: [notion, affinage, fine-tuning, llm, entrainement]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-red-teaming]
 ---
-
-# Affinage de modèle
 
 Poursuite de l'entraînement d'un modèle pré-entraîné sur un jeu d'exemples propres à un usage, de manière à en modifier le comportement par défaut.
 

@@ -1,11 +1,10 @@
 ---
+title: Gestion des parties prenantes
 tags: [notion, parties-prenantes, politique, arbitrage, conseil]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, bi-analyst]
 ---
-
-# Gestion des parties prenantes
 
 Travail d'identification des personnes que le projet affecte ou qui peuvent l'affecter, de leurs intérêts réels, et d'organisation des arbitrages entre ces intérêts quand ils divergent.
 

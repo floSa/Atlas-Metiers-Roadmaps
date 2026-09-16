@@ -1,11 +1,10 @@
 ---
+title: Plateforme de déploiement
 tags: [notion, deploiement, hebergement, plateforme, infrastructure]
 date: 2026-09-16
 statut: actif
 appelee-par: [ai-product-builder, forward-deployed-engineer]
 ---
-
-# Plateforme de déploiement
 
 Ce sur quoi une application tourne une fois livrée, caractérisé moins par la marque que par le **niveau de prise en charge** qu'on achète : plus la plateforme en fait, moins on configure et moins on contrôle.
 

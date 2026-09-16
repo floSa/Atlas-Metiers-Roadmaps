@@ -1,11 +1,10 @@
 ---
+title: Outils décisionnels
 tags: [notion, bi, power-bi, tableau, looker, restitution]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst]
 ---
-
-# Outils décisionnels
 
 Plateformes qui connectent des sources de données, portent des définitions de mesures et publient des tableaux de bord partagés — Power BI, Tableau, Looker et leurs concurrents.
 

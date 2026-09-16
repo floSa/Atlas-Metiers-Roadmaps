@@ -1,11 +1,10 @@
 ---
+title: Contrôle d'accès
 tags: [notion, controle-d-acces, authentification, autorisation, moindre-privilege]
 date: 2026-09-16
 statut: actif
 appelee-par: [ai-red-teaming, forward-deployed-engineer, ai-product-builder, bi-analyst]
 ---
-
-# Contrôle d'accès
 
 Ensemble des mécanismes qui établissent qui est l'appelant (authentification), ce qu'il a le droit de faire (autorisation), et qui garantissent que cette identité est conservée jusqu'à la couche où la donnée est réellement lue.
 

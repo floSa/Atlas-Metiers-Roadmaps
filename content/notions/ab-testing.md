@@ -1,11 +1,10 @@
 ---
+title: Test A/B
 tags: [notion, experimentation, ab-testing, causalite, protocole]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst]
 ---
-
-# Test A/B
 
 Protocole expérimental qui affecte au hasard deux versions d'un traitement à deux groupes comparables, de manière à attribuer l'écart observé à la version et non aux différences entre les groupes.
 

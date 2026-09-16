@@ -1,11 +1,10 @@
 ---
+title: Retour sur investissement des projets d'IA
 tags: [notion, roi, valeur, cout-complet, decision]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder]
 ---
-
-# Retour sur investissement des projets d'IA
 
 Mise en regard de la valeur réellement créée par un système et de son coût complet, y compris ce qu'il coûtera à faire vivre une fois que son auteur sera parti.
 

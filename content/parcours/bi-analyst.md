@@ -1,11 +1,10 @@
 ---
+title: BI Analyst
 tags: [parcours, bi-analyst, business-intelligence, entrepot, modelisation-dimensionnelle, dbt, couche-semantique, gouvernance, data]
 date: 2026-09-16
 statut: actif
 source: https://roadmap.sh/bi-analyst
 ---
-
-# Parcours — BI Analyst
 
 > [!abstract] Le parcours de celui qui **construit l'infrastructure décisionnelle** dont les autres se serviront : l'entrepôt, le modèle dimensionnel, la couche sémantique, les définitions partagées, la qualité et le lignage. Pour qui veut que le chiffre affiché en comité de direction soit le même dans tous les services, et sache dire d'où il vient.
 > Si la question est ponctuelle — « pourquoi les ventes ont chuté en juin ? » — ce n'est pas ce parcours, c'est [[parcours/data-analyst]].

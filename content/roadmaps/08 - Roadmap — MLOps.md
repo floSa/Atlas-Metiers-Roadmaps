@@ -1,11 +1,10 @@
 ---
+title: Roadmap — MLOps
 tags: [roadmap, mlops, llmops, deploiement, monitoring, infrastructure, ia, reference]
 date: 2026-08-03
 statut: actif
 source: https://roadmap.sh/mlops
 ---
-
-# Roadmap — MLOps
 
 > [!abstract] Le parcours qui mène du modèle qui marche sur un notebook au modèle qui tourne en production, se met à jour tout seul et se surveille — versioning, CI/CD, orchestration, monitoring, drift, coûts.
 

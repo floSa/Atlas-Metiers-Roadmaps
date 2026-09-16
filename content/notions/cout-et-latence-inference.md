@@ -1,11 +1,10 @@
 ---
+title: Coût et latence d'inférence
 tags: [notion, cout, latence, inference, llm, budget]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer, ai-product-builder]
 ---
-
-# Coût et latence d'inférence
 
 Ce que coûte et ce que prend de temps un appel à un modèle, en fonction du nombre de jetons traités, du modèle choisi et de la façon dont les appels sont organisés.
 

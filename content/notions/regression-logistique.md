@@ -1,11 +1,10 @@
 ---
+title: Régression logistique
 tags: [notion, regression-logistique, classification, odds-ratio, statistiques]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst]
 ---
-
-# Régression logistique
 
 Modèle qui estime la probabilité d'un événement binaire à partir de variables explicatives, en modélisant le logarithme de la cote (le rapport entre probabilité de survenue et de non-survenue) comme une combinaison linéaire.
 

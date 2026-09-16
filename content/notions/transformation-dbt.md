@@ -1,11 +1,10 @@
 ---
+title: Transformation avec dbt
 tags: [notion, dbt, transformation, elt, sql, tests]
 date: 2026-09-16
 statut: actif
 appelee-par: [bi-analyst]
 ---
-
-# Transformation avec dbt
 
 Outil qui organise les transformations d'un entrepôt en un graphe de modèles SQL versionnés, testés et documentés, exécutés par l'entrepôt lui-même.
 

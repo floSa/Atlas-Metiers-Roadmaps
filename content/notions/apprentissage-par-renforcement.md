@@ -1,11 +1,10 @@
 ---
+title: Apprentissage par renforcement
 tags: [notion, machine-learning, apprentissage-par-renforcement, rlhf, recompense]
 date: 2026-09-16
 statut: actif
 appelee-par: [data-analyst, bi-analyst, ai-red-teaming]
 ---
-
-# Apprentissage par renforcement
 
 Famille de méthodes où un agent apprend une politique d'action par essai et erreur, en maximisant une récompense cumulée fournie par un environnement, plutôt qu'en imitant des exemples étiquetés.
 

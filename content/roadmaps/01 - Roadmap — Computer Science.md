@@ -1,11 +1,10 @@
 ---
+title: Roadmap — Computer Science
 tags: [roadmap, computer-science, algorithmique, systemes, ia, reference]
 date: 2026-08-03
 statut: actif
 source: https://roadmap.sh/computer-science
 ---
-
-# Roadmap — Computer Science
 
 > [!abstract] Les fondations informatiques — algorithmique, structures de données, systèmes, réseau, bases de données, sécurité — relues pour quelqu'un qui fait déjà de la data science et veut cesser de traiter la machine comme une boîte noire.
 

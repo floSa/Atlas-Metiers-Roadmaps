@@ -1,11 +1,10 @@
 ---
+title: Transfert de compétences
 tags: [notion, transfert, sortie-de-mission, autonomie, maintenance]
 date: 2026-09-16
 statut: actif
 appelee-par: [forward-deployed-engineer]
 ---
-
-# Transfert de compétences
 
 Organisation de la reprise d'un système par ceux qui l'exploiteront, de manière à ce qu'il reste modifiable, corrigeable et compréhensible après le départ de celui qui l'a construit.
 
