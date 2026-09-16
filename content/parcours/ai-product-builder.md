@@ -22,12 +22,13 @@ flowchart TD
   B --> C["3. Prototypage"]
   C --> D["4. Génération"]
   D --> E["5. Raffinement"]
-  E --> F["6. Tests et retours"]
-  F --> G["7. Collaboration et intégration continue"]
-  G --> H["8. Déploiement, dorsale et données"]
-  H --> I["9. Du prototype au produit"]:::ajout
-  I --> J["10. Quand le produit embarque un modèle"]:::ajout
-  F -.->|"boucle de retour"| A
+  E --> F["6. Ce que le vibe coding fait bien et mal"]:::ajout
+  F --> G["7. Tests et retours"]
+  G --> H["8. Collaboration et intégration continue"]
+  H --> I["9. Déploiement, dorsale et données"]
+  I --> J["10. Du prototype au produit"]:::ajout
+  J --> K["11. Quand le produit embarque un modèle"]:::ajout
+  G -.->|"boucle de retour"| A
   classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
