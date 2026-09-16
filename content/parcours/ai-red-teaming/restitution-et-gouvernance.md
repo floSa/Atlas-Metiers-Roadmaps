@@ -8,21 +8,26 @@ source: https://roadmap.sh/ai-red-teaming
 
 Le rapport est le produit de la mission ; tout le reste n'en est que la fabrication. Un constat mal restitué ne sera pas corrigé, et sa valeur est donc nulle quelle que soit la difficulté de sa découverte.
 
-## Deux publics, deux documents, et un troisième usage
-
 ```mermaid
 flowchart TD
-  C["Un constat<br/>ce qui a été obtenu"] --> P["Chemin complet et reproductible"]
-  P --> R["Conditions requises<br/>accès, nombre de requêtes, connaissance préalable"]
-  R --> I["Impact métier, chiffré si possible"]
-  I --> M["Atténuation réaliste, avec son coût"]
-  M --> D1["Synthèse direction — 1 page<br/>risques et décisions"]
-  M --> D2["Détail technique<br/>reproductible, vérifiable après correctif"]
-  D1 --> G["Dossier de conformité<br/>preuve que la gestion des risques est effective"]
-  D2 --> G
+  RED["Rédaction technique<br/>la structure d'un constat, deux documents"]
+  GOU["Gouvernance de l'IA<br/>NIST AI RMF, ISO 42001, règlement européen"]
+  RGP["RGPD<br/>ce qui rend une fuite démontrée notifiable"]
+  DOS["Données sensibles<br/>ce qu'on ne met pas dans un livrable"]
+  PAR["Parties prenantes<br/>les opérationnels avant la direction"]
+
+  click RED "/notions/redaction-technique"
+  click GOU "/notions/gouvernance-ia"
+  click RGP "/notions/rgpd"
+  click DOS "/notions/donnees-sensibles"
+  click PAR "/notions/gestion-parties-prenantes"
 ```
 
-Sans les conditions requises, un lecteur ne peut pas juger la gravité. Et mélanger les deux documents fait que personne ne lit ni l'un ni l'autre.
+## Deux publics, deux documents, et un troisième usage
+
+Un constat se rédige toujours dans le même ordre : ce qui a été obtenu, le **chemin complet et reproductible** qui y mène, les **conditions requises** — niveau d'accès, nombre de requêtes, connaissance préalable —, l'**impact métier** chiffré quand c'est possible, et l'**atténuation réaliste avec son coût**. Sans les conditions requises, un lecteur ne peut pas juger la gravité.
+
+Ce matériau alimente deux documents et un troisième usage. Une **synthèse d'une page** pour la direction, qui porte des risques et des décisions. Un **détail technique** reproductible, vérifiable après correctif. Et le versement des deux au **dossier de conformité**, où ils constituent la preuve que la gestion des risques est effective et non déclarative. Mélanger les deux premiers fait que personne ne lit ni l'un ni l'autre.
 
 ## Ce qu'il faut savoir faire
 
