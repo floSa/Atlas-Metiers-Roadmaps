@@ -6,11 +6,17 @@ La question à se poser devant tout chiffre surprenant est « par quel bug pourr
 
 ```mermaid
 flowchart TD
-  C["Chiffre surprenant"] --> J["Jointure qui duplique ?"]
-  C --> F["Filtre manquant ou en trop ?"]
-  C --> G["Deux grains mélangés ?"]
-  C --> P["Période décalée, fuseau, clôture ?"]
-  C --> N["Valeurs nulles exclues silencieusement ?"]
+  J["Une jointure duplique-t-elle<br/>les lignes ?"]
+  F["Un filtre manque-t-il,<br/>ou y en a-t-il un de trop ?"]
+  G["Deux grains sont-ils<br/>mélangés ?"]
+  P["La période est-elle décalée —<br/>fuseau, clôture ?"]
+  N["Des valeurs nulles sont-elles<br/>exclues silencieusement ?"]
+
+  click J "/notions/sql"
+  click F "/parcours/bi-analyst/semantique-et-gouvernance/definir-une-mesure"
+  click G "/parcours/bi-analyst/modelisation-dimensionnelle/declarer-le-grain"
+  click P "/parcours/bi-analyst/modelisation-dimensionnelle/la-dimension-de-date"
+  click N "/notions/qualite-des-donnees"
 ```
 
 ## Ce qu'il faut savoir faire
