@@ -2,6 +2,8 @@
 title: Mise en service progressive
 ---
 
+Niveau attendu : **autonomie**. Les paliers et la mesure qui les autorise se conçoivent seul et se défendent, mais franchir un palier reste une décision du client.
+
 Commencer par la plus petite unité d'autonomie et n'ajouter une capacité qu'après avoir prouvé la précédente. C'est une méthode de gestion du risque technique, et tout autant du risque politique : chaque palier franchi produit une preuve publique.
 
 ```mermaid

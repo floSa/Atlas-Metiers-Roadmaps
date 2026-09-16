@@ -10,12 +10,12 @@ Lire une organisation, aligner des intérêts divergents et défendre un arbitra
 
 ```mermaid
 flowchart TD
-  L["Lire l'organisation<br/>qui décide, qui paie, qui peut bloquer"]
-  S["Gérer les parties prenantes<br/>informer avant que ça ne devienne un problème"]
-  R["La résistance au changement<br/>une information, pas un obstacle"]
-  V["Vulgariser et défendre<br/>faire décider, pas exposer"]
-  E["Écrire<br/>la trace qui fige les décisions"]
-  P["Tenir sa position<br/>un tiers de confiance, temporaire"]
+  L["Lire l'organisation<br/>Autonomie"]
+  S["Gérer les parties prenantes<br/>Autonomie"]
+  R["La résistance au changement<br/>Autonomie"]
+  V["Vulgariser et défendre<br/>Autonomie"]
+  E["Écrire<br/>Autonomie"]
+  P["Tenir sa position<br/>Autonomie"]
 
   click L "/parcours/forward-deployed-engineer/competences-relationnelles/lire-l-organisation"
   click S "/parcours/forward-deployed-engineer/competences-relationnelles/gerer-les-parties-prenantes"

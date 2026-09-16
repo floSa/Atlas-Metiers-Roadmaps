@@ -2,6 +2,8 @@
 title: Maintenance et dérive
 ---
 
+Niveau attendu : **référence**. Dire avant de partir ce qui va dériver, à quelle échéance et aux frais de qui est un arbitrage que le client ne sait pas formuler : il n'a jamais exploité de système probabiliste.
+
 Un système d'IA n'est pas un livrable stable : les modèles sont dépréciés, les corpus vieillissent, les usages dérivent, les volumes augmentent. La question à trancher avant de partir est qui fait quoi, avec quel budget, et à quelle échéance se pose la prochaine décision.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Écrire
 ---
 
+Niveau attendu : **autonomie**. L'écrit qui fige une décision doit être produit le jour même et sans modèle ; la rédaction technique reste un artisanat commun, pas un domaine d'autorité.
+
 L'écrit permet au client d'exploiter le système sans rappeler le FDE à chaque question. Il a une seconde fonction, plus immédiate : il fige les décisions dans une organisation où les gens changent de poste et où les réunions se réinterprètent.
 
 ```mermaid

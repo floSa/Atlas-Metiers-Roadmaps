@@ -2,6 +2,8 @@
 title: Gérer les parties prenantes
 ---
 
+Niveau attendu : **autonomie**. Informer avant que ça ne devienne un problème et escalader au bon moment s'assument seul ; le mandat, lui, reste chez le sponsor.
+
 Moins maintenir les gens contents que s'assurer que les bonnes personnes savent ce qui se passe **avant** que ça ne devienne un problème. Le travail technique peut être excellent et la mission échouer, parce que ceux qui doivent approuver, adopter ou financer n'ont jamais été convaincus.
 
 ```mermaid

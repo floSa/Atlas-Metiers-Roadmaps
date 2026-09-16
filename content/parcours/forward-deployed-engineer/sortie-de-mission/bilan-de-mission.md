@@ -2,6 +2,8 @@
 title: Le bilan de mission
 ---
 
+Niveau attendu : **référence**. Dire ce qui n'a pas abouti, sans euphémisme et devant la direction qui a financé, est une position que seul un tiers sur le départ peut tenir.
+
 Dire ce qui n'a pas marché est ce qui rend crédible ce qui a marché. Un bilan uniquement positif est lu comme un document commercial et n'engage personne.
 
 ```mermaid

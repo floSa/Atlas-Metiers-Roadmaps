@@ -2,6 +2,8 @@
 title: Les quatre phases et leurs portes de sortie
 ---
 
+Niveau attendu : **référence**. Le découpage et ses portes de sortie sont ce que le FDE impose au cadrage : personne en face ne saura dire qu'une phase n'est pas finie.
+
 Le déroulé d'une mission, de l'observation au départ. Ce qui autorise à passer à la phase suivante n'est pas le calendrier, c'est un livrable.
 
 ```mermaid

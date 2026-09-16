@@ -2,6 +2,8 @@
 title: Lire l'organisation
 ---
 
+Niveau attendu : **autonomie**. La cartographie politique se mène seul et sans mandat, mais le FDE reste un extérieur récent : ceux qui connaissent la maison la lisent mieux que lui.
+
 Un travail d'observation aussi méthodique que la cartographie de processus. La catégorie la plus sous-estimée est celle de ceux qui peuvent bloquer sans avoir le pouvoir de décider.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Les artefacts de mission
 ---
 
+Niveau attendu : **référence**. Ce qui reste après le départ est la définition même de la réussite du métier, et aucun autre rôle ne se porte garant de ces quatre documents.
+
 Une mission produit du code, et ce n'est pas ce qui a le plus de valeur pour le client. Ce qui reste et se réutilise, ce sont quatre documents.
 
 ```mermaid

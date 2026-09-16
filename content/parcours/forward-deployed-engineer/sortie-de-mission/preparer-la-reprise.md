@@ -2,6 +2,8 @@
 title: Préparer la reprise
 ---
 
+Niveau attendu : **référence**. Traiter la reprise comme une contrainte de conception dès la semaine 1 est ce que personne ne demandera jamais au FDE, et c'est ce qui décide si le système survit à son départ.
+
 La question « qui exploitera ce système après mon départ » se pose en semaine 1, pas en semaine 20. La contrainte de reprise est une contrainte de conception au même titre que la latence ou le budget — et elle est presque toujours ignorée.
 
 ```mermaid

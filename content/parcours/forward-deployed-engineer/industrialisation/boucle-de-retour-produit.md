@@ -2,6 +2,8 @@
 title: Boucle de retour produit
 ---
 
+Niveau attendu : **autonomie**. Voir l'utilisateur contourner la fonctionnalité et convertir ça en correction est un geste à mener seul ; ce qui entre au périmètre reste décidé par le propriétaire du processus.
+
 L'avantage structurel du métier : une équipe produit distante reçoit des tickets ; un FDE voit l'utilisateur contourner sa fonctionnalité, recopier la sortie dans un tableur et retravailler le résultat. Cette information ne remonte jamais par un formulaire.
 
 ```mermaid

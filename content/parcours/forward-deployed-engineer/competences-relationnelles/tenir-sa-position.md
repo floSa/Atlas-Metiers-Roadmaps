@@ -2,6 +2,8 @@
 title: Tenir sa position
 ---
 
+Niveau attendu : **autonomie**. Dire non en proposant l'alternative et refuser de devenir la dépendance se tiennent sous pression, sans que personne n'arbitre à la place du FDE.
+
 Le FDE partage le quotidien des équipes clientes sans en faire partie, et représente un fournisseur sans être un commercial. Cette position a une valeur propre : celle d'un tiers qui peut dire ce que les gens de l'intérieur ne peuvent pas dire, parce qu'ils ont une carrière à faire dans l'organisation.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Le protocole d'évaluation
 ---
 
+Niveau attendu : **référence**. Le jeu d'évaluation est la spécification et il survit au modèle comme au prestataire : un protocole mal construit ne se voit qu'à la dérive, trop tard.
+
 Le jeu d'évaluation **est** la spécification. Il dit ce qu'on attend mieux que n'importe quel document, il est vérifiable, et il transforme une discussion d'opinion en une discussion sur des cas.
 
 ```mermaid

@@ -10,11 +10,11 @@ La phase que personne ne planifie, et où la plupart des missions perdent ce qu'
 
 ```mermaid
 flowchart TD
-  P["Préparer la reprise<br/>dès la première semaine"]
-  T["Transférer par la pratique<br/>leur laisser le clavier"]
-  D["La documentation d'exploitation<br/>courte, trouvable, vérifiée"]
-  M["Maintenance et dérive<br/>qui fait quoi, avec quel budget"]
-  B["Le bilan de mission<br/>ce qui est en service et mesuré"]
+  P["Préparer la reprise<br/>Référence"]
+  T["Transférer par la pratique<br/>Référence"]
+  D["La documentation d'exploitation<br/>Autonomie"]
+  M["Maintenance et dérive<br/>Référence"]
+  B["Le bilan de mission<br/>Référence"]
 
   click P "/parcours/forward-deployed-engineer/sortie-de-mission/preparer-la-reprise"
   click T "/parcours/forward-deployed-engineer/sortie-de-mission/transferer-par-la-pratique"

@@ -2,6 +2,8 @@
 title: Livrer dans l'infrastructure du client
 ---
 
+Niveau attendu : **autonomie**. Il faut savoir se conformer à une chaîne qu'on n'a pas conçue et la déboguer sans outillage ; l'autorité sur cette chaîne appartient aux équipes qui l'exploitent.
+
 Ce qui sépare le FDE du prestataire classique, et ce qui rend la phase imprévisible : le chemin de livraison appartient au client, avec ses règles, ses délais et ses équipes. Un système qui ne se déploie pas par la chaîne officielle n'existera jamais en production.
 
 ```mermaid

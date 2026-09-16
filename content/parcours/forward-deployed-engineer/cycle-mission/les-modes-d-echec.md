@@ -2,6 +2,8 @@
 title: Les modes d'échec
 ---
 
+Niveau attendu : **référence**. Reconnaître qu'une mission est en train de partir dans l'un des quatre est un diagnostic que personne d'autre dans la salle ne posera tant qu'il coûte encore peu.
+
 Chaque phase a son mode d'échec propre, et ils ne se compensent pas : une phase 3 excellente ne rattrape pas une phase 1 bâclée, elle en amplifie les conséquences.
 
 ```mermaid

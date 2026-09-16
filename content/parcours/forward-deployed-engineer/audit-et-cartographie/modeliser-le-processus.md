@@ -2,6 +2,8 @@
 title: Modéliser le processus
 ---
 
+Niveau attendu : **autonomie**. La notation est un artisanat partagé avec les analystes métier : il faut produire une carte que le terrain corrige, pas faire autorité sur BPMN.
+
 Sans notation partagée, la discussion sur le processus reste une suite d'anecdotes et chacun garde sa version. Un schéma force le FDE à admettre ce qu'il n'a pas compris — un trou dans le diagramme se voit.
 
 ```mermaid

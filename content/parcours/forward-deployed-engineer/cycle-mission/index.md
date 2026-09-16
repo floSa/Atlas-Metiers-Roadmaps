@@ -10,10 +10,10 @@ Comment se déroule une mission : quatre phases, ce qui autorise à passer de l'
 
 ```mermaid
 flowchart TD
-  P["Les quatre phases<br/>livrables et portes de sortie"]
-  A["Les artefacts de mission<br/>ce qui circule, ce qui reste"]
-  C["Cadencer la mission<br/>périmètre, vitesse, qualité"]
-  E["Les modes d'échec<br/>un par phase, et sa cause"]
+  P["Les quatre phases<br/>Référence"]
+  A["Les artefacts de mission<br/>Référence"]
+  C["Cadencer la mission<br/>Autonomie"]
+  E["Les modes d'échec<br/>Référence"]
 
   click P "/parcours/forward-deployed-engineer/cycle-mission/les-quatre-phases"
   click A "/parcours/forward-deployed-engineer/cycle-mission/les-artefacts-de-mission"

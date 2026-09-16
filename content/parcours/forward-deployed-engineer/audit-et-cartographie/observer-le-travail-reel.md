@@ -2,6 +2,8 @@
 title: Observer le travail réel
 ---
 
+Niveau attendu : **référence**. L'écart entre le travail décrit et le travail réel est la matière première du métier : personne chez le client n'a intérêt à le mettre au jour, et personne d'autre ne le fera.
+
 La façon dont une équipe travaille et la façon dont elle la décrit sont deux choses différentes. Ce n'est pas de la mauvaise foi : personne ne décrit spontanément les contournements qu'il a mis en place, parce qu'ils sont devenus le travail normal.
 
 ```mermaid

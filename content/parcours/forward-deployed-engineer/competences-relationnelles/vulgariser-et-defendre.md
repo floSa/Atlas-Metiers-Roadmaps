@@ -2,6 +2,8 @@
 title: Vulgariser et défendre
 ---
 
+Niveau attendu : **autonomie**. Faire décider sans mentir se travaille et se tient seul devant une direction, mais c'est un savoir-faire partagé avec tout profil de conseil, pas la signature du métier.
+
 La difficulté n'est pas de simplifier, c'est de simplifier sans mentir. Le test : après l'explication, l'interlocuteur doit pouvoir **prendre une décision** et la défendre lui-même devant quelqu'un d'autre.
 
 ```mermaid

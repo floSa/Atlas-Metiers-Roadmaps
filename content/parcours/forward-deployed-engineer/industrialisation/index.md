@@ -10,12 +10,12 @@ La phase longue : livrer des briques résilientes **dans l'infrastructure du cli
 
 ```mermaid
 flowchart TD
-  L["Livrer dans l'infrastructure du client<br/>sa chaîne, son registre, ses commissions"]
-  I["Interfacer le patrimoine<br/>lire est négociable, écrire ne l'est pas"]
-  S["Sécurité et garde-fous<br/>ce qui décide de l'autorisation"]
-  M["Mise en service progressive<br/>un palier, une preuve"]
-  E["Exploiter le système<br/>traces, coût, alertes utiles"]
-  B["Boucle de retour produit<br/>observer l'usage, pas les déclarations"]
+  L["Livrer dans l'infrastructure du client<br/>Autonomie"]
+  I["Interfacer le patrimoine<br/>Autonomie"]
+  S["Sécurité et garde-fous<br/>Autonomie"]
+  M["Mise en service progressive<br/>Autonomie"]
+  E["Exploiter le système<br/>Autonomie"]
+  B["Boucle de retour produit<br/>Autonomie"]
 
   click L "/parcours/forward-deployed-engineer/industrialisation/livrer-dans-l-infrastructure-du-client"
   click I "/parcours/forward-deployed-engineer/industrialisation/interfacer-le-patrimoine"

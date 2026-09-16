@@ -2,6 +2,8 @@
 title: Sécurité et garde-fous
 ---
 
+Niveau attendu : **autonomie**. Concevoir le filtrage, borner les actions et défendre le dossier se font seul ; l'autorisation de mise en service, elle, appartient au service sécurité du client.
+
 C'est ce bloc qui décide si le système obtient l'autorisation de mise en service. Le service sécurité du client ne juge pas la qualité des réponses, il juge l'exposition.
 
 ```mermaid

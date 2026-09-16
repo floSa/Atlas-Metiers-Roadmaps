@@ -2,6 +2,8 @@
 title: Goulets et silos
 ---
 
+Niveau attendu : **référence**. Passer de la description au diagnostic chiffré est ce qui justifie la mission, et l'endroit où l'on désigne le gisement engage tout ce qui suit.
+
 Le passage de la description au diagnostic. Dans un processus de bout en bout, le temps passé à traiter est marginal devant le temps passé à attendre — et c'est ce qui justifie la mission.
 
 ```mermaid

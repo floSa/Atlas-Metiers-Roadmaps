@@ -2,6 +2,8 @@
 title: Valeur et coût
 ---
 
+Niveau attendu : **autonomie**. Le calcul se construit et se défend seul, mais ce qu'un gain vaut se tranche avec le contrôle de gestion du client, qui garde l'autorité sur ses propres unités.
+
 Le calcul est faisable parce que la phase 1 a produit des volumes et des durées. Ce qu'on oublie, c'est que la moitié du coût est ailleurs que dans l'inférence.
 
 ```mermaid

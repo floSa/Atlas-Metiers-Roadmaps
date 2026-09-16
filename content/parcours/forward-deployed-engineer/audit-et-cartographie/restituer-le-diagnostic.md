@@ -2,6 +2,8 @@
 title: Restituer le diagnostic
 ---
 
+Niveau attendu : **référence**. Faire reconnaître le problème avant de proposer quoi que ce soit décide du sort de la mission : c'est un geste de cadrage, pas une présentation.
+
 La restitution n'est pas une formalité de fin de phase : c'est le moment où le diagnostic devient partagé. Un client qui n'a pas reconnu son problème discutera la solution indéfiniment.
 
 ```mermaid

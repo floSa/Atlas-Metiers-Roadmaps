@@ -10,12 +10,12 @@ La phase où l'on regarde les gens travailler. Elle produit la carte du processu
 
 ```mermaid
 flowchart TD
-  O["Observer le travail réel<br/>l'immersion plutôt que l'entretien"]
-  M["Modéliser le processus<br/>une notation que le métier corrige"]
-  G["Goulets et silos<br/>du descriptif au diagnostic"]
-  I["Inventorier l'existant<br/>systèmes, accès, données, contraintes"]
-  D["Définir la réussite<br/>un seuil chiffré avant tout code"]
-  R["Restituer le diagnostic<br/>le faire reconnaître avant de proposer"]
+  O["Observer le travail réel<br/>Référence"]
+  M["Modéliser le processus<br/>Autonomie"]
+  G["Goulets et silos<br/>Référence"]
+  I["Inventorier l'existant<br/>Autonomie"]
+  D["Définir la réussite<br/>Référence"]
+  R["Restituer le diagnostic<br/>Référence"]
 
   click O "/parcours/forward-deployed-engineer/audit-et-cartographie/observer-le-travail-reel"
   click M "/parcours/forward-deployed-engineer/audit-et-cartographie/modeliser-le-processus"

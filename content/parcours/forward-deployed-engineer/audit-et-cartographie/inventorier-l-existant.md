@@ -2,6 +2,8 @@
 title: Inventorier l'existant
 ---
 
+Niveau attendu : **autonomie**. Le FDE mène l'inventaire et en tire seul les conséquences d'architecture, mais l'autorité sur la classification, la base légale et les accès reste chez le client.
+
 Les contraintes d'un environnement d'entreprise décident de la faisabilité bien avant la technique. Savoir dès la deuxième semaine que les données ne peuvent pas sortir de l'infrastructure interne élimine d'un coup la moitié des architectures envisagées.
 
 ```mermaid

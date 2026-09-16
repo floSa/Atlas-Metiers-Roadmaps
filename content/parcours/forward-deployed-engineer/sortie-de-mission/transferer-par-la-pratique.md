@@ -2,6 +2,8 @@
 title: Transférer par la pratique
 ---
 
+Niveau attendu : **référence**. Organiser le transfert pour qu'il tienne sans lui est la finalité du métier ; un prestataire payé à la présence n'a aucune raison de savoir le faire.
+
 Un transfert de compétences ne se fait pas par exposé. La confiance technique ne se transmet pas par un document ; elle vient d'avoir déjà réparé quelque chose soi-même.
 
 ```mermaid
