@@ -29,7 +29,7 @@ AI systems introduce novel risks beyond traditional software, such as emergent u
 
 AI Red Teaming is the practice of simulating adversarial attacks against AI systems to proactively identify vulnerabilities, potential misuse scenarios, and failure modes before malicious actors do. Distinct from traditional cybersecurity red teaming, it focuses on the unique attack surfaces of AI models, such as prompt manipulation, data poisoning, model extraction, and evasion techniques. The primary goal for an AI Red Teamer is to test the robustness, safety, alignment, and fairness of AI systems, particularly complex ones like LLMs, by adopting an attacker's mindset to uncover hidden flaws and provide actionable feedback for improvement.
 
-- `@article` [A Guide to AI Red Teaming](https://hiddenlayer.com/innovation-hub/a-guide-to-ai-red-teaming/)
+- `@article` [A Guide to AI Red Teaming - HiddenLayer](https://hiddenlayer.com/innovation-hub/a-guide-to-ai-red-teaming/)
 - `@article` [What is AI Red Teaming? (Learn Prompting)](https://learnprompting.org/blog/what-is-ai-red-teaming)
 - `@article` [What is AI Red Teaming? The Complete Guide](https://mindgard.ai/blog/what-is-ai-red-teaming)
 
@@ -230,7 +230,7 @@ Understanding neural network architectures (layers, nodes, activation functions)
 AI Red Teamers focus heavily on generative models (like GANs and LLMs) due to their widespread use and unique risks. Understanding how they generate content is key to testing for issues like generating harmful/biased outputs, deepfakes, prompt injection vulnerabilities, or leaking sensitive information from their vast training data.
 
 - `@course` [Introduction to Generative AI](https://learnprompting.org/courses/intro-to-gen-ai)
-- `@article` [What is Generative AI?](https://learnprompting.org/docs/basics/generative_ai)
+- `@article` [What is Generative AI? - LearnPrompting](https://learnprompting.org/docs/basics/generative_ai)
 - `@article` [Generative AI beginner's guide](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/overview)
 
 #### Large Language Models
@@ -269,7 +269,7 @@ AI Red Teams apply threat modeling to identify unique attack surfaces in AI syst
 
 AI Red Teamers contribute to the AI risk management process by identifying and demonstrating concrete vulnerabilities. Findings from red team exercises inform risk assessments, helping organizations understand the likelihood and potential impact of specific AI threats and prioritize resources for mitigation based on demonstrated exploitability.
 
-- `@article` [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+- `@article` [NIST AI Risk Management Framework (AI RMF)](https://www.nist.gov/itl/ai-risk-management-framework)
 - `@article` [A Beginner's Guide to Cybersecurity Risks and Vulnerabilities](https://online.champlain.edu/blog/beginners-guide-cybersecurity-risk-management)
 - `@article` [Cybersecurity Risk Management: Frameworks, Plans, and Best Practices](https://hyperproof.io/resource/cybersecurity-risk-management-process/)
 
@@ -356,7 +356,7 @@ AI Red Teamers test authorization controls to ensure that authenticated users ca
 
 - `@article` [What is Authentication vs Authorization?](https://auth0.com/intro-to-iam/authentication-vs-authorization)
 - `@article` [Identity and access management (IAM) fundamental concepts](https://learn.microsoft.com/en-us/entra/fundamentals/identity-fundamental-concepts)
-- `@article` [OWASP API Security Project](https://owasp.org/www-project-api-security/)
+- `@article` [OWASP API Security Project (Top 10 2023)](https://owasp.org/www-project-api-security/)
 
 #### Emerging Threats
 
@@ -408,7 +408,7 @@ AI Red Teamers assess the risk of attackers reconstructing or stealing the propr
 AI Red Teamers test if vulnerabilities in the AI system or its interfaces allow attackers to gain unauthorized access to data, functionalities, or underlying infrastructure. This includes attempting privilege escalation via prompts, exploiting insecure API endpoints connected to the AI, or manipulating the AI to access restricted system resources.
 
 - `@article` [Defending Model Files from Unauthorized Access](https://developer.nvidia.com/blog/defending-ai-model-files-from-unauthorized-access-with-canaries/)
-- `@article` [OWASP API Security Project](https://owasp.org/www-project-api-security/)
+- `@article` [OWASP API Security Project (Top 10 2023)](https://owasp.org/www-project-api-security/)
 - `@article` [Detecting Unauthorized Usage](https://www.unr.edu/digital-learning/instructional-strategies/understanding-and-integrating-generative-ai-in-teaching/how-can-i-detect-unauthorized-ai-usage)
 
 #### Direct

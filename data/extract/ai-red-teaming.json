@@ -65,7 +65,7 @@
      "resources": [
       {
        "kind": "article",
-       "title": "A Guide to AI Red Teaming",
+       "title": "A Guide to AI Red Teaming - HiddenLayer",
        "url": "https://hiddenlayer.com/innovation-hub/a-guide-to-ai-red-teaming/"
       },
       {
@@ -686,7 +686,7 @@
       },
       {
        "kind": "article",
-       "title": "What is Generative AI?",
+       "title": "What is Generative AI? - LearnPrompting",
        "url": "https://learnprompting.org/docs/basics/generative_ai"
       },
       {
@@ -801,7 +801,7 @@
      "resources": [
       {
        "kind": "article",
-       "title": "NIST AI Risk Management Framework",
+       "title": "NIST AI Risk Management Framework (AI RMF)",
        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
       },
       {
@@ -1076,7 +1076,7 @@
       },
       {
        "kind": "article",
-       "title": "OWASP API Security Project",
+       "title": "OWASP API Security Project (Top 10 2023)",
        "url": "https://owasp.org/www-project-api-security/"
       }
      ],
@@ -1235,7 +1235,7 @@
       },
       {
        "kind": "article",
-       "title": "OWASP API Security Project",
+       "title": "OWASP API Security Project (Top 10 2023)",
        "url": "https://owasp.org/www-project-api-security/"
       },
       {

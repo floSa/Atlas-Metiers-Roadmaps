@@ -250,7 +250,7 @@
       },
       {
        "kind": "article",
-       "title": "What is Embedding?",
+       "title": "What is Embedding? -IBM",
        "url": "https://www.ibm.com/topics/embedding"
       },
       {
@@ -341,7 +341,7 @@
       },
       {
        "kind": "article",
-       "title": "Coding Agents Don’t Need Bigger Context Windows",
+       "title": "Coding Agents Don’t Need Bigger Context Windows — They Need a Context Compiler",
        "url": "https://towardsdatascience.com/coding-agents-dont-need-bigger-context-windows-they-need-a-context-compiler/"
       },
       {
@@ -1247,7 +1247,7 @@
      "resources": [
       {
        "kind": "article",
-       "title": "Few-Shot Prompting",
+       "title": "Few-Shot Prompting - DAIR.AI",
        "url": "https://www.promptingguide.ai/techniques/fewshot"
       },
       {
@@ -1401,7 +1401,7 @@
       },
       {
        "kind": "article",
-       "title": "Zero-Shot Prompting",
+       "title": "Zero-Shot Prompting - DAIR.AI",
        "url": "https://www.promptingguide.ai/techniques/zeroshot"
       },
       {
@@ -1943,7 +1943,7 @@
      "resources": [
       {
        "kind": "article",
-       "title": "Assigning Roles",
+       "title": "Assigning Roles to Chatbots - LearnPrompting",
        "url": "https://learnprompting.org/docs/basics/roles"
       }
      ],
@@ -2578,7 +2578,7 @@
      "resources": [
       {
        "kind": "article",
-       "title": "What is RAG?",
+       "title": "What is RAG? - Retrieval-Augmented Generation AI Explained",
        "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/"
       },
       {
@@ -2607,7 +2607,7 @@
      "resources": [
       {
        "kind": "official",
-       "title": "Gemini API",
+       "title": "Gemini API Documentation",
        "url": "https://ai.google.dev/gemini-api/docs"
       },
       {

@@ -26,7 +26,7 @@ MLOps is a set of practices that combines machine learning, DevOps, and data eng
 Python is a widely used programming language known for its clear syntax and extensive libraries. It's a versatile tool that can handle many tasks, from simple scripting to complex software development. Its ease of use and the availability of specialized libraries for data analysis, machine learning, and automation make it a popular choice for building and deploying machine learning systems.
 
 - `@roadmap` [Visit Dedicated Python Roadmap](https://roadmap.sh/python)
-- `@official` [Python](https://www.python.org/)
+- `@official` [Python Website](https://www.python.org/)
 - `@article` [Real Python](https://realpython.com/)
 - `@article` [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 
@@ -68,7 +68,7 @@ Version control systems are tools that track changes to files over time. They al
 
 CI/CD, which stands for Continuous Integration and Continuous Delivery/Deployment, is a software development practice focused on automating and streamlining the process of building, testing, and releasing software changes. Continuous Integration involves frequently merging code changes into a central repository, followed by automated builds and tests. Continuous Delivery/Deployment then automates the release of these changes to various environments, ultimately aiming for faster and more reliable software releases.
 
-- `@official` [What is CI/CD?](https://about.gitlab.com/topics/ci-cd/)
+- `@official` [What is CI/CD? - GitLab](https://about.gitlab.com/topics/ci-cd/)
 - `@article` [A Primer: Continuous Integration and Continuous Delivery (CI/CD)](https://thenewstack.io/a-primer-continuous-integration-and-continuous-delivery-ci-cd/)
 - `@article` [DevOps CI/CD Explained in 100 Seconds](https://thenewstack.io/category/ci-cd/)
 - `@video` [Automate your Workflows with GitHub Actions](https://www.youtube.com/watch?v=scEDHsr3APg)
@@ -156,7 +156,7 @@ Kubernetes is an open-source system for automating the deployment, scaling, and 
  
 Machine learning fundamentals cover the core ideas needed to build predictive models, including how algorithms learn patterns from data and make predictions on new data. This includes concepts like training, testing, overfitting, and evaluation. A solid grasp of these fundamentals makes it easier to pick the right approach for a given problem.
 
-- `@roadmap` [Visit the Dedicated Machine Learning Roadmap](https://roadmap.sh/machine-learning)
+- `@roadmap` [Visit the Dedicated Machine Learning Roadmap Roadmap](https://roadmap.sh/machine-learning)
 - `@course` [Fundamentals of Machine Learning - Microsoft](https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/)
 - `@course` [MLCourse.ai](https://mlcourse.ai/)
 - `@course` [Fast.ai](https://course.fast.ai)
@@ -281,7 +281,7 @@ Monitoring and observability involve tracking the performance and health of mach
  
 Data lineage is the record of where data comes from, how it moves, and how it gets transformed before reaching a model. It shows the full path from raw source to final training dataset. This helps teams trace errors back to their origin and understand the impact of a change made upstream.
 
-- `@article` [What is Data Lineage?](https://www.ibm.com/topics/data-lineage)
+- `@article` [What is Data Lineage? - IBM](https://www.ibm.com/topics/data-lineage)
 - `@article` [What is a Feature Store](https://www.snowflake.com/guides/what-feature-store-machine-learning/)
 
 #### Model Training & Serving
@@ -439,14 +439,14 @@ Mathematics and statistics provide the foundational principles for understanding
 - `@article` [How to Learn the Math Needed for Data Science](https://towardsdatascience.com/how-to-learn-the-math-needed-for-data-science-86c6643b0c59/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - `@video` [Lec 1 | MIT 6.042J Mathematics for Computer Science, Fall 2010](https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLB7540DEDD482705B)
 - `@video` [Discrete Mathematics by Shai Simonson (19 videos)](https://www.youtube.com/playlist?list=PLWX710qNZo_sNlSWRMVIh6kfTjolNaZ8t)
-- `@video` [tatistics - A Full University Course on Data Science Basics](https://www.youtube.com/watch?v=xxpc-HPKN28)
+- `@video` [Statistics - A Full University Course on Data Science Basics](https://www.youtube.com/watch?v=xxpc-HPKN28)
 
 #### Machine Learning
 
  
 Machine learning is a method of teaching computers to find patterns in data and make predictions or decisions without being explicitly programmed for the task. A model learns from examples during training, then applies what it learned to new, unseen data. It covers approaches like supervised, unsupervised, and reinforcement learning.
 
-- `@roadmap` [Visit the Dedicated Machine Learning Roadmap](https://roadmap.sh/machine-learning)
+- `@roadmap` [Visit the Dedicated Machine Learning Roadmap Roadmap](https://roadmap.sh/machine-learning)
 - `@book` [Machine Learning: The Basics](https://alexjungaalto.github.io/MLBasicsBook.pdf)
 - `@article` [What is Machine Learning (ML)?](https://www.ibm.com/topics/machine-learning)
 - `@video` [What is Machine Learning?](https://www.youtube.com/watch?v=9gGnTQTYNaE)
@@ -456,7 +456,7 @@ Machine learning is a method of teaching computers to find patterns in data and 
 
 Airflow is a platform used to programmatically author, schedule, and monitor workflows. It allows you to define workflows as Directed Acyclic Graphs (DAGs) of tasks, where each task represents a unit of work. Airflow then executes these tasks in the specified order, handling dependencies, retries, and logging along the way.
 
-- `@official` [Airflow](https://airflow.apache.org/)
+- `@official` [Apache Airflow](https://airflow.apache.org/)
 - `@official` [Airflow Docs](https://airflow.apache.org/docs)
 - `@opensource` [airflow](https://github.com/apache/airflow)
 - `@article` [Building Pipelines In Apache Airflow – For Beginners](https://towardsdatascience.com/building-pipelines-in-apache-airflow-for-beginners-58f87a1512d5/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
@@ -485,7 +485,7 @@ LIME (Local Interpretable Model-agnostic Explanations) is a technique used to un
 
 Deep learning is a subset of machine learning that uses artificial neural networks with multiple layers (hence "deep") to analyze data with complex structures. These networks learn hierarchical representations of data, where each layer extracts increasingly abstract features from the previous layer. This allows deep learning models to automatically discover intricate patterns and relationships in data, making them particularly effective for tasks like image recognition, natural language processing, and speech recognition.
 
-- `@roadmap` [Visit the Dedicated Machine Learning Roadmap](https://roadmap.sh/machine-learning)
+- `@roadmap` [Visit the Dedicated Machine Learning Roadmap Roadmap](https://roadmap.sh/machine-learning)
 - `@book` [Deep Learning Book](https://www.deeplearningbook.org/)
 - `@course` [Practical Deep Learning](https://course.fast.ai/)
 - `@article` [Introduction to Deep Learning](https://www.ibm.com/topics/deep-learning)
@@ -536,7 +536,7 @@ Scikit-learn is a Python library that provides simple and efficient tools for da
 - `@official` [scikit-learn: machine learning in Python](https://scikit-learn.org/)
 - `@opensource` [scikit-learn](https://github.com/scikit-learn/scikit-learn)
 - `@article` [What is Scikit-Learn (Sklearn)?](https://www.ibm.com/think/topics/scikit-learn)
-- `@video` [How to train and test a neural network using scikit-learn and Keras in Jupyter Notebook](https://www.youtube.com/watch?v=_JG71FIP1rk)
+- `@video` [How to train and test a neural network using scikit-learn and Keras in Jupyter Notebook.](https://www.youtube.com/watch?v=_JG71FIP1rk)
 - `@video` [Scikit-learn Crash Course - Machine Learning Library for Python](https://www.youtube.com/watch?v=0B5eIE_1vpU)
 
 #### TensorFlow

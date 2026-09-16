@@ -1049,7 +1049,7 @@
       },
       {
        "kind": "book",
-       "title": "Linear Algebra Done Right",
+       "title": "Linear Algebra Done Right - Sheldon Axler",
        "url": "https://linear.axler.net/LADR4e.pdf"
       },
       {
@@ -1914,7 +1914,7 @@
      "resources": [
       {
        "kind": "article",
-       "title": "Metrics and scoring: quantifying the quality of predictions",
+       "title": "Metrics and scoring: quantifying the quality of predictions | scikit-learn",
        "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
       },
       {

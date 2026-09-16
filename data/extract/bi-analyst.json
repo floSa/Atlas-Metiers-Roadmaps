@@ -331,7 +331,7 @@
      "resources": [
       {
        "kind": "article",
-       "title": "hat is Diagnostic Analytics?",
+       "title": "What is Diagnostic Analytics?",
        "url": "https://amplitude.com/explore/analytics/what-diagnostic-analytics"
       },
       {
@@ -355,7 +355,7 @@
       },
       {
        "kind": "video",
-       "title": "hat is Predictive Analytics?",
+       "title": "What is Predictive Analytics?",
        "url": "https://www.youtube.com/watch?v=cVibCHRSxB0"
       }
      ],
@@ -1168,7 +1168,7 @@
      "resources": [
       {
        "kind": "official",
-       "title": "SQL Roadmap",
+       "title": "Visit the Dedicated SQL Roadmap",
        "url": "https://roadmap.sh/sql"
       },
       {
@@ -1245,7 +1245,7 @@
      "resources": [
       {
        "kind": "official",
-       "title": "SQL Roadmap",
+       "title": "Visit the Dedicated SQL Roadmap",
        "url": "https://roadmap.sh/sql"
       },
       {
@@ -1274,7 +1274,7 @@
       },
       {
        "kind": "article",
-       "title": "SQLite Introduction",
+       "title": "SQLite Introduction - Beginners Guide to SQL and Databases",
        "url": "https://www.youtube.com/watch?v=8Xyn8R9eKB8"
       },
       {
@@ -1317,12 +1317,12 @@
      "resources": [
       {
        "kind": "official",
-       "title": "SQL Roadmap",
+       "title": "Visit the Dedicated SQL Roadmap",
        "url": "https://roadmap.sh/sql"
       },
       {
        "kind": "article",
-       "title": "Tutorial - Essential SQL For The Beginners",
+       "title": "SQL Tutorial - Essential SQL For The Beginners",
        "url": "https://www.sqltutorial.org/"
       }
      ],
@@ -1336,7 +1336,7 @@
      "resources": [
       {
        "kind": "official",
-       "title": "SQL Roadmap",
+       "title": "Visit the Dedicated SQL Roadmap",
        "url": "https://roadmap.sh/sql"
       },
       {
@@ -1363,7 +1363,7 @@
      "resources": [
       {
        "kind": "official",
-       "title": "SQL Roadmap",
+       "title": "Visit the Dedicated SQL Roadmap",
        "url": "https://roadmap.sh/sql"
       },
       {
@@ -1829,7 +1829,7 @@
      "resources": [
       {
        "kind": "official",
-       "title": "ooker business intelligence platform embedded analytics",
+       "title": "Looker business intelligence platform embedded analytics",
        "url": "https://cloud.google.com/looker"
       },
       {
@@ -1885,7 +1885,7 @@
       },
       {
        "kind": "video",
-       "title": "hat is Cloud Computing?",
+       "title": "What is Cloud Computing? - Amazon Web Services",
        "url": "https://www.youtube.com/watch?v=mxT233EdY5c"
       }
      ],
@@ -1931,7 +1931,7 @@
       },
       {
        "kind": "article",
-       "title": "Google Cloud",
+       "title": "Google Cloud Platform",
        "url": "https://cloud.google.com/"
       },
       {
@@ -2855,7 +2855,7 @@
      "resources": [
       {
        "kind": "official",
-       "title": "Airflow",
+       "title": "Apache Airflow",
        "url": "https://airflow.apache.org/"
       },
       {
@@ -2884,7 +2884,7 @@
      "resources": [
       {
        "kind": "course",
-       "title": "dbt Official Course",
+       "title": "dbt Official Courses",
        "url": "https://learn.getdbt.com/catalog"
       },
       {

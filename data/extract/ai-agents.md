@@ -268,7 +268,7 @@ Chain of Thought (CoT) is a way for an AI agent to think out loud. Before giving
 
 A tool definition describes a function an agent can call, including its name, purpose, and the parameters it accepts, usually specified in a structured format like JSON schema. The language model reads this definition to decide when the tool is relevant and how to fill in its arguments. Clear, well documented tool definitions directly affect how reliably an agent chooses and uses the right tool.
 
-- `@article` [What are Tools?](https://huggingface.co/learn/agents-course/en/unit1/tools)
+- `@article` [What are Tools? - Hugging Face](https://huggingface.co/learn/agents-course/en/unit1/tools)
 - `@article` [Understanding the Agent Function in AI: Key Roles and Responsibilities](https://genezio.com/blog/ai-agents-101-understanding-their-role-and-functionality/)
 
 ## Example Usecases
@@ -480,7 +480,7 @@ An MCP server exposes a set of tools, data, or capabilities to any compatible cl
 A Local Desktop deployment means running the MCP server directly on your own computer instead of a remote cloud or server. You install the MCP software, needed runtimes, and model files onto your desktop or laptop. The server then listens on a local address like `127.0.0.1:8000`, accessible only from the same machine unless you open ports manually. This setup is great for fast tests, personal demos, or private experiments since you keep full control and avoid cloud costs. However, it's limited by your hardware's speed and memory, and others cannot access it without tunneling tools like ngrok or local port forwarding.
 
 - `@article` [Build a Simple Local MCP Server](https://blog.stackademic.com/build-simple-local-mcp-server-5434d19572a4)
-- `@article` [How to Build and Host Your Own MCP Servers in Easy Steps](https://collabnix.com/how-to-build-and-host-your-own-mcp-servers-in-easy-steps/)
+- `@article` [How to Build and Host Your Own MCP Servers in Easy Steps?](https://collabnix.com/how-to-build-and-host-your-own-mcp-servers-in-easy-steps/)
 - `@article` [Expose localhost to Internet](https://ngrok.com/docs)
 - `@video` [Run a Local Server on Your Machine](https://www.youtube.com/watch?v=ldGl6L4Vktk)
 
@@ -542,7 +542,7 @@ Summarization or compression reduces the size of stored or in context informatio
 
 Forgetting or aging strategies decide what stored information an agent should discard or deprioritize over time, since keeping everything indefinitely is neither practical nor useful. Common approaches include removing information after a set time, lowering its priority if it is not accessed, or replacing outdated details with newer ones. These strategies keep an agent's memory relevant and prevent it from being cluttered with stale or contradictory information.
 
-- `@article` [Memory Management](https://python.langchain.com/docs/how_to/chatbots_memory/)
+- `@article` [Memory Management in AI Agents](https://python.langchain.com/docs/how_to/chatbots_memory/)
 - `@article` [Memory Management for AI Agents](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/memory-management-for-ai-agents/4406359)
 
 ## Common Architectures
@@ -627,7 +627,7 @@ Integration testing for flows checks that an agent behaves correctly across a fu
 
 - `@article` [Integration Testing for AI-based Features with Humans](https://www.microsoft.com/en-us/research/publication/hint-integration-testing-for-ai-based-features-with-humans-in-the-loop/)
 - `@article` [Integration Testing and Unit Testing in AI](https://www.aviator.co/blog/integration-testing-and-unit-testing-in-the-age-of-ai/)
-- `@article` [Integration Testing](https://www.guru99.com/integration-testing.html)
+- `@article` [Integration Testing Tutorial](https://www.guru99.com/integration-testing.html)
 
 #### Human in the Loop Evaluation
 

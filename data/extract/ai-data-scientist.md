@@ -91,7 +91,7 @@ Exploratory Data Analysis (EDA) is an approach to analyzing data sets to summari
 
 Machine learning involves creating algorithms that allow computer systems to learn from data without being explicitly programmed. These algorithms identify patterns, make predictions, and improve their performance over time through experience. The learning process can be supervised, unsupervised, or reinforcement-based, depending on the type of data and the desired outcome.
 
-- `@roadmap` [Visit the Dedicated Machine Learning Roadmap](https://roadmap.sh/machine-learning)
+- `@roadmap` [Visit the Dedicated Machine Learning Roadmap Roadmap](https://roadmap.sh/machine-learning)
 
 ## 6
 
@@ -103,7 +103,7 @@ Machine learning involves creating algorithms that allow computer systems to lea
 
 Deep Learning is a subset of machine learning that uses artificial neural networks with multiple layers (hence "deep") to analyze data and learn complex patterns. These networks are inspired by the structure and function of the human brain, and they are particularly effective at tasks like image recognition, natural language processing, and speech recognition. By processing data through these layers, deep learning models can automatically extract features and make predictions with high accuracy.
 
-- `@roadmap` [Visit the Dedicated Machine Learning Roadmap](https://roadmap.sh/machine-learning)
+- `@roadmap` [Visit the Dedicated Machine Learning Roadmap Roadmap](https://roadmap.sh/machine-learning)
 
 ## 7
 

@@ -63,7 +63,7 @@
       },
       {
        "kind": "official",
-       "title": "Python",
+       "title": "Python Website",
        "url": "https://www.python.org/"
       },
       {
@@ -192,7 +192,7 @@
      "resources": [
       {
        "kind": "official",
-       "title": "What is CI/CD?",
+       "title": "What is CI/CD? - GitLab",
        "url": "https://about.gitlab.com/topics/ci-cd/"
       },
       {
@@ -478,7 +478,7 @@
      "resources": [
       {
        "kind": "roadmap",
-       "title": "Visit the Dedicated Machine Learning Roadmap",
+       "title": "Visit the Dedicated Machine Learning Roadmap Roadmap",
        "url": "https://roadmap.sh/machine-learning"
       },
       {
@@ -865,7 +865,7 @@
      "resources": [
       {
        "kind": "article",
-       "title": "What is Data Lineage?",
+       "title": "What is Data Lineage? - IBM",
        "url": "https://www.ibm.com/topics/data-lineage"
       },
       {
@@ -1385,7 +1385,7 @@
       },
       {
        "kind": "video",
-       "title": "tatistics - A Full University Course on Data Science Basics",
+       "title": "Statistics - A Full University Course on Data Science Basics",
        "url": "https://www.youtube.com/watch?v=xxpc-HPKN28"
       }
      ],
@@ -1399,7 +1399,7 @@
      "resources": [
       {
        "kind": "roadmap",
-       "title": "Visit the Dedicated Machine Learning Roadmap",
+       "title": "Visit the Dedicated Machine Learning Roadmap Roadmap",
        "url": "https://roadmap.sh/machine-learning"
       },
       {
@@ -1433,7 +1433,7 @@
      "resources": [
       {
        "kind": "official",
-       "title": "Airflow",
+       "title": "Apache Airflow",
        "url": "https://airflow.apache.org/"
       },
       {
@@ -1530,7 +1530,7 @@
      "resources": [
       {
        "kind": "roadmap",
-       "title": "Visit the Dedicated Machine Learning Roadmap",
+       "title": "Visit the Dedicated Machine Learning Roadmap Roadmap",
        "url": "https://roadmap.sh/machine-learning"
       },
       {
@@ -1700,7 +1700,7 @@
       },
       {
        "kind": "video",
-       "title": "How to train and test a neural network using scikit-learn and Keras in Jupyter Notebook",
+       "title": "How to train and test a neural network using scikit-learn and Keras in Jupyter Notebook.",
        "url": "https://www.youtube.com/watch?v=_JG71FIP1rk"
       },
       {

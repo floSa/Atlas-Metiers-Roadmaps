@@ -765,7 +765,7 @@
      "resources": [
       {
        "kind": "article",
-       "title": "What are Tools?",
+       "title": "What are Tools? - Hugging Face",
        "url": "https://huggingface.co/learn/agents-course/en/unit1/tools"
       },
       {
@@ -1395,7 +1395,7 @@
       },
       {
        "kind": "article",
-       "title": "How to Build and Host Your Own MCP Servers in Easy Steps",
+       "title": "How to Build and Host Your Own MCP Servers in Easy Steps?",
        "url": "https://collabnix.com/how-to-build-and-host-your-own-mcp-servers-in-easy-steps/"
       },
       {
@@ -1583,7 +1583,7 @@
      "resources": [
       {
        "kind": "article",
-       "title": "Memory Management",
+       "title": "Memory Management in AI Agents",
        "url": "https://python.langchain.com/docs/how_to/chatbots_memory/"
       },
       {
@@ -1833,7 +1833,7 @@
       },
       {
        "kind": "article",
-       "title": "Integration Testing",
+       "title": "Integration Testing Tutorial",
        "url": "https://www.guru99.com/integration-testing.html"
       }
      ],

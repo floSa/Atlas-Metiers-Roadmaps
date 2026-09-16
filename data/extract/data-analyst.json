@@ -1147,7 +1147,7 @@
      "resources": [
       {
        "kind": "article",
-       "title": "Hypothesis Testing - 4 Step",
+       "title": "Hypothesis Testing - 4 Steps",
        "url": "https://www.investopedia.com/terms/h/hypothesistesting.asp"
       }
      ],
@@ -1399,7 +1399,7 @@
      "resources": [
       {
        "kind": "roadmap",
-       "title": "Visit the Dedicated Machine Learning Roadmap",
+       "title": "Visit the Dedicated Machine Learning Roadmap Roadmap",
        "url": "https://roadmap.sh/machine-learning"
       }
      ],
@@ -1612,7 +1612,7 @@
       },
       {
        "kind": "article",
-       "title": "Nearest Neighbors",
+       "title": "Nearest Neighbors | scikit-learn",
        "url": "https://scikit-learn.org/stable/modules/neighbors.html"
       }
      ],
@@ -1778,7 +1778,7 @@
      "resources": [
       {
        "kind": "roadmap",
-       "title": "Visit the Dedicated Machine Learning Roadmap",
+       "title": "Visit the Dedicated Machine Learning Roadmap Roadmap",
        "url": "https://roadmap.sh/machine-learning"
       },
       {

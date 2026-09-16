@@ -390,7 +390,7 @@ Calculus is a branch of mathematics that deals with continuous change. It provid
 Linear algebra is a branch of mathematics that deals with vector spaces and linear transformations between those spaces. It involves concepts like vectors, matrices, and systems of linear equations, and provides tools for manipulating and solving problems involving these entities. Operations such as matrix multiplication, decomposition, and eigenvalue analysis are fundamental to this field.
 
 - `@book` [Linear algebra for data science](http://mitran-lab.amath.unc.edu/courses/MATH347DS/textbook.pdf)
-- `@book` [Linear Algebra Done Right](https://linear.axler.net/LADR4e.pdf)
+- `@book` [Linear Algebra Done Right - Sheldon Axler](https://linear.axler.net/LADR4e.pdf)
 - `@article` [How I learned Linear Algebra, Probability and Statistics for Data Science](https://towardsdatascience.com/how-i-learned-linear-algebra-probability-and-statistics-for-data-science-b9d1c34dfa56/)
 - `@video` [Linear Algebra for Machine Learning](https://www.youtube.com/watch?v=QCPJ0VdpM00)
 
@@ -699,7 +699,7 @@ Supervised learning is a type of machine learning where an algorithm learns from
 
 In scikit-learn, prediction means using a trained machine learning model to estimate an output (or target variable) for new, unseen data. After a model is trained on a dataset, it learns the relationship between the input features and the target variable. To make a prediction, you provide the model with new input features, and it uses the learned relationship to generate a predicted value for the target. This is typically done using the `.predict()` method on a trained model object, which takes the new data as input and returns the model's predictions.
 
-- `@article` [Metrics and scoring: quantifying the quality of predictions](https://scikit-learn.org/stable/modules/model_evaluation.html)
+- `@article` [Metrics and scoring: quantifying the quality of predictions | scikit-learn](https://scikit-learn.org/stable/modules/model_evaluation.html)
 - `@article` [How to Make Predictions with scikit-learn](https://machinelearningmastery.com/make-predictions-scikit-learn/)
 
 ### Classification

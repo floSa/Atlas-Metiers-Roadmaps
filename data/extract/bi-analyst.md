@@ -143,7 +143,7 @@ Business operations are traditionally grouped in 3 hierarchical levels of manage
 
 Diagnostic analytics, as a crucial type of data analytics, is focused on studying past performance to understand why something happened. This is an integral part of the work done by data analysts. Through techniques such as drill-down, data discovery, correlations, and cause-effect analysis, data analysts utilizing diagnostic analytics can look beyond general trends and identify the root cause of changes observed in the data. Consequently, this enables businesses to address operational and strategic issues effectively, by allowing them to grasp the reasons behind such issues. For every data analyst, the skill of performing diagnostic data analytics is a must-have asset that enhances their analysis capability.
 
-- `@article` [hat is Diagnostic Analytics?](https://amplitude.com/explore/analytics/what-diagnostic-analytics)
+- `@article` [What is Diagnostic Analytics?](https://amplitude.com/explore/analytics/what-diagnostic-analytics)
 - `@video` [What is Diagnostic Analytics? | Understanding Data-Driven Decision Making](https://www.youtube.com/watch?v=ikZjeAC1yJ0)
 
 #### Predictive Analysis
@@ -151,7 +151,7 @@ Diagnostic analytics, as a crucial type of data analytics, is focused on studyin
 Predictive analysis is a crucial type of data analytics that any competent data analyst should comprehend. It refers to the practice of extracting information from existing data sets in order to determine patterns and forecast future outcomes and trends. Data analysts apply statistical algorithms, machine learning techniques, and artificial intelligence to the data to anticipate future results. Predictive analysis enables organizations to be proactive, forward-thinking, and strategic by providing them valuable insights on future occurrences. It's a powerful tool that gives companies a significant competitive edge by enabling risk management, opportunity identification, and strategic decision-making.
 
 - `@article` [What is Predictive Analytics? - Google](https://cloud.google.com/learn/what-is-predictive-analytics)
-- `@video` [hat is Predictive Analytics?](https://www.youtube.com/watch?v=cVibCHRSxB0)
+- `@video` [What is Predictive Analytics?](https://www.youtube.com/watch?v=cVibCHRSxB0)
 
 #### Prescriptive Analysis
 
@@ -478,7 +478,7 @@ Unstructured data refers to information that doesn't have a predefined format or
 
 Learning how to make basic SQL queries in esencial for BI analysts. Queries are the foundation for retrieving data from a SQL database. They involve using the `SELECT` statement to specify which columns to retrieve, the `FROM` clause to indicate the table to retrieve data from, and optionally, the `WHERE` clause to filter the data based on specific conditions. These queries allow you to extract specific information from a database, forming the basis for more complex data analysis and reporting.
 
-- `@official` [SQL Roadmap](https://roadmap.sh/sql)
+- `@official` [Visit the Dedicated SQL Roadmap](https://roadmap.sh/sql)
 - `@article` [Basic SQL Commands](https://www.freecodecamp.org/news/basic-sql-commands/)
 
 #### MySQL
@@ -503,7 +503,7 @@ PostgreSQL is an advanced, open-source relational database management system (RD
 
 Advanced SQL queries go beyond basic data retrieval and manipulation. They involve using more complex techniques like subqueries, window functions, common table expressions (CTEs), and stored procedures to analyze data in greater depth. These techniques allow you to perform sophisticated calculations, compare rows, and organize data for more meaningful insights.
 
-- `@official` [SQL Roadmap](https://roadmap.sh/sql)
+- `@official` [Visit the Dedicated SQL Roadmap](https://roadmap.sh/sql)
 - `@article` [25 Advanced SQL Query Examples](https://learnsql.com/blog/25-advanced-sql-query-examples/)
 
 #### SQLite
@@ -512,7 +512,7 @@ SQLite is a lightweight, serverless, self-contained SQL database engine that is 
 
 - `@official` [SQLite](https://www.sqlite.org/index.html)
 - `@article` [SQLite Tutorial](https://www.sqlitetutorial.net/)
-- `@article` [SQLite Introduction](https://www.youtube.com/watch?v=8Xyn8R9eKB8)
+- `@article` [SQLite Introduction - Beginners Guide to SQL and Databases](https://www.youtube.com/watch?v=8Xyn8R9eKB8)
 - `@video` [SQLite Introduction - Beginners Guide to SQL and Databases](https://www.youtube.com/watch?v=8Xyn8R9eKB8)
 
 #### Oracle
@@ -527,14 +527,14 @@ Oracle Database is a highly robust, enterprise-grade relational database managem
 
 SQL stands for Structured Query Language. It is a standardized programming language designed to manage and interact with relational database management systems (RDBMS). SQL allows you to create, read, edit, and delete data stored in database tables by writing specific queries.
 
-- `@official` [SQL Roadmap](https://roadmap.sh/sql)
-- `@article` [Tutorial - Essential SQL For The Beginners](https://www.sqltutorial.org/)
+- `@official` [Visit the Dedicated SQL Roadmap](https://roadmap.sh/sql)
+- `@article` [SQL Tutorial - Essential SQL For The Beginners](https://www.sqltutorial.org/)
 
 #### Window Functions
 
 Window functions in SQL perform calculations across a set of table rows that are related to the current row. Unlike aggregate functions that group rows into a single output row, window functions retain the individual rows while adding calculated values based on the window frame defined for each row. This allows you to compute things like running totals, moving averages, or rank values within a partition of your data without collapsing the original dataset.
 
-- `@official` [SQL Roadmap](https://roadmap.sh/sql)
+- `@official` [Visit the Dedicated SQL Roadmap](https://roadmap.sh/sql)
 - `@article` [SQL Window Functions](https://mode.com/sql-tutorial/sql-window-functions)
 
 ### Popular Databases
@@ -545,7 +545,7 @@ Relational databases are a common way to store and organize data in tables with 
 
 SQL performance tuning involves optimizing SQL queries and database structures to improve the speed and efficiency of data retrieval and manipulation. This includes techniques like indexing, query optimization, and database configuration adjustments to reduce query execution time and minimize resource consumption. The goal is to ensure that SQL queries run quickly and efficiently, providing timely and accurate data for analysis and reporting.
 
-- `@official` [SQL Roadmap](https://roadmap.sh/sql)
+- `@official` [Visit the Dedicated SQL Roadmap](https://roadmap.sh/sql)
 - `@article` [Performance Tuning SQL Queries](https://mode.com/sql-tutorial/sql-performance-tuning)
 
 ### Data Cleaning
@@ -733,7 +733,7 @@ Qlik is a data analytics platform that allows users to explore data, discover in
 
 Looker is a Google cloud-based business intelligence and data analytics platform. It allows users to explore, analyze, and visualize data to gain insights and make data-driven decisions. Looker is known for its ability to connect to various data sources, create custom dashboards, and generate reports. It also facilitates the integration of analytics, visualizations, and relevant information into business processes.
 
-- `@official` [ooker business intelligence platform embedded analytics](https://cloud.google.com/looker)
+- `@official` [Looker business intelligence platform embedded analytics](https://cloud.google.com/looker)
 - `@official` [What is Looker?](ttps://www.youtube.com/watch?v=EmkNPAzla0Y&pp=0gcJCfwAo7VqN5tD)
 
 ### Excel
@@ -753,7 +753,7 @@ BI Platforms are software systems that provide a range of tools and capabilities
 
 - `@article` [Cloud Computing - IBM](https://www.ibm.com/think/topics/cloud-computing)
 - `@article` [What is Cloud Computing? - Azure](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-cloud-computing)
-- `@video` [hat is Cloud Computing?](https://www.youtube.com/watch?v=mxT233EdY5c)
+- `@video` [What is Cloud Computing? - Amazon Web Services](https://www.youtube.com/watch?v=mxT233EdY5c)
 
 #### Cloud data warehouses
 
@@ -771,7 +771,7 @@ Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure are 
 
 - `@official` [Amazon Web Services](https://aws.amazon.com/)
 - `@article` [Microsoft Azure](https://azure.microsoft.com/)
-- `@article` [Google Cloud](https://cloud.google.com/)
+- `@article` [Google Cloud Platform](https://cloud.google.com/)
 - `@video` [The Basics You Need to Know about AWS, Azure, and Google Cloud](https://www.youtube.com/watch?v=wFsOjHgvUfM)
 
 #### Risk Analytics
@@ -1146,7 +1146,7 @@ ETL (Extract, Transform, Load) tools are software applications used to move data
 
 Airflow is a platform to programmatically author, schedule and monitor workflows. Use airflow to author workflows as directed acyclic graphs (DAGs) of tasks. The airflow scheduler executes your tasks on an array of workers while following the specified dependencies. Rich command line utilities make performing complex surgeries on DAGs a snap. The rich user interface makes it easy to visualize pipelines running in production, monitor progress, and troubleshoot issues when needed. When workflows are defined as code, they become more maintainable, versionable, testable, and collaborative.
 
-- `@official` [Airflow](https://airflow.apache.org/)
+- `@official` [Apache Airflow](https://airflow.apache.org/)
 - `@official` [Airflow Documentation](https://airflow.apache.org/docs)
 - `@video` [Apache Airflow Tutorial for Data Engineers](https://www.youtube.com/watch?v=y5rYZLBZ_Fw)
 - `@feed` [Explore top posts about Apache Airflow](https://app.daily.dev/tags/apache-airflow?ref=roadmapsh)
@@ -1155,7 +1155,7 @@ Airflow is a platform to programmatically author, schedule and monitor workflows
 
 dbt, also known as the data build tool, is designed to simplify the management of data warehouses and transform the data within. This is primarily the T, or transformation, within ELT (or sometimes ETL) processes. It allows for easy transition between data warehouse types, such as Snowflake, BigQuery, Postgres, or DuckDB. dbt also provides the ability to use SQL across teams of multiple users, simplifying interaction. In addition, dbt translates between SQL dialects as appropriate to connect to different data sources and warehouses.
 
-- `@course` [dbt Official Course](https://learn.getdbt.com/catalog)
+- `@course` [dbt Official Courses](https://learn.getdbt.com/catalog)
 - `@official` [dbt](https://www.getdbt.com/product/what-is-dbt)
 - `@official` [dbt Docs](https://docs.getdbt.com/docs/build/documentation)
 

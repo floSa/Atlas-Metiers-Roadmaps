@@ -2471,12 +2471,12 @@
      "resources": [
       {
        "kind": "article",
-       "title": "What are Containers?",
+       "title": "What are Containers? - Google Cloud",
        "url": "https://cloud.google.com/learn/what-are-containers"
       },
       {
        "kind": "article",
-       "title": "Containers - The New Stack",
+       "title": "Articles about Containers - The New Stack",
        "url": "https://thenewstack.io/category/containers/"
       },
       {

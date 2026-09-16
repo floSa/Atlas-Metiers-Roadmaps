@@ -420,7 +420,7 @@ Visualizing distributions helps analysts understand the shape, spread, and outli
 
 Hypothesis testing is a statistical method for evaluating whether observed data provides enough evidence to support or reject a claim about a population. It involves defining a null hypothesis, choosing a significance level, computing a test statistic, and comparing it to a critical value or p-value. Common tests include t-tests, chi-square tests, and ANOVA.
 
-- `@article` [Hypothesis Testing - 4 Step](https://www.investopedia.com/terms/h/hypothesistesting.asp)
+- `@article` [Hypothesis Testing - 4 Steps](https://www.investopedia.com/terms/h/hypothesistesting.asp)
 
 #### Matplotlib
 
@@ -514,7 +514,7 @@ Reinforcement learning is a type of machine learning where an agent learns to ma
 
 Machine learning is the field of building systems that learn from data to make predictions or decisions. For data analysts, understanding ML provides tools to tackle problems that go beyond traditional statistical methods, such as classifying text, detecting anomalies, and building recommendation systems. Analysts typically apply ML algorithms rather than build them from scratch.
 
-- `@roadmap` [Visit the Dedicated Machine Learning Roadmap](https://roadmap.sh/machine-learning)
+- `@roadmap` [Visit the Dedicated Machine Learning Roadmap Roadmap](https://roadmap.sh/machine-learning)
 
 #### Scatter Plot
 
@@ -596,7 +596,7 @@ Naive Bayes is a probabilistic classification algorithm based on Bayes' theorem,
 K-Nearest Neighbors (KNN) is a simple supervised learning algorithm that classifies a data point based on the majority class of its K nearest neighbors in the feature space. It requires no training phase but is slow at prediction time for large datasets. KNN is also used for regression by averaging the values of the nearest neighbors.
 
 - `@article` [What is the k-nearest neighbors (KNN) algorithm?](https://www.ibm.com/topics/knn#:~:text=The%20k%2Dnearest%20neighbors%20KNN,used%20in%20machine%20learning%20today.)
-- `@article` [Nearest Neighbors](https://scikit-learn.org/stable/modules/neighbors.html)
+- `@article` [Nearest Neighbors | scikit-learn](https://scikit-learn.org/stable/modules/neighbors.html)
 
 #### CNNs
 
@@ -658,7 +658,7 @@ Apache Spark is a distributed data processing engine for large-scale batch and s
 
 Deep learning is a subset of machine learning that uses neural networks with many layers to learn representations from large amounts of data. It excels at tasks like image recognition, natural language processing, and speech recognition. For data analysts, deep learning is an advanced optional topic that extends capabilities for unstructured data problems.
 
-- `@roadmap` [Visit the Dedicated Machine Learning Roadmap](https://roadmap.sh/machine-learning)
+- `@roadmap` [Visit the Dedicated Machine Learning Roadmap Roadmap](https://roadmap.sh/machine-learning)
 - `@article` [Deep Learning for Data Analysis](https://www.ibm.com/think/topics/deep-learning)
 
 #### Tensorflow

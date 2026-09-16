@@ -88,7 +88,7 @@ Training refers to the process of teaching a machine learning model to recognize
 Embeddings are dense, continuous vector representations of data, such as words, sentences, or images, in a lower-dimensional space. They capture the semantic relationships and patterns in the data, where similar items are placed closer together in the vector space. In machine learning, embeddings are used to convert complex data into a numerical form that models can process more easily. For example, word embeddings represent words based on their meanings and contexts, allowing models to understand relationships like synonyms or analogies. Embeddings are widely used in tasks like natural language processing, recommendation systems, and image recognition to improve model performance and efficiency.
 
 - `@article` [What are Embeddings in Machine Learning?](https://www.cloudflare.com/en-gb/learning/ai/what-are-embeddings/)
-- `@article` [What is Embedding?](https://www.ibm.com/topics/embedding)
+- `@article` [What is Embedding? -IBM](https://www.ibm.com/topics/embedding)
 - `@video` [What are Word Embeddings](https://www.youtube.com/watch?v=wgfSDrqYMJ4)
 
 #### Vector DBs
@@ -119,7 +119,7 @@ Retrieval-Augmented Generation (RAG) is an AI approach that combines information
 The context window is the amount of text an LLM can process in a single request, measured in tokens. It includes the system prompt, conversation history, retrieved documents, and the model's own output as it generates a response. Once the total content exceeds this limit, older or lower priority information has to be dropped, summarized, or moved out of the active context. Model providers have expanded context windows significantly over the past few years, but a larger window does not guarantee the model uses all of it well.
 
 - `@article` [What is a context window?](https://www.ibm.com/think/topics/context-window)
-- `@article` [Coding Agents Don’t Need Bigger Context Windows](https://towardsdatascience.com/coding-agents-dont-need-bigger-context-windows-they-need-a-context-compiler/)
+- `@article` [Coding Agents Don’t Need Bigger Context Windows — They Need a Context Compiler](https://towardsdatascience.com/coding-agents-dont-need-bigger-context-windows-they-need-a-context-compiler/)
 - `@video` [What is a Context Window? Unlocking LLM Secrets](https://www.youtube.com/watch?v=-QVoIxEpFkM)
 - `@video` [Why LLMs get dumb (Context Windows Explained)](https://www.youtube.com/watch?v=TeQDr4DkLYo)
 
@@ -438,7 +438,7 @@ A context layer is the part of an AI system responsible for gathering, organizin
 
 Few-shot prompting is a technique used with large language models (LLMs) where you provide a small number of example input-output pairs in the prompt itself. These examples demonstrate the desired behavior of the LLM for a specific task. By seeing these "few shots" of correct answers, the LLM can better understand the pattern and generate accurate and relevant responses for new, unseen inputs.
 
-- `@article` [Few-Shot Prompting](https://www.promptingguide.ai/techniques/fewshot)
+- `@article` [Few-Shot Prompting - DAIR.AI](https://www.promptingguide.ai/techniques/fewshot)
 - `@article` [What is few shot prompting?](https://www.ibm.com/think/topics/few-shot-prompting)
 - `@video` [Discover Few-Shot Prompting | Google AI Essentials](https://www.youtube.com/watch?v=9qdgEBVkWR4)
 
@@ -488,7 +488,7 @@ Context evaluation measures whether the information delivered to a model actuall
 Zero-shot prompting is a prompt engineering method that relies on the pretraining of a large language model (LLM) to infer an appropriate response. In contrast to other prompt engineering methods, such as few-shot prompting, models aren’t provided with examples of output when prompting with the zero-shot technique.
 
 - `@article` [What is zero-shot prompting?](https://www.ibm.com/think/topics/zero-shot-prompting)
-- `@article` [Zero-Shot Prompting](https://www.promptingguide.ai/techniques/zeroshot)
+- `@article` [Zero-Shot Prompting - DAIR.AI](https://www.promptingguide.ai/techniques/zeroshot)
 - `@video` [Zero-shot, One-shot and Few-shot Prompting Explained | Prompt Engineering 101](https://www.youtube.com/watch?v=sW5xoicq5TY)
 
 #### Memory Systems
@@ -674,7 +674,7 @@ Robust prompt engineering involves carefully crafting inputs to guide AI models 
 
 To know your customer means deeply understanding the needs, behaviors, and expectations of your target users. This ensures the tools you create are tailored precisely for their intended purpose, while also being designed to prevent misuse or unintended applications. By clearly defining the tool’s functionality and boundaries, you can align its features with the users’ goals while incorporating safeguards that limit its use in contexts it wasn’t designed for. This approach enhances both the tool’s effectiveness and safety, reducing the risk of improper use.
 
-- `@article` [Assigning Roles](https://learnprompting.org/docs/basics/roles)
+- `@article` [Assigning Roles to Chatbots - LearnPrompting](https://learnprompting.org/docs/basics/roles)
 
 #### Constraining outputs and inputs
 
@@ -901,7 +901,7 @@ Anomaly detection with embeddings works by transforming data, such as text, imag
 
 Retrieval-Augmented Generation (RAG) combines information retrieval with language generation to produce more accurate, context-aware responses. It uses two components: a retriever, which searches a database to find relevant information, and a generator, which crafts a response based on the retrieved data. Implementing RAG involves using a retrieval model (e.g., embeddings and vector search) alongside a generative language model (like GPT). The process starts by converting a query into embeddings, retrieving relevant documents from a vector database, and feeding them to the language model, which then generates a coherent, informed response. This approach grounds outputs in real-world data, resulting in more reliable and detailed answers.
 
-- `@article` [What is RAG?](https://aws.amazon.com/what-is/retrieval-augmented-generation/)
+- `@article` [What is RAG? - Retrieval-Augmented Generation AI Explained](https://aws.amazon.com/what-is/retrieval-augmented-generation/)
 - `@article` [RAG Explained: Understanding Embeddings, Similarity, and Retrieval](https://towardsdatascience.com/rag-explained-understanding-embeddings-similarity-and-retrieval/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - `@video` [What is Retrieval-Augmented Generation? IBM](https://www.youtube.com/watch?v=T-D1OfcDW1M)
 
@@ -911,7 +911,7 @@ Retrieval-Augmented Generation (RAG) combines information retrieval with languag
 
 The Google Gemini API provides developers with programmatic access to Google's Gemini family of multimodal AI models. It allows applications to understand and generate content across text, images, audio, and video. Developers can use this API to build features like conversational interfaces, content creation tools, and systems that can analyze and respond to complex multi-sensory data.
 
-- `@official` [Gemini API](https://ai.google.dev/gemini-api/docs)
+- `@official` [Gemini API Documentation](https://ai.google.dev/gemini-api/docs)
 - `@article` [Everything you need to know about the Gemini API as a developer in less than 5 minutes](https://medium.com/around-the-prompt/everything-you-need-to-know-about-the-gemini-api-as-a-developer-in-less-than-5-minutes-5e75343ccff9)
 - `@video` [Introduction to Gemini APIs and AI Studio](https://www.youtube.com/watch?v=4oyqd7CB09c)
 

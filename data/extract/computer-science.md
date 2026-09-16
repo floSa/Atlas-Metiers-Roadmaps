@@ -414,7 +414,7 @@ Gang of Four (GoF) design patterns are a set of 23 design patterns that were fir
 
 Little Endian is a way of storing data in memory. It is the opposite of Big Endian. In Little Endian, the least significant byte is stored first. In Big Endian, the most significant byte is stored first.
 
-- `@video` [Big Endian vs Little Endian](https://www.youtube.com/watch?v=JrNF0KRAlyo)
+- `@video` [Big Endian vs Little Endian.mp4](https://www.youtube.com/watch?v=JrNF0KRAlyo)
 - `@video` [Endianness Explained With an Egg - Computerphile](https://www.youtube.com/watch?v=NcaiHcBvDR4)
 
 #### Architectural Patterns
@@ -688,7 +688,7 @@ A socket is an interface for network communication. It is a way for two programs
 
 A database is a collection of useful data of one or more related organizations structured in a way to make data an asset to the organization. A database management system is a software designed to assist in maintaining and extracting large collections of data in a timely fashion.
 
-- `@article` [What is a Database?](https://www.oracle.com/database/what-is-database/)
+- `@article` [What is a Database? - Oracle](https://www.oracle.com/database/what-is-database/)
 - `@article` [What are Databases?](https://www.prisma.io/dataguide/intro/what-are-databases)
 - `@video` [DBMS by Stanford](https://www.youtube.com/watch?v=D-k-h0GuFmE&list=PL9ysvtVnryGpnIj9rcIqNDxakUn6v72Hm)
 
@@ -903,7 +903,7 @@ Federation (or functional partitioning) splits up databases by function. The fed
 
 REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other.
 
-- `@article` [What is a REST API?](https://www.redhat.com/en/topics/api/what-is-a-rest-api)
+- `@article` [What is a REST API? - Red Hat](https://www.redhat.com/en/topics/api/what-is-a-rest-api)
 - `@article` [Roy Fieldings dissertation chapter, Representational State Transfer (REST)](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
 - `@article` [Learn REST: A RESTful Tutorial](https://restapitutorial.com/)
 

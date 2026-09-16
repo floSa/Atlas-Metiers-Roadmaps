@@ -127,6 +127,42 @@ def inside(node: dict, container: dict) -> bool:
     return cx0 <= cx <= cx1 and cy0 <= cy <= cy1
 
 
+def repair_titles(docs: list[dict]) -> int:
+    """Repare les titres de ressources abimes en amont, sans jamais en inventer.
+
+    Le catalogue roadmap.sh contient des titres tronques de leur premiere lettre
+    ("laude Code Tutorial") et des titres qui ne sont que leur propre URL. Quand
+    la meme adresse apparait ailleurs avec un titre intact — ce qui est frequent,
+    242 adresses etant citees par plusieurs roadmaps — on peut retablir le titre
+    par recoupement. C'est une deduplication, pas une reecriture : aucun titre
+    n'est fabrique, seulement choisi parmi ceux que la source fournit deja.
+    """
+    candidates: dict[str, set[str]] = {}
+    for doc in docs:
+        for section in doc["sections"]:
+            for node in section["nodes"]:
+                for res in node["resources"]:
+                    candidates.setdefault(res["url"], set()).add(res["title"])
+
+    def score(title: str, url: str) -> tuple:
+        # Un titre qui reprend l'URL n'en est pas un ; un titre plus long qui
+        # se termine par un plus court est la version non tronquee de celui-ci.
+        return (title.rstrip("/") not in url, len(title))
+
+    best = {url: max(titles, key=lambda t: score(t, url))
+            for url, titles in candidates.items() if len(titles) > 1}
+
+    repaired = 0
+    for doc in docs:
+        for section in doc["sections"]:
+            for node in section["nodes"]:
+                for res in node["resources"]:
+                    winner = best.get(res["url"])
+                    if winner and winner != res["title"] and res["title"] in winner:
+                        res["title"], repaired = winner, repaired + 1
+    return repaired
+
+
 def normalise(payload: dict, contents: dict[str, dict]) -> dict:
     """Reconstruit un plan ordonne a partir de la geometrie du schema.
 
@@ -253,21 +289,25 @@ def render_outline(doc: dict) -> str:
 
 
 def extract(slug: str) -> dict:
+    """Capture et normalise, sans ecrire le plan : la reparation des titres a
+    besoin de voir toutes les roadmaps avant de trancher."""
     payload = fetch_api(slug)
-    contents = load_node_contents(slug)
-    doc = normalise(payload, contents)
+    doc = normalise(payload, load_node_contents(slug))
 
     raw_dir = RAW / slug
     raw_dir.mkdir(parents=True, exist_ok=True)
     (raw_dir / f"{doc['capturedAt']}.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8"
     )
+    return doc
+
+
+def write_plan(doc: dict) -> None:
     EXTRACT.mkdir(parents=True, exist_ok=True)
-    (EXTRACT / f"{slug}.json").write_text(
+    (EXTRACT / f"{doc['slug']}.json").write_text(
         json.dumps(doc, ensure_ascii=False, indent=1), encoding="utf-8"
     )
-    (EXTRACT / f"{slug}.md").write_text(render_outline(doc), encoding="utf-8")
-    return doc
+    (EXTRACT / f"{doc['slug']}.md").write_text(render_outline(doc), encoding="utf-8")
 
 
 def main() -> int:
@@ -288,11 +328,15 @@ def main() -> int:
         parser.print_help()
         return 1
 
-    for slug in slugs:
-        doc = extract(slug)
+    docs = [extract(slug) for slug in slugs]
+    repaired = repair_titles(docs)
+    for doc in docs:
+        write_plan(doc)
         c = doc["counts"]
-        print(f"{slug:32s} {c['topics']:4d} noeuds  {c['withContent']:4d} documentes  "
+        print(f"{doc['slug']:32s} {c['topics']:4d} noeuds  {c['withContent']:4d} documentes  "
               f"{c['resources']:4d} ressources  (amont {doc['updatedAt'][:10]})")
+    if repaired:
+        print(f"\n{repaired} titres de ressources retablis par recoupement entre roadmaps.")
     return 0
 
 

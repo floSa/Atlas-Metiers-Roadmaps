@@ -154,7 +154,7 @@ Claude Code works in the terminal and is best used when you need to understand a
 - `@roadmap` [Visit the Dedicated Claude Code Roadmap](https://roadmap.sh/claude-code)
 - `@official` [Claude Code Overview](https://code.claude.com/docs/en/overview)
 - `@article` [Claude Code: From Zero to Hero](https://medium.com/@dan.avila7/claude-code-from-zero-to-hero-bebe2436ac32)
-- `@video` [laude Code Tutorial for Beginners](https://www.youtube.com/watch?v=eMZmDH3T2bY)
+- `@video` [Claude Code Tutorial for Beginners](https://www.youtube.com/watch?v=eMZmDH3T2bY)
 
 #### Codex
 
@@ -246,7 +246,7 @@ A unit test checks that a single function or component behaves as expected in is
 
 Integration tests check that different parts of the app work correctly together; for example, that a form submission reaches the database and returns the right response. They catch problems that unit tests miss because they test the connections between components, not the components themselves.
 
-- `@article` [Integration Testing](https://www.guru99.com/integration-testing.html)
+- `@article` [Integration Testing Tutorial](https://www.guru99.com/integration-testing.html)
 - `@article` [Unit Test vs Integration Test: What's the Difference?](https://www.testim.io/blog/unit-test-vs-integration-test/)
 - `@video` [What is Integration Testing?](https://www.youtube.com/watch?v=kRD6PA6uxiY)
 

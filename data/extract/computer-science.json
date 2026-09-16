@@ -1185,7 +1185,7 @@
      "resources": [
       {
        "kind": "video",
-       "title": "Big Endian vs Little Endian",
+       "title": "Big Endian vs Little Endian.mp4",
        "url": "https://www.youtube.com/watch?v=JrNF0KRAlyo"
       },
       {
@@ -1979,7 +1979,7 @@
      "resources": [
       {
        "kind": "article",
-       "title": "What is a Database?",
+       "title": "What is a Database? - Oracle",
        "url": "https://www.oracle.com/database/what-is-database/"
       },
       {
@@ -2591,7 +2591,7 @@
      "resources": [
       {
        "kind": "article",
-       "title": "What is a REST API?",
+       "title": "What is a REST API? - Red Hat",
        "url": "https://www.redhat.com/en/topics/api/what-is-a-rest-api"
       },
       {
