@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/mlops
 ---
 
+**Autonomie.** Un confirmé met en place le versionnement des trois objets et rend une exécution reproductible sans qu'on le lui demande ; ce n'est pas un domaine de référence parce qu'il s'agit d'une discipline à tenir, pas d'un arbitrage technique que personne d'autre dans la salle ne saurait rendre.
+
 Pourquoi le MLOps existe — un système à trois entrées mouvantes au lieu d'une — et la conséquence directe : ce qu'il faut versionner pour pouvoir déboguer quoi que ce soit plus tard.
 
 ```mermaid

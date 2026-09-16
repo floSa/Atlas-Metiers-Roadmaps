@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/mlops
 ---
 
+**Autonomie.** Choisir entre bleu-vert, canari et ombre selon le risque réel, et revenir en arrière sans convoquer de réunion, se tient exactement à l'autonomie ; la référence revient au domaine qui juge après coup si le déploiement était bon — la supervision, page voisine.
+
 Le pipeline est une suite d'étapes hétérogènes dont chacune peut échouer et doit pouvoir être rejouée seule ; le déploiement est le moment où le risque se matérialise, et la stratégie choisie décide de combien d'utilisateurs voient un modèle défaillant.
 
 ```mermaid

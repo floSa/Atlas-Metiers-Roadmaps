@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/mlops
 ---
 
+**Autonomie.** Un confirmé empaquette, dimensionne et débogue un service de prédiction sous pression, GPU compris ; le socle cloud et l'ordonnanceur appartiennent aux équipes plateforme, et l'embarqué reste à la notion tant qu'il n'est pas explicitement au périmètre de la mission.
+
 Où le modèle s'exécute réellement : le cloud pour l'élasticité par à-coups, le conteneur pour la reproductibilité, l'ordonnanceur pour partager des GPU rares — et l'embarqué quand la donnée ne doit pas sortir.
 
 ```mermaid
