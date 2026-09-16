@@ -2,6 +2,8 @@
 title: Cohortes et effet de composition
 ---
 
+Niveau attendu : **autonomie**. Une cohorte définie une fois dans la couche sémantique et suivie sans intervention est un objet qu'on conçoit, pas un calcul qu'on refait.
+
 Regrouper les utilisateurs par période d'entrée et suivre leur comportement dans le temps. C'est le seul moyen de distinguer une amélioration réelle d'un effet de composition : un taux de rétention global qui monte parce que le recrutement a ralenti n'est pas une amélioration.
 
 ```mermaid

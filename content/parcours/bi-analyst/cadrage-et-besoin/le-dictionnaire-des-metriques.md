@@ -2,6 +2,8 @@
 title: Le dictionnaire des métriques
 ---
 
+Niveau attendu : **référence**. L'artefact qui transforme un désaccord en diff appartient à ce poste, et il ne vaut que si quelqu'un en fait autorité.
+
 Un fichier par domaine, une entrée par métrique, cinq lignes chacune, dans le dépôt. Ça coûte deux jours et ça supprime la moitié des désaccords ultérieurs, parce que le désaccord devient un diff au lieu d'une discussion de couloir.
 
 Les cinq lignes d'une entrée complète :

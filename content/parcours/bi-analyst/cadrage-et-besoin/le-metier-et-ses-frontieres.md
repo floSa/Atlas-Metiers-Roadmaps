@@ -2,6 +2,8 @@
 title: Le métier et ses frontières
 ---
 
+Niveau attendu : **référence**. Énoncer ce que ce poste livre en propre — un accord sur les chiffres — et ce qui revient au Data Analyst ou au Data Engineer est la première chose qu'on attend de lui en réunion.
+
 Le seul rôle de la data dont le livrable est *un accord sur les chiffres* : un modèle, des définitions, des tableaux de bord que plusieurs services acceptent comme référence commune. Un Data Analyst produit une réponse ; un BI Analyst produit un socle qui produira des réponses sans lui.
 
 ```mermaid

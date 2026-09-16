@@ -2,6 +2,8 @@
 title: Entrepôt, lac ou moteur embarqué
 ---
 
+Niveau attendu : **autonomie**. Justifier sur un cas chiffré qui porte le coût du schéma est exactement un compromis qu'on arbitre et qu'on défend, sans être celui qui exploite la plateforme.
+
 Vu de ce poste, l'arbitrage se joue sur une seule question : **qui porte le coût du schéma**. L'entrepôt l'impose à l'écriture — l'ingestion coûte plus cher à construire, mais tout consommateur en aval lit une table dont la structure et le sens sont garantis. Le lac l'impose à la lecture — l'ingestion est quasi gratuite, et chaque analyste réinterprète les fichiers à sa manière, ce qui reproduit exactement le problème que la BI est censée résoudre.
 
 ```mermaid

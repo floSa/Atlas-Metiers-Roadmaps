@@ -2,6 +2,8 @@
 title: Sur quoi brancher l'assistant
 ---
 
+Niveau attendu : **autonomie**. C'est une question de modélisation déguisée en question d'outil, et elle remonte pour cette raison plus haut que le reste du domaine.
+
 Un assistant branché sur des tables brutes doit reconstruire, à chaque question, tout le travail de modélisation et de définition : trouver les bonnes tables, deviner le grain, choisir les jointures, décider si une colonne est une mesure ou un attribut, et savoir qu'un taux ne s'additionne pas.
 
 ```mermaid

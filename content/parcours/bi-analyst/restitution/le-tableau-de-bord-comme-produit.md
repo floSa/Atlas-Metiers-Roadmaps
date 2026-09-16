@@ -2,6 +2,8 @@
 title: Le tableau de bord comme produit
 ---
 
+Niveau attendu : **autonomie**. Imposer un propriétaire, un coût et une date de retrait est un arbitrage qu'on défend seul, contre une organisation qui ne finance jamais la maintenance.
+
 Un tableau de bord a des utilisateurs identifiés, une raison d'exister formulée en termes de décision, un propriétaire, un coût de fonctionnement et une date de retrait. La plupart des organisations n'ont aucune de ces cinq choses, et c'est pourquoi elles finissent avec des centaines de rapports dont l'usage est inconnu.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Droits et modes d'accès
 ---
 
+Niveau attendu : **autonomie**. Sécurité à la ligne et mode d'accès sont deux décisions distinctes qu'on prend, qu'on documente et qu'on assume le jour d'une fuite.
+
 Deux décisions par tableau de bord, prises séparément et souvent confondues : qui voit quelles lignes, et par quel chemin la donnée arrive dans l'outil.
 
 ```mermaid

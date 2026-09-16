@@ -2,6 +2,8 @@
 title: Contraintes par secteur
 ---
 
+Niveau attendu : **notion**. Il faut savoir qu'un secteur impose ses définitions et ses contraintes réglementaires ; le détail s'apprend en trois jours dans l'entreprise concernée.
+
 La définition d'un taux de rotation des stocks s'apprend en trois jours dans l'entreprise concernée. Ce qui vaut d'être retenu, c'est que chaque domaine impose des **contraintes de modélisation** différentes, et ce sont elles qu'on doit reconnaître en arrivant sur un secteur nouveau.
 
 | Secteur | Contrainte dominante | Ce qu'elle impose au modèle |

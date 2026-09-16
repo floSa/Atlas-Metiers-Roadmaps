@@ -2,6 +2,8 @@
 title: Du besoin à la métrique
 ---
 
+Niveau attendu : **référence**. Les quatre questions qui désambiguïsent « chiffre d'affaires » ne viendront de personne d'autre : c'est le geste fondateur des définitions partagées.
+
 Entendre « je veux le chiffre d'affaires » et demander *hors taxes ou TTC, à la commande ou à la facturation, net des avoirs ou brut, à la date de signature ou de livraison*. Les quatre réponses définissent quatre métriques différentes, et les quatre existent déjà quelque part dans l'entreprise.
 
 ```mermaid

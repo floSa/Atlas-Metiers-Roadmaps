@@ -2,6 +2,8 @@
 title: De l'ETL à l'ELT
 ---
 
+Niveau attendu : **usage**. Savoir travailler dans une chaîne ELT et dire ce que l'inversion change suffit ; l'architecture d'ingestion se décide plus haut.
+
 Dans l'ETL classique, la transformation se fait en route, dans un serveur dédié, et seule la donnée transformée arrive. Dans l'ELT, on charge brut dans l'entrepôt et on transforme avec son moteur. Les conséquences pratiques sont nettes, et elles expliquent l'essentiel de ce qui a changé dans le métier.
 
 ```mermaid

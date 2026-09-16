@@ -2,6 +2,8 @@
 title: Dimensions conformes
 ---
 
+Niveau attendu : **référence**. Une dimension partagée à l'identique entre plusieurs faits est la condition matérielle des définitions partagées — le cœur de ce métier.
+
 Une dimension « Produit » partagée à l'identique par les faits ventes, stock et retours permet de comparer les trois sur la même maille. Sans conformité, chaque domaine a son référentiel et aucune comparaison transverse n'est possible : c'est le symptôme le plus fiable d'un entrepôt construit rapport par rapport.
 
 ```mermaid

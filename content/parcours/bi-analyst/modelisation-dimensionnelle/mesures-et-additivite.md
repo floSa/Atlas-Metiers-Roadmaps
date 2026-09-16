@@ -2,6 +2,8 @@
 title: Mesures et additivité
 ---
 
+Niveau attendu : **référence**. Un taux sommé à un niveau d'agrégation supérieur est l'erreur la plus difficile à détecter, et le BI Analyst est le seul dans la salle à la voir venir.
+
 Un montant s'additionne sur toutes les dimensions ; un stock s'additionne entre produits mais pas dans le temps ; un taux ne s'additionne jamais. C'est l'erreur la plus fréquente et la plus difficile à détecter, parce que le total faux reste plausible.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Séries temporelles et calendrier
 ---
 
+Niveau attendu : **autonomie**. Séparer tendance, saisonnalité et résidu sert ici à outiller la lecture pour les autres ; c'est le Data Analyst qui fait référence sur la lecture elle-même.
+
 Trois composantes à séparer : la tendance de fond, la saisonnalité récurrente, et le résidu. L'essentiel des « alertes » d'un tableau de bord sont de la saisonnalité mal interprétée.
 
 ```mermaid

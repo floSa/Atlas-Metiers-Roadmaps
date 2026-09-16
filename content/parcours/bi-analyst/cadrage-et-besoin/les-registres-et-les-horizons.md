@@ -2,6 +2,8 @@
 title: Registres et horizons
 ---
 
+Niveau attendu : **autonomie**. Calibrer fraîcheur et granularité selon l'horizon de lecture est un arbitrage à défendre devant une direction qui voudra tout en temps réel.
+
 Quatre registres — descriptif, diagnostic, prédictif, prescriptif — qui ne sont pas une échelle de maturité mais quatre questions différentes ; et trois horizons qui les traversent en calibrant la fraîcheur et la granularité : stratégique à cinq ou dix ans, tactique à un ou trois ans, opérationnel à trois ou six mois.
 
 ```mermaid

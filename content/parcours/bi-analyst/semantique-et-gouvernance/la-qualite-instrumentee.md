@@ -2,6 +2,8 @@
 title: La qualité instrumentée
 ---
 
+Niveau attendu : **autonomie**. Les tests de qualité se conçoivent et se calibrent, mais la réconciliation suppose un interlocuteur métier qui reste propriétaire de son chiffre.
+
 Une dimension de qualité qui n'est pas un test automatisé n'est pas gérée : elle est espérée. L'enjeu n'est pas la conformité, c'est de savoir qu'un chiffre est valide **avant** que quelqu'un le découvre faux.
 
 ```mermaid

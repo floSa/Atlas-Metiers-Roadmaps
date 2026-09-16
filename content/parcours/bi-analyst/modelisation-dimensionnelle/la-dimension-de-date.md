@@ -2,6 +2,8 @@
 title: La dimension de date
 ---
 
+Niveau attendu : **autonomie**. La table la plus rentable de l'entrepôt se construit une fois, en allant chercher le calendrier réel de l'entreprise auprès de ceux qui le connaissent.
+
 Toujours une table réelle, jamais un calcul à la volée. Elle porte le calendrier de l'entreprise, qui n'est presque jamais le calendrier civil — et c'est la table la plus rentable de tout l'entrepôt.
 
 ```mermaid

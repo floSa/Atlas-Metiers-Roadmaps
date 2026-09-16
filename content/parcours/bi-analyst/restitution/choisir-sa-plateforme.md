@@ -2,6 +2,8 @@
 title: Choisir sa plateforme
 ---
 
+Niveau attendu : **usage**. Quatre familles à savoir situer ; le choix se fait rarement sur des critères techniques, et presque jamais par le BI Analyst seul.
+
 Quatre familles suffisent à s'orienter. Le critère qui départage en pratique n'est presque jamais la richesse fonctionnelle : c'est le modèle de licence rapporté au nombre de consultants occasionnels.
 
 ```mermaid

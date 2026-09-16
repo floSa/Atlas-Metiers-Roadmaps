@@ -2,6 +2,8 @@
 title: Le coût de la plateforme
 ---
 
+Niveau attendu : **autonomie**. Instrumenter le coût avant d'ouvrir l'accès est une décision qu'on prend seul et qu'on défend alors que personne ne l'a demandée.
+
 Avec un entrepôt facturé à la donnée scannée, un tableau de bord auto-rafraîchi toutes les cinq minutes sur une table non partitionnée peut coûter plus cher que toute l'équipe qui le consulte. Le coût est la seule dimension de l'architecture qui devienne visible d'une direction — donc le seul levier pour retirer ce qui ne sert plus.
 
 ```mermaid

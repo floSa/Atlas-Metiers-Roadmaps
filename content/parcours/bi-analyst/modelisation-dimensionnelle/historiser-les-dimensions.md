@@ -2,6 +2,8 @@
 title: Historiser les dimensions
 ---
 
+Niveau attendu : **autonomie**. Reclasser le passé ou pas est une réponse métier : le BI Analyst instruit le choix, en montre le coût et l'implémente, mais ne tranche pas seul.
+
 Si un client change de segment, veut-on que ses ventes passées soient reclassées, ou qu'elles restent attachées à l'ancien segment ? Les deux réponses sont légitimes selon l'usage. La question se pose au métier ; elle ne se tranche pas par défaut.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Extraire sans casser la source
 ---
 
+Niveau attendu : **autonomie**. Découplage, incrémental et quotas se conçoivent et se déboguent en pleine nuit ; l'exploitation de la base source, elle, reste à l'équipe applicative.
+
 Aller chercher la donnée directement dans la base de production marche pendant trois mois, puis une requête d'agrégation dégrade l'applicatif en pleine journée. Le vrai coût est ailleurs : le modèle décisionnel se retrouve couplé au schéma applicatif, et chaque évolution du produit casse un rapport.
 
 ```mermaid

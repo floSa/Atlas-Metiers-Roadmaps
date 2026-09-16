@@ -2,6 +2,8 @@
 title: Définir une mesure
 ---
 
+Niveau attendu : **référence**. Formule et règle d'agrégation posées une seule fois : c'est le livrable qui distingue ce poste de tous les autres rôles de la data.
+
 Une mesure se définit par sa formule **et** sa règle d'agrégation. « Chiffre d'affaires » se somme, « nombre de clients distincts » ne se somme pas, « taux de marge » se recalcule à chaque niveau depuis ses deux composants. Une couche sémantique correcte sait faire ces trois choses différemment ; un champ calculé dans un rapport n'en sait faire qu'une.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Instrumenter et retirer
 ---
 
+Niveau attendu : **autonomie**. Proposer le retrait d'un tableau de bord que plus personne n'ouvre est une conversation qu'il faut savoir engager, chiffres d'usage à l'appui.
+
 Toutes les plateformes majeures exposent qui ouvre quoi, combien de fois, et à quel coût de calcul. Presque personne ne l'exploite. C'est pourtant ce qui permet la seule conversation qui fasse baisser la dette de reporting.
 
 ```mermaid

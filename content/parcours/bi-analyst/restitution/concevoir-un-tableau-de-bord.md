@@ -2,6 +2,8 @@
 title: Concevoir un tableau de bord
 ---
 
+Niveau attendu : **autonomie**. La conception se maîtrise et s'argumente, mais c'est le Data Analyst qui fait référence sur le graphique qui démontre une conclusion ponctuelle.
+
 Le choix du graphique se déduit de la question, pas du goût. Comparer des catégories appelle des barres, suivre dans le temps appelle une courbe, montrer une distribution appelle un histogramme, chercher une relation appelle un nuage de points.
 
 ```mermaid

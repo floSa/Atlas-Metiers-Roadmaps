@@ -2,6 +2,8 @@
 title: Où vit la couche sémantique
 ---
 
+Niveau attendu : **autonomie**. Trois emplacements, trois compromis : on tranche selon la plateforme déjà en place, et on défend le compromis retenu.
+
 Trois emplacements possibles, trois compromis. En pratique, une combinaison : les tables de présentation portent les mesures additives, la couche découplée ou l'outil portent le reste.
 
 ```mermaid

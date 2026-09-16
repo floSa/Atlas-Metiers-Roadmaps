@@ -2,6 +2,8 @@
 title: L'architecture à zones
 ---
 
+Niveau attendu : **autonomie**. Les trois zones et la règle de rejeu se conçoivent, et c'est ce découpage qui décide de ce qu'on peut réparer au lendemain d'un incident.
+
 Trois zones, trois responsabilités, et une règle qui les tient : on ne rejoue jamais l'ingestion depuis la source, on rejoue depuis l'atterrissage. C'est ce qui rend une correction de logique possible sans redemander les données.
 
 ```mermaid
