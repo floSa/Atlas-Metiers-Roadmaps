@@ -23,6 +23,12 @@ tirets, singulier, sans article.
 
 Une ligne en `italique` signale une notion dont le fichier reste à écrire.
 
+> [!info] Mise à jour du 16 septembre 2026
+> Neuf notions ajoutées après les arbitrages de fin de lot 1 — voir
+> `prompts/_arbitrages-lot-1.md` pour les slugs retenus, ceux écartés et pourquoi.
+> `donnees-manquantes` a été absorbé par `qualite-des-donnees`, qui lui consacre une
+> sous-partie côté Data Analyst.
+
 ---
 
 ## Statistiques et analyse
@@ -44,6 +50,8 @@ Une ligne en `italique` signale une notion dont le fichier reste à écrire.
 | `apprentissage-non-supervise` | clustering, réduction de dimension | Data Analyst, BI Analyst, AI Red Teaming |
 | `apprentissage-par-renforcement` | politique, récompense, RLHF | Data Analyst, BI Analyst, AI Red Teaming |
 | `reseaux-de-neurones` | perceptron, rétropropagation, architectures | Data Analyst, AI Red Teaming |
+| `series-temporelles` | tendance, saisonnalité, résidu, effets de calendrier, prévision et sa référence naïve | BI Analyst, Data Analyst |
+| `analyse-de-cohorte` | regroupement par période d'entrée, fenêtre d'observation, effet de composition | BI Analyst, Data Analyst |
 | `metriques-evaluation-ml` | exactitude, précision, rappel, F1, AUC | Data Analyst, BI Analyst |
 | `traitement-langage-naturel` | tokenisation, plongements, tâches classiques | Data Analyst, Machine Learning |
 
@@ -57,6 +65,8 @@ Une ligne en `italique` signale une notion dont le fichier reste à écrire.
 | `lignage-des-donnees` | traçabilité, catalogues, impact | BI Analyst, MLOps |
 | `modelisation-dimensionnelle` | faits, dimensions, granularité | BI Analyst |
 | `sql` | requêtes, jointures, fenêtrage, optimisation | BI Analyst, Data Analyst |
+| `collecte-de-donnees` | base, fichier, API, moissonnage ; fiabilité et métadonnées d'extraction | Data Analyst, BI Analyst |
+| `traitement-distribue` | Spark, formats colonnes, moteurs embarqués, et le seuil à partir duquel distribuer a un sens | Data Analyst, BI Analyst |
 | `transformation-dbt` | modèles, tests, documentation | BI Analyst, Data Engineer |
 | `orchestration-de-flux` | Airflow, DAG, ordonnancement, reprise | BI Analyst, MLOps |
 
@@ -102,6 +112,10 @@ Une ligne en `italique` signale une notion dont le fichier reste à écrire.
 | `observabilite` | traces, journaux, métriques, LangSmith, Langfuse, Arize | FDE, AI Product Builder |
 | `tests-logiciels` | unitaires, intégration, régression | FDE, AI Product Builder |
 | `conception-d-api` | REST, contrats, versionnement | FDE, AI Product Builder |
+| `controle-d-acces` | authentification, autorisation, moindre privilège, propagation d'identité | Red Teaming, FDE, Product Builder, BI Analyst |
+| `plateforme-de-deploiement` | périphérie, plateforme applicative, infrastructure brute, chaîne d'entreprise | Product Builder, FDE |
+| `chaine-d-approvisionnement-logicielle` | poids de modèles, SDK, serveurs d'outils tiers | Red Teaming, FDE |
+| `mesure-d-usage-produit` | instrumentation d'événements, entonnoir, activation, rétention | Product Builder, Data Analyst |
 | `systemes-patrimoniaux` | ERP, CRM, bases legacy, stratégies d'interfaçage | FDE |
 
 ## Conformité et sécurité
@@ -109,6 +123,7 @@ Une ligne en `italique` signale une notion dont le fichier reste à écrire.
 | Slug | Recouvre | Appelée par |
 |---|---|---|
 | `rgpd` | bases légales, minimisation, transferts | BI Analyst, FDE |
+| `modelisation-de-la-menace` | adversaires, surfaces d'attaque, priorisation par impact | Red Teaming, FDE |
 | `gouvernance-ia` | AI Act, responsabilité, documentation | FDE, AI Red Teaming |
 | `donnees-sensibles` | classification, anonymisation, cloisonnement | FDE, AI Red Teaming |
 
