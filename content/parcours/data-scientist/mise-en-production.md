@@ -2,6 +2,8 @@
 title: Mise en production
 ---
 
+Niveau attendu : **usage**. Le confirmé livre un modèle qu'une équipe d'exploitation accepte de prendre en charge, sur les rails qu'elle a posés ; la plateforme et ses garanties sont le métier du [[parcours/mlops/index|MLOps]].
+
 Un modèle non déployé n'a produit aucune valeur, et un modèle déployé sans surveillance produit de la valeur négative dès que la distribution change. L'objectif n'est pas de devenir ingénieur plateforme, mais de livrer quelque chose qu'une équipe d'exploitation accepte de prendre en charge.
 
 ```mermaid

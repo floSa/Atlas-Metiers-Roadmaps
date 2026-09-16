@@ -2,6 +2,8 @@
 title: Code et outillage
 ---
 
+Niveau attendu : **autonomie**. Le pipeline continue sans son auteur : il faut savoir le concevoir, le déboguer sur une machine qu'on ne voit pas, et justifier le choix d'un outil contre un autre.
+
 Le code est le seul artefact qui survit au projet. La compétence visée n'est pas « savoir programmer » mais produire un pipeline reproductible : versionné, testé, paramétré, exécutable par quelqu'un d'autre sur une autre machine, six mois plus tard.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Apprentissage profond
 ---
 
+Niveau attendu : **usage**. Le confirmé entraîne et diagnostique à partir de modèles pré-entraînés, sur un chemin balisé ; concevoir une architecture relève d'un poste de recherche, pas d'un data scientist généraliste.
+
 L'outil des données non structurées : texte, image, son, signal, séquences. La compétence critique n'est pas d'empiler des couches mais de diagnostiquer un entraînement, et de savoir quand un modèle plus petit et mieux régularisé bat un modèle plus gros.
 
 ```mermaid

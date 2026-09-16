@@ -2,6 +2,8 @@
 title: Statistique et inférence
 ---
 
+Niveau attendu : **référence**. C'est l'un des deux domaines où le data scientist fait autorité dans la salle, parce que personne d'autre ne dira si l'écart observé est du signal, du bruit, ou une marge mal rapportée.
+
 La discipline qui répond à la seule question qui compte devant un décideur : ce que j'observe est-il un signal ou du bruit, et avec quelle marge. C'est aussi elle qui fournit le cadre du protocole d'évaluation, bien avant que le premier modèle soit entraîné.
 
 ```mermaid

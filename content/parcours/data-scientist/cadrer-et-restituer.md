@@ -2,6 +2,8 @@
 title: Cadrer et restituer
 ---
 
+Niveau attendu : **autonomie**. Le data scientist confirmé fixe seul la cible, la population, la fenêtre et le seuil, puis défend sa restitution devant le décideur qui la conteste.
+
 Les deux extrémités du travail, et celles qui décident de la valeur de tout ce qu'il y a entre : convertir une demande formulée en langage d'entreprise en une cible, une population, une fenêtre de temps et un seuil — puis rendre un résultat sous une forme qui engage une décision.
 
 ```mermaid

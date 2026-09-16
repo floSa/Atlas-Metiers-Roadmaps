@@ -2,6 +2,8 @@
 title: Modèles de langage
 ---
 
+Niveau attendu : **usage**. L'arbitrage entre appeler, récupérer et affiner se mène documentation ouverte et se tranche sur une mesure ; monter et exploiter le système de récupération lui-même appartient à [[parcours/ai-engineer/index|AI Engineer]].
+
 Pour un data scientist généraliste, la question n'est presque jamais « dois-je entraîner un modèle » mais « dois-je appeler une interface de programmation, servir un modèle ouvert, ou en affiner un ». L'ordre de préférence suit le coût croissant, et chaque marche doit être justifiée par une mesure.
 
 ```mermaid

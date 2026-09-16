@@ -2,6 +2,8 @@
 title: Exploration des données
 ---
 
+Niveau attendu : **autonomie**. Aucune étape en aval ne rattrape une fuite laissée ici, et l'arbitrage sur ce qu'on écarte se défend devant le métier qui a produit la donnée.
+
 L'étape où l'on découvre que le jeu de données ne contient pas ce que le cahier des charges affirme : colonnes remplies à 3 %, dates au format américain une année sur deux, variable qui prédit parfaitement la cible parce qu'elle est calculée après. C'est le temps investi qui rapporte le plus.
 
 ```mermaid
