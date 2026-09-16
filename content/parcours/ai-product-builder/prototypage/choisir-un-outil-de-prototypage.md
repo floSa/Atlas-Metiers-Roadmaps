@@ -2,6 +2,8 @@
 title: Choisir un outil de prototypage
 ---
 
+Niveau attendu : **autonomie**. Le critère jetable ou non engage les six mois suivants : il se tranche seul, avant de générer, et se justifie après coup.
+
 Trois catégories qu'on confond, et un seul critère de choix qui compte : le prototype est-il jetable, ou est-il le début du produit ?
 
 ```mermaid

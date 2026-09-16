@@ -2,6 +2,8 @@
 title: Instrumenter l'usage
 ---
 
+Niveau attendu : **usage**. Dix événements nommés branchés avant la mise en ligne : l'outillage est standard, et l'analyse fine relève de l'analyste, pas du builder.
+
 Les gens répondent qu'une fonction leur est utile et ne l'ouvrent jamais. L'instrumentation est la seule donnée qui arbitre les priorités de la v2 — et elle se branche avant la première mise en ligne, pas après le premier désaccord.
 
 ```mermaid

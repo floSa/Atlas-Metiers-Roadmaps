@@ -6,13 +6,13 @@ aliases:
 
 Le prototype n'est pas une étape de design, c'est un instrument de réduction d'incertitude : il rend une incompréhension visible pendant qu'elle coûte encore une demi-journée.
 
-## Les trois sujets
+## Les trois sujets, et le niveau attendu d'un confirmé
 
 ```mermaid
 flowchart TD
-  O["Choisir un outil de prototypage<br/>générer une application ou un écran"]
-  F["Prototyper la bonne fonction<br/>la plus incertaine, pas la page d'accueil"]
-  V["Valider auprès des utilisateurs<br/>chercher les malentendus, pas les avis"]
+  O["Choisir un outil de prototypage<br/>Autonomie"]
+  F["Prototyper la bonne fonction<br/>Autonomie"]
+  V["Valider auprès des utilisateurs<br/>Usage"]
 
   click O "/parcours/ai-product-builder/prototypage/choisir-un-outil-de-prototypage"
   click F "/parcours/ai-product-builder/prototypage/prototyper-la-bonne-fonction"

@@ -6,15 +6,15 @@ aliases:
 
 Jusqu'ici l'IA était l'atelier. À partir du moment où une fonction du produit appelle un modèle, le produit devient aussi un système d'IA — et rien de ce qui suit ne s'explique ici : [[parcours/ai-engineer/index|AI Engineer]] le traite une fois pour tout le corpus.
 
-## Les cinq sujets
+## Les cinq sujets, et le niveau attendu d'un confirmé
 
 ```mermaid
 flowchart TD
-  R["Règle ou modèle<br/>la question avant toutes les autres"]
-  I["Isoler la fonction à base de modèle<br/>un service, un contrat, un budget"]
-  C["Faut-il un corpus<br/>la récupération n'est pas un passage obligé"]
-  E["Évaluer ce qui n'est pas binaire<br/>sans jeu de cas, chaque amélioration est un pari"]
-  X["Exposer une sortie de modèle<br/>lire un document, déclencher une action"]
+  R["Règle ou modèle<br/>Autonomie"]
+  I["Isoler la fonction à base de modèle<br/>Usage"]
+  C["Faut-il un corpus<br/>Notion"]
+  E["Évaluer ce qui n'est pas binaire<br/>Usage"]
+  X["Exposer une sortie de modèle<br/>Usage"]
 
   click R "/parcours/ai-product-builder/quand-le-produit-embarque-un-modele/regle-ou-modele"
   click I "/parcours/ai-product-builder/quand-le-produit-embarque-un-modele/isoler-la-fonction-a-base-de-modele"

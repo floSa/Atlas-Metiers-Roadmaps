@@ -2,6 +2,8 @@
 title: Effacer les données d'un utilisateur
 ---
 
+Niveau attendu : **usage**. La procédure est écrite par la loi et la requête est simple ; ce qui manque est la connaissance du schéma, pas un dispositif de conformité à concevoir.
+
 Obligation légale, et fonction que les générateurs n'écrivent jamais spontanément parce que personne ne la demande dans l'énoncé initial. Elle est aussi le meilleur révélateur de ce qu'on sait réellement de son propre schéma.
 
 ```mermaid

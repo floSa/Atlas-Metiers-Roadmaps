@@ -2,6 +2,8 @@
 title: Construire, acheter ou assembler
 ---
 
+Niveau attendu : **autonomie**. C'est l'arbitrage qu'il faut savoir défendre chiffres en main devant quelqu'un qui a déjà décidé de construire, et l'option de ne pas construire n'a pas d'autre avocat.
+
 La génération de code a tellement baissé le prix du premier jour qu'on construit désormais des choses qu'on aurait achetées, et dont on paiera la maintenance pendant cinq ans. L'arbitrage se fait sur le coût complet, pas sur le coût de fabrication.
 
 ```mermaid

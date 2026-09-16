@@ -2,6 +2,8 @@
 title: Évaluer ce qui n'est pas binaire
 ---
 
+Niveau attendu : **usage**. Tenir vingt cas attendus dans un tableur et les rejouer suffit à ce niveau ; la métrologie de modèle commence là où ce métier s'arrête.
+
 Le point où un product builder échoue le plus souvent, parce qu'il est habitué au binaire « ça marche / ça ne marche pas ». Une fonction à base de modèle n'a pas d'état binaire : sans un jeu de cas attendus rejoué à chaque changement, chaque amélioration est un pari.
 
 ```mermaid

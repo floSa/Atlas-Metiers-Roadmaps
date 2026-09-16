@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-red-teaming
 ---
 
+Niveau attendu : **référence**. Le corpus adverse rejoué est le seul livrable qui survit à la mission, et aucun métier voisin ne le porte : si le red teamer ne le construit pas, il n'existera pas.
+
 Choisir le niveau de connaissance accordé au testeur, répartir l'effort entre automatisation et passe manuelle, puis transformer les trouvailles en corpus rejoué à chaque changement — sans quoi un audit ne produit que des anecdotes datées.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: L'anatomie d'une application
 ---
 
+Niveau attendu : **usage**. Il suffit de savoir dans quelle brique regarder ; concevoir ce découpage, ou en défendre un autre, n'est pas demandé à ce poste.
+
 Front end, back end, base de données, API : quatre briques et les contrats entre elles. Ce n'est pas de la culture générale — c'est ce qui permet de localiser une panne dans du code qu'on n'a pas écrit.
 
 ```mermaid

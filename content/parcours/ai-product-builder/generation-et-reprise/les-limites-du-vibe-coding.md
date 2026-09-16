@@ -2,6 +2,8 @@
 title: Les limites du vibe coding
 ---
 
+Niveau attendu : **référence**. Savoir nommer l'absence silencieuse — ce que le générateur n'a pas écrit et que personne ne réclamera — est ce qu'on attend de ce métier dans une salle où tout le monde a vu la démonstration marcher.
+
 Le débat public oscille entre deux positions également fausses : « ça remplace les développeurs » et « ça ne produit que de la dette ». La position tenable est plus ennuyeuse — le vibe coding est excellent là où se tromper ne coûte rien, mauvais là où l'erreur est silencieuse et durable.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Relire le code généré
 ---
 
+Niveau attendu : **référence**. Un développeur relit du code écrit par quelqu'un ; relire du code sans auteur, dans l'ordre schéma-dépendances-secrets, est une discipline que ce métier est seul à porter.
+
 Une revue de génération suit un ordre fixe, et il n'est pas celui dans lequel le code s'affiche. Le schéma de données d'abord, les dépendances ensuite, les secrets juste après. L'interface vient en dernier parce qu'elle est la moins chère à corriger.
 
 ```mermaid

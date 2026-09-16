@@ -2,6 +2,8 @@
 title: Exposer une sortie de modèle
 ---
 
+Niveau attendu : **usage**. Les garde-fous d'exposition sont une liste à appliquer — jamais d'action irréversible sans confirmation, jamais de privilège prêté au texte lu ; l'épreuve adverse relève du [[parcours/ai-red-teaming/index|red teaming]].
+
 Dès que le produit affiche une sortie de modèle à un utilisateur ou lui laisse déclencher une action, la surface d'attaque change de nature. Le cas typique et sous-estimé : l'assistant qui lit un document envoyé par un utilisateur et dispose d'un outil d'envoi d'e-mail.
 
 ```mermaid

@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-red-teaming
 ---
 
+Niveau attendu : **autonomie**. Il conçoit ses propres variantes et mesure ce qu'un filtre coûte en faux positifs ; pas la référence, parce que l'expertise en formulations se périme à chaque version de modèle, alors que les classes d'attaque restent.
+
 Obtenir d'un modèle un comportement que sa politique interdit — et surtout savoir ce que ce résultat mesure, ce qu'il permet de corriger, et sous quelle forme il vaut la peine d'être livré.
 
 ```mermaid

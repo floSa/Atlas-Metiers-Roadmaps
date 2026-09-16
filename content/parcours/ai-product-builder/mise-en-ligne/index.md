@@ -6,15 +6,15 @@ aliases:
 
 Quand une part du code est produite par une machine, le dépôt n'est plus une sauvegarde : c'est le seul endroit où l'on peut répondre à « qui a décidé ça, et pourquoi ». Le reste de cet étage met le produit en face de vrais utilisateurs.
 
-## Les cinq sujets
+## Les cinq sujets, et le niveau attendu d'un confirmé
 
 ```mermaid
 flowchart TD
-  D["Dépôt et historique des décisions<br/>une branche, une intention"]
-  I["Intégration continue et prévisualisation<br/>un lien cliquable par branche"]
-  H["Choisir son hébergement<br/>quatre niveaux de prise en charge"]
-  B["Choisir sa base de données<br/>sur la forme des données, pas sur la mode"]
-  A["Authentification et droits d'accès<br/>là où une application générée est le plus souvent fausse"]
+  D["Dépôt et historique des décisions<br/>Autonomie"]
+  I["Intégration continue et prévisualisation<br/>Usage"]
+  H["Choisir son hébergement<br/>Autonomie"]
+  B["Choisir sa base de données<br/>Usage"]
+  A["Authentification et droits d'accès<br/>Autonomie"]
 
   click D "/parcours/ai-product-builder/mise-en-ligne/depot-et-historique-des-decisions"
   click I "/parcours/ai-product-builder/mise-en-ligne/integration-continue-et-previsualisation"

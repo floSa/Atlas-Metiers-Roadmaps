@@ -2,6 +2,8 @@
 title: Dépôt et historique des décisions
 ---
 
+Niveau attendu : **autonomie**. Aucune équipe n'imposera la discipline de branche et de message — il n'y a pas d'équipe — et c'est pourtant ce qui restera quand la mémoire de l'auteur aura passé.
+
 Le versionnement est la première chose à mettre en place après une génération. Quand une part du code est produite par une machine, l'historique devient le seul endroit où l'on peut répondre à « qui a décidé ça, et pourquoi ».
 
 ```mermaid

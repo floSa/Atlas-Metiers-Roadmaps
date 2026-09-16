@@ -2,6 +2,8 @@
 title: Faut-il un corpus
 ---
 
+Niveau attendu : **notion**. La récupération de contexte est hors périmètre réel du métier : ce qu'on attend d'un confirmé, c'est de reconnaître que la question se pose, de répondre non par défaut, et d'appeler un [[parcours/ai-engineer/index|AI Engineer]] le jour où c'est oui.
+
 La récupération de contexte n'est nécessaire que si le produit a un corpus propre à interroger. Beaucoup de produits n'en ont pas et s'en passent très bien ; les monter par réflexe est un des surcoûts les plus fréquents du métier.
 
 ```mermaid

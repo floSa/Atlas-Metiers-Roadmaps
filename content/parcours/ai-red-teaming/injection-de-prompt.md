@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-red-teaming
 ---
 
+Niveau attendu : **référence**. C'est le point où le red teamer est le dernier rempart : personne chez le client ne raisonne spontanément en « donnée lue = instruction exécutée », et un système d'agents mal cloisonné ne produit aucune erreur visible.
+
 Le cœur du métier : un modèle ne dispose d'aucun mécanisme pour distinguer une instruction de son concepteur d'une instruction présente dans les données qu'il lit — et sous sa forme indirecte, cette confusion est une élévation de privilèges.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Isoler la fonction à base de modèle
 ---
 
+Niveau attendu : **usage**. Un service séparé avec son contrat et son budget est un découpage standard qu'on applique, et il suffit à rendre le fournisseur remplaçable.
+
 Le découpage qui fonctionne en équipe réduite : la fonction à base de modèle est un service séparé, avec son propre contrat d'API, ses propres tests et son propre budget. Le reste du produit ne sait pas qu'il y a un modèle derrière.
 
 ```mermaid

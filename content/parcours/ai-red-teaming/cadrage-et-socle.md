@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-red-teaming
 ---
 
+Niveau attendu : **usage**. Le socle d'apprentissage sert à savoir où un modèle casse, pas à en entraîner un : un confirmé le mobilise documentation ouverte, et n'a jamais à concevoir une architecture de réseau.
+
 Savoir trier ce qui, dans un système d'IA, relève de la sécurité applicative ordinaire et ce qui est réellement propre au modèle — et comprendre assez du modèle pour savoir où il est fragile.
 
 ```mermaid

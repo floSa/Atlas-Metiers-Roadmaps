@@ -2,6 +2,8 @@
 title: Nommer le seuil
 ---
 
+Niveau attendu : **autonomie**. Écrire le seuil le jour de la mise en ligne, et le défendre quand il est franchi, est une décision de produit que personne ne prendra à la place du builder.
+
 Le prototype n'est pas mauvais : il n'a simplement jamais été conçu pour durer. Un seuil déclaré par écrit transforme une dérive en décision — et il donne l'argument budgétaire au moment où il servira.
 
 ```mermaid

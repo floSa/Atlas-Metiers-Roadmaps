@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-red-teaming
 ---
 
+Niveau attendu : **autonomie**. C'est lui qui anime le cadrage, tranche ce qui sort du périmètre et défend cet arbitrage devant l'équipe produit : un modèle de menace hérité d'un autre ne survit pas au premier système atypique.
+
 Répondre dans l'ordre à trois questions — qui attaque et avec quels moyens, par où il entre, et ce qu'il obtient s'il réussit — pour que l'engagement porte sur ce qui coûterait cher plutôt que sur ce qui est amusant à trouver.
 
 ```mermaid

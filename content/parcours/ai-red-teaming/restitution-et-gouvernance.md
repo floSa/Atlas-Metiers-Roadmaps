@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-red-teaming
 ---
 
+Niveau attendu : **autonomie**. Il rédige, hiérarchise et chiffre l'atténuation en tenant sa position face à un éditeur qui conteste ; la classification réglementaire, elle, se pose au lancement et s'instruit avec le juriste, au niveau de la notion.
+
 Le rapport est le produit de la mission ; tout le reste n'en est que la fabrication. Un constat mal restitué ne sera pas corrigé, et sa valeur est donc nulle quelle que soit la difficulté de sa découverte.
 
 ```mermaid

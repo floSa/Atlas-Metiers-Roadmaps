@@ -2,6 +2,8 @@
 title: Règle ou modèle
 ---
 
+Niveau attendu : **autonomie**. C'est un arbitrage produit, pas une question d'IA : dire non à un modèle quand une règle suffit doit se tenir devant une direction qui veut de l'IA au catalogue.
+
 La première question, et celle qu'on saute. Une classification à sept catégories stables, un calcul, un routage : ce sont des règles. On n'y met un modèle que si l'entrée est du langage libre ou si les cas sont ouverts.
 
 ```mermaid
