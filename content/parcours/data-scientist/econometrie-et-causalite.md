@@ -2,6 +2,8 @@
 title: Économétrie et causalité
 ---
 
+Niveau attendu : **usage**. Le confirmé reconnaît une question causale, pose un design quasi-expérimental balisé et teste la stationnarité avant de régresser ; une identification contestée se traite avec un économètre, pas à sa place.
+
 La branche qui prend au sérieux le fait que les données ne viennent pas d'une expérience contrôlée. Elle apporte deux choses que l'apprentissage automatique ignore largement : l'interprétation causale d'un coefficient, et le traitement rigoureux de la dépendance temporelle.
 
 ```mermaid

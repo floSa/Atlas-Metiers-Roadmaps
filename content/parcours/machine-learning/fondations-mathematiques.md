@@ -2,6 +2,8 @@
 title: Fondations mathématiques
 ---
 
+Niveau attendu : **usage**. Ces quatre blocs se rouvrent, documentation à l'appui, le jour où un modèle échoue sans raison visible ; les pousser plus loin est un investissement de chercheur, pas de praticien.
+
 Ces blocs ne servent pas à réimplémenter les algorithmes, ils servent à comprendre pourquoi un modèle échoue. Le prérequis strictement bloquant se limite à l'algèbre linéaire de base et à la notion de dérivée ; le reste s'acquiert au moment où un comportement inexpliqué l'exige.
 
 ```mermaid

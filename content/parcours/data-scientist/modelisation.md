@@ -2,6 +2,8 @@
 title: Modélisation
 ---
 
+Niveau attendu : **référence**. Sur le protocole, la métrique et la calibration, le data scientist est le dernier recours de l'organisation : personne ne relit derrière lui.
+
 Le cœur opérationnel du métier. Sur données tabulaires — la très grande majorité des problèmes en entreprise — la difficulté n'est pas l'algorithme, disponible en trois lignes, mais le protocole : un jeu de validation représentatif, une métrique alignée sur la décision, et la discipline de ne pas optimiser sur le test.
 
 ```mermaid

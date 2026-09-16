@@ -2,6 +2,8 @@
 title: Données et préparation
 ---
 
+Niveau attendu : **autonomie**. La majorité des fuites se fabriquent ici et aucune étape en aval ne les rattrape : il faut concevoir la préparation et savoir la déboguer, pas l'appliquer de mémoire.
+
 L'étape qui consomme le plus de temps et détermine le plus fortement la performance finale — et l'endroit précis où se produisent la majorité des fuites. Tout ce qui est décidé ici se paie deux fois : à l'évaluation, puis en production.
 
 ```mermaid

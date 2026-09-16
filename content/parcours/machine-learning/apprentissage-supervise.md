@@ -2,6 +2,8 @@
 title: Apprentissage supervisé
 ---
 
+Niveau attendu : **référence**. C'est ici que se décide la valeur réellement livrée, et ni le choix de famille ni le réglage n'ont de second relecteur.
+
 Le cœur productif : la grande majorité des modèles réellement déployés en entreprise sont ici, sur données tabulaires. Le compromis biais-variance se lit directement dans la liste des familles, du modèle linéaire fortement contraint à l'ensemble d'arbres très flexible.
 
 ```mermaid

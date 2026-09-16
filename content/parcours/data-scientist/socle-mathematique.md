@@ -2,6 +2,8 @@
 title: Socle mathématique
 ---
 
+Niveau attendu : **usage**. Ces mathématiques se mobilisent pour diagnostiquer un modèle, documentation ouverte, jamais pour le réimplémenter : la profondeur supplémentaire se paie ailleurs et ne rapporte rien ici.
+
 Le niveau de mathématiques exigé s'est déplacé plutôt qu'il n'a baissé : les bibliothèques écrivent le modèle, mais diagnostiquer un entraînement qui diverge, lire un papier ou comprendre pourquoi une quantification dégrade un modèle et pas un autre en demande davantage qu'avant.
 
 ## Où ces mathématiques se voient
