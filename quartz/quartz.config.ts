@@ -76,6 +76,9 @@ const config: QuartzConfig = {
       Plugin.ObsidianFlavoredMarkdown({
         enableInHtmlEmbed: false,
         disableBrokenWikilinks: true,
+        // Les cases a cocher servent de suivi de progression : Quartz retient
+        // leur etat dans le navigateur, par page.
+        enableCheckbox: true,
       }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
