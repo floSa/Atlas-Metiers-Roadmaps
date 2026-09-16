@@ -5,11 +5,18 @@ title: Les limites du vibe coding
 Le débat public oscille entre deux positions également fausses : « ça remplace les développeurs » et « ça ne produit que de la dette ». La position tenable est plus ennuyeuse — le vibe coding est excellent là où se tromper ne coûte rien, mauvais là où l'erreur est silencieuse et durable.
 
 ```mermaid
-flowchart LR
-  V["Vibe coding"] --> B["Ce qu'il fait bien<br/>page blanche, exploration, code jetable"]
-  V --> M["Ce qu'il fait mal<br/>les choix durables pris une fois"]
-  M --> A["L'absence silencieuse<br/>pas de limite, pas de contrôle, pas de trace"]
-  A --> R["La compétence qui prend de la valeur<br/>repérer ce qui manque, pas ce qui est faux"]
+flowchart TD
+  A["La route sans autorisation<br/>tout fonctionne, chacun lit les données des autres"]
+  J["Le service sans journal<br/>personne ne le demande dans l'énoncé"]
+  T["Le test qui ne peut pas échouer<br/>un voyant vert, pas un filet"]
+  E["Le tiers supposé toujours disponible<br/>ni délai d'attente, ni repli"]
+  G["Ce que devient la compétence<br/>générer ce qu'on saurait écrire"]
+
+  click A "/notions/controle-d-acces"
+  click J "/notions/observabilite"
+  click T "/notions/tests-logiciels"
+  click E "/parcours/ai-product-builder/du-prototype-au-produit/le-comportement-en-erreur"
+  click G "/notions/assistants-de-codage"
 ```
 
 ## Ce qu'il faut savoir faire
