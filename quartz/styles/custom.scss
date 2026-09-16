@@ -1,0 +1,108 @@
+@use "./base.scss";
+
+// Atlas des metiers de l'IA -- feuille de style du site.
+// Recopiee dans <clone>/quartz/styles/custom.scss par quartz/build.sh.
+
+// --------------------------------------------------------------------------
+// Les liens orphelins doivent se voir
+//
+// Le corpus s'ecrit en parallele : un parcours metier pose [[notions/rag]] avant
+// que la notion existe. C'est un signal de travail, pas une erreur. Quartz les
+// rend inertes (disableBrokenWikilinks) mais les affiche seulement a 50 %
+// d'opacite, ce qui se lit comme du texte decoratif. On les marque.
+// --------------------------------------------------------------------------
+a.internal.broken {
+  opacity: 1;
+  color: var(--gray);
+  background-color: transparent;
+  border-bottom: 1px dashed var(--gray);
+  cursor: help;
+
+  &::after {
+    content: "\00a0◦";
+    font-size: 0.75em;
+    vertical-align: super;
+    line-height: 0;
+  }
+}
+
+// --------------------------------------------------------------------------
+// Les cartes de roadmap
+//
+// Le SVG est genere par tools/roadmap_render.py a la taille exacte de la
+// roadmap amont -- souvent plus de 1100 px de large. Au telephone, on le fait
+// defiler horizontalement plutot que de le reduire jusqu'a l'illisible ; la
+// page generee porte aussi la meme carte en liste, en repli.
+// --------------------------------------------------------------------------
+.carte-cadre {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  background-color: var(--light);
+  // La barre de defilement doit se voir : sinon rien n'indique qu'il reste de
+  // la carte a droite.
+  scrollbar-color: var(--gray) transparent;
+}
+
+.carte-cadre > svg {
+  display: block;
+  max-width: none; // ne pas laisser base.scss reduire la carte
+  height: auto;
+}
+
+details.carte-en-liste {
+  margin: 1rem 0;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+
+  > summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--secondary);
+  }
+
+  ul {
+    margin: 0.3rem 0 0.9rem 0;
+  }
+
+  em {
+    color: var(--gray);
+  }
+}
+
+// Quartz ajoute une icone << lien externe >> dans chaque ancre externe, y
+// compris a l'interieur d'un SVG, ou elle se pose de travers faute de
+// coordonnees. Dans une carte, on la retire.
+svg a .external-icon {
+  display: none;
+}
+
+// --------------------------------------------------------------------------
+// Lisibilite du corpus
+// --------------------------------------------------------------------------
+
+// Les notes sont longues et denses. Un texte un peu plus aere se lit mieux sur
+// 450 lignes de puces.
+article {
+  line-height: 1.7;
+
+  li {
+    margin: 0.25rem 0;
+  }
+}
+
+// Les huit notes historiques utilisent des tableaux comparatifs larges.
+article table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+// Un schema Mermaid deborde souvent la colonne. Meme traitement que les cartes.
+pre:has(> code.mermaid) {
+  overflow-x: auto;
+}

@@ -1,0 +1,7 @@
+# Version de Quartz epinglee. Une ligne : le commit, puis la version lisible.
+# Monter de version = changer ce commit, relancer quartz/build.sh, et rejouer
+# l'essai de quartz/essai-carte-cliquable/ : le verdict de la carte cliquable
+# repose sur deux details d'implementation amont.
+commit=d25a6eabf96751ffca56f8a8139272def7a65041
+version=4.5.2
+depot=https://github.com/jackyzha0/quartz.git
