@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-engineer
 ---
 
+**Référence.** Second domaine d'autorité du métier : c'est le système que l'AI Engineer livre le plus souvent, et celui où une erreur — découpage sur un nombre de caractères fixe, filtre d'identité absent — ne se voit qu'après coup et n'est rattrapée par personne d'autre.
+
 Faire parler le modèle de données qu'il n'a jamais vues, sans toucher aux poids — et savoir que la quasi-totalité des mauvaises réponses vient de la récupération, pas de la génération.
 
 ```mermaid

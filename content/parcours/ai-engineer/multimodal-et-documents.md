@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-engineer
 ---
 
+**Usage.** Le parsing par vision s'emploie sur un chemin balisé — une API, une résolution à borner, un coût en tokens image à surveiller — et cela suffit à un confirmé ; la génération d'images et de vidéo, elle, reste au niveau de la notion, parce qu'elle sort du périmètre réel du métier en entreprise.
+
 La multimodalité élargit le périmètre — lire des documents scannés, décrire des captures, transcrire des réunions — mais l'usage le plus rentable pour un ingénieur RAG n'est pas la génération d'images : c'est la compréhension de documents.
 
 ```mermaid

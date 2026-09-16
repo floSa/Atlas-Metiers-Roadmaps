@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-engineer
 ---
 
+**Autonomie.** Câbler une boucle bornée, des outils bien décrits et un serveur MCP fait partie du travail courant d'un confirmé ; le niveau s'arrête là parce que l'autorité sur les trajectoires, la mémoire et le multi-agents appartient au parcours [[parcours/ai-agents/index|AI Agents]], pas à cette page.
+
 Un agent est une boucle — observer, choisir un outil, lire le résultat, recommencer jusqu'à une condition d'arrêt — et l'écart entre une démonstration et un système fiable tient presque entièrement à la qualité des outils exposés.
 
 ```mermaid
