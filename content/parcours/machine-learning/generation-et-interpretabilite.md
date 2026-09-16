@@ -2,6 +2,8 @@
 title: Génération, interprétabilité, NLP
 ---
 
+Niveau attendu : **usage**, et **notion** pour la génération pure — adversariale ou par diffusion — qui reste hors du périmètre courant ; l'interprétabilité, elle, devient une condition de mise en service dès que le secteur est régulé.
+
 Ce qui déborde du cadre supervisé classique : générer, expliquer, traiter du texte. C'est aussi la charnière avec la branche des modèles de langage — les plongements et les modèles à attention sont exactement les briques sur lesquelles reposent les systèmes de récupération.
 
 ```mermaid

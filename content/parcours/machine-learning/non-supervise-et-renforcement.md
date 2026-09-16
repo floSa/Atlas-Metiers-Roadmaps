@@ -2,6 +2,8 @@
 title: Non supervisé et renforcement
 ---
 
+Niveau attendu : **usage** pour le non supervisé, **notion** seulement pour le renforcement — hors périmètre réel de presque tous les postes en dehors de la robotique, des jeux et du contrôle, où il suffit de reconnaître le sujet et de savoir qui appeler.
+
 Deux familles qui partagent un problème : l'absence de cible étiquetée, donc de métrique arbitre évidente. L'une explore et segmente, l'autre décide en séquence — et toutes deux exigent un critère de validation qu'il faut construire soi-même.
 
 ```mermaid

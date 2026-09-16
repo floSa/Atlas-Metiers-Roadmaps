@@ -2,6 +2,8 @@
 title: Protocole d'évaluation
 ---
 
+Niveau attendu : **référence**. Le chiffre annoncé n'engage que celui qui l'a produit, et personne en aval ne saura dire qu'il est faux : c'est le domaine où il faut faire autorité dans la salle.
+
 La section qui distingue un travail sérieux d'une démonstration. Un protocole faux produit un chiffre flatteur et un modèle qui s'effondre en production, sans qu'aucune alerte ne se déclenche. L'ordre correct est invariable : définir la métrique et la validation d'abord, entraîner ensuite.
 
 ```mermaid

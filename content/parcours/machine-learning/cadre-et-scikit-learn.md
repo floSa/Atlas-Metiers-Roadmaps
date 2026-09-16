@@ -2,6 +2,8 @@
 title: Cadre ML et scikit-learn
 ---
 
+Niveau attendu : **autonomie**. C'est l'outil quotidien : monter un pipeline qui ne fuit pas, poser une baseline triviale et justifier un découpage se font sans ouvrir la documentation.
+
 La typologie des apprentissages sert à cadrer un problème avant de choisir un algorithme, et une bibliothèque fournit l'interface qui rend tout le reste interchangeable : le même code de validation fonctionne avec une régression logistique ou un gradient boosting.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Apprentissage profond
 ---
 
+Niveau attendu : **usage**. Choisir l'architecture dont le biais inductif correspond à sa donnée et repartir d'un modèle pré-entraîné suffit ; concevoir une architecture est un métier de recherche.
+
 La progression du perceptron à l'attention n'est pas une course à la nouveauté : c'est une histoire de biais inductif, chaque architecture encodant une hypothèse différente sur la structure de la donnée. Savoir laquelle correspond à la sienne vaut mieux que connaître la dernière parue.
 
 ```mermaid

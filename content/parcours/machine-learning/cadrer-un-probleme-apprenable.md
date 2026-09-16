@@ -2,6 +2,8 @@
 title: Cadrer un problème apprenable
 ---
 
+Niveau attendu : **autonomie**. Dire « ceci ne s'apprend pas » et proposer autre chose est un arbitrage qu'il faut tenir devant un commanditaire qui a déjà annoncé le projet.
+
 Avant toute donnée : ce problème s'apprend-il à partir d'exemples, et à quel prix. La compétence qui distingue un profil expérimenté n'est pas la connaissance des architectures récentes mais la capacité à dire « ceci ne se traite pas par apprentissage » et à proposer autre chose.
 
 ```mermaid
