@@ -10,12 +10,12 @@ Les outils s'apprennent en quelques semaines et ne distinguent personne. Ce qui 
 
 ```mermaid
 flowchart TD
-  T["Le tableur et son seuil<br/>à quel moment on n'a plus le droit d'y rester"]
-  S["SQL, l'outil le plus rentable<br/>agrégation, jointure, fenêtrage"]
-  L["Choisir un langage<br/>Python ou R, et aller au fond"]
-  M["Manipuler des tables en code<br/>pandas, dplyr, la lisibilité d'abord"]
-  P["Publier dans un outil partagé<br/>ce que l'analyste y fait et n'y fait pas"]
-  V["Quand le volume déborde<br/>DuckDB, Polars, Parquet, Spark"]
+  T["Le tableur et son seuil<br/>Autonomie"]
+  S["SQL, l'outil le plus rentable<br/>Autonomie"]
+  L["Choisir un langage<br/>Usage"]
+  M["Manipuler des tables en code<br/>Autonomie"]
+  P["Publier dans un outil partagé<br/>Usage"]
+  V["Quand le volume déborde<br/>Notion"]
 
   click T "/parcours/data-analyst/socle-outillage/le-tableur-et-son-seuil"
   click S "/parcours/data-analyst/socle-outillage/sql-pour-l-analyste"

@@ -10,11 +10,11 @@ Un analyste applique des modèles, il n'en construit pas, et l'essentiel de sa v
 
 ```mermaid
 flowchart TD
-  Q["Comprendre ou prédire<br/>la question de cadrage qui tranche tout"]
-  C["Classer un oui-non métier<br/>résiliation, impayé, requalification"]
-  R["Regrouper pour segmenter<br/>proposer une segmentation, pas la trancher"]
-  E["Évaluer honnêtement<br/>la référence triviale d'abord"]
-  V["Le texte libre<br/>verbatims, thèmes, sentiment"]
+  Q["Comprendre ou prédire<br/>Autonomie"]
+  C["Classer un oui-non métier<br/>Usage"]
+  R["Regrouper pour segmenter<br/>Usage"]
+  E["Évaluer honnêtement<br/>Autonomie"]
+  V["Le texte libre<br/>Usage"]
 
   click Q "/parcours/data-analyst/modelisation-appliquee/comprendre-ou-predire"
   click C "/parcours/data-analyst/modelisation-appliquee/classer-un-oui-non-metier"

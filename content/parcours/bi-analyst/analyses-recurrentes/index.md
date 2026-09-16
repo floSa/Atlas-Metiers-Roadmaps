@@ -10,11 +10,11 @@ Là où un analyste calcule une analyse, le BI Analyst la **modélise pour qu'el
 
 ```mermaid
 flowchart TD
-  S["Séries temporelles et calendrier<br/>la saisonnalité mal lue fait les fausses alertes"]
-  P["Prévoir et se comparer au naïf<br/>la référence à battre"]
-  C["Cohortes et effet de composition<br/>distinguer l'amélioration de la sélection"]
-  E["Expérimentation<br/>la métrique de décision, définie avant"]
-  D["Contraintes par secteur<br/>ce qui change en finance, commerce, santé, industrie"]
+  S["Séries temporelles et calendrier<br/>Autonomie"]
+  P["Prévoir et se comparer au naïf<br/>Usage"]
+  C["Cohortes et effet de composition<br/>Autonomie"]
+  E["Expérimentation<br/>Usage"]
+  D["Contraintes par secteur<br/>Notion"]
 
   click S "/parcours/bi-analyst/analyses-recurrentes/series-temporelles-et-calendrier"
   click P "/parcours/bi-analyst/analyses-recurrentes/prevoir-et-se-comparer-au-naif"

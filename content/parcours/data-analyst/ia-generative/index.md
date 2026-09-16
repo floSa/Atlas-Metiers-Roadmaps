@@ -10,11 +10,11 @@ Elle a fortement accéléré la partie fabrication du travail d'analyse et n'a r
 
 ```mermaid
 flowchart TD
-  C["Ce qui a changé, ce qui n'a pas<br/>fabriquer contre juger"]
-  R["Générer des requêtes<br/>fournir le schéma, relire, compter"]
-  E["Explorer avec un modèle<br/>dégrossir, jamais conclure"]
-  N["Interroger en langage naturel<br/>pourquoi ça marche ici et pas là"]
-  P["Ce qu'on a le droit d'envoyer<br/>l'extrait client n'est pas un presse-papiers"]
+  C["Ce qui a changé, ce qui n'a pas<br/>Usage"]
+  R["Générer des requêtes<br/>Usage"]
+  E["Explorer avec un modèle<br/>Usage"]
+  N["Interroger en langage naturel<br/>Notion"]
+  P["Ce qu'on a le droit d'envoyer<br/>Autonomie"]
 
   click C "/parcours/data-analyst/ia-generative/ce-qui-a-change"
   click R "/parcours/data-analyst/ia-generative/generer-des-requetes"

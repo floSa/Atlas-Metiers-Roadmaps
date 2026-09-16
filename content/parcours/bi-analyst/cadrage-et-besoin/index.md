@@ -10,10 +10,10 @@ L'étape qui décide si tout le reste sert à quelque chose : entendre une deman
 
 ```mermaid
 flowchart TD
-  M["Le métier et ses frontières<br/>ce que le BI Analyst livre en propre"]
-  B["Du besoin à la métrique<br/>les quatre questions qui désambiguïsent"]
-  D["Le dictionnaire des métriques<br/>cinq lignes par mesure, dans le dépôt"]
-  R["Registres et horizons<br/>ce qui calibre fraîcheur et granularité"]
+  M["Le métier et ses frontières<br/>Référence"]
+  B["Du besoin à la métrique<br/>Référence"]
+  D["Le dictionnaire des métriques<br/>Référence"]
+  R["Registres et horizons<br/>Autonomie"]
 
   click M "/parcours/bi-analyst/cadrage-et-besoin/le-metier-et-ses-frontieres"
   click B "/parcours/bi-analyst/cadrage-et-besoin/du-besoin-a-la-metrique"

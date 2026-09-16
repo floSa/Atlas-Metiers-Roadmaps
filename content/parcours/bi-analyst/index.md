@@ -10,21 +10,21 @@ Celui qui construit l'infrastructure décisionnelle dont les autres se serviront
 
 ## La roadmap
 
-Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
+Chaque case mène à sa page et porte le niveau attendu chez un profil confirmé — de **notion** (reconnaître le sujet, savoir qui appeler) à **usage** (s'en servir sur un chemin balisé), **autonomie** (concevoir, déboguer, arbitrer et défendre l'arbitrage) et **référence** (faire autorité dans la salle). Cochez les étapes acquises en bas de page pour suivre votre progression.
 
 ```mermaid
 flowchart TD
-  CB["Cadrage et besoin<br/>ce qu'on mesure, et pour qui"] --> SD["Socle de données<br/>les sources et ce qui casse"]
-  SD --> EA["Entrepôt et architecture<br/>où la donnée se pose"]
-  EA --> MD["Modélisation dimensionnelle<br/>grain, mesures, dimensions"]
-  MD --> TO["Transformation et orchestration<br/>le modèle devient du code"]
-  TO --> SG["Sémantique et gouvernance<br/>une définition, un chiffre défendable"]
-  SG --> RE["Restitution<br/>le tableau de bord comme produit"]
-  SG --> BC["BI conversationnelle<br/>sur quoi brancher un assistant"]
-  RE --> AR["Analyses récurrentes<br/>temps, cohortes, expérimentation"]
-  CA["Communiquer et arbitrer<br/>tenir une définition contestée"] -.-> SG
+  CB["Cadrage et besoin<br/>Référence"] --> SD["Socle de données<br/>Autonomie"]
+  SD --> EA["Entrepôt et architecture<br/>Autonomie"]
+  EA --> MD["Modélisation dimensionnelle<br/>Référence"]
+  MD --> TO["Transformation et orchestration<br/>Autonomie"]
+  TO --> SG["Sémantique et gouvernance<br/>Référence"]
+  SG --> RE["Restitution<br/>Autonomie"]
+  SG --> BC["BI conversationnelle<br/>Usage"]
+  RE --> AR["Analyses récurrentes<br/>Autonomie"]
+  CA["Communiquer et arbitrer<br/>Référence"] -.-> SG
   CA -.-> RE
-  PRO["Se professionnaliser<br/>portfolio, entretien, marché"]
+  PRO["Se professionnaliser<br/>Autonomie"]
 
   click CB "/parcours/bi-analyst/cadrage-et-besoin"
   click SD "/parcours/bi-analyst/socle-de-donnees"

@@ -10,10 +10,10 @@ Un modèle juste que personne n'utilise ne vaut rien, et un chiffre juste qu'on 
 
 ```mermaid
 flowchart TD
-  A["Arbitrer une définition contestée<br/>les deux chiffres sont justes"]
-  R["Restituer à une direction<br/>la conclusion d'abord, la méthode ensuite"]
-  C["Conduire le changement<br/>retirer à quelqu'un le contrôle de son chiffre"]
-  E["L'esprit critique devant un chiffre<br/>par quel bug pourrais-je obtenir ça"]
+  A["Arbitrer une définition contestée<br/>Référence"]
+  R["Restituer à une direction<br/>Autonomie"]
+  C["Conduire le changement<br/>Autonomie"]
+  E["L'esprit critique devant un chiffre<br/>Référence"]
 
   click A "/parcours/bi-analyst/communiquer-et-arbitrer/arbitrer-une-definition-contestee"
   click R "/parcours/bi-analyst/communiquer-et-arbitrer/restituer-a-une-direction"

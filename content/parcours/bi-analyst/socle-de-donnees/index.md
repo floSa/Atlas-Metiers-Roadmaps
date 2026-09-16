@@ -10,10 +10,10 @@ Ce qui entre dans l'entrepôt, et surtout ce qui va casser : chaque source a un 
 
 ```mermaid
 flowchart TD
-  S["Connaître ses sources<br/>et leur mode de défaillance"]
-  E["Extraire sans casser la source<br/>incrémental, découplage, quotas"]
-  F["Formats et typage<br/>ce qui préfigure dimension et mesure"]
-  Q["SQL de production<br/>une requête exécutée dix mille fois"]
+  S["Connaître ses sources<br/>Autonomie"]
+  E["Extraire sans casser la source<br/>Autonomie"]
+  F["Formats et typage<br/>Usage"]
+  Q["SQL de production<br/>Référence"]
 
   click S "/parcours/bi-analyst/socle-de-donnees/connaitre-ses-sources"
   click E "/parcours/bi-analyst/socle-de-donnees/extraire-sans-casser-la-source"

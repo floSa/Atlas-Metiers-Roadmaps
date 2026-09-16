@@ -10,12 +10,12 @@ L'étape sur laquelle le métier est jugé. Restituer n'est pas montrer ce qu'on
 
 ```mermaid
 flowchart TD
-  P["La réponse en une phrase<br/>en premier, avec son chiffre"]
-  G["Choisir le graphique<br/>celui qui démontre la phrase"]
-  E["Le périmètre et ses exclusions<br/>ce qui rend le chiffre opposable"]
-  I["Dire ce qu'on ne sait pas<br/>l'incertitude en langage de décideur"]
-  D["Proposer une décision<br/>même si elle sera écartée"]
-  A["Archiver le livrable<br/>d'où sort ce chiffre, six mois plus tard"]
+  P["La réponse en une phrase<br/>Référence"]
+  G["Choisir le graphique<br/>Référence"]
+  E["Le périmètre et ses exclusions<br/>Autonomie"]
+  I["Dire ce qu'on ne sait pas<br/>Référence"]
+  D["Proposer une décision<br/>Autonomie"]
+  A["Archiver le livrable<br/>Autonomie"]
 
   click P "/parcours/data-analyst/restituer/la-reponse-en-une-phrase"
   click G "/parcours/data-analyst/restituer/choisir-le-graphique"

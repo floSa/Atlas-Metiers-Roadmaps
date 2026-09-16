@@ -10,11 +10,11 @@ Le moment où le modèle devient du code exécuté chaque nuit. C'est aussi le d
 
 ```mermaid
 flowchart TD
-  E["De l'ETL à l'ELT<br/>charger brut, transformer dans l'entrepôt"]
-  C["Les trois couches de modèles<br/>source, intermédiaire, présentation"]
-  I["Idempotence et incrémental<br/>rejouer sans dégâts"]
-  T["Tester dans la chaîne<br/>arrêter plutôt qu'alerter"]
-  O["Ordonnancer et reprendre<br/>dépendances, incidents, rattrapage"]
+  E["De l'ETL à l'ELT<br/>Usage"]
+  C["Les trois couches de modèles<br/>Autonomie"]
+  I["Idempotence et incrémental<br/>Autonomie"]
+  T["Tester dans la chaîne<br/>Autonomie"]
+  O["Ordonnancer et reprendre<br/>Usage"]
 
   click E "/parcours/bi-analyst/transformation-et-orchestration/de-l-etl-a-l-elt"
   click C "/parcours/bi-analyst/transformation-et-orchestration/les-trois-couches-de-modeles"
