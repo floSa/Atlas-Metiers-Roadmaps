@@ -2,6 +2,8 @@
 title: Dépôt et historique des décisions
 ---
 
+Niveau attendu : **autonomie**. Quand une machine écrit une part du code, l'historique devient la seule mémoire des décisions : il faut le tenir sans y être contraint par une équipe, parce qu'il n'y en a pas.
+
 Le versionnement est la première chose à mettre en place après une génération. Quand une part du code est produite par une machine, l'historique devient le seul endroit où l'on peut répondre à « qui a décidé ça, et pourquoi ».
 
 ```mermaid

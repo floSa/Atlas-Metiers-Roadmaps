@@ -2,6 +2,8 @@
 title: Conduire une génération
 ---
 
+Niveau attendu : **référence**. C'est le geste propre au métier : le schéma produit en huit secondes survivra au code qui l'entoure, et aucun autre rôle dans l'équipe ne sait dire ce qu'il fallait mettre dans l'énoncé.
+
 La génération transforme un énoncé en base de code fonctionnelle. C'est le moment où se fixent les choix les plus durables : le schéma de base de données produit en huit secondes structurera le produit bien après que le code qui l'entoure aura été réécrit.
 
 ```mermaid

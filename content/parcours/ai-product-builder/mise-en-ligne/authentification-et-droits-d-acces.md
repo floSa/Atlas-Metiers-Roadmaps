@@ -2,6 +2,8 @@
 title: Authentification et droits d'accès
 ---
 
+Niveau attendu : **autonomie**. C'est l'endroit où une application générée est fausse sans lever la moindre erreur : il faut savoir le vérifier soi-même, route par route, sans attendre qu'un audit le signale.
+
 Le point où une application générée est le plus souvent fausse. Une route qui vérifie l'identité mais pas l'autorisation laisse n'importe quel utilisateur connecté lire les données des autres — et elle ne produit aucune erreur.
 
 ```mermaid

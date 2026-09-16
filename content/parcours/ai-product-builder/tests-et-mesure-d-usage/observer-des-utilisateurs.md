@@ -2,6 +2,8 @@
 title: Observer des utilisateurs
 ---
 
+Niveau attendu : **usage**. Le protocole d'observation est court et documenté ; la difficulté est de s'y tenir et de se taire, pas de le concevoir.
+
 Le pendant qualitatif de l'instrumentation. Les chiffres disent **où** les gens s'arrêtent ; seule l'observation dit **pourquoi**. Aucun des deux ne remplace l'autre, et celui qu'on néglige est presque toujours le second.
 
 ```mermaid

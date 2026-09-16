@@ -2,6 +2,8 @@
 title: Définir le problème
 ---
 
+Niveau attendu : **autonomie**. L'énoncé remplace l'architecture qu'on ne dessine plus : personne d'autre ne le rédigera, et sa précision plafonne tout ce qui suit.
+
 L'entrée la plus déterminante de toute la chaîne. Puisqu'on ne dessine plus d'architecture avant de coder, la précision de l'énoncé porte toute la charge : ce qui n'est pas écrit sera inventé, et inventé de façon plausible.
 
 ```mermaid

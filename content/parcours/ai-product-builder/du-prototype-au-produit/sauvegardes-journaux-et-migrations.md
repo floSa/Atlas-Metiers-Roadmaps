@@ -2,6 +2,8 @@
 title: Sauvegardes, journaux et migrations
 ---
 
+Niveau attendu : **usage**. Les trois mécanismes s'installent depuis la documentation de la plateforme en quelques heures ; la restauration se répète, elle ne s'invente pas.
+
 Trois mécanismes qui s'installent en quelques heures au démarrage et qui deviennent très coûteux à rétablir plus tard. Aucun n'est écrit spontanément par un générateur, parce qu'aucun ne figure dans l'énoncé initial.
 
 ```mermaid

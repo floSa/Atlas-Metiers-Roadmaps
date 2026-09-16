@@ -2,6 +2,8 @@
 title: La pile et les contraintes
 ---
 
+Niveau attendu : **usage**. On prend la pile la plus répandue et on écrit trois contraintes : le chemin est balisé, et s'en écarter coûte plus cher que le gain espéré.
+
 Une contrainte se pose **avant** de générer, jamais après. Trois lignes écrites au cadrage — volume attendu, données personnelles manipulées, budget mensuel — déterminent l'hébergement et évitent de découvrir le problème le jour de la mise en ligne.
 
 ```mermaid

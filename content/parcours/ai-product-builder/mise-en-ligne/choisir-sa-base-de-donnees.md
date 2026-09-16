@@ -2,6 +2,8 @@
 title: Choisir sa base de données
 ---
 
+Niveau attendu : **usage**. La règle par défaut — relationnel, sauf forme des données manifestement souple — couvre l'immense majorité des cas ; le réglage fin viendra d'un profil données.
+
 Le choix se fait sur la forme des données, pas sur la mode. En cas d'hésitation, relationnel : on migre plus facilement vers le souple que l'inverse.
 
 ```mermaid

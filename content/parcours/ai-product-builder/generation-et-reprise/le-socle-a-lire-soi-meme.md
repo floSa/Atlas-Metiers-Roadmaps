@@ -2,6 +2,8 @@
 title: Le socle à lire soi-même
 ---
 
+Niveau attendu : **usage**. On lit pour localiser la panne, on n'écrit pas : viser le niveau d'un développeur front sur React serait payer très cher une compétence que l'outil couvre.
+
 HTML, CSS et JavaScript pour lire le front end ; React parce que c'est ce que les générateurs produisent par défaut ; Node.js parce que c'est ce qu'ils produisent côté serveur. Le niveau visé n'est pas d'écrire : c'est de relire, et de savoir dans quelle couche est la panne.
 
 ```mermaid

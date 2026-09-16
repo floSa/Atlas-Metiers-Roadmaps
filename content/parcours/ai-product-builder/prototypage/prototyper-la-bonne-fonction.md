@@ -2,6 +2,8 @@
 title: Prototyper la bonne fonction
 ---
 
+Niveau attendu : **autonomie**. Choisir la fonction la plus incertaine contre la plus facile est un jugement sous pression, et c'est ce qui sépare un prototype utile d'une démonstration flatteuse.
+
 Les générateurs produisent une page d'accueil convaincante en trente secondes, et c'est précisément la partie qui ne portait aucun risque. Un prototype qui n'a pas produit de décision n'a servi à rien, quelle que soit sa beauté.
 
 ```mermaid

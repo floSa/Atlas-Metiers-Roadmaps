@@ -2,6 +2,8 @@
 title: Valider auprès des utilisateurs
 ---
 
+Niveau attendu : **usage**. Le protocole est écrit et se suit tel quel — cinq personnes, une tâche, aucune aide ; la recherche utilisateur outillée reste le métier d'à côté.
+
 On ne cherche pas des avis, on cherche les moments d'hésitation. Cinq personnes, quinze minutes, une tâche précise à accomplir sans aide — et on se tait pendant qu'elles la font.
 
 ```mermaid

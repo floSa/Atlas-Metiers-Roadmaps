@@ -2,6 +2,8 @@
 title: Les tests comme garde-corps
 ---
 
+Niveau attendu : **autonomie**. Sur une base générée, il faut décider quoi couvrir en priorité et pourquoi la pyramide s'inverse — un catalogue de tests recopié ne protège de rien.
+
 Sur une base de code générée, les tests ne servent pas d'abord à prouver la justesse : ils sont le seul retour d'exécution qui empêche un assistant de casser en silence ce qu'il ne comprend pas. Cela change ce qu'il faut couvrir en priorité — les parcours, pas les fonctions.
 
 ```mermaid

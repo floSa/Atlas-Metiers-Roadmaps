@@ -2,6 +2,8 @@
 title: Intégration continue et prévisualisation
 ---
 
+Niveau attendu : **usage**. Les plateformes livrent la prévisualisation par branche en quelques clics ; concevoir une chaîne de livraison est un autre métier, et le besoin n'apparaît pas à cette échelle.
+
 L'intégration continue sert ici moins la qualité que la **vitesse de retour** : un environnement de prévisualisation par branche transforme chaque idée en lien cliquable à envoyer à trois utilisateurs.
 
 ```mermaid

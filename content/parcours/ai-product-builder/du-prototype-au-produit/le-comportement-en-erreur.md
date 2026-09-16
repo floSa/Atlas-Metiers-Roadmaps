@@ -2,6 +2,8 @@
 title: Le comportement en erreur
 ---
 
+Niveau attendu : **usage**. Reprises, délais d'attente et message honnête sont des motifs connus, à appliquer aux quelques tiers du produit — pas une conception de résilience distribuée.
+
 Que se passe-t-il quand le service de paiement, le fournisseur d'e-mail ou la base ne répondent pas ? Un prototype n'a pas de réponse ; un produit a des reprises, des délais d'attente et un message honnête à l'utilisateur.
 
 ```mermaid

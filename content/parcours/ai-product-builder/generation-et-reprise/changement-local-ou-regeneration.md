@@ -2,6 +2,8 @@
 title: Changement local ou régénération
 ---
 
+Niveau attendu : **autonomie**. La question se tranche à chaud, base de code sous les yeux, et le mauvais choix laisse une base à deux logiques dont on ne ressort pas.
+
 La question préalable vaut plus que le choix d'outil. Rapiécer manuellement une modification qui touche le modèle de données produit une base où la moitié suit la logique du générateur et l'autre celle du correcteur — état dont on ne ressort plus.
 
 ```mermaid

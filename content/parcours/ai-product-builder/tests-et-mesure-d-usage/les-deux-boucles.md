@@ -2,6 +2,8 @@
 title: Les deux boucles
 ---
 
+Niveau attendu : **autonomie**. Séparer « ça marche encore » de « ça sert » est une décision d'organisation du produit, pas une pratique à appliquer : les confondre est l'erreur qu'aucun outil ne signale.
+
 « Est-ce que ça marche encore » et « est-ce que ça sert » sont deux questions différentes, avec deux instruments différents et deux fréquences différentes. Les confondre produit soit un produit vert et mort, soit un produit utile qu'on casse sans le voir.
 
 ```mermaid
