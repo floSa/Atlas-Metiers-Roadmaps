@@ -10,16 +10,16 @@ Un ingénieur logiciel qui travaille **à l'intérieur** de l'environnement d'un
 
 ## La roadmap
 
-Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
+Chaque case mène à sa page et porte le niveau attendu chez un FDE confirmé — de **notion** (reconnaître le sujet, savoir qui appeler) à **usage** (s'en servir sur un chemin balisé), **autonomie** (concevoir, déboguer sous pression, arbitrer et défendre l'arbitrage) et **référence** (faire autorité dans la salle). Cochez les étapes acquises en bas de page pour suivre votre progression.
 
 ```mermaid
 flowchart TD
-  S["Socle technique<br/>à quelle profondeur"] --> C["Cycle de mission<br/>les quatre phases"]
-  C --> P1["Phase 1 — Audit<br/>observer, cartographier"]
-  P1 --> P2["Phase 2 — Arbitrage<br/>simplifier, puis trancher"]
-  P2 --> P3["Phase 3 — Industrialisation<br/>livrer chez le client"]
-  P3 --> P4["Phase 4 — Sortie<br/>transférer, partir"]
-  R["Compétences relationnelles<br/>parties prenantes, changement"] -.-> P1
+  S["Socle technique<br/>Autonomie"] --> C["Cycle de mission<br/>Référence"]
+  C --> P1["Phase 1 — Audit<br/>Référence"]
+  P1 --> P2["Phase 2 — Arbitrage<br/>Référence"]
+  P2 --> P3["Phase 3 — Industrialisation<br/>Autonomie"]
+  P3 --> P4["Phase 4 — Sortie<br/>Référence"]
+  R["Compétences relationnelles<br/>Autonomie"] -.-> P1
   R -.-> P2
   R -.-> P3
   R -.-> P4
