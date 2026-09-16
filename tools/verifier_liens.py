@@ -160,14 +160,41 @@ def interroger(url: str, methode: str) -> tuple[int, str, str]:
         return reponse.status, reponse.geturl(), corps
 
 
+# Un segment de langue insere par le serveur selon l'en-tete Accept-Language :
+# aws.amazon.com/fr/..., asana.com/fr/..., learn.microsoft.com/en-us/...
+# Ce n'est pas un deplacement de la ressource, et le signaler a chaque passage
+# ne ferait que noyer les vraies redirections.
+LOCALE = re.compile(r"^(?:[a-z]{2}|[a-z]{2}[-_][a-z]{2})$", re.I)
+
+
 def normaliser(url: str) -> str:
     """Pour comparer une URL de depart et une URL d'arrivee sans bruit inutile."""
     p = urllib.parse.urlsplit(url)
-    chemin = p.path.rstrip("/") or "/"
     hote = p.netloc.lower()
     if hote.startswith("www."):
         hote = hote[4:]
+    segments = [s for s in p.path.split("/") if s and not LOCALE.match(s)]
+    chemin = "/" + "/".join(segments)
     return urllib.parse.urlunsplit((p.scheme.replace("http", "https"), hote, chemin, p.query, ""))
+
+
+def redirection_generique(depart: str, arrivee: str) -> bool:
+    """La redirection mene-t-elle a une page d'accueil plutot qu'a la ressource ?
+
+    Un article retire est rarement servi en 404 : le site redirige vers sa racine,
+    vers l'index de la rubrique, ou vers le domaine de celui qui l'a rachete. C'est
+    un 404 deguise, et c'est le cas le plus perfide parce qu'il repond 200.
+    """
+    d, a = urllib.parse.urlsplit(depart), urllib.parse.urlsplit(arrivee)
+    segs_d = [s for s in d.path.split("/") if s and not LOCALE.match(s)]
+    segs_a = [s for s in a.path.split("/") if s and not LOCALE.match(s)]
+    if len(segs_d) < 2:
+        return False  # la source etait deja une racine, rien a dire
+    if segs_a and segs_a[-1] == segs_d[-1]:
+        # La feuille est intacte : la ressource a demenage, elle n'a pas disparu.
+        # C'est le cas d'un site rachete qui republie ses pages a l'identique.
+        return False
+    return len(segs_a) < len(segs_d)
 
 
 def verifier(url: str) -> dict:
@@ -241,7 +268,12 @@ def verifier(url: str) -> dict:
                     "note": "interstitiel anti-robot, a verifier a la main",
                 }
             if normaliser(final) != normaliser(url):
-                return {**resultat, "statut": "redirection", "note": f"-> {final}"}
+                note = f"-> {final}"
+                if redirection_generique(url, final):
+                    note += " (page generique : la ressource a probablement disparu)"
+                return {**resultat, "statut": "redirection", "note": note}
+            if normaliser(final) != normaliser(url).replace("//", "//", 1) or final != url:
+                pass  # meme ressource a une variante de langue pres
             return {**resultat, "statut": "ok", "note": ""}
     return resultat
 
