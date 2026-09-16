@@ -430,7 +430,7 @@ Si tu es déjà data scientist, l'ordre utile est 3, 4, 7, 9, 10 puis 13 — les
 - [[Servir modèle à grande échelle]] — stratégies de scaling, autoscaling à zéro et arbitrages de coût.
 - [[16 - Sécurité et gouvernance]] — garde-fous, cartes modèle et exigences réglementaires évoquées aux sections 9 et 10.
 
-Roadmaps voisines : [[03 - Roadmap — Data Engineer]] pour la couche pipelines et streaming, [[04 - Roadmap — Machine Learning]] pour les fondamentaux modélisation, [[05 - Roadmap — AI Engineer]] pour la partie applicative LLM, [[07 - Roadmap — AI Agents]] pour l'orchestration agentique dont le LLMOps hérite les problèmes de coût.
+Roadmaps voisines : [[03 - Roadmap — Data Engineer]] pour la couche pipelines et streaming, [[parcours/machine-learning/index|le parcours Machine Learning]] pour les fondamentaux modélisation, [[05 - Roadmap — AI Engineer]] pour la partie applicative LLM, [[07 - Roadmap — AI Agents]] pour l'orchestration agentique dont le LLMOps hérite les problèmes de coût.
 
 ## Pour aller plus loin
 

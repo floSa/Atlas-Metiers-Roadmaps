@@ -29,7 +29,7 @@ flowchart TD
 ## Les notions mobilisées
 
 - [[notions/arbitrage-deterministe-probabiliste]] — l'angle FDE est que la grille se rend étape par étape et se signe : c'est ce qui la distingue d'une préférence technique.
-- [[notions/apprentissage-supervise]] — tout un espace de tâches se traite par un modèle classique, moins cher et plus vérifiable qu'un modèle de langage. Le contenu complet est dans [[roadmaps/04 - Roadmap — Machine Learning]].
+- [[notions/apprentissage-supervise]] — tout un espace de tâches se traite par un modèle classique, moins cher et plus vérifiable qu'un modèle de langage. Le contenu complet est dans [[parcours/machine-learning/index|le parcours Machine Learning]].
 - [[notions/choix-de-modele]] — dès qu'on entre dans le génératif, la première question n'est pas quel modèle mais quelles données ont le droit de sortir.
 - [[notions/garde-fous]] — « ne pas automatiser » est une réponse valide : le système prépare, l'humain décide.
 

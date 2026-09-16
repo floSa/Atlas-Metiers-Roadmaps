@@ -432,7 +432,7 @@ flowchart LR
 - [[13 - Serving et infra locale]] — traduit réseau, system design et hiérarchie mémoire en dimensionnement d'inférence réel.
 - [[16 - Sécurité et gouvernance]] — reprend l'OWASP Top 10 et son extension LLM en pratiques applicables.
 - [[Pipeline Data]] — le contexte d'application des structures de données, de la complexité et des transactions.
-- [[02 - Roadmap — AI and Data Scientist]] — la roadmap complémentaire côté statistiques et modélisation.
+- [[parcours/data-scientist/index|Data Scientist]] — la roadmap complémentaire côté statistiques et modélisation.
 
 ## Pour aller plus loin
 
