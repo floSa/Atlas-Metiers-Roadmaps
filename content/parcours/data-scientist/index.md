@@ -10,21 +10,21 @@ Transformer une question métier incertaine en une réponse mesurée, puis en un
 
 ## La roadmap
 
-Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
+Chaque case mène à sa page et porte, en dernière ligne, la profondeur attendue chez un profil confirmé — de **notion** (reconnaître le sujet, savoir qui appeler) à **référence** (faire autorité dans la salle). Cochez les étapes acquises en bas de page pour suivre votre progression.
 
 ```mermaid
 flowchart TD
-  CA["Cadrer et restituer<br/>du besoin flou à la question mesurable"] --> MA["Socle mathématique<br/>algèbre, gradient, probabilités"]
-  MA --> ST["Statistique et inférence<br/>signal, bruit, intervalle"]
-  ST --> EC["Économétrie et causalité<br/>l'effet plutôt que la prédiction"]
-  CA --> CO["Code et outillage<br/>le pipeline reproductible"]
-  CO --> EX["Exploration des données<br/>ce que le cahier des charges tait"]
-  EX --> MO["Modélisation<br/>le protocole avant l'algorithme"]
+  CA["Cadrer et restituer<br/>du besoin flou à la question mesurable<br/>Autonomie"] --> MA["Socle mathématique<br/>algèbre, gradient, probabilités<br/>Usage"]
+  MA --> ST["Statistique et inférence<br/>signal, bruit, intervalle<br/>Référence"]
+  ST --> EC["Économétrie et causalité<br/>l'effet plutôt que la prédiction<br/>Usage"]
+  CA --> CO["Code et outillage<br/>le pipeline reproductible<br/>Autonomie"]
+  CO --> EX["Exploration des données<br/>ce que le cahier des charges tait<br/>Autonomie"]
+  EX --> MO["Modélisation<br/>le protocole avant l'algorithme<br/>Référence"]
   ST --> MO
   EC --> MO
-  MO --> DL["Apprentissage profond<br/>le non structuré et son coût"]
-  DL --> LM["Modèles de langage<br/>appeler, récupérer ou affiner"]
-  MO --> PR["Mise en production<br/>servir, tracer, surveiller"]
+  MO --> DL["Apprentissage profond<br/>le non structuré et son coût<br/>Usage"]
+  DL --> LM["Modèles de langage<br/>appeler, récupérer ou affiner<br/>Usage"]
+  MO --> PR["Mise en production<br/>servir, tracer, surveiller<br/>Usage"]
   LM --> PR
 
   click CA "/parcours/data-scientist/cadrer-et-restituer"

@@ -10,19 +10,19 @@ Construire un modèle qu'on possède de bout en bout, des données brutes au mod
 
 ## La roadmap
 
-Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
+Chaque case mène à sa page et porte, en dernière ligne, la profondeur attendue chez un profil confirmé — de **notion** (reconnaître le sujet, savoir qui appeler) à **référence** (faire autorité dans la salle). Cochez les étapes acquises en bas de page pour suivre votre progression.
 
 ```mermaid
 flowchart TD
-  CD["Cadrer un problème apprenable<br/>et savoir dire non"] --> FM["Fondations mathématiques<br/>pour diagnostiquer, pas pour réimplémenter"]
-  FM --> DP["Données et préparation<br/>là où se fabriquent les fuites"]
-  DP --> CS["Cadre ML et scikit-learn<br/>typologie, pipeline, baseline"]
-  CS --> EV["Protocole d'évaluation<br/>décidé avant l'entraînement"]
-  EV --> SU["Apprentissage supervisé<br/>du linéaire au boosting"]
-  EV --> NS["Non supervisé et renforcement<br/>sans métrique arbitre"]
-  SU --> DP2["Apprentissage profond<br/>un biais inductif par architecture"]
+  CD["Cadrer un problème apprenable<br/>et savoir dire non<br/>Autonomie"] --> FM["Fondations mathématiques<br/>pour diagnostiquer, pas pour réimplémenter<br/>Usage"]
+  FM --> DP["Données et préparation<br/>là où se fabriquent les fuites<br/>Autonomie"]
+  DP --> CS["Cadre ML et scikit-learn<br/>typologie, pipeline, baseline<br/>Autonomie"]
+  CS --> EV["Protocole d'évaluation<br/>décidé avant l'entraînement<br/>Référence"]
+  EV --> SU["Apprentissage supervisé<br/>du linéaire au boosting<br/>Référence"]
+  EV --> NS["Non supervisé et renforcement<br/>sans métrique arbitre<br/>Usage"]
+  SU --> DP2["Apprentissage profond<br/>un biais inductif par architecture<br/>Usage"]
   NS --> DP2
-  DP2 --> AV["Génération, interprétabilité, NLP<br/>la charnière avec les LLM"]
+  DP2 --> AV["Génération, interprétabilité, NLP<br/>la charnière avec les LLM<br/>Usage"]
 
   click CD "/parcours/machine-learning/cadrer-un-probleme-apprenable"
   click FM "/parcours/machine-learning/fondations-mathematiques"
