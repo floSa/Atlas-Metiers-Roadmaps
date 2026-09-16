@@ -4,14 +4,21 @@ title: AI engineering
 
 ```mermaid
 flowchart TD
-  ai["AI Engineering Skills"] --> apis["Modèles et APIs"]
-  ai --> rag["RAG"]
-  ai --> ag["Agents et outils"]
-  ai --> ev["Évaluation"]
-  ai --> ctx["Prompt et context engineering"]
-  ai --> cost["Coût et latence"]:::ajout
-  ai --> guard["Garde-fous et sécurité"]:::ajout
-  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  N1["RAG"]
+  N2["Agents et MCP"]
+  N3["MCP"]
+  N4["Choix de modèle"]
+  N5["Évaluation"]
+  N6["Coût et latence"]
+  N7["Affinage"]
+
+  click N1 "/notions/rag"
+  click N2 "/notions/agents-llm"
+  click N3 "/notions/mcp"
+  click N4 "/notions/choix-de-modele"
+  click N5 "/notions/evaluation-llm"
+  click N6 "/notions/cout-et-latence-inference"
+  click N7 "/notions/affinage-de-modele"
 ```
 
 **À quoi ça sert.** C'est le seul domaine où le niveau attendu est celui de la référence. Non pas parce qu'il serait plus noble, mais parce que c'est le seul où le client n'a personne pour rattraper une erreur du FDE. Un mauvais choix de découpage documentaire ou un jeu d'évaluation absent ne se voient pas à la livraison ; ils se voient six mois plus tard, quand plus personne ne sait pourquoi le système s'est dégradé.

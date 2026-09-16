@@ -42,7 +42,7 @@ C'est le cœur de la sortie de mission, et l'angle est temporel : le transfert n
 ## Pour aller plus loin
 
 > [!note] Ressources
-> Ce sujet n'a aucune ressource dans les captures amont : c'est un apport propre du dossier Forward Deployed Engineer, issu du brief de commande et non de roadmap.sh. Aucune ressource externe n'est citée ici plutôt qu'une référence non vérifiée. Voir [[parcours/forward-deployed-engineer/sortie-de-mission]] pour le déroulé détaillé.
+> Ce sujet n'a aucune ressource dans les captures amont : c'est un apport propre du dossier Forward Deployed Engineer, issu du brief de commande et non de roadmap.sh. Aucune ressource externe n'est citée ici plutôt qu'une référence non vérifiée. Voir [[parcours/forward-deployed-engineer/sortie-de-mission/index|phase 4]] pour le déroulé détaillé.
 
 ## Appelée par
 

@@ -3,13 +3,14 @@ title: Algorithmique et conception système
 ---
 
 ```mermaid
-flowchart LR
-  dsa["DSA & System Design"] --> ds["Structures de données usuelles"]
-  dsa --> cx["Ordres de grandeur et coût"]
-  dsa --> sd["System design"]
-  sd --> int["Intégration - le vrai problème de conception"]:::ajout
-  sd --> fail["Modes de défaillance et dégradation"]:::ajout
-  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+flowchart TD
+  N1["Conception d'API"]
+  N2["Tests logiciels"]
+  N3["Coût et latence"]
+
+  click N1 "/notions/conception-d-api"
+  click N2 "/notions/tests-logiciels"
+  click N3 "/notions/cout-et-latence-inference"
 ```
 
 **À quoi ça sert.** L'amont justifie l'algorithmique par la capacité à évaluer la performance d'un code et à déboguer les inefficacités d'un système client. C'est exact et c'est limité : un FDE n'écrit pratiquement jamais un algorithme non trivial. En revanche il conçoit des systèmes d'intégration en permanence, et c'est là que le niveau doit être élevé — un système d'IA en environnement client est un problème de couplage, de mode dégradé et de reprise, pas un problème de complexité algorithmique.

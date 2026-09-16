@@ -3,13 +3,14 @@ title: Linux et systèmes
 ---
 
 ```mermaid
-flowchart LR
-  lin["Linux Skills"] --> nav["Navigation, droits, processus"]
-  lin --> log["Lecture de journaux - journalctl, fichiers"]
-  lin --> svc["Services, systemd, redémarrage"]
-  lin --> net["Réseau - ports, proxy d'entreprise, certificats"]:::ajout
-  lin --> deb["Déboguage sans outillage graphique"]:::ajout
-  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+flowchart TD
+  N1["Conteneurisation"]
+  N2["Observabilité"]
+  N3["Contrôle d'accès"]
+
+  click N1 "/notions/conteneurisation"
+  click N2 "/notions/observabilite"
+  click N3 "/notions/controle-d-acces"
 ```
 
 **À quoi ça sert.** L'amont le formule bien : la plupart des logiciels de production tournent sous Linux. Pour un FDE, la précision qui compte est ailleurs — le serveur sur lequel il débogue n'est pas le sien. Pas d'agent d'observabilité installé, pas de droits d'administration, un proxy qui coupe la moitié des requêtes sortantes et un certificat interne que rien ne reconnaît. Le niveau utile est donc celui du diagnostic en environnement hostile, pas celui de l'administration système.

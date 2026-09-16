@@ -28,8 +28,8 @@ flowchart TD
   click C "/parcours/forward-deployed-engineer/cycle-mission"
   click P1 "/parcours/forward-deployed-engineer/audit-et-cartographie"
   click P2 "/parcours/forward-deployed-engineer/arbitrage-technologique"
-  click P3 "/parcours/forward-deployed-engineer/industrialisation"
-  click P4 "/parcours/forward-deployed-engineer/sortie-de-mission"
+  click P3 "/parcours/forward-deployed-engineer/industrialisation/index"
+  click P4 "/parcours/forward-deployed-engineer/sortie-de-mission/index"
   click R "/parcours/forward-deployed-engineer/competences-relationnelles"
 
   classDef transverse stroke:#f9a825,stroke-width:1px,stroke-dasharray:4 3
@@ -42,6 +42,6 @@ flowchart TD
 - [ ] [[parcours/forward-deployed-engineer/cycle-mission|Cycle de mission]] — les quatre phases et leurs portes de sortie
 - [ ] [[parcours/forward-deployed-engineer/audit-et-cartographie|Phase 1 — Audit et cartographie]] — observer le travail réel, modéliser le processus
 - [ ] [[parcours/forward-deployed-engineer/arbitrage-technologique|Phase 2 — Arbitrage technologique]] — simplifier avant d'automatiser, déterministe ou probabiliste
-- [ ] [[parcours/forward-deployed-engineer/industrialisation|Phase 3 — Industrialisation]] — interfaçage, sécurité, évaluation, exploitation
-- [ ] [[parcours/forward-deployed-engineer/sortie-de-mission|Phase 4 — Sortie de mission]] — transfert de compétences, maintenance
+- [ ] [[parcours/forward-deployed-engineer/industrialisation/index|Phase 3 — Industrialisation]] — interfaçage, sécurité, évaluation, exploitation
+- [ ] [[parcours/forward-deployed-engineer/sortie-de-mission/index|Phase 4 — Sortie de mission]] — transfert de compétences, maintenance
 - [ ] [[parcours/forward-deployed-engineer/competences-relationnelles|Compétences relationnelles]] — parties prenantes, politique interne, conduite du changement

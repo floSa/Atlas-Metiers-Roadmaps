@@ -3,12 +3,14 @@ title: Frontend
 ---
 
 ```mermaid
-flowchart LR
-  fe["Frontend Skills"] --> base["HTML, CSS, JavaScript"]
-  fe --> fw["Un framework, un seul"]
-  fe --> proto["Prototype livrable sans équipe frontend"]
-  fe --> lim["Savoir s'arrêter avant le produit fini"]:::ajout
-  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+flowchart TD
+  N1["Conception d'API"]
+  N2["Mesure d'usage"]
+  N3["Tests logiciels"]
+
+  click N1 "/notions/conception-d-api"
+  click N2 "/notions/mesure-d-usage-produit"
+  click N3 "/notions/tests-logiciels"
 ```
 
 **À quoi ça sert.** L'amont vise juste : un FDE capable de produire une interface fonctionnelle est autonome dans un engagement, il livre une démonstration de bout en bout sans dépendre d'une équipe frontend. Ce qu'il ne dit pas, c'est que l'interface sert d'abord d'instrument de cadrage. Montrer un écran, même grossier, fait sortir en dix minutes des exigences que trois ateliers de recueil n'ont pas révélées — parce que les gens critiquent mieux qu'ils ne décrivent.

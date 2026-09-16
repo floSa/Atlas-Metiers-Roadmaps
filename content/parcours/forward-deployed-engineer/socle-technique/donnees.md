@@ -4,11 +4,15 @@ title: "Données : relationnel, vectoriel, patrimonial"
 
 ```mermaid
 flowchart TD
-  data["Données"] --> rel["Relationnel - SQL, modèle réel contre modèle documenté"]:::ajout
-  data --> vec["Vectoriel - index, filtres, réindexation"]:::ajout
-  data --> leg["Systèmes patrimoniaux - ERP, CRM, exports"]:::ajout
-  rel --> qual["Qualité et fraîcheur des données"]:::ajout
-  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  N1["SQL"]
+  N2["Bases vectorielles"]
+  N3["Qualité des données"]
+  N4["Systèmes patrimoniaux"]
+
+  click N1 "/notions/sql"
+  click N2 "/notions/embeddings-et-bases-vectorielles"
+  click N3 "/notions/qualite-des-donnees"
+  click N4 "/notions/systemes-patrimoniaux"
 ```
 
 **À quoi ça sert.** Le brief place la manipulation de bases relationnelles et vectorielles dans les domaines d'expertise requis, et l'amont n'en parle pas du tout. C'est pourtant là que la plupart des missions se jouent : la qualité d'un système de récupération documentaire est plafonnée par la qualité des données qu'on lui donne, et personne chez le client ne connaît l'état réel de ses données. Le schéma documenté et le contenu effectif divergent toujours.
