@@ -9,6 +9,10 @@ flowchart TD
   O["Dans l'outil de restitution<br/>rapide, inaccessible aux autres outils"]
   D["Découplée<br/>plusieurs consommateurs, une brique de plus"]
   E["Dans l'entrepôt<br/>universel, mais pas les agrégations non additives"]
+
+  click O "/notions/outils-decisionnels"
+  click D "/notions/transformation-dbt"
+  click E "/notions/entrepot-de-donnees"
 ```
 
 ## Ce qu'il faut savoir faire
