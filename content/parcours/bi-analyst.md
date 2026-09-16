@@ -411,3 +411,103 @@ Concrètement, ça se joue en deux moments. Quand un chiffre est contesté, il f
 > Faire de la gouvernance un projet documentaire. Un catalogue rempli à la main par une équipe dédiée est périmé avant d'être terminé, parce que rien ne force sa mise à jour. Ce qui tient dans le temps est ce qui est **généré depuis le code** — lignage, documentation, tests — et ce qui bloque la chaîne quand c'est faux. La question à se poser devant toute initiative de gouvernance : qu'est-ce qui se passe si personne ne la maintient ? Si la réponse est « rien ne casse, ça se périme », elle ne sera pas maintenue.
 
 ---
+
+## 10. Restituer — plateformes et tableaux de bord
+
+```mermaid
+flowchart TD
+  bp["BI Platforms"] --> cat["Trois familles"]:::ajout
+  cat --> f1["Intégrées à un écosystème - Power BI, Microsoft Fabric"]
+  cat --> f2["Exploration visuelle - Tableau, Qlik"]
+  cat --> f3["Sémantique en code - Looker et LookML"]
+  cat --> f4["Libres - Metabase, Superset"]
+  bp --> xl["Excel - le poste de travail réel du métier"]
+  vz["Visualization Fundamentals"] --> ch["Chart Categories"]
+  ch --> c1["Comparaison - barres"]
+  ch --> c2["Évolution - courbes"]
+  ch --> c3["Distribution - histogramme"]
+  ch --> c4["Relation - nuage de points"]
+  ch --> c5["Densité et géographie - heatmap, carte"]
+  vz --> bpr["Visualization Best Practices"]
+  bpr --> b1["Color theory et Accessibility"]
+  bpr --> b2["Design principles"]
+  bpr --> b3["Misleading charts"]
+  dd["Dashboard Design"] --> dd1["Mobile-responsiveness"]
+  dd --> dd2["Un tableau de bord est un produit, pas un livrable"]:::ajout
+  dd --> dd3["Cycle de vie et instrumentation de l'usage"]:::ajout
+  pl["Programming Languages"] --> pl1["SQL puis Python ou R selon l'écosystème"]
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** La restitution est la seule partie du travail que l'organisation voit, ce qui la rend à la fois surévaluée et négligée : on juge le BI Analyst sur l'esthétique de ses tableaux de bord, et on ne finance jamais leur maintenance. La grammaire du graphique — quel type pour quelle question, lisibilité, erreurs classiques — est dans [[notions/visualisation-de-donnees]] ; ce qui distingue les plateformes dans [[notions/outils-decisionnels]] ; le tableur dans [[notions/tableur]].
+
+Ce qui est propre au BI Analyst, c'est de traiter le tableau de bord comme un **produit** : il a des utilisateurs identifiés, une raison d'exister formulée en termes de décision, un propriétaire, un coût de fonctionnement, et une date de retrait. La plupart des organisations n'ont aucune de ces cinq choses, et c'est pourquoi elles finissent avec des centaines de rapports dont l'usage est inconnu. Le corollaire est que l'essentiel de la valeur ne vient pas du choix du graphique : il vient du fait que les quinze chiffres du tableau de bord proviennent tous de la couche sémantique (section 8) et non de quinze formules écrites dans l'outil.
+
+Sur le choix de plateforme, quatre familles suffisent à s'orienter. Les **plateformes intégrées à un écosystème** — Power BI dans le monde Microsoft — gagnent par l'existant : licences déjà là, authentification en place, Excel de l'autre côté. Les outils d'**exploration visuelle** — Tableau, Qlik — restent supérieurs quand l'usage est de creuser librement plutôt que de suivre des indicateurs. Les outils à **sémantique en code** — Looker et son LookML — ont défendu le plus tôt et le plus loin l'idée que les définitions se versionnent, et c'est leur intérêt principal bien avant leurs graphiques. Les outils **libres** — Metabase pour la simplicité d'accès, Superset pour la couverture fonctionnelle — sont un choix sérieux quand le budget de licences est contraint ou que l'outil doit être embarqué. Le critère qui départage en pratique n'est presque jamais la richesse fonctionnelle : c'est le modèle de licence rapporté au nombre de consultants occasionnels, et l'existence d'un mode d'accès pour ceux qui ne se connecteront que trois fois par an.
+
+**Ce qu'il faut savoir**
+
+- Le choix du graphique se déduit de la question, pas du goût — comparer des catégories appelle des barres, suivre dans le temps appelle une courbe, montrer une distribution appelle un histogramme, chercher une relation appelle un nuage de points. Le camembert au-delà de trois parts et le second axe vertical sont les deux erreurs à éliminer par principe.
+- Accessibilité — ne jamais faire porter l'information par la seule couleur, vérifier les palettes contre les daltonismes, garder un contraste suffisant. Ce n'est pas une contrainte marginale : autour de 8 % des hommes sont concernés par une déficience de perception des rouges et des verts, ce qui est beaucoup dans une audience de direction.
+- Graphiques trompeurs — axe tronqué, échelles incohérentes entre deux graphiques côte à côte, périodes sélectionnées pour avantager une conclusion. Le BI Analyst en est à la fois le garde-fou et, sous pression, l'auteur : c'est souvent lui qu'on sollicite pour « mieux présenter » un chiffre décevant. Savoir dire non fait partie du métier.
+- Conception du tableau de bord — trois à cinq chiffres en haut, le détail en dessous, un filtre par défaut qui correspond à l'usage dominant. Un tableau de bord qui exige six sélections avant d'afficher quelque chose ne sera pas utilisé. Et il n'y a pas de tableau de bord universel : sépare le suivi (peu de chiffres, souvent consultés) de l'exploration (beaucoup de dimensions, rarement consultée).
+- Mobile — ne conçois une version mobile que si l'usage est réellement mobile, et alors conçois-la séparément. Un tableau de bord dense rétréci sur un téléphone est illisible, et le compromis responsive automatique donne le pire des deux.
+- Droits d'accès à la ligne — définis-les dans la couche sémantique ou l'entrepôt, jamais en dupliquant le rapport par périmètre. Les rapports dupliqués divergent, et un droit d'accès qui vit dans une copie de rapport est un incident de confidentialité en attente.
+- Mode d'accès aux données — importation (donnée copiée dans l'outil, rapide, décalée) ou requête directe (fraîche, dépendante de l'entrepôt et de son coût). Le choix se fait par tableau de bord selon la fraîcheur réellement exigée, pas une fois pour toute la plateforme.
+- Excel ne disparaîtra pas et ce n'est pas un échec — la moitié des consultations finissent par un export, parce que le métier veut recalculer à sa façon. Autant l'organiser : expose un export propre et cadré plutôt que de le combattre. Ce qui doit être combattu, c'est le classeur qui devient une source de vérité parallèle.
+- Langages — SQL est indispensable, Python ou R viennent ensuite selon l'écosystème de l'entreprise. Un BI Analyst n'a pas besoin de savoir écrire une application, il a besoin de savoir automatiser une récupération et industrialiser un calcul.
+
+> [!tip] Ajout 2026
+> Instrumente l'usage dès la mise en service — qui ouvre quoi, combien de fois, et quel est le coût de calcul associé. Toutes les plateformes majeures l'exposent, presque personne ne l'exploite. C'est ce qui permet la seule conversation qui fasse baisser la dette de reporting : arriver avec la liste des rapports non consultés depuis six mois et leur coût mensuel, et demander l'autorisation de les retirer. Sans ces chiffres, la demande de suppression se heurte toujours à « mais j'en ai peut-être besoin ».
+
+> [!warning] Piège
+> Empiler les tableaux de bord sans jamais en retirer. Chaque nouveau rapport ajoute une surface à maintenir, une chance de divergence avec la couche sémantique, et une occasion d'afficher un chiffre différent de celui du voisin. Fixe la règle dès le départ : tout nouveau tableau de bord a un propriétaire nommé et une date de revue, et un rapport sans usage à sa revue est déprécié puis supprimé. Une équipe BI se juge autant à ce qu'elle a retiré qu'à ce qu'elle a produit.
+
+---
+
+## 11. Les analyses récurrentes — temps, cohortes, expérimentation
+
+```mermaid
+flowchart TD
+  ds["Descriptive Statistics"] --> ct["Central Tendency - Mean, Median, Mode"]
+  ds --> dp["Dispersion - Range, Variance, STD, IQR"]
+  ds --> ds2["Distribution, Skewness, Kurtosis"]
+  is["Inferential Statistics"] --> ps["Population & Sample"]
+  is --> ht["Hypothesis Testing - p-value, Confidence Intervals, Types of Errors"]
+  is --> stt["Statistical tests"]
+  ca["Correlation Analysis"] --> cc["Correlation vs Causation"]
+  ra["Regression Analysis"] --> lr["Linear Regression et Beyond"]
+  ts["Time Series Analysis"] --> t1["Trends"]
+  ts --> t2["Seasonality"]
+  ts --> t3["Forecasting"]
+  co["Cohort Analysis"]
+  ab["A/B Testing"]
+  ml["Basic Machine Learning"] --> m1["Supervised Learning"]
+  ml --> m2["Unsupervised Learning"]
+  ml --> m3["Reinforcement Learning"]
+  ts --> md["Modéliser l'analyse plutôt que la recalculer"]:::ajout
+  co --> md
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** Le contenu statistique de cette étape est mutualisé et ne se réexplique pas ici : [[notions/statistiques-descriptives]] pour les mesures de position et de dispersion, [[notions/tests-hypotheses]] pour l'inférence, les p-values, les intervalles de confiance et les deux types d'erreur, [[notions/analyse-correlation]] pour la corrélation et sa confusion avec la causalité, [[notions/regression-lineaire]] pour la régression, [[notions/ab-testing]] pour le protocole d'expérimentation, et [[notions/apprentissage-supervise]], [[notions/apprentissage-non-supervise]] et [[notions/apprentissage-par-renforcement]] pour les trois familles d'apprentissage automatique que l'amont mentionne.
+
+Ce qui appartient au BI Analyst, c'est un déplacement : là où un analyste calcule une analyse, lui la **modélise pour qu'elle se recalcule seule**. Une analyse de cohorte produite une fois dans un carnet est une réponse ; la même analyse adossée à une définition de cohorte dans la couche sémantique est un indicateur que le métier suivra tous les mois sans le redemander. C'est la différence entre répondre et outiller, et elle passe par trois objets concrets : la dimension de date (section 6), les définitions de cohorte et de fenêtre d'observation, et les mesures de variation inscrites dans la couche sémantique.
+
+**Ce qu'il faut savoir**
+
+- Séries temporelles — trois composantes à séparer : la tendance de fond, la saisonnalité récurrente, et le résidu. L'essentiel des « alertes » d'un tableau de bord sont de la saisonnalité mal interprétée. Un indicateur d'exploitation se compare à la même période de l'année précédente, pas au mois précédent ; cette règle seule élimine une grande partie des faux signaux.
+- Effets de calendrier — le nombre de jours ouvrés, la position des jours fériés et le décalage des semaines d'une année sur l'autre expliquent souvent la variation qu'on attribue à une action commerciale. Ils sont portés par la dimension de date, ce qui est la raison pour laquelle elle mérite une vraie table.
+- Prévision — la référence à battre est toujours la prévision naïve (« la même valeur que la même période l'an dernier », ou la dernière valeur connue). Publie l'erreur de ta prévision contre cette référence ; beaucoup de modèles sophistiqués ne la battent pas, et le savoir évite de porter une dette de maintenance pour rien.
+- Analyse de cohorte — regrouper les utilisateurs par période d'entrée et suivre leur comportement dans le temps. C'est le seul moyen de distinguer une amélioration réelle d'un effet de composition : un taux de rétention global qui monte parce que le recrutement a ralenti n'est pas une amélioration. La définition de la cohorte (quel événement fait entrer ? quelle fenêtre d'observation ?) est une définition métier, donc elle a un propriétaire.
+- Expérimentation — le BI Analyst est rarement celui qui conçoit le test, souvent celui qui produit la mesure sur laquelle il sera tranché. Ce qui compte de son côté : la métrique de décision est définie **avant** le début du test, une seule métrique primaire, et pas de relecture quotidienne des résultats avec arrêt dès que l'écart est favorable.
+- Apprentissage automatique en BI — l'usage réaliste est étroit et ce n'est pas une faiblesse : segmentation de clientèle par regroupement, détection d'anomalie sur des séries, scoring simple d'attrition. Dès que le modèle doit être réentraîné, surveillé et expliqué, ce n'est plus de la BI et il faut passer la main — voir [[04 - Roadmap — Machine Learning]] et [[08 - Roadmap — MLOps]]. L'apprentissage par renforcement, que l'amont liste, n'a aucun usage courant en BI.
+- Une moyenne publiée sans dispersion est une information incomplète — le délai de livraison moyen de trois jours cache mal 20 % de livraisons à dix jours, et ce sont elles qui produisent les réclamations. Sur toute distribution asymétrique, affiche la médiane et un quantile haut plutôt que la moyenne seule.
+
+> [!tip] Ajout 2026
+> Les « informations automatiques » proposées par les plateformes BI — détection de pic, explication d'écart, alerte sur anomalie — sont utiles pour attirer l'attention et mauvaises pour conclure. Elles remontent des corrélations sur les dimensions disponibles, sans aucune notion de causalité ni du fait qu'une dimension est un effet plutôt qu'une cause. Traite-les comme un signal à instruire, jamais comme une explication à diffuser telle quelle — et surtout jamais comme une conclusion à transmettre à une direction.
+
+> [!warning] Piège
+> Publier une variation sans indiquer si elle sort du bruit habituel. « Les ventes ont baissé de 4 % » ne veut rien dire tant qu'on ne sait pas que la variation hebdomadaire courante est de plus ou moins 6 %. Un tableau de bord qui affiche des flèches vertes et rouges sur des variations non significatives fabrique de la réaction là où il n'y a rien à décider, et finit par être ignoré — y compris le jour où la variation compte vraiment.
+
+---
