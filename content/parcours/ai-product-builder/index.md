@@ -42,4 +42,4 @@ flowchart TD
 - [ ] [[parcours/ai-product-builder/tests-et-mesure-d-usage/index|Tests et mesure d'usage]] — la boucle technique et la boucle produit, et ce qu'on instrumente
 - [ ] [[parcours/ai-product-builder/mise-en-ligne/index|Mise en ligne]] — dépôt, intégration continue, hébergement, base de données, droits d'accès
 - [ ] [[parcours/ai-product-builder/du-prototype-au-produit/index|Du prototype au produit]] — ce qu'un prototype n'a jamais eu, et ce que coûte son report
-- [ ] [[parcours/ai-product-builder/quand-le-produit-embarque-un-modele/index|Quand le produit embarque un modèle]] — la frontière avec l'AI Engineer, et ce qu'elle impose
+- [ ] [[parcours/ai-product-builder/quand-le-produit-embarque-un-modele/index|Quand le produit embarque un modèle]] — ce que le produit devient quand une de ses fonctions appelle un modèle
