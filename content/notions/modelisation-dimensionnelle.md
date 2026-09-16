@@ -47,6 +47,6 @@ La mécanique ci-dessus est mutualisée ; ce qui appartient au parcours BI Analy
 
 ## Appelée par
 
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/entrepot-de-donnees]], [[notions/transformation-dbt]], [[notions/series-temporelles]], [[notions/sql]].

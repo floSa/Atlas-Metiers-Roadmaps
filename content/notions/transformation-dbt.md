@@ -46,6 +46,6 @@ Ce qui est propre au métier n'est pas l'outil mais le déplacement qu'il a prov
 
 ## Appelée par
 
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/orchestration-de-flux]], [[notions/entrepot-de-donnees]], [[notions/qualite-des-donnees]], [[notions/lignage-des-donnees]].
