@@ -9,10 +9,6 @@ source: https://roadmap.sh
 
 > [!abstract] Huit parcours d'apprentissage roadmap.sh, transposés en notes de référence : chaque note reprend l'intégralité de l'arbre d'origine sous forme de schémas Mermaid, puis l'explique et le complète avec l'état de l'art d'août 2026.
 
-**Sources** : roadmap.sh, captures HTML du 15 mars 2026 · **Transposition et enrichissement** : 3 août 2026
-
----
-
 ## Comment lire ces notes
 
 Chaque note suit la même structure : une vue macro, puis une étape par grande section de la roadmap d'origine, avec pour chacune un schéma Mermaid, une explication de l'intérêt réel, les points à retenir, un encadré **Ajout 2026** et un encadré **Piège**.

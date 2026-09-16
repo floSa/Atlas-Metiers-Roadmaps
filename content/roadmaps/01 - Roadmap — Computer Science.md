@@ -9,11 +9,6 @@ source: https://roadmap.sh/computer-science
 
 > [!abstract] Les fondations informatiques — algorithmique, structures de données, systèmes, réseau, bases de données, sécurité — relues pour quelqu'un qui fait déjà de la data science et veut cesser de traiter la machine comme une boîte noire.
 
-**Source** : roadmap.sh/computer-science, capturée le 15 mars 2026 · **Enrichie** le 3 août 2026
-Les éléments en vert dans les schémas et les encadrés « Ajout 2026 » ne figurent pas dans la roadmap d'origine.
-
----
-
 ## En un coup d'œil
 
 ```mermaid

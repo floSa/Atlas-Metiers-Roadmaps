@@ -9,11 +9,6 @@ source: https://roadmap.sh/forward-deployed-engineer
 
 > [!abstract] La partie du métier qui décide de l'issue des missions et dont on parle mal, parce qu'elle est traitée soit comme un vernis de savoir-vivre, soit comme de la manœuvre. Ce n'est ni l'un ni l'autre : lire une organisation, aligner des intérêts divergents et défendre un arbitrage devant une direction sont des compétences professionnelles, qui s'apprennent et se travaillent comme les autres.
 
-**Source** : roadmap.sh/forward-deployed-engineer, capturée le 16 septembre 2026 · **Rédigée** le 16 septembre 2026
-La gestion des parties prenantes, la communication, le sens des affaires et la rédaction technique viennent de l'amont. La dimension politique explicite et la conduite du changement viennent du brief de commande ; la cartographie d'influence et la posture du tiers sont des apports propres. Cette page est transverse aux quatre phases du [[parcours/forward-deployed-engineer/cycle-mission|cycle]].
-
----
-
 ## Vue d'ensemble
 
 ```mermaid

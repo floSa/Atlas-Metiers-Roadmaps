@@ -9,11 +9,6 @@ source: https://roadmap.sh/ai-agents
 
 > [!abstract] Le parcours complet pour concevoir, construire et exploiter des agents LLM — de la boucle perception/raisonnement/action jusqu'aux tests, à l'observabilité et à la sécurité — destiné à un développeur qui sait déjà coder et qui veut mettre un agent en production, pas une démo.
 
-**Source** : roadmap.sh/ai-agents, capturée le 15 mars 2026 · **Enrichie** le 3 août 2026
-Les éléments en vert dans les schémas et les encadrés « Ajout 2026 » ne figurent pas dans la roadmap d'origine.
-
----
-
 ## En un coup d'œil
 
 ```mermaid

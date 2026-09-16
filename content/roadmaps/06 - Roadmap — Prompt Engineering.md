@@ -9,11 +9,6 @@ source: https://roadmap.sh/prompt-engineering
 
 > [!abstract] Le parcours qui va du vocabulaire LLM aux prompts de production — configuration du modèle, sorties structurées, techniques de prompting, évaluation et défense contre le prompt injection — pour quiconque construit des applications au-dessus d'un modèle plutôt que de simplement le tchatter.
 
-**Source** : roadmap.sh/prompt-engineering, capturée le 15 mars 2026 · **Enrichie** le 3 août 2026
-Les éléments en vert dans les schémas et les encadrés « Ajout 2026 » ne figurent pas dans la roadmap d'origine.
-
----
-
 ## En un coup d'œil
 
 ```mermaid

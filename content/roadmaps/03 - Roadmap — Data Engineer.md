@@ -9,11 +9,6 @@ source: https://roadmap.sh/data-engineer
 
 > [!abstract] Le parcours complet de la plomberie data — générer, stocker, ingérer, transformer, orchestrer et servir la donnée — pour qui veut construire les fondations sur lesquelles reposent l'analytics, le ML et les systèmes RAG.
 
-**Source** : roadmap.sh/data-engineer, capturée le 15 mars 2026 · **Enrichie** le 3 août 2026
-Les éléments en vert dans les schémas et les encadrés « Ajout 2026 » ne figurent pas dans la roadmap d'origine.
-
----
-
 ## En un coup d'œil
 
 ```mermaid

@@ -9,11 +9,6 @@ source: https://roadmap.sh/mlops
 
 > [!abstract] Le socle qui ne change pas de nom tous les six mois : versionnement, intégration continue, conteneurs, API, déploiement, supervision. Presque tout ici est de la documentation officielle, parce que c'est le domaine où elle est bonne et où les intermédiaires n'ajoutent rien.
 
-**Source** : capture roadmap.sh du 16 septembre 2026, complétée et vérifiée · **Rédaction** : 16 septembre 2026
-La méthode de sélection et de vérification est dans [[ressources/sources]].
-
----
-
 ## Versionnement et intégration continue
 
 | Type | Ressource | Ce qu'elle apporte | Niveau |

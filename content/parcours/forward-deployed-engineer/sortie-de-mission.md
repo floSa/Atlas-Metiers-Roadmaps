@@ -9,11 +9,6 @@ source: https://roadmap.sh/forward-deployed-engineer
 
 > [!abstract] La phase que personne ne planifie et où la plupart des missions perdent ce qu'elles ont produit. Le système tourne, la démonstration a convaincu, le FDE part — et six mois plus tard le système est gelé parce que personne n'ose le modifier. Cette page traite la sortie comme une phase à part entière, avec ses livrables et son critère de réussite : l'équipe cliente a corrigé un incident sans aide.
 
-**Source** : roadmap.sh/forward-deployed-engineer, capturée le 16 septembre 2026 · **Rédigée** le 16 septembre 2026
-L'amont évoque la documentation comme moyen d'autonomiser le client, et le brief mentionne support, transfert de compétences et maintenance en fin de phase 3. L'érection en phase distincte, ses livrables et son critère de sortie sont des apports propres. Phase précédente : [[parcours/forward-deployed-engineer/industrialisation]] · Retour au [[parcours/forward-deployed-engineer/cycle-mission|cycle]].
-
----
-
 ## La phase en un coup d'œil
 
 ```mermaid

@@ -9,11 +9,6 @@ source: https://roadmap.sh/forward-deployed-engineer
 
 > [!abstract] La phase longue : livrer des briques logicielles résilientes **dans l'infrastructure du client**, les brancher sur des systèmes qui n'ont pas été conçus pour ça, faire valider la sécurité des données et amener le tout jusqu'à des utilisateurs réels. La difficulté n'est presque jamais le modèle. Elle est dans le branchement, dans les droits d'accès et dans la mise en service.
 
-**Source** : roadmap.sh/forward-deployed-engineer, capturée le 16 septembre 2026 · **Rédigée** le 16 septembre 2026
-La mise en service progressive et la boucle de retour produit viennent de l'amont. L'interfaçage avec les systèmes patrimoniaux, les garde-fous et la sécurité des données viennent du brief de commande ; les stratégies d'intégration et le mode dégradé sont des apports propres. Phase précédente : [[parcours/forward-deployed-engineer/arbitrage-technologique]] · Phase suivante : [[parcours/forward-deployed-engineer/sortie-de-mission]].
-
----
-
 ## La phase en un coup d'œil
 
 ```mermaid

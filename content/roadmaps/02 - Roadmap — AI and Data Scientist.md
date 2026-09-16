@@ -9,9 +9,6 @@ source: https://roadmap.sh/ai-data-scientist
 
 > [!abstract] Le parcours généraliste qui mène des mathématiques à la mise en production de modèles : socle quantitatif, code, analyse exploratoire, machine learning, deep learning, MLOps. C'est la note pivot du dossier Roadmaps — les autres creusent une branche, celle-ci donne la carte.
 
-**Source** : roadmap.sh/ai-data-scientist, capturée le 15 mars 2026 · **Enrichie** le 3 août 2026
-Les éléments en vert dans les schémas et les encadrés « Ajout 2026 » ne figurent pas dans la roadmap d'origine.
-
 La roadmap source est volontairement macro : huit étapes, aucun détail. Le contenu des sous-schémas est donc un enrichissement assumé, marqué comme tel dès qu'il change la nature du conseil.
 
 ---

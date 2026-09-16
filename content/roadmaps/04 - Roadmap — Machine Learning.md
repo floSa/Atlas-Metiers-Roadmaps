@@ -9,11 +9,6 @@ source: https://roadmap.sh/machine-learning
 
 > [!abstract] Le parcours complet du ML classique et fondamental : maths, Python, données, familles d'algorithmes, évaluation rigoureuse et deep learning — pour qui veut construire des modèles qui tiennent en production, pas seulement suivre l'engouement du moment.
 
-**Source** : roadmap.sh/machine-learning, capturée le 15 mars 2026 · **Enrichie** le 3 août 2026
-Les éléments en vert dans les schémas et les encadrés « Ajout 2026 » ne figurent pas dans la roadmap d'origine.
-
----
-
 ## En un coup d'œil
 
 ```mermaid

@@ -9,11 +9,6 @@ source: https://roadmap.sh/forward-deployed-engineer
 
 > [!abstract] La phase courte qui décide de la valeur de tout le reste : simplifier le processus avant d'écrire une ligne de code, puis trancher entre automatisation déterministe et IA générative. C'est l'endroit où se commet l'erreur de cadrage la plus coûteuse du métier, et c'est aussi le seul moment où elle ne coûte encore rien à corriger.
 
-**Source** : roadmap.sh/forward-deployed-engineer, capturée le 16 septembre 2026 · **Rédigée** le 16 septembre 2026
-Le retour sur investissement et les arbitrages de périmètre viennent de l'amont. La réingénierie de processus et l'arbitrage déterministe/probabiliste viennent du brief de commande ; la grille de décision et le protocole d'évaluation comme porte de sortie sont des apports propres. Phase précédente : [[parcours/forward-deployed-engineer/audit-et-cartographie]] · Phase suivante : [[parcours/forward-deployed-engineer/industrialisation]].
-
----
-
 ## La phase en un coup d'œil
 
 ```mermaid

@@ -9,11 +9,6 @@ source: https://roadmap.sh/mlops
 
 > [!abstract] Le parcours qui mène du modèle qui marche sur un notebook au modèle qui tourne en production, se met à jour tout seul et se surveille — versioning, CI/CD, orchestration, monitoring, drift, coûts.
 
-**Source** : roadmap.sh/mlops, capturée le 15 mars 2026 · **Enrichie** le 3 août 2026
-Les éléments en vert dans les schémas et les encadrés « Ajout 2026 » ne figurent pas dans la roadmap d'origine.
-
----
-
 ## En un coup d'œil
 
 ```mermaid

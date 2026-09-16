@@ -9,11 +9,6 @@ source: https://roadmap.sh/ai-engineer
 
 > [!abstract] Les sources qui servent vraiment quand on construit sur des modèles de langage : documentation d'éditeur, spécifications, articles fondateurs, outillage d'évaluation et de red teaming. Sélection commentée, pas annuaire.
 
-**Source** : capture roadmap.sh du 16 septembre 2026, complétée et vérifiée · **Rédaction** : 16 septembre 2026
-La méthode de sélection et de vérification est dans [[ressources/sources]].
-
----
-
 ## Comment lire ce tableau
 
 `officiel` = documentation de celui qui publie l'outil · `norme` = texte réglementaire ou

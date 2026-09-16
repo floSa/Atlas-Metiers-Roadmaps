@@ -9,11 +9,6 @@ source: https://roadmap.sh/forward-deployed-engineer
 
 > [!abstract] Cadrage du besoin, modélisation de processus, jeu des parties prenantes, conformité, sortie de mission. La famille la plus mal servie par l'amont, et celle où la sélection a le plus écarté : sur un sujet neuf et rentable, le contenu promotionnel déguisé en pédagogie est la norme.
 
-**Source** : capture roadmap.sh du 16 septembre 2026, complétée et vérifiée · **Rédaction** : 16 septembre 2026
-La méthode de sélection et de vérification est dans [[ressources/sources]].
-
----
-
 ## Ce que l'amont propose, et pourquoi c'est mince
 
 La roadmap `forward-deployed-engineer` compte trente ressources pour vingt nœuds de

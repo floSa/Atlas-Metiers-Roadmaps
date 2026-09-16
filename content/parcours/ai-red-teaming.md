@@ -9,11 +9,6 @@ source: https://roadmap.sh/ai-red-teaming
 
 > [!abstract] Tester un système d'IA en adversaire pour le rendre défendable : classes d'attaque propres aux modèles, frontière avec la sécurité applicative classique, méthode d'engagement, mesure de non-régression, restitution et gouvernance. **Cadrage assumé : cette note est défensive.** Elle explique les mécanismes, leurs conditions de réussite et leurs parades ; elle ne fournit ni charge utile prête à l'emploi ni procédure de contournement visant un modèle nommé. Ce n'est pas une pudeur mais une exigence de durée de vie : une charge utile se périme en quelques semaines, le mécanisme et la parade restent vrais.
 
-**Source** : roadmap.sh/ai-red-teaming, dernière modification amont le 20 mars 2026, capturée le 16 septembre 2026 · **Rédigée** le 16 septembre 2026
-Les éléments en vert dans les schémas et les encadrés « Ajout 2026 » ne figurent pas dans la roadmap d'origine.
-
----
-
 ## En un coup d'œil
 
 ```mermaid

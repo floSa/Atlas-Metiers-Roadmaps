@@ -9,11 +9,6 @@ source: https://roadmap.sh/data-engineer
 
 > [!abstract] SQL, entrepôt, transformation, orchestration, restitution et gouvernance. Les sources qui tiennent sur la durée — documentation de moteur, manuels de référence, projets libres qu'on peut déployer soi-même — plutôt que les comparatifs d'éditeurs.
 
-**Source** : capture roadmap.sh du 16 septembre 2026, complétée et vérifiée · **Rédaction** : 16 septembre 2026
-La méthode de sélection et de vérification est dans [[ressources/sources]].
-
----
-
 ## SQL
 
 Le langage qui conditionne l'accès à tout le reste. La meilleure ressource n'est pas un

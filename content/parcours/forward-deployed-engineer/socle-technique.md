@@ -9,11 +9,6 @@ source: https://roadmap.sh/forward-deployed-engineer
 
 > [!abstract] La roadmap amont réduit le socle technique à sept renvois vers d'autres roadmaps : Linux, frontend, backend, DSA, system design, AI engineering, DevOps. Renvoyer ne coûte rien et n'informe personne. Cette page dit, pour chaque domaine, **quelle profondeur est réellement attendue chez un FDE** — c'est la seule information utile, parce qu'un FDE qui vise partout le niveau maximum n'arrivera jamais sur le terrain.
 
-**Source** : roadmap.sh/forward-deployed-engineer, capturée le 16 septembre 2026 · **Rédigée** le 16 septembre 2026
-La liste des domaines vient de l'amont. Les niveaux de profondeur, l'échelle et les arbitrages sont des apports propres. Retour à [[parcours/forward-deployed-engineer/index|l'accueil du dossier]].
-
----
-
 ## L'échelle
 
 Quatre niveaux, parce que « savoir Python » ne veut rien dire.

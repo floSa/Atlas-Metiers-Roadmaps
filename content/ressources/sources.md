@@ -9,10 +9,6 @@ source: https://roadmap.sh
 
 > [!abstract] La page qui rend le reste auditable. D'où viennent les 3 216 ressources amont, comment elles ont été extraites, à quelle date, avec quels outils, et comment tout rejouer. Si une affirmation de ce corpus vous paraît douteuse, c'est ici qu'on trouve de quoi la vérifier soi-même.
 
-**Sources** : roadmap.sh (API officielle et dépôt de contenu) · **Capture** : 16 septembre 2026 · **Rédaction** : 16 septembre 2026
-
----
-
 ## La règle
 
 Une ressource non vérifiée n'est pas publiée. Une URL, un titre, un nom d'auteur ou une

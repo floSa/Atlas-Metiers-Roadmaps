@@ -9,11 +9,6 @@ source: https://roadmap.sh/forward-deployed-engineer
 
 > [!abstract] La phase où l'on regarde les gens travailler. Elle produit la carte du processus réel, l'inventaire de ce qui existe et la liste des cas limites — trois livrables sans lesquels tout ce qui suit est une hypothèse. C'est la phase la plus sous-estimée du métier, et celle dont les erreurs coûtent le plus cher parce qu'elles se découvrent en production.
 
-**Source** : roadmap.sh/forward-deployed-engineer, capturée le 16 septembre 2026 · **Rédigée** le 16 septembre 2026
-Le recueil du besoin, la découverte et le cadrage viennent de l'amont. La modélisation BPMN, l'inventaire de données et la restitution de la carte viennent du brief de commande et d'apports propres. Phase suivante : [[parcours/forward-deployed-engineer/arbitrage-technologique]] · Retour au [[parcours/forward-deployed-engineer/cycle-mission|cycle]].
-
----
-
 ## La phase en un coup d'œil
 
 ```mermaid

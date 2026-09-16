@@ -9,11 +9,6 @@ source: https://roadmap.sh/ai-data-scientist
 
 > [!abstract] Ce qu'il faut pour ne pas se tromper : distributions, tests, régression, causalité, protocole d'évaluation. C'est la famille où les sources les plus anciennes sont les meilleures — un manuel de statistique de 2019 n'a pas vieilli, un article sur les LLM de 2024 si.
 
-**Source** : capture roadmap.sh du 16 septembre 2026, complétée et vérifiée · **Rédaction** : 16 septembre 2026
-La méthode de sélection et de vérification est dans [[ressources/sources]].
-
----
-
 ## Pourquoi cette famille se sélectionne autrement
 
 Ailleurs dans ce corpus, le critère « daté et maintenu » écarte l'intemporel

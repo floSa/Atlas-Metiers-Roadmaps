@@ -9,9 +9,6 @@ source: https://roadmap.sh/data-analyst
 
 > [!abstract] Le métier de celui à qui on pose une question et qui rend une réponse chiffrée, datée, défendable. Cadrage de la question, collecte, nettoyage, exploration, analyse, restitution. Pour qui veut faire décider quelqu'un d'autre à partir de données, et non construire l'infrastructure décisionnelle ni entraîner des modèles.
 
-**Source** : roadmap.sh/data-analyst, capturée le 16 septembre 2026 (dernière modification amont le 4 septembre 2026) · **Rédigée** le 16 septembre 2026
-Les éléments en vert dans les schémas et les encadrés « Ajout 2026 » ne figurent pas dans la roadmap d'origine.
-
 Deux partis pris d'écriture, à connaître avant de lire.
 
 **L'ordre a été refait.** La roadmap amont énumère 99 nœuds organisés par outil : une grappe Excel, une grappe statistiques, une grappe bibliothèques, une grappe algorithmes. C'est une liste de courses, pas un métier. Cette note suit le cycle réel d'une mission d'analyse — cadrer, collecter, nettoyer, explorer, analyser, restituer — et regroupe l'outillage en une seule section, au début, pour l'évacuer. Tous les nœuds amont sont couverts, à leur place.

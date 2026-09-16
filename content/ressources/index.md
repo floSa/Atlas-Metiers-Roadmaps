@@ -9,10 +9,6 @@ source: https://roadmap.sh
 
 > [!abstract] L'entrée unique vers les sources du corpus, classées par **usage** et non par métier. 198 adresses choisies et commentées dans un catalogue amont de 3 216, toutes vérifiées le jour de la publication. Ce qu'on lit pour démarrer, ce qu'on lit pour approfondir, ce qui fait référence, et ce qu'on relit.
 
-**Source** : capture roadmap.sh du 16 septembre 2026 · **Vérification des liens** : 16 septembre 2026 · **Rédaction** : 16 septembre 2026
-
----
-
 ## Pourquoi deux cents et pas trois mille
 
 Le catalogue amont compte 3 216 ressources, soit 2 649 adresses distinctes. Publiées

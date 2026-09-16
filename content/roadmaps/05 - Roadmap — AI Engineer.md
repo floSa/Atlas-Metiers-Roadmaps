@@ -9,11 +9,6 @@ source: https://roadmap.sh/ai-engineer
 
 > [!abstract] Construire des produits sur des modèles pré-entraînés : APIs, prompt et context engineering, embeddings, RAG, agents, MCP, multimodal, sécurité et mise en production — pour un ingénieur qui veut livrer, pas entraîner un modèle.
 
-**Source** : roadmap.sh/ai-engineer, capturée le 15 mars 2026 · **Enrichie** le 3 août 2026
-Les éléments en vert dans les schémas et les encadrés « Ajout 2026 » ne figurent pas dans la roadmap d'origine.
-
----
-
 ## En un coup d'œil
 
 ```mermaid

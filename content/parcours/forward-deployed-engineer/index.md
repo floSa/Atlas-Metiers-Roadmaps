@@ -9,11 +9,6 @@ source: https://roadmap.sh/forward-deployed-engineer
 
 > [!abstract] Le métier qui consiste à s'installer chez le client, comprendre comment son travail se fait réellement, et livrer un système d'IA qui tient dans son infrastructure et dans ses habitudes. Ce dossier s'adresse à un ingénieur logiciel qui veut basculer vers le terrain, à un consultant qui veut cesser de s'arrêter au slide, et à quiconque doit recruter ou cadrer ce profil sans se tromper sur ce qu'il recouvre.
 
-**Source** : roadmap.sh/forward-deployed-engineer, capturée le 16 septembre 2026 · **Rédigée** le 16 septembre 2026
-La roadmap amont compte 20 nœuds de contenu et 30 ressources — la plus maigre du catalogue. Elle sert de squelette, pas de plan. L'essentiel de ce dossier vient d'ailleurs, et la provenance est indiquée.
-
----
-
 ## Lire la provenance
 
 Trois origines cohabitent dans ce dossier, et le lecteur doit pouvoir les distinguer.

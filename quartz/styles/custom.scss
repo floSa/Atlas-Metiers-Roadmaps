@@ -108,12 +108,32 @@ pre:has(> code.mermaid) {
 }
 
 /* ---------------------------------------------------------------------------
+ * Espace en haut de page, sur toutes les pages.
+ *
+ * Quartz reserve $topSpacing (6 rem, soit pres de 3 cm) au-dessus du titre et
+ * au-dessus de la barre laterale. Sur un corpus qu'on parcourt, cette marge
+ * coute une demi-fenetre a chaque page. On la ramene a 1 rem, la meme des deux
+ * cotes, ce qui aligne le graphe sur le titre.
+ * ------------------------------------------------------------------------- */
+.page > #quartz-body .sidebar {
+  padding-top: 1rem;
+}
+
+.page > #quartz-body .page-header {
+  margin-top: 1rem;
+}
+
+article > h1:first-child,
+.page-header h1 {
+  margin-top: 0;
+}
+
+/* ---------------------------------------------------------------------------
  * Accueil : la liste des metiers, entiere, sans defilement.
  *
- * Quartz reserve une colonne de 320 px a droite meme quand elle est vide, borne
- * la page a 1500 px et pousse le contenu vers le bas d'un $topSpacing. Sur la
- * page d'accueil ces trois reglages coutent la moitie de l'ecran pour rien :
- * on les annule, et le tableau des quatorze metiers tient dans la premiere vue.
+ * Quartz reserve une colonne de 320 px a droite meme quand elle est vide et
+ * borne la page a 1500 px. Sur l'accueil ces deux reglages coutent la moitie de
+ * l'ecran pour rien : on les annule, et le tableau tient dans la premiere vue.
  * ------------------------------------------------------------------------- */
 body[data-slug="index"] {
   .page {
@@ -129,13 +149,7 @@ body[data-slug="index"] {
       "grid-sidebar-left grid-footer";
   }
 
-  /* Le contenu demarre en haut de l'ecran. */
-  .page > #quartz-body .page-header {
-    margin-top: 1rem;
-  }
-
   article > h1:first-child {
-    margin-top: 0;
     font-size: 1.9rem;
   }
 

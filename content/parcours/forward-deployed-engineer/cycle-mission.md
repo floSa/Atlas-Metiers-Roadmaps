@@ -9,11 +9,6 @@ source: https://roadmap.sh/forward-deployed-engineer
 
 > [!abstract] La colonne vertébrale du métier : quatre phases, leurs livrables, et surtout les portes de sortie qui autorisent à passer à la suivante. C'est la page à lire avant les quatre pages de détail, parce qu'elle dit ce qui circule entre les phases et pourquoi une mission qui saute une étape échoue toujours au même endroit.
 
-**Source** : roadmap.sh/forward-deployed-engineer, capturée le 16 septembre 2026 · **Rédigée** le 16 septembre 2026
-L'amont décrit trois phases — audit, évaluations, déploiement. Le brief de commande en décrit trois aussi, mais pas les mêmes — audit, rationalisation, industrialisation. La quatrième phase, la sortie de mission, est un apport propre. Retour à [[parcours/forward-deployed-engineer/index|l'accueil du dossier]].
-
----
-
 ## Réconcilier deux découpages
 
 Les deux sources ne sont pas d'accord, et l'écart est instructif.
