@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/data-engineer
 ---
 
+**Usage.** Un confirmé applique des droits fins, branche un catalogue et fait remonter un lignage en suivant une règle qu'on lui a donnée ; la qualification juridique du RGPD et de l'AI Act est hors de son périmètre réel et reste à la notion — savoir que la question se pose, et qui appeler avant d'ouvrir un accès.
+
 Les sujets qui arrivent en fin de roadmap et devraient arriver au début de vos projets : rattraper une gouvernance absente coûte dix fois plus cher que de la poser d'emblée.
 
 ```mermaid
