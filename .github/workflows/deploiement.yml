@@ -1,0 +1,78 @@
+# Construit l'atlas et le publie sur GitHub Pages.
+#
+# Le depot n'a pas encore de remote : la marche a suivre pour brancher ce
+# workflow est dans quartz/README.md, section << Brancher le depot distant >>.
+#
+# Quartz n'est pas versionne ici. quartz/build.sh le clone au commit epingle dans
+# quartz/VERSION, y applique les correctifs de quartz/correctifs/ et la
+# configuration de quartz/, puis construit content/. La construction est donc la
+# meme en local et ici.
+name: Construire et publier l'atlas
+
+on:
+  push:
+    branches: [main]
+  # Permet de relancer une publication a la main depuis l'onglet Actions.
+  workflow_dispatch:
+
+# Le jeton du workflow doit pouvoir ecrire sur Pages et signer l'attestation.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Une seule publication a la fois. On laisse finir celle qui tourne plutot que de
+# l'annuler : un deploiement interrompu laisse le site dans un etat indefini.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  construire:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperer le depot
+        uses: actions/checkout@v4
+        with:
+          # Quartz lit les dates de creation et de modification dans l'historique
+          # git quand le frontmatter n'en porte pas.
+          fetch-depth: 0
+
+      - name: Installer Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Declarer le site aupres de Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Construire
+        env:
+          # configure-pages renvoie l'URL reelle des Pages, y compris le
+          # sous-chemin /<depot>/ d'un site de projet. quartz.config.ts la lit.
+          QUARTZ_BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: ./quartz/build.sh --sortie "$GITHUB_WORKSPACE/public"
+
+      - name: Verifier que le site n'est pas vide
+        # Un echec silencieux de Quartz publierait un site blanc par-dessus le
+        # precedent. Mieux vaut arreter ici.
+        run: |
+          test -f public/index.html || { echo "public/index.html absent"; exit 1; }
+          echo "$(find public -name '*.html' | wc -l) pages produites"
+
+      - name: Deposer l'artefact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  publier:
+    needs: construire
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - name: Publier sur GitHub Pages
+        id: deploiement
+        uses: actions/deploy-pages@v4

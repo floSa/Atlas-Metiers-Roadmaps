@@ -1,0 +1,44 @@
+diff --git a/quartz/components/scripts/search.inline.ts b/quartz/components/scripts/search.inline.ts
+index 717f17f..2035b4f 100644
+--- a/quartz/components/scripts/search.inline.ts
++++ b/quartz/components/scripts/search.inline.ts
+@@ -16,11 +16,28 @@ interface Item {
+ type SearchType = "basic" | "tags"
+ let searchType: SearchType = "basic"
+ let currentSearchTerm: string = ""
++// Atlas des metiers de l'IA -- recherche en francais.
++//
++// L'encodeur amont ne coupe que sur les blancs et conserve les accents. Sur un
++// corpus francais, cela veut dire que "evaluation" ne trouve pas "evaluation",
++// et que "evaluation" ne trouve pas "l'evaluation" : le token indexe est
++// "l'evaluation" en entier, et la recherche par prefixe cale sur l'apostrophe.
++//
++// On replie donc les diacritiques et on coupe sur l'apostrophe et la
++// ponctuation. L'encodeur sert des deux cotes -- documents et requete -- donc
++// la transformation reste symetrique.
++const deplierAccents = (s: string): string => s.normalize("NFD").replace(/\p{Diacritic}/gu, "")
++const PONCTUATION = new Set([
++  "'", "\u2019", "\u02bc", '"', "\u201c", "\u201d", "\u00ab", "\u00bb",
++  "(", ")", "[", "]", "{", "}", "<", ">",
++  ",", ".", ";", ":", "!", "?", "/", "\\", "|", "\u2014", "\u2013",
++])
++
+ const encoder = (str: string): string[] => {
+   const tokens: string[] = []
+   let bufferStart = -1
+   let bufferEnd = -1
+-  const lower = str.toLowerCase()
++  const lower = deplierAccents(str.toLowerCase())
+ 
+   let i = 0
+   for (const char of lower) {
+@@ -33,7 +50,8 @@ const encoder = (str: string): string[] => {
+       (code >= 0xac00 && code <= 0xd7af) ||
+       (code >= 0x20000 && code <= 0x2a6df)
+ 
+-    const isWhitespace = code === 32 || code === 9 || code === 10 || code === 13
++    const isWhitespace =
++      code === 32 || code === 9 || code === 10 || code === 13 || PONCTUATION.has(char)
+ 
+     if (isCJK) {
+       if (bufferStart !== -1) {

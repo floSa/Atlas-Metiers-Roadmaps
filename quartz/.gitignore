@@ -1,0 +1,3 @@
+# Le clone Quartz de travail : reconstruit a l'identique par build.sh depuis le
+# commit epingle dans VERSION. Rien a versionner.
+.build/

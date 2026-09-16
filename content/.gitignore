@@ -1,0 +1,9 @@
+# content/ est aussi un vault Obsidian : les notes s'editent aussi bien la qu'ici.
+# Rien de ce qu'Obsidian depose a cote des notes n'a sa place dans le depot.
+.obsidian/
+.trash/
+.DS_Store
+
+# public/ est le rendu du site, pas sa source. Il est deja ignore a la racine ;
+# la regle est repetee ici au cas ou quelqu'un construirait depuis content/.
+public/
