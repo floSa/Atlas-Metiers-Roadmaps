@@ -2,6 +2,8 @@
 title: Simplifier avant d'automatiser
 ---
 
+Niveau attendu : **référence**. C'est le dernier moment où l'on peut encore supprimer une étape plutôt que la figer dans du code, et le FDE est le seul dans la salle à n'avoir rien à perdre à la supprimer.
+
 Automatiser une étape inutile la rend permanente : ce qui était une lourdeur discutable devient un composant logiciel que plus personne n'osera retirer, avec sa documentation, sa supervision et son coût de maintenance.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Choisir l'architecture
 ---
 
+Niveau attendu : **référence**. Choisir le plus simple qui passe le seuil relève de l'AI engineering, où le client n'a personne pour corriger un surdimensionnement qu'il paiera en supervision.
+
 La difficulté en mission n'est pas de savoir faire : c'est de choisir le plus simple qui passe le seuil. Chaque niveau d'autonomie ajouté multiplie les modes de défaillance et le coût de supervision, et ce coût sera porté par le client après le départ du FDE.
 
 ```mermaid

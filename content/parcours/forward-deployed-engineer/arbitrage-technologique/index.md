@@ -10,12 +10,12 @@ La phase courte qui décide de la valeur de tout le reste : simplifier le proces
 
 ```mermaid
 flowchart TD
-  S["Simplifier avant d'automatiser<br/>supprimer, fusionner, connecter"]
-  A["Déterministe ou probabiliste<br/>la grille, étape par étape"]
-  C["Choisir l'architecture<br/>le plus simple qui passe le seuil"]
-  E["Le protocole d'évaluation<br/>la porte de sortie de la phase"]
-  V["Valeur et coût<br/>le coût complet, pas la facture d'inférence"]
-  N["Écrire l'arbitrage<br/>une note par décision structurante"]
+  S["Simplifier avant d'automatiser<br/>Référence"]
+  A["Déterministe ou probabiliste<br/>Référence"]
+  C["Choisir l'architecture<br/>Référence"]
+  E["Le protocole d'évaluation<br/>Référence"]
+  V["Valeur et coût<br/>Autonomie"]
+  N["Écrire l'arbitrage<br/>Autonomie"]
 
   click S "/parcours/forward-deployed-engineer/arbitrage-technologique/simplifier-avant-d-automatiser"
   click A "/parcours/forward-deployed-engineer/arbitrage-technologique/deterministe-ou-probabiliste"

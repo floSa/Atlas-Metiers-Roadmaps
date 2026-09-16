@@ -2,6 +2,8 @@
 title: Écrire l'arbitrage
 ---
 
+Niveau attendu : **autonomie**. La note doit être écrite sans modèle et tenir devant quelqu'un qui n'était pas dans la salle ; l'autorité du FDE porte sur la décision, pas sur la rédaction.
+
 Une phase 2 non écrite n'a pas eu lieu. Les arbitrages sont pris en réunion, avec des gens qui changeront de poste, et ils seront rejoués au troisième mois par quelqu'un qui n'était pas là.
 
 ```mermaid

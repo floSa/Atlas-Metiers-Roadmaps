@@ -2,6 +2,8 @@
 title: Déterministe ou probabiliste
 ---
 
+Niveau attendu : **référence**. C'est le cœur du métier et l'erreur la plus chère : une étape mal classée se paie six mois plus tard, quand plus personne chez le client ne peut la rattraper.
+
 Le cœur du métier et l'erreur la plus chère. La grille se parcourt **étape par étape** sur la carte de la phase 1, jamais une fois pour le projet entier : un même processus mélange presque toujours les deux natures.
 
 ```mermaid
