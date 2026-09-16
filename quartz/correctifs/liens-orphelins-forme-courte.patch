@@ -1,0 +1,27 @@
+diff --git a/quartz/plugins/transformers/ofm.ts b/quartz/plugins/transformers/ofm.ts
+index 7a523aa..f80f355 100644
+--- a/quartz/plugins/transformers/ofm.ts
++++ b/quartz/plugins/transformers/ofm.ts
+@@ -280,7 +280,21 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
+                 // treat as broken link if slug not in ctx.allSlugs
+                 if (opts.disableBrokenWikilinks) {
+                   const slug = slugifyFilePath(fp as FilePath)
+-                  const exists = ctx.allSlugs && ctx.allSlugs.includes(slug)
++                  // Atlas des metiers de l'IA.
++                  //
++                  // Le controle amont compare le slug a la racine du vault. Il
++                  // ignore donc la strategie "shortest" de CrawlLinks, sous
++                  // laquelle [[05 - Roadmap - AI Engineer]] designe bien
++                  // content/roadmaps/05 - Roadmap - AI Engineer. Sans ce
++                  // complement, tout wikilink ecrit sous sa forme courte -- soit
++                  // la totalite du corpus existant -- est declare orphelin.
++                  //
++                  // Meme critere que transformLink : le dernier segment du slug,
++                  // a condition qu'il soit unique.
++                  const exists =
++                    ctx.allSlugs &&
++                    (ctx.allSlugs.includes(slug) ||
++                      ctx.allSlugs.filter((s) => s.split("/").at(-1) === slug).length === 1)
+                   if (!exists) {
+                     return {
+                       type: "html",
