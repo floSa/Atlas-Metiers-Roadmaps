@@ -8,22 +8,24 @@ source: https://roadmap.sh/ai-red-teaming
 
 Obtenir d'un modèle un comportement que sa politique interdit — et surtout savoir ce que ce résultat mesure, ce qu'il permet de corriger, et sous quelle forme il vaut la peine d'être livré.
 
+```mermaid
+flowchart TD
+  GF["Garde-fous<br/>à tester dans l'ordre inverse de leur coût"]
+  IP["Ingénierie de prompt<br/>les leviers servent aux deux camps"]
+  EV["Évaluation LLM<br/>un taux plutôt qu'une anecdote"]
+  RL["Apprentissage par renforcement<br/>l'alignement et la complaisance qu'il produit"]
+
+  click GF "/notions/garde-fous"
+  click IP "/notions/ingenierie-de-prompt"
+  click EV "/notions/evaluation-llm"
+  click RL "/notions/apprentissage-par-renforcement"
+```
+
 ## Le mécanisme commun à toutes les familles de technique
 
 Mise en scène fictive, jeu de rôle, fractionnement d'une demande en morceaux anodins, changement de langue ou d'encodage, dilution dans un contexte long, appel à une autorité fictive : les familles sont stables depuis plusieurs années et leur point commun est de **réduire la distance entre la demande interdite et une demande légitime** jusqu'à ce que le classifieur d'alignement se trompe. Comprendre cette mécanique suffit à construire une politique de test ; connaître les formulations précises qui marchent cette semaine ne sert que cette semaine.
 
-```mermaid
-flowchart TD
-  T["Technique de contournement"] --> C{"Ce qu'elle met en défaut"}
-  C -->|"l'alignement du modèle"| A["Choix du fournisseur<br/>rarement corrigeable par le client"]
-  C -->|"le filtre périphérique"| B["Ressort du client<br/>réellement actionnable"]
-  A --> U["Dimensionner un garde-fou externe"]
-  B --> V["Ouvrir un ticket"]
-  U --> M["Taux de réussite sur corpus,<br/>par catégorie de préjudice"]
-  V --> M
-```
-
-Ce partage décide de ce qu'on fait du résultat. Un jailbreak sur un modèle du commerce sert à dimensionner un garde-fou externe ; il ne sert pas à ouvrir un ticket chez le client.
+Ce qu'une technique met en défaut décide de ce qu'on fait du résultat. Si elle met en défaut **l'alignement du modèle**, le constat porte sur le choix du fournisseur : il n'est presque jamais corrigeable par le client, et il sert à dimensionner un garde-fou externe. Si elle met en défaut **le filtre périphérique**, le constat est du ressort du client et ouvre un ticket. Dans les deux cas le livrable n'est pas la formulation qui a marché, mais un taux de réussite mesuré sur corpus, catégorie de préjudice par catégorie de préjudice.
 
 ## Ce qu'il faut savoir faire
 
