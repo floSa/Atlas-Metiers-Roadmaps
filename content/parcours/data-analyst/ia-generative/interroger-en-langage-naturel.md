@@ -2,6 +2,8 @@
 title: Interroger en langage naturel
 ---
 
+Niveau attendu : **notion**. Il suffit de savoir pourquoi cela marche sur une couche sémantique et échoue sur des tables brutes — et que cette couche est le sujet du BI Analyst.
+
 Cela fonctionne quand une couche sémantique définit les métriques, et échoue quand on le branche sur des tables brutes. C'est ce qui explique que le même outil soit jugé excellent dans une entreprise et inutilisable dans une autre.
 
 ```mermaid

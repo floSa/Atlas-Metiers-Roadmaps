@@ -2,6 +2,8 @@
 title: Choisir un langage
 ---
 
+Niveau attendu : **usage**. Le choix se fait une fois, sur un chemin balisé, et ne distingue personne ; c'est ce qu'on en fait ensuite qui compte.
+
 Python ou R : choisis-en un et va au fond. Savoir bricoler dans les deux ne vaut rien ; maîtriser un des deux vaut beaucoup, et la bascule de l'un à l'autre se fait en quelques semaines une fois le premier acquis.
 
 ```mermaid

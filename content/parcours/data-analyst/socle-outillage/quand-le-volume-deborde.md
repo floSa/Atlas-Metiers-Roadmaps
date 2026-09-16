@@ -2,6 +2,8 @@
 title: Quand le volume déborde
 ---
 
+Niveau attendu : **notion**. Il faut reconnaître le seuil et savoir nommer les trois réponses possibles ; le calcul distribué se sous-traite à l'ingénierie de données.
+
 Le réflexe n'est pas de distribuer, c'est de ne pas rapatrier. Un poste de travail courant traite aujourd'hui plusieurs dizaines de millions de lignes sans effort particulier : le seuil à partir duquel la question se pose a beaucoup monté.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: La régression
 ---
 
+Niveau attendu : **autonomie**. Lire un coefficient sans lui faire dire ce qu'il ne dit pas suffit ; la spécification fine du modèle revient au statisticien ou au data scientist.
+
 Elle quantifie la relation en tenant compte de plusieurs facteurs à la fois. Ses coefficients se lisent « toutes choses égales par ailleurs **parmi les variables incluses** » — et la variable non incluse ne s'annule pas, elle se cache dans les autres coefficients.
 
 ```mermaid

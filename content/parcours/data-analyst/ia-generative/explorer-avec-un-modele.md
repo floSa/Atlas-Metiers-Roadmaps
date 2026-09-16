@@ -2,6 +2,8 @@
 title: Explorer avec un modèle
 ---
 
+Niveau attendu : **usage**. Dégrossir un jeu inconnu avec assistance est confortable ; conclure avec elle ne l'est jamais, et l'exploration reste le domaine où l'analyste doit faire référence par lui-même.
+
 Décrire un jeu de données inconnu, proposer les croisements à regarder, repérer les colonnes suspectes. Utile pour dégrossir, jamais pour conclure — et la distinction se tient, parce que tout ce qui sort ici est une hypothèse.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Publier dans un outil partagé
 ---
 
+Niveau attendu : **usage**. L'analyste consomme et publie sur un chemin balisé ; construire, gouverner et porter les définitions partagées est le métier du BI Analyst.
+
 Power BI, Tableau, Looker, Metabase : l'analyste les consomme et y publie parfois. Les construire, les gouverner et y porter les définitions partagées est un autre métier — savoir où passe la frontière évite d'hériter d'un parc de rapports à maintenir.
 
 ```mermaid

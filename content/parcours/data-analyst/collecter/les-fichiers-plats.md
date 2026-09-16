@@ -2,6 +2,8 @@
 title: Les fichiers plats
 ---
 
+Niveau attendu : **autonomie**. Un CSV mal lu ne lève aucune erreur, donc aucune documentation ne prévient : il faut déboguer un encodage ou un typage silencieux sans filet.
+
 Le format d'échange universel et la première source d'erreurs silencieuses du métier. Un CSV mal lu ne lève aucune erreur : il produit des données plausibles et fausses.
 
 ```mermaid

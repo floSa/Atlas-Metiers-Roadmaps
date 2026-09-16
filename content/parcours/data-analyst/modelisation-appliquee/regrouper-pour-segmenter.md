@@ -2,6 +2,8 @@
 title: Regrouper pour segmenter
 ---
 
+Niveau attendu : **usage**. Le regroupement automatique propose, le métier tranche : l'analyste n'a pas à faire autorité sur une segmentation qu'il ne décide pas.
+
 Le regroupement automatique sert à proposer une segmentation, pas à la trancher. Une segmentation statistique qu'aucun responsable métier ne reconnaît ne sera jamais utilisée, quelle que soit sa qualité mathématique.
 
 ```mermaid

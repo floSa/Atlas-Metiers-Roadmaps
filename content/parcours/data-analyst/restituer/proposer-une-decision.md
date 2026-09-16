@@ -2,6 +2,8 @@
 title: Proposer une décision
 ---
 
+Niveau attendu : **autonomie**. Il formule une recommandation et la défend ; la décision reste au métier, et elle sera parfois écartée.
+
 Proposer une décision, même si elle sera écartée. Un analyste qui livre un constat sans recommandation laisse l'interprétation au plus bavard de la réunion — et l'interprétation est l'endroit où la valeur de l'analyse se gagne ou se perd.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Choisir le graphique
 ---
 
+Niveau attendu : **référence**. Le graphique qui démontre une conclusion ponctuelle est son terrain propre ; le tableau de bord durable, lui, appartient au BI Analyst.
+
 Le graphique se choisit à partir de la question, pas du catalogue. Un bon graphique fait porter la comparaison qui compte par l'encodage visuel le plus précis disponible — et retire tout ce qui capte l'attention sans porter d'information.
 
 ```mermaid

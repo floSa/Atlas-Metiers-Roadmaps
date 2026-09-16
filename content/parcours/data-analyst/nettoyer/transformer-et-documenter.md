@@ -2,6 +2,8 @@
 title: Transformer et documenter
 ---
 
+Niveau attendu : **autonomie**. Chaque regroupement est un choix d'analyse déguisé en opération technique ; le reconnaître et l'écrire est exactement ce que veut dire autonomie.
+
 Typage, normalisation des libellés, découpage ou regroupement de modalités. Chaque règle de regroupement est un choix d'analyse — pas une opération technique — et elle se documente comme tel, parce qu'elle change le résultat.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: La distribution avant la moyenne
 ---
 
+Niveau attendu : **référence**. Refuser une moyenne qui ne décrit personne est une position à tenir seul, contre un usage installé partout dans l'entreprise.
+
 Une moyenne sur une distribution bimodale ou à queue lourde décrit une population qui n'existe pas. Sur les montants, les durées et les délais — les grandeurs du métier — la médiane et les quartiles répondent mieux à la question « un cas typique, c'est quoi ».
 
 ```mermaid

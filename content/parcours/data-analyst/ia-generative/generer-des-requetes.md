@@ -2,6 +2,8 @@
 title: Générer des requêtes
 ---
 
+Niveau attendu : **usage**. Fournir le schéma, relire, recompter : un chemin balisé, dont la seule exigence est de ne jamais livrer sans vérification.
+
 Le gain le plus net du métier, à deux conditions : fournir le schéma, et relire. Un modèle qui ne connaît pas vos tables invente des noms de colonnes plausibles ; un modèle à qui vous donnez le schéma produit du SQL correct la plupart du temps.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: L'évolution dans le temps
 ---
 
+Niveau attendu : **référence**. Dire d'une variation qu'elle est réelle, saisonnière ou due à un effet de composition est ce qu'on vient lui demander ; le BI Analyst outille le calendrier, il ne tranche pas la lecture.
+
 L'essentiel des alertes d'un tableau de bord sont de la saisonnalité mal interprétée. Devant une variation, une seule question compte : est-ce que cela sort de ce qui se passe habituellement à cette période ?
 
 ```mermaid

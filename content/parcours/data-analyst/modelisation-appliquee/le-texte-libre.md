@@ -2,6 +2,8 @@
 title: Le texte libre
 ---
 
+Niveau attendu : **usage**. Les modèles génératifs ont rendu la classification de verbatims accessible sans expertise ; ce qui reste à faire est un protocole de vérification, pas une technique à maîtriser.
+
 Verbatims clients, commentaires, champs de saisie libre : c'est le cas où le rapport entre la valeur et l'effort a le plus changé. Classer dix mille commentaires par thème demandait un corpus annoté ; cela demande aujourd'hui une grille de catégories et une vérification sérieuse.
 
 ```mermaid

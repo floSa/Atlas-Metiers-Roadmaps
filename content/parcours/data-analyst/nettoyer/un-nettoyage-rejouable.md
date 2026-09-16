@@ -2,6 +2,8 @@
 title: Un nettoyage rejouable
 ---
 
+Niveau attendu : **autonomie**. Le script depuis le brut et ses assertions se conçoivent, ils ne se copient pas : c'est ce qui permet de revenir en arrière quand une règle se révèle fausse en pleine analyse.
+
 Le nettoyage est un script rejouable depuis la donnée brute, jamais une suite de corrections manuelles sur une copie. C'est la seule façon de revenir en arrière quand une règle se révèle fausse au milieu de l'analyse — ce qui arrive.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Les valeurs aberrantes
 ---
 
+Niveau attendu : **autonomie**. Corriger, convertir ou garder est l'arbitrage où l'erreur coûte le plus cher — écrêter la valeur qui portait le signal — et il se défend cas par cas.
+
 Trois origines à distinguer, et une seule se corrige sans discussion. L'erreur la plus coûteuse du métier consiste à écrêter une valeur extrême parce qu'elle dépasse un seuil statistique, alors qu'elle porte l'essentiel du signal.
 
 ```mermaid

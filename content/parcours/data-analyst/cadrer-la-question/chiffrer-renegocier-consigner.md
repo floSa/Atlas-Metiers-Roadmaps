@@ -2,6 +2,8 @@
 title: Chiffrer, renégocier, consigner
 ---
 
+Niveau attendu : **autonomie**. Estimer un coût et renvoyer une demande sont des arbitrages qu'il faut savoir défendre, mais la priorisation finale revient à la hiérarchie.
+
 Trois gestes qui tiennent en une demi-heure et qui décident du reste : estimer ce que la demande coûte, la renvoyer ou la déplacer quand elle ne tient pas, et garder la trace de ce qui a été convenu.
 
 ```mermaid

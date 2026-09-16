@@ -2,6 +2,8 @@
 title: Rendre la question mesurable
 ---
 
+Niveau attendu : **référence**. Traduire chaque terme flou en colonne, filtre ou seuil est le geste pour lequel le métier vient le chercher, et il n'a pas de suppléant.
+
 « Les clients sont moins actifs », « on perd de l'argent sur le segment pro », « regarde-moi ça ». Le travail consiste à transformer cela en une question qui a une réponse vérifiable — et chaque terme doit devenir une colonne, un filtre ou un seuil avant la première requête.
 
 ```mermaid

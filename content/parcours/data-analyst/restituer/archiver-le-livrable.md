@@ -2,6 +2,8 @@
 title: Archiver le livrable
 ---
 
+Niveau attendu : **autonomie**. La question cadrée, le script et la date d'extraction se rangent par réflexe : un geste de discipline, pas un sujet d'expertise.
+
 Archiver le livrable avec la question cadrée, le script et la date d'extraction. La question « d'où sort ce chiffre » arrive toujours, et souvent des mois plus tard, posée par quelqu'un qui n'était pas là.
 
 ```mermaid

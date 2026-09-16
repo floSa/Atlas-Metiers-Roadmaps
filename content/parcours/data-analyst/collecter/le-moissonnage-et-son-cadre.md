@@ -2,6 +2,8 @@
 title: Le moissonnage et son cadre
 ---
 
+Niveau attendu : **notion**. Il faut reconnaître qu'on entre sur un terrain juridique et savoir qui confirme — le juridique tranche, pas l'analyste.
+
 Techniquement accessible, juridiquement encadré. La question à trancher n'est pas « est-ce que j'y arrive » mais « ai-je le droit, et qui le confirme » — et en entreprise, cela se fait valider avant, jamais après.
 
 ```mermaid

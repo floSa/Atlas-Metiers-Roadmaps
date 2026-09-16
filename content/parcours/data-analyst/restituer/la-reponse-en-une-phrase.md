@@ -2,6 +2,8 @@
 title: La réponse en une phrase
 ---
 
+Niveau attendu : **référence**. Un livrable, un message : c'est là-dessus que le métier est jugé, et aucune autre fonction n'écrira cette phrase à sa place.
+
 La réponse en premier, en une phrase, avec son chiffre. Pas la méthode, pas le contexte, pas le cheminement. Le raisonnement vient après, pour ceux qui contestent — et ils existent.
 
 ```mermaid

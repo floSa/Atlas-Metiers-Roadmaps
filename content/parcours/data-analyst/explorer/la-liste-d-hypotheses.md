@@ -2,6 +2,8 @@
 title: La liste d'hypothèses
 ---
 
+Niveau attendu : **autonomie**. La liste s'écrit et se discipline, mais elle se construit avec le métier : l'analyste l'instruit plutôt qu'il n'en fait autorité.
+
 L'exploration ne produit pas de réponse : elle produit une liste d'hypothèses, chacune assortie de ce qu'on s'attend à observer si elle est vraie. C'est ce qui rend l'étape d'analyse honnête, parce que la liste est écrite avant de chercher à la confirmer.
 
 ```mermaid

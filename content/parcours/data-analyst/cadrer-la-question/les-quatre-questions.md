@@ -2,6 +2,8 @@
 title: Les quatre questions
 ---
 
+Niveau attendu : **référence**. Personne d'autre dans la réunion ne corrigera un « pourquoi » posé comme un « combien » : c'est l'analyste qui requalifie la demande, ou personne.
+
 Descriptif, diagnostic, prédictif, prescriptif ne sont pas quatre niveaux de sophistication qu'on gravit : ce sont quatre questions différentes. La seule chose utile qu'elles apportent est un test de cadrage — savoir laquelle des quatre on vous pose, avant de commencer.
 
 ```mermaid

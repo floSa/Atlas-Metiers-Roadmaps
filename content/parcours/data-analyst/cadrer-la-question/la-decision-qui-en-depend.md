@@ -2,6 +2,8 @@
 title: La décision qui en dépend
 ---
 
+Niveau attendu : **référence**. « Et si le chiffre sort dans l'autre sens ? » est la question que seul l'analyste pose, et qui annule parfois sa propre mission.
+
 Une analyse qui ne change aucune action est du travail propre et inutile, et elle consomme le temps qu'on aurait mis sur la question suivante. Demander quelle décision dépend du résultat est le geste de cadrage le plus rentable du métier.
 
 ```mermaid
