@@ -202,3 +202,74 @@ flowchart TD
 > Accepter les tests générés comme preuve que le code fonctionne. Ils sont écrits à partir du même énoncé et par le même modèle : ils vérifient que le code fait ce que le code fait. Un test qui n'a jamais échoué n'a jamais rien prouvé — casse-en un volontairement pour vérifier qu'il le détecte.
 
 ---
+
+## 5. Raffinement : reprendre le code généré
+
+```mermaid
+flowchart TD
+  raf["3. Refinement"] --> dec["Quelle est la nature du changement ?"]
+  dec --> tc["Targeted Change - correction localisée"]
+  dec --> sc["New Feature / Structural Change - retour au générateur"]
+  tc --> cat["Catégories d'outils de codage assisté"]:::ajout
+  cat --> t1["Assistant en terminal - Claude Code, Codex, Gemini CLI"]
+  cat --> t2["Éditeur augmenté - Cursor"]
+  cat --> t3["Complétion en ligne - Copilot"]
+  raf --> soc["Socle à lire soi-même"]
+  soc --> s1["HTML, CSS, JavaScript"]
+  soc --> s2["React"]
+  soc --> s3["Node.js"]
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** C'est l'étape où le métier se joue vraiment, et la seule que la roadmap traite avec précision. La question préalable — changement localisé ou changement structurel — vaut plus que le choix d'outil : rapiécer manuellement une modification qui touche le modèle de données produit une base de code où la moitié suit la logique du générateur et l'autre celle du correcteur, état dont on ne ressort plus. L'amont donne ici la bonne règle : correction locale dans le code, changement d'architecture par régénération. Voir [[notions/assistants-de-codage]] — pour ce métier, l'usage dominant n'est pas d'écrire du code neuf mais de **comprendre et modifier du code qu'on n'a pas écrit**, ce qui inverse complètement les critères de choix d'outil.
+
+**Ce qu'il faut savoir**
+
+- **Assistant en terminal** — un agent qui lit le dépôt, modifie plusieurs fichiers, exécute les tests et boucle sur le résultat. C'est la catégorie adaptée aux tâches qui traversent l'application : tracer un bug, renommer un concept partout, ajouter une couche de validation. Claude Code, Codex et Gemini CLI en sont les représentants actuels, et le prochain nom qui les remplacera occupera la même case.
+- **Éditeur augmenté** — un IDE qui indexe le dépôt et répond sur la sélection courante. C'est la catégorie du travail d'exploration : ouvrir un fichier inconnu, demander ce qu'il fait, modifier avec la structure sous les yeux. Cursor en est l'exemple le plus répandu.
+- **Complétion en ligne** — la prédiction du bloc suivant pendant la frappe. Utile quand tu sais déjà ce que tu écris, inutile quand tu cherches à comprendre. Copilot occupe cette case.
+- Le critère de choix tient en une question : **je sais ce que je veux écrire, ou je cherche à savoir ce qui existe ?** Première réponse, complétion. Deuxième réponse, éditeur augmenté. Tâche qui traverse plusieurs fichiers et dont le succès est vérifiable par un test, assistant en terminal.
+- Aucun de ces outils n'est fiable sans **retour d'exécution**. Un agent branché sur des tests, un typage et un linter se corrige ; le même agent sans rien produit du code plausible et faux avec une confiance identique. C'est le seul facteur de qualité qui ne dépend pas du modèle.
+- Socle à connaître pour soi — HTML, CSS et JavaScript pour lire le front end, React parce que c'est ce que les générateurs produisent par défaut, Node.js parce que c'est ce qu'ils produisent côté serveur. Pas pour écrire : pour relire et pour savoir dans quelle couche est la panne.
+- Les outils de navigation du navigateur — inspecteur, onglet réseau, console — sont le premier réflexe de diagnostic d'un front end généré, avant de demander quoi que ce soit à un assistant.
+
+> [!tip] Ajout 2026
+> Un fichier d'instructions à la racine du dépôt — conventions, commande de test, ce qu'on ne touche pas — améliore plus la qualité de sortie que le changement d'outil, et il sert à toute la catégorie d'un coup. C'est du cadrage appliqué à son propre code : versionné, relu, mis à jour quand une erreur se répète. Quand un assistant refait deux fois la même bêtise, la correction va dans ce fichier, pas dans la conversation.
+
+> [!warning] Piège
+> Enchaîner les demandes de correction sans jamais lire le diff. Au bout de dix tours on obtient une application qui passe la démonstration et dont plus personne, humain ou machine, ne peut dire pourquoi elle fonctionne. Le symptôme se reconnaît tôt : une correction en casse une autre, deux fois de suite. À ce moment-là, arrête et relis.
+
+---
+
+## 6. Ce que le vibe coding fait bien, et ce qu'il fait mal (hors roadmap)
+
+```mermaid
+flowchart LR
+  vc["Vibe coding"]:::ajout --> bien["Ce qu'il fait bien"]:::ajout
+  vc --> mal["Ce qu'il fait mal"]:::ajout
+  bien --> b1["Franchir la page blanche"]:::ajout
+  bien --> b2["Explorer plusieurs directions à coût nul"]:::ajout
+  bien --> b3["Le code jetable, les scripts, les internes"]:::ajout
+  mal --> m1["Les décisions durables - schéma, sécurité, limites"]:::ajout
+  mal --> m2["Le cas particulier métier"]:::ajout
+  mal --> m3["Ce qu'il ne fait pas et ne signale pas"]:::ajout
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** La roadmap amont renvoie vers une roadmap dédiée et ne prend jamais position. Il en faut une, parce que c'est le cœur du métier et que le débat public oscille entre deux positions également fausses : « ça remplace les développeurs » et « ça ne produit que de la dette ». La position tenable est plus ennuyeuse : le vibe coding déplace le goulot d'étranglement de l'écriture vers le jugement, et il est excellent là où se tromper ne coûte rien, mauvais là où l'erreur est silencieuse et durable.
+
+**Ce qu'il faut savoir**
+
+- Ce qu'il fait bien, sans discussion : passer la page blanche, produire un squelette conventionnel, explorer trois directions en une heure au lieu de trois jours, écrire les parties fastidieuses et vérifiables — formulaires, migrations, adaptateurs, scripts internes, tests d'interface. Sur du code jetable ou à faible enjeu, la question de la dette ne se pose pas : le code sera supprimé avant de coûter.
+- Ce qu'il fait mal, et c'est structurel : tout ce qui relève d'un choix durable pris une fois. Modèle de données, frontières de modules, gestion des droits, comportement en cas d'erreur, limites de charge. Le générateur propose la solution la plus fréquente, qui est souvent la bonne — et quand elle ne l'est pas, rien dans la sortie ne le signale.
+- Le défaut le plus coûteux n'est pas le bug : c'est **l'absence silencieuse**. Pas de limitation de débit, pas de vérification d'autorisation sur une route, pas de journalisation, pas de gestion du cas où le service externe est indisponible. Le code livré fonctionne ; ce qui manque ne produit aucune erreur jusqu'au jour où.
+- La compétence qui prend de la valeur est la revue : savoir lire du code écrit par un autre, repérer ce qui manque plutôt que ce qui est faux, décider quoi garder. C'est une compétence de relecture, et elle s'entraîne mal en écrivant.
+- Le facteur de réussite le plus discriminant n'est pas le talent de formulation, c'est le niveau du lecteur. Le même outil produit un résultat solide entre les mains de quelqu'un qui sait ce qu'il aurait écrit, et un château de cartes entre celles de quelqu'un qui ne peut pas juger. Ce n'est pas un jugement moral, c'est ce qui décide du résultat.
+
+> [!tip] Ajout 2026
+> Le partage qui tient à l'usage : **génère ce que tu saurais écrire, écris ce que tu ne saurais pas juger**. Inverser cette règle est la définition courte du problème. Elle a l'avantage d'être applicable sans débat philosophique et de se vérifier fichier par fichier en revue.
+
+> [!warning] Piège
+> Traiter la vitesse de production comme la mesure du progrès. Le débit de code n'a jamais été le facteur limitant d'un produit — la compréhension du besoin et la capacité à faire évoluer l'existant le sont. Multiplier par dix la production de code d'une équipe qui n'a pas augmenté sa capacité de relecture ne va pas dix fois plus vite : elle accumule un stock qu'elle ne peut plus vérifier.
+
+---
