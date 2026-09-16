@@ -72,3 +72,11 @@ grep -ro "\[\[notions/[^]]*\]\]" content/ | sed 's/.*\[\[notions\///;s/\]\]//' \
 ```
 
 Les orphelins restants doivent être listés dans ta synthèse avec la raison.
+
+---
+
+## Arbitrages du pilote — à lire avant de commencer
+
+`prompts/_arbitrages-lot-1.md` contient les décisions rendues après les six synthèses
+du lot 1. **Il fait autorité sur les synthèses individuelles en cas de contradiction.**
+Le registre a déjà été mis à jour en conséquence : 65 notions.

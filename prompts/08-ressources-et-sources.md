@@ -66,3 +66,11 @@ auditable — elle compte autant que le contenu.
 Ne réécris pas les ressources dans les notes des parcours : ce n'est pas ta zone. Si
 une note cite une ressource morte, signale-la dans ta synthèse pour que le chantier
 concerné la corrige.
+
+---
+
+## Arbitrages du pilote — à lire avant de commencer
+
+`prompts/_arbitrages-lot-1.md` contient les décisions rendues après les six synthèses
+du lot 1. **Il fait autorité sur les synthèses individuelles en cas de contradiction.**
+Le registre a déjà été mis à jour en conséquence : 65 notions.
