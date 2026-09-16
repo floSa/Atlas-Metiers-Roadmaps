@@ -25,7 +25,7 @@ flowchart TD
 
 **Ce qu'il faut savoir**
 
-- Le contenu complet est dans [[roadmaps/05 - Roadmap — AI Engineer]] et [[roadmaps/07 - Roadmap — AI Agents]]. Rien de ce qui suit ne les remplace.
+- Le contenu complet est dans [[parcours/ai-engineer/index|AI Engineer]] et [[parcours/ai-agents/index|AI Agents]]. Rien de ce qui suit ne les remplace.
 - [[notions/rag]] — angle FDE : le corpus client est toujours plus sale que prévu, et l'essentiel du travail est dans l'ingestion, pas dans la génération.
 - [[notions/agents-llm]] — angle FDE : commencer par la plus petite unité d'autonomie qui apporte de la valeur, et n'ajouter une capacité qu'une fois la précédente prouvée. C'est ce que dit l'amont, et c'est le meilleur conseil de la roadmap.
 - [[notions/evaluation-llm]] — angle FDE : le jeu d'évaluation est autant un outil technique qu'un instrument de négociation, parce qu'il transforme « je trouve que ça marche mal » en un chiffre discutable.

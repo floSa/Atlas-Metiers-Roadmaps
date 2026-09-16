@@ -697,7 +697,7 @@ flowchart TD
 - [[02 - Roadmap — AI and Data Scientist]] — le versant modélisation statistique et apprentissage, pour les sujets que la BI doit savoir passer à quelqu'un d'autre.
 - [[04 - Roadmap — Machine Learning]] — ce qu'implique réellement un modèle prédictif, quand une demande de « prévision » dépasse la série temporelle.
 - [[08 - Roadmap — MLOps]] — le cycle de vie d'un modèle en production, pour comprendre pourquoi maintenir une prévision coûte plus cher que la construire.
-- [[05 - Roadmap — AI Engineer]] — utile pour la section 14 : ce qu'on peut attendre d'un modèle de langage, et ce que coûte un jeu d'évaluation sérieux.
+- [[parcours/ai-engineer/index|AI Engineer]] — utile pour la section 14 : ce qu'on peut attendre d'un modèle de langage, et ce que coûte un jeu d'évaluation sérieux.
 - [[00 - Index — Roadmaps]] — la porte d'entrée du corpus.
 
 ## Pour aller plus loin

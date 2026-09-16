@@ -40,9 +40,9 @@ Les schémas se rendent nativement dans Obsidian. Aucun plugin n'est requis.
 
 ### Produits sur LLM
 
-- [[05 - Roadmap — AI Engineer]] — construire sur des modèles pré-entraînés : API, embeddings, RAG, coût, déploiement.
+- [[parcours/ai-engineer/index|AI Engineer]] — construire sur des modèles pré-entraînés : API, embeddings, RAG, coût, déploiement.
 - [[06 - Roadmap — Prompt Engineering]] — ce qui marche encore en 2026, ce qui est devenu du folklore, et le context engineering qui a absorbé le métier.
-- [[07 - Roadmap — AI Agents]] — boucle agentique, outils, MCP, mémoire, architectures, évaluation, sécurité.
+- [[parcours/ai-agents/index|AI Agents]] — boucle agentique, outils, MCP, mémoire, architectures, évaluation, sécurité.
 
 ### Exploitation
 
@@ -95,7 +95,7 @@ Les flèches se lisent « aide à comprendre », pas « obligatoire avant ». Se
 Les roadmaps datent de mars 2026 et les notes sont arrêtées au 3 août 2026. Quatre écarts structurants, développés dans les notes concernées :
 
 1. **Le prompt engineering est devenu du context engineering.** La question n'est plus comment formuler mais quoi mettre dans la fenêtre, dans quel ordre, et quoi en retirer — voir [[06 - Roadmap — Prompt Engineering]].
-2. **Les outils se déclarent, ils ne se codent plus.** MCP a standardisé la connexion modèle-outils ; écrire une bonne description d'outil est devenu une compétence en soi — voir [[07 - Roadmap — AI Agents]] et [[11 - MCP et interopérabilité]].
+2. **Les outils se déclarent, ils ne se codent plus.** MCP a standardisé la connexion modèle-outils ; écrire une bonne description d'outil est devenu une compétence en soi — voir [[parcours/ai-agents/index|AI Agents]] et [[11 - MCP et interopérabilité]].
 3. **L'évaluation est passée avant la construction.** Sans jeu d'évaluation, il n'y a pas d'ingénierie, seulement des impressions — voir [[08 - Roadmap — MLOps]] et [[14 - Évaluation]].
 4. **L'auto-hébergement est redevenu réaliste.** Des modèles utiles tiennent sur une carte grand public — voir [[Modèles locaux sous 24 Go de VRAM]] et [[13 - Serving et infra locale]].
 

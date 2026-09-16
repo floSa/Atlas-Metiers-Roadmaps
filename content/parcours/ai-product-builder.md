@@ -47,7 +47,7 @@ flowchart LR
   APB -.->|"quand le produit embarque un modèle"| AIE
 ```
 
-**À quoi ça sert.** Poser la frontière évite de recruter un profil pour le travail de l'autre. L'AI Product Builder utilise l'IA **pour fabriquer** : il décrit un produit, une chaîne d'outils en génère le code, il le reprend et le met en ligne. Son risque est le produit que personne n'utilise, ou le prototype qui devient le système de production par inertie. L'AI Engineer met l'IA **dans** le produit : récupération de contexte, orchestration, garde-fous, coût d'inférence. Son risque est le système qui répond n'importe quoi en production. Voir [[05 - Roadmap — AI Engineer]] pour ce second versant, qui n'est pas traité ici.
+**À quoi ça sert.** Poser la frontière évite de recruter un profil pour le travail de l'autre. L'AI Product Builder utilise l'IA **pour fabriquer** : il décrit un produit, une chaîne d'outils en génère le code, il le reprend et le met en ligne. Son risque est le produit que personne n'utilise, ou le prototype qui devient le système de production par inertie. L'AI Engineer met l'IA **dans** le produit : récupération de contexte, orchestration, garde-fous, coût d'inférence. Son risque est le système qui répond n'importe quoi en production. Voir [[parcours/ai-engineer/index|AI Engineer]] pour ce second versant, qui n'est pas traité ici.
 
 **Ce qu'il faut savoir**
 
@@ -435,7 +435,7 @@ flowchart TD
   classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
-**À quoi ça sert.** La roadmap amont porte le nom « AI Product Builder » et ne traite que d'une chose : construire un produit **avec** des outils d'IA. Elle ne dit rien du produit qui **contient** un modèle, alors que c'est l'autre moitié de ce que le titre laisse attendre et le cas de la majorité des produits construits aujourd'hui. Cette section pose la frontière et renvoie : rien de ce qui suit n'est expliqué ici, parce que c'est le domaine de l'AI Engineer et que le corpus l'explique déjà une fois — voir [[05 - Roadmap — AI Engineer]].
+**À quoi ça sert.** La roadmap amont porte le nom « AI Product Builder » et ne traite que d'une chose : construire un produit **avec** des outils d'IA. Elle ne dit rien du produit qui **contient** un modèle, alors que c'est l'autre moitié de ce que le titre laisse attendre et le cas de la majorité des produits construits aujourd'hui. Cette section pose la frontière et renvoie : rien de ce qui suit n'est expliqué ici, parce que c'est le domaine de l'AI Engineer et que le corpus l'explique déjà une fois — voir [[parcours/ai-engineer/index|AI Engineer]].
 
 **Ce qu'il faut savoir**
 

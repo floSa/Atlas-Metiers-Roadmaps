@@ -433,7 +433,7 @@ flowchart TD
 Autres roadmaps liées :
 
 - [[02 - Roadmap — AI and Data Scientist]] — le consommateur principal de vos pipelines
-- [[08 - Roadmap — MLOps]] — la suite naturelle : industrialiser modèles et features, en amont de [[05 - Roadmap — AI Engineer]] quand la donnée alimente des systèmes LLM
+- [[08 - Roadmap — MLOps]] — la suite naturelle : industrialiser modèles et features, en amont de [[parcours/ai-engineer/index|AI Engineer]] quand la donnée alimente des systèmes LLM
 
 ## Pour aller plus loin
 

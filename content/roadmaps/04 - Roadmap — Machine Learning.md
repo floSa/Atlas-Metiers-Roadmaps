@@ -53,7 +53,7 @@ flowchart LR
 - **Skills and Responsibilities / Pre-requisites** — cadrer un problème métier en tâche apprenable, définir cible et métrique avant d'écrire une ligne de code, livrer un modèle mesurable et reproductible. Socle exigé : algèbre linéaire, analyse, probabilités, Python, SQL. Rien d'exotique, mais il faut les avoir vraiment.
 
 > [!tip] Ajout 2026
-> Le marché a séparé les deux rôles beaucoup plus nettement qu'en 2023. Voir [[05 - Roadmap — AI Engineer]] pour la branche LLM et agents. La compétence qui distingue aujourd'hui un profil senior d'un profil junior n'est pas la connaissance des architectures récentes mais la capacité à dire « ce problème ne se traite pas par apprentissage » et à proposer une règle métier ou une optimisation classique à la place.
+> Le marché a séparé les deux rôles beaucoup plus nettement qu'en 2023. Voir [[parcours/ai-engineer/index|AI Engineer]] pour la branche LLM et agents. La compétence qui distingue aujourd'hui un profil senior d'un profil junior n'est pas la connaissance des architectures récentes mais la capacité à dire « ce problème ne se traite pas par apprentissage » et à proposer une règle métier ou une optimisation classique à la place.
 
 > [!warning] Piège
 > Sauter les fondamentaux ML parce qu'on travaille sur des LLM. La quasi-totalité des erreurs d'évaluation observées sur des systèmes RAG ou agentiques sont des erreurs de ML classique : jeu de test contaminé, métrique moyennée sur des strates hétérogènes, absence de baseline.
