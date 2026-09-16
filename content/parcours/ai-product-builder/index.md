@@ -22,13 +22,13 @@ flowchart TD
   D -.-> MO["Quand le produit embarque un modèle<br/>l'autre moitié du titre"]
   T -.->|"boucle de retour"| C
 
-  click C "/parcours/ai-product-builder/cadrage-et-arbitrage/index"
-  click P "/parcours/ai-product-builder/prototypage/index"
-  click G "/parcours/ai-product-builder/generation-et-reprise/index"
-  click T "/parcours/ai-product-builder/tests-et-mesure-d-usage/index"
-  click M "/parcours/ai-product-builder/mise-en-ligne/index"
-  click D "/parcours/ai-product-builder/du-prototype-au-produit/index"
-  click MO "/parcours/ai-product-builder/quand-le-produit-embarque-un-modele/index"
+  click C "/parcours/ai-product-builder/cadrage-et-arbitrage/"
+  click P "/parcours/ai-product-builder/prototypage/"
+  click G "/parcours/ai-product-builder/generation-et-reprise/"
+  click T "/parcours/ai-product-builder/tests-et-mesure-d-usage/"
+  click M "/parcours/ai-product-builder/mise-en-ligne/"
+  click D "/parcours/ai-product-builder/du-prototype-au-produit/"
+  click MO "/parcours/ai-product-builder/quand-le-produit-embarque-un-modele/"
 
   classDef conditionnel stroke:#f9a825,stroke-width:1px,stroke-dasharray:4 3
   class MO conditionnel
