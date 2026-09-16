@@ -11,6 +11,12 @@ flowchart TD
   D --> E["La date d'extraction<br/>et le volume obtenu"]
   D --> L["Le livrable remis<br/>version diffusée"]
   D --> R["Les règles de gestion<br/>regroupements, exclusions"]
+
+  click Q "/parcours/data-analyst/cadrer-la-question/chiffrer-renegocier-consigner"
+  click S "/parcours/data-analyst/nettoyer/un-nettoyage-rejouable"
+  click E "/parcours/data-analyst/collecter/tracer-l-extraction"
+  click L "/parcours/data-analyst/restituer/la-reponse-en-une-phrase"
+  click R "/parcours/data-analyst/nettoyer/transformer-et-documenter"
 ```
 
 ## Ce qu'il faut savoir faire
