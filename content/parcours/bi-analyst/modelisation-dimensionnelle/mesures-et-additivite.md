@@ -5,10 +5,14 @@ title: Mesures et additivité
 Un montant s'additionne sur toutes les dimensions ; un stock s'additionne entre produits mais pas dans le temps ; un taux ne s'additionne jamais. C'est l'erreur la plus fréquente et la plus difficile à détecter, parce que le total faux reste plausible.
 
 ```mermaid
-flowchart LR
-  A["Additive<br/>montant, quantité"] --> S["Se somme sur tous les axes"]
-  B["Semi-additive<br/>stock, solde, effectif"] --> T["Se somme, sauf sur le temps"]
-  C["Non additive<br/>taux, moyenne, ratio"] --> U["Ne se somme jamais<br/>stocker numérateur et dénominateur"]
+flowchart TD
+  A["Additive — montant, quantité<br/>se somme sur tous les axes"]
+  B["Semi-additive — stock, solde, effectif<br/>se somme, sauf sur le temps"]
+  C["Non additive — taux, moyenne, ratio<br/>stocker numérateur et dénominateur"]
+
+  click A "/notions/modelisation-dimensionnelle"
+  click B "/parcours/bi-analyst/modelisation-dimensionnelle/la-dimension-de-date"
+  click C "/notions/statistiques-descriptives"
 ```
 
 ## Ce qu'il faut savoir faire
