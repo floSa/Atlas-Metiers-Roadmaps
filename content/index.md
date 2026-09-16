@@ -24,3 +24,5 @@ Se former sur les métiers de l'IA et de la data : ce qu'il faut savoir faire, e
 | [[01 - Roadmap — Computer Science\|Computer Science]] | Algorithmique, systèmes, réseau, bases de données, sécurité |
 
 [[ressources/index|Toutes les ressources de formation]] — gratuites, vérifiées, classées par usage.
+
+[[ne-pas-confondre|Ne pas confondre ces métiers]] — ce qui sépare vraiment des titres qui se ressemblent.

@@ -13,7 +13,7 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [Component.Backlinks()],
+  afterBody: [],
   footer: Component.Footer({
     links: {
       "Les roadmaps d'origine": "https://roadmap.sh",
@@ -24,10 +24,6 @@ export const sharedPageComponents: SharedLayout = {
 
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
-    Component.ConditionalRender({
-      component: Component.Breadcrumbs(),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
     Component.ArticleTitle(),
     // Ni date, ni temps de lecture, ni tags : ce sont des metadonnees de
     // fabrication, elles n'apprennent rien au lecteur d'une fiche metier.
@@ -50,7 +46,7 @@ export const defaultContentPageLayout: PageLayout = {
 }
 
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle()],
+  beforeBody: [Component.ArticleTitle()],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),

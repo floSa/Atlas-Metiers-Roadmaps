@@ -283,3 +283,16 @@ article table tr:last-child td {
 .page > #quartz-body > .right.sidebar {
   display: none;
 }
+
+/* Les schemas sont centres dans la colonne. */
+article .mermaid,
+article pre.mermaid {
+  display: flex;
+  justify-content: center;
+  margin: 1.2rem 0;
+}
+
+article .mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
