@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-engineer
 ---
 
+**Autonomie.** Concevoir le jeu d'évaluation, les traces et le budget par requête, puis défendre l'arbitrage coût/qualité qui en découle, est attendu d'un confirmé ; pas la référence, parce que la plateforme d'observabilité et son exploitation restent tenues par l'équipe qui l'opère.
+
 La roadmap amont s'arrête à la construction ; le travail réel commence à la mise en service, parce qu'un système LLM n'a pas de « ça marche » binaire — il a une distribution de qualité qui dérive à chaque changement de prompt, de modèle ou de corpus.
 
 ```mermaid

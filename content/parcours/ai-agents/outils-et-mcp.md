@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-agents
 ---
 
+**Référence.** Second domaine d'autorité : la fiabilité d'un agent tient davantage au soin porté à quinze définitions d'outils qu'au choix du modèle, et c'est la seule partie du système dont l'ingénieur d'agents est pleinement propriétaire, de la description jusqu'au schéma d'erreur.
+
 Les outils sont l'interface entre le modèle et le réel, et leur description est un prompt à part entière : la qualité d'un agent dépend davantage du soin apporté à quinze définitions d'outils qu'au choix du modèle.
 
 ```mermaid

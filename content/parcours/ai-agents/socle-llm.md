@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-agents
 ---
 
+**Autonomie.** Un agent est d'abord un service asynchrone : concevoir la file, la reprise et l'idempotence, puis déboguer en production un tour qui expire ou une facture qui dérape, est le minimum d'un confirmé ; ce n'est pas un domaine d'autorité parce que rien n'y est propre à l'IA — c'est du backend, et l'équipe en a déjà.
+
 Un agent n'est pas un objet d'IA : c'est un service backend qui appelle une API payante, gère des délais d'expiration, de la concurrence et de l'état — et les projets échouent presque toujours sur ces fondations, pas sur le modèle.
 
 ```mermaid

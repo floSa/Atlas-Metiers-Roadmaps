@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-agents
 ---
 
+**Usage.** La triade létale, le conteneur jetable et la permission par outil sont des règles documentées qu'un confirmé applique sur un chemin balisé, revue de conception à l'appui ; construire les chemins d'attaque, les démontrer et les chiffrer est le métier d'[[parcours/ai-red-teaming/index|AI Red Teaming]], qu'on convoque plutôt qu'on n'imite.
+
 Un agent exécute des actions à partir de texte non fiable : la page qu'il lit, le ticket qu'on lui soumet, le document qu'il ingère peuvent contenir des instructions. Aucune parade au niveau du prompt n'est fiable.
 
 ```mermaid

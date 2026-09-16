@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-engineer
 ---
 
+**Autonomie.** Il faut pouvoir expliquer sous pression pourquoi un appel coûte ce qu'il coûte et répond ce qu'il répond, et défendre un réglage d'échantillonnage ou un budget de raisonnement sur des cas mesurés ; le niveau ne monte pas plus haut parce que l'architecture du modèle et son entraînement restent le terrain du ML Engineer.
+
 Un modèle de langage prédit le token suivant, et tout le reste en découle : pas besoin de dériver la rétropropagation, mais il faut savoir expliquer pourquoi un appel coûte ce qu'il coûte et pourquoi il répond ce qu'il répond.
 
 ```mermaid
