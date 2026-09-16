@@ -501,7 +501,7 @@ Toutes reprises de la roadmap amont, où elles sont référencées à ces adress
 
 **Outils, par catégorie**
 
-- Générateurs d'application — [Lovable](https://docs.lovable.dev/introduction/welcome), [Bolt](https://support.bolt.new/building/quickstart), [Replit](https://docs.replit.com/getting-started/intro-replit).
+- Générateurs d'application — [Lovable](https://docs.lovable.dev/introduction/welcome), [Bolt](https://support.bolt.new/), [Replit](https://docs.replit.com/getting-started/intro-replit).
 - Générateur d'interface — [v0](https://v0.app/docs).
 - Assistants en terminal — [Claude Code](https://code.claude.com/docs/en/overview) et sa [roadmap dédiée](https://roadmap.sh/claude-code), [Codex](https://developers.openai.com/codex), [Gemini CLI](https://geminicli.com/docs/).
 - Éditeur augmenté et complétion — [Cursor](https://cursor.com/docs), [GitHub Copilot](https://docs.github.com/en/copilot).

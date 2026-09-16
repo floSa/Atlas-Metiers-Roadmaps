@@ -437,13 +437,13 @@ Ressources issues de la roadmap amont, retenues pour leur valeur défensive ou m
 
 - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — le cadre de gestion du risque de référence, et le vocabulaire commun avec les équipes de conformité.
 - [ISO/IEC 42001](https://www.iso.org/standard/81230.html) — la norme de système de management de l'IA, certifiable, qui permet d'inscrire le red teaming dans un processus récurrent.
-- [OWASP Threat Modeling](https://owasp.org/www-community/Threat_Modeling) et [OWASP API Security Project](https://owasp.org/www-project-api-security/) — la méthode de modélisation et le référentiel applicable à la section 7.
+- [OWASP Threat Modeling](https://owasp.org/www-community/Threat_Modeling) et [OWASP API Security Project](https://api-security.owasp.org/) — la méthode de modélisation et le référentiel applicable à la section 7.
 - [Jailbroken: How Does LLM Safety Training Fail?](https://arxiv.org/abs/2307.02483) — l'article qui explique pourquoi l'alignement échoue plutôt que de lister des contournements.
 - [Extracting Training Data from Large Language Models](https://arxiv.org/abs/2012.07805) — la démonstration fondatrice de la mémorisation et de l'extraction.
 - [Model Inversion Attacks: A Survey of Approaches and Countermeasures](https://arxiv.org/html/2411.10023v1) — panorama attaques et parades sur l'inversion.
-- [Detecting and Preventing Data Poisoning Attacks on AI Models](https://arxiv.org/abs/2503.09302) et [Poisoning Web-Scale Training Data](https://arxiv.org/abs/2310.12818) — l'empoisonnement, côté faisabilité et côté défense.
+- [Detecting and Preventing Data Poisoning Attacks on AI Models](https://arxiv.org/abs/2503.09302) et [Poisoning Web-Scale Training Datasets is Practical](https://arxiv.org/abs/2302.10149) — l'empoisonnement, côté faisabilité et côté défense.
 - [Towards Evaluating the Robustness of Neural Networks](https://arxiv.org/abs/1608.04644) — la référence sur l'évaluation de robustesse, et sur les défenses qui n'en sont pas.
-- [SoK: Prompt Hacking of LLMs](https://arxiv.org/abs/2311.05544) — la taxonomie systématique du prompt hacking.
+- [SoK: Prompt Hacking of LLMs](https://arxiv.org/abs/2410.13901) — la taxonomie systématique du prompt hacking.
 - [Prompt Hacking Defensive Measures](https://learnprompting.org/docs/prompt_hacking/defensive_measures/introduction) — le pendant défensif, structuré par contre-mesure.
 - [Mitigating Prompt Injection Attacks](https://research.nccgroup.com/2023/12/01/mitigating-prompt-injection-attacks/) — analyse des atténuations et de leurs limites.
 - [How to Prevent Indirect Prompt Injection Attacks](https://www.cobalt.io/blog/how-to-prevent-indirect-prompt-injection-attacks) — l'angle indirect, côté parade.
@@ -453,5 +453,5 @@ Ressources issues de la roadmap amont, retenues pour leur valeur défensive ou m
 - [PyRIT](https://github.com/Azure/PyRIT) et [Promptfoo](https://www.promptfoo.dev/docs/red-team/) — l'outillage d'orchestration et d'évaluation adverse.
 - [Gandalf](https://gandalf.lakera.ai/) et [HackAPrompt](https://www.hackaprompt.com/) — environnements d'entraînement autorisés sur l'injection de prompt.
 - [AI Security Institute](https://www.aisi.gov.uk/), [Center for AI Safety](https://www.safe.ai/) et [Anthropic Research](https://www.anthropic.com/research) — les publications de recherche à suivre en continu.
-- [Huntr](https://huntr.com/guidelines) et [0din.ai](https://0din.ai/policy) — cadres de divulgation responsable propres à l'IA.
+- [Huntr](https://huntr.com/) et [0din.ai](https://0din.ai/policy) — cadres de divulgation responsable propres à l'IA.
 - OWASP Top 10 for Large Language Model Applications — la check-list à passer avant toute mise en production, déjà citée dans [[05 - Roadmap — AI Engineer]].
