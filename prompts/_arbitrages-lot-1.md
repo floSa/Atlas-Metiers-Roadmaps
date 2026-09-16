@@ -116,3 +116,50 @@ descriptifs différents. À traiter au dédoublonnage.
 - **Les durées de mission FDE** et les efforts en semaines des parcours conseillés sont
   des apports propres non sourcés, signalés comme tels dans les notes. Ils le restent
   tant qu'aucun retour d'expérience chiffré ne vient les corriger.
+
+---
+
+# Addendum — après les chantiers 07 et 08
+
+**État vérifié.** 95 notes, 65 notions, **bijection registre/fichiers parfaite, zéro
+lien de notion orphelin**. Les deux chantiers sont fusionnés.
+
+## Décisions
+
+**`data/liens/` est validé** comme répertoire de sortie du vérificateur. Les rapports
+sont versionnés parce qu'ils rendent le travail auditable, le cache reste local. Aucun
+autre chantier n'y écrit.
+
+**`iso.org/standard/81230.html` reste publié**, avec sa réserve écrite. La règle « une
+ressource non vérifiée n'est pas publiée » vise les ressources inventées ou non
+contrôlées, pas celles dont l'éditeur interdit toute récupération automatique. L'identité
+de la norme est confirmée par ailleurs ; c'est la page qui est inaccessible aux robots,
+pas la référence qui est douteuse. La distinction est à maintenir.
+
+**Les 14 notions à un seul appelant sont conservées.** Le chantier 07 a raison :
+le parcours qui les appelle a explicitement délégué son contenu et n'a gardé que son
+angle. Les renvoyer rouvrirait la duplication que le registre existe pour éviter.
+
+**Les titres abîmés sont réparables, et réparés.** Le chantier 08 avait raison de ne pas
+y toucher et de remonter l'arbitrage. Récupérer un titre depuis un nœud jumeau portant la
+même URL n'est pas l'inventer, c'est le dédupliquer. L'extraction le fait maintenant par
+recoupement entre roadmaps : **54 titres rétablis**. Ceux qui n'ont aucun jumeau restent
+en l'état — on ne fabrique rien.
+
+## Le constat le plus important du lot
+
+Le chantier 08 a trouvé **deux URL arXiv de la capture amont qui pointent vers un tout
+autre article** :
+
+| Annoncé en amont | Ce que l'URL sert réellement | La bonne référence |
+|---|---|---|
+| `2310.12818` « Poisoning Web-Scale Training Data » | *Boosting Inference Efficiency* | [2302.10149](https://arxiv.org/abs/2302.10149) |
+| `2311.05544` « SoK: Prompt Hacking of LLMs » | *Towards adiabatic quantum computing* | [2410.13901](https://arxiv.org/abs/2410.13901) |
+
+Vérifié indépendamment auprès d'arXiv. **Les deux répondent 200** : aucun vérificateur
+de liens ne les voit. C'est la démonstration que tester un statut HTTP ne suffit pas, et
+que la source amont n'est pas fiable par défaut.
+
+Corrigé dans `ai-red-teaming.md` par le pilote, avec trois autres liens morts confirmés
+(`owasp.org/www-project-api-security/` → `api-security.owasp.org`, `huntr.com/guidelines`
+→ `huntr.com`, `support.bolt.new/building/quickstart` → `support.bolt.new`).

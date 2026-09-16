@@ -67,10 +67,26 @@ plutôt que de maquiller la mesure — c'est tout l'intérêt de l'indicateur.
 ### 4. Raccorder les index
 
 `content/index.md` et `content/roadmaps/00 - Index — Roadmaps.md` ne référencent pas
-encore les cinq parcours du lot 1 ni les notions. Mets-les à jour : les métiers, les
+encore les cinq parcours du lot 1, ni les notions, ni les pages de `content/ressources/`
+— `index.md` mentionne le répertoire dans son schéma sans pointer vers une seule page. Mets-les à jour : les métiers, les
 trajectoires, et la façon dont parcours, notions et ressources s'articulent.
 
-### 5. Contrôle final
+### 5. Reprendre les liens qui redirigent
+
+Le chantier 08 a mesuré **16 redirections** dans le corpus rédigé et les a listées dans
+`data/liens/rapport-corpus.md`. Une redirection n'est pas toujours anodine : `mode.com`
+part chez ThoughtSpot (2 liens dans BI Analyst), `research.nccgroup.com` retombe sur sa
+racine — un 404 déguisé — et `gandalf.lakera.ai` mène désormais à un autre produit.
+
+**Juge sur le contenu servi, pas sur le code HTTP.** Un lien qui répond 200 après
+redirection peut très bien ne plus servir l'article cité. Le cas `hevodata.com` sur
+l'analyse de cohorte en est l'exemple : il répond, mais vers autre chose.
+
+Cinq liens franchement faux ont déjà été corrigés par le pilote, dont deux URL arXiv qui
+pointaient vers des articles sans aucun rapport — voir l'addendum des arbitrages. Ne les
+retouche pas.
+
+### 6. Contrôle final
 
 ```
 grep -rhoE '\[\[notions/[^]|#]+' content | sed 's|\[\[notions/||' | sort -u \
