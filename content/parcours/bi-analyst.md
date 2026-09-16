@@ -634,3 +634,117 @@ Ce qui rend le sujet important pour le métier, c'est que ce constat inverse la 
 > Laisser un assistant conversationnel devenir la source des chiffres diffusés à l'extérieur du service, ou reproduits dans une présentation. Le résultat n'est pas reproductible : la même question reformulée peut produire un périmètre différent, et rien n'en garde la trace. Tout chiffre destiné à être publié, cité ou comparé dans le temps doit venir d'une mesure définie et d'un rapport identifié. L'assistant sert à explorer et à cadrer une question ; il ne fait pas foi.
 
 ---
+
+## 15. Se professionnaliser
+
+```mermaid
+flowchart TD
+  pf["Building Your Portfolio"] --> e2e["End-to-end Analytics Project"]
+  e2e --> e1["Source réelle, ingestion, modèle, restitution"]
+  e2e --> e3["Dashboard Design et Data Pipeline Design"]
+  pf --> pp["Portfolio presentation"]
+  pr["Professional Development"] --> cm["BI Communities"]
+  pr --> ce["Certifications"]
+  pr --> cp["BI Competitions"]
+  pr --> os["Open-Source Projects - Metabase, Superset"]
+  nw["Networking"] --> cw["Conferences & Webinars"]
+  jp["Job Preparation"] --> r1["Resume optimization"]
+  jp --> r2["Interview preparation"]
+  jp --> r3["Salary negotiation strategies"]
+```
+
+**À quoi ça sert.** Cette partie de la roadmap est générique et interchangeable avec n'importe quel métier de la data, à une exception près qui mérite d'être dite : le portfolio d'un BI Analyst ne se démontre pas comme celui d'un Data Analyst. Un carnet d'analyse bien présenté montre une capacité à répondre ; ce métier-ci doit montrer une capacité à **construire un socle réutilisable**, ce qui est plus difficile à mettre en vitrine et beaucoup plus discriminant à l'entretien.
+
+**Ce qu'il faut savoir**
+
+- Le projet de bout en bout qui vaut quelque chose — une source réellement pénible (une API avec quotas, un jeu de fichiers au schéma instable), une ingestion incrémentale, un modèle dimensionnel avec sa dimension de date et une dimension historisée, des tests qui bloquent la chaîne, et deux ou trois tableaux de bord adossés à des mesures définies une seule fois. Un seul projet de cette qualité vaut dix tableaux de bord sur des données propres téléchargées telles quelles.
+- Ce qui se montre — le dépôt, le graphe de dépendances des modèles, le dictionnaire des métriques, et un exemple de test qui a attrapé une vraie erreur. Un recruteur compétent regardera ça avant les captures d'écran.
+- Documente une décision de modélisation et son alternative — « j'ai choisi ce grain plutôt que celui-là, voilà ce que ça permet et ce que ça coûte ». C'est exactement la question qui sera posée à l'entretien technique, et c'est ce que presque aucun candidat ne sait faire.
+- Certifications — elles servent au filtrage des candidatures, rarement à la compétence. Celle qui a le meilleur rendement est celle de la plateforme utilisée par les entreprises que tu vises, et rien d'autre.
+- Projets libres — contribuer à Metabase ou Superset, ou simplement les déployer et les opérer, apprend plus sur le fonctionnement d'un outil décisionnel que n'importe quelle formation : on y voit comment sont gérés le cache, les droits et la couche sémantique.
+- Communautés — les forums Power BI, la communauté Tableau et la Data Visualization Society sont les endroits où se règlent les problèmes concrets d'outil. Les sujets de modélisation, eux, se discutent surtout dans les communautés autour de dbt et de l'analytics engineering.
+- Entretien — attends-toi à du SQL avec fenêtrage, à un exercice de modélisation sur énoncé métier, et à une mise en situation de désaccord sur un chiffre. Les deux derniers sont ceux qui départagent.
+- Négociation — le poste est souvent positionné plus bas que sa contribution réelle, parce que son livrable est invisible quand il fonctionne. Arrive avec des éléments de comparaison de marché et des exemples chiffrés de ce que ton travail a supprimé — rapports retirés, heures de retraitement manuel économisées, incidents évités.
+
+> [!tip] Ajout 2026
+> Le projet de démonstration le plus convaincant, et le moins coûteux à monter, tient entièrement en local : des fichiers Parquet, DuckDB comme moteur, dbt pour la transformation, un outil libre pour la restitution. Aucun compte cloud, aucune facture, et exactement les mêmes pratiques qu'en entreprise — dépôt, tests, environnements, documentation générée. C'est aussi la stack la plus utile à maîtriser en mission, pour prototyper un modèle avant de le porter sur l'entrepôt du client.
+
+> [!warning] Piège
+> Construire son portfolio sur des jeux de données déjà propres. Ils ne permettent de démontrer aucune des compétences du métier : pas de schéma qui change, pas de doublon, pas de définition ambiguë, pas d'historisation à décider. Prends une source médiocre et montre ce que tu en as fait — c'est le seul terrain où le travail se voit.
+
+---
+
+## Parcours conseillé
+
+| Ordre | Étape | Effort | À viser |
+|---|---|---|---|
+| 1 | SQL analytique jusqu'au fenêtrage | ~3 semaines | Écrire une requête d'agrégation multi-niveaux et lire son plan d'exécution |
+| 2 | Comprendre une fonction métier de bout en bout | ~1 semaine | Savoir poser les quatre questions qui désambiguïsent « chiffre d'affaires » |
+| 3 | Dictionnaire des métriques sur un domaine réel | ~3 jours | Dix métriques avec formule, grain, source et propriétaire |
+| 4 | Modélisation dimensionnelle | ~3 semaines | Un modèle en étoile avec grain énoncé, dimension de date et une dimension historisée |
+| 5 | Transformation versionnée avec dbt | ~2 semaines | Trois couches de modèles, tests bloquants, documentation générée |
+| 6 | Entrepôt et arbitrage d'architecture | ~1 semaine | Justifier entrepôt contre lac contre moteur embarqué sur un cas chiffré |
+| 7 | Couche sémantique | ~2 semaines | Quinze mesures définies une fois, dont un ratio correct à tous les niveaux |
+| 8 | Qualité et lignage instrumentés | ~1 semaine | Réconciliation nocturne avec la source métier et alerte sur écart |
+| 9 | Un outil décisionnel en profondeur | ~3 semaines | Droits d'accès à la ligne, modes de rafraîchissement, instrumentation de l'usage |
+| 10 | Restitution et arbitrage devant le métier | continu | Tenir une réunion où deux services n'ont pas le même chiffre |
+| 11 | Séries temporelles et cohortes modélisées | ~2 semaines | Une cohorte définie une fois, suivie sans intervention |
+| 12 | Gouvernance, RGPD, éthique de publication | ~1 semaine | Politique de purge, pseudonymisation, seuil d'agrégation minimale |
+| 13 | BI conversationnelle sur périmètre restreint | ~1 semaine | Jeu de trente questions de référence rejoué à chaque évolution |
+
+---
+
+## Liens dans le coffre
+
+- [[parcours/data-analyst]] — l'autre versant du métier : exploration, nettoyage, analyse ad hoc et réponse à une question ponctuelle. Ce parcours-ci construit le socle, celui-là s'en sert.
+- [[03 - Roadmap — Data Engineer]] — l'amont de la chaîne : ingestion, pipelines, plateforme, formats de table ouverts. À lire pour savoir où s'arrête la responsabilité du BI Analyst.
+- [[02 - Roadmap — AI and Data Scientist]] — le versant modélisation statistique et apprentissage, pour les sujets que la BI doit savoir passer à quelqu'un d'autre.
+- [[04 - Roadmap — Machine Learning]] — ce qu'implique réellement un modèle prédictif, quand une demande de « prévision » dépasse la série temporelle.
+- [[08 - Roadmap — MLOps]] — le cycle de vie d'un modèle en production, pour comprendre pourquoi maintenir une prévision coûte plus cher que la construire.
+- [[05 - Roadmap — AI Engineer]] — utile pour la section 14 : ce qu'on peut attendre d'un modèle de langage, et ce que coûte un jeu d'évaluation sérieux.
+- [[00 - Index — Roadmaps]] — la porte d'entrée du corpus.
+
+## Pour aller plus loin
+
+**Modélisation et entrepôt**
+
+- « The Data Warehouse Toolkit », Ralph Kimball et Margy Ross — la référence du domaine, toujours la meilleure sur le grain, les dimensions conformes et l'historisation. Les chapitres sectoriels se lisent comme un catalogue de patrons.
+- « Fundamentals of Data Engineering », Joe Reis et Matt Housley — pour situer le travail du BI Analyst dans la chaîne complète et comprendre les arbitrages de la plateforme.
+- [Star Schema vs Snowflake Schema](https://www.thoughtspot.com/data-trends/data-modeling/star-schema-vs-snowflake-schema) et [Fact Table vs Dimension Table](https://www.simplilearn.com/fact-table-vs-dimension-table-article) — deux mises au point courtes et correctes, suffisantes pour démarrer.
+- [Normalization vs Denormalization](https://codilime.com/blog/normalization-vs-denormalization-in-databases/) — pourquoi le bon réflexe transactionnel est le mauvais réflexe décisionnel.
+- [What is a Data Warehouse?](https://cloud.google.com/learn/what-is-a-data-warehouse) — la présentation la plus sobre du concept, sans argumentaire produit.
+
+**Transformation et outillage**
+
+- [Documentation dbt](https://docs.getdbt.com/docs/build/documentation) et [What is dbt](https://www.getdbt.com/product/what-is-dbt) — à lire comme un catalogue de pratiques (tests, matérialisations, documentation générée) autant que comme une documentation d'outil.
+- [Documentation Airflow](https://airflow.apache.org/docs) — pour les notions de DAG, de dépendance et de reprise, même si l'outil retenu est un autre.
+- [SQL Window Functions](https://mode.com/sql-tutorial/sql-window-functions) et [Performance Tuning SQL Queries](https://mode.com/sql-tutorial/sql-performance-tuning) — les deux meilleures pages courtes sur les deux sujets SQL qui comptent vraiment en BI.
+
+**Restitution**
+
+- « Storytelling with Data », Cole Nussbaumer Knaflic — la référence pratique sur la restitution à un public non technique.
+- « Show Me the Numbers », Stephen Few — sur les tableaux et les tableaux de bord, plus rigoureux que la plupart des guides d'éditeurs.
+- [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/introduction.html), Claus Wilke — libre et en ligne, la partie sur les couleurs et les échelles est la plus utile.
+- [The Data Visualisation Catalogue](https://datavizcatalogue.com/) — pour choisir un type de graphique en partant de la question posée.
+- [Visual Best Practices](https://help.tableau.com/current/blueprint/en-us/bp_visual_best_practices.htm) — indépendant de l'outil malgré la source.
+- [10 Guidelines for DataViz Accessibility](https://www.highcharts.com/blog/tutorials/10-guidelines-for-dataviz-accessibility/) — la check-list à passer avant publication.
+- [How To Spot Misleading Charts](https://www.tableau.com/blog/how-spot-misleading-charts-check-axes) — utile dans les deux sens : détecter, et ne pas produire.
+
+**Qualité, gouvernance, éthique**
+
+- [What Is Data Quality?](https://www.ibm.com/think/topics/data-quality) et [What Is Data Lineage?](https://www.ibm.com/think/topics/data-lineage) — les définitions de référence, à compléter par [The Ultimate Guide To Data Lineage](http://montecarlodata.com/blog-data-lineage/) pour la pratique.
+- [Texte du RGPD](https://gdpr-info.eu/) — la source, à consulter plutôt que les résumés commerciaux.
+- [5 Principles of Data Ethics for Business](https://online.hbs.edu/blog/post/data-ethics) — court et exploitable, notamment sur la question du périmètre.
+
+**Analyse**
+
+- [Engineering Statistics Handbook, section séries temporelles](https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm) — le NIST, rigoureux et gratuit, sur la décomposition tendance-saisonnalité.
+- [A Refresher on A/B Testing](https://hbr.org/2017/06/a-refresher-on-ab-testing) — le rappel de protocole à relire avant tout test.
+- [Correlation vs. Causation](https://www.scribbr.com/methodology/correlation-vs-causation/) — à garder sous la main pour les réunions.
+- [Understanding Cohort Analysis](https://hevodata.com/learn/understanding-cohort-analysis-a-guide/) — la mécanique et les pièges de composition.
+
+**Outils libres et communautés**
+
+- [Metabase](https://github.com/metabase/metabase) et [Superset](https://github.com/apache/superset) — les deux plateformes libres sérieuses ; les déployer soi-même est le meilleur cours sur le fonctionnement interne d'un outil décisionnel.
+- [Data Visualization Society](https://www.datavisualizationsociety.org/), [communauté Tableau](https://community.tableau.com/s/), [forums Power BI](https://community.fabric.microsoft.com/t5/Power-BI-forums/ct-p/powerbi) — pour les problèmes concrets d'outil.
+- [BI Analyst Interview Questions](https://365datascience.com/career-advice/job-interview-tips/bi-analyst-interview-questions/) et [15 Rules for Negotiating a Job Offer](https://hbr.org/2014/04/15-rules-for-negotiating-a-job-offer) — pour la préparation d'entretien et la négociation.
