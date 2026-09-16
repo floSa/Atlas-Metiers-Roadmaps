@@ -14,7 +14,7 @@ Se former sur les métiers de l'IA et de la data : ce qu'il faut savoir faire, e
 | [[03 - Roadmap — Data Engineer\|Data Engineer]] | Ingestion, stockage, transformation, orchestration |
 | [[05 - Roadmap — AI Engineer\|AI Engineer]] | Bâtir un système sur des modèles pré-entraînés : API, RAG, coût |
 | [[parcours/data-analyst\|Data Analyst]] | De la question métier à la réponse chiffrée |
-| [[parcours/bi-analyst\|BI Analyst]] | Entrepôt, modélisation, définitions partagées, tableaux de bord |
+| [[parcours/bi-analyst/index\|BI Analyst]] | Entrepôt, modélisation, définitions partagées, tableaux de bord |
 | [[08 - Roadmap — MLOps\|MLOps]] | Versionnement, CI/CD, supervision, dérive, coûts |
 | [[04 - Roadmap — Machine Learning\|Machine Learning]] | Le ML classique : validation, fuite de données, métriques |
 | [[07 - Roadmap — AI Agents\|AI Agents]] | Boucle agentique, outils, MCP, mémoire, évaluation |
