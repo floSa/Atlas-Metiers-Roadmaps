@@ -2,6 +2,8 @@
 title: Interfacer le patrimoine
 ---
 
+Niveau attendu : **autonomie**. L'intégration se conçoit et se débogue sous pression, mais ceux qui tiennent ce système depuis vingt ans en savent plus que le FDE et gardent le dernier mot sur l'écriture.
+
 L'essentiel du travail d'intégration, et la principale source de mauvaises surprises. Ces systèmes ont dix à trente ans, leur documentation est partielle, et ils portent des données que toute l'organisation utilise. La règle qui structure tout : **lire est négociable, écrire ne l'est pas**.
 
 ```mermaid
