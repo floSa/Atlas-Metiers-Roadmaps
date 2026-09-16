@@ -24,7 +24,7 @@ flowchart TD
   R -.-> P3
   R -.-> P4
 
-  click S "/parcours/forward-deployed-engineer/socle-technique"
+  click S "/parcours/forward-deployed-engineer/socle-technique/"
   click C "/parcours/forward-deployed-engineer/cycle-mission"
   click P1 "/parcours/forward-deployed-engineer/audit-et-cartographie"
   click P2 "/parcours/forward-deployed-engineer/arbitrage-technologique"
@@ -38,7 +38,7 @@ flowchart TD
 
 ## Ma progression
 
-- [ ] [[parcours/forward-deployed-engineer/socle-technique|Socle technique]] — ce qu'il faut savoir faire, et à quelle profondeur
+- [ ] [[parcours/forward-deployed-engineer/socle-technique/index|Socle technique]] — ce qu'il faut savoir faire, et à quelle profondeur
 - [ ] [[parcours/forward-deployed-engineer/cycle-mission|Cycle de mission]] — les quatre phases et leurs portes de sortie
 - [ ] [[parcours/forward-deployed-engineer/audit-et-cartographie|Phase 1 — Audit et cartographie]] — observer le travail réel, modéliser le processus
 - [ ] [[parcours/forward-deployed-engineer/arbitrage-technologique|Phase 2 — Arbitrage technologique]] — simplifier avant d'automatiser, déterministe ou probabiliste
