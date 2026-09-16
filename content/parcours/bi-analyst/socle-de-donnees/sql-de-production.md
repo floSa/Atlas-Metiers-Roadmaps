@@ -2,7 +2,7 @@
 title: SQL de production
 ---
 
-Niveau attendu : **référence**. Une requête écrite une fois et exécutée dix mille fois n'est plus une réponse mais une définition : c'est là que ce poste fait autorité, là où le Data Analyst s'arrête à l'autonomie.
+Niveau attendu : **référence**. C'est le seul endroit du parcours où le SQL cesse d'être un moyen pour devenir le livrable lui-même : le Data Analyst s'y arrête à l'autonomie, ce poste y fait autorité.
 
 Ce qui est propre au BI Analyst, c'est que ses requêtes ne sont pas des réponses mais des **définitions** : une requête écrite une fois et exécutée dix mille fois par un outil de restitution, dont le plan d'exécution et le coût comptent autant que le résultat.
 

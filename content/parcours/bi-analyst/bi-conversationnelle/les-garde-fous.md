@@ -2,7 +2,7 @@
 title: Les garde-fous
 ---
 
-Niveau attendu : **usage**. Restreindre, rendre la requête visible, appliquer les droits en amont : trois mesures documentées qu'on met en place sans rien inventer.
+Niveau attendu : **usage**. Rien n'est ici à inventer ni à arbitrer : la liste est connue, elle s'applique, et le manquement se voit tout de suite.
 
 Trois mesures suffisent à rendre un assistant utilisable en production, et aucune n'est optionnelle : restreindre le périmètre, rendre la requête visible, appliquer les droits en amont.
 
