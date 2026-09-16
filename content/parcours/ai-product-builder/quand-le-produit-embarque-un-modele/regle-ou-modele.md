@@ -6,12 +6,9 @@ La première question, et celle qu'on saute. Une classification à sept catégor
 
 ```mermaid
 flowchart TD
-  F["Une fonction intelligente entre au cadrage"] --> Q{"L'entrée est-elle ouverte ?"}
+  F["Une fonction intelligente entre au cadrage"] --> Q{"L'entrée est du langage libre,<br/>ou les cas sont ouverts ?"}
   Q -->|"non"| D["Règle, script, requête<br/>moins cher, testable, stable"]
   Q -->|"oui"| M["Appel de modèle<br/>et tout ce qui vient avec"]
-  M --> C["Coût par utilisateur"]
-  M --> E["Jeu d'évaluation"]
-  M --> S["Choix du modèle"]
 ```
 
 ## Ce qu'il faut savoir faire
@@ -22,6 +19,21 @@ flowchart TD
 - Choisir le plus petit modèle qui passe le jeu d'évaluation, pas le meilleur disponible. Le critère dominant ici n'est pas la qualité de tête de gamme.
 - Préparer le repli déterministe. Une fonction probabiliste qui n'a pas de comportement de secours rend le produit entier dépendant de la disponibilité d'un fournisseur.
 - Écrire la décision et son motif. C'est celle qu'on rouvrira quand le coût augmentera, et personne ne s'en souviendra.
+
+## Ce que la branche « appel de modèle » engage
+
+```mermaid
+flowchart TD
+  A["La décision et son motif<br/>on la rouvrira quand le coût montera"]
+  C["Le coût par utilisateur actif<br/>calculé avant de livrer, pas à la facture"]
+  S["Le plus petit modèle qui passe<br/>pas le meilleur disponible"]
+  E["Le jeu d'évaluation<br/>sans lui, la décision n'est pas prise"]
+
+  click A "/notions/arbitrage-deterministe-probabiliste"
+  click C "/notions/cout-et-latence-inference"
+  click S "/notions/choix-de-modele"
+  click E "/notions/evaluation-llm"
+```
 
 ## Les notions mobilisées
 
