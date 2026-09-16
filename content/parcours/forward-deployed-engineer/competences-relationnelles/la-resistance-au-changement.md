@@ -2,6 +2,8 @@
 title: La résistance au changement
 ---
 
+Niveau attendu : **autonomie**. Trier la résistance par cause et y répondre honnêtement suffit ; la conduite du changement est un métier à part entière, qu'on appelle quand elle devient le sujet principal.
+
 La résistance n'est pas un obstacle à contourner, c'est une information. Cinq causes reviennent, et une seule relève de la communication.
 
 ```mermaid
