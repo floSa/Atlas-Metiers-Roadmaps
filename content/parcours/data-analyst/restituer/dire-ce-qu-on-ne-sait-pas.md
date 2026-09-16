@@ -10,6 +10,11 @@ flowchart TD
   R --> B["Ce qu'il suggère<br/>annoncé comme piste"]
   R --> C["Ce qu'il ne dit pas<br/>explications non écartées"]
   C --> D["Ce qu'il faudrait pour trancher<br/>et ce que cela coûterait"]
+
+  click A "/parcours/data-analyst/restituer/la-reponse-en-une-phrase"
+  click B "/parcours/data-analyst/analyser/la-multiplicite-des-tests"
+  click C "/parcours/data-analyst/analyser/correlation-et-causalite"
+  click D "/parcours/data-analyst/analyser/le-protocole-experimental"
 ```
 
 ## Ce qu'il faut savoir faire
