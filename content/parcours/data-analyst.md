@@ -308,8 +308,8 @@ Ce qui est propre à l'analyste, c'est qu'on lui demandera systématiquement de 
 
 - La corrélation établit un lien, jamais un sens ni une cause. Quatre explications concurrentes existent toujours : le lien causal supposé, la causalité inverse, une variable de confusion qui agit sur les deux, et la coïncidence.
 - La variable de confusion est le cas majoritaire en entreprise, et elle est souvent le temps ou la taille. Les clients qui utilisent la fonctionnalité résilient moins — parce que la fonctionnalité fidélise, ou parce que les clients déjà engagés sont ceux qui l'activent.
-- Le paradoxe de Simpson : une tendance globale peut s'inverser dans chaque sous-groupe. Avant de publier un écart agrégé, le recalculer segment par segment. C'est le contrôle le moins cher et le plus rentable de tout le métier.
-- Une p-value n'est pas une probabilité que l'hypothèse soit vraie, et « non significatif » ne veut pas dire « pas d'effet ». Sur de gros volumes, tout devient significatif : c'est la taille d'effet et son intervalle de confiance qui portent l'information utile pour décider.
+- Le contrôle anti-Simpson : recalculer tout écart agrégé segment par segment avant de le publier, une tendance globale pouvant s'inverser dans chaque sous-groupe. C'est le contrôle le moins cher et le plus rentable du métier, et il tient en une ligne de code.
+- Les deux lectures à ne jamais faire devant un décideur : présenter une p-value comme la probabilité que l'hypothèse soit vraie, et traduire « non significatif » par « pas d'effet ». La mécanique du test est dans la notion ; ce qui t'engage, c'est que sur de gros volumes tout finit par être significatif — présente donc la taille d'effet et sa fourchette, ce sont elles qui portent la décision.
 - Multiplicité : tester vingt segments jusqu'à en trouver un qui « sort » produit un faux positif par construction. Fixer les comparaisons avant de les faire, ou corriger le seuil, ou présenter le résultat comme une piste à confirmer.
 - Régression : les coefficients se lisent « toutes choses égales par ailleurs parmi les variables incluses ». La variable non incluse ne s'annule pas, elle se cache dans les autres coefficients.
 - Sur un lien fort et suspect, chercher d'abord la fuite : une variable calculée après le fait à expliquer. Un modèle qui prédit parfaitement la résiliation à partir du champ « motif de résiliation » n'a rien appris.
@@ -441,3 +441,84 @@ flowchart TD
 
 > [!warning] Piège
 > Prendre le volume de données de l'entreprise pour le volume de son analyse. Une table de logs de plusieurs téraoctets ne signifie pas que l'analyse porte sur des téraoctets : la question concerne le plus souvent trois mois, deux colonnes et un segment. Formuler le périmètre avant de regarder la taille de la table évite un chantier d'infrastructure entier.
+
+---
+
+## 11. Ce que l'IA générative a changé au métier — et ce qu'elle n'a pas changé
+
+```mermaid
+flowchart TD
+  ia["IA générative dans le métier"]:::ajout --> ch["Ce qui a changé"]:::ajout
+  ia --> nch["Ce qui n'a pas changé"]:::ajout
+  ch --> c1["Écrire requêtes et code de transformation"]:::ajout
+  ch --> c2["Dégrossir un jeu de données inconnu"]:::ajout
+  ch --> c3["Classer et résumer des verbatims"]:::ajout
+  ch --> c4["Rédiger le premier jet de la restitution"]:::ajout
+  ch --> c5["Interroger en langage naturel une couche sémantique"]:::ajout
+  nch --> n1["Cadrer la question"]:::ajout
+  nch --> n2["Connaître la sémantique réelle des colonnes"]:::ajout
+  nch --> n3["Distinguer corrélation et causalité"]:::ajout
+  nch --> n4["Répondre du chiffre devant quelqu'un"]:::ajout
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** La roadmap amont n'en dit presque rien, alors que c'est le changement le plus visible du métier sur les deux dernières années. Le constat de terrain est stable : l'IA générative a fortement accéléré la partie **fabrication** du travail d'analyse, et n'a rien changé à la partie **jugement**. Écrire une requête, retrouver la syntaxe d'une fonction de fenêtrage, réécrire une boucle Pandas illisible, produire un premier jet de note de synthèse : ce temps-là a été divisé par deux ou trois. Cadrer une question ambiguë, savoir que la colonne `statut` porte deux conventions depuis une migration, refuser une conclusion causale, assumer un chiffre devant un comité : ce temps-là est identique, et il représente désormais une part bien plus grande du métier.
+
+La conséquence pratique est un déplacement du niveau d'exigence, pas une disparition du poste. La production de requêtes n'est plus un facteur de différenciation ; la qualité du cadrage et de la restitution l'est devenue davantage. Les profils les plus exposés sont ceux dont le travail consistait à exécuter des demandes déjà formulées.
+
+**Ce qu'il faut savoir**
+
+- Génération de requêtes et de code — le gain le plus net, à condition de fournir le schéma et de relire. Un modèle qui ne connaît pas tes tables invente des noms de colonnes plausibles ; un modèle à qui tu donnes le schéma produit du SQL correct la plupart du temps. Voir [[notions/assistants-de-codage]].
+- Exploration assistée — décrire un jeu de données inconnu, proposer les croisements à regarder, repérer les colonnes suspectes. Utile pour dégrossir, jamais pour conclure.
+- Analyse de verbatims et de champs libres — le cas où le gain est le plus fort, traité en section 9.
+- Rédaction — un premier jet de restitution à partir de tes résultats, que tu réécris. Le modèle ne sait pas quelle conclusion tu es prêt à défendre.
+- Interrogation en langage naturel — cela fonctionne quand une couche sémantique définit les métriques, et échoue quand on la branche sur des tables brutes, parce que le modèle n'a aucun moyen de savoir laquelle des quatre colonnes de montant est la bonne. Construire cette couche est le travail de [[parcours/bi-analyst]] ; c'est ce qui explique que le même outil soit jugé excellent dans une entreprise et inutilisable dans une autre.
+- Confidentialité — un extrait de base client ne se colle pas dans un service grand public. Vérifie ce que ton entreprise autorise, et à quel niveau de donnée ; [[notions/rgpd]] s'applique intégralement à ce geste-là.
+- Ce que cela ne remplace pas : la connaissance du terrain. Savoir que les commandes de juillet 2024 sont dupliquées à cause d'une reprise de données est une information qui ne se trouve dans aucun modèle, et c'est le cœur de ta valeur.
+
+> [!tip] Ajout 2026
+> La bonne division du travail est stable : tu écris la question cadrée et les contrôles, le modèle écrit le code, tu vérifies le résultat contre un chiffre que tu connais déjà. Ce dernier point est la seule protection qui fonctionne — avant de publier un résultat produit avec assistance, recalcule un total que tu peux confronter à une source indépendante, un rapport officiel ou un ordre de grandeur connu du métier.
+
+> [!warning] Piège
+> Le SQL plausible qui s'exécute et qui est faux. C'est le mode d'échec dominant, et il est silencieux : une jointure sur une clé non unique multiplie les lignes et gonfle un total de 30 % sans lever la moindre erreur. Le code généré ne bloque pas, il répond. Prends le réflexe de compter les lignes avant et après chaque jointure, et de comparer un agrégat à une valeur connue — c'est exactement le contrôle qu'un analyste faisait déjà avant, et qui est devenu obligatoire.
+
+---
+
+## Parcours conseillé
+
+| Ordre | Étape | Effort | À viser |
+|---|---|---|---|
+| 1 | SQL | ~3 semaines | Agréger, joindre, fenêtrer sur une base réelle sans aide |
+| 2 | Tableur | ~1 semaine | Savoir surtout à quel moment il ne suffit plus |
+| 3 | Un langage, Python ou R | ~6 semaines | Une analyse complète en script rejouable de bout en bout |
+| 4 | Statistiques descriptives et distributions | ~3 semaines | Regarder une distribution avant de citer une moyenne |
+| 5 | Cadrage de la question | continu | Cinq lignes écrites et validées avant toute requête |
+| 6 | Collecte et nettoyage | ~4 semaines | Nettoyage scripté, assertions en tête, rien fait à la main |
+| 7 | Tests, corrélation, régression | ~6 semaines | Énoncer trois explications concurrentes d'un lien observé |
+| 8 | Visualisation et restitution | ~4 semaines | Une phrase de conclusion, un graphique qui la démontre |
+| 9 | Machine learning appliqué | ~4 semaines | Une régression logistique évaluée honnêtement, et sa baseline |
+| 10 | Volumes et formats colonnes | ~2 semaines | DuckDB ou Polars sur un fichier qui excède la mémoire |
+| 11 | IA générative dans le flux de travail | continu | Gagner en vitesse sans perdre le contrôle du chiffre |
+
+Six à neuf mois pour être opérationnel en travaillant à côté, et l'ordre compte : SQL en premier parce qu'il conditionne l'accès à tout le reste. Les étapes 5 et 8 — cadrer et restituer — ne s'apprennent qu'en situation réelle et ne figurent dans aucune certification ; ce sont elles qui décident de la trajectoire, pas la maîtrise d'une bibliothèque.
+
+---
+
+## Parcours voisins
+
+- [[parcours/bi-analyst]] — le métier jumeau, côté infrastructure décisionnelle : entrepôt, modélisation dimensionnelle, dbt, couche sémantique, gouvernance. Quand une demande devient un suivi récurrent partagé, elle bascule là.
+- [[02 - Roadmap — AI and Data Scientist]] — la suite naturelle pour qui veut aller vers la modélisation et la généralisation. La frontière est détaillée en section 1.
+- [[03 - Roadmap — Data Engineer]] — l'amont : d'où viennent les tables, pourquoi elles arrivent en retard, et à qui parler quand elles sont fausses.
+- [[04 - Roadmap — Machine Learning]] — l'approfondissement de la section 9 pour qui décide d'y aller sérieusement.
+- [[05 - Roadmap — AI Engineer]] — la voie applicative si l'analyse de verbatims donne envie de construire des produits sur des modèles de langage.
+
+## Pour aller plus loin
+
+- *Practical Statistics for Data Scientists* — Peter Bruce, Andrew Bruce, Peter Gedeck. Le pont le mieux calibré entre statistique et pratique de l'analyse.
+- *Python for Data Analysis* — Wes McKinney, l'auteur de Pandas. Référence directe pour l'étape 3, disponible en ligne.
+- *R for Data Science* — Wickham, Çetinkaya-Rundel, Grolemund. L'équivalent côté R, gratuit sur r4ds.hadley.nz.
+- *Python Data Science Handbook* — Jake VanderPlas, cité par la roadmap amont et lisible librement sur jakevdp.github.io.
+- *Storytelling with Data* — Cole Nussbaumer Knaflic. Le livre le plus directement rentable du métier pour l'étape 8.
+- *Fundamentals of Data Visualization* — Claus Wilke. Le versant technique du précédent : quel graphique pour quelle donnée, et pourquoi. Libre sur clauswilke.com/dataviz.
+- *The Book of Why* — Judea Pearl et Dana Mackenzie. Pour comprendre ce qu'un coefficient de corrélation ne dira jamais.
+- *How to Lie with Statistics* — Darrell Huff. Écrit en 1954, toujours la meilleure heure de lecture pour repérer les graphiques trompeurs, y compris les siens.
