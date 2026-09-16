@@ -4,3 +4,4 @@ public/
 .quartz-cache/
 __pycache__/
 *.pyc
+data/_upstream/

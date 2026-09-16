@@ -1,0 +1,414 @@
+{
+ "slug": "ai-data-scientist",
+ "title": "AI and Data Scientist Roadmap",
+ "description": "Step by step roadmap guide to becoming an AI and Data Scientist in @currentYear@",
+ "updatedAt": "2026-09-04T06:55:42.557Z",
+ "capturedAt": "2026-09-16",
+ "counts": {
+  "nodes": 130,
+  "topics": 29,
+  "withContent": 8,
+  "resources": 20
+ },
+ "crossrefs": [
+  "https://roadmap.sh",
+  "https://roadmap.sh/ai-engineer",
+  "https://roadmap.sh/claude-code",
+  "https://roadmap.sh/data-analyst"
+ ],
+ "sections": [
+  {
+   "heading": "AI and Data Scientist",
+   "nodes": [
+    {
+     "id": "aStaDENn5PhEa-cFvNzXa",
+     "type": "topic",
+     "label": "Mathematics",
+     "body": "Mathematics provides the foundational language and tools for understanding and building algorithms. It encompasses concepts like linear algebra (for manipulating data), calculus (for optimization), probability and statistics (for understanding uncertainty and drawing inferences), and discrete mathematics (for reasoning about data structures and algorithms). These mathematical principles enable the development, analysis, and interpretation of models used in artificial intelligence and data science.",
+     "resources": [
+      {
+       "kind": "book",
+       "title": "Linear Algebra Done Right - Sheldon Axler",
+       "url": "https://linear.axler.net/LADR4e.pdf"
+      }
+     ],
+     "file": "mathematics@aStaDENn5PhEa-cFvNzXa.md"
+    },
+    {
+     "id": "4WZL_fzJ3cZdWLLDoWN8D",
+     "type": "topic",
+     "label": "Statistics",
+     "body": "Statistics is the science of collecting, analyzing, interpreting, presenting, and organizing data. It is a branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data. It is used in a wide range of fields, including science, engineering, medicine, and social science. Statistics is used to make informed decisions, to predict future events, and to test hypotheses. It is also used to summarize data, to describe relationships between variables, and to make inferences about populations based on samples.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "Statistics and Probability (Khan Academy)",
+       "url": "https://www.khanacademy.org/math/statistics-probability"
+      },
+      {
+       "kind": "book",
+       "title": "OpenIntro Statistics (free textbook)",
+       "url": "https://www.openintro.org/book/os/"
+      },
+      {
+       "kind": "course",
+       "title": "Statistics with Python Specialization",
+       "url": "https://www.coursera.org/specializations/statistics-with-python"
+      },
+      {
+       "kind": "video",
+       "title": "StatQuest with Josh Starmer",
+       "url": "https://www.youtube.com/@statquest"
+      }
+     ],
+     "file": "statistics@4WZL_fzJ3cZdWLLDoWN8D.md"
+    }
+   ]
+  },
+  {
+   "heading": "1",
+   "nodes": []
+  },
+  {
+   "heading": "2",
+   "nodes": [
+    {
+     "id": "gWMvD83hVXeTmCuHGIiOL",
+     "type": "todo",
+     "label": "Linear Algebra, Calculus, Mathematical Analysis",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "Y9YJdARIRqqCBCy3GVYdA",
+     "type": "todo",
+     "label": "Statistics, CLT",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "mwPJh33MEUQ4Co_LiVEOb",
+     "type": "todo",
+     "label": "Differential Calculus",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "XJXIkWVDIrPJ-bVIvX0ZO",
+     "type": "todo",
+     "label": "Hypothesis Testing",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "jxJtwbiCvxHqmkWkE7zdx",
+     "type": "todo",
+     "label": "Probability and Sampling",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "Gd2egqKZPnbPW1W2jw4j8",
+     "type": "topic",
+     "label": "Econometrics",
+     "body": "Econometrics is the application of statistical methods to economic data. It is a branch of economics that aims to give empirical content to economic relations. More precisely, it is \"the quantitative analysis of actual economic phenomena based on the concurrent development of theory and observation, related by appropriate methods of inference.\" Econometrics can be described as something that allows economists \"to sift through mountains of data to extract simple relationships.\"",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Econometrics (MIT OpenCourseWare)",
+       "url": "https://ocw.mit.edu/courses/14-382-econometrics-spring-2017/"
+      },
+      {
+       "kind": "course",
+       "title": "Econometrics: Methods and Applications",
+       "url": "https://www.coursera.org/learn/erasmus-econometrics"
+      },
+      {
+       "kind": "article",
+       "title": "Lecture Notes and Short Texts in Econometrics",
+       "url": "https://economicsnetwork.ac.uk/teaching/Lecture%20Notes%20and%20Short%20Texts/Econometrics"
+      }
+     ],
+     "file": "econometrics@Gd2egqKZPnbPW1W2jw4j8.md"
+    }
+   ]
+  },
+  {
+   "heading": "3",
+   "nodes": [
+    {
+     "id": "mJq9b50MJM9o9dLhx40iN",
+     "type": "todo",
+     "label": "AB Testing",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "y6xXsc-uSAmRDnNuyhqH2",
+     "type": "todo",
+     "label": "Pre-requisites of Econometrics",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "h19k9Fn5XPh3_pKEC8Ftp",
+     "type": "todo",
+     "label": "Regression, Timeseries, Fitting Distributions",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "v68nwX914qCwHDSwY_ZhG",
+     "type": "todo",
+     "label": "Increasing Test Sensitivity",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "n2JFGwFxTuOviW6kHO1Uv",
+     "type": "todo",
+     "label": "Ratio Metrics",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "XLDWuSt4tI4gnmqMFdpmy",
+     "type": "topic",
+     "label": "Coding",
+     "body": "Programming is a fundamental skill for data scientists. You need to be able to write code to manipulate data, build models, and deploy solutions. The most common programming languages used in data science are Python and R. Python is a general-purpose programming language that is easy to learn and has a large number of libraries for data manipulation and machine learning. R is a programming language and free software environment for statistical computing and graphics. It is widely used for statistical analysis and data visualization.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "The Python Tutorial",
+       "url": "https://docs.python.org/3/tutorial/"
+      },
+      {
+       "kind": "official",
+       "title": "The R Manuals (CRAN)",
+       "url": "https://cran.r-project.org/manuals.html"
+      },
+      {
+       "kind": "course",
+       "title": "Python for Data Science, AI & Development",
+       "url": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
+      },
+      {
+       "kind": "course",
+       "title": "Kaggle Learn: Python",
+       "url": "https://www.kaggle.com/learn/python"
+      },
+      {
+       "kind": "article",
+       "title": "Introduction to Data Science with Python (Harvard)",
+       "url": "https://pll.harvard.edu/course/introduction-data-science-python"
+      }
+     ],
+     "file": "coding@XLDWuSt4tI4gnmqMFdpmy.md"
+    }
+   ]
+  },
+  {
+   "heading": "4",
+   "nodes": [
+    {
+     "id": "MVrAqizgkoAs2aghN8TgV",
+     "type": "todo",
+     "label": "Learn Python Programming Language",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "l1027SBZxTHKzqWw98Ee-",
+     "type": "topic",
+     "label": "Exploratory Data Analysis",
+     "body": "Exploratory Data Analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. EDA is used to understand what the data can tell us beyond the formal modeling or hypothesis testing task. It is a crucial step in the data analysis process.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "pandas User Guide: Essential Basic Functionality",
+       "url": "https://pandas.pydata.org/docs/user_guide/basics.html"
+      },
+      {
+       "kind": "course",
+       "title": "Exploratory Data Analysis with Python and Pandas",
+       "url": "https://www.coursera.org/projects/exploratory-data-analysis-python-pandas"
+      },
+      {
+       "kind": "article",
+       "title": "Exploratory Data Analysis in Python",
+       "url": "https://towardsdatascience.com/exploratory-data-analysis-in-python-c9a77dfa39ce/"
+      },
+      {
+       "kind": "article",
+       "title": "Step-by-Step Exploratory Data Analysis (EDA) using Python",
+       "url": "https://www.analyticsvidhya.com/blog/2022/07/step-by-step-exploratory-data-analysis-eda-using-python/"
+      }
+     ],
+     "file": "exploratory-data-analysis@l1027SBZxTHKzqWw98Ee-.md"
+    }
+   ]
+  },
+  {
+   "heading": "5",
+   "nodes": [
+    {
+     "id": "JaN8YhMeN3whAe2TCXvw9",
+     "type": "todo",
+     "label": "Data understanding, Data Analysis and Visualization",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "StBCykpzpM4g9PRFeSNXa",
+     "type": "todo",
+     "label": "Data Structures and Algorithms (Python)",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "kBdt_t2SvVsY3blfubWIz",
+     "type": "topic",
+     "label": "Machine Learning",
+     "body": "Machine learning involves creating algorithms that allow computer systems to learn from data without being explicitly programmed. These algorithms identify patterns, make predictions, and improve their performance over time through experience. The learning process can be supervised, unsupervised, or reinforcement-based, depending on the type of data and the desired outcome.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit the Dedicated Machine Learning Roadmap",
+       "url": "https://roadmap.sh/machine-learning"
+      }
+     ],
+     "file": "machine-learning@kBdt_t2SvVsY3blfubWIz.md"
+    }
+   ]
+  },
+  {
+   "heading": "6",
+   "nodes": [
+    {
+     "id": "FdBih8tlGPPy97YWq463y",
+     "type": "todo",
+     "label": "Classic ML (Sup., Unsup.), Advanced ML (Ensembles, NNs)",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "Im0tXXn3GC-FUq2aMHgwm",
+     "type": "todo",
+     "label": "Learn SQL",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "cjvVLN0XjrKPn6o20oMmc",
+     "type": "topic",
+     "label": "Deep Learning",
+     "body": "Deep Learning is a subset of machine learning that uses artificial neural networks with multiple layers (hence \"deep\") to analyze data and learn complex patterns. These networks are inspired by the structure and function of the human brain, and they are particularly effective at tasks like image recognition, natural language processing, and speech recognition. By processing data through these layers, deep learning models can automatically extract features and make predictions with high accuracy.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit the Dedicated Machine Learning Roadmap",
+       "url": "https://roadmap.sh/machine-learning"
+      }
+     ],
+     "file": "deep-learning@cjvVLN0XjrKPn6o20oMmc.md"
+    }
+   ]
+  },
+  {
+   "heading": "7",
+   "nodes": [
+    {
+     "id": "eOFoGKveaHaBm_6ppJUtA",
+     "type": "todo",
+     "label": "Fully Connected, CNN, RNN, LSTM, Transformers, TL",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "Qa85hEVe2kz62k9Pj4QCA",
+     "type": "topic",
+     "label": "MLOps",
+     "body": "MLOps is a practice for collaboration and communication between data scientists and operations professionals to help manage the production ML lifecycle. It is a set of best practices that aims to automate the ML lifecycle, including training, deployment, and monitoring. MLOps helps organizations to scale ML models and deliver business value faster.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit the Dedicated MLOps Roadmap",
+       "url": "https://roadmap.sh/mlops"
+      }
+     ],
+     "file": "mlops@Qa85hEVe2kz62k9Pj4QCA.md"
+    }
+   ]
+  },
+  {
+   "heading": "8",
+   "nodes": [
+    {
+     "id": "uPzzUpI0--7OWDfNeBIjt",
+     "type": "todo",
+     "label": "Deployment Models, CI/CD",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "ILGi2zpuyTGfkyZjua9jv",
+     "type": "topic",
+     "label": "Vibe Coding",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "SWEAVNGiQp5sTm3NWp4n5",
+     "type": "topic",
+     "label": "AI Engineering",
+     "body": "",
+     "resources": [],
+     "file": null
+    }
+   ]
+  },
+  {
+   "heading": "10",
+   "nodes": []
+  },
+  {
+   "heading": "9",
+   "nodes": [
+    {
+     "id": "zX4rhaEsjEuRAWWY83Sae",
+     "type": "todo",
+     "label": "AI Coding Assitants, AI App Builders",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "u7jmgvZYpKSzu9t7e0ACh",
+     "type": "todo",
+     "label": "Prompt Engineering, LLMs, RAG, Agents, Fine-tuning",
+     "body": "",
+     "resources": [],
+     "file": null
+    }
+   ]
+  }
+ ]
+}
