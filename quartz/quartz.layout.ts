@@ -13,7 +13,7 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [Component.Backlinks()],
   footer: Component.Footer({
     links: {
       "Les roadmaps d'origine": "https://roadmap.sh",
@@ -46,18 +46,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.Explorer(),
   ],
-  right: [
-    // L'accueil n'a ni sommaire ni retroliens utiles : la colonne disparait et le
-    // tableau des metiers occupe toute la largeur.
-    Component.ConditionalRender({
-      component: Component.DesktopOnly(Component.TableOfContents()),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
-    Component.ConditionalRender({
-      component: Component.Backlinks(),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
-  ],
+  right: [],
 }
 
 export const defaultListPageLayout: PageLayout = {

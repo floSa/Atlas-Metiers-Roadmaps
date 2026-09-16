@@ -46,7 +46,7 @@ flowchart TD
 - [ ] [[parcours/forward-deployed-engineer/sortie-de-mission|Phase 4 — Sortie de mission]] — transfert de compétences, maintenance
 - [ ] [[parcours/forward-deployed-engineer/competences-relationnelles|Compétences relationnelles]] — parties prenantes, politique interne, conduite du changement
 
-## Ce qui distingue ce métier des rôles voisins
+## Ne pas le confondre avec
 
 | Rôle | Ce qu'il optimise | Où s'arrête sa responsabilité |
 |---|---|---|

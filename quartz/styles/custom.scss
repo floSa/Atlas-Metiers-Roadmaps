@@ -125,6 +125,16 @@ pre:has(> code.mermaid) {
   max-width: none;
 }
 
+/* Deux colonnes partout : la barre laterale, puis le contenu. Quartz en reserve
+ * une troisieme a droite meme vide, ce qui coute un tiers de l'ecran. */
+.page > #quartz-body {
+  grid-template-columns: 320px auto;
+  grid-template-areas:
+    "grid-sidebar-left grid-header"
+    "grid-sidebar-left grid-center"
+    "grid-sidebar-left grid-footer";
+}
+
 .page > #quartz-body .page-header {
   margin-top: 1rem;
 }
@@ -142,15 +152,6 @@ article > h1:first-child,
  * l'ecran pour rien : on les annule, et le tableau tient dans la premiere vue.
  * ------------------------------------------------------------------------- */
 body[data-slug="index"] {
-  /* Plus de colonne de droite : deux colonnes au lieu de trois. */
-  .page > #quartz-body {
-    grid-template-columns: 320px auto;
-    grid-template-areas:
-      "grid-sidebar-left grid-header"
-      "grid-sidebar-left grid-center"
-      "grid-sidebar-left grid-footer";
-  }
-
   article > h1:first-child {
     font-size: 1.9rem;
   }
@@ -184,4 +185,101 @@ body[data-slug="index"] {
   article table td:first-child {
     font-weight: 600;
   }
+}
+
+/* ---------------------------------------------------------------------------
+ * Pages de dossier : Quartz y liste les fichiers avec leur date et tous leurs
+ * tags. Ce sont des metadonnees de fabrication, illisibles et sans interet pour
+ * le lecteur. Quand le dossier a son propre index.md, on ne garde que lui.
+ * ------------------------------------------------------------------------- */
+.popover-hint > .page-listing,
+article .page-listing .meta,
+article .page-listing .tags {
+  display: none;
+}
+
+/* Le compteur "N elements sous ce dossier" et l'intitule "Dossier: x". */
+article > p.folder-description,
+article > h1 + p:has(+ .page-listing) {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------------
+ * « Ma progression » : la liste a cocher d'une page d'entree de metier.
+ *
+ * Par defaut la case, le titre et la description se suivent d'un trait, ce qui
+ * donne un pave illisible des que la description est longue. On aligne les
+ * cases, on detache le titre, on grise la description.
+ * ------------------------------------------------------------------------- */
+article ul:has(> li > input[type="checkbox"]) {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.6rem 0 0;
+  border-top: 1px solid var(--lightgray);
+}
+
+article li:has(> input[type="checkbox"]) {
+  display: grid;
+  grid-template-columns: 1.6rem minmax(16rem, max-content) 1fr;
+  align-items: baseline;
+  gap: 0 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--lightgray);
+  margin: 0;
+}
+
+article li:has(> input[type="checkbox"]) > input[type="checkbox"] {
+  width: 1.05rem;
+  height: 1.05rem;
+  margin: 0;
+  align-self: center;
+  cursor: pointer;
+}
+
+article li:has(> input[type="checkbox"]) > a {
+  font-weight: 600;
+}
+
+/* Le texte libre apres le lien est la description : il passe en gris. */
+article li:has(> input[type="checkbox"]:checked) > a {
+  color: var(--gray);
+  text-decoration: line-through;
+}
+
+@media all and (max-width: 800px) {
+  article li:has(> input[type="checkbox"]) {
+    grid-template-columns: 1.6rem 1fr;
+  }
+  article li:has(> input[type="checkbox"]) > a {
+    grid-column: 2;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * Les tableaux respirent : en-tete discret, lignes separees, pas de cadre.
+ * ------------------------------------------------------------------------- */
+article table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+article table th {
+  text-align: left;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gray);
+  font-weight: 600;
+  border-bottom: 1px solid var(--gray);
+  padding: 0 1rem 0.4rem 0;
+}
+
+article table td {
+  padding: 0.55rem 1rem 0.55rem 0;
+  border-bottom: 1px solid var(--lightgray);
+  vertical-align: top;
+}
+
+article table tr:last-child td {
+  border-bottom: none;
 }

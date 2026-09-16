@@ -49,7 +49,7 @@ flowchart TD
 - [ ] [[parcours/ai-red-teaming/engagement-et-mesure|Engagement et mesure]] — niveaux d'accès, outillage, corpus adverse et non-régression
 - [ ] [[parcours/ai-red-teaming/restitution-et-gouvernance|Restitution et gouvernance]] — rapport, divulgation responsable, cadres réglementaires, veille
 
-## Ce qui distingue ce métier des rôles voisins
+## Ne pas le confondre avec
 
 | Rôle | Ce qu'il produit | Où s'arrête sa responsabilité |
 |---|---|---|
