@@ -52,7 +52,7 @@ Une frontière de décision apprise est approximative, donc franchissable par un
 
 ## Appelée par
 
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
 

@@ -7,7 +7,7 @@ source: https://roadmap.sh/bi-analyst
 ---
 
 > [!abstract] Le parcours de celui qui **construit l'infrastructure décisionnelle** dont les autres se serviront : l'entrepôt, le modèle dimensionnel, la couche sémantique, les définitions partagées, la qualité et le lignage. Pour qui veut que le chiffre affiché en comité de direction soit le même dans tous les services, et sache dire d'où il vient.
-> Si la question est ponctuelle — « pourquoi les ventes ont chuté en juin ? » — ce n'est pas ce parcours, c'est [[parcours/data-analyst]].
+> Si la question est ponctuelle — « pourquoi les ventes ont chuté en juin ? » — ce n'est pas ce parcours, c'est [[parcours/data-analyst/index|Data Analyst]].
 
 > [!info] Ce que cette note ne réexplique pas
 > Les notions transverses — SQL, tableur, statistiques, visualisation, entrepôt, dbt — sont écrites une seule fois sous `notions/` et appelées par lien. Cette note dit ce qu'elles veulent dire **depuis le poste d'un BI Analyst**, et développe en propre ce qui lui appartient : l'entrepôt comme choix d'architecture, la modélisation dimensionnelle en pratique, la couche sémantique, la gouvernance.
@@ -299,7 +299,7 @@ flowchart TD
 L'inversion ETL vers ELT est l'autre changement structurant. Dans l'ETL classique, la transformation se fait en route, dans un serveur dédié, et seule la donnée transformée arrive. Dans l'ELT, on charge brut dans l'entrepôt et on transforme avec son moteur. Les conséquences pratiques sont nettes : le brut reste disponible, donc une erreur de logique se corrige en rejouant une transformation au lieu de redemander les données ; la transformation s'écrit en SQL, donc l'analyste ne dépend plus d'un développeur ; et le coût de calcul devient visible sur la facture de l'entrepôt.
 
 > [!info] Frontière avec le parcours Data Analyst
-> Le nettoyage exploratoire, l'analyse ad hoc et l'examen d'un jeu de données inconnu relèvent de [[parcours/data-analyst]], qui les traite en propre. Ici, la transformation est **modélisée** : une règle de nettoyage n'est pas un geste dans un carnet, c'est un modèle versionné, testé, documenté, qui s'appliquera à tous les chargements suivants. La même opération — dédupliquer, imputer une valeur manquante, normaliser un libellé — change complètement de nature selon qu'elle est jouée une fois ou industrialisée.
+> Le nettoyage exploratoire, l'analyse ad hoc et l'examen d'un jeu de données inconnu relèvent de [[parcours/data-analyst/index|Data Analyst]], qui les traite en propre. Ici, la transformation est **modélisée** : une règle de nettoyage n'est pas un geste dans un carnet, c'est un modèle versionné, testé, documenté, qui s'appliquera à tous les chargements suivants. La même opération — dédupliquer, imputer une valeur manquante, normaliser un libellé — change complètement de nature selon qu'elle est jouée une fois ou industrialisée.
 
 **Ce qu'il faut savoir**
 
@@ -692,7 +692,7 @@ flowchart TD
 
 ## Liens dans le coffre
 
-- [[parcours/data-analyst]] — l'autre versant du métier : exploration, nettoyage, analyse ad hoc et réponse à une question ponctuelle. Ce parcours-ci construit le socle, celui-là s'en sert.
+- [[parcours/data-analyst/index|Data Analyst]] — l'autre versant du métier : exploration, nettoyage, analyse ad hoc et réponse à une question ponctuelle. Ce parcours-ci construit le socle, celui-là s'en sert.
 - [[03 - Roadmap — Data Engineer]] — l'amont de la chaîne : ingestion, pipelines, plateforme, formats de table ouverts. À lire pour savoir où s'arrête la responsabilité du BI Analyst.
 - [[02 - Roadmap — AI and Data Scientist]] — le versant modélisation statistique et apprentissage, pour les sujets que la BI doit savoir passer à quelqu'un d'autre.
 - [[04 - Roadmap — Machine Learning]] — ce qu'implique réellement un modèle prédictif, quand une demande de « prévision » dépasse la série temporelle.

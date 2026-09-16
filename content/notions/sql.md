@@ -59,7 +59,7 @@ Niveau avancé exigé : fenêtrage, CTE, plans d'exécution. La différence tien
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-product-builder|AI Product Builder]]
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
 
 Voisines : [[notions/entrepot-de-donnees]], [[notions/modelisation-dimensionnelle]], [[notions/transformation-dbt]], [[notions/traitement-distribue]].

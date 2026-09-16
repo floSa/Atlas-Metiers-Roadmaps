@@ -46,6 +46,6 @@ C'est le seul volet issu de l'apprentissage profond qui touche vraiment le méti
 
 ## Appelée par
 
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 
 Voisines : [[notions/embeddings-et-bases-vectorielles]], [[notions/reseaux-de-neurones]], [[notions/apprentissage-supervise]].

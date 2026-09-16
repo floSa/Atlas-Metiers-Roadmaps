@@ -51,7 +51,7 @@ Deux angles opposés. Un regroupement révèle parfois ce que l'anonymisation é
 
 ## Appelée par
 
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
