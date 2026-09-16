@@ -71,7 +71,6 @@ flowchart LR
   sm --> att["Gérer les attentes avant la démonstration"]
   sm --> esc["Escalader vite un blocage"]
   sm --> inf["Informer avant que ça ne devienne un problème"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont est très juste sur ce point : la gestion des parties prenantes consiste moins à maintenir les gens contents qu'à s'assurer que les bonnes personnes savent ce qui se passe **avant** que ça ne devienne un problème. Il ajoute une observation qui mérite d'être reprise telle quelle : le travail technique peut être excellent et la mission échouer quand même, parce que ceux qui doivent approuver, adopter ou financer le système n'ont jamais été convaincus.
@@ -81,7 +80,7 @@ flowchart LR
 - Identifier les sceptiques dès la phase 1 et aller les voir en premier. Leur scepticisme porte souvent sur un cas précis qu'ils ont vu échouer ; ce cas doit entrer dans le jeu d'évaluation.
 - Le jeu d'évaluation est l'instrument central de cette relation : il remplace « je trouve que ça marche mal » par un chiffre et un échantillon discutables. Voir [[notions/evaluation-llm]].
 - Gérer les attentes **avant** la démonstration, jamais après : dire ce qu'on va montrer, sur quel périmètre, avec quelles limites connues.
-- Escalader un blocage rapidement et factuellement. Un blocage tu est un blocage qu'on découvrira à la fin, quand il aura coûté trois semaines.
+- Escalader un blocage rapidement et factuellement. Un blocage passé sous silence est un blocage qu'on découvrira à la fin, quand il aura coûté trois semaines.
 - Un point hebdomadaire court et écrit : ce qui a avancé, ce qui est bloqué, ce qui est décidé. Voir [[notions/redaction-technique]].
 
 > [!tip] Ajout 2026
