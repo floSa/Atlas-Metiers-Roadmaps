@@ -41,7 +41,7 @@ flowchart TD
   class M,G transverse
 ```
 
-Les flèches en pointillé qui remontent sont la norme : l'exploration reformule la question, l'analyse renvoie au nettoyage. Une mission qui se déroule en ligne droite est une mission où personne n'a regardé les données.
+Les flèches en pointillé qui remontent sont la norme : l'exploration reformule la question, l'analyse renvoie au nettoyage. Une mission qui se déroule en ligne droite est une mission où personne n'a regardé les données. Comptez six à neuf mois pour être opérationnel en travaillant à côté, et commencez par SQL : il conditionne l'accès à tout le reste.
 
 ## Ma progression
 

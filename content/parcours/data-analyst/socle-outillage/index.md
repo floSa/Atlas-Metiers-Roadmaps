@@ -25,6 +25,8 @@ flowchart TD
   click V "/parcours/data-analyst/socle-outillage/quand-le-volume-deborde"
 ```
 
+**Par où commencer** : SQL, avant tout le reste. Il rend inutile la majeure partie de ce qui se fait péniblement ailleurs, et trois semaines de pratique quotidienne suffisent à l'autonomie.
+
 ## Ma progression
 
 - [ ] [[parcours/data-analyst/socle-outillage/le-tableur-et-son-seuil|Le tableur et son seuil]] — la question n'est pas quelles formules, c'est quand arrêter
