@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/computer-science
 ---
 
+**Usage.** L'attendu est de ne pas commettre les fautes de base — confondre encoder, hacher et chiffrer — et de savoir dérouler une revue OWASP liste en main ; l'autorité appartient à l'équipe sécurité, et la reconnaître tôt fait partie du niveau.
+
 Trois notions confondues en permanence — encoder, hacher, chiffrer — expliquent la majorité des erreurs de sécurité amateur.
 
 ```mermaid

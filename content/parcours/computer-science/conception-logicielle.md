@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/computer-science
 ---
 
+**Notion**, et c'est le seul domaine du socle assumé hors périmètre réel : reconnaître une fabrique ou une stratégie dans un cadriciel et lire un diagramme suffit largement, tandis que modéliser en UML et arbitrer un style d'architecture est le métier de l'architecte — la conception qu'un profil IA ou data pratique vraiment est traitée dans [[parcours/computer-science/reseau-et-system-design|Réseau et system design]].
+
 La valeur réelle des patterns n'est pas de les appliquer mais de les **reconnaître** : comprendre qu'un cadriciel impose une fabrique ou une stratégie fait gagner des heures de lecture.
 
 ```mermaid
