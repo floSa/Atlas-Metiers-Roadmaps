@@ -6,11 +6,17 @@ La corrélation établit qu'un lien existe, jamais son sens ni sa cause. Quatre 
 
 ```mermaid
 flowchart TD
-  L["Lien observé entre X et Y"] --> A["X cause Y<br/>l'explication supposée"]
-  L --> B["Y cause X<br/>la causalité inverse"]
-  L --> C["Z cause les deux<br/>la variable de confusion"]
-  L --> D["Coïncidence<br/>ou effet de sélection"]
-  C --> T["Le temps et la taille<br/>les deux confusions majoritaires en entreprise"]
+  L["Lien observé entre X et Y"] --> A["X cause Y<br/>seul un protocole l'établit"]
+  L --> B["Y cause X<br/>la corrélation ne donne aucun sens"]
+  L --> C["Z cause les deux<br/>contrôler par la variable de confusion"]
+  L --> D["Coïncidence<br/>une comparaison sur vingt sort au hasard"]
+  C --> T["Le temps et l'ancienneté<br/>comparer à âge égal"]
+
+  click A "/parcours/data-analyst/analyser/le-protocole-experimental"
+  click B "/notions/analyse-correlation"
+  click C "/parcours/data-analyst/analyser/la-regression"
+  click D "/parcours/data-analyst/analyser/la-multiplicite-des-tests"
+  click T "/notions/analyse-de-cohorte"
 ```
 
 ## Ce qu'il faut savoir faire
