@@ -2,11 +2,9 @@
 title: Socle technique
 ---
 
-Ce qu'un Forward Deployed Engineer doit savoir faire, et surtout **à quelle profondeur**.
+Ce qu'un Forward Deployed Engineer doit savoir faire, et surtout à quelle profondeur — de **notion** (reconnaître le sujet) à **référence** (faire autorité dans la salle).
 
 ## Les sept domaines
-
-Chaque case mène à sa page.
 
 ```mermaid
 flowchart TD
@@ -27,30 +25,6 @@ flowchart TD
   click D7 "/parcours/forward-deployed-engineer/socle-technique/devops-et-exploitation"
 ```
 
-## L'échelle de profondeur
-
-Quatre niveaux, parce que « savoir Python » ne veut rien dire.
-
-| Niveau | Ce que ça veut dire concrètement |
-|---|---|
-| **Notion** | Reconnaître le sujet dans une conversation, savoir qui appeler. Ne pas bloquer une réunion. |
-| **Usage** | S'en servir sur un chemin balisé, documentation ouverte, sans inventer. |
-| **Autonomie** | Concevoir, déboguer sous pression, arbitrer un compromis et le défendre. |
-| **Référence** | Faire autorité dans la salle. Ce qu'on attend sur le cœur de métier, et nulle part ailleurs. |
-
-| Domaine amont | Profondeur attendue | Pourquoi ce niveau et pas un autre |
-|---|---|---|
-| AI engineering | **Référence** | C'est ce pour quoi le client paie, et personne chez lui ne pourra corriger un mauvais arbitrage. |
-| Backend et conception d'API | **Autonomie** | Le FDE livre le système complet, pas une brique qu'un autre intègre. |
-| Linux | **Autonomie** | Le déboguage se fait souvent sur un serveur client, en SSH, sans outillage. |
-| Bases de données relationnelles | **Autonomie** | Les données réelles y sont, et leur modèle est presque toujours plus sale que décrit. |
-| Bases vectorielles | **Autonomie** | Indissociable du RAG, qui est le cas d'usage dominant des missions. |
-| DevOps et CI/CD | **Autonomie** | Ce qui n'est pas déployable automatiquement ne survivra pas au départ du FDE. |
-| Orchestration Kubernetes | **Usage** | Le client a déjà une plateforme et une équipe qui l'opère. S'y conformer suffit. |
-| Frontend | **Usage** | Suffisant pour livrer une interface de démonstration crédible sans dépendre d'une autre équipe. |
-| DSA et algorithmique | **Usage** | Sert à évaluer un coût et à déboguer une lenteur, pas à réinventer un index. |
-| System design | **Autonomie** | Chaque mission est un problème d'intégration, donc un problème de conception système. |
-| Entraînement de modèles | **Notion** | Hors périmètre réel. Un FDE qui entraîne un modèle a raté un arbitrage en amont. |
 
 ## Ma progression
 

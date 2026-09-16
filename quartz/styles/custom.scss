@@ -361,3 +361,20 @@ article .mermaid {
     &:hover { color: var(--secondary); }
   }
 }
+
+/* Les libelles des schemas etaient trop petits pour se lire. */
+article .mermaid {
+  .nodeLabel,
+  span.nodeLabel {
+    font-size: 1rem !important;
+    line-height: 1.35;
+  }
+  .edgeLabel,
+  span.edgeLabel {
+    font-size: 0.85rem !important;
+  }
+  /* Un noeud qui mene quelque part se signale au survol et au curseur. */
+  .node.clickable {
+    cursor: pointer;
+  }
+}
