@@ -54,7 +54,7 @@ Deux familles d'outils. L'approximation locale par un modèle linéaire autour d
 
 ## Pour apprendre
 
-- [Model Evaluation Metrics](https://www.markovml.com/blog/model-evaluation-metrics) — le tour des métriques et de ce qu'elles cachent.
+- [scikit-learn — Metrics and scoring](https://scikit-learn.org/stable/modules/model_evaluation.html) — le tour des métriques, de leurs hypothèses et de la calibration.
 - [MLflow — Documentation](https://mlflow.org/docs/latest/index.html) — suivi d'exécutions, registre, signatures : le socle de la traçabilité.
 - [SHAP — Documentation](https://shap.readthedocs.io/en/latest/) — les valeurs de Shapley en pratique, et leurs coûts de calcul.
 - [When Shapley Values Break](https://towardsdatascience.com/when-shapley-values-break-a-guide-to-robust-model-explainability/) — les cas où l'attribution induit en erreur.

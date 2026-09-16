@@ -56,7 +56,7 @@ Les faire cohabiter dans le même code est la première source d'écart entraîn
 
 - [Docker Documentation](https://docs.docker.com/) — les constructions à étapes multiples et l'ordre des couches, d'où vient l'essentiel du gain.
 - [Kubernetes Documentation](https://kubernetes.io/docs/home/) — objets de base, requêtes et limites, et l'ordonnancement de ressources rares.
-- [KServe — Documentation](https://kserve.github.io/website/latest/) — le service de modèles sur cluster, avec mise à l'échelle jusqu'à zéro.
+- [KServe — Documentation](https://kserve.github.io/website/) — le service de modèles sur cluster, avec mise à l'échelle jusqu'à zéro.
 - [Terraform Tutorials](https://learn.hashicorp.com/terraform) — l'infrastructure déclarative, état distant et modules compris.
 - [ExecuTorch — Documentation](https://docs.pytorch.org/executorch/stable/index.html) — la voie PyTorch vers les cibles embarquées contraintes.
 - [TensorFlow Lite Guide](https://www.tensorflow.org/lite/guide) — quantification et délégués matériels pour mobile et microcontrôleurs.
