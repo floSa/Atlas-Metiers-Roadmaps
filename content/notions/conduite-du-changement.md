@@ -46,6 +46,6 @@ Un modèle juste que personne n'utilise ne vaut rien, et un chiffre juste qu'on 
 ## Appelée par
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/gestion-parties-prenantes]], [[notions/reingenierie-de-processus]], [[notions/transfert-de-competences]].

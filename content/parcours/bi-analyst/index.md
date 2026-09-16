@@ -1,7 +1,5 @@
 ---
 title: BI Analyst
-aliases:
-  - parcours/bi-analyst
 tags: [parcours, bi-analyst, business-intelligence, entrepot, modelisation-dimensionnelle, dbt, couche-semantique, gouvernance, data]
 date: 2026-09-16
 statut: actif

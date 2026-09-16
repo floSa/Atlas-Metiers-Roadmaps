@@ -46,6 +46,6 @@ Ce qui est propre au métier, ce ne sont pas les définitions mais **le choix et
 
 ## Appelée par
 
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/data-lake]], [[notions/modelisation-dimensionnelle]], [[notions/transformation-dbt]], [[notions/sql]].

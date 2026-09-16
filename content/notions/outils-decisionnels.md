@@ -47,6 +47,6 @@ Un outil maîtrisé en profondeur vaut mieux que trois survolés — c'est vrai 
 ## Appelée par
 
 - [[parcours/data-analyst|Data Analyst]]
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/visualisation-de-donnees]], [[notions/modelisation-dimensionnelle]], [[notions/entrepot-de-donnees]], [[notions/tableur]].

@@ -58,6 +58,6 @@ La spécification porte sur une **définition de mesure**, pas sur une fonctionn
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-product-builder|AI Product Builder]]
 - [[parcours/data-analyst|Data Analyst]]
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/gestion-parties-prenantes]], [[notions/reingenierie-de-processus]], [[notions/roi-des-projets-ia]], [[notions/redaction-technique]].

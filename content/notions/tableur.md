@@ -48,6 +48,6 @@ C'est l'outil qu'on n'évite pas, et c'est aussi le concurrent : un chiffre just
 ## Appelée par
 
 - [[parcours/data-analyst|Data Analyst]]
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/outils-decisionnels]], [[notions/pandas]], [[notions/collecte-de-donnees]].

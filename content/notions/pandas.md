@@ -49,6 +49,6 @@ pandas reste utile pour ce que SQL fait mal — appeler une API, lire un format 
 ## Appelée par
 
 - [[parcours/data-analyst|Data Analyst]]
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/python-pour-la-data]], [[notions/r-et-tidyverse]], [[notions/traitement-distribue]], [[notions/qualite-des-donnees]].

@@ -46,6 +46,6 @@ Le BI Analyst consomme le lac plus qu'il ne le construit, et son angle est la fi
 
 ## Appelée par
 
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/entrepot-de-donnees]], [[notions/traitement-distribue]], [[notions/qualite-des-donnees]], [[notions/lignage-des-donnees]].

@@ -45,6 +45,6 @@ L'angle est la fiabilité perçue du rapport. Ce que voit le métier n'est pas l
 
 ## Appelée par
 
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/transformation-dbt]], [[notions/qualite-des-donnees]], [[notions/entrepot-de-donnees]], [[notions/observabilite]].

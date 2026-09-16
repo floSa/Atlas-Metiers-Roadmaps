@@ -48,6 +48,6 @@ La collecte est en principe industrialisée et ne relève pas de lui, sauf pour 
 ## Appelée par
 
 - [[parcours/data-analyst|Data Analyst]]
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/qualite-des-donnees]], [[notions/sql]], [[notions/traitement-distribue]], [[notions/rgpd]].

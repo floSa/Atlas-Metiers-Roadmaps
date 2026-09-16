@@ -12,7 +12,7 @@ Deux partis pris d'écriture, à connaître avant de lire.
 
 **L'ordre a été refait.** La roadmap amont énumère 99 nœuds organisés par outil : une grappe Excel, une grappe statistiques, une grappe bibliothèques, une grappe algorithmes. C'est une liste de courses, pas un métier. Cette note suit le cycle réel d'une mission d'analyse — cadrer, collecter, nettoyer, explorer, analyser, restituer — et regroupe l'outillage en une seule section, au début, pour l'évacuer. Tous les nœuds amont sont couverts, à leur place.
 
-**Les notions transverses ne sont pas expliquées ici.** Statistiques, tests, corrélation, régression, SQL, Pandas, tableur, visualisation appartiennent à plusieurs métiers : elles vivent dans `content/notions/` et sont appelées par lien. Cette note ajoute seulement ce que chacune veut dire *quand on est analyste*. Ce qui relève de l'entrepôt, de la modélisation dimensionnelle, de dbt, de la couche sémantique et de la gouvernance est traité dans [[parcours/bi-analyst]] — c'est le métier voisin, pas celui-ci.
+**Les notions transverses ne sont pas expliquées ici.** Statistiques, tests, corrélation, régression, SQL, Pandas, tableur, visualisation appartiennent à plusieurs métiers : elles vivent dans `content/notions/` et sont appelées par lien. Cette note ajoute seulement ce que chacune veut dire *quand on est analyste*. Ce qui relève de l'entrepôt, de la modélisation dimensionnelle, de dbt, de la couche sémantique et de la gouvernance est traité dans [[parcours/bi-analyst/index|BI Analyst]] — c'est le métier voisin, pas celui-ci.
 
 ---
 
@@ -80,7 +80,7 @@ En pratique le Data Analyst vit sur les deux premières questions, occasionnelle
 La frontière avec le Data Scientist n'est pas une frontière d'outils — les deux écrivent du Python, les deux font des régressions. Elle est dans la nature du livrable. L'analyste livre **une réponse** sur un périmètre et une période donnés ; il optimise le délai et l'explicabilité, et son travail est fini quand quelqu'un décide. Le scientifique livre **un artefact qui généralise** ; il optimise la performance sur des données jamais vues, et son travail commence à l'évaluation. Le détail du second parcours est dans [[02 - Roadmap — AI and Data Scientist]].
 
 > [!tip] Ajout 2026
-> Le titre « Data Analyst » recouvre désormais trois postes distincts sur le marché francophone : l'analyste ad hoc rattaché à une direction métier (le vrai sujet de cette note), l'analyste-développeur de rapports qui fait en réalité de la BI, et l'*analytics engineer* qui construit des modèles dbt et ne parle à personne. Lis les missions décrites dans l'offre, pas l'intitulé — et si l'offre parle d'entrepôt, de dbt et de couche sémantique, c'est [[parcours/bi-analyst]] qu'il faut lire.
+> Le titre « Data Analyst » recouvre désormais trois postes distincts sur le marché francophone : l'analyste ad hoc rattaché à une direction métier (le vrai sujet de cette note), l'analyste-développeur de rapports qui fait en réalité de la BI, et l'*analytics engineer* qui construit des modèles dbt et ne parle à personne. Lis les missions décrites dans l'offre, pas l'intitulé — et si l'offre parle d'entrepôt, de dbt et de couche sémantique, c'est [[parcours/bi-analyst/index|BI Analyst]] qu'il faut lire.
 
 > [!warning] Piège
 > Accepter une demande sans savoir quelle décision elle sert. Une analyse qui ne change aucune action est du travail propre et inutile, et elle consomme le temps qu'on aurait mis sur la question suivante. Le réflexe qui protège : demander « et si le chiffre sort dans l'autre sens, qu'est-ce que tu fais ? ». Si la réponse est « rien », l'analyse n'a pas lieu d'être.
@@ -122,7 +122,7 @@ flowchart TD
 - [[notions/python-pour-la-data]] et [[notions/r-et-tidyverse]] — choisis-en un et va au fond. Python si tu dois t'interfacer avec le reste du système d'information, R si ton environnement est statistique ou académique. Savoir bricoler dans les deux ne vaut rien ; maîtriser un des deux vaut beaucoup.
 - [[notions/pandas]] — la bibliothèque de manipulation tabulaire côté Python, avec NumPy en dessous. Pour l'analyste, l'enjeu est la lisibilité de l'enchaînement des transformations, pas la performance.
 - [[notions/visualisation-de-donnees]] — Matplotlib, Seaborn et ggplot2 sont des moyens. Le choix du graphique est traité en section 8, parce qu'il relève de la restitution et non de l'outil.
-- [[notions/outils-decisionnels]] — Tableau, Power BI, Looker. L'analyste les consomme et y publie parfois ; les construire et les gouverner relève de [[parcours/bi-analyst]].
+- [[notions/outils-decisionnels]] — Tableau, Power BI, Looker. L'analyste les consomme et y publie parfois ; les construire et les gouverner relève de [[parcours/bi-analyst/index|BI Analyst]].
 
 > [!tip] Ajout 2026
 > Deux évolutions ont changé l'équilibre. D'un côté, les tableurs ont intégré des moteurs de transformation sérieux (Power Query) et du Python natif, ce qui repousse le seuil de bascule — sans supprimer le problème de fond, qui reste la traçabilité. De l'autre, DuckDB permet de lancer du SQL directement sur des fichiers CSV ou Parquet posés sur un disque, sans serveur ni import : c'est aujourd'hui le chemin le plus court entre un export brut et une réponse, et cela rend obsolète une bonne partie des allers-retours tableur-base.
@@ -356,7 +356,7 @@ flowchart TD
 > Écris la phrase de conclusion **avant** de construire le moindre graphique, et construis ensuite le graphique qui la démontre. Cela supprime d'un coup les deux défauts les plus répandus de la restitution : la planche de douze visualisations sans hiérarchie, et le graphique joli qui n'appuie aucune affirmation. Si la phrase ne s'écrit pas, l'analyse n'est pas finie — ce n'est pas un problème de restitution.
 
 > [!warning] Piège
-> Livrer un tableau de bord quand on attendait une réponse. C'est la dérobade classique : au lieu de conclure, on donne des filtres et on laisse le lecteur trouver. Cela déplace la charge d'interprétation sur quelqu'un de moins bien placé pour l'assumer, et cela fabrique en prime un objet que personne ne maintiendra. Si le besoin est réellement un suivi récurrent, ce n'est pas une analyse ad hoc : c'est une commande pour [[parcours/bi-analyst]], et il faut le dire.
+> Livrer un tableau de bord quand on attendait une réponse. C'est la dérobade classique : au lieu de conclure, on donne des filtres et on laisse le lecteur trouver. Cela déplace la charge d'interprétation sur quelqu'un de moins bien placé pour l'assumer, et cela fabrique en prime un objet que personne ne maintiendra. Si le besoin est réellement un suivi récurrent, ce n'est pas une analyse ad hoc : c'est une commande pour [[parcours/bi-analyst/index|BI Analyst]], et il faut le dire.
 
 ---
 
@@ -468,7 +468,7 @@ La conséquence pratique est un déplacement du niveau d'exigence, pas une dispa
 - Exploration assistée — décrire un jeu de données inconnu, proposer les croisements à regarder, repérer les colonnes suspectes. Utile pour dégrossir, jamais pour conclure.
 - Analyse de verbatims et de champs libres — le cas où le gain est le plus fort, traité en section 9.
 - Rédaction — un premier jet de restitution à partir de tes résultats, que tu réécris. Le modèle ne sait pas quelle conclusion tu es prêt à défendre.
-- Interrogation en langage naturel — cela fonctionne quand une couche sémantique définit les métriques, et échoue quand on la branche sur des tables brutes, parce que le modèle n'a aucun moyen de savoir laquelle des quatre colonnes de montant est la bonne. Construire cette couche est le travail de [[parcours/bi-analyst]] ; c'est ce qui explique que le même outil soit jugé excellent dans une entreprise et inutilisable dans une autre.
+- Interrogation en langage naturel — cela fonctionne quand une couche sémantique définit les métriques, et échoue quand on la branche sur des tables brutes, parce que le modèle n'a aucun moyen de savoir laquelle des quatre colonnes de montant est la bonne. Construire cette couche est le travail de [[parcours/bi-analyst/index|BI Analyst]] ; c'est ce qui explique que le même outil soit jugé excellent dans une entreprise et inutilisable dans une autre.
 - Confidentialité — un extrait de base client ne se colle pas dans un service grand public. Vérifie ce que ton entreprise autorise, et à quel niveau de donnée ; [[notions/rgpd]] s'applique intégralement à ce geste-là.
 - Ce que cela ne remplace pas : la connaissance du terrain. Savoir que les commandes de juillet 2024 sont dupliquées à cause d'une reprise de données est une information qui ne se trouve dans aucun modèle, et c'est le cœur de ta valeur.
 
@@ -502,7 +502,7 @@ Six à neuf mois pour être opérationnel en travaillant à côté, et l'ordre c
 
 ## Parcours voisins
 
-- [[parcours/bi-analyst]] — le métier jumeau, côté infrastructure décisionnelle : entrepôt, modélisation dimensionnelle, dbt, couche sémantique, gouvernance. Quand une demande devient un suivi récurrent partagé, elle bascule là.
+- [[parcours/bi-analyst/index|BI Analyst]] — le métier jumeau, côté infrastructure décisionnelle : entrepôt, modélisation dimensionnelle, dbt, couche sémantique, gouvernance. Quand une demande devient un suivi récurrent partagé, elle bascule là.
 - [[02 - Roadmap — AI and Data Scientist]] — la suite naturelle pour qui veut aller vers la modélisation et la généralisation. La frontière est détaillée en section 1.
 - [[03 - Roadmap — Data Engineer]] — l'amont : d'où viennent les tables, pourquoi elles arrivent en retard, et à qui parler quand elles sont fausses.
 - [[04 - Roadmap — Machine Learning]] — l'approfondissement de la section 9 pour qui décide d'y aller sérieusement.

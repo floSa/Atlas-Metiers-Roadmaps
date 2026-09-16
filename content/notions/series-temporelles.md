@@ -48,7 +48,7 @@ L'angle est diagnostique plutôt que prédictif : décomposer avant de conclure,
 
 ## Appelée par
 
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 - [[parcours/data-analyst|Data Analyst]]
 
 Voisines : [[notions/analyse-de-cohorte]], [[notions/statistiques-descriptives]], [[notions/modelisation-dimensionnelle]], [[notions/visualisation-de-donnees]].

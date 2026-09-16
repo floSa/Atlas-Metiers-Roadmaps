@@ -49,6 +49,6 @@ L'enjeu est la diffusion. Les « informations automatiques » des plateformes d�
 ## Appelée par
 
 - [[parcours/data-analyst|Data Analyst]]
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/tests-hypotheses]], [[notions/regression-lineaire]], [[notions/ab-testing]].

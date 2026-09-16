@@ -46,6 +46,6 @@ L'angle est la charge de la preuve. Un chiffre défendable est un chiffre dont o
 
 ## Appelée par
 
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/qualite-des-donnees]], [[notions/transformation-dbt]], [[notions/rgpd]], [[notions/entrepot-de-donnees]].

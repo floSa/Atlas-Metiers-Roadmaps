@@ -48,6 +48,6 @@ L'usage n'est presque jamais un test formel publié, c'est une discipline de seu
 ## Appelée par
 
 - [[parcours/data-analyst|Data Analyst]]
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/statistiques-descriptives]], [[notions/ab-testing]], [[notions/analyse-correlation]].
