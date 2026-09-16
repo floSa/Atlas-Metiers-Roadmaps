@@ -384,3 +384,139 @@ flowchart TD
 > Choisir l'infrastructure sur la charge imaginée. Le dimensionnement « au cas où ça décolle » fait perdre des semaines à un produit qui aura douze utilisateurs le premier mois, et la migration d'une plateforme applicative vers une infrastructure brute — quand elle devient nécessaire — se fait en connaissant enfin le profil de charge réel. C'est plus rapide dans cet ordre.
 
 ---
+
+## 10. Du prototype au produit : ce que la roadmap ne chiffre pas (hors roadmap)
+
+```mermaid
+flowchart TD
+  p["Le prototype part en production"]:::ajout --> d["Ce qui n'a jamais été conçu"]:::ajout
+  d --> d1["Autorisations et cloisonnement des données"]:::ajout
+  d --> d2["Erreurs, reprises, indisponibilité d'un tiers"]:::ajout
+  d --> d3["Sauvegardes et restauration testée"]:::ajout
+  d --> d4["Journalisation et diagnostic d'incident"]:::ajout
+  d --> d5["Migrations de schéma sans perte"]:::ajout
+  d --> d6["Suppression de compte et de données"]:::ajout
+  d1 --> c["Coût : payé plus tard, en incident"]:::ajout
+  d2 --> c
+  d3 --> c
+  d4 --> c
+  d5 --> c
+  d6 --> c
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** La roadmap s'arrête à « déployer » comme si la mise en ligne finissait le travail. Le scénario le plus fréquent de ce métier est pourtant celui-ci : un prototype validé en démonstration reçoit des utilisateurs réels, personne ne prend la décision de le reconstruire, et il devient le produit par simple absence de décision. Le prototype n'est pas mauvais — il n'a simplement jamais été conçu pour durer, et la différence entre les deux tient à une liste courte et parfaitement connue. Nommer la liste permet de la traiter en une à deux semaines, ou de décider explicitement de ne pas la traiter, ce qui est un choix acceptable tant qu'il est conscient.
+
+**Ce qu'il faut savoir**
+
+- Autorisations — le contrôle par ligne et par utilisateur sur chaque route qui renvoie des données. C'est le premier poste, le plus souvent absent, et le seul dont la défaillance est publique.
+- Comportement en erreur — que se passe-t-il quand le service de paiement, le fournisseur d'e-mail ou la base ne répondent pas ? Un prototype n'a pas de réponse ; un produit a des reprises, des délais d'attente et un message honnête à l'utilisateur.
+- Sauvegardes — et surtout une restauration réellement essayée une fois. Une sauvegarde jamais restaurée est une hypothèse, pas une garantie.
+- Journalisation — de quoi reconstituer ce qui s'est passé pour un utilisateur donné à une heure donnée. Sans cela, le premier incident sérieux se termine en « on ne sait pas ».
+- Migrations — le schéma va changer. Un mécanisme de migration versionné, appliqué de la même façon en test et en production, s'installe en deux heures au démarrage et devient très coûteux à rétablir plus tard.
+- Suppression de compte et de données — obligation légale et fonction que les générateurs n'écrivent jamais spontanément, parce que personne ne la demande dans l'énoncé initial.
+- Le coût de cette liste est à peu près constant : une à deux semaines pour une application modeste. Le coût de son report n'est pas constant, il croît avec le nombre d'utilisateurs et le volume de données déjà accumulé.
+
+> [!tip] Ajout 2026
+> Prends la décision explicitement, par écrit, le jour de la première mise en ligne : « ceci est un prototype en production, avec telles limites, jusqu'à telle date ou tel nombre d'utilisateurs ». Un seuil déclaré transforme une dérive en décision — et il donne l'argument budgétaire au moment où il servira. Sans seuil écrit, la conversation de renforcement n'a jamais lieu avant l'incident.
+
+> [!warning] Piège
+> Réécrire entièrement au lieu de renforcer. Quand la liste ci-dessus est enfin regardée, la réaction courante est « ce code est mauvais, reprenons de zéro » — alors que le code fonctionne et que ce qui manque est identifié, borné et additif. La réécriture complète reproduit les mêmes absences avec six mois de retard et sans les utilisateurs.
+
+---
+
+## 11. Quand le produit embarque réellement un modèle (hors roadmap)
+
+```mermaid
+flowchart TD
+  f["Une fonction intelligente entre au cadrage"]:::ajout --> q["Est-elle vraiment probabiliste ?"]:::ajout
+  q -->|"non"| det["Règle, script, requête - moins cher et testable"]:::ajout
+  q -->|"oui"| ia["Le produit devient un système IA"]:::ajout
+  ia --> b1["Prompt, choix de modèle, coût et latence"]:::ajout
+  ia --> b2["Récupération de contexte si le produit a un corpus"]:::ajout
+  ia --> b3["Évaluation et non-régression"]:::ajout
+  ia --> b4["Garde-fous et sorties non fiables"]:::ajout
+  ia --> b5["Observabilité et budget par requête"]:::ajout
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** La roadmap amont porte le nom « AI Product Builder » et ne traite que d'une chose : construire un produit **avec** des outils d'IA. Elle ne dit rien du produit qui **contient** un modèle, alors que c'est l'autre moitié de ce que le titre laisse attendre et le cas de la majorité des produits construits aujourd'hui. Cette section pose la frontière et renvoie : rien de ce qui suit n'est expliqué ici, parce que c'est le domaine de l'AI Engineer et que le corpus l'explique déjà une fois — voir [[05 - Roadmap — AI Engineer]].
+
+**Ce qu'il faut savoir**
+
+- La première question reste l'arbitrage — voir [[notions/arbitrage-deterministe-probabiliste]]. Une classification à sept catégories stables, un calcul, un routage : ce sont des règles. On n'y met un modèle que si l'entrée est du langage libre ou si les cas sont ouverts.
+- [[notions/choix-de-modele]] — pour ce métier, le critère dominant n'est pas la qualité de tête de gamme mais le coût par utilisateur actif : un produit grand public ne survit pas à un gros modèle appelé à chaque interaction.
+- [[notions/ingenierie-de-prompt]] — ici le prompt est un actif produit, versionné et testé comme du code, pas une chaîne dans un fichier de configuration modifiée en production.
+- [[notions/rag]] et [[notions/embeddings-et-bases-vectorielles]] — nécessaires seulement si le produit a un corpus propre à interroger. Beaucoup de produits n'en ont pas et s'en passent très bien ; les monter par réflexe est un des surcoûts les plus fréquents.
+- [[notions/agents-llm]] et [[notions/mcp]] — pour ce métier, l'usage courant de MCP n'est pas dans le produit livré mais dans l'atelier : brancher les assistants de codage sur le dépôt, la base et le suivi de tickets.
+- [[notions/evaluation-llm]] — le point où un product builder échoue le plus souvent, parce qu'il est habitué au binaire « ça marche / ça ne marche pas ». Une fonction à base de modèle n'a pas d'état binaire : sans un jeu de cas attendus rejoué à chaque changement, chaque amélioration est un pari.
+- [[notions/cout-et-latence-inference]] — pour ce métier, le budget par utilisateur et par mois est une contrainte de modèle économique, pas une ligne d'infrastructure. Il se calcule avant de livrer, pas sur la première facture.
+- [[notions/observabilite]] — traces par requête et coût par requête, sans quoi aucun incident sur une fonction à base de modèle n'est reproductible.
+- [[notions/garde-fous]] et [[notions/injection-de-prompt]] — dès que le produit affiche une sortie de modèle à un utilisateur ou lui laisse déclencher une action. Le cas typique et sous-estimé du product builder : l'assistant qui lit un document envoyé par un utilisateur et dispose d'un outil d'envoi d'e-mail.
+
+> [!tip] Ajout 2026
+> Le découpage qui fonctionne en équipe réduite : la fonction à base de modèle est un service séparé, avec son propre contrat d'API, ses propres tests et son propre budget. Le reste du produit ne sait pas qu'il y a un modèle derrière. Cela permet de changer de fournisseur, de mettre la fonction en mode dégradé, et de mesurer son coût isolément — trois choses impossibles quand les appels sont dispersés dans le code applicatif.
+
+> [!warning] Piège
+> Ajouter un assistant conversationnel au produit parce qu'il en faut un. C'est la fonction la plus demandée, la plus chère à évaluer, la moins utilisée après le premier mois et la plus exposée en cas de dérapage. Dans la plupart des produits, une recherche qui comprend les formulations approximatives et deux ou trois champs pré-remplis intelligemment apportent plus de valeur d'usage pour un dixième du risque.
+
+---
+
+## Parcours conseillé
+
+| Ordre | Étape | Effort | À viser |
+|---|---|---|---|
+| 1 | Cadrage et anatomie d'une application | ~2 jours | Un paragraphe de problème, dix fonctions dont cinq barrées, une pile imposée |
+| 2 | Arbitrage construire / acheter / assembler | ~1 jour | Un calcul sur trois ans, écrit, avec l'option « ne pas construire » évaluée |
+| 3 | Prototype de la fonction la plus incertaine | ~2 jours | Une maquette cliquable et trois malentendus identifiés en session utilisateur |
+| 4 | Première génération complète | ~3 jours | Une base de code lisible, un schéma de données relu, un commit de sortie brute |
+| 5 | Socle de relecture — HTML, CSS, JS, React, Node | ~2 semaines | Savoir localiser une panne dans une couche sans demander à un outil |
+| 6 | Reprise du code avec un assistant | ~1 semaine | Dix corrections ciblées, diff relu à chaque fois, fichier d'instructions de dépôt |
+| 7 | Tests et instrumentation d'usage | ~1 semaine | Trois tests de bout en bout sur les parcours critiques, dix événements nommés |
+| 8 | Dépôt, intégration continue, prévisualisation | ~3 jours | Branche principale verrouillée, tests à chaque poussée, un lien par branche |
+| 9 | Déploiement et dorsale gérée | ~1 semaine | En ligne, authentification et droits vérifiés à la main, alerte de dépense posée |
+| 10 | Liste prototype vers produit | ~2 semaines | Sauvegarde restaurée une fois, migrations versionnées, suppression de compte |
+| 11 | Fonction à base de modèle, si le produit en a une | continu | Service isolé, jeu d'évaluation, budget par requête |
+
+---
+
+## Ressources
+
+Toutes reprises de la roadmap amont, où elles sont référencées à ces adresses.
+
+**Cadrage et cycle produit**
+
+- [Will AI make us all product builders?](https://www.fundament.design/p/will-ai-make-us-all-product-builders?hide_intro_popup=true) — la meilleure des deux sur le déplacement du métier.
+- [How to scope your AI product](https://uxdesign.cc/how-to-scope-your-ai-product-5b9885ef3851) et [How to effectively scope your software projects](https://www.freecodecamp.org/news/how-to-effectively-scope-your-software-projects-from-planning-to-execution-e96cbcac54b9/) — cadrage et réduction de périmètre.
+- [The Best Tech Stack in the Age of AI](https://thebootstrappedfounder.com/the-best-tech-stack-in-the-age-of-ai/) — l'argument du choix d'une pile très répandue.
+- [Web Application Architecture: Front-end, Middleware and Back-end](https://dev.to/techelopment/web-application-architecture-front-end-middleware-and-back-end-2ld7) — l'anatomie en quatre briques.
+
+**Socle technique à relire soi-même**
+
+- [React Docs](https://react.dev/reference/react) et la [roadmap React](https://roadmap.sh/react) — ce que les générateurs produisent par défaut côté interface.
+- [Introduction to Node.js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs) et la [roadmap Node.js](https://roadmap.sh/nodejs) — côté serveur.
+- [What are browser developer tools?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/What_are_browser_developer_tools) — le premier outil de diagnostic, et le seul document vraiment indispensable de cette liste.
+- Roadmaps de socle citées en amont : [frontend](https://roadmap.sh/frontend), [backend](https://roadmap.sh/backend), [api-design](https://roadmap.sh/api-design), [git-github](https://roadmap.sh/git-github).
+
+**Outils, par catégorie**
+
+- Générateurs d'application — [Lovable](https://docs.lovable.dev/introduction/welcome), [Bolt](https://support.bolt.new/building/quickstart), [Replit](https://docs.replit.com/getting-started/intro-replit).
+- Générateur d'interface — [v0](https://v0.app/docs).
+- Assistants en terminal — [Claude Code](https://code.claude.com/docs/en/overview) et sa [roadmap dédiée](https://roadmap.sh/claude-code), [Codex](https://developers.openai.com/codex), [Gemini CLI](https://geminicli.com/docs/).
+- Éditeur augmenté et complétion — [Cursor](https://cursor.com/docs), [GitHub Copilot](https://docs.github.com/en/copilot).
+- Roadmap [vibe-coding](https://roadmap.sh/vibe-coding), citée deux fois en amont, pour le versant pratique de la section 6.
+
+**Tests**
+
+- [What is User Testing?](https://trymata.com/blog/what-is-user-testing/), [What is Unit Testing?](https://www.guru99.com/unit-testing-guide.html), [Integration Testing](https://www.guru99.com/integration-testing.html), [End to End Testing](https://microsoft.github.io/code-with-engineering-playbook/automated-testing/e2e-testing/).
+
+**Déploiement et données**
+
+- Plateformes applicatives — [Vercel](https://vercel.com/docs), [Railway](https://docs.railway.com/quick-start), [Render](https://render.com/docs), [DigitalOcean](https://www.digitalocean.com/community/tutorials).
+- Périphérie — [Cloudflare Pages](https://developers.cloudflare.com/pages/get-started/) et sa [roadmap](https://roadmap.sh/cloudflare).
+- Infrastructure — [AWS Cloud Essentials](https://aws.amazon.com/getting-started/cloud-essentials/), [Azure](https://azure.microsoft.com/en-us/), [Google Cloud](https://cloud.google.com), [Azure DevOps](https://azure.microsoft.com/en-us/products/devops).
+- Bases — [PostgreSQL](https://www.postgresql.org/docs/) et sa [roadmap DBA](https://roadmap.sh/postgresql-dba), [MySQL](https://dev.mysql.com/doc/), [MongoDB](https://www.mongodb.com/) et sa [roadmap](https://roadmap.sh/mongodb), [Supabase](https://supabase.com/docs).
+- Hébergement du code — [GitHub](https://docs.github.com/en/get-started/quickstart), [GitLab](https://docs.gitlab.com/).
+
+> [!warning] Sur deux ressources amont
+> La roadmap référence **Hope** et **Bit Cloud**, deux produits du même éditeur, sous des libellés commerciaux et avec des liens portant un paramètre de suivi propre à roadmap.sh. Le descriptif amont de Hope est un texte promotionnel, pas une description technique. Ils sont mentionnés ici pour la complétude de la source, sans être recommandés ni rangés dans une catégorie : rien dans la capture ne permet d'évaluer leur usage réel.
