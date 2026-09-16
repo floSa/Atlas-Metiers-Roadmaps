@@ -10,18 +10,18 @@ Construire un produit sur un modèle qu'on n'a pas entraîné : récupérer le b
 
 ## La roadmap
 
-Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
+Chaque case mène à sa page, et porte en deuxième ligne le niveau attendu chez un profil confirmé — **notion** (reconnaître le sujet, savoir qui appeler), **usage** (s'en servir sur un chemin balisé), **autonomie** (concevoir, déboguer sous pression, arbitrer et défendre), **référence** (faire autorité dans la salle). Cochez les étapes acquises en bas de page pour suivre votre progression.
 
 ```mermaid
 flowchart TD
-  F["Fondamentaux LLM<br/>tokens, fenêtre, échantillonnage"] --> P["Prompt et contexte<br/>ce qui occupe la fenêtre"]
-  P --> M["Modèles et APIs<br/>choisir, appeler, changer"]
-  M --> E["Embeddings et recherche<br/>vecteurs, index, hybride"]
-  E --> R["RAG<br/>découper, récupérer, citer"]
-  R --> A["Agents et MCP<br/>boucle, outils, protocole"]
-  A --> MU["Multimodal et documents<br/>vision, audio, parsing"]
-  MU --> PR["Mise en production<br/>évaluation, coût, traces"]
-  S["Sécurité et conformité<br/>injection, filtres, AI Act"] -.-> R
+  F["Fondamentaux LLM<br/>Autonomie<br/>tokens, fenêtre, échantillonnage"] --> P["Prompt et contexte<br/>Référence<br/>ce qui occupe la fenêtre"]
+  P --> M["Modèles et APIs<br/>Autonomie<br/>choisir, appeler, changer"]
+  M --> E["Embeddings et recherche<br/>Autonomie<br/>vecteurs, index, hybride"]
+  E --> R["RAG<br/>Référence<br/>découper, récupérer, citer"]
+  R --> A["Agents et MCP<br/>Autonomie<br/>boucle, outils, protocole"]
+  A --> MU["Multimodal et documents<br/>Usage<br/>vision, audio, parsing"]
+  MU --> PR["Mise en production<br/>Autonomie<br/>évaluation, coût, traces"]
+  S["Sécurité et conformité<br/>Usage<br/>injection, filtres, AI Act"] -.-> R
   S -.-> A
   S -.-> PR
 
