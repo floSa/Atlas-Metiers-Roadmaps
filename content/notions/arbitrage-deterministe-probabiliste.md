@@ -21,14 +21,15 @@ L'arbitrage se rend par étape de processus, pas une fois pour le projet entier 
 
 ```mermaid
 flowchart TD
-  t["Nature de la tâche"] --> r1["Règle explicite et stable ?"]
-  r1 -->|"oui"| det["Déterministe - script, requête, webhook, moteur de règles"]
-  r1 -->|"non"| r2["Entrée non structurée - texte libre, document, parole ?"]
-  r2 -->|"non"| r3["Statistique classique suffit ?"]
-  r3 -->|"oui"| ml["Modèle ML classique ou requête analytique"]
-  r2 -->|"oui"| r4["Erreur tolérable et détectable ?"]
-  r4 -->|"non"| hum["Garder l'humain, assister sans décider"]
-  r4 -->|"oui"| gen["IA générative"]
+  t["Nature de la tâche"]:::ajout --> r1["Règle explicite et stable ?"]:::ajout
+  r1 -->|"oui"| det["Déterministe - script, requête, webhook, moteur de règles"]:::ajout
+  r1 -->|"non"| r2["Entrée non structurée - texte libre, document, parole ?"]:::ajout
+  r2 -->|"non"| r3["Statistique classique suffit ?"]:::ajout
+  r3 -->|"oui"| ml["Modèle ML classique ou requête analytique"]:::ajout
+  r2 -->|"oui"| r4["Erreur tolérable et détectable ?"]:::ajout
+  r4 -->|"non"| hum["Garder l'humain, assister sans décider"]:::ajout
+  r4 -->|"oui"| gen["IA générative"]:::ajout
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 Cinq étapes, dans cet ordre : qualifier la nature de la tâche, puis vérifier s'il existe une règle explicite et stable, puis si l'entrée est non structurée, puis si une méthode statistique classique suffit, et enfin si l'erreur est tolérable et détectable.
