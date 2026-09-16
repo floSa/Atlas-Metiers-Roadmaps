@@ -6,16 +6,16 @@ aliases:
 
 La génération ne supprime pas le travail, elle le déplace de l'écriture vers la relecture et la décision. C'est le cœur du métier, et la discipline la moins exercée.
 
-## Les six sujets
+## Les six sujets, et le niveau attendu d'un confirmé
 
 ```mermaid
 flowchart TD
-  C["Conduire une génération<br/>entrées, sortie brute, journal de l'énoncé"]
-  R["Relire le code généré<br/>le schéma de données avant tout le reste"]
-  D["Changement local ou régénération<br/>la question préalable au choix d'outil"]
-  O["Les outils de codage assisté<br/>terminal, éditeur augmenté, complétion"]
-  V["Les limites du vibe coding<br/>l'absence silencieuse, pas le bug"]
-  S["Le socle à lire soi-même<br/>pour localiser la panne, pas pour écrire"]
+  C["Conduire une génération<br/>Référence"]
+  R["Relire le code généré<br/>Référence"]
+  D["Changement local ou régénération<br/>Autonomie"]
+  O["Les outils de codage assisté<br/>Autonomie"]
+  V["Les limites du vibe coding<br/>Référence"]
+  S["Le socle à lire soi-même<br/>Usage"]
 
   click C "/parcours/ai-product-builder/generation-et-reprise/conduire-une-generation"
   click R "/parcours/ai-product-builder/generation-et-reprise/relire-le-code-genere"

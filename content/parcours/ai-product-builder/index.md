@@ -10,16 +10,16 @@ Livrer un produit logiciel en s'appuyant sur des outils de génération de code 
 
 ## La roadmap
 
-Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
+Chaque case mène à sa page. La deuxième ligne donne le niveau attendu chez un profil **confirmé** — de *notion* (reconnaître le sujet, savoir qui appeler) à *référence* (faire autorité dans la salle), en passant par *usage* (se servir d'un chemin balisé) et *autonomie* (concevoir, déboguer sous pression, défendre un arbitrage). Cochez les étapes acquises en bas de page pour suivre votre progression.
 
 ```mermaid
 flowchart TD
-  C["Cadrage et arbitrage<br/>le problème, la pile, construire ou acheter"] --> P["Prototypage<br/>réduire l'incertitude avant de générer"]
-  P --> G["Génération et reprise du code<br/>relire, corriger, régénérer"]
-  G --> T["Tests et mesure d'usage<br/>deux boucles à ne pas confondre"]
-  T --> M["Mise en ligne<br/>dépôt, intégration continue, hébergement"]
-  M --> D["Du prototype au produit<br/>la liste de ce qui n'a jamais été conçu"]
-  D -.-> MO["Quand le produit embarque un modèle<br/>l'autre moitié du titre"]
+  C["Cadrage et arbitrage<br/>Autonomie"] --> P["Prototypage<br/>Autonomie"]
+  P --> G["Génération et reprise du code<br/>Référence"]
+  G --> T["Tests et mesure d'usage<br/>Autonomie"]
+  T --> M["Mise en ligne<br/>Autonomie"]
+  M --> D["Du prototype au produit<br/>Usage"]
+  D -.-> MO["Quand le produit embarque un modèle<br/>Usage"]
   T -.->|"boucle de retour"| C
 
   click C "/parcours/ai-product-builder/cadrage-et-arbitrage/"

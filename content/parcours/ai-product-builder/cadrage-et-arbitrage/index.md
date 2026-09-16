@@ -6,14 +6,14 @@ aliases:
 
 Un générateur ne comble pas un flou, il l'amplifie : il produira une application cohérente qui résout un problème légèrement différent du vôtre. Tout ce qui se décide avant la première ligne générée est ici.
 
-## Les quatre sujets
+## Les quatre sujets, et le niveau attendu d'un confirmé
 
 ```mermaid
 flowchart TD
-  D["Définir le problème<br/>une phrase, et la liste de ce qu'on retire"]
-  A["L'anatomie d'une application<br/>quatre briques et leurs contrats"]
-  P["La pile et les contraintes<br/>très répandue, pas la meilleure"]
-  B["Construire, acheter ou assembler<br/>l'arbitrage que la roadmap ne pose pas"]
+  D["Définir le problème<br/>Autonomie"]
+  A["L'anatomie d'une application<br/>Usage"]
+  P["La pile et les contraintes<br/>Usage"]
+  B["Construire, acheter ou assembler<br/>Autonomie"]
 
   click D "/parcours/ai-product-builder/cadrage-et-arbitrage/definir-le-probleme"
   click A "/parcours/ai-product-builder/cadrage-et-arbitrage/l-anatomie-d-une-application"

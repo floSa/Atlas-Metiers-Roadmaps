@@ -6,14 +6,14 @@ aliases:
 
 Deux boucles qu'on confond souvent : « est-ce que ça marche encore » se ferme en secondes, « est-ce que ça sert » se ferme en semaines. Les deux se surveillent séparément.
 
-## Les quatre sujets
+## Les quatre sujets, et le niveau attendu d'un confirmé
 
 ```mermaid
 flowchart TD
-  B["Les deux boucles<br/>technique et produit, séparées"]
-  T["Les tests comme garde-corps<br/>ce qui empêche un agent de casser en silence"]
-  O["Observer des utilisateurs<br/>les hésitations, pas les déclarations"]
-  I["Instrumenter l'usage<br/>quatre chiffres suffisent au début"]
+  B["Les deux boucles<br/>Autonomie"]
+  T["Les tests comme garde-corps<br/>Autonomie"]
+  O["Observer des utilisateurs<br/>Usage"]
+  I["Instrumenter l'usage<br/>Usage"]
 
   click B "/parcours/ai-product-builder/tests-et-mesure-d-usage/les-deux-boucles"
   click T "/parcours/ai-product-builder/tests-et-mesure-d-usage/les-tests-comme-garde-corps"
