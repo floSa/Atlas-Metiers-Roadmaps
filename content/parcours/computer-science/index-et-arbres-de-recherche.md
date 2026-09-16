@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/computer-science
 ---
 
-**Autonomie.** Choisir un index vectoriel, régler son compromis entre rappel, latence et mémoire puis le défendre est un arbitrage que personne ne fera à la place d'un profil IA ou data — c'est le domaine du socle le plus directement en prise avec le métier.
+Niveau attendu : **autonomie**. Choisir un index vectoriel, régler son compromis entre rappel, latence et mémoire puis le défendre est un arbitrage que personne ne fera à la place d'un profil IA ou data — c'est le domaine du socle le plus directement en prise avec le métier.
 
 Tout ce chapitre répond à une question : retrouver une donnée sans tout lire. Un index est toujours un compromis entre coût d'écriture, coût de lecture et espace occupé.
 

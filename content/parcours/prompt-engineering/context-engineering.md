@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/prompt-engineering
 ---
 
-**Référence.** Second cœur du métier depuis que la fenêtre a cessé d'être la contrainte : sélectionner, ordonner, compacter, isoler est ce qu'un confirmé fait toute la journée, et c'est précisément pour cela qu'on l'appelle plutôt qu'un développeur qui sait écrire un prompt.
+Niveau attendu : **référence**. Second cœur du métier depuis que la fenêtre a cessé d'être la contrainte : sélectionner, ordonner, compacter, isoler est ce qu'un confirmé fait toute la journée, et c'est précisément pour cela qu'on l'appelle plutôt qu'un développeur qui sait écrire un prompt.
 
 Quand la fenêtre passe à des centaines de milliers de tokens, la question n'est plus « comment formuler » mais **quoi mettre, dans quel ordre, et quoi retirer**. Le prompt devient une politique de gestion d'un budget rare et dégradant.
 

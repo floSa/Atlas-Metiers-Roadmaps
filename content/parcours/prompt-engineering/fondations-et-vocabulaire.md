@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/prompt-engineering
 ---
 
-**Autonomie.** On attend d'un confirmé qu'il explique sous pression pourquoi la même consigne se comporte autrement d'un modèle à l'autre, et pas seulement qu'il le constate — la référence, sur ce qui se passe sous le capot, appartient à qui entraîne les modèles, pas à qui les appelle.
+Niveau attendu : **autonomie**. On attend d'un confirmé qu'il explique sous pression pourquoi la même consigne se comporte autrement d'un modèle à l'autre, et pas seulement qu'il le constate — la référence, sur ce qui se passe sous le capot, appartient à qui entraîne les modèles, pas à qui les appelle.
 
 Un prompt n'est pas une incantation : c'est le préfixe qui conditionne une distribution de probabilité sur le prochain token. Presque tout ce qui surprend au début découle de cette phrase.
 

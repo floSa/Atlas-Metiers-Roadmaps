@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/ai-engineer
 ---
 
-**Référence.** C'est l'un des deux domaines où un AI Engineer confirmé doit faire autorité dans la salle : décider ce qui occupe la fenêtre à chaque tour est ce qui reste du métier quand on retire le modèle et l'infrastructure, et personne d'autre ne le tranchera à sa place.
+Niveau attendu : **référence**. C'est l'un des deux domaines où un AI Engineer confirmé doit faire autorité dans la salle : décider ce qui occupe la fenêtre à chaque tour est ce qui reste du métier quand on retire le modèle et l'infrastructure, et personne d'autre ne le tranchera à sa place.
 
 Le prompt engineering optimise une instruction ; le context engineering décide de ce qui occupe la fenêtre à chaque tour — et sur une application réelle, le second pèse bien plus lourd.
 

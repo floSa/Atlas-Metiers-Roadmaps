@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/data-engineer
 ---
 
-**Référence.** Second domaine de référence, et le cœur du métier : l'idempotence, la reprise par date et la lisibilité d'un graphe de tâches ne sont vérifiées par personne d'autre, et leur absence ne se révèle qu'à la première relance après incident, trop tard.
+Niveau attendu : **référence**. Second domaine de référence, et le cœur du métier : l'idempotence, la reprise par date et la lisibilité d'un graphe de tâches ne sont vérifiées par personne d'autre, et leur absence ne se révèle qu'à la première relance après incident, trop tard.
 
 Le cœur du métier : déplacer et transformer la donnée de manière fiable, reproductible et observable — c'est-à-dire pouvoir dire, à tout moment, ce qui a tourné, avec quelles données, et comment le rejouer.
 

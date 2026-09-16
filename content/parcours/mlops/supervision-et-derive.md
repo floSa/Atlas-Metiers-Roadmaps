@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/mlops
 ---
 
-**Référence.** Second domaine de référence, parce que personne d'autre ne regarde la dérive : l'exploitation surveille la latence, le data scientist est déjà sur le modèle suivant, et un service parfaitement sain peut répondre faux pendant des mois sans qu'une seule alerte se déclenche.
+Niveau attendu : **référence**. Second domaine de référence, parce que personne d'autre ne regarde la dérive : l'exploitation surveille la latence, le data scientist est déjà sur le modèle suivant, et un service parfaitement sain peut répondre faux pendant des mois sans qu'une seule alerte se déclenche.
 
 Un service de prédiction peut être parfaitement sain du point de vue de l'infrastructure — latence nominale, zéro erreur — tout en produisant des réponses devenues fausses. C'est la spécificité du sujet : trois couches à surveiller, et seule la troisième intéresse le métier.
 

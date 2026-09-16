@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/data-engineer
 ---
 
-**Autonomie.** Un confirmé conçoit la couche sémantique, arbitre entre reverse ETL et accès direct et assume ce qu'il expose ; la référence revient à ceux qui consomment — analystes, data scientists — puisque ce sont eux qui jugent si la table est utilisable sans mode d'emploi.
+Niveau attendu : **autonomie**. Un confirmé conçoit la couche sémantique, arbitre entre reverse ETL et accès direct et assume ce qu'il expose ; la référence revient à ceux qui consomment — analystes, data scientists — puisque ce sont eux qui jugent si la table est utilisable sans mode d'emploi.
 
 Le moment où la donnée produit de la valeur — et où le travail du data engineer se juge : des tables documentées dont d'autres se servent sans venir demander comment les lire.
 

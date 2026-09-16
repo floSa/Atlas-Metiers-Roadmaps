@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/ai-agents
 ---
 
-**Autonomie.** Évaluer la trajectoire et pas seulement la réponse, calibrer un juge, instrumenter en OpenTelemetry : des gestes de conception qu'un confirmé pose seul ; la référence reviendrait à l'équipe qui opère la plateforme de traces, pas à celui qui l'instrumente.
+Niveau attendu : **autonomie**. Évaluer la trajectoire et pas seulement la réponse, calibrer un juge, instrumenter en OpenTelemetry : des gestes de conception qu'un confirmé pose seul ; la référence reviendrait à l'équipe qui opère la plateforme de traces, pas à celui qui l'instrumente.
 
 Le vrai goulot d'étranglement des projets d'agents : sans jeu d'évaluation, aucune modification de prompt, de modèle ou d'outil n'est décidable — et sans trace complète, un incident non déterministe est irreproductible, donc non corrigeable.
 

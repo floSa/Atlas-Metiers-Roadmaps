@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/ai-agents
 ---
 
-**Autonomie.** Écrire la boucle à la main, puis nommer le besoin qui justifie un framework et assumer les dépendances qu'il fait entrer : un confirmé décide seul et sait revenir en arrière. Pas au-delà, parce que l'outillage change tous les six mois et qu'aucune autorité durable ne se construit dessus.
+Niveau attendu : **autonomie**. Écrire la boucle à la main, puis nommer le besoin qui justifie un framework et assumer les dépendances qu'il fait entrer : un confirmé décide seul et sait revenir en arrière. Pas au-delà, parce que l'outillage change tous les six mois et qu'aucune autorité durable ne se construit dessus.
 
 Trois niveaux d'abstraction, trois compromis : écrire la boucle à la main est formateur et souvent suffisant, et les frameworks se paient sur la persistance d'état et la reprise sur incident, pas sur la boucle elle-même.
 

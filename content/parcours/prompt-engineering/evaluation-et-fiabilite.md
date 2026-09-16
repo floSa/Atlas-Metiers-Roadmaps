@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/prompt-engineering
 ---
 
-**Référence.** C'est le cœur du métier et le seul endroit où personne ne rattrapera l'erreur à la place du prompt engineer : sans jeu de cas versionné ni juge calibré, toutes les autres décisions du parcours reposent sur des impressions, et c'est sur ce point qu'on doit faire autorité dans la salle.
+Niveau attendu : **référence**. C'est le cœur du métier et le seul endroit où personne ne rattrapera l'erreur à la place du prompt engineer : sans jeu de cas versionné ni juge calibré, toutes les autres décisions du parcours reposent sur des impressions, et c'est sur ce point qu'on doit faire autorité dans la salle.
 
 C'est l'étape qui sépare le bricolage du travail d'ingénieur : sans évaluation, « améliorer un prompt » signifie « avoir essayé trois exemples qui marchent ».
 

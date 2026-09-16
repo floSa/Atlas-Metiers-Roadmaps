@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/computer-science
 ---
 
-**Usage.** L'attendu est d'estimer avant de lancer et de reconnaître les quatre schémas quand ils passent, documentation ouverte ; concevoir un algorithme nouveau ou démontrer une borne est le travail d'un chercheur, pas d'un ingénieur confirmé qui livre des systèmes.
+Niveau attendu : **usage**. L'attendu est d'estimer avant de lancer et de reconnaître les quatre schémas quand ils passent, documentation ouverte ; concevoir un algorithme nouveau ou démontrer une borne est le travail d'un chercheur, pas d'un ingénieur confirmé qui livre des systèmes.
 
 L'analyse asymptotique répond à une seule question — quand la taille des données est multipliée par dix, que devient le temps de calcul — et les classes de complexité disent quand arrêter de chercher un algorithme exact.
 

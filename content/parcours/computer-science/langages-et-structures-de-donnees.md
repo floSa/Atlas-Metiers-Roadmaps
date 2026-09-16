@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/computer-science
 ---
 
-**Autonomie.** Choisir une structure par ses coûts et lire une empreinte mémoire est un geste quotidien en IA et en data : on l'arbitre et on le défend, sans être pour autant l'auteur du ramasse-miettes ni celui du compilateur.
+Niveau attendu : **autonomie**. Choisir une structure par ses coûts et lire une empreinte mémoire est un geste quotidien en IA et en data : on l'arbitre et on le défend, sans être pour autant l'auteur du ramasse-miettes ni celui du compilateur.
 
 Une structure de données est un contrat de coûts : ce qu'elle rend gratuit et ce qu'elle rend cher. Un second langage, où la mémoire et les types sont visibles, sert d'appareil de mesure pour lire ce contrat.
 

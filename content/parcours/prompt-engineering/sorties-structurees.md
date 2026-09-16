@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/prompt-engineering
 ---
 
-**Autonomie.** Le schéma est la frontière de contrat entre le modèle et tout le code en aval : on le conçoit, on le fait évoluer sans casser l'appelant et on diagnostique un décodage contraint qui échoue — trois gestes qu'aucune documentation ne donne clés en main.
+Niveau attendu : **autonomie**. Le schéma est la frontière de contrat entre le modèle et tout le code en aval : on le conçoit, on le fait évoluer sans casser l'appelant et on diagnostique un décodage contraint qui échoue — trois gestes qu'aucune documentation ne donne clés en main.
 
 Une sortie structurée est ce qui transforme un modèle de langue en composant logiciel : tant que la sortie est de la prose, tout le code en aval est du parsing défensif.
 

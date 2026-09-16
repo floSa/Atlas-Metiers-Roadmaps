@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/data-engineer
 ---
 
-**Autonomie.** Un confirmé écrit, livre et débogue seul un extracteur et une requête lourde, et défend son choix de technologie ; la référence n'est pas exigée ici parce que ce socle est partagé avec le développeur et l'administrateur système, qui restent joignables quand ça coince.
+Niveau attendu : **autonomie**. Un confirmé écrit, livre et débogue seul un extracteur et une requête lourde, et défend son choix de technologie ; la référence n'est pas exigée ici parce que ce socle est partagé avec le développeur et l'administrateur système, qui restent joignables quand ça coince.
 
 Ce qu'il faut savoir faire avant de toucher un seul outil de la chaîne, et la grille de lecture qui range tous les outils appris ensuite : génération, stockage, ingestion, serving.
 

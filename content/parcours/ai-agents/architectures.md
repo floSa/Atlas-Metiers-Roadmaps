@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/ai-agents
 ---
 
-**Autonomie.** L'attendu est de justifier par écrit pourquoi ce n'est pas un simple graphe d'étapes, et de tenir cette position quand on pousse au multi-agents ; le niveau s'arrête là parce que les motifs bougent trop vite pour qu'un confirmé fasse autorité sur autre chose que le refus de monter sans preuve.
+Niveau attendu : **autonomie**. L'attendu est de justifier par écrit pourquoi ce n'est pas un simple graphe d'étapes, et de tenir cette position quand on pousse au multi-agents ; le niveau s'arrête là parce que les motifs bougent trop vite pour qu'un confirmé fasse autorité sur autre chose que le refus de monter sans preuve.
 
 Choisir une architecture, c'est choisir combien de liberté on laisse au modèle : prendre le motif le plus contraint qui résout le problème, et ne monter en autonomie que sur preuve d'insuffisance.
 

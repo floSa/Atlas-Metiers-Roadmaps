@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/data-engineer
 ---
 
-**Autonomie.** Un confirmé conçoit un connecteur, arbitre entre lot, capture de changements et temps réel et tient sa décision devant l'équipe source ; ce n'est pas un domaine de référence parce que le contrat d'interface appartient à celui qui produit la donnée, pas à celui qui la prend.
+Niveau attendu : **autonomie**. Un confirmé conçoit un connecteur, arbitre entre lot, capture de changements et temps réel et tient sa décision devant l'équipe source ; ce n'est pas un domaine de référence parce que le contrat d'interface appartient à celui qui produit la donnée, pas à celui qui la prend.
 
 D'où vient la donnée et comment elle entre : le point d'entrée décide de tout le reste de la chaîne, et une erreur commise ici se repaie trois fois plus loin.
 

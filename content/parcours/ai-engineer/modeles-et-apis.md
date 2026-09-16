@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/ai-engineer
 ---
 
-**Autonomie.** L'attendu est de conduire l'arbitrage à cinq axes sur ses propres cas mesurés et de le tenir devant un achat, une DSI ou un fournisseur ; pas plus haut, parce que servir soi-même des poids sur GPU — vLLM, quantification, traitement par lots — reste un appui de la plateforme.
+Niveau attendu : **autonomie**. L'attendu est de conduire l'arbitrage à cinq axes sur ses propres cas mesurés et de le tenir devant un achat, une DSI ou un fournisseur ; pas plus haut, parce que servir soi-même des poids sur GPU — vLLM, quantification, traitement par lots — reste un appui de la plateforme.
 
 Un modèle pré-entraîné est un composant qu'on remplace, pas un choix d'architecture définitif — et la couche par laquelle passe tout votre trafic mérite plus de soin que le modèle lui-même.
 

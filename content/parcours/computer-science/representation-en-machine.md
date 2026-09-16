@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/computer-science
 ---
 
-**Usage.** Ces sujets se rencontrent sous forme de bugs et se referment avec la documentation une fois le mécanisme reconnu — à une exception près, l'arithmétique flottante en apprentissage, où l'exigence monte d'un cran parce que l'erreur y est silencieuse.
+Niveau attendu : **usage**. Ces sujets se rencontrent sous forme de bugs et se referment avec la documentation une fois le mécanisme reconnu — à une exception près, l'arithmétique flottante en apprentissage, où l'exigence monte d'un cran parce que l'erreur y est silencieuse.
 
 Le chapitre qui explique les bugs qu'on ne comprend pas : le caractère devenu point d'interrogation, la somme de flottants qui ne tombe pas juste, le fichier binaire illisible ailleurs.
 

@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/ai-engineer
 ---
 
-**Autonomie.** Mesurer un rappel, passer à l'hybride et régler les paramètres d'un index sont des gestes qu'un confirmé pose seul et justifie ; la recherche d'information comme discipline — apprentissage de classement, index distribués à grande échelle — appelle encore un spécialiste.
+Niveau attendu : **autonomie**. Mesurer un rappel, passer à l'hybride et régler les paramètres d'un index sont des gestes qu'un confirmé pose seul et justifie ; la recherche d'information comme discipline — apprentissage de classement, index distribués à grande échelle — appelle encore un spécialiste.
 
 Un embedding projette un texte dans un espace où la proximité géométrique approxime la proximité de sens : c'est ce qui permet de chercher « comment annuler mon abonnement » et de trouver un document qui parle de « résiliation ».
 

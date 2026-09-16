@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/ai-engineer
 ---
 
-**Usage.** Un confirmé câble des défenses documentées — séparation des canaux, filtrage en entrée et en sortie, moindre privilège, suite de prompts adverses rejouée en intégration continue — mais l'exercice adverse complet relève d'[[parcours/ai-red-teaming/index|AI Red Teaming]] et la qualification AI Act du juridique : les convoquer à temps compte ici plus que trancher soi-même.
+Niveau attendu : **usage**. Un confirmé câble des défenses documentées — séparation des canaux, filtrage en entrée et en sortie, moindre privilège, suite de prompts adverses rejouée en intégration continue — mais l'exercice adverse complet relève d'[[parcours/ai-red-teaming/index|AI Red Teaming]] et la qualification AI Act du juridique : les convoquer à temps compte ici plus que trancher soi-même.
 
 Un modèle ne distingue pas les instructions de son développeur de celles présentes dans les données qu'il lit : c'est la faille structurelle de toute application LLM, et la défense est architecturale.
 

@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/data-engineer
 ---
 
-**Usage.** On attend d'un confirmé qu'il se serve d'un moteur distribué et d'un bus d'événements gérés sur un chemin balisé, documentation ouverte ; régler un brassage de partitions ou exploiter un cluster de courtiers est un métier de spécialiste, et l'arbitrage qui compte vraiment — distribuer ou non — se joue en amont, au socle.
+Niveau attendu : **usage**. On attend d'un confirmé qu'il se serve d'un moteur distribué et d'un bus d'événements gérés sur un chemin balisé, documentation ouverte ; régler un brassage de partitions ou exploiter un cluster de courtiers est un métier de spécialiste, et l'arbitrage qui compte vraiment — distribuer ou non — se joue en amont, au socle.
 
 Que faire quand le volume ou le débit dépasse ce qu'une machine traite confortablement : distribuer le calcul, ou découpler les producteurs des consommateurs par un bus d'événements.
 

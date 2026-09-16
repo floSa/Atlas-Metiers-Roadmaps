@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/mlops
 ---
 
-**Usage.** Un confirmé se sert du protocole que le data scientist a défini, sait refuser un découpage qui fuit et lit une courbe de calibration ; concevoir la métrique et produire une explication opposable sont hors de son périmètre réel, et l'explicabilité s'y tient à la notion — reconnaître le besoin, savoir qui appeler.
+Niveau attendu : **usage**. Un confirmé se sert du protocole que le data scientist a défini, sait refuser un découpage qui fuit et lit une courbe de calibration ; concevoir la métrique et produire une explication opposable sont hors de son périmètre réel, et l'explicabilité s'y tient à la notion — reconnaître le besoin, savoir qui appeler.
 
 Reconnaître un résultat trop beau pour être vrai, mesurer ce qui compte pour le métier, et pouvoir dire pourquoi une décision a été prise : trois exigences distinctes que la même page sert.
 

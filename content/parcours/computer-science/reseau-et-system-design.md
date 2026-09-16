@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/computer-science
 ---
 
-**Autonomie.** Concevoir des délais d'attente, des reprises, une file et un cache, puis défendre le dimensionnement en revue, fait partie de ce qu'on livre — l'exploitation du réseau d'entreprise, elle, appartient à d'autres, qu'on sait nommer.
+Niveau attendu : **autonomie**. Concevoir des délais d'attente, des reprises, une file et un cache, puis défendre le dimensionnement en revue, fait partie de ce qu'on livre — l'exploitation du réseau d'entreprise, elle, appartient à d'autres, qu'on sait nommer.
 
 Le réseau est ce qui casse quand le code fonctionne : délais d'attente sur un point d'accès, certificat refusé derrière un proxy d'entreprise, DNS qui échoue dans un conteneur.
 

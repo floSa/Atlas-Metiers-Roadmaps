@@ -6,7 +6,7 @@ statut: actif
 source: https://roadmap.sh/ai-agents
 ---
 
-**Autonomie.** Trancher entre table de faits et index vectoriel, écrire une stratégie d'oubli explicite et la défendre en revue est attendu d'un confirmé ; pas la référence, parce que la mémoire reste un sous-système emprunté à la récupération documentaire, dont l'état de l'art se suit plus qu'il ne se maîtrise.
+Niveau attendu : **autonomie**. Trancher entre table de faits et index vectoriel, écrire une stratégie d'oubli explicite et la défendre en revue est attendu d'un confirmé ; pas la référence, parce que la mémoire reste un sous-système emprunté à la récupération documentaire, dont l'état de l'art se suit plus qu'il ne se maîtrise.
 
 Sans mémoire, l'agent redemande à chaque session ce qu'on lui a déjà dit ; avec une mauvaise mémoire, il rappelle avec assurance une information périmée — ce qui est pire. C'est le sous-système où les erreurs se cumulent au lieu de s'annuler.
 
