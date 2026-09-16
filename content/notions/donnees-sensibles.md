@@ -49,6 +49,6 @@ La conséquence la plus fréquente en entreprise n'est pas la génération de co
 ## Appelée par
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
-- [[parcours/ai-red-teaming|AI Red Teaming]]
+- [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/rgpd]], [[notions/controle-d-acces]], [[notions/gouvernance-ia]], [[notions/observabilite]].

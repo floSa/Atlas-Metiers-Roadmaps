@@ -53,6 +53,6 @@ Deux angles opposés. Un regroupement révèle parfois ce que l'anonymisation é
 
 - [[parcours/data-analyst|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
-- [[parcours/ai-red-teaming|AI Red Teaming]]
+- [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/apprentissage-supervise]], [[notions/analyse-de-cohorte]], [[notions/donnees-sensibles]].

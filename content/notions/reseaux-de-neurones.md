@@ -48,6 +48,6 @@ L'accès aux gradients change tout. En boîte blanche, on construit une perturba
 ## Appelée par
 
 - [[parcours/data-analyst|Data Analyst]]
-- [[parcours/ai-red-teaming|AI Red Teaming]]
+- [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/apprentissage-supervise]], [[notions/traitement-langage-naturel]], [[notions/affinage-de-modele]].

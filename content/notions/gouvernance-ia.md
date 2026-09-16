@@ -49,6 +49,6 @@ La gouvernance est ce qui donne une suite aux constats. Le red teaming n'est pas
 ## Appelée par
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
-- [[parcours/ai-red-teaming|AI Red Teaming]]
+- [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/rgpd]], [[notions/donnees-sensibles]], [[notions/modelisation-de-la-menace]], [[notions/evaluation-llm]].

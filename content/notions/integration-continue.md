@@ -54,6 +54,6 @@ Le corpus d'attaques tourne à chaque changement de prompt, de modèle, de versi
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-product-builder|AI Product Builder]]
-- [[parcours/ai-red-teaming|AI Red Teaming]]
+- [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/tests-logiciels]], [[notions/conteneurisation]], [[notions/evaluation-llm]], [[notions/plateforme-de-deploiement]].

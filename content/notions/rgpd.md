@@ -60,7 +60,7 @@ La gouvernance et le RGPD se rejoignent sur un même objet : savoir d'où vient 
 ## Appelée par
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
-- [[parcours/ai-red-teaming|AI Red Teaming]]
+- [[parcours/ai-red-teaming/index|AI Red Teaming]]
 - [[parcours/ai-product-builder|AI Product Builder]]
 - [[parcours/data-analyst|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
