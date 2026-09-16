@@ -44,7 +44,6 @@ capacités, rarement ses limites.
 | officiel | [Gemini — Sortie structurée](https://ai.google.dev/gemini-api/docs/structured-output) | contraindre la forme de la réponse, la seule façon de chaîner sans analyser du texte libre | intermédiaire |
 | code | [OpenAI Cookbook](https://github.com/openai/openai-cookbook) | des exemples qui tournent, maintenus par l'éditeur — le meilleur point d'entrée pratique | débutant |
 | officiel | [Hugging Face — Hub](https://huggingface.co/docs/hub/en/index) | comment sont distribués modèles, jeux de données et démonstrations | débutant |
-| officiel | [Hugging Face — Modèles](https://huggingface.co/models) | le catalogue à consulter avant de supposer qu'il faut une API propriétaire | débutant |
 | officiel | [Ollama](https://ollama.com/) | faire tourner un modèle ouvert en local. La façon la moins chère de tester une idée, et la seule quand les données ne sortent pas | intermédiaire |
 
 Ce que ces pages veulent dire pour votre travail est expliqué une fois dans

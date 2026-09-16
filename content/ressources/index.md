@@ -7,7 +7,7 @@ source: https://roadmap.sh
 
 # Ressources
 
-> [!abstract] L'entrée unique vers les sources du corpus, classées par **usage** et non par métier. 199 adresses choisies et commentées dans un catalogue amont de 3 216, toutes vérifiées le jour de la publication. Ce qu'on lit pour démarrer, ce qu'on lit pour approfondir, ce qui fait référence, et ce qu'on relit.
+> [!abstract] L'entrée unique vers les sources du corpus, classées par **usage** et non par métier. 198 adresses choisies et commentées dans un catalogue amont de 3 216, toutes vérifiées le jour de la publication. Ce qu'on lit pour démarrer, ce qu'on lit pour approfondir, ce qui fait référence, et ce qu'on relit.
 
 **Source** : capture roadmap.sh du 16 septembre 2026 · **Vérification des liens** : 16 septembre 2026 · **Rédaction** : 16 septembre 2026
 
@@ -17,7 +17,7 @@ source: https://roadmap.sh
 
 Le catalogue amont compte 3 216 ressources, soit 2 649 adresses distinctes. Publiées
 telles quelles, elles ne servent à personne : un annuaire de cette taille se consulte
-comme un moteur de recherche, sauf qu'il est moins bon. Il en reste ici **199**, chacune
+comme un moteur de recherche, sauf qu'il est moins bon. Il en reste ici **198**, chacune
 vérifiée et assortie d'une ligne qui dit ce qu'elle apporte.
 
 Quatre critères ont servi à trancher.
@@ -141,7 +141,7 @@ Et la page qui rend tout ça auditable : [[ressources/sources|d'où vient ce cor
 
 ## Ce que cette sélection ne prétend pas être
 
-Elle n'est ni neutre ni exhaustive. Cent quatre-vingt-dix-neuf ressources commentées,
+Elle n'est ni neutre ni exhaustive. Cent quatre-vingt-dix-huit ressources commentées,
 c'est autant de jugements, et ils sont discutables un par un — ce qui est précisément
 pourquoi chaque entrée dit ce qu'elle apporte plutôt que de se contenter d'exister.
 

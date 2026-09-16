@@ -222,6 +222,24 @@ refusent les requêtes automatiques. Leurs liens ne peuvent être validés qu'à
 rapport les isole sous `bloque` précisément pour qu'ils ne soient jamais confondus avec
 des liens morts.
 
+Les adresses de la sélection classées `bloque` ont donc été ouvertes une à une le
+16 septembre 2026. Résultat :
+
+| Adresse | Vérification humaine |
+|---|---|
+| `eur-lex.europa.eu/eli/reg/2024/1689/oj` | en ligne — règlement (UE) 2024/1689, JO du 12.7.2024, identité confirmée par l'identifiant CELEX `32024R1689` |
+| `huggingface.co/learn/agents-course/...` | en ligne — « What are Tools? » |
+| `huggingface.co/learn/mcp-course/...` | en ligne — « Welcome to the MCP Course » |
+| `huggingface.co/docs/hub/en/index` | en ligne — « Hugging Face Hub documentation » |
+| `docs.getdbt.com/docs/build/documentation` | en ligne — « About documentation » |
+| `dplyr.tidyverse.org` | en ligne — « A Grammar of Data Manipulation » |
+| `ggplot2.tidyverse.org` | en ligne — « Create Elegant Data Visualisations… » |
+| `dev.mysql.com/doc/` | en ligne — « MySQL Documentation » |
+| `iso.org/standard/81230.html` | **non vérifiable** — ISO refuse aussi les agents de récupération de page. L'identité de la norme (ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system*) est confirmée par ailleurs, la page elle-même ne l'est pas |
+
+Une seule adresse de la sélection reste donc non vérifiée de bout en bout, et elle est
+signalée comme telle dans [[ressources/ia-generative|sa page]].
+
 ## Réutilisation
 
 Les captures sous `data/raw/` et `data/extract/` sont dérivées de roadmap.sh et de son
