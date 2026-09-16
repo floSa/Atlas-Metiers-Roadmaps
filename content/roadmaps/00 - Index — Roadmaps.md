@@ -32,7 +32,7 @@ Les schémas se rendent nativement dans Obsidian. Aucun plugin n'est requis.
 
 ### Données
 
-- [[03 - Roadmap — Data Engineer]] — ingestion, stockage, transformation, orchestration, qualité. La plomberie sans laquelle rien ne tourne.
+- [[parcours/data-engineer/index|Data Engineer]] — ingestion, stockage, transformation, orchestration, qualité. La plomberie sans laquelle rien ne tourne.
 
 ### Modélisation
 
@@ -46,7 +46,7 @@ Les schémas se rendent nativement dans Obsidian. Aucun plugin n'est requis.
 
 ### Exploitation
 
-- [[08 - Roadmap — MLOps]] — versioning, CI/CD, orchestration, monitoring, drift, coûts, et la part LLMOps.
+- [[parcours/mlops/index|MLOps]] — versioning, CI/CD, orchestration, monitoring, drift, coûts, et la part LLMOps.
 
 ---
 
@@ -96,7 +96,7 @@ Les roadmaps datent de mars 2026 et les notes sont arrêtées au 3 août 2026. Q
 
 1. **Le prompt engineering est devenu du context engineering.** La question n'est plus comment formuler mais quoi mettre dans la fenêtre, dans quel ordre, et quoi en retirer — voir [[06 - Roadmap — Prompt Engineering]].
 2. **Les outils se déclarent, ils ne se codent plus.** MCP a standardisé la connexion modèle-outils ; écrire une bonne description d'outil est devenu une compétence en soi — voir [[07 - Roadmap — AI Agents]] et [[11 - MCP et interopérabilité]].
-3. **L'évaluation est passée avant la construction.** Sans jeu d'évaluation, il n'y a pas d'ingénierie, seulement des impressions — voir [[08 - Roadmap — MLOps]] et [[14 - Évaluation]].
+3. **L'évaluation est passée avant la construction.** Sans jeu d'évaluation, il n'y a pas d'ingénierie, seulement des impressions — voir [[parcours/mlops/index|MLOps]] et [[14 - Évaluation]].
 4. **L'auto-hébergement est redevenu réaliste.** Des modèles utiles tiennent sur une carte grand public — voir [[Modèles locaux sous 24 Go de VRAM]] et [[13 - Serving et infra locale]].
 
 ---
@@ -107,7 +107,7 @@ Les roadmaps datent de mars 2026 et les notes sont arrêtées au 3 août 2026. Q
 - [[00 - Index Data Science & IA]] — le rayon parent
 - [[Définitions]] — vocabulaire
 - [[Etat de l'art des modèles IA]] — quel modèle pour quoi
-- [[Pipeline Data]] — l'application concrète de `03 - Roadmap — Data Engineer`
+- [[Pipeline Data]] — l'application concrète du parcours Data Engineer
 - [[Liste des projets]] — où mettre tout ça en pratique
 
 ---

@@ -504,7 +504,7 @@ Six à neuf mois pour être opérationnel en travaillant à côté, et l'ordre c
 
 - [[parcours/bi-analyst/index|BI Analyst]] — le métier jumeau, côté infrastructure décisionnelle : entrepôt, modélisation dimensionnelle, dbt, couche sémantique, gouvernance. Quand une demande devient un suivi récurrent partagé, elle bascule là.
 - [[02 - Roadmap — AI and Data Scientist]] — la suite naturelle pour qui veut aller vers la modélisation et la généralisation. La frontière est détaillée en section 1.
-- [[03 - Roadmap — Data Engineer]] — l'amont : d'où viennent les tables, pourquoi elles arrivent en retard, et à qui parler quand elles sont fausses.
+- [[parcours/data-engineer/index|Data Engineer]] — l'amont : d'où viennent les tables, pourquoi elles arrivent en retard, et à qui parler quand elles sont fausses.
 - [[04 - Roadmap — Machine Learning]] — l'approfondissement de la section 9 pour qui décide d'y aller sérieusement.
 - [[05 - Roadmap — AI Engineer]] — la voie applicative si l'analyse de verbatims donne envie de construire des produits sur des modèles de langage.
 
