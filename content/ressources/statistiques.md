@@ -75,7 +75,7 @@ Voir [[notions/analyse-correlation]], [[notions/ab-testing]],
 | officiel | [scikit-learn — Recherche d'hyperparamètres](https://scikit-learn.org/stable/modules/grid_search.html) | valider sans se mentir : la validation croisée imbriquée expliquée correctement | confirmé |
 | cours | [Practical Deep Learning for Coders](https://course.fast.ai/) | fast.ai. L'approche descendante — on entraîne d'abord, on comprend ensuite | intermédiaire |
 | cours | [Google ML Crash Course — Classification](https://developers.google.com/machine-learning/crash-course/classification) | court, gratuit, et le passage sur les seuils et la matrice de confusion est le meilleur du lot | débutant |
-| officiel | [PyTorch — Documentation](https://pytorch.org/docs/stable/index.html) | le cadre devenu majoritaire en recherche comme en production | intermédiaire |
+| officiel | [PyTorch — Documentation](https://docs.pytorch.org/docs/stable/index.html) | le cadre devenu majoritaire en recherche comme en production | intermédiaire |
 | officiel | [TensorFlow — Tutoriels](https://www.tensorflow.org/tutorials) | l'autre cadre, encore très présent dans les bases de code d'entreprise | intermédiaire |
 
 Voir [[notions/apprentissage-supervise]], [[notions/apprentissage-non-supervise]],
@@ -88,7 +88,7 @@ Voir [[notions/apprentissage-supervise]], [[notions/apprentissage-non-supervise]
 | officiel | [SHAP](https://shap.readthedocs.io/en/latest/) | l'attribution de contribution la mieux fondée théoriquement, et la documentation dit ses limites | confirmé |
 | code | [LIME](https://github.com/marcotcr/lime) | l'explication locale par approximation ; plus simple, moins solide, utile quand même | intermédiaire |
 | officiel | [MLflow](https://mlflow.org/docs/latest/) | suivi d'expériences, registre de modèles. Le standard de fait | intermédiaire |
-| officiel | [DVC — Prise en main](https://dvc.org/doc/start) | versionner les données et les pipelines, pas seulement le code | intermédiaire |
+| officiel | [DVC — Prise en main](https://doc.dvc.org/start) | versionner les données et les pipelines, pas seulement le code | intermédiaire |
 
 ## Écarté, et pourquoi
 

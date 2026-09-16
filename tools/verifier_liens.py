@@ -166,6 +166,10 @@ def interroger(url: str, methode: str) -> tuple[int, str, str]:
 # ne ferait que noyer les vraies redirections.
 LOCALE = re.compile(r"^(?:[a-z]{2}|[a-z]{2}[-_][a-z]{2})$", re.I)
 
+# Le meme bruit, mais passe en parametre de requete : ?hl=fr chez Google,
+# ?lang=, ?locale=, et les drapeaux de banniere de consentement de YouTube.
+LOCALE_PARAM = {"hl", "lang", "locale", "setlang", "cbrd", "ucbcb"}
+
 
 def normaliser(url: str) -> str:
     """Pour comparer une URL de depart et une URL d'arrivee sans bruit inutile."""
@@ -175,7 +179,10 @@ def normaliser(url: str) -> str:
         hote = hote[4:]
     segments = [s for s in p.path.split("/") if s and not LOCALE.match(s)]
     chemin = "/" + "/".join(segments)
-    return urllib.parse.urlunsplit((p.scheme.replace("http", "https"), hote, chemin, p.query, ""))
+    requete = urllib.parse.urlencode(
+        [(k, v) for k, v in urllib.parse.parse_qsl(p.query) if k.lower() not in LOCALE_PARAM]
+    )
+    return urllib.parse.urlunsplit((p.scheme.replace("http", "https"), hote, chemin, requete, ""))
 
 
 def redirection_generique(depart: str, arrivee: str) -> bool:

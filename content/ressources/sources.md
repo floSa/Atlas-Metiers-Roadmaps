@@ -126,6 +126,10 @@ python3 tools/verifier_liens.py --amont    # les 2 649 URL uniques de l'amont
 python3 tools/verifier_liens.py --url https://exemple.org/page
 ```
 
+Les rapports sont versionnés sous `data/liens/` — `rapport-corpus.md` pour les liens
+cités par les notes, `rapport-selection.md` pour ceux de la sélection commentée. Le
+cache, lui, ne l'est pas : il dépend du réseau depuis lequel on lance l'outil.
+
 Les statuts :
 
 | Statut | Ce que ça veut dire | Ce qu'on en fait |
@@ -150,11 +154,15 @@ résultats :
   sauf si son statut était instable (`erreur`, `delai`, `bloque`), auquel cas le délai
   tombe à sept jours. C'est ce qui rend la veille tenable au lieu de coûter deux heures
   à chaque passage.
-- **Deux pièges traités explicitement.** Une redirection de langue
-  (`/fr/`, `/en-us/`) n'est pas un déplacement de ressource et n'est pas signalée. En
-  revanche, une redirection vers une page générique — la racine du site, l'index de la
-  rubrique, le domaine de celui qui a racheté le site — **est** signalée comme telle :
-  c'est un 404 déguisé, et c'est le cas le plus perfide parce qu'il répond 200.
+- **Deux pièges traités explicitement.** Une redirection de langue n'est pas un
+  déplacement de ressource et n'est pas signalée — qu'elle passe par le chemin
+  (`/fr/`, `/en-us/`) ou par la requête (`?hl=fr`, les drapeaux de bannière de
+  consentement). En revanche, une redirection vers une page générique — la racine du
+  site, l'index de la rubrique, le domaine de celui qui a racheté le site — **est**
+  signalée comme telle : c'est un 404 déguisé, et c'est le cas le plus perfide parce
+  qu'il répond 200. Une redirection qui conserve le dernier segment du chemin est au
+  contraire tenue pour un simple déménagement : c'est ce qui distingue un site racheté
+  qui republie ses pages d'un site racheté qui les a jetées.
 
 > [!tip] Ajout 2026
 > Le statut `bloque` n'est pas un échec de l'outil, c'est une information. EUR-Lex

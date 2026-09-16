@@ -35,12 +35,12 @@ capacités, rarement ses limites.
 
 | Type | Ressource | Ce qu'elle apporte | Niveau |
 |---|---|---|---|
-| officiel | [OpenAI — API Reference](https://platform.openai.com/docs/api-reference) | la référence de l'API la plus répandue, paramètre par paramètre | intermédiaire |
+| officiel | [OpenAI — API Reference](https://developers.openai.com/api/reference/overview) | la référence de l'API la plus répandue, paramètre par paramètre | intermédiaire |
 | officiel | [Claude — Messages API](https://platform.claude.com/docs/en/api/messages) | le format de conversation, les blocs de contenu, l'usage d'outils | intermédiaire |
 | officiel | [Gemini API](https://ai.google.dev/gemini-api/docs) | la troisième famille à connaître, notamment sur le multimodal | intermédiaire |
 | officiel | [Claude — Fenêtres de contexte](https://platform.claude.com/docs/en/build-with-claude/context-windows) | ce qui occupe réellement le contexte, et pourquoi il se remplit plus vite que prévu | intermédiaire |
 | officiel | [Claude — Comptage de jetons](https://platform.claude.com/docs/en/build-with-claude/token-counting) | compter avant d'appeler : la base de tout budget d'inférence | débutant |
-| officiel | [OpenAI — Appel de fonctions](https://platform.openai.com/docs/guides/function-calling) | le mécanisme qui transforme un modèle en pièce d'un système | intermédiaire |
+| officiel | [OpenAI — Appel de fonctions](https://developers.openai.com/api/docs/guides/function-calling) | le mécanisme qui transforme un modèle en pièce d'un système | intermédiaire |
 | officiel | [Gemini — Sortie structurée](https://ai.google.dev/gemini-api/docs/structured-output) | contraindre la forme de la réponse, la seule façon de chaîner sans analyser du texte libre | intermédiaire |
 | code | [OpenAI Cookbook](https://github.com/openai/openai-cookbook) | des exemples qui tournent, maintenus par l'éditeur — le meilleur point d'entrée pratique | débutant |
 
@@ -58,7 +58,7 @@ qui explique *pourquoi* une formulation change la sortie vaut dix listes d'astuc
 | officiel | [Gemini — Stratégies de prompt](https://ai.google.dev/gemini-api/docs/prompting-strategies) | le même terrain vu par un autre éditeur ; les écarts sont instructifs | débutant |
 | article | [Prompting Guide — Chain of Thought](https://www.promptingguide.ai/techniques/cot) | la technique et ses limites, sans promesse excessive | débutant |
 | article | [Chain-of-Thought Prompting Elicits Reasoning in LLMs](https://arxiv.org/abs/2201.11903) | l'article d'origine (Wei et al., 2022) — à lire plutôt que ses résumés | confirmé |
-| cours | [Learn Prompting — Introduction](https://learnprompting.org/courses/intro-to-prompt-engineering) | parcours gratuit et progressif, utile pour cadrer une montée en compétence d'équipe | débutant |
+| cours | [Learn Prompting — Introduction](https://learnprompting.org/courses/introduction_to_prompt_engineering) | parcours gratuit et progressif, utile pour cadrer une montée en compétence d'équipe | débutant |
 
 Détail de ce qui marche encore et de ce qui est devenu du folklore :
 [[notions/ingenierie-de-prompt]].
@@ -68,9 +68,9 @@ Détail de ce qui marche encore et de ce qui est devenu du folklore :
 | Type | Ressource | Ce qu'elle apporte | Niveau |
 |---|---|---|---|
 | article | [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) | l'article fondateur du RAG (Lewis et al., 2020). Le lire évite de croire que le RAG est une idée de 2024 | confirmé |
-| officiel | [OpenAI — Embeddings](https://platform.openai.com/docs/guides/embeddings) | ce qu'est un vecteur d'embedding et comment il se calcule, côté pratique | débutant |
-| officiel | [LlamaIndex](https://docs.llamaindex.ai/en/stable/) | la bibliothèque la plus explicite sur le découpage, l'indexation et la récupération | intermédiaire |
-| officiel | [LangChain](https://python.langchain.com/docs/introduction/) | l'écosystème le plus répandu ; utile comme catalogue de motifs même si on n'adopte pas le cadre | intermédiaire |
+| officiel | [OpenAI — Embeddings](https://developers.openai.com/api/docs/guides/embeddings) | ce qu'est un vecteur d'embedding et comment il se calcule, côté pratique | débutant |
+| officiel | [LlamaIndex](https://developers.llamaindex.ai/python/framework/) | la bibliothèque la plus explicite sur le découpage, l'indexation et la récupération | intermédiaire |
+| officiel | [LangChain](https://docs.langchain.com/oss/python/langchain/overview) | l'écosystème le plus répandu ; utile comme catalogue de motifs même si on n'adopte pas le cadre | intermédiaire |
 | officiel | [Qdrant](https://qdrant.tech/) | base vectorielle libre, documentation honnête sur les compromis d'index | intermédiaire |
 | officiel | [Chroma](https://www.trychroma.com/) | la plus simple pour un prototype local, sans infrastructure | débutant |
 | officiel | [FAISS](https://ai.meta.com/tools/faiss/) | la bibliothèque d'index de similarité de référence ; ce que les autres enveloppent | confirmé |
@@ -107,7 +107,7 @@ une opinion.
 | code | [deepeval](https://github.com/confident-ai/deepeval) | le dépôt, pour lire comment les métriques sont réellement calculées | confirmé |
 | officiel | [Langfuse](https://langfuse.com/docs) | traces, coûts et jeux d'évaluation ; le plus complet des outils libres | intermédiaire |
 | code | [langfuse](https://github.com/langfuse/langfuse) | auto-hébergeable, ce qui compte dès que les prompts contiennent des données client | confirmé |
-| code | [Instructor](https://github.com/jxnl/instructor) | sortie structurée validée et réessayée ; supprime une classe entière d'erreurs | intermédiaire |
+| code | [Instructor](https://github.com/567-labs/instructor) | sortie structurée validée et réessayée ; supprime une classe entière d'erreurs | intermédiaire |
 
 Les trois angles — négociation client, fonction non binaire, corpus adverse — sont dans
 [[notions/evaluation-llm]]. L'instrumentation générale est dans [[notions/observabilite]].
@@ -125,7 +125,7 @@ Les trois angles — négociation client, fonction non binaire, corpus adverse �
 | article | [Towards Evaluating the Robustness of Neural Networks](https://arxiv.org/abs/1608.04644) | Carlini et Wagner : la référence sur l'évaluation de robustesse, et sur les défenses qui n'en sont pas | confirmé |
 | officiel | [Claude — Atténuer jailbreaks et injections](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks) | des contre-mesures concrètes, avec leurs limites reconnues | intermédiaire |
 | officiel | [Claude — Réduire les hallucinations](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations) | ce qui marche vraiment : ancrage, citation, autorisation de répondre « je ne sais pas » | intermédiaire |
-| officiel | [OpenAI — Modération](https://platform.openai.com/docs/guides/moderation) | un filtre d'entrée et de sortie prêt à l'emploi, gratuit | débutant |
+| officiel | [OpenAI — Modération](https://developers.openai.com/api/docs/guides/moderation) | un filtre d'entrée et de sortie prêt à l'emploi, gratuit | débutant |
 | article | [Adversarial Testing for Generative AI](https://developers.google.com/machine-learning/guides/adv-testing) | une méthode de test adverse structurée, orientée évaluation plutôt qu'exploit | intermédiaire |
 
 Voir [[notions/injection-de-prompt]], [[notions/garde-fous]] et
@@ -145,12 +145,12 @@ Voir [[notions/injection-de-prompt]], [[notions/garde-fous]] et
 |---|---|---|---|
 | norme | [Règlement (UE) 2024/1689 — texte intégral](https://publications.europa.eu/resource/celex/32024R1689) | le règlement sur l'IA, servi par l'Office des publications. Contrairement au portail EUR-Lex, cette adresse répond aux robots | confirmé |
 | norme | [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) | le cadre de gestion du risque, et le vocabulaire commun avec les équipes conformité | intermédiaire |
-| norme | [ISO/IEC 42001](https://www.iso.org/standard/81230.html) | la norme de système de management de l'IA, certifiable — donc opposable en appel d'offres | confirmé |
+| norme | [ISO/IEC 42001](https://www.iso.org/standard/81230.html) | la norme de système de management de l'IA, certifiable — donc opposable en appel d'offres. Payante, et le site refuse toute vérification automatique | confirmé |
 | officiel | [EU AI Act Explorer](https://artificialintelligenceact.eu/ai-act-explorer/) | le règlement article par article, navigable. Un confort de lecture, pas une source de droit | intermédiaire |
 | officiel | [Anthropic Research](https://www.anthropic.com/research) | publications de recherche à suivre en continu | confirmé |
 | officiel | [AI Security Institute](https://www.aisi.gov.uk/) | évaluations publiques de sécurité des modèles, par un organisme public | intermédiaire |
 | officiel | [Center for AI Safety](https://www.safe.ai/) | l'autre pôle de publication à suivre sur le risque | confirmé |
-| article | [AI Index Report — Stanford HAI](https://aiindex.stanford.edu/report/) | le rapport annuel chiffré. Le seul document à citer quand une réunion réclame des ordres de grandeur | débutant |
+| article | [AI Index Report — Stanford HAI](https://hai.stanford.edu/ai-index) | le rapport annuel chiffré. Le seul document à citer quand une réunion réclame des ordres de grandeur | débutant |
 
 La lecture réglementaire côté projet est dans [[notions/gouvernance-ia]].
 

@@ -88,7 +88,7 @@ paraphrasent pas : elles se lisent.
 |---|---|
 | Règlement européen sur l'IA | [Règlement (UE) 2024/1689, texte intégral](https://publications.europa.eu/resource/celex/32024R1689) |
 | Gestion du risque IA | [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) |
-| Management de l'IA, certifiable | [ISO/IEC 42001](https://www.iso.org/standard/81230.html) |
+| Management de l'IA, certifiable | [ISO/IEC 42001](https://www.iso.org/standard/81230.html) — payante |
 | Risques des applications LLM | [OWASP GenAI Security Project](https://genai.owasp.org/) |
 | Protection des données | [Texte du RGPD](https://gdpr-info.eu/) |
 | Protocole d'accès aux outils | [Model Context Protocol](https://modelcontextprotocol.io/) |

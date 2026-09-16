@@ -43,7 +43,7 @@ Le détail des jointures, du fenêtrage et de l'optimisation est dans [[notions/
 | article | [What is a Data Warehouse?](https://cloud.google.com/learn/what-is-a-data-warehouse) | la présentation la plus sobre du concept, sans argumentaire produit malgré l'origine | débutant |
 | article | [Star Schema vs Snowflake Schema](https://www.thoughtspot.com/data-trends/data-modeling/star-schema-vs-snowflake-schema) | mise au point courte et correcte, suffisante pour démarrer | débutant |
 | article | [Normalization vs Denormalization](https://codilime.com/blog/normalization-vs-denormalization-in-databases/) | pourquoi le bon réflexe transactionnel est le mauvais réflexe décisionnel | intermédiaire |
-| officiel | [BigQuery — Introduction](https://cloud.google.com/bigquery/docs/introduction) | le modèle d'un entrepôt sans serveur : stockage et calcul séparés, facturation à la donnée lue | intermédiaire |
+| officiel | [BigQuery — Introduction](https://docs.cloud.google.com/bigquery/docs/introduction) | le modèle d'un entrepôt sans serveur : stockage et calcul séparés, facturation à la donnée lue | intermédiaire |
 | officiel | [Snowflake in 20 minutes](https://docs.snowflake.com/en/user-guide/tutorials/snowflake-in-20minutes) | la prise en main la plus rapide de l'autre entrepôt qu'on croise en entreprise | débutant |
 | officiel | [Apache Parquet](https://parquet.apache.org/) | le format colonne qui sous-tend tout le reste. Comprendre pourquoi il est rapide change les choix d'architecture | intermédiaire |
 | officiel | [Delta Lake](https://docs.databricks.com/aws/en/delta) | les transactions sur un lac de données, et le problème qu'elles résolvent vraiment | confirmé |

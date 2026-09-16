@@ -1,0 +1,5 @@
+# Le cache de verification est un artefact local : il change a chaque passage,
+# il depend du reseau depuis lequel on lance l'outil, et le versionner ne
+# produirait que des conflits. Les rapports, eux, sont versionnes : ce sont
+# eux qui rendent l'etat du parc de liens auditable dans le temps.
+cache.json
