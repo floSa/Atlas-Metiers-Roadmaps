@@ -82,6 +82,6 @@ Le cadrage du projet est dans [PROJET.md](PROJET.md), le gabarit d'une fiche mé
 
 ## Licence
 
-Le contenu rédigé est publié sous [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.fr).
-Les ressources citées restent la propriété de leurs auteurs. Le générateur
-[Quartz](https://github.com/jackyzha0/quartz) est sous licence MIT.
+Le dépôt est sous [licence MIT](LICENSE). Les ressources citées restent la propriété de
+leurs auteurs, et le générateur [Quartz](https://github.com/jackyzha0/quartz) est
+lui aussi sous MIT.
