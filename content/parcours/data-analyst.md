@@ -506,7 +506,7 @@ Six à neuf mois pour être opérationnel en travaillant à côté, et l'ordre c
 - [[02 - Roadmap — AI and Data Scientist]] — la suite naturelle pour qui veut aller vers la modélisation et la généralisation. La frontière est détaillée en section 1.
 - [[parcours/data-engineer/index|Data Engineer]] — l'amont : d'où viennent les tables, pourquoi elles arrivent en retard, et à qui parler quand elles sont fausses.
 - [[04 - Roadmap — Machine Learning]] — l'approfondissement de la section 9 pour qui décide d'y aller sérieusement.
-- [[05 - Roadmap — AI Engineer]] — la voie applicative si l'analyse de verbatims donne envie de construire des produits sur des modèles de langage.
+- [[parcours/ai-engineer/index|AI Engineer]] — la voie applicative si l'analyse de verbatims donne envie de construire des produits sur des modèles de langage.
 
 ## Pour aller plus loin
 

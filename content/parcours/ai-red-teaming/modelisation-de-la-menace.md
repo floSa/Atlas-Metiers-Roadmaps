@@ -54,4 +54,4 @@ La **triade létale** — accès à des données privées, exposition à du cont
 - [OWASP Threat Modeling](https://owasp.org/www-community/Threat_Modeling) — la méthode de modélisation, applicable telle quelle : l'IA change les surfaces, pas la démarche.
 - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — le cadre de gestion du risque de référence, et le vocabulaire commun avec les équipes de conformité.
 - [Model Context Protocol — Authorization Specification](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization) — la référence sur l'autorisation entre un agent et ses serveurs d'outils, donc sur le délégué confus.
-- [[roadmaps/07 - Roadmap — AI Agents]] — la triade létale y est détaillée côté agents : la note à lire avant celle-ci si la cible est un système agentique.
+- [[parcours/ai-agents/index|AI Agents]] — la triade létale y est détaillée côté agents : la note à lire avant celle-ci si la cible est un système agentique.

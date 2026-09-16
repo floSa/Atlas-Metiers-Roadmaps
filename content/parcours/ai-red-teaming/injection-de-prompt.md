@@ -61,4 +61,4 @@ Le chemin à démontrer est toujours le même triplet. Une **entrée non fiable*
 - [Mitigating Prompt Injection Attacks](https://research.nccgroup.com/2023/12/01/mitigating-prompt-injection-attacks/) — l'analyse des atténuations **et de leurs limites**, ce qui est plus rare que la liste des attaques.
 - [How to Prevent Indirect Prompt Injection Attacks](https://www.cobalt.io/blog/how-to-prevent-indirect-prompt-injection-attacks) — l'angle indirect traité côté parade, du point de vue de l'équipe qui déploie.
 - [GitHub MCP Exploited: Accessing Private Repositories via MCP](https://invariantlabs.ai/blog/mcp-github-vulnerability) — un cas réel et complet : entrée non fiable, capacité d'action, canal de sortie.
-- [[roadmaps/07 - Roadmap — AI Agents]] — la boucle agentique, ses outils et sa mémoire : le système qu'on teste ici.
+- [[parcours/ai-agents/index|AI Agents]] — la boucle agentique, ses outils et sa mémoire : le système qu'on teste ici.

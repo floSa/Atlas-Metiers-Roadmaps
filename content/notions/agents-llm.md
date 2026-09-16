@@ -53,7 +53,7 @@ L'usage rentable d'un agent dans ce métier est souvent dans l'atelier plutôt q
 - [What are Tools in AI Agents? — Hugging Face](https://huggingface.co/learn/agents-course/en/unit1/tools) — la partie qui détermine la qualité du résultat.
 - [Building an AI Agent Tutorial — LangChain](https://python.langchain.com/docs/tutorials/agents/) — une implémentation complète, à lire pour la structure plus que pour la bibliothèque.
 - [How to Design My First AI Agent](https://towardsdatascience.com/how-to-design-my-first-ai-agent/) — le versant conception, avec les arbitrages.
-- [[roadmaps/07 - Roadmap — AI Agents]] — la note de fond du corpus sur le sujet.
+- [[parcours/ai-agents/index|AI Agents]] — la note de fond du corpus sur le sujet.
 
 ## Appelée par
 

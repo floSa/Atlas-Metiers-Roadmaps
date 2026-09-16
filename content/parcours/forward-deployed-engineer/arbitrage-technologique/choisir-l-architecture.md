@@ -38,7 +38,7 @@ flowchart TD
 - [[notions/cout-et-latence-inference]] — un coût par requête acceptable en démonstration devient insoutenable au volume de production.
 - [[notions/affinage-de-modele]] — il crée une dette de ré-entraînement que le client ne saura pas porter ; le réserver au cas où un format ou un vocabulaire métier résiste réellement au contexte.
 
-Le contenu technique complet est dans [[roadmaps/05 - Roadmap — AI Engineer]] et [[roadmaps/07 - Roadmap — AI Agents]].
+Le contenu technique complet est dans [[parcours/ai-engineer/index|AI Engineer]] et [[parcours/ai-agents/index|AI Agents]].
 
 > [!warning] Piège
 > Choisir l'architecture sur ce qui est intéressant à construire. Le biais est réel, et d'autant plus fort que la mission est courte et le sujet à la mode.

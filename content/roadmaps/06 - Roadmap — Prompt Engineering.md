@@ -65,7 +65,7 @@ flowchart LR
 - **Tokens** — l'unité de facturation et de mesure. Environ 3 à 4 caractères en anglais, plutôt 2 à 3 en français : un texte français coûte structurellement plus cher que son équivalent anglais. Les chiffres et le code se tokenisent mal, d'où les erreurs arithmétiques historiques.
 - **Context window** — la fenêtre annoncée (souvent des centaines de milliers de tokens en 2026) n'est pas une fenêtre *utile*. Voir section 5.
 - **Hallucination** — le modèle produit toujours une continuation plausible ; il n'a pas de mode « je ne sais pas » natif. On l'obtient en le lui donnant explicitement comme option et en ancrant la réponse sur des sources (RAG).
-- **Agents** — un LLM en boucle avec des outils et un état. Le prompt devient alors un contrat d'exécution, pas une question. Voir [[07 - Roadmap — AI Agents]].
+- **Agents** — un LLM en boucle avec des outils et un état. Le prompt devient alors un contrat d'exécution, pas une question. Voir [[parcours/ai-agents/index|AI Agents]].
 - **Prompt injection** — du texte non fiable entré dans le contexte est interprété comme une instruction. Traité en section 8 ; c'est le sujet le plus mal compris de la liste.
 - **Model weights et parameters** — les poids sont figés à l'inférence. Aucun prompt ne « modifie le modèle » ; il ne fait que déplacer le point de départ de l'échantillonnage.
 - **Fine-tuning vs prompt engineering** — le prompt change le comportement à coût nul et instantanément ; le fine-tuning change le comportement par défaut et compresse le prompt. Règle pratique : on ne fine-tune qu'après avoir épuisé le prompting *et* constitué un jeu d'évaluation, jamais avant.
@@ -417,8 +417,8 @@ L'ordre le moins intuitif et le plus important : **l'évaluation avant le contex
 - [[12 - Mémoire et context engineering]] — la suite naturelle de la section 5, côté architecture et mémoire persistante
 - [[14 - Évaluation]] — méthodes, métriques et LLM-as-judge en détail ; prérequis de toute optimisation de prompt
 - [[16 - Sécurité et gouvernance]] — cadre complet dont le prompt injection n'est qu'un chapitre
-- [[07 - Roadmap — AI Agents]] — où ReAct, tool calling et descriptions d'outils deviennent une architecture
-- [[05 - Roadmap — AI Engineer]] — le contexte applicatif dans lequel ces prompts sont déployés
+- [[parcours/ai-agents/index|AI Agents]] — où ReAct, tool calling et descriptions d'outils deviennent une architecture
+- [[parcours/ai-engineer/index|AI Engineer]] — le contexte applicatif dans lequel ces prompts sont déployés
 - [[00 - Index — Etat de l'art RAG 2026]] — le contextual prompting industrialisé
 
 ## Pour aller plus loin
