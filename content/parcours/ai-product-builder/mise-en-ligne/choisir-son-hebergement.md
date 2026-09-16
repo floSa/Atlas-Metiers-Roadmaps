@@ -2,7 +2,7 @@
 title: Choisir son hébergement
 ---
 
-Niveau attendu : **autonomie**. Prendre le niveau de prise en charge le plus élevé qui tient la contrainte la plus dure est un compromis à assumer devant qui réclamera plus de contrôle.
+Niveau attendu : **autonomie**. Le compromis entre ce qu'on configure et ce qu'on contrôle s'assume devant qui réclamera plus de maîtrise, et se révise dès qu'une contrainte du cadrage bouge.
 
 La grille utile n'est pas la marque mais le **niveau de prise en charge** qu'on achète : plus la plateforme en fait, moins on configure et moins on contrôle. Le bon choix est le niveau le plus élevé qui satisfait la contrainte la plus dure du cadrage.
 

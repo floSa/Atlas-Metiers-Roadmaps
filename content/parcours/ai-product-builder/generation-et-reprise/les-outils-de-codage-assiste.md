@@ -2,7 +2,7 @@
 title: Les outils de codage assisté
 ---
 
-Niveau attendu : **autonomie**. Les trois catégories se choisissent selon le travail du jour, et le choix se défend ; ce sont les noms qui changent tous les six mois, pas le raisonnement.
+Niveau attendu : **autonomie**. On change d'outil selon le travail du jour et on assume ce choix devant une équipe qui en utilise un autre : c'est le raisonnement qui se transmet, jamais l'outil.
 
 Trois catégories stables, un critère de choix en une question, et un facteur de qualité qui ne dépend pas du modèle. Les noms changent tous les six mois ; les cases, non.
 
