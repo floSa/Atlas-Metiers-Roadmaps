@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-agents
 ---
 
+**Référence.** Premier des deux domaines où un ingénieur d'agents confirmé doit faire autorité : le critère d'arrêt, la validation des arguments côté application et l'arbitrage entre autonomie et graphe déterministe sont exactement ce que personne d'autre dans la salle ne tranchera à sa place.
+
 Ce qui distingue un agent d'un appel de modèle, c'est la boucle : il choisit une action, observe le résultat réel, et décide de la suite. Cette rétroaction produit toute la valeur — et toute la difficulté opérationnelle.
 
 ```mermaid
