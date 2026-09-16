@@ -66,10 +66,6 @@
    ]
   },
   {
-   "heading": "1",
-   "nodes": []
-  },
-  {
    "heading": "2",
    "nodes": [
     {
@@ -353,16 +349,11 @@
       }
      ],
      "file": "mlops@Qa85hEVe2kz62k9Pj4QCA.md"
-    }
-   ]
-  },
-  {
-   "heading": "8",
-   "nodes": [
+    },
     {
-     "id": "uPzzUpI0--7OWDfNeBIjt",
-     "type": "todo",
-     "label": "Deployment Models, CI/CD",
+     "id": "SWEAVNGiQp5sTm3NWp4n5",
+     "type": "topic",
+     "label": "AI Engineering",
      "body": "",
      "resources": [],
      "file": null
@@ -374,28 +365,16 @@
      "body": "",
      "resources": [],
      "file": null
-    },
-    {
-     "id": "SWEAVNGiQp5sTm3NWp4n5",
-     "type": "topic",
-     "label": "AI Engineering",
-     "body": "",
-     "resources": [],
-     "file": null
     }
    ]
   },
   {
    "heading": "10",
-   "nodes": []
-  },
-  {
-   "heading": "9",
    "nodes": [
     {
-     "id": "zX4rhaEsjEuRAWWY83Sae",
+     "id": "uPzzUpI0--7OWDfNeBIjt",
      "type": "todo",
-     "label": "AI Coding Assitants, AI App Builders",
+     "label": "Deployment Models, CI/CD",
      "body": "",
      "resources": [],
      "file": null
@@ -404,6 +383,14 @@
      "id": "u7jmgvZYpKSzu9t7e0ACh",
      "type": "todo",
      "label": "Prompt Engineering, LLMs, RAG, Agents, Fine-tuning",
+     "body": "",
+     "resources": [],
+     "file": null
+    },
+    {
+     "id": "zX4rhaEsjEuRAWWY83Sae",
+     "type": "todo",
+     "label": "AI Coding Assitants, AI App Builders",
      "body": "",
      "resources": [],
      "file": null

@@ -50,10 +50,6 @@ Excel is a powerful tool utilized by data analysts worldwide to store, manipulat
 
 - `@course` [Microsoft Excel Course](https://support.microsoft.com/en-us/office/excel-video-training-9bc05390-e94c-46af-a5b3-d7c22f6990bb)
 
-#### Key Concepts of Data
-
-Data analysis is the process of inspecting, cleansing, transforming, and modeling data to discover useful information and support decision-making. In the broadest sense, data can be classified into various types like nominal, ordinal, interval and ratio, each with a specific role and analysis technique. Higher-dimensional data types like time-series, panel data, and multi-dimensional arrays are also critical. On the other hand, data quality and data management are key concepts to ensure clean and reliable datasets. With an understanding of these fundamental concepts, a data analyst can transform raw data into meaningful insights.
-
 #### Diagnostic Analytics
 
 Diagnostic analytics examines data to answer "why did it happen?" It goes beyond describing outcomes to identifying the causes and contributing factors behind them. Techniques include drill-down analysis, data discovery, correlations, and filtering to isolate the drivers of a specific result.
@@ -61,19 +57,37 @@ Diagnostic analytics examines data to answer "why did it happen?" It goes beyond
 - `@article` [What is Diagnostic Analytics?](https://amplitude.com/explore/analytics/what-diagnostic-analytics)
 - `@video` [What is Diagnostic Analytics? | Understanding Data-Driven Decision Making](https://www.youtube.com/watch?v=ikZjeAC1yJ0)
 
-#### IF
+#### Predictive Analytics
 
-The IF function in Excel is a crucial tool for data analysts, enabling them to create conditional statements, clean and validate data, perform calculations based on specific conditions, create custom metrics, apply conditional formatting, automate tasks, and generate dynamic reports. Data analysts use IF to categorize data, handle missing values, calculate bonuses or custom metrics, highlight trends, and enhance visualizations, ultimately facilitating informed decision-making through data analysis.
+Predictive analytics uses historical data and statistical models to forecast future outcomes. It answers the question "what is likely to happen?" Techniques include regression, time series analysis, and machine learning models trained on past data to predict future behavior or events.
 
-- `@article` [IF Function](https://support.microsoft.com/en-gb/office/if-function-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2)
-- `@article` [Excel IF Function](https://exceljet.net/functions/if-function)
+- `@article` [What is Predictive Analytics? - Google](https://cloud.google.com/learn/what-is-predictive-analytics)
+- `@video` [What is Predictive Analytics?](https://www.youtube.com/watch?v=cVibCHRSxB0)
 
-#### DATEDIF
+#### Prescriptive Analytics
 
-`DATEDIF` calculates the difference between two dates in days, months, or years. It is useful for computing ages, tenures, and durations. Despite being an undocumented legacy function, it remains widely used in practice for date arithmetic.
+Prescriptive analytics recommends actions to achieve a desired outcome, answering "what should we do?" It builds on predictive analytics by combining forecasts with optimization and decision logic. Examples include recommendation engines, dynamic pricing systems, and supply chain optimization tools.
 
-- `@article` [DATEDIF function](https://support.microsoft.com/en-gb/office/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c)
-- `@article` [How to use DATEDIF in Excel](https://www.excel-easy.com/examples/datedif.html)
+- `@article` [What is Prescriptive Analysis?](https://www.investopedia.com/terms/p/prescriptive-analytics.asp)
+- `@video` [Examples of Prescriptive Analysis](https://www.youtube.com/watch?v=NOo8Nc9zG20)
+
+#### Charting
+
+Excel charts turn tabular data into visual representations like bar charts, line charts, pie charts, and scatter plots. Charts are created directly from selected data and can be formatted and embedded in reports and dashboards. Knowing which chart type suits different data and messages is an important analytical skill.
+
+- `@article` [Create a chart from start to finish](https://support.microsoft.com/en-gb/office/create-a-chart-from-start-to-finish-0baf399e-dd61-4e18-8a73-b3fd5d5680c2)
+- `@video` [Excel Charts and Graphs Tutorial](https://www.youtube.com/watch?v=eHtZrIb0oWY)
+
+### Learn a Programming Lang.
+
+Programming extends the analytical capabilities of a data analyst beyond what spreadsheet tools can handle. Python and R are the two most common languages used in data analysis for data manipulation, statistical modeling, and visualization. Choosing one and learning it well is the foundation for working with large datasets and building repeatable analyses.
+
+- `@article` [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
+- `@article` [How to Become a Data Analyst with No Experience: My Advice](https://roadmap.sh/data-analyst/how-to-become)
+
+#### Key Concepts of Data
+
+Data analysis is the process of inspecting, cleansing, transforming, and modeling data to discover useful information and support decision-making. In the broadest sense, data can be classified into various types like nominal, ordinal, interval and ratio, each with a specific role and analysis technique. Higher-dimensional data types like time-series, panel data, and multi-dimensional arrays are also critical. On the other hand, data quality and data management are key concepts to ensure clean and reliable datasets. With an understanding of these fundamental concepts, a data analyst can transform raw data into meaningful insights.
 
 #### Collection
 
@@ -89,20 +103,6 @@ Data cleanup (or data cleaning) is the process of identifying and correcting err
 - `@article` [Top 10 Ways to Clean Your Data](https://support.microsoft.com/en-gb/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19)
 - `@video` [Master Data Cleaning Essentials on Excel in Just 10 Minutes](https://www.youtube.com/watch?v=jxq4-KSB_OA)
 
-#### Predictive Analytics
-
-Predictive analytics uses historical data and statistical models to forecast future outcomes. It answers the question "what is likely to happen?" Techniques include regression, time series analysis, and machine learning models trained on past data to predict future behavior or events.
-
-- `@article` [What is Predictive Analytics? - Google](https://cloud.google.com/learn/what-is-predictive-analytics)
-- `@video` [What is Predictive Analytics?](https://www.youtube.com/watch?v=cVibCHRSxB0)
-
-#### VLOOKUP / HLOOKUP
-
-`VLOOKUP` searches for a value in the first column of a table and returns a value from a specified column in the same row. `HLOOKUP` does the same horizontally, searching across the first row. Both are used to merge data from different tables, though they have been largely replaced by `XLOOKUP` in modern Excel.
-
-- `@article` [VLOOKUP Function](https://support.microsoft.com/en-gb/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)
-- `@article` [HLOOKUP Function](https://support.microsoft.com/en-gb/office/hlookup-function-a3034eec-b719-4ba3-bb65-e1ad662ed95f)
-
 #### Exploration
 
 Data exploration, or exploratory data analysis (EDA), is the process of examining a dataset to understand its structure, distributions, and relationships before formal analysis. It involves computing summary statistics, creating visualizations, and identifying patterns, outliers, and anomalies. EDA guides the choice of analytical methods and helps surface unexpected findings.
@@ -116,34 +116,12 @@ Data visualisation is the representation of data in graphical or visual form. Ch
 - `@article` [Data Visualization Beginner's Guide](https://www.tableau.com/en-gb/learn/articles/data-visualization)
 - `@video` [Top 11 Data Science Skills to Master in 2026](https://roadmap.sh/ai-data-scientist/skills)
 
-#### Prescriptive Analytics
-
-Prescriptive analytics recommends actions to achieve a desired outcome, answering "what should we do?" It builds on predictive analytics by combining forecasts with optimization and decision logic. Examples include recommendation engines, dynamic pricing systems, and supply chain optimization tools.
-
-- `@article` [What is Prescriptive Analysis?](https://www.investopedia.com/terms/p/prescriptive-analytics.asp)
-- `@video` [Examples of Prescriptive Analysis](https://www.youtube.com/watch?v=NOo8Nc9zG20)
-
-#### REPLACE / SUBSTITUTE
-
-`REPLACE` replaces a portion of a text string based on position and length. `SUBSTITUTE` replaces all occurrences of a specific substring with another string. Both are used for text cleaning and standardization in Excel.
-
-- `@article` [Replace Function](https://support.microsoft.com/en-us/office/replace-function-8d799074-2425-4a8a-84bc-82472868878a)
-- `@article` [Substitute Function](https://support.microsoft.com/en-us/office/substitute-function-6434944e-a904-4336-a9b0-1e58df3bc332)
-
 #### Statistical Analysis
 
 Statistical analysis applies mathematical techniques to summarize, interpret, and draw inferences from data. Core methods include descriptive statistics, hypothesis testing, correlation analysis, and regression. Statistical rigor ensures that conclusions drawn from data are valid and not the result of chance.
 
 - `@article` [Understanding Statistical Analysis](https://www.simplilearn.com/what-is-statistical-analysis-article)
 - `@video` [Statistical Analysis](https://www.youtube.com/watch?v=XjMBZE1DuBY)
-
-#### UPPER / LOWER / PROPER
-
-`UPPER` converts text to all uppercase, `LOWER` to all lowercase, and `PROPER` capitalizes the first letter of each word. These functions are used to standardize text formatting in datasets, especially when combining data from multiple sources with inconsistent casing.
-
-- `@article` [UPPER Function](https://support.microsoft.com/en-gb/office/upper-function-c11f29b3-d1a3-4537-8df6-04d0049963d6)
-- `@article` [LOWER Function](https://support.microsoft.com/en-gb/office/lower-function-3f21df02-a80c-44b2-afaf-81358f9fdeb4)
-- `@article` [PROPER Function](https://support.microsoft.com/en-gb/office/proper-function-52a5a283-e8b2-49be-8506-b2887b889f94)
 
 #### Machine Learning
 
@@ -153,6 +131,44 @@ Machine learning is a branch of artificial intelligence where systems learn patt
 - `@article` [What is Machine Learning (ML)?](https://www.ibm.com/topics/machine-learning)
 - `@article` [Data Science vs Machine Learning: How are they different?](https://roadmap.sh/ai-data-scientist/vs-machine-learning)
 - `@video` [What is Machine Learning?](https://www.youtube.com/watch?v=9gGnTQTYNaE)
+
+## Learn Common Functions
+
+#### IF
+
+The IF function in Excel is a crucial tool for data analysts, enabling them to create conditional statements, clean and validate data, perform calculations based on specific conditions, create custom metrics, apply conditional formatting, automate tasks, and generate dynamic reports. Data analysts use IF to categorize data, handle missing values, calculate bonuses or custom metrics, highlight trends, and enhance visualizations, ultimately facilitating informed decision-making through data analysis.
+
+- `@article` [IF Function](https://support.microsoft.com/en-gb/office/if-function-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2)
+- `@article` [Excel IF Function](https://exceljet.net/functions/if-function)
+
+#### DATEDIF
+
+`DATEDIF` calculates the difference between two dates in days, months, or years. It is useful for computing ages, tenures, and durations. Despite being an undocumented legacy function, it remains widely used in practice for date arithmetic.
+
+- `@article` [DATEDIF function](https://support.microsoft.com/en-gb/office/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c)
+- `@article` [How to use DATEDIF in Excel](https://www.excel-easy.com/examples/datedif.html)
+
+#### VLOOKUP / HLOOKUP
+
+`VLOOKUP` searches for a value in the first column of a table and returns a value from a specified column in the same row. `HLOOKUP` does the same horizontally, searching across the first row. Both are used to merge data from different tables, though they have been largely replaced by `XLOOKUP` in modern Excel.
+
+- `@article` [VLOOKUP Function](https://support.microsoft.com/en-gb/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)
+- `@article` [HLOOKUP Function](https://support.microsoft.com/en-gb/office/hlookup-function-a3034eec-b719-4ba3-bb65-e1ad662ed95f)
+
+#### REPLACE / SUBSTITUTE
+
+`REPLACE` replaces a portion of a text string based on position and length. `SUBSTITUTE` replaces all occurrences of a specific substring with another string. Both are used for text cleaning and standardization in Excel.
+
+- `@article` [Replace Function](https://support.microsoft.com/en-us/office/replace-function-8d799074-2425-4a8a-84bc-82472868878a)
+- `@article` [Substitute Function](https://support.microsoft.com/en-us/office/substitute-function-6434944e-a904-4336-a9b0-1e58df3bc332)
+
+#### UPPER / LOWER / PROPER
+
+`UPPER` converts text to all uppercase, `LOWER` to all lowercase, and `PROPER` capitalizes the first letter of each word. These functions are used to standardize text formatting in datasets, especially when combining data from multiple sources with inconsistent casing.
+
+- `@article` [UPPER Function](https://support.microsoft.com/en-gb/office/upper-function-c11f29b3-d1a3-4537-8df6-04d0049963d6)
+- `@article` [LOWER Function](https://support.microsoft.com/en-gb/office/lower-function-3f21df02-a80c-44b2-afaf-81358f9fdeb4)
+- `@article` [PROPER Function](https://support.microsoft.com/en-gb/office/proper-function-52a5a283-e8b2-49be-8506-b2887b889f94)
 
 #### CONCAT
 
@@ -168,13 +184,6 @@ Trim is considered a basic yet vital function within the scope of data analysis.
 - `@article` [TRIM Function](https://corporatefinanceinstitute.com/resources/excel/trim-function/)
 - `@article` [Excel TRIM Function](https://support.microsoft.com/en-gb/office/trim-function-410388fa-c5df-49c6-b16c-9e5630b479f9)
 
-#### Charting
-
-Excel charts turn tabular data into visual representations like bar charts, line charts, pie charts, and scatter plots. Charts are created directly from selected data and can be formatted and embedded in reports and dashboards. Knowing which chart type suits different data and messages is an important analytical skill.
-
-- `@article` [Create a chart from start to finish](https://support.microsoft.com/en-gb/office/create-a-chart-from-start-to-finish-0baf399e-dd61-4e18-8a73-b3fd5d5680c2)
-- `@video` [Excel Charts and Graphs Tutorial](https://www.youtube.com/watch?v=eHtZrIb0oWY)
-
 #### AVERAGE
 
 The average, also often referred to as the mean, is one of the most commonly used mathematical calculations in data analysis. It provides a simple, useful measure of a set of data. For a data analyst, understanding how to calculate and interpret averages is fundamental. Basic functions, including the average, are integral components in data analysis that are used to summarize and understand complex data sets. Though conceptually simple, the power of average lies in its utility in a range of analyses - from forecasting models to understanding trends and patterns in the dataset.
@@ -188,23 +197,6 @@ The Count function in data analysis is one of the most fundamental tasks that a 
 
 - `@article` [COUNT Function](https://support.microsoft.com/en-gb/office/count-function-a59cd7fc-b623-4d93-87a4-d23bf411294c)
 - `@video` [How to Count Cells in Microsoft Excel (COUNT, COUNTA, COUNTIF, COUNTIFS Functions)](https://www.youtube.com/watch?v=5RFLncJuMng)
-
-### Learn a Programming Lang.
-
-Programming extends the analytical capabilities of a data analyst beyond what spreadsheet tools can handle. Python and R are the two most common languages used in data analysis for data manipulation, statistical modeling, and visualization. Choosing one and learning it well is the foundation for working with large datasets and building repeatable analyses.
-
-- `@article` [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
-- `@article` [How to Become a Data Analyst with No Experience: My Advice](https://roadmap.sh/data-analyst/how-to-become)
-
-## 1
-
-#### Pivot Tables
-
-Pivot tables are one of Excel's most powerful features for summarizing and analyzing large datasets. They allow data to be grouped, filtered, and aggregated across multiple dimensions without writing formulas. Pivot tables are used to quickly explore data and build summary reports by dragging and dropping fields.
-
-- `@article` [Create a Pivot Table](https://support.microsoft.com/en-gb/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576)
-- `@article` [Pivot Tables in Excel](https://www.excel-easy.com/data-analysis/pivot-tables.html)
-- `@video` [How to Create a Pivot Table in Excel](https://www.youtube.com/watch?v=PdJzy956wo4)
 
 #### SUM
 
@@ -220,6 +212,16 @@ Understanding the minimum and maximum values in your dataset is critical in data
 - `@article` [MIN Function](https://support.microsoft.com/en-gb/office/min-function-61635d12-920f-4ce2-a70f-96f202dcc152)
 - `@article` [MAX Function](https://support.microsoft.com/en-gb/office/max-function-e0012414-9ac8-4b34-9a47-73e662c08098)
 
+## 1
+
+#### Pivot Tables
+
+Pivot tables are one of Excel's most powerful features for summarizing and analyzing large datasets. They allow data to be grouped, filtered, and aggregated across multiple dimensions without writing formulas. Pivot tables are used to quickly explore data and build summary reports by dragging and dropping fields.
+
+- `@article` [Create a Pivot Table](https://support.microsoft.com/en-gb/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576)
+- `@article` [Pivot Tables in Excel](https://www.excel-easy.com/data-analysis/pivot-tables.html)
+- `@video` [How to Create a Pivot Table in Excel](https://www.youtube.com/watch?v=PdJzy956wo4)
+
 ### Data Manipulation Libraries
 
 Data manipulation libraries are essential tools in data science and analytics, enabling efficient handling, transformation, and analysis of large datasets. Python, a popular language for data science, offers several powerful libraries for this purpose. Pandas is a highly versatile library that provides data structures like DataFrames, which allow for easy manipulation and analysis of tabular data. NumPy, another fundamental library, offers support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays. Together, Pandas and NumPy form the backbone of data manipulation in Python, facilitating tasks such as data cleaning, merging, reshaping, and statistical analysis, thus streamlining the data preparation process for machine learning and other data-driven applications.
@@ -229,8 +231,6 @@ Data manipulation libraries are essential tools in data science and analytics, e
 - `@article` [Top Python Libraries for Data Science](https://www.simplilearn.com/top-python-libraries-for-data-science-article)
 
 ## 2
-
-## Learn Common Functions
 
 ### Data Visualisation Libraries
 
@@ -274,19 +274,6 @@ Application Programming Interfaces, better known as APIs, play a fundamental rol
 - `@article` [What is an API?](https://aws.amazon.com/what-is/api/)
 - `@article` [A Beginner's Guide to APIs](https://www.postman.com/what-is-an-api/)
 
-#### Range
-
-Range is the simplest measure of dispersion, calculated as the difference between the maximum and minimum values in a dataset. It gives a quick sense of how wide the data spans but is sensitive to outliers. For a more robust measure, interquartile range (IQR) is preferred.
-
-- `@article` [How to Find the Range of a Data Set](https://www.scribbr.co.uk/stats/range-statistics/)
-
-#### Variance
-
-Variance measures the average squared deviation of each value from the mean. It quantifies how much the data points differ from the average. A higher variance indicates greater spread. Variance is the basis for standard deviation and many inferential statistical tests.
-
-- `@article` [What is Variance?](https://www.investopedia.com/terms/v/variance.asp)
-- `@article` [How to Calculate Variance](https://www.scribbr.co.uk/stats/variance-meaning/)
-
 #### Handling Missing Data
 
 Missing data occurs when values are absent in a dataset, which can distort analysis if not handled carefully. Common strategies include removing rows with missing values, imputing with the mean, median, or a predicted value, and flagging missingness as its own category. The right approach depends on how much data is missing and why.
@@ -300,13 +287,6 @@ Web scraping plays a significant role in collecting unique datasets for data ana
 
 - `@article` [What is Web Scraping & What is it used for?](https://www.parsehub.com/blog/what-is-web-scraping/)
 - `@video` [What is Web Scraping?](https://www.youtube.com/watch?v=dlj_QL-ENJM)
-
-#### Standard Deviation
-
-Standard deviation is the square root of variance and expresses dispersion in the same units as the original data. It is the most commonly used measure of spread. A low standard deviation means values are clustered near the mean; a high one means they are more spread out.
-
-- `@article` [Standard Deviation Formula and Uses vs. Variance](https://www.investopedia.com/terms/s/standarddeviation.asp)
-- `@video` [Standard Deviation](https://www.youtube.com/watch?v=esskJJF8pCc)
 
 ### Data Cleanup
 
@@ -327,6 +307,32 @@ Outliers are data points that differ significantly from the rest of the dataset.
 
 - `@article` [Outliers](https://www.mathsisfun.com/data/outliers.html)
 
+#### Data Transformation
+
+Data Transformation, also known as Data Wrangling, is an essential part of a Data Analyst's role. This process involves the conversion of data from a raw format into another format to make it more appropriate and valuable for a variety of downstream purposes such as analytics. Data Analysts transform data to make the data more suitable for analysis, ensure accuracy, and to improve data quality. The right transformation techniques can give the data a structure, multiply its value, and enhance the accuracy of the analytics performed by serving meaningful results.
+
+- `@article` [What is data transformation?](https://www.qlik.com/us/data-management/data-transformation)
+
+#### Range
+
+Range is the simplest measure of dispersion, calculated as the difference between the maximum and minimum values in a dataset. It gives a quick sense of how wide the data spans but is sensitive to outliers. For a more robust measure, interquartile range (IQR) is preferred.
+
+- `@article` [How to Find the Range of a Data Set](https://www.scribbr.co.uk/stats/range-statistics/)
+
+#### Variance
+
+Variance measures the average squared deviation of each value from the mean. It quantifies how much the data points differ from the average. A higher variance indicates greater spread. Variance is the basis for standard deviation and many inferential statistical tests.
+
+- `@article` [What is Variance?](https://www.investopedia.com/terms/v/variance.asp)
+- `@article` [How to Calculate Variance](https://www.scribbr.co.uk/stats/variance-meaning/)
+
+#### Standard Deviation
+
+Standard deviation is the square root of variance and expresses dispersion in the same units as the original data. It is the most commonly used measure of spread. A low standard deviation means values are clustered near the mean; a high one means they are more spread out.
+
+- `@article` [Standard Deviation Formula and Uses vs. Variance](https://www.investopedia.com/terms/s/standarddeviation.asp)
+- `@video` [Standard Deviation](https://www.youtube.com/watch?v=esskJJF8pCc)
+
 #### Central Tendency
 
 Measures of central tendency describe the center or typical value of a dataset. The three main measures are mean (arithmetic average), median (middle value), and mode (most frequent value). The choice between them depends on the data's distribution and whether outliers are present.
@@ -334,30 +340,12 @@ Measures of central tendency describe the center or typical value of a dataset. 
 - `@article` [Measures of central tendency](https://www.abs.gov.au/statistics/understanding-statistics/statistical-terms-and-concepts/measures-central-tendency)
 - `@video` [Understanding Central Tendency](https://www.youtube.com/watch?v=n_sSVhHBdj4)
 
-#### Distribution Shape
-
-Distribution space refers to the full range of values a variable takes and how frequently each value or range of values occurs. Understanding distribution shape (symmetric, skewed, bimodal) informs which statistical methods are appropriate. Tools like histograms and density plots are used to visualize distributions.
-
-- `@article` [Shapes of Distributions: Definitions, Examples](https://www.statisticshowto.com/shapes-of-distributions/)
-
-#### Data Transformation
-
-Data Transformation, also known as Data Wrangling, is an essential part of a Data Analyst's role. This process involves the conversion of data from a raw format into another format to make it more appropriate and valuable for a variety of downstream purposes such as analytics. Data Analysts transform data to make the data more suitable for analysis, ensure accuracy, and to improve data quality. The right transformation techniques can give the data a structure, multiply its value, and enhance the accuracy of the analytics performed by serving meaningful results.
-
-- `@article` [What is data transformation?](https://www.qlik.com/us/data-management/data-transformation)
-
 #### Mean
 
 The mean is the arithmetic average of a set of values, calculated by summing all values and dividing by the count. It is the most commonly used measure of central tendency but is sensitive to outliers. When data is skewed, the median is often a better representation of the typical value.
 
 - `@article` [Measures of Central Tendency](https://statistics.laerd.com/statistical-guides/measures-central-tendency-mean-mode-median.php)
 - `@article` [Central Tendency | Understanding the Mean, Median & Mode](https://www.scribbr.co.uk/stats/measures-of-central-tendency/)
-
-#### Skewness
-
-Skewness is a crucial statistical concept driven by data analysis and is a significant parameter in understanding the distribution shape of a dataset. In essence, skewness provides a measure to define the extent and direction of asymmetry in data. A positive skewness indicates a distribution with an asymmetric tail extending towards more positive values, while a negative skew indicates a distribution with an asymmetric tail extending towards more negative values. For a data analyst, recognizing and analyzing skewness is essential as it can greatly influence model selection, prediction accuracy, and interpretation of results.
-
-- `@article` [Skewed Data](https://www.mathsisfun.com/data/skewness.html)
 
 #### Median
 
@@ -372,6 +360,18 @@ The mode is the value that appears most frequently in a dataset. It is the only 
 
 - `@article` [Mode: What is it and how to calculate it](https://www.investopedia.com/terms/m/mode.asp)
 - `@article` [Mean Median Mode Formula](https://www.cuemath.com/mean-median-mode-formula/)
+
+#### Distribution Shape
+
+Distribution space refers to the full range of values a variable takes and how frequently each value or range of values occurs. Understanding distribution shape (symmetric, skewed, bimodal) informs which statistical methods are appropriate. Tools like histograms and density plots are used to visualize distributions.
+
+- `@article` [Shapes of Distributions: Definitions, Examples](https://www.statisticshowto.com/shapes-of-distributions/)
+
+#### Skewness
+
+Skewness is a crucial statistical concept driven by data analysis and is a significant parameter in understanding the distribution shape of a dataset. In essence, skewness provides a measure to define the extent and direction of asymmetry in data. A positive skewness indicates a distribution with an asymmetric tail extending towards more positive values, while a negative skew indicates a distribution with an asymmetric tail extending towards more negative values. For a data analyst, recognizing and analyzing skewness is essential as it can greatly influence model selection, prediction accuracy, and interpretation of results.
+
+- `@article` [Skewed Data](https://www.mathsisfun.com/data/skewness.html)
 
 #### Kurtosis
 
@@ -510,6 +510,12 @@ Reinforcement learning is a type of machine learning where an agent learns to ma
 - `@article` [What is reinforcement learning](https://aws.amazon.com/what-is/reinforcement-learning/#:~:text=Reinforcement%20learning%20(RL)%20is%20a,use%20to%20achieve%20their%20goals.)
 - `@article` [What is reinforcement learning - IBM](https://www.ibm.com/topics/reinforcement-learning)
 
+### Machine Learning
+
+Machine learning is the field of building systems that learn from data to make predictions or decisions. For data analysts, understanding ML provides tools to tackle problems that go beyond traditional statistical methods, such as classifying text, detecting anomalies, and building recommendation systems. Analysts typically apply ML algorithms rather than build them from scratch.
+
+- `@roadmap` [Visit the Dedicated Machine Learning Roadmap](https://roadmap.sh/machine-learning)
+
 #### Scatter Plot
 
 A scatter plot, a crucial aspect of data visualization, is a mathematical diagram using Cartesian coordinates to represent values from two different variables. As a data analyst, understanding and interpreting scatter plots can be instrumental in identifying correlations and trends within a dataset, drawing meaningful insights, and showcasing these findings in a clear, visual manner. In addition, scatter plots are paramount in predictive analytics as they reveal patterns which can be used to predict future occurrences.
@@ -544,23 +550,17 @@ Pie charts show the proportional composition of a whole by dividing a circle int
 - `@article` [A Complete Guide to Pie Charts](https://www.atlassian.com/data/charts/pie-chart-complete-guide)
 - `@video` [What is a Pie Chart](https://www.youtube.com/watch?v=GjJdZaQrItg)
 
-### Machine Learning
+#### Model Evaluation Techniques
 
-Machine learning is the field of building systems that learn from data to make predictions or decisions. For data analysts, understanding ML provides tools to tackle problems that go beyond traditional statistical methods, such as classifying text, detecting anomalies, and building recommendation systems. Analysts typically apply ML algorithms rather than build them from scratch.
+Model evaluation measures how well a machine learning model performs on unseen data. Common metrics include accuracy, precision, recall, F1 score for classification, and mean squared error for regression. Techniques like cross-validation and train/test splits ensure that evaluation reflects real-world performance rather than overfitting to training data.
 
-- `@roadmap` [Visit the Dedicated Machine Learning Roadmap](https://roadmap.sh/machine-learning)
+- `@article` [What is Model Evaluation](https://domino.ai/data-science-dictionary/model-evaluation)
 
 #### Supervised Learning
 
 Supervised learning trains models on labeled data, where each example has an input and a known output. The model learns a mapping from inputs to outputs that generalizes to new examples. Classification and regression are the two main tasks in supervised learning.
 
 - `@article` [What is Supervised Learning?](https://cloud.google.com/discover/what-is-supervised-learning)
-
-#### Model Evaluation Techniques
-
-Model evaluation measures how well a machine learning model performs on unseen data. Common metrics include accuracy, precision, recall, F1 score for classification, and mean squared error for regression. Techniques like cross-validation and train/test splits ensure that evaluation reflects real-world performance rather than overfitting to training data.
-
-- `@article` [What is Model Evaluation](https://domino.ai/data-science-dictionary/model-evaluation)
 
 ## Popular ML Algorithms
 

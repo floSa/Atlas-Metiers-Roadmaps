@@ -112,36 +112,89 @@ def split_resources(text: str) -> tuple[str, list[dict]]:
     return body, resources
 
 
+def box(node: dict) -> tuple[float, float, float, float]:
+    """Boite englobante d'un noeud, en coordonnees absolues."""
+    pos = node.get("positionAbsolute") or node.get("position") or {}
+    x, y = pos.get("x", 0.0), pos.get("y", 0.0)
+    return x, y, x + (node.get("width") or 0), y + (node.get("height") or 0)
+
+
+def inside(node: dict, container: dict) -> bool:
+    """Vrai si le centre du noeud tombe dans la boite du conteneur."""
+    nx0, ny0, nx1, ny1 = box(node)
+    cx0, cy0, cx1, cy1 = box(container)
+    cx, cy = (nx0 + nx1) / 2, (ny0 + ny1) / 2
+    return cx0 <= cx <= cx1 and cy0 <= cy <= cy1
+
+
 def normalise(payload: dict, contents: dict[str, dict]) -> dict:
-    """Reconstruit un plan ordonne a partir des positions geometriques.
+    """Reconstruit un plan ordonne a partir de la geometrie du schema.
 
-    roadmap.sh ne stocke pas de hierarchie explicite : l'arbre n'existe qu'a
-    l'ecran. On retablit l'ordre de lecture en triant par (y, x), et on rattache
-    chaque noeud a la derniere section rencontree au-dessus de lui.
+    roadmap.sh ne stocke aucune hierarchie explicite : l'arbre n'existe qu'a
+    l'ecran. Deux signaux le retablissent, par ordre de fiabilite :
+
+      1. les noeuds de type "section" sont de vrais conteneurs, avec une boite
+         englobante ; un noeud qui tombe dedans appartient a cette section, et
+         le "label" qui tombe dedans lui donne son nom ;
+      2. a defaut de section, on rattache chaque noeud au dernier label situe
+         au-dessus de lui.
+
+    Le point 1 est necessaire : un label est place en haut a gauche de sa bande,
+    alors que les noeuds de la bande precedente peuvent descendre plus bas. Un
+    simple tri par ordonnee fait donc deriver les titres d'une bande a l'autre.
     """
-    def key(node): 
-        pos = node.get("position") or {}
-        return (round(pos.get("y", 0), 1), round(pos.get("x", 0), 1))
+    def key(node):
+        x0, y0, _, _ = box(node)
+        return (round(y0, 1), round(x0, 1))
 
-    ordered = sorted(payload.get("nodes", []), key=key)
-    sections: list[dict] = []
-    current = {"heading": None, "nodes": []}
+    nodes = payload.get("nodes", [])
+    containers = sorted((n for n in nodes if n.get("type") == "section"), key=key)
+    labels = [n for n in nodes if n.get("type") in HEADING_TYPES
+              and ((n.get("data") or {}).get("label") or "").strip()]
 
-    for node in ordered:
-        ntype = node.get("type")
-        label = ((node.get("data") or {}).get("label") or "").strip()
-        if not label:
+    # Chaque conteneur prend le nom du label qui tombe dedans.
+    named: dict[str, str] = {}
+    claimed: set[str] = set()
+    for container in containers:
+        for label in labels:
+            if label["id"] not in claimed and inside(label, container):
+                named[container["id"]] = (label["data"]["label"]).strip()
+                claimed.add(label["id"])
+                break
+
+    # Les labels hors conteneur restent des en-tetes de bande.
+    free_labels = sorted((l for l in labels if l["id"] not in claimed), key=key)
+
+    buckets: dict[str, dict] = {}
+    order: list[str] = []
+
+    def bucket(bid: str, heading):
+        if bid not in buckets:
+            buckets[bid] = {"heading": heading, "nodes": []}
+            order.append(bid)
+        return buckets[bid]
+
+    for node in sorted(nodes, key=key):
+        if node.get("type") not in CONTENT_TYPES:
             continue
-        if ntype in HEADING_TYPES:
-            if current["nodes"] or current["heading"]:
-                sections.append(current)
-            current = {"heading": label, "nodes": []}
-        elif ntype in CONTENT_TYPES:
-            entry = {"id": node["id"], "type": ntype, "label": label}
-            entry.update(contents.get(node["id"], {"body": "", "resources": [], "file": None}))
-            current["nodes"].append(entry)
-    if current["nodes"] or current["heading"]:
-        sections.append(current)
+        label_text = ((node.get("data") or {}).get("label") or "").strip()
+        if not label_text:
+            continue
+
+        host = next((c for c in containers if inside(node, c)), None)
+        if host is not None:
+            target = bucket(host["id"], named.get(host["id"]))
+        else:
+            above = [l for l in free_labels if key(l) <= key(node)]
+            heading_node = above[-1] if above else None
+            target = bucket(heading_node["id"] if heading_node else "_racine",
+                            (heading_node["data"]["label"]).strip() if heading_node else None)
+
+        entry = {"id": node["id"], "type": node["type"], "label": label_text}
+        entry.update(contents.get(node["id"], {"body": "", "resources": [], "file": None}))
+        target["nodes"].append(entry)
+
+    sections = [buckets[bid] for bid in order if buckets[bid]["nodes"]]
 
     # Les boutons renvoient vers d'autres roadmaps : c'est la carte des recouvrements.
     crossrefs = sorted({

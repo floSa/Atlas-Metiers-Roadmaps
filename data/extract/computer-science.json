@@ -386,6 +386,30 @@
      "file": "data-structures@NM7q5REW1sJgMhxJhPpLT.md"
     },
     {
+     "id": "vQm046o6ozcvLoqg9L6eL",
+     "type": "subtopic",
+     "label": "Graph",
+     "body": "Graphs in data structures are non-linear data structures made up of a finite number of nodes or vertices and the edges that connect them. Graphs in data structures are used to address real-world problems in which it represents the problem area as a network like telephone networks, circuit networks, and social networks.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Graph Data Structure",
+       "url": "https://www.simplilearn.com/tutorials/data-structure-tutorial/graphs-in-data-structure"
+      },
+      {
+       "kind": "video",
+       "title": "Graph Data Structure | Illustrated Data Structures",
+       "url": "https://www.youtube.com/watch?v=0sQE8zKhad0"
+      },
+      {
+       "kind": "video",
+       "title": "CSE373 2020 - Lecture 10 - Graph Data Structures",
+       "url": "https://www.youtube.com/watch?v=Sjk0xqWWPCc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=10"
+      }
+     ],
+     "file": "graph@vQm046o6ozcvLoqg9L6eL.md"
+    },
+    {
      "id": "pw3ZCC3HKU7D5SQwte4vE",
      "type": "subtopic",
      "label": "Heap",
@@ -434,30 +458,6 @@
      "file": "tree@_eWqiWUmOj0zUo_Ix3j1O.md"
     },
     {
-     "id": "vQm046o6ozcvLoqg9L6eL",
-     "type": "subtopic",
-     "label": "Graph",
-     "body": "Graphs in data structures are non-linear data structures made up of a finite number of nodes or vertices and the edges that connect them. Graphs in data structures are used to address real-world problems in which it represents the problem area as a network like telephone networks, circuit networks, and social networks.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Graph Data Structure",
-       "url": "https://www.simplilearn.com/tutorials/data-structure-tutorial/graphs-in-data-structure"
-      },
-      {
-       "kind": "video",
-       "title": "Graph Data Structure | Illustrated Data Structures",
-       "url": "https://www.youtube.com/watch?v=0sQE8zKhad0"
-      },
-      {
-       "kind": "video",
-       "title": "CSE373 2020 - Lecture 10 - Graph Data Structures",
-       "url": "https://www.youtube.com/watch?v=Sjk0xqWWPCc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=10"
-      }
-     ],
-     "file": "graph@vQm046o6ozcvLoqg9L6eL.md"
-    },
-    {
      "id": "G2dN2FO0SN_I-5AhO_EUk",
      "type": "subtopic",
      "label": "Hash Table",
@@ -485,12 +485,40 @@
       }
      ],
      "file": "hash-table@G2dN2FO0SN_I-5AhO_EUk.md"
+    },
+    {
+     "id": "6Jy8SXHuYA08h9iLjKFWR",
+     "type": "subtopic",
+     "label": "Directed Graph",
+     "body": "A directed graph is graph, i.e., a set of objects (called vertices or nodes) that are connected together, where all the edges are directed from one vertex to another. A directed graph is sometimes called a digraph or a directed network. In contrast, a graph where the edges are bidirectional is called an undirected graph.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Directed Graph",
+       "url": "https://en.wikipedia.org/wiki/Directed_graph"
+      }
+     ],
+     "file": "directed-graph@6Jy8SXHuYA08h9iLjKFWR.md"
     }
    ]
   },
   {
    "heading": "Common Runtimes",
    "nodes": [
+    {
+     "id": "QGx8it2N_85PiPVjpTGK_",
+     "type": "subtopic",
+     "label": "Undirected Graph",
+     "body": "An undirected graph is graph, i.e., a set of objects (called vertices or nodes) that are connected together, where all the edges are bidirectional. An undirected graph is sometimes called an undirected network. In contrast, a graph where the edges point in a direction is called a directed graph.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Undirected Graph",
+       "url": "https://mathinsight.org/definition/undirected_graph"
+      }
+     ],
+     "file": "undirected-graph@QGx8it2N_85PiPVjpTGK_.md"
+    },
     {
      "id": "G9dnegZ6zNvxrCZ3O_b_z",
      "type": "subtopic",
@@ -511,20 +539,6 @@
      "file": "binary-tree@G9dnegZ6zNvxrCZ3O_b_z.md"
     },
     {
-     "id": "6Jy8SXHuYA08h9iLjKFWR",
-     "type": "subtopic",
-     "label": "Directed Graph",
-     "body": "A directed graph is graph, i.e., a set of objects (called vertices or nodes) that are connected together, where all the edges are directed from one vertex to another. A directed graph is sometimes called a digraph or a directed network. In contrast, a graph where the edges are bidirectional is called an undirected graph.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Directed Graph",
-       "url": "https://en.wikipedia.org/wiki/Directed_graph"
-      }
-     ],
-     "file": "directed-graph@6Jy8SXHuYA08h9iLjKFWR.md"
-    },
-    {
      "id": "3F_QBv_sU39ehOxpurF88",
      "type": "subtopic",
      "label": "Constant",
@@ -542,6 +556,35 @@
       }
      ],
      "file": "constant@3F_QBv_sU39ehOxpurF88.md"
+    },
+    {
+     "id": "L4xtWOdqGUf4SbJkoOsNM",
+     "type": "subtopic",
+     "label": "Spanning Tree",
+     "body": "A spanning tree is a subset of Graph G, which has all the vertices covered with minimum possible number of edges. Hence, a spanning tree does not have cycles and it cannot be disconnected..",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Spanning Tree",
+       "url": "https://www.tutorialspoint.com/data_structures_algorithms/spanning_tree.htm"
+      },
+      {
+       "kind": "video",
+       "title": "CSE373 2020 - Lecture 13 - Minimum Spanning Trees",
+       "url": "https://www.youtube.com/watch?v=oolm2VnJUKw&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=13"
+      },
+      {
+       "kind": "video",
+       "title": "CSE373 2020 - Lecture 14 - Minimum Spanning Trees (cont)",
+       "url": "https://www.youtube.com/watch?v=RktgPx0MarY&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=14"
+      },
+      {
+       "kind": "video",
+       "title": "Greedy Algorithms: Minimum Spanning Tree",
+       "url": "https://www.youtube.com/watch?v=tKwnms5iRBU&index=16&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp"
+      }
+     ],
+     "file": "spanning-tree@L4xtWOdqGUf4SbJkoOsNM.md"
     },
     {
      "id": "et7l85gnxjvzD2tDyHT_T",
@@ -571,49 +614,6 @@
       }
      ],
      "file": "binary-search-tree@et7l85gnxjvzD2tDyHT_T.md"
-    },
-    {
-     "id": "QGx8it2N_85PiPVjpTGK_",
-     "type": "subtopic",
-     "label": "Undirected Graph",
-     "body": "An undirected graph is graph, i.e., a set of objects (called vertices or nodes) that are connected together, where all the edges are bidirectional. An undirected graph is sometimes called an undirected network. In contrast, a graph where the edges point in a direction is called a directed graph.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Undirected Graph",
-       "url": "https://mathinsight.org/definition/undirected_graph"
-      }
-     ],
-     "file": "undirected-graph@QGx8it2N_85PiPVjpTGK_.md"
-    },
-    {
-     "id": "c-NrTtJuNihbHzyPEOKTW",
-     "type": "subtopic",
-     "label": "Big O",
-     "body": "The Big O notation can be used to describe how the running time of an algorithm scales with the growth of the input size, ignoring implementation details such as programming language and computer speed. Specifically, it denotes the upper bound of the growth rate of a function that relates the running time of an algorithm to its input size. It can be used to compare algorithms and determine which one is better.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Big-O Notation: A Simple Explanation with Examples",
-       "url": "https://medium.com/better-programming/big-o-notation-a-simple-explanation-with-examples-a56347d1daca"
-      },
-      {
-       "kind": "article",
-       "title": "CS 61B Lecture 19: Asymptotic Analysis",
-       "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98"
-      },
-      {
-       "kind": "article",
-       "title": "Big O Notation | Brilliant Math & Science Wiki",
-       "url": "https://brilliant.org/wiki/big-o-notation/"
-      },
-      {
-       "kind": "video",
-       "title": "Big O Notation — Calculating Time Complexity",
-       "url": "https://www.youtube.com/watch?v=Z0bH0cMY0E8"
-      }
-     ],
-     "file": "big-o@c-NrTtJuNihbHzyPEOKTW.md"
     },
     {
      "id": "nnlMNkQn1HU4U9yPbV9kQ",
@@ -647,35 +647,168 @@
       }
      ],
      "file": "full-binary-tree@Q8ZJNeTbc22Q08Mra-McY.md"
-    },
+    }
+   ]
+  },
+  {
+   "heading": "Representation",
+   "nodes": [
     {
-     "id": "L4xtWOdqGUf4SbJkoOsNM",
+     "id": "jymhjv8GiFALQpox6aZeu",
      "type": "subtopic",
-     "label": "Spanning Tree",
-     "body": "A spanning tree is a subset of Graph G, which has all the vertices covered with minimum possible number of edges. Hence, a spanning tree does not have cycles and it cannot be disconnected..",
+     "label": "Linear",
+     "body": "Linear algorithms are algorithms that have a runtime that is directly proportional to the size of the input. This means that the runtime of the algorithm will increase linearly with the size of the input. For example, if the input size is 10, the runtime will be 10 times the runtime of the algorithm when the input size is 1. If the input size is 100, the runtime will be 100 times the runtime of the algorithm when the input size is 1.",
      "resources": [
       {
        "kind": "article",
-       "title": "Spanning Tree",
-       "url": "https://www.tutorialspoint.com/data_structures_algorithms/spanning_tree.htm"
+       "title": "Linear Search Algorithm",
+       "url": "https://www.geeksforgeeks.org/linear-search/"
       },
       {
        "kind": "video",
-       "title": "CSE373 2020 - Lecture 13 - Minimum Spanning Trees",
-       "url": "https://www.youtube.com/watch?v=oolm2VnJUKw&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=13"
+       "title": "Big O Notation — Calculating Time Complexity",
+       "url": "https://www.youtube.com/watch?v=Z0bH0cMY0E8"
       },
       {
        "kind": "video",
-       "title": "CSE373 2020 - Lecture 14 - Minimum Spanning Trees (cont)",
-       "url": "https://www.youtube.com/watch?v=RktgPx0MarY&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=14"
-      },
-      {
-       "kind": "video",
-       "title": "Greedy Algorithms: Minimum Spanning Tree",
-       "url": "https://www.youtube.com/watch?v=tKwnms5iRBU&index=16&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp"
+       "title": "Big O Notations",
+       "url": "https://www.youtube.com/watch?v=V6mKVRU1evU"
       }
      ],
-     "file": "spanning-tree@L4xtWOdqGUf4SbJkoOsNM.md"
+     "file": "linear@jymhjv8GiFALQpox6aZeu.md"
+    },
+    {
+     "id": "rTnKJcPniUtqvfOyC88N0",
+     "type": "subtopic",
+     "label": "Adjacency List",
+     "body": " \nAn adjacency list represents a graph by storing, for each vertex, a list of the vertices it connects to. This representation uses memory proportional to the number of edges, which makes it efficient for sparse graphs where most vertices are not directly connected to each other.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Adjacency Matrix - Graph Representation",
+       "url": "https://www.programiz.com/dsa/graph-adjacency-matrix"
+      },
+      {
+       "kind": "article",
+       "title": "Adjacency List - Graph Representation",
+       "url": "https://www.programiz.com/dsa/graph-adjacency-list"
+      }
+     ],
+     "file": "adjacency-list@rTnKJcPniUtqvfOyC88N0.md"
+    },
+    {
+     "id": "Jx1WWCjm8jkfAGtHv15n1",
+     "type": "subtopic",
+     "label": "Complete Binary Tree",
+     "body": "A complete binary tree fills every level from left to right, with all levels full except possibly the last, which is filled from the left. This shape allows the tree to be stored efficiently in an array, since a node's children can be found using simple index arithmetic instead of pointers. Binary heaps are usually implemented as complete binary trees for this reason.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Complete Binary Tree - Programiz",
+       "url": "https://www.programiz.com/dsa/complete-binary-tree"
+      },
+      {
+       "kind": "article",
+       "title": "Complete Binary Trees",
+       "url": "https://www.wscubetech.com/resources/dsa/complete-binary-tree"
+      }
+     ],
+     "file": "complete-binary-tree@Jx1WWCjm8jkfAGtHv15n1.md"
+    },
+    {
+     "id": "sVFvpsAO1_ZH9aliEj9aF",
+     "type": "subtopic",
+     "label": "Polynomial",
+     "body": "Polynomial time means an algorithm's running time can be expressed as n raised to some fixed power, such as O(n²) or O(n³). Problems solvable in polynomial time are generally considered tractable in complexity theory, forming the basis of the complexity class P.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "Big O Notation — Calculating Time Complexity",
+       "url": "https://www.youtube.com/watch?v=Z0bH0cMY0E8"
+      },
+      {
+       "kind": "video",
+       "title": "Big O Notations",
+       "url": "https://www.youtube.com/watch?v=V6mKVRU1evU"
+      }
+     ],
+     "file": "polynomial@sVFvpsAO1_ZH9aliEj9aF.md"
+    },
+    {
+     "id": "c-NrTtJuNihbHzyPEOKTW",
+     "type": "subtopic",
+     "label": "Big O",
+     "body": "The Big O notation can be used to describe how the running time of an algorithm scales with the growth of the input size, ignoring implementation details such as programming language and computer speed. Specifically, it denotes the upper bound of the growth rate of a function that relates the running time of an algorithm to its input size. It can be used to compare algorithms and determine which one is better.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Big-O Notation: A Simple Explanation with Examples",
+       "url": "https://medium.com/better-programming/big-o-notation-a-simple-explanation-with-examples-a56347d1daca"
+      },
+      {
+       "kind": "article",
+       "title": "CS 61B Lecture 19: Asymptotic Analysis",
+       "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98"
+      },
+      {
+       "kind": "article",
+       "title": "Big O Notation | Brilliant Math & Science Wiki",
+       "url": "https://brilliant.org/wiki/big-o-notation/"
+      },
+      {
+       "kind": "video",
+       "title": "Big O Notation — Calculating Time Complexity",
+       "url": "https://www.youtube.com/watch?v=Z0bH0cMY0E8"
+      }
+     ],
+     "file": "big-o@c-NrTtJuNihbHzyPEOKTW.md"
+    },
+    {
+     "id": "HZ1kk0TQ13FLC9t13BZl5",
+     "type": "subtopic",
+     "label": "Adjacency Matrix",
+     "body": "An adjacency matrix is a square matrix used to represent a finite graph. It is used to represent the connections between vertices in a graph. The matrix is filled with 0s and 1s, where a 1 represents a connection between two vertices and a 0 represents no connection.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Adjacency Matrix",
+       "url": "https://en.wikipedia.org/wiki/Adjacency_matrix"
+      }
+     ],
+     "file": "adjacency-matrix@HZ1kk0TQ13FLC9t13BZl5.md"
+    },
+    {
+     "id": "ZaWGLvZyu4sIPn-zwVISN",
+     "type": "subtopic",
+     "label": "Balanced Tree",
+     "body": "A balanced tree keeps the height difference between subtrees small, typically bounded by a constant, so no path from root to leaf is much longer than another. This guarantees that operations like search, insert, and delete stay close to O(log n) regardless of insertion order. AVL trees and red-black trees are common implementations that enforce balance automatically.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Balanced Binary Tree",
+       "url": "https://www.programiz.com/dsa/balanced-binary-tree"
+      }
+     ],
+     "file": "balanced-tree@ZaWGLvZyu4sIPn-zwVISN.md"
+    },
+    {
+     "id": "5mMLr6tWbiSZuox1lx0_B",
+     "type": "subtopic",
+     "label": "Exponential",
+     "body": " \nExponential time, written O(2^n), means the work doubles with each additional unit of input size. Algorithms with exponential time complexity become impractical quickly as input grows, and they often show up in brute-force solutions to problems without known efficient algorithms.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "Big O Notation — Calculating Time Complexity",
+       "url": "https://www.youtube.com/watch?v=Z0bH0cMY0E8"
+      },
+      {
+       "kind": "video",
+       "title": "Big O Notations",
+       "url": "https://www.youtube.com/watch?v=V6mKVRU1evU"
+      }
+     ],
+     "file": "exponential@5mMLr6tWbiSZuox1lx0_B.md"
     },
     {
      "id": "ThLpVZQIJ4diY5m0dik8m",
@@ -702,53 +835,67 @@
      "file": "big-theta@ThLpVZQIJ4diY5m0dik8m.md"
     },
     {
-     "id": "jymhjv8GiFALQpox6aZeu",
+     "id": "2cg5PogENPhiYFXQnV9xC",
      "type": "subtopic",
-     "label": "Linear",
-     "body": "Linear algorithms are algorithms that have a runtime that is directly proportional to the size of the input. This means that the runtime of the algorithm will increase linearly with the size of the input. For example, if the input size is 10, the runtime will be 10 times the runtime of the algorithm when the input size is 1. If the input size is 100, the runtime will be 100 times the runtime of the algorithm when the input size is 1.",
+     "label": "Small O",
+     "body": "Small o notation describes an upper bound that is strictly greater than the actual growth rate, rather than a tight or achievable bound like Big O. It is used to express that one function grows strictly slower than another, useful in more formal algorithm analysis and proofs.",
      "resources": [
       {
        "kind": "article",
-       "title": "Linear Search Algorithm",
-       "url": "https://www.geeksforgeeks.org/linear-search/"
+       "title": "Little-o notation | Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Big_O_notation#Little-o_notation"
+      },
+      {
+       "kind": "article",
+       "title": "Difference between Big-O and Little-o Notations",
+       "url": "https://www.baeldung.com/cs/big-o-vs-little-o-notation"
       },
       {
        "kind": "video",
-       "title": "Big O Notation — Calculating Time Complexity",
-       "url": "https://www.youtube.com/watch?v=Z0bH0cMY0E8"
-      },
-      {
-       "kind": "video",
-       "title": "Big O Notations",
-       "url": "https://www.youtube.com/watch?v=V6mKVRU1evU"
+       "title": "The Little o Notation",
+       "url": "https://www.youtube.com/watch?v=Hk_AWLNjGLs"
       }
      ],
-     "file": "linear@jymhjv8GiFALQpox6aZeu.md"
+     "file": "small-o@2cg5PogENPhiYFXQnV9xC.md"
     },
     {
-     "id": "Jx1WWCjm8jkfAGtHv15n1",
+     "id": "w4sxmZR1BjX6wlrZmuOlf",
      "type": "subtopic",
-     "label": "Complete Binary Tree",
-     "body": "A complete binary tree fills every level from left to right, with all levels full except possibly the last, which is filled from the left. This shape allows the tree to be stored efficiently in an array, since a node's children can be found using simple index arithmetic instead of pointers. Binary heaps are usually implemented as complete binary trees for this reason.",
+     "label": "Unbalanced Tree",
+     "body": "An unbalanced tree has subtrees of very different heights, which can happen when data is inserted in a sorted or near-sorted order into a plain binary search tree. In the worst case, the tree degenerates into something resembling a linked list, and operations that should take O(log n) instead take O(n). Self-balancing tree variants exist specifically to prevent this.",
      "resources": [
       {
        "kind": "article",
-       "title": "Complete Binary Tree - Programiz",
-       "url": "https://www.programiz.com/dsa/complete-binary-tree"
+       "title": "Balanced vs Unbalanced Binary Tree",
+       "url": "https://stackoverflow.com/questions/59206128/balanced-vs-unbalanced-binary-tree-clarification-needed"
       },
       {
        "kind": "article",
-       "title": "Complete Binary Trees",
-       "url": "https://www.wscubetech.com/resources/dsa/complete-binary-tree"
+       "title": "Unbalanced Binary Tree",
+       "url": "https://eng.libretexts.org/Bookshelves/Computer_Science/Databases_and_Data_Structures/Open_Data_Structures_-_An_Introduction_(Morin)/06%3A_Binary_Trees/6.02%3A_BinarySearchTree_-_An_Unbalanced_Binary_Search_Treee"
       }
      ],
-     "file": "complete-binary-tree@Jx1WWCjm8jkfAGtHv15n1.md"
-    }
-   ]
-  },
-  {
-   "heading": "Representation",
-   "nodes": [
+     "file": "unbalanced-tree@w4sxmZR1BjX6wlrZmuOlf.md"
+    },
+    {
+     "id": "m0umGQNdvg95UiNpQZsQN",
+     "type": "subtopic",
+     "label": "Factorial",
+     "body": "Factorial time, written O(n!), means the work grows by the factorial of the input size, making it impractical for anything but very small inputs. Algorithms that generate every possible permutation of a set, like a brute-force solution to the traveling salesman problem, run in factorial time.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Big O Cheat Sheet - Time Complexity Chart",
+       "url": "https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/"
+      },
+      {
+       "kind": "video",
+       "title": "Factorial Explained",
+       "url": "https://www.youtube.com/watch?v=pxh__ugRKz8"
+      }
+     ],
+     "file": "factorial@m0umGQNdvg95UiNpQZsQN.md"
+    },
     {
      "id": "X33735aeAVSlJ6yv9GS-h",
      "type": "subtopic",
@@ -774,134 +921,6 @@
      "file": "big-omega@X33735aeAVSlJ6yv9GS-h.md"
     },
     {
-     "id": "sVFvpsAO1_ZH9aliEj9aF",
-     "type": "subtopic",
-     "label": "Polynomial",
-     "body": "Polynomial time means an algorithm's running time can be expressed as n raised to some fixed power, such as O(n²) or O(n³). Problems solvable in polynomial time are generally considered tractable in complexity theory, forming the basis of the complexity class P.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "Big O Notation — Calculating Time Complexity",
-       "url": "https://www.youtube.com/watch?v=Z0bH0cMY0E8"
-      },
-      {
-       "kind": "video",
-       "title": "Big O Notations",
-       "url": "https://www.youtube.com/watch?v=V6mKVRU1evU"
-      }
-     ],
-     "file": "polynomial@sVFvpsAO1_ZH9aliEj9aF.md"
-    },
-    {
-     "id": "rTnKJcPniUtqvfOyC88N0",
-     "type": "subtopic",
-     "label": "Adjacency List",
-     "body": " \nAn adjacency list represents a graph by storing, for each vertex, a list of the vertices it connects to. This representation uses memory proportional to the number of edges, which makes it efficient for sparse graphs where most vertices are not directly connected to each other.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Adjacency Matrix - Graph Representation",
-       "url": "https://www.programiz.com/dsa/graph-adjacency-matrix"
-      },
-      {
-       "kind": "article",
-       "title": "Adjacency List - Graph Representation",
-       "url": "https://www.programiz.com/dsa/graph-adjacency-list"
-      }
-     ],
-     "file": "adjacency-list@rTnKJcPniUtqvfOyC88N0.md"
-    },
-    {
-     "id": "ZaWGLvZyu4sIPn-zwVISN",
-     "type": "subtopic",
-     "label": "Balanced Tree",
-     "body": "A balanced tree keeps the height difference between subtrees small, typically bounded by a constant, so no path from root to leaf is much longer than another. This guarantees that operations like search, insert, and delete stay close to O(log n) regardless of insertion order. AVL trees and red-black trees are common implementations that enforce balance automatically.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Balanced Binary Tree",
-       "url": "https://www.programiz.com/dsa/balanced-binary-tree"
-      }
-     ],
-     "file": "balanced-tree@ZaWGLvZyu4sIPn-zwVISN.md"
-    },
-    {
-     "id": "2cg5PogENPhiYFXQnV9xC",
-     "type": "subtopic",
-     "label": "Small O",
-     "body": "Small o notation describes an upper bound that is strictly greater than the actual growth rate, rather than a tight or achievable bound like Big O. It is used to express that one function grows strictly slower than another, useful in more formal algorithm analysis and proofs.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Little-o notation | Wikipedia",
-       "url": "https://en.wikipedia.org/wiki/Big_O_notation#Little-o_notation"
-      },
-      {
-       "kind": "article",
-       "title": "Difference between Big-O and Little-o Notations",
-       "url": "https://www.baeldung.com/cs/big-o-vs-little-o-notation"
-      },
-      {
-       "kind": "video",
-       "title": "The Little o Notation",
-       "url": "https://www.youtube.com/watch?v=Hk_AWLNjGLs"
-      }
-     ],
-     "file": "small-o@2cg5PogENPhiYFXQnV9xC.md"
-    },
-    {
-     "id": "5mMLr6tWbiSZuox1lx0_B",
-     "type": "subtopic",
-     "label": "Exponential",
-     "body": " \nExponential time, written O(2^n), means the work doubles with each additional unit of input size. Algorithms with exponential time complexity become impractical quickly as input grows, and they often show up in brute-force solutions to problems without known efficient algorithms.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "Big O Notation — Calculating Time Complexity",
-       "url": "https://www.youtube.com/watch?v=Z0bH0cMY0E8"
-      },
-      {
-       "kind": "video",
-       "title": "Big O Notations",
-       "url": "https://www.youtube.com/watch?v=V6mKVRU1evU"
-      }
-     ],
-     "file": "exponential@5mMLr6tWbiSZuox1lx0_B.md"
-    },
-    {
-     "id": "HZ1kk0TQ13FLC9t13BZl5",
-     "type": "subtopic",
-     "label": "Adjacency Matrix",
-     "body": "An adjacency matrix is a square matrix used to represent a finite graph. It is used to represent the connections between vertices in a graph. The matrix is filled with 0s and 1s, where a 1 represents a connection between two vertices and a 0 represents no connection.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Adjacency Matrix",
-       "url": "https://en.wikipedia.org/wiki/Adjacency_matrix"
-      }
-     ],
-     "file": "adjacency-matrix@HZ1kk0TQ13FLC9t13BZl5.md"
-    },
-    {
-     "id": "w4sxmZR1BjX6wlrZmuOlf",
-     "type": "subtopic",
-     "label": "Unbalanced Tree",
-     "body": "An unbalanced tree has subtrees of very different heights, which can happen when data is inserted in a sorted or near-sorted order into a plain binary search tree. In the worst case, the tree degenerates into something resembling a linked list, and operations that should take O(log n) instead take O(n). Self-balancing tree variants exist specifically to prevent this.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Balanced vs Unbalanced Binary Tree",
-       "url": "https://stackoverflow.com/questions/59206128/balanced-vs-unbalanced-binary-tree-clarification-needed"
-      },
-      {
-       "kind": "article",
-       "title": "Unbalanced Binary Tree",
-       "url": "https://eng.libretexts.org/Bookshelves/Computer_Science/Databases_and_Data_Structures/Open_Data_Structures_-_An_Introduction_(Morin)/06%3A_Binary_Trees/6.02%3A_BinarySearchTree_-_An_Unbalanced_Binary_Search_Treee"
-      }
-     ],
-     "file": "unbalanced-tree@w4sxmZR1BjX6wlrZmuOlf.md"
-    },
-    {
      "id": "dUBRG_5aUYlICsjPbRlTf",
      "type": "subtopic",
      "label": "Small Omega",
@@ -919,25 +938,6 @@
       }
      ],
      "file": "small-omega@dUBRG_5aUYlICsjPbRlTf.md"
-    },
-    {
-     "id": "m0umGQNdvg95UiNpQZsQN",
-     "type": "subtopic",
-     "label": "Factorial",
-     "body": "Factorial time, written O(n!), means the work grows by the factorial of the input size, making it impractical for anything but very small inputs. Algorithms that generate every possible permutation of a set, like a brute-force solution to the traveling salesman problem, run in factorial time.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Big O Cheat Sheet - Time Complexity Chart",
-       "url": "https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/"
-      },
-      {
-       "kind": "video",
-       "title": "Factorial Explained",
-       "url": "https://www.youtube.com/watch?v=pxh__ugRKz8"
-      }
-     ],
-     "file": "factorial@m0umGQNdvg95UiNpQZsQN.md"
     },
     {
      "id": "UpBrpmrUwYUB9eesNxCq5",
@@ -981,697 +981,6 @@
       }
      ],
      "file": "common-algorithms@7a6-AnBI-3tAU1dkOvPkx.md"
-    }
-   ]
-  },
-  {
-   "heading": "Sorting",
-   "nodes": []
-  },
-  {
-   "heading": "Recursion",
-   "nodes": []
-  },
-  {
-   "heading": "Graphs",
-   "nodes": []
-  },
-  {
-   "heading": "Tree",
-   "nodes": [
-    {
-     "id": "4wGBYFZpcdTt97WTbSazx",
-     "type": "subtopic",
-     "label": "Bubble Sort",
-     "body": " \nBubble sort repeatedly steps through a list, comparing adjacent elements and swapping them if they are in the wrong order, until no swaps are needed. Each pass moves the largest unsorted element into its correct position, like a bubble rising to the top. It runs in O(n²) time in the average and worst case, which makes it inefficient for large datasets but simple to understand and implement.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Bubble Sort Algorithm",
-       "url": "https://www.programiz.com/dsa/bubble-sort"
-      },
-      {
-       "kind": "video",
-       "title": "Bubble Sort",
-       "url": "https://www.youtube.com/watch?v=P00xJgWzz2c&index=1&list=PL89B61F78B552C1AB"
-      },
-      {
-       "kind": "video",
-       "title": "Bubble sort in 2 minutes",
-       "url": "https://youtu.be/xli_FI7CuzA"
-      }
-     ],
-     "file": "bubble-sort@4wGBYFZpcdTt97WTbSazx.md"
-    },
-    {
-     "id": "0_qNhprnXU3i8koW3XTdD",
-     "type": "subtopic",
-     "label": "Tail Recursion",
-     "body": "Tail recursion is a special kind of recursion where the recursive call is the very last thing in the function. It's a function that does not do anything at all after recursing.",
-     "resources": [
-      {
-       "kind": "course",
-       "title": "Tail Recursion",
-       "url": "https://www.coursera.org/lecture/programming-languages/tail-recursion-YZic1"
-      },
-      {
-       "kind": "article",
-       "title": "What is tail recursion? Why is it so bad?",
-       "url": "https://www.quora.com/What-is-tail-recursion-Why-is-it-so-bad"
-      },
-      {
-       "kind": "feed",
-       "title": "Explore top posts about Recursion",
-       "url": "https://app.daily.dev/tags/recursion?ref=roadmapsh"
-      }
-     ],
-     "file": "tail-recursion@0_qNhprnXU3i8koW3XTdD.md"
-    },
-    {
-     "id": "vcV6TEM_PqXxtThdfMKGw",
-     "type": "subtopic",
-     "label": "Breadth First Search",
-     "body": "Breadth first search for a graph is a way to traverse the graph. It starts at the root node and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "Graph Algorithms II - DFS, BFS, Kruskals Algorithm, Union Find Data Structure - Lecture 7",
-       "url": "https://www.youtube.com/watch?v=ufj5_bppBsA&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=7"
-      },
-      {
-       "kind": "video",
-       "title": "Breadth-first search in 4 minutes",
-       "url": "https://www.youtube.com/watch?v=HZ5YTanv5QE"
-      }
-     ],
-     "file": "breadth-first-search@vcV6TEM_PqXxtThdfMKGw.md"
-    },
-    {
-     "id": "psTN5N66xoFHFopgd5faW",
-     "type": "subtopic",
-     "label": "Pre-Order Traversal",
-     "body": "Pre-order traversal is a way to visit every node in a tree data structure. It follows a specific order: first, the current node is processed (or visited). Then, the left subtree of the current node is traversed using pre-order. Finally, the right subtree of the current node is traversed using pre-order. This \"node-left-right\" sequence ensures each node is visited exactly once.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "Tree | Illustrated Data Structures",
-       "url": "https://www.youtube.com/watch?v=S2W3SXGPVyU"
-      },
-      {
-       "kind": "video",
-       "title": "Pre-order tree traversal in 3 minutes",
-       "url": "https://www.youtube.com/watch?v=1WxLM2hwL-U"
-      }
-     ],
-     "file": "pre-order-traversal@psTN5N66xoFHFopgd5faW.md"
-    },
-    {
-     "id": "rOsHFXQm5jNz0RyZQ5ZGs",
-     "type": "subtopic",
-     "label": "Selection Sort",
-     "body": "Selection sort is a sorting algorithm that selects the smallest unsorted item in the list and swaps it with index 0, then finds the next smallest and places it into index 1 and so on.",
-     "resources": [
-      {
-       "kind": "course",
-       "title": "Selection Sort",
-       "url": "https://www.coursera.org/lecture/algorithms-part1/selection-UQxFT"
-      },
-      {
-       "kind": "article",
-       "title": "Selection Sort",
-       "url": "https://en.wikipedia.org/wiki/Selection_sort"
-      },
-      {
-       "kind": "video",
-       "title": "Selection Sort in 3 Minutes",
-       "url": "https://www.youtube.com/watch?v=g-PGLbMth_g"
-      }
-     ],
-     "file": "selection-sort@rOsHFXQm5jNz0RyZQ5ZGs.md"
-    },
-    {
-     "id": "iLEOuQgUgU5Jc38iXDpp5",
-     "type": "subtopic",
-     "label": "Non-Tail Recursion",
-     "body": " \nNon-tail recursion is a form of recursion where work remains to be done after the recursive call returns, such as combining the result with something else. Each call must keep its stack frame until the recursive call underneath it finishes, which means the call stack grows with each level of recursion and cannot be optimized away like tail recursion.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is non-tail recursion?",
-       "url": "https://www.quora.com/What-is-non-tail-recursion"
-      },
-      {
-       "kind": "article",
-       "title": "Tail vs Non-Tail Recursion",
-       "url": "https://www.baeldung.com/cs/tail-vs-non-tail-recursion"
-      },
-      {
-       "kind": "video",
-       "title": "Recursion (Solved Problem 1)",
-       "url": "https://www.youtube.com/watch?v=IVLUGb_gDDE"
-      },
-      {
-       "kind": "video",
-       "title": "Types of Recursion (Part 2) | Tail & Non-tail Recursion",
-       "url": "https://www.youtube.com/watch?v=HIt_GPuD7wk"
-      }
-     ],
-     "file": "non-tail-recursion@iLEOuQgUgU5Jc38iXDpp5.md"
-    },
-    {
-     "id": "Yf5gOIe7oiL19MjEVcpdw",
-     "type": "subtopic",
-     "label": "Depth First Search",
-     "body": "Depth first search is a graph traversal algorithm that starts at a root node and explores as far as possible along each branch before backtracking.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Depth-first Search",
-       "url": "https://en.wikipedia.org/wiki/Depth-first_search"
-      }
-     ],
-     "file": "depth-first-search@Yf5gOIe7oiL19MjEVcpdw.md"
-    },
-    {
-     "id": "KTrgf14Q6rg2f0v4dqq2s",
-     "type": "subtopic",
-     "label": "In-Order Traversal",
-     "body": "In-order traversal is a tree traversal algorithm that visits the left subtree, the root, and then the right subtree. This is the most common way to traverse a binary search tree. It is also used to create a sorted list of nodes in a binary search tree.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Tree Traversal Techniques",
-       "url": "https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/"
-      },
-      {
-       "kind": "video",
-       "title": "Tree | Illustrated Data Structures",
-       "url": "https://www.youtube.com/watch?v=S2W3SXGPVyU"
-      }
-     ],
-     "file": "in-order-traversal@KTrgf14Q6rg2f0v4dqq2s.md"
-    },
-    {
-     "id": "ujDCW6zZE8dV_fpNf-oIl",
-     "type": "subtopic",
-     "label": "Insertion Sort",
-     "body": "Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time by comparisons. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Insertion Sort",
-       "url": "https://www.programiz.com/dsa/insertion-sort"
-      },
-      {
-       "kind": "video",
-       "title": "Insertion Sort — MIT",
-       "url": "https://www.youtube.com/watch?v=Kg4bqzAqRBM&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=4"
-      },
-      {
-       "kind": "video",
-       "title": "Insertion Sort in 3 Minutes",
-       "url": "https://www.youtube.com/watch?v=JU767SDMDvA"
-      }
-     ],
-     "file": "insertion-sort@ujDCW6zZE8dV_fpNf-oIl.md"
-    },
-    {
-     "id": "eY4nK2lPYsrR-a_8y2sao",
-     "type": "subtopic",
-     "label": "Bellman Ford's Algorithm",
-     "body": "Bellman ford's algorithm is a graph algorithm that finds the shortest path from a source vertex to all other vertices in a graph. It is a dynamic programming algorithm that uses a bottom-up approach to find the shortest path. It is similar to Dijkstra's algorithm but it can handle negative weights. It is also similar to Floyd-Warshall's algorithm but it can handle negative weights and it is faster than Floyd-Warshall's algorithm.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "Bellman-Ford - MIT",
-       "url": "https://www.youtube.com/watch?v=f9cVS_URPc0&ab_channel=MITOpenCourseWare"
-      },
-      {
-       "kind": "video",
-       "title": "Bellman-Ford in 4 Minutes",
-       "url": "https://www.youtube.com/watch?v=9PHkk0UavIM"
-      },
-      {
-       "kind": "feed",
-       "title": "Explore top posts about Data Science",
-       "url": "https://app.daily.dev/tags/data-science?ref=roadmapsh"
-      }
-     ],
-     "file": "bellman-fords-algorithm@eY4nK2lPYsrR-a_8y2sao.md"
-    },
-    {
-     "id": "4_oGXwjzSY5cX9n7L4iAA",
-     "type": "subtopic",
-     "label": "Post Order Traversal",
-     "body": "Post-order traversal is a type of tree traversal that visits the left subtree, then the right subtree, and finally the root node. This is the opposite of pre-order traversal, which visits the root node first, then the left subtree, and finally the right subtree.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Postorder Traversal of Binary Tree",
-       "url": "https://www.geeksforgeeks.org/postorder-traversal-of-binary-tree/"
-      },
-      {
-       "kind": "video",
-       "title": "Tree | Illustrated Data Structures",
-       "url": "https://www.youtube.com/watch?v=S2W3SXGPVyU"
-      }
-     ],
-     "file": "post-order-traversal@4_oGXwjzSY5cX9n7L4iAA.md"
-    }
-   ]
-  },
-  {
-   "heading": "Searching",
-   "nodes": [
-    {
-     "id": "CovrRsBY-sYW_xSegcN6N",
-     "type": "subtopic",
-     "label": "Heap Sort",
-     "body": "Heap sort is a comparison based sorting algorithm. It is similar to selection sort where we first find the maximum element and place the maximum element at the end. We repeat the same process for remaining element.",
-     "resources": [
-      {
-       "kind": "course",
-       "title": "Heap Sort Algorithm",
-       "url": "https://www.coursera.org/lecture/data-structures/heap-sort-hSzMO"
-      },
-      {
-       "kind": "article",
-       "title": "Heap Sort Algorithm",
-       "url": "https://www.programiz.com/dsa/heap-sort"
-      },
-      {
-       "kind": "video",
-       "title": "Heap Sort in 4 Minutes",
-       "url": "https://www.youtube.com/watch?v=2DmK_H7IdTo"
-      },
-      {
-       "kind": "video",
-       "title": "Heap Sort Algorithm - MIT",
-       "url": "https://www.youtube.com/watch?v=odNJmw5TOEE&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3291s"
-      },
-      {
-       "kind": "video",
-       "title": "Lecture 4 - Heaps and Heap Sort",
-       "url": "https://www.youtube.com/watch?v=B7hVxCmfPtM&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=5"
-      }
-     ],
-     "file": "heap-sort@CovrRsBY-sYW_xSegcN6N.md"
-    },
-    {
-     "id": "oJstm-8c-4seWbIWcNgDv",
-     "type": "subtopic",
-     "label": "Dijkstra's Algorithm",
-     "body": "Dijkstra's algorithm finds the shortest path from a source vertex to all other vertices in a weighted graph with non-negative edge weights. It repeatedly picks the closest unvisited vertex and updates the shortest known distances to its neighbors, using a priority queue to make this selection efficient. It does not work correctly if the graph contains negative edge weights.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "Dijkstras Algorithm - MIT",
-       "url": "https://www.youtube.com/watch?v=NSHizBK9JD8&t=1731s&ab_channel=MITOpenCourseWare"
-      },
-      {
-       "kind": "video",
-       "title": "Dijkstras Algorithm in 3 Minutes",
-       "url": "https://www.youtube.com/watch?v=_lHSawdgXpI"
-      }
-     ],
-     "file": "dijkstras-algorithm@oJstm-8c-4seWbIWcNgDv.md"
-    },
-    {
-     "id": "Ke_ch4fnuKIiGAXUM_LPP",
-     "type": "subtopic",
-     "label": "Breadth First Search",
-     "body": "Breadth first search is a graph traversal algorithm that starts at the root node and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Breadth-First Search (BFS) and Depth-First Search (DFS) for Binary Trees in Java",
-       "url": "https://www.digitalocean.com/community/tutorials/breadth-first-search-depth-first-search-bfs-dfs"
-      },
-      {
-       "kind": "video",
-       "title": "BFS and DFS in a Binary Tree",
-       "url": "https://www.youtube.com/watch?v=uWL6FJhq5fM"
-      },
-      {
-       "kind": "video",
-       "title": "Breadth-first search in 4 minutes",
-       "url": "https://www.youtube.com/watch?v=HZ5YTanv5QE"
-      }
-     ],
-     "file": "breadth-first-search@Ke_ch4fnuKIiGAXUM_LPP.md"
-    },
-    {
-     "id": "8kTg4O9MrTHRUrp6U-ctA",
-     "type": "subtopic",
-     "label": "Binary Search",
-     "body": "Binary search is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target value, and repeating this until the target value is found. If the search ends with the remaining half being empty, the target is not in the array.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Binary Search - Khan Academy",
-       "url": "https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search"
-      },
-      {
-       "kind": "article",
-       "title": "Binary Search",
-       "url": "https://www.topcoder.com/thrive/articles/Binary%20Search"
-      },
-      {
-       "kind": "video",
-       "title": "Binary Search in 4 Minutes",
-       "url": "https://www.youtube.com/watch?v=fDKIpRe8GW4&feature=youtu.be"
-      },
-      {
-       "kind": "video",
-       "title": "Binary Search - CS50",
-       "url": "https://www.youtube.com/watch?v=D5SrAga1pno"
-      }
-     ],
-     "file": "binary-search@8kTg4O9MrTHRUrp6U-ctA.md"
-    },
-    {
-     "id": "be0Q8GW9ZX1JbPrBvbMji",
-     "type": "subtopic",
-     "label": "Quick Sort",
-     "body": "Quick Sort is a divide and conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.",
-     "resources": [
-      {
-       "kind": "opensource",
-       "title": "Quick Sort Implementation in Python",
-       "url": "https://github.com/jwasham/practice-python/blob/master/quick_sort/quick_sort.py"
-      },
-      {
-       "kind": "article",
-       "title": "Quick Sort Algorithm",
-       "url": "https://www.programiz.com/dsa/quick-sort"
-      },
-      {
-       "kind": "article",
-       "title": "Quick Sort Implementation in C",
-       "url": "http://www.cs.yale.edu/homes/aspnes/classes/223/examples/randomization/quick.c"
-      },
-      {
-       "kind": "video",
-       "title": "Quick Sort in 4 Minutes",
-       "url": "https://www.youtube.com/watch?v=Hoixgm4-P4M&feature=youtu.be"
-      }
-     ],
-     "file": "quick-sort@be0Q8GW9ZX1JbPrBvbMji.md"
-    },
-    {
-     "id": "chzP5_t2gMi6MstxEzCi5",
-     "type": "subtopic",
-     "label": "Depth First Search",
-     "body": "Depth first search is a graph traversal algorithm that starts at a root node and explores as far as possible along each branch before backtracking.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Breadth-First Search (BFS) and Depth-First Search (DFS) for Binary Trees in Java",
-       "url": "https://www.digitalocean.com/community/tutorials/breadth-first-search-depth-first-search-bfs-dfs"
-      },
-      {
-       "kind": "video",
-       "title": "BFS and DFS in a Binary Tree",
-       "url": "https://www.youtube.com/watch?v=uWL6FJhq5fM"
-      },
-      {
-       "kind": "video",
-       "title": "Depth First Search in 4 Minutes",
-       "url": "https://www.youtube.com/watch?v=Urx87-NMm6c"
-      }
-     ],
-     "file": "depth-first-search@chzP5_t2gMi6MstxEzCi5.md"
-    },
-    {
-     "id": "Yrk2PLUa-_FAPlhCkMl3e",
-     "type": "subtopic",
-     "label": "A* Algorithm",
-     "body": "A\\* is a graph traversal algorithm that is used to find the shortest path between two nodes in a graph. It is a modified version of Dijkstra's algorithm that uses heuristics to find the shortest path. It is used in pathfinding and graph traversal.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Introduction to the A* Algorithm - Red Blob Games",
-       "url": "https://www.redblobgames.com/pathfinding/a-star/introduction.html"
-      },
-      {
-       "kind": "article",
-       "title": "A* Search Algorithm - Wikipedia",
-       "url": "https://en.wikipedia.org/wiki/A*_search_algorithm"
-      },
-      {
-       "kind": "video",
-       "title": "A* Pathfinding (E01: algorithm explanation)",
-       "url": "https://www.youtube.com/watch?v=-L-WgKMFuhE"
-      }
-     ],
-     "file": "a-algorithm@Yrk2PLUa-_FAPlhCkMl3e.md"
-    },
-    {
-     "id": "XwyqBK9rgP1MMcJrdIzm5",
-     "type": "subtopic",
-     "label": "Linear Search",
-     "body": "Linear search is a very simple algorithm that is used to search for a value in an array. It sequentially checks each element of the array until a match is found or until all the elements have been searched.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Linear Search",
-       "url": "https://www.programiz.com/dsa/linear-search"
-      }
-     ],
-     "file": "linear-search@XwyqBK9rgP1MMcJrdIzm5.md"
-    },
-    {
-     "id": "Bh-whDbcCjl3m6mRm9w02",
-     "type": "subtopic",
-     "label": "Merge Sort",
-     "body": "Merge sort is a divide and conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. The `merge()` function is used for merging two halves. The `merge(arr, l, m, r)` is key process that assumes that `arr[l..m]` and `arr[m+1..r]` are sorted and merges the two sorted sub-arrays into one.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Merge Sort Algorithm",
-       "url": "https://www.programiz.com/dsa/merge-sort"
-      },
-      {
-       "kind": "video",
-       "title": "Merge Sort in 3 Minutes",
-       "url": "https://www.youtube.com/watch?v=4VqmGXwpLqc"
-      }
-     ],
-     "file": "merge-sort@Bh-whDbcCjl3m6mRm9w02.md"
-    }
-   ]
-  },
-  {
-   "heading": "Greedy Algorithms",
-   "nodes": []
-  },
-  {
-   "heading": "Back Tracking",
-   "nodes": []
-  },
-  {
-   "heading": "Caches",
-   "nodes": [
-    {
-     "id": "hna0HLu0l4NTNNpyGqlW5",
-     "type": "subtopic",
-     "label": "MFU Cache",
-     "body": "MFU Cache is another cache algorithm. The difference is that instead of deleting the least frequently used entry, the MFU Cache deletes the most frequently used entry.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Comparison of MFU and LRU page replacement algorithms",
-       "url": "https://stackoverflow.com/questions/13597246/comparison-of-mfu-and-lru-page-replacement-algorithms"
-      },
-      {
-       "kind": "article",
-       "title": "Why does cache use Most Recently Used (MRU) algorithm as evict policy?",
-       "url": "https://stackoverflow.com/questions/5088128/why-does-cache-use-most-recently-used-mru-algorithm-as-evict-policy"
-      }
-     ],
-     "file": "mfu-cache@hna0HLu0l4NTNNpyGqlW5.md"
-    },
-    {
-     "id": "l3X9UrEYTWs5kBXI1NNCf",
-     "type": "subtopic",
-     "label": "Dijkstra's Algorithm",
-     "body": "Dijkstra's algorithm is a greedy algorithm that finds the shortest path between two nodes in a graph. It is a very common algorithm used in computer science and is used in many applications such as GPS navigation, network routing, and finding the shortest path in a maze.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "Dijkstras Algorithm in 3 Minutes",
-       "url": "https://www.youtube.com/watch?v=_lHSawdgXpI"
-      },
-      {
-       "kind": "video",
-       "title": "Dijkstras Algorithm - MIT",
-       "url": "https://www.youtube.com/watch?v=NSHizBK9JD8&t=1731s&ab_channel=MITOpenCourseWare"
-      },
-      {
-       "kind": "video",
-       "title": "Speeding Up Dijkstras Algorithm - MIT",
-       "url": "https://www.youtube.com/watch?v=CHvQ3q_gJ7E&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=18"
-      }
-     ],
-     "file": "dijkstras-algorithm@l3X9UrEYTWs5kBXI1NNCf.md"
-    },
-    {
-     "id": "aBjBHpq_OajgQjxdCobXD",
-     "type": "subtopic",
-     "label": "Finding Hamiltonian Paths",
-     "body": "Hamiltonian paths are paths that visit every node in a graph exactly once. They are named after the famous mathematician Hamilton. Hamiltonian paths are a special case of Hamiltonian cycles, which are cycles that visit every node in a graph exactly once.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Hamiltonian Cycles",
-       "url": "https://en.wikipedia.org/wiki/Hamiltonian_cycle"
-      },
-      {
-       "kind": "article",
-       "title": "Hamiltonian Path",
-       "url": "https://www.hackerearth.com/practice/algorithms/graphs/hamiltonian-path/tutorial/"
-      },
-      {
-       "kind": "article",
-       "title": "Hamiltonian Paths and Cycles",
-       "url": "https://medium.com/stamatics-iit-kanpur/hamiltonian-paths-and-cycles-4f233bfbc53a"
-      },
-      {
-       "kind": "article",
-       "title": "Hamiltonian Paths - Lecture 7",
-       "url": "https://people.csail.mit.edu/virgi/6.s078/lecture17.pdf"
-      }
-     ],
-     "file": "finding-hamiltonian-paths@aBjBHpq_OajgQjxdCobXD.md"
-    },
-    {
-     "id": "cEsboPT8nLvo0Zt0_oBq6",
-     "type": "subtopic",
-     "label": "LRU Cache",
-     "body": "LRU cache is a cache that evicts the least recently used item first. It is a very common cache algorithm. It is used in many places, such as in the browser cache, the database cache, and the cache of the operating system.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "The Magic of LRU Cache (100 Days of Google Dev)",
-       "url": "https://www.youtube.com/watch?v=R5ON3iwx78M"
-      },
-      {
-       "kind": "video",
-       "title": "Implementing LRU - Udacity",
-       "url": "https://www.youtube.com/watch?v=bq6N7Ym81iI"
-      },
-      {
-       "kind": "video",
-       "title": "LeetCode | 146 LRU Cache | C++ | Explanation",
-       "url": "https://www.youtube.com/watch?v=8-FZRAjR7qU"
-      }
-     ],
-     "file": "lru-cache@cEsboPT8nLvo0Zt0_oBq6.md"
-    },
-    {
-     "id": "QrcijPiVT3bgqfkF-6ssi",
-     "type": "subtopic",
-     "label": "Huffman Coding",
-     "body": "Huffman coding is a lossless data compression algorithm. The idea is to assign variable-length codes to input characters, lengths of the assigned codes are based on the frequencies of corresponding characters. The most frequent character gets the smallest code and the least frequent character gets the largest code.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Huffman Coding",
-       "url": "https://www.programiz.com/dsa/huffman-coding"
-      },
-      {
-       "kind": "video",
-       "title": "Huffman Coding - Greedy Method",
-       "url": "https://www.youtube.com/watch?v=co4_ahEDCho"
-      }
-     ],
-     "file": "huffman-coding@QrcijPiVT3bgqfkF-6ssi.md"
-    },
-    {
-     "id": "HlAmTY1udqDT2mTfBU9P-",
-     "type": "subtopic",
-     "label": "Solving N Queen Problem",
-     "body": "N Queen Problem is a famous problem in Computer Science. It is a problem of placing n queens on an n x n chessboard such that no two queens attack each other. The problem is to find all possible solutions to the problem.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "N-Queens problem using backtracking in Java/C++",
-       "url": "https://www.digitalocean.com/community/tutorials/n-queens-problem-java-c-plus-plus"
-      },
-      {
-       "kind": "video",
-       "title": "6.1 N Queens Problem using Backtracking",
-       "url": "https://www.youtube.com/watch?v=xFv_Hl4B83A"
-      }
-     ],
-     "file": "solving-n-queen-problem@HlAmTY1udqDT2mTfBU9P-.md"
-    },
-    {
-     "id": "n11ujPI3of-52l2KW2CDQ",
-     "type": "subtopic",
-     "label": "LFU Cache",
-     "body": "LFU Cache is a data structure that stores key-value pairs. It has a fixed size and when it is full, it removes the least frequently used key-value pair. It is a variation of the LRU Cache and is used in many applications such as caching web pages, caching database queries, and caching images.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Least Frequently Used (LFU) Cache Implementation",
-       "url": "https://www.geeksforgeeks.org/least-frequently-used-lfu-cache-implementation/"
-      },
-      {
-       "kind": "article",
-       "title": "1117. Data Structure - LFU Cache",
-       "url": "https://jojozhuang.github.io/algorithm/data-structure-lfu-cache/"
-      }
-     ],
-     "file": "lfu-cache@n11ujPI3of-52l2KW2CDQ.md"
-    },
-    {
-     "id": "Wqhg7E-lOz1oNcRXjUej8",
-     "type": "subtopic",
-     "label": "Kruskal's Algorithm",
-     "body": "Kruskal's algorithm is a greedy algorithm that finds a minimum spanning tree for a connected weighted graph. It is a minimum spanning tree algorithm that takes a graph as input and finds the subset of the edges of that graph which form a tree that includes every vertex, where the total weight of all the edges in the tree is minimized. If the graph is not connected, then it finds a minimum spanning forest (a minimum spanning tree for each connected component).",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "Kruskals Algorithm in 2 Minutes",
-       "url": "https://www.youtube.com/watch?v=71UQH7Pr9kU"
-      },
-      {
-       "kind": "video",
-       "title": "Graph Algorithms II - DFS, BFS, Kruskals Algorithm, Union Find Data Structure - Lecture 7",
-       "url": "https://www.youtube.com/watch?v=ufj5_bppBsA&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=8"
-      }
-     ],
-     "file": "kruskals-algorithm@Wqhg7E-lOz1oNcRXjUej8.md"
-    },
-    {
-     "id": "nODFT-i2YsxUVsgwWkIWn",
-     "type": "subtopic",
-     "label": "Maze Solving Problem",
-     "body": "Maze solving problem is a classic problem in computer science. It is a problem where we have to find a path from a starting point to an end point in a maze. The maze is represented as a grid of cells. Each cell can be either a wall or a path. The path cells are connected to each other. The starting point and the end point are also given. The goal is to find a path from the starting point to the end point. The path can only be made up of path cells. The path cannot go through the wall cells.",
-     "resources": [
-      {
-       "kind": "opensource",
-       "title": "Maze Solving Algorithms",
-       "url": "https://github.com/john-science/mazelib/blob/main/docs/MAZE_SOLVE_ALGOS.md"
-      },
-      {
-       "kind": "article",
-       "title": "Maze Solving Algorithms",
-       "url": "https://kidscodecs.com/maze-solving-algorithms/"
-      },
-      {
-       "kind": "video",
-       "title": "Maze Solving - Computerphile",
-       "url": "https://www.youtube.com/watch?v=rop0W4QDOUI"
-      },
-      {
-       "kind": "video",
-       "title": "Python Maze Solving Tutorial (Using Recursion)",
-       "url": "https://www.youtube.com/watch?v=XP94WC_XnZc"
-      }
-     ],
-     "file": "maze-solving-problem@nODFT-i2YsxUVsgwWkIWn.md"
     },
     {
      "id": "L4M5yFRKKR2axKXGcIA7d",
@@ -1691,49 +1000,6 @@
       }
      ],
      "file": "search-pattern-in-text@L4M5yFRKKR2axKXGcIA7d.md"
-    },
-    {
-     "id": "Hqw2eGtgfbVggqXBnIOdI",
-     "type": "subtopic",
-     "label": "Ford-Fulkerson Algorithm",
-     "body": "Ford Fulkerson Algorithm is a greedy algorithm that is used to find the maximum flow in a flow network. It is also known as the Edmonds-Karp Algorithm.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Ford-Fulkerson Algorithm",
-       "url": "https://www.programiz.com/dsa/ford-fulkerson-algorithm"
-      },
-      {
-       "kind": "video",
-       "title": "Ford-Fulkerson in 5 minutes",
-       "url": "https://www.youtube.com/watch?v=Tl90tNtKvxs"
-      }
-     ],
-     "file": "ford-fulkerson-algorithm@Hqw2eGtgfbVggqXBnIOdI.md"
-    },
-    {
-     "id": "NcKW_3vJWL_rVlDBB_Qjs",
-     "type": "subtopic",
-     "label": "The Knight's Tour Problem",
-     "body": "Knight's Tour Problem is a problem where we have to find a path for a knight to visit all the cells of a chessboard without visiting any cell twice.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Knights Tour",
-       "url": "https://bradfieldcs.com/algos/graphs/knights-tour/"
-      },
-      {
-       "kind": "article",
-       "title": "Knights Tour Problem",
-       "url": "https://www.codesdope.com/course/algorithms-knights-tour-problem/"
-      },
-      {
-       "kind": "article",
-       "title": "Backtracking: The Knight’s Tour Problem",
-       "url": "https://www.codingninjas.com/codestudio/library/backtracking-the-knights-tour-problem"
-      }
-     ],
-     "file": "the-knights-tour-problem@NcKW_3vJWL_rVlDBB_Qjs.md"
     },
     {
      "id": "Ld1TUNS8713coMNvwhNIJ",
@@ -1763,54 +1029,6 @@
       }
      ],
      "file": "suffix-arrays@Ld1TUNS8713coMNvwhNIJ.md"
-    },
-    {
-     "id": "znpFIKwMJlepKJ8dH3kvC",
-     "type": "subtopic",
-     "label": "Prim's Algorithm",
-     "body": "Prim's algorithm is a greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. A minimum spanning tree is a subset of the edges of a connected, edge-weighted undirected graph that connects all the vertices together, without any cycles and with the minimum possible total edge weight. A minimum spanning tree for a weighted undirected graph is also called a minimum weight spanning tree or minimum cost spanning tree.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Prims Algorithm",
-       "url": "https://www.programiz.com/dsa/prim-algorithm"
-      },
-      {
-       "kind": "video",
-       "title": "Graph Algorithms I - Topological Sorting, Prims Algorithm - Lecture 6",
-       "url": "https://www.youtube.com/watch?v=i_AQT_XfvD8&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=7"
-      }
-     ],
-     "file": "prims-algorithm@znpFIKwMJlepKJ8dH3kvC.md"
-    },
-    {
-     "id": "l5--4opvZoc_seVn__5R3",
-     "type": "subtopic",
-     "label": "Rabin-Karp Algorithm",
-     "body": "Rabin-Karp algorithm is a string searching algorithm that uses hashing to find any one of a set of pattern strings in a text. For strings of average length `n`, it performs in `O(n+m)` time with `O(m)` space, where `m` is the length of the pattern. It is often used in bioinformatics to search for DNA patterns.",
-     "resources": [
-      {
-       "kind": "course",
-       "title": "Rabin Karps Algorithm",
-       "url": "https://www.coursera.org/lecture/data-structures/rabin-karps-algorithm-c0Qkw"
-      },
-      {
-       "kind": "course",
-       "title": "Optimization: Precomputation",
-       "url": "https://www.coursera.org/learn/data-structures/lecture/nYrc8/optimization-precomputation"
-      },
-      {
-       "kind": "course",
-       "title": "Optimization: Implementation and Analysis",
-       "url": "https://www.coursera.org/learn/data-structures/lecture/h4ZLc/optimization-implementation-and-analysis"
-      },
-      {
-       "kind": "video",
-       "title": "Lecture 9: Table Doubling, Karp-Rabin",
-       "url": "https://www.youtube.com/watch?v=BRO7mVIFt08&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=9"
-      }
-     ],
-     "file": "rabin-karp-algorithm@l5--4opvZoc_seVn__5R3.md"
     },
     {
      "id": "vjMqqFsTxSjaiYxmliwLi",
@@ -1913,30 +1131,6 @@
      "file": "ascii@hmwsNp60alS43kJg4A_Og.md"
     },
     {
-     "id": "E9hf1ux1KKGHvvAShm67w",
-     "type": "subtopic",
-     "label": "Substring Search",
-     "body": "Substring search is the problem of finding a substring in a string. This is a very common problem in computer science, and there are many algorithms for solving it.",
-     "resources": [
-      {
-       "kind": "course",
-       "title": "Introduction to Substring Search",
-       "url": "https://www.coursera.org/lecture/algorithms-part2/introduction-to-substring-search-n3ZpG"
-      },
-      {
-       "kind": "article",
-       "title": "What is the fastest substring search algorithm?",
-       "url": "https://stackoverflow.com/questions/3183582/what-is-the-fastest-substring-search-algorithm"
-      },
-      {
-       "kind": "article",
-       "title": "Substring Search - Exercises",
-       "url": "https://algs4.cs.princeton.edu/53substring/"
-      }
-     ],
-     "file": "substring-search@E9hf1ux1KKGHvvAShm67w.md"
-    },
-    {
      "id": "U8AgY6I-62mN5Ohg9MsG6",
      "type": "subtopic",
      "label": "Big Endian",
@@ -1982,30 +1176,6 @@
       }
      ],
      "file": "gof-design-patterns@iPN9mSyFwYZER5HSkj6oL.md"
-    },
-    {
-     "id": "g3b0kt1fCAjjYyS2WelWi",
-     "type": "subtopic",
-     "label": "Brute Force Search",
-     "body": "Brute force search is a simple algorithm that checks for a pattern in a string by comparing each character of the string with the first character of the pattern. If the first character matches, it then compares the next character of the string with the next character of the pattern and so on. If all the characters of the pattern match, then the pattern is found. If the first character does not match, then the algorithm compares the second character of the string with the first character of the pattern and so on.",
-     "resources": [
-      {
-       "kind": "course",
-       "title": "Brute-Force Substring Search",
-       "url": "https://www.coursera.org/learn/algorithms-part2/lecture/2Kn5i/brute-force-substring-search"
-      },
-      {
-       "kind": "article",
-       "title": "A Beginner Guide to Brute Force Algorithm for Substring Search",
-       "url": "https://nulpointerexception.com/2019/02/10/a-beginner-guide-to-brute-force-algorithm-for-substring-search/"
-      },
-      {
-       "kind": "article",
-       "title": "Brute Force Algorithm in Cybersecurity and String Search",
-       "url": "https://www.baeldung.com/cs/brute-force-cybersecurity-string-search"
-      }
-     ],
-     "file": "brute-force-search@g3b0kt1fCAjjYyS2WelWi.md"
     },
     {
      "id": "rD_5n5bjiNMVC0cPhEVyG",
@@ -2070,35 +1240,6 @@
      "file": "bitwise-operators@hTPLcuOW7eEE5oYhNfmOG.md"
     },
     {
-     "id": "Km5LvcJpyntrW2iA8h5e3",
-     "type": "subtopic",
-     "label": "Robin-Karp",
-     "body": "Rabin-Karp algorithm is a string searching algorithm that uses hashing to find any one of a set of pattern strings in a text. For strings of average length `n`, it performs in `O(n+m)` time with `O(m)` space, where `m` is the length of the pattern. It is often used in bioinformatics to search for DNA patterns.",
-     "resources": [
-      {
-       "kind": "course",
-       "title": "Rabin Karps Algorithm",
-       "url": "https://www.coursera.org/lecture/data-structures/rabin-karps-algorithm-c0Qkw"
-      },
-      {
-       "kind": "course",
-       "title": "Optimization: Precomputation",
-       "url": "https://www.coursera.org/learn/data-structures/lecture/nYrc8/optimization-precomputation"
-      },
-      {
-       "kind": "course",
-       "title": "Optimization: Implementation and Analysis",
-       "url": "https://www.coursera.org/learn/data-structures/lecture/h4ZLc/optimization-implementation-and-analysis"
-      },
-      {
-       "kind": "video",
-       "title": "Lecture 9: Table Doubling, Karp-Rabin",
-       "url": "https://www.youtube.com/watch?v=BRO7mVIFt08&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=9"
-      }
-     ],
-     "file": "robin-karp@Km5LvcJpyntrW2iA8h5e3.md"
-    },
-    {
      "id": "J7DKRklMtJ94Y-18Jo50r",
      "type": "subtopic",
      "label": "Dependency Injection",
@@ -2161,25 +1302,6 @@
      "file": "common-uml-diagrams@DMuMsEowpevTCALtziwTB.md"
     },
     {
-     "id": "8abFKMfaV9H8F38I0DcMT",
-     "type": "subtopic",
-     "label": "Knuth-Morris Pratt",
-     "body": "The Knuth-Morris-Pratt (KMP) algorithm searches for a pattern in text by preprocessing the pattern into a table that tracks the longest proper prefix that is also a suffix. This lets the algorithm skip re-checking characters it has already matched when a mismatch occurs, giving it O(n + m) time complexity.",
-     "resources": [
-      {
-       "kind": "course",
-       "title": "Knuth-Morris Pratt",
-       "url": "https://www.coursera.org/learn/algorithms-part2/lecture/TAtDr/knuth-morris-pratt"
-      },
-      {
-       "kind": "video",
-       "title": "9.1 Knuth-Morris-Pratt KMP String Matching Algorithm",
-       "url": "https://www.youtube.com/watch?v=V5-7GzOfADQ"
-      }
-     ],
-     "file": "knuth-morris-pratt@8abFKMfaV9H8F38I0DcMT.md"
-    },
-    {
      "id": "PpFQ0zmObZLvmBvqhTEMz",
      "type": "subtopic",
      "label": "Null Object Pattern",
@@ -2192,25 +1314,6 @@
       }
      ],
      "file": "null-object-pattern@PpFQ0zmObZLvmBvqhTEMz.md"
-    },
-    {
-     "id": "p6qub32jcaGloHXUDUrlG",
-     "type": "subtopic",
-     "label": "Boyer-Moore",
-     "body": "Boyer Moore algorithm is a string searching algorithm that is used to find the index of a substring in a string. It is a very efficient algorithm that is used in many applications. It is used in text editors, compilers, and many other applications.",
-     "resources": [
-      {
-       "kind": "course",
-       "title": "Boyer Moore Algorithm",
-       "url": "https://www.coursera.org/learn/algorithms-part2/lecture/CYxOT/boyer-moore"
-      },
-      {
-       "kind": "article",
-       "title": "Boyer-Moore String-search Algorithm",
-       "url": "https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm"
-      }
-     ],
-     "file": "boyer-moore@p6qub32jcaGloHXUDUrlG.md"
     },
     {
      "id": "_2Jddpz_cdwyeIgrg5qt_",
@@ -2597,83 +1700,6 @@
      "file": "tries@4qUVacMEz3XFiL_dMre6P.md"
     },
     {
-     "id": "Lwkz7qozXRlVNA20zJbSw",
-     "type": "topic",
-     "label": "NP Complete",
-     "body": "A problem is NP-complete if it is both NP and NP-hard. NP-complete problems are the hard problems in NP.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Trying to understand P vs NP vs NP Complete vs NP Hard",
-       "url": "https://softwareengineering.stackexchange.com/questions/308178/trying-to-understand-p-vs-np-vs-np-complete-vs-np-hard"
-      },
-      {
-       "kind": "video",
-       "title": "Complexity: P, NP, NP-completeness, Reductions",
-       "url": "https://www.youtube.com/watch?v=eHZifpgyH_4&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=22"
-      },
-      {
-       "kind": "video",
-       "title": "P vs. NP and the Computational Complexity Zoo",
-       "url": "https://www.youtube.com/watch?v=YX40hbAHx3s"
-      },
-      {
-       "kind": "video",
-       "title": "Greedy Algs. II & Intro to NP Completeness",
-       "url": "https://youtu.be/qcGnJ47Smlo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=2939"
-      }
-     ],
-     "file": "np-complete@Lwkz7qozXRlVNA20zJbSw.md"
-    },
-    {
-     "id": "pZ5x_zDYGzW9VxYycyXtN",
-     "type": "subtopic",
-     "label": "OSI Model",
-     "body": "The OSI and TCP/IP model is used to help the developer to design their system for interoperability. The OSI model has 7 layers while the TCP/IP model has a more summarized form of the OSI model only consisting 4 layers. This is important if you're trying to design a system to communicate with other systems.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Cloudflare - What is the OSI model",
-       "url": "https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/"
-      },
-      {
-       "kind": "video",
-       "title": "TCP/IP and the OSI Model Explained!",
-       "url": "https://www.youtube.com/watch?v=e5DEVa9eSN0"
-      }
-     ],
-     "file": "osi-model@pZ5x_zDYGzW9VxYycyXtN.md"
-    },
-    {
-     "id": "ZG-hWjVoS3p9XfrtBL0sD",
-     "type": "subtopic",
-     "label": "Travelling Salesman Problem",
-     "body": "The Travelling Salesman Problem (TSP) is a classic problem in computer science. It is a problem that is NP-complete, which means that it is a problem that is hard to solve. It is also a problem that is used to test the efficiency of algorithms.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Traveling Salesman Problem",
-       "url": "https://en.wikipedia.org/wiki/Travelling_salesman_problem"
-      },
-      {
-       "kind": "video",
-       "title": "What is the Traveling Salesman Problem?",
-       "url": "https://www.youtube.com/watch?v=1pmBjIZ20pE"
-      },
-      {
-       "kind": "video",
-       "title": "4.7 Traveling Salesperson Problem - Dynamic Programming",
-       "url": "https://www.youtube.com/watch?v=XaXsJJh-Q5Y"
-      },
-      {
-       "kind": "video",
-       "title": "Traveling Salesman Problem | Dynamic Programming | Graph Theory",
-       "url": "https://www.youtube.com/watch?v=cY4HiiFHO1o"
-      }
-     ],
-     "file": "travelling-salesman-problem@ZG-hWjVoS3p9XfrtBL0sD.md"
-    },
-    {
      "id": "nprZscHdC_RdRIcGeGyVk",
      "type": "subtopic",
      "label": "SQL vs NoSQL Databases",
@@ -2703,6 +1729,44 @@
      "file": "sql-vs-nosql-databases@nprZscHdC_RdRIcGeGyVk.md"
     },
     {
+     "id": "pZ5x_zDYGzW9VxYycyXtN",
+     "type": "subtopic",
+     "label": "OSI Model",
+     "body": "The OSI and TCP/IP model is used to help the developer to design their system for interoperability. The OSI model has 7 layers while the TCP/IP model has a more summarized form of the OSI model only consisting 4 layers. This is important if you're trying to design a system to communicate with other systems.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Cloudflare - What is the OSI model",
+       "url": "https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/"
+      },
+      {
+       "kind": "video",
+       "title": "TCP/IP and the OSI Model Explained!",
+       "url": "https://www.youtube.com/watch?v=e5DEVa9eSN0"
+      }
+     ],
+     "file": "osi-model@pZ5x_zDYGzW9VxYycyXtN.md"
+    },
+    {
+     "id": "Rw7QjLC8hLtXSwmU_9kHC",
+     "type": "subtopic",
+     "label": "Normalization / Denormalization",
+     "body": "Normalization organizes a database schema to reduce data redundancy by splitting data into related tables, following a set of normal forms. Denormalization does the opposite, intentionally duplicating data across tables to reduce the number of joins needed for common queries, trading storage and update complexity for faster reads.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "Normalization vs. Denormalization | Events and Event Streaming",
+       "url": "https://www.youtube.com/watch?v=sDU94hraq8g"
+      },
+      {
+       "kind": "video",
+       "title": "Normalization - 1NF, 2NF, 3NF and 4NF",
+       "url": "https://www.youtube.com/watch?v=UrYLYV7WSHM"
+      }
+     ],
+     "file": "normalization--denormalization@Rw7QjLC8hLtXSwmU_9kHC.md"
+    },
+    {
      "id": "Fed5y1D95WPpqoVg7kmob",
      "type": "subtopic",
      "label": "TCP/IP Model",
@@ -2722,23 +1786,23 @@
      "file": "tcpip-model@Fed5y1D95WPpqoVg7kmob.md"
     },
     {
-     "id": "yHeCRPhfAOWiggZeUHPU9",
+     "id": "XnxxEmr2TyW2kOpB4gtR5",
      "type": "subtopic",
-     "label": "Knapsack Problem",
-     "body": "KnapSack Problem is a classic problem in computer science. It is a problem in which we are given a set of items, each with a weight and a value, and we need to determine which items to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.",
+     "label": "Entity-Relationship Model",
+     "body": "Entity relationship model is a high-level data model that describes the logical structure of a database. It is a graphical representation of entities and their relationships to each other, typically used in modeling the organization of data within databases or information systems.",
      "resources": [
       {
-       "kind": "article",
-       "title": "How to solve the Knapsack Problem with dynamic programming",
-       "url": "https://medium.com/@fabianterh/how-to-solve-the-knapsack-problem-with-dynamic-programming-eb88c706d3cf"
+       "kind": "video",
+       "title": "Entity Relationship Diagram (ERD) Tutorial - Part 1",
+       "url": "https://www.youtube.com/watch?v=QpdhBUYk7Kk"
       },
       {
        "kind": "video",
-       "title": "3.1 Knapsack Problem - Greedy Method",
-       "url": "https://www.youtube.com/watch?v=oTTzNMHM05I"
+       "title": "Entity Relationship Diagram (ERD) Tutorial - Part 2",
+       "url": "https://www.youtube.com/watch?v=-CuY5ADwn24"
       }
      ],
-     "file": "knapsack-problem@yHeCRPhfAOWiggZeUHPU9.md"
+     "file": "entity-relationship-model@XnxxEmr2TyW2kOpB4gtR5.md"
     },
     {
      "id": "fYjoXB4rnkM5gg46sqVz5",
@@ -2797,111 +1861,6 @@
       }
      ],
      "file": "http@2tUwl-br-SRuwADSzmQag.md"
-    },
-    {
-     "id": "Rw7QjLC8hLtXSwmU_9kHC",
-     "type": "subtopic",
-     "label": "Normalization / Denormalization",
-     "body": "Normalization organizes a database schema to reduce data redundancy by splitting data into related tables, following a set of normal forms. Denormalization does the opposite, intentionally duplicating data across tables to reduce the number of joins needed for common queries, trading storage and update complexity for faster reads.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "Normalization vs. Denormalization | Events and Event Streaming",
-       "url": "https://www.youtube.com/watch?v=sDU94hraq8g"
-      },
-      {
-       "kind": "video",
-       "title": "Normalization - 1NF, 2NF, 3NF and 4NF",
-       "url": "https://www.youtube.com/watch?v=UrYLYV7WSHM"
-      }
-     ],
-     "file": "normalization--denormalization@Rw7QjLC8hLtXSwmU_9kHC.md"
-    },
-    {
-     "id": "4QVVYjDODMWsjnrE-4UBs",
-     "type": "subtopic",
-     "label": "Longest Path Problem",
-     "body": "The Longest Path Problem asks for the longest simple path between two vertices in a graph, one that does not repeat any vertex. Unlike the shortest path problem, which has efficient algorithms, finding the longest path is NP-hard in general graphs, though it becomes solvable in polynomial time for special cases like directed acyclic graphs.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "Shortest/Longest path on a Directed Acyclic Graph (DAG) | Graph Theory",
-       "url": "https://www.youtube.com/watch?v=TXkDpqjDMHA"
-      },
-      {
-       "kind": "video",
-       "title": "Longest Simple Path - Intro to Algorithms",
-       "url": "https://www.youtube.com/watch?v=lRH0tax5dFA"
-      }
-     ],
-     "file": "longest-path-problem@4QVVYjDODMWsjnrE-4UBs.md"
-    },
-    {
-     "id": "3pu2bGhoCLFIs6kNanwtz",
-     "type": "subtopic",
-     "label": "TLS & HTTPS",
-     "body": "TLS (Transport Layer Security) is a cryptographic protocol that provides privacy and data integrity between two communicating applications. It is widely used to secure HTTP, although it can be used with any protocol. TLS is often used in combination with HTTPS, which is HTTP over TLS.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is TLS & How Does it Work? - Internet Society",
-       "url": "https://www.internetsociety.org/deploy360/tls/basics/"
-      },
-      {
-       "kind": "article",
-       "title": "What is TLS (Transport Layer Security)? - Cloudflare",
-       "url": "https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/"
-      },
-      {
-       "kind": "video",
-       "title": "SSL and HTTPS",
-       "url": "https://www.youtube.com/watch?v=S2iBR2ZlZf0"
-      },
-      {
-       "kind": "video",
-       "title": "SSL/TLS - Cristina Formaini",
-       "url": "https://www.youtube.com/watch?v=Rp3iZUvXWlM"
-      }
-     ],
-     "file": "tls--https@3pu2bGhoCLFIs6kNanwtz.md"
-    },
-    {
-     "id": "XnxxEmr2TyW2kOpB4gtR5",
-     "type": "subtopic",
-     "label": "Entity-Relationship Model",
-     "body": "Entity relationship model is a high-level data model that describes the logical structure of a database. It is a graphical representation of entities and their relationships to each other, typically used in modeling the organization of data within databases or information systems.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "Entity Relationship Diagram (ERD) Tutorial - Part 1",
-       "url": "https://www.youtube.com/watch?v=QpdhBUYk7Kk"
-      },
-      {
-       "kind": "video",
-       "title": "Entity Relationship Diagram (ERD) Tutorial - Part 2",
-       "url": "https://www.youtube.com/watch?v=-CuY5ADwn24"
-      }
-     ],
-     "file": "entity-relationship-model@XnxxEmr2TyW2kOpB4gtR5.md"
-    },
-    {
-     "id": "u-c-UFegRb7xqsmvj9gVb",
-     "type": "subtopic",
-     "label": "Sockets",
-     "body": "A socket is an interface for network communication. It is a way for two programs to communicate with each other over a network. It is a way for a client to send a request to a server and for the server to send a response back to the client.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "A Beginners Guide to WebSockets",
-       "url": "https://www.youtube.com/watch?v=8ARodQ4Wlf4"
-      },
-      {
-       "kind": "video",
-       "title": "WebSockets in 100 Seconds & Beyond with Socket.io",
-       "url": "https://www.youtube.com/watch?v=1BfCnjr_Vjg"
-      }
-     ],
-     "file": "sockets@u-c-UFegRb7xqsmvj9gVb.md"
     },
     {
      "id": "ii1vF74u3yrFNlw_21b3B",
@@ -2965,33 +1924,52 @@
      "file": "dcl@4bUmfuP2qgcli8I2Vm9zh.md"
     },
     {
-     "id": "zG5t3HqbZnh9CGRqp1Sb-",
-     "type": "topic",
-     "label": "Networking",
-     "body": "Networking is the process of connecting two or more computing devices together for the purpose of sharing data. In a data network, shared data may be as simple as a printer or as complex as a global financial transaction.\n\nIf you have networking experience or want to be a reliability engineer or operations engineer, expect questions from these topics. Otherwise, this is just good to know.",
+     "id": "3pu2bGhoCLFIs6kNanwtz",
+     "type": "subtopic",
+     "label": "TLS & HTTPS",
+     "body": "TLS (Transport Layer Security) is a cryptographic protocol that provides privacy and data integrity between two communicating applications. It is widely used to secure HTTP, although it can be used with any protocol. TLS is often used in combination with HTTPS, which is HTTP over TLS.",
      "resources": [
       {
-       "kind": "roadmap",
-       "title": "Visit the Dedicated Network Engineer Roadmap",
-       "url": "https://roadmap.sh/network-engineer"
+       "kind": "article",
+       "title": "What is TLS & How Does it Work? - Internet Society",
+       "url": "https://www.internetsociety.org/deploy360/tls/basics/"
       },
       {
        "kind": "article",
-       "title": "Khan Academy - Networking",
-       "url": "https://www.khanacademy.org/computing/code-org/computers-and-the-internet"
+       "title": "What is TLS (Transport Layer Security)? - Cloudflare",
+       "url": "https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/"
       },
       {
        "kind": "video",
-       "title": "Computer Networking Course - Network Engineering",
-       "url": "https://www.youtube.com/watch?v=qiQR5rTSshw"
+       "title": "SSL and HTTPS",
+       "url": "https://www.youtube.com/watch?v=S2iBR2ZlZf0"
       },
       {
        "kind": "video",
-       "title": "Networking Video Series (21 videos)",
-       "url": "https://www.youtube.com/playlist?list=PLEbnTDJUr_IegfoqO4iPnPYQui46QqT0j"
+       "title": "SSL/TLS - Cristina Formaini",
+       "url": "https://www.youtube.com/watch?v=Rp3iZUvXWlM"
       }
      ],
-     "file": "networking@zG5t3HqbZnh9CGRqp1Sb-.md"
+     "file": "tls--https@3pu2bGhoCLFIs6kNanwtz.md"
+    },
+    {
+     "id": "u-c-UFegRb7xqsmvj9gVb",
+     "type": "subtopic",
+     "label": "Sockets",
+     "body": "A socket is an interface for network communication. It is a way for two programs to communicate with each other over a network. It is a way for a client to send a request to a server and for the server to send a response back to the client.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "A Beginners Guide to WebSockets",
+       "url": "https://www.youtube.com/watch?v=8ARodQ4Wlf4"
+      },
+      {
+       "kind": "video",
+       "title": "WebSockets in 100 Seconds & Beyond with Socket.io",
+       "url": "https://www.youtube.com/watch?v=1BfCnjr_Vjg"
+      }
+     ],
+     "file": "sockets@u-c-UFegRb7xqsmvj9gVb.md"
     },
     {
      "id": "zvlTQ0A-My4QDrslp_lru",
@@ -3071,6 +2049,35 @@
      "file": "balanced-search-trees@7DF3UhefOSqqTuccH8c8X.md"
     },
     {
+     "id": "zG5t3HqbZnh9CGRqp1Sb-",
+     "type": "topic",
+     "label": "Networking",
+     "body": "Networking is the process of connecting two or more computing devices together for the purpose of sharing data. In a data network, shared data may be as simple as a printer or as complex as a global financial transaction.\n\nIf you have networking experience or want to be a reliability engineer or operations engineer, expect questions from these topics. Otherwise, this is just good to know.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit the Dedicated Network Engineer Roadmap",
+       "url": "https://roadmap.sh/network-engineer"
+      },
+      {
+       "kind": "article",
+       "title": "Khan Academy - Networking",
+       "url": "https://www.khanacademy.org/computing/code-org/computers-and-the-internet"
+      },
+      {
+       "kind": "video",
+       "title": "Computer Networking Course - Network Engineering",
+       "url": "https://www.youtube.com/watch?v=qiQR5rTSshw"
+      },
+      {
+       "kind": "video",
+       "title": "Networking Video Series (21 videos)",
+       "url": "https://www.youtube.com/playlist?list=PLEbnTDJUr_IegfoqO4iPnPYQui46QqT0j"
+      }
+     ],
+     "file": "networking@zG5t3HqbZnh9CGRqp1Sb-.md"
+    },
+    {
      "id": "_sm63rZNKoibVndeNgOpW",
      "type": "subtopic",
      "label": "Locking",
@@ -3148,6 +2155,35 @@
      "file": "horizontal-vs-vertical-scaling@-34WGppX6QC5fkCvfCghp.md"
     },
     {
+     "id": "eOL0_SzxBn7_xhNcBDi2D",
+     "type": "subtopic",
+     "label": "Red / Black Trees",
+     "body": " \nA red-black tree is a self-balancing binary search tree where each node is colored red or black, and a set of coloring rules ensures the tree never becomes more than roughly twice as tall as the shortest possible balanced tree. It requires fewer rotations on average than an AVL tree, which makes it a common choice for implementing ordered maps and sets in standard libraries.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Red-Black Tree - Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Red%E2%80%93black_tree"
+      },
+      {
+       "kind": "article",
+       "title": "An Introduction To Binary Search And Red Black Tree",
+       "url": "https://www.topcoder.com/thrive/articles/An%20Introduction%20to%20Binary%20Search%20and%20Red-Black%20Trees"
+      },
+      {
+       "kind": "video",
+       "title": "Red-Black Trees (playlist) in 30 minutes",
+       "url": "https://www.youtube.com/playlist?list=PL9xmBV_5YoZNqDI8qfOZgzbqahCUmUEin"
+      },
+      {
+       "kind": "video",
+       "title": "Aduni - Algorithms - Lecture 4 (link jumps to starting point)",
+       "url": "https://youtu.be/1W3x0f_RmUo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3871"
+      }
+     ],
+     "file": "red--black-trees@eOL0_SzxBn7_xhNcBDi2D.md"
+    },
+    {
      "id": "W5B-v-BFcCRmuN0L1m6PI",
      "type": "subtopic",
      "label": "ACID Model",
@@ -3215,33 +2251,28 @@
      "file": "load-balancing@xDiS0HmrEoPjkQg9x2O3o.md"
     },
     {
-     "id": "eOL0_SzxBn7_xhNcBDi2D",
+     "id": "3jiV9R82qxpqIGfpEq_wK",
      "type": "subtopic",
-     "label": "Red / Black Trees",
-     "body": " \nA red-black tree is a self-balancing binary search tree where each node is colored red or black, and a set of coloring rules ensures the tree never becomes more than roughly twice as tall as the shortest possible balanced tree. It requires fewer rotations on average than an AVL tree, which makes it a common choice for implementing ordered maps and sets in standard libraries.",
+     "label": "2 3 Search Trees",
+     "body": "In practice: 2-3 trees have faster inserts at the expense of slower searches (since height is more compared to AVL trees). You would use 2-3 tree very rarely because its implementation involves different types of nodes. Instead, people use Red Black trees.",
      "resources": [
       {
-       "kind": "article",
-       "title": "Red-Black Tree - Wikipedia",
-       "url": "https://en.wikipedia.org/wiki/Red%E2%80%93black_tree"
-      },
-      {
-       "kind": "article",
-       "title": "An Introduction To Binary Search And Red Black Tree",
-       "url": "https://www.topcoder.com/thrive/articles/An%20Introduction%20to%20Binary%20Search%20and%20Red-Black%20Trees"
+       "kind": "video",
+       "title": "23-Tree Intuition and Definition",
+       "url": "https://www.youtube.com/watch?v=C3SsdUqasD4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=2"
       },
       {
        "kind": "video",
-       "title": "Red-Black Trees (playlist) in 30 minutes",
-       "url": "https://www.youtube.com/playlist?list=PL9xmBV_5YoZNqDI8qfOZgzbqahCUmUEin"
+       "title": "Binary View of 23-Tree",
+       "url": "https://www.youtube.com/watch?v=iYvBtGKsqSg&index=3&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6"
       },
       {
        "kind": "video",
-       "title": "Aduni - Algorithms - Lecture 4 (link jumps to starting point)",
-       "url": "https://youtu.be/1W3x0f_RmUo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3871"
+       "title": "2-3 Trees (student recitation)",
+       "url": "https://www.youtube.com/watch?v=TOb1tuEZ2X4&index=5&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp"
       }
      ],
-     "file": "red--black-trees@eOL0_SzxBn7_xhNcBDi2D.md"
+     "file": "2-3-search-trees@3jiV9R82qxpqIGfpEq_wK.md"
     },
     {
      "id": "uqfeiQ9K--QkGNwks4kjk",
@@ -3320,28 +2351,28 @@
      "file": "caching@4u5w9QCptLWuY9O7_UU8V.md"
     },
     {
-     "id": "3jiV9R82qxpqIGfpEq_wK",
+     "id": "IaPd_zuLbiOCwoSHQLoIG",
      "type": "subtopic",
-     "label": "2 3 Search Trees",
-     "body": "In practice: 2-3 trees have faster inserts at the expense of slower searches (since height is more compared to AVL trees). You would use 2-3 tree very rarely because its implementation involves different types of nodes. Instead, people use Red Black trees.",
+     "label": "2 3 4 Trees",
+     "body": "In practice: For every 2-4 tree, there are corresponding red–black trees with data elements in the same order. The insertion and deletion operations on 2-4 trees are also equivalent to color-flipping and rotations in red–black trees. This makes 2-4 trees an important tool for understanding the logic behind red–black trees, and this is why many introductory algorithm texts introduce 2-4 trees just before red–black trees, even though 2-4 trees are not often used in practice.",
      "resources": [
       {
-       "kind": "video",
-       "title": "23-Tree Intuition and Definition",
-       "url": "https://www.youtube.com/watch?v=C3SsdUqasD4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=2"
+       "kind": "article",
+       "title": "CS 61B Lecture 26: Balanced Search Trees",
+       "url": "https://archive.org/details/ucberkeley_webcast_zqrqYXkth6Q"
       },
       {
        "kind": "video",
-       "title": "Binary View of 23-Tree",
-       "url": "https://www.youtube.com/watch?v=iYvBtGKsqSg&index=3&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6"
+       "title": "Bottom Up 234-Trees",
+       "url": "https://www.youtube.com/watch?v=DQdMYevEyE4&index=4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6"
       },
       {
        "kind": "video",
-       "title": "2-3 Trees (student recitation)",
-       "url": "https://www.youtube.com/watch?v=TOb1tuEZ2X4&index=5&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp"
+       "title": "Top Down 234-Trees",
+       "url": "https://www.youtube.com/watch?v=2679VQ26Fp4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=5"
       }
      ],
-     "file": "2-3-search-trees@3jiV9R82qxpqIGfpEq_wK.md"
+     "file": "2-3-4-trees@IaPd_zuLbiOCwoSHQLoIG.md"
     },
     {
      "id": "BEbsUA39kZ5itqCwD585f",
@@ -3406,6 +2437,58 @@
      "file": "cdn@r8V9bZpc98SrLvXc070bZ.md"
     },
     {
+     "id": "qLLJ_ehC8tSRfXsorYMQz",
+     "type": "subtopic",
+     "label": "Proxy",
+     "body": "A proxy server is an intermediary piece of hardware/software sitting between the client and the backend server. It receives requests from clients and relays them to the origin servers. Typically, proxies are used to filter requests, log requests, or sometimes transform requests (by adding/removing headers, encrypting/decrypting, or compression).",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Proxy Servers",
+       "url": "https://roadmap.sh/guides/proxy-servers"
+      },
+      {
+       "kind": "article",
+       "title": "Proxy - System Design",
+       "url": "https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#proxy"
+      }
+     ],
+     "file": "proxy@qLLJ_ehC8tSRfXsorYMQz.md"
+    },
+    {
+     "id": "UOYeM-hqIKCrB9hGez4Q_",
+     "type": "subtopic",
+     "label": "K-ary / M-ary Tree",
+     "body": "A k-ary (or m-ary) tree is a generalization of a binary tree where each node can have up to k children instead of just two. Increasing the branching factor reduces the tree's height for a given number of nodes, which is useful in structures like B-trees where minimizing height matters for disk access.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "K-Ary Tree",
+       "url": "https://en.wikipedia.org/wiki/K-ary_tree"
+      }
+     ],
+     "file": "k-ary--m-ary-tree@UOYeM-hqIKCrB9hGez4Q_.md"
+    },
+    {
+     "id": "KhvYJtSCUBOpEZXjHpQde",
+     "type": "subtopic",
+     "label": "Transactions",
+     "body": "In short, a database transaction is a sequence of multiple operations performed on a database, and all served as a single logical unit of work — taking place wholly or not at all. In other words, there's never a case where only half of the operations are performed and the results saved.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What are Transactions?",
+       "url": "https://fauna.com/blog/database-transaction"
+      },
+      {
+       "kind": "article",
+       "title": "Database Transaction",
+       "url": "https://en.wikipedia.org/wiki/Database_transaction"
+      }
+     ],
+     "file": "transactions@KhvYJtSCUBOpEZXjHpQde.md"
+    },
+    {
      "id": "LCPEzpyAuHY3ggN3nYrNN",
      "type": "subtopic",
      "label": "Queues",
@@ -3430,66 +2513,47 @@
      "file": "queues@LCPEzpyAuHY3ggN3nYrNN.md"
     },
     {
-     "id": "qLLJ_ehC8tSRfXsorYMQz",
+     "id": "FjhZGhzJjYyDn0PShKmpX",
      "type": "subtopic",
-     "label": "Proxy",
-     "body": "A proxy server is an intermediary piece of hardware/software sitting between the client and the backend server. It receives requests from clients and relays them to the origin servers. Typically, proxies are used to filter requests, log requests, or sometimes transform requests (by adding/removing headers, encrypting/decrypting, or compression).",
+     "label": "Stored Procedures",
+     "body": "Stored Procedures are created to perform one or more DML operations on Database. It is nothing but the group of SQL statements that accepts some input in the form of parameters and performs some task and may or may not returns a value.",
      "resources": [
       {
        "kind": "article",
-       "title": "Proxy Servers",
-       "url": "https://roadmap.sh/guides/proxy-servers"
+       "title": "SQL Stored Procedures",
+       "url": "https://www.programiz.com/sql/stored-procedures"
+      }
+     ],
+     "file": "stored-procedures@FjhZGhzJjYyDn0PShKmpX.md"
+    },
+    {
+     "id": "s0Pi6CemUUsmZSEu2j2gH",
+     "type": "subtopic",
+     "label": "B-Tree",
+     "body": "A B-tree is a self-balancing tree where each node can hold multiple keys and have multiple children, keeping the tree shallow even with a large number of elements. This makes B-trees well suited for storage systems like databases and file systems, where each node can be sized to match a disk block and minimize the number of disk reads needed to find data.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "B-Tree - Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/B-tree"
       },
       {
        "kind": "article",
-       "title": "Proxy - System Design",
-       "url": "https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#proxy"
-      }
-     ],
-     "file": "proxy@qLLJ_ehC8tSRfXsorYMQz.md"
-    },
-    {
-     "id": "IaPd_zuLbiOCwoSHQLoIG",
-     "type": "subtopic",
-     "label": "2 3 4 Trees",
-     "body": "In practice: For every 2-4 tree, there are corresponding red–black trees with data elements in the same order. The insertion and deletion operations on 2-4 trees are also equivalent to color-flipping and rotations in red–black trees. This makes 2-4 trees an important tool for understanding the logic behind red–black trees, and this is why many introductory algorithm texts introduce 2-4 trees just before red–black trees, even though 2-4 trees are not often used in practice.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "CS 61B Lecture 26: Balanced Search Trees",
-       "url": "https://archive.org/details/ucberkeley_webcast_zqrqYXkth6Q"
+       "title": "B-Tree Datastructure",
+       "url": "http://btechsmartclass.com/data_structures/b-trees.html"
       },
       {
        "kind": "video",
-       "title": "Bottom Up 234-Trees",
-       "url": "https://www.youtube.com/watch?v=DQdMYevEyE4&index=4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6"
+       "title": "Introduction to B-Trees",
+       "url": "https://www.youtube.com/watch?v=I22wEC1tTGo&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=6"
       },
       {
        "kind": "video",
-       "title": "Top Down 234-Trees",
-       "url": "https://www.youtube.com/watch?v=2679VQ26Fp4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=5"
+       "title": "B-Tree Definition and Insertion",
+       "url": "https://www.youtube.com/watch?v=s3bCdZGrgpA&index=7&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6"
       }
      ],
-     "file": "2-3-4-trees@IaPd_zuLbiOCwoSHQLoIG.md"
-    },
-    {
-     "id": "KhvYJtSCUBOpEZXjHpQde",
-     "type": "subtopic",
-     "label": "Transactions",
-     "body": "In short, a database transaction is a sequence of multiple operations performed on a database, and all served as a single logical unit of work — taking place wholly or not at all. In other words, there's never a case where only half of the operations are performed and the results saved.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What are Transactions?",
-       "url": "https://fauna.com/blog/database-transaction"
-      },
-      {
-       "kind": "article",
-       "title": "Database Transaction",
-       "url": "https://en.wikipedia.org/wiki/Database_transaction"
-      }
-     ],
-     "file": "transactions@KhvYJtSCUBOpEZXjHpQde.md"
+     "file": "b-tree@s0Pi6CemUUsmZSEu2j2gH.md"
     },
     {
      "id": "X1wv7xV69IEzepg8bF8oZ",
@@ -3506,32 +2570,18 @@
      "file": "architectural-styles@X1wv7xV69IEzepg8bF8oZ.md"
     },
     {
-     "id": "UOYeM-hqIKCrB9hGez4Q_",
+     "id": "3r21avMlo0xFB9i7PHccX",
      "type": "subtopic",
-     "label": "K-ary / M-ary Tree",
-     "body": "A k-ary (or m-ary) tree is a generalization of a binary tree where each node can have up to k children instead of just two. Increasing the branching factor reduces the tree's height for a given number of nodes, which is useful in structures like B-trees where minimizing height matters for disk access.",
+     "label": "Database Federation",
+     "body": "Federation (or functional partitioning) splits up databases by function. The federation architecture makes several distinct physical databases appear as one logical database to end-users.",
      "resources": [
       {
        "kind": "article",
-       "title": "K-Ary Tree",
-       "url": "https://en.wikipedia.org/wiki/K-ary_tree"
+       "title": "Database Federation",
+       "url": "https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#database-federation"
       }
      ],
-     "file": "k-ary--m-ary-tree@UOYeM-hqIKCrB9hGez4Q_.md"
-    },
-    {
-     "id": "FjhZGhzJjYyDn0PShKmpX",
-     "type": "subtopic",
-     "label": "Stored Procedures",
-     "body": "Stored Procedures are created to perform one or more DML operations on Database. It is nothing but the group of SQL statements that accepts some input in the form of parameters and performs some task and may or may not returns a value.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "SQL Stored Procedures",
-       "url": "https://www.programiz.com/sql/stored-procedures"
-      }
-     ],
-     "file": "stored-procedures@FjhZGhzJjYyDn0PShKmpX.md"
+     "file": "database-federation@3r21avMlo0xFB9i7PHccX.md"
     },
     {
      "id": "Kvz3Sn7L8CxP5ZXO1hlcU",
@@ -3616,82 +2666,6 @@
      "file": "grpc@M4vdwAbjLPrLjWUsG_P1I.md"
     },
     {
-     "id": "s0Pi6CemUUsmZSEu2j2gH",
-     "type": "subtopic",
-     "label": "B-Tree",
-     "body": "A B-tree is a self-balancing tree where each node can hold multiple keys and have multiple children, keeping the tree shallow even with a large number of elements. This makes B-trees well suited for storage systems like databases and file systems, where each node can be sized to match a disk block and minimize the number of disk reads needed to find data.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "B-Tree - Wikipedia",
-       "url": "https://en.wikipedia.org/wiki/B-tree"
-      },
-      {
-       "kind": "article",
-       "title": "B-Tree Datastructure",
-       "url": "http://btechsmartclass.com/data_structures/b-trees.html"
-      },
-      {
-       "kind": "video",
-       "title": "Introduction to B-Trees",
-       "url": "https://www.youtube.com/watch?v=I22wEC1tTGo&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=6"
-      },
-      {
-       "kind": "video",
-       "title": "B-Tree Definition and Insertion",
-       "url": "https://www.youtube.com/watch?v=s3bCdZGrgpA&index=7&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6"
-      }
-     ],
-     "file": "b-tree@s0Pi6CemUUsmZSEu2j2gH.md"
-    },
-    {
-     "id": "3r21avMlo0xFB9i7PHccX",
-     "type": "subtopic",
-     "label": "Database Federation",
-     "body": "Federation (or functional partitioning) splits up databases by function. The federation architecture makes several distinct physical databases appear as one logical database to end-users.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Database Federation",
-       "url": "https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#database-federation"
-      }
-     ],
-     "file": "database-federation@3r21avMlo0xFB9i7PHccX.md"
-    },
-    {
-     "id": "YMO9oD_sbzyDZPNU2xZwe",
-     "type": "subtopic",
-     "label": "Cloud Design Patterns",
-     "body": "Cloud design patterns are reusable solutions for common problems that arise when building and operating applications on cloud infrastructure, such as handling transient failures, managing configuration across services, or scaling components independently. Patterns like circuit breaker, retry, and sidecar address the distributed and elastic nature of cloud environments.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Cloud Design Patterns",
-       "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/"
-      }
-     ],
-     "file": "cloud-design-patterns@YMO9oD_sbzyDZPNU2xZwe.md"
-    },
-    {
-     "id": "C1eNsPjiQo8INbvL2Lt7L",
-     "type": "subtopic",
-     "label": "K-D Trees",
-     "body": "K-D Trees are a data structure that allow for fast nearest neighbor search in high dimensional spaces. They are a generalization of binary search trees, and are used in a variety of applications, including computer vision and computational geometry.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "K-D Tree Algorithm",
-       "url": "https://www.youtube.com/watch?v=Y4ZgLlDfKDg"
-      },
-      {
-       "kind": "video",
-       "title": "K-d Trees - Computerphile",
-       "url": "https://www.youtube.com/watch?v=BK5x7IUTIyU"
-      }
-     ],
-     "file": "k-d-trees@C1eNsPjiQo8INbvL2Lt7L.md"
-    },
-    {
      "id": "WUEmEtlszbISSIWDKpvg6",
      "type": "subtopic",
      "label": "Replication",
@@ -3738,6 +2712,39 @@
       }
      ],
      "file": "sharding@3K65efPag2076dy-MeTg4.md"
+    },
+    {
+     "id": "YMO9oD_sbzyDZPNU2xZwe",
+     "type": "subtopic",
+     "label": "Cloud Design Patterns",
+     "body": "Cloud design patterns are reusable solutions for common problems that arise when building and operating applications on cloud infrastructure, such as handling transient failures, managing configuration across services, or scaling components independently. Patterns like circuit breaker, retry, and sidecar address the distributed and elastic nature of cloud environments.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Cloud Design Patterns",
+       "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/"
+      }
+     ],
+     "file": "cloud-design-patterns@YMO9oD_sbzyDZPNU2xZwe.md"
+    },
+    {
+     "id": "C1eNsPjiQo8INbvL2Lt7L",
+     "type": "subtopic",
+     "label": "K-D Trees",
+     "body": "K-D Trees are a data structure that allow for fast nearest neighbor search in high dimensional spaces. They are a generalization of binary search trees, and are used in a variety of applications, including computer vision and computational geometry.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "K-D Tree Algorithm",
+       "url": "https://www.youtube.com/watch?v=Y4ZgLlDfKDg"
+      },
+      {
+       "kind": "video",
+       "title": "K-d Trees - Computerphile",
+       "url": "https://www.youtube.com/watch?v=BK5x7IUTIyU"
+      }
+     ],
+     "file": "k-d-trees@C1eNsPjiQo8INbvL2Lt7L.md"
     },
     {
      "id": "XeJi6TwpI5Uaszj00Uv_2",
@@ -3792,6 +2799,20 @@
      "file": "skip-lists@K96ggeWqd5OwoNnkL04pc.md"
     },
     {
+     "id": "7r7o8pYhFHVAJIv0wNT6X",
+     "type": "subtopic",
+     "label": "Hashing / Encryption / Encoding",
+     "body": "Hashing, encryption, and encoding are often confused but serve different purposes. Hashing produces a fixed-size, one-way output used to verify data integrity or store passwords securely, encryption transforms data reversibly so only someone with the right key can read it, and encoding transforms data into a different format for compatibility, with no security guarantee at all.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "Encoding, Encryption and Hashing -- What's the Difference?",
+       "url": "https://www.youtube.com/watch?v=-bAnBzvMLig"
+      }
+     ],
+     "file": "hashing--encryption--encoding@7r7o8pYhFHVAJIv0wNT6X.md"
+    },
+    {
      "id": "bVjI14VismTHNCyA0mEBP",
      "type": "subtopic",
      "label": "Web Sockets",
@@ -3835,44 +2856,6 @@
      "file": "sse@JckRqZA8C6IqQLPpTCgf4.md"
     },
     {
-     "id": "7r7o8pYhFHVAJIv0wNT6X",
-     "type": "subtopic",
-     "label": "Hashing / Encryption / Encoding",
-     "body": "Hashing, encryption, and encoding are often confused but serve different purposes. Hashing produces a fixed-size, one-way output used to verify data integrity or store passwords securely, encryption transforms data reversibly so only someone with the right key can read it, and encoding transforms data into a different format for compatibility, with no security guarantee at all.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "Encoding, Encryption and Hashing -- What's the Difference?",
-       "url": "https://www.youtube.com/watch?v=-bAnBzvMLig"
-      }
-     ],
-     "file": "hashing--encryption--encoding@7r7o8pYhFHVAJIv0wNT6X.md"
-    },
-    {
-     "id": "bDZ34BPm3lX06ERSE10cY",
-     "type": "subtopic",
-     "label": "Public Key Cryptography",
-     "body": "Public-key cryptography, or asymmetric cryptography, is the field of cryptographic systems that use pairs of related keys. Each key pair consists of a public key and a corresponding private key. Key pairs are generated with cryptographic algorithms based on mathematical problems termed one-way functions.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Public-key Cryptography",
-       "url": "https://en.wikipedia.org/wiki/Public-key_cryptography"
-      },
-      {
-       "kind": "video",
-       "title": "Public Key Cryptography - Computerphile",
-       "url": "https://www.youtube.com/watch?v=GSIDS_lvRv4"
-      },
-      {
-       "kind": "video",
-       "title": "Public Key Cryptography: RSA Encryption Algorithm",
-       "url": "https://www.youtube.com/watch?v=wXB-V_Keiu8"
-      }
-     ],
-     "file": "public-key-cryptography@bDZ34BPm3lX06ERSE10cY.md"
-    },
-    {
      "id": "JnJbJtsqKbVETY2vdLqCO",
      "type": "topic",
      "label": "Security",
@@ -3900,6 +2883,30 @@
       }
      ],
      "file": "security@JnJbJtsqKbVETY2vdLqCO.md"
+    },
+    {
+     "id": "bDZ34BPm3lX06ERSE10cY",
+     "type": "subtopic",
+     "label": "Public Key Cryptography",
+     "body": "Public-key cryptography, or asymmetric cryptography, is the field of cryptographic systems that use pairs of related keys. Each key pair consists of a public key and a corresponding private key. Key pairs are generated with cryptographic algorithms based on mathematical problems termed one-way functions.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Public-key Cryptography",
+       "url": "https://en.wikipedia.org/wiki/Public-key_cryptography"
+      },
+      {
+       "kind": "video",
+       "title": "Public Key Cryptography - Computerphile",
+       "url": "https://www.youtube.com/watch?v=GSIDS_lvRv4"
+      },
+      {
+       "kind": "video",
+       "title": "Public Key Cryptography: RSA Encryption Algorithm",
+       "url": "https://www.youtube.com/watch?v=wXB-V_Keiu8"
+      }
+     ],
+     "file": "public-key-cryptography@bDZ34BPm3lX06ERSE10cY.md"
     },
     {
      "id": "RbdT5MOE4L-E7PPWKRITX",
@@ -4249,6 +3256,1014 @@
       }
      ],
      "file": "how-computers-calculate@GDLKJkKgB-i7n0YcV2NDa.md"
+    }
+   ]
+  },
+  {
+   "heading": "Sorting",
+   "nodes": [
+    {
+     "id": "4wGBYFZpcdTt97WTbSazx",
+     "type": "subtopic",
+     "label": "Bubble Sort",
+     "body": " \nBubble sort repeatedly steps through a list, comparing adjacent elements and swapping them if they are in the wrong order, until no swaps are needed. Each pass moves the largest unsorted element into its correct position, like a bubble rising to the top. It runs in O(n²) time in the average and worst case, which makes it inefficient for large datasets but simple to understand and implement.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Bubble Sort Algorithm",
+       "url": "https://www.programiz.com/dsa/bubble-sort"
+      },
+      {
+       "kind": "video",
+       "title": "Bubble Sort",
+       "url": "https://www.youtube.com/watch?v=P00xJgWzz2c&index=1&list=PL89B61F78B552C1AB"
+      },
+      {
+       "kind": "video",
+       "title": "Bubble sort in 2 minutes",
+       "url": "https://youtu.be/xli_FI7CuzA"
+      }
+     ],
+     "file": "bubble-sort@4wGBYFZpcdTt97WTbSazx.md"
+    },
+    {
+     "id": "rOsHFXQm5jNz0RyZQ5ZGs",
+     "type": "subtopic",
+     "label": "Selection Sort",
+     "body": "Selection sort is a sorting algorithm that selects the smallest unsorted item in the list and swaps it with index 0, then finds the next smallest and places it into index 1 and so on.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "Selection Sort",
+       "url": "https://www.coursera.org/lecture/algorithms-part1/selection-UQxFT"
+      },
+      {
+       "kind": "article",
+       "title": "Selection Sort",
+       "url": "https://en.wikipedia.org/wiki/Selection_sort"
+      },
+      {
+       "kind": "video",
+       "title": "Selection Sort in 3 Minutes",
+       "url": "https://www.youtube.com/watch?v=g-PGLbMth_g"
+      }
+     ],
+     "file": "selection-sort@rOsHFXQm5jNz0RyZQ5ZGs.md"
+    },
+    {
+     "id": "ujDCW6zZE8dV_fpNf-oIl",
+     "type": "subtopic",
+     "label": "Insertion Sort",
+     "body": "Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time by comparisons. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Insertion Sort",
+       "url": "https://www.programiz.com/dsa/insertion-sort"
+      },
+      {
+       "kind": "video",
+       "title": "Insertion Sort — MIT",
+       "url": "https://www.youtube.com/watch?v=Kg4bqzAqRBM&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=4"
+      },
+      {
+       "kind": "video",
+       "title": "Insertion Sort in 3 Minutes",
+       "url": "https://www.youtube.com/watch?v=JU767SDMDvA"
+      }
+     ],
+     "file": "insertion-sort@ujDCW6zZE8dV_fpNf-oIl.md"
+    },
+    {
+     "id": "CovrRsBY-sYW_xSegcN6N",
+     "type": "subtopic",
+     "label": "Heap Sort",
+     "body": "Heap sort is a comparison based sorting algorithm. It is similar to selection sort where we first find the maximum element and place the maximum element at the end. We repeat the same process for remaining element.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "Heap Sort Algorithm",
+       "url": "https://www.coursera.org/lecture/data-structures/heap-sort-hSzMO"
+      },
+      {
+       "kind": "article",
+       "title": "Heap Sort Algorithm",
+       "url": "https://www.programiz.com/dsa/heap-sort"
+      },
+      {
+       "kind": "video",
+       "title": "Heap Sort in 4 Minutes",
+       "url": "https://www.youtube.com/watch?v=2DmK_H7IdTo"
+      },
+      {
+       "kind": "video",
+       "title": "Heap Sort Algorithm - MIT",
+       "url": "https://www.youtube.com/watch?v=odNJmw5TOEE&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3291s"
+      },
+      {
+       "kind": "video",
+       "title": "Lecture 4 - Heaps and Heap Sort",
+       "url": "https://www.youtube.com/watch?v=B7hVxCmfPtM&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=5"
+      }
+     ],
+     "file": "heap-sort@CovrRsBY-sYW_xSegcN6N.md"
+    },
+    {
+     "id": "be0Q8GW9ZX1JbPrBvbMji",
+     "type": "subtopic",
+     "label": "Quick Sort",
+     "body": "Quick Sort is a divide and conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.",
+     "resources": [
+      {
+       "kind": "opensource",
+       "title": "Quick Sort Implementation in Python",
+       "url": "https://github.com/jwasham/practice-python/blob/master/quick_sort/quick_sort.py"
+      },
+      {
+       "kind": "article",
+       "title": "Quick Sort Algorithm",
+       "url": "https://www.programiz.com/dsa/quick-sort"
+      },
+      {
+       "kind": "article",
+       "title": "Quick Sort Implementation in C",
+       "url": "http://www.cs.yale.edu/homes/aspnes/classes/223/examples/randomization/quick.c"
+      },
+      {
+       "kind": "video",
+       "title": "Quick Sort in 4 Minutes",
+       "url": "https://www.youtube.com/watch?v=Hoixgm4-P4M&feature=youtu.be"
+      }
+     ],
+     "file": "quick-sort@be0Q8GW9ZX1JbPrBvbMji.md"
+    },
+    {
+     "id": "Bh-whDbcCjl3m6mRm9w02",
+     "type": "subtopic",
+     "label": "Merge Sort",
+     "body": "Merge sort is a divide and conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. The `merge()` function is used for merging two halves. The `merge(arr, l, m, r)` is key process that assumes that `arr[l..m]` and `arr[m+1..r]` are sorted and merges the two sorted sub-arrays into one.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Merge Sort Algorithm",
+       "url": "https://www.programiz.com/dsa/merge-sort"
+      },
+      {
+       "kind": "video",
+       "title": "Merge Sort in 3 Minutes",
+       "url": "https://www.youtube.com/watch?v=4VqmGXwpLqc"
+      }
+     ],
+     "file": "merge-sort@Bh-whDbcCjl3m6mRm9w02.md"
+    }
+   ]
+  },
+  {
+   "heading": "Recursion",
+   "nodes": [
+    {
+     "id": "0_qNhprnXU3i8koW3XTdD",
+     "type": "subtopic",
+     "label": "Tail Recursion",
+     "body": "Tail recursion is a special kind of recursion where the recursive call is the very last thing in the function. It's a function that does not do anything at all after recursing.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "Tail Recursion",
+       "url": "https://www.coursera.org/lecture/programming-languages/tail-recursion-YZic1"
+      },
+      {
+       "kind": "article",
+       "title": "What is tail recursion? Why is it so bad?",
+       "url": "https://www.quora.com/What-is-tail-recursion-Why-is-it-so-bad"
+      },
+      {
+       "kind": "feed",
+       "title": "Explore top posts about Recursion",
+       "url": "https://app.daily.dev/tags/recursion?ref=roadmapsh"
+      }
+     ],
+     "file": "tail-recursion@0_qNhprnXU3i8koW3XTdD.md"
+    },
+    {
+     "id": "iLEOuQgUgU5Jc38iXDpp5",
+     "type": "subtopic",
+     "label": "Non-Tail Recursion",
+     "body": " \nNon-tail recursion is a form of recursion where work remains to be done after the recursive call returns, such as combining the result with something else. Each call must keep its stack frame until the recursive call underneath it finishes, which means the call stack grows with each level of recursion and cannot be optimized away like tail recursion.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is non-tail recursion?",
+       "url": "https://www.quora.com/What-is-non-tail-recursion"
+      },
+      {
+       "kind": "article",
+       "title": "Tail vs Non-Tail Recursion",
+       "url": "https://www.baeldung.com/cs/tail-vs-non-tail-recursion"
+      },
+      {
+       "kind": "video",
+       "title": "Recursion (Solved Problem 1)",
+       "url": "https://www.youtube.com/watch?v=IVLUGb_gDDE"
+      },
+      {
+       "kind": "video",
+       "title": "Types of Recursion (Part 2) | Tail & Non-tail Recursion",
+       "url": "https://www.youtube.com/watch?v=HIt_GPuD7wk"
+      }
+     ],
+     "file": "non-tail-recursion@iLEOuQgUgU5Jc38iXDpp5.md"
+    }
+   ]
+  },
+  {
+   "heading": "Graphs",
+   "nodes": [
+    {
+     "id": "vcV6TEM_PqXxtThdfMKGw",
+     "type": "subtopic",
+     "label": "Breadth First Search",
+     "body": "Breadth first search for a graph is a way to traverse the graph. It starts at the root node and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "Graph Algorithms II - DFS, BFS, Kruskals Algorithm, Union Find Data Structure - Lecture 7",
+       "url": "https://www.youtube.com/watch?v=ufj5_bppBsA&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=7"
+      },
+      {
+       "kind": "video",
+       "title": "Breadth-first search in 4 minutes",
+       "url": "https://www.youtube.com/watch?v=HZ5YTanv5QE"
+      }
+     ],
+     "file": "breadth-first-search@vcV6TEM_PqXxtThdfMKGw.md"
+    },
+    {
+     "id": "Yf5gOIe7oiL19MjEVcpdw",
+     "type": "subtopic",
+     "label": "Depth First Search",
+     "body": "Depth first search is a graph traversal algorithm that starts at a root node and explores as far as possible along each branch before backtracking.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Depth-first Search",
+       "url": "https://en.wikipedia.org/wiki/Depth-first_search"
+      }
+     ],
+     "file": "depth-first-search@Yf5gOIe7oiL19MjEVcpdw.md"
+    },
+    {
+     "id": "eY4nK2lPYsrR-a_8y2sao",
+     "type": "subtopic",
+     "label": "Bellman Ford's Algorithm",
+     "body": "Bellman ford's algorithm is a graph algorithm that finds the shortest path from a source vertex to all other vertices in a graph. It is a dynamic programming algorithm that uses a bottom-up approach to find the shortest path. It is similar to Dijkstra's algorithm but it can handle negative weights. It is also similar to Floyd-Warshall's algorithm but it can handle negative weights and it is faster than Floyd-Warshall's algorithm.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "Bellman-Ford - MIT",
+       "url": "https://www.youtube.com/watch?v=f9cVS_URPc0&ab_channel=MITOpenCourseWare"
+      },
+      {
+       "kind": "video",
+       "title": "Bellman-Ford in 4 Minutes",
+       "url": "https://www.youtube.com/watch?v=9PHkk0UavIM"
+      },
+      {
+       "kind": "feed",
+       "title": "Explore top posts about Data Science",
+       "url": "https://app.daily.dev/tags/data-science?ref=roadmapsh"
+      }
+     ],
+     "file": "bellman-fords-algorithm@eY4nK2lPYsrR-a_8y2sao.md"
+    },
+    {
+     "id": "oJstm-8c-4seWbIWcNgDv",
+     "type": "subtopic",
+     "label": "Dijkstra's Algorithm",
+     "body": "Dijkstra's algorithm finds the shortest path from a source vertex to all other vertices in a weighted graph with non-negative edge weights. It repeatedly picks the closest unvisited vertex and updates the shortest known distances to its neighbors, using a priority queue to make this selection efficient. It does not work correctly if the graph contains negative edge weights.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "Dijkstras Algorithm - MIT",
+       "url": "https://www.youtube.com/watch?v=NSHizBK9JD8&t=1731s&ab_channel=MITOpenCourseWare"
+      },
+      {
+       "kind": "video",
+       "title": "Dijkstras Algorithm in 3 Minutes",
+       "url": "https://www.youtube.com/watch?v=_lHSawdgXpI"
+      }
+     ],
+     "file": "dijkstras-algorithm@oJstm-8c-4seWbIWcNgDv.md"
+    },
+    {
+     "id": "Yrk2PLUa-_FAPlhCkMl3e",
+     "type": "subtopic",
+     "label": "A* Algorithm",
+     "body": "A\\* is a graph traversal algorithm that is used to find the shortest path between two nodes in a graph. It is a modified version of Dijkstra's algorithm that uses heuristics to find the shortest path. It is used in pathfinding and graph traversal.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Introduction to the A* Algorithm - Red Blob Games",
+       "url": "https://www.redblobgames.com/pathfinding/a-star/introduction.html"
+      },
+      {
+       "kind": "article",
+       "title": "A* Search Algorithm - Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/A*_search_algorithm"
+      },
+      {
+       "kind": "video",
+       "title": "A* Pathfinding (E01: algorithm explanation)",
+       "url": "https://www.youtube.com/watch?v=-L-WgKMFuhE"
+      }
+     ],
+     "file": "a-algorithm@Yrk2PLUa-_FAPlhCkMl3e.md"
+    }
+   ]
+  },
+  {
+   "heading": "Tree",
+   "nodes": [
+    {
+     "id": "psTN5N66xoFHFopgd5faW",
+     "type": "subtopic",
+     "label": "Pre-Order Traversal",
+     "body": "Pre-order traversal is a way to visit every node in a tree data structure. It follows a specific order: first, the current node is processed (or visited). Then, the left subtree of the current node is traversed using pre-order. Finally, the right subtree of the current node is traversed using pre-order. This \"node-left-right\" sequence ensures each node is visited exactly once.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "Tree | Illustrated Data Structures",
+       "url": "https://www.youtube.com/watch?v=S2W3SXGPVyU"
+      },
+      {
+       "kind": "video",
+       "title": "Pre-order tree traversal in 3 minutes",
+       "url": "https://www.youtube.com/watch?v=1WxLM2hwL-U"
+      }
+     ],
+     "file": "pre-order-traversal@psTN5N66xoFHFopgd5faW.md"
+    },
+    {
+     "id": "KTrgf14Q6rg2f0v4dqq2s",
+     "type": "subtopic",
+     "label": "In-Order Traversal",
+     "body": "In-order traversal is a tree traversal algorithm that visits the left subtree, the root, and then the right subtree. This is the most common way to traverse a binary search tree. It is also used to create a sorted list of nodes in a binary search tree.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Tree Traversal Techniques",
+       "url": "https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/"
+      },
+      {
+       "kind": "video",
+       "title": "Tree | Illustrated Data Structures",
+       "url": "https://www.youtube.com/watch?v=S2W3SXGPVyU"
+      }
+     ],
+     "file": "in-order-traversal@KTrgf14Q6rg2f0v4dqq2s.md"
+    },
+    {
+     "id": "4_oGXwjzSY5cX9n7L4iAA",
+     "type": "subtopic",
+     "label": "Post Order Traversal",
+     "body": "Post-order traversal is a type of tree traversal that visits the left subtree, then the right subtree, and finally the root node. This is the opposite of pre-order traversal, which visits the root node first, then the left subtree, and finally the right subtree.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Postorder Traversal of Binary Tree",
+       "url": "https://www.geeksforgeeks.org/postorder-traversal-of-binary-tree/"
+      },
+      {
+       "kind": "video",
+       "title": "Tree | Illustrated Data Structures",
+       "url": "https://www.youtube.com/watch?v=S2W3SXGPVyU"
+      }
+     ],
+     "file": "post-order-traversal@4_oGXwjzSY5cX9n7L4iAA.md"
+    },
+    {
+     "id": "Ke_ch4fnuKIiGAXUM_LPP",
+     "type": "subtopic",
+     "label": "Breadth First Search",
+     "body": "Breadth first search is a graph traversal algorithm that starts at the root node and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Breadth-First Search (BFS) and Depth-First Search (DFS) for Binary Trees in Java",
+       "url": "https://www.digitalocean.com/community/tutorials/breadth-first-search-depth-first-search-bfs-dfs"
+      },
+      {
+       "kind": "video",
+       "title": "BFS and DFS in a Binary Tree",
+       "url": "https://www.youtube.com/watch?v=uWL6FJhq5fM"
+      },
+      {
+       "kind": "video",
+       "title": "Breadth-first search in 4 minutes",
+       "url": "https://www.youtube.com/watch?v=HZ5YTanv5QE"
+      }
+     ],
+     "file": "breadth-first-search@Ke_ch4fnuKIiGAXUM_LPP.md"
+    },
+    {
+     "id": "chzP5_t2gMi6MstxEzCi5",
+     "type": "subtopic",
+     "label": "Depth First Search",
+     "body": "Depth first search is a graph traversal algorithm that starts at a root node and explores as far as possible along each branch before backtracking.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Breadth-First Search (BFS) and Depth-First Search (DFS) for Binary Trees in Java",
+       "url": "https://www.digitalocean.com/community/tutorials/breadth-first-search-depth-first-search-bfs-dfs"
+      },
+      {
+       "kind": "video",
+       "title": "BFS and DFS in a Binary Tree",
+       "url": "https://www.youtube.com/watch?v=uWL6FJhq5fM"
+      },
+      {
+       "kind": "video",
+       "title": "Depth First Search in 4 Minutes",
+       "url": "https://www.youtube.com/watch?v=Urx87-NMm6c"
+      }
+     ],
+     "file": "depth-first-search@chzP5_t2gMi6MstxEzCi5.md"
+    }
+   ]
+  },
+  {
+   "heading": "Searching",
+   "nodes": [
+    {
+     "id": "8kTg4O9MrTHRUrp6U-ctA",
+     "type": "subtopic",
+     "label": "Binary Search",
+     "body": "Binary search is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target value, and repeating this until the target value is found. If the search ends with the remaining half being empty, the target is not in the array.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Binary Search - Khan Academy",
+       "url": "https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search"
+      },
+      {
+       "kind": "article",
+       "title": "Binary Search",
+       "url": "https://www.topcoder.com/thrive/articles/Binary%20Search"
+      },
+      {
+       "kind": "video",
+       "title": "Binary Search in 4 Minutes",
+       "url": "https://www.youtube.com/watch?v=fDKIpRe8GW4&feature=youtu.be"
+      },
+      {
+       "kind": "video",
+       "title": "Binary Search - CS50",
+       "url": "https://www.youtube.com/watch?v=D5SrAga1pno"
+      }
+     ],
+     "file": "binary-search@8kTg4O9MrTHRUrp6U-ctA.md"
+    },
+    {
+     "id": "XwyqBK9rgP1MMcJrdIzm5",
+     "type": "subtopic",
+     "label": "Linear Search",
+     "body": "Linear search is a very simple algorithm that is used to search for a value in an array. It sequentially checks each element of the array until a match is found or until all the elements have been searched.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Linear Search",
+       "url": "https://www.programiz.com/dsa/linear-search"
+      }
+     ],
+     "file": "linear-search@XwyqBK9rgP1MMcJrdIzm5.md"
+    }
+   ]
+  },
+  {
+   "heading": "Caches",
+   "nodes": [
+    {
+     "id": "hna0HLu0l4NTNNpyGqlW5",
+     "type": "subtopic",
+     "label": "MFU Cache",
+     "body": "MFU Cache is another cache algorithm. The difference is that instead of deleting the least frequently used entry, the MFU Cache deletes the most frequently used entry.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Comparison of MFU and LRU page replacement algorithms",
+       "url": "https://stackoverflow.com/questions/13597246/comparison-of-mfu-and-lru-page-replacement-algorithms"
+      },
+      {
+       "kind": "article",
+       "title": "Why does cache use Most Recently Used (MRU) algorithm as evict policy?",
+       "url": "https://stackoverflow.com/questions/5088128/why-does-cache-use-most-recently-used-mru-algorithm-as-evict-policy"
+      }
+     ],
+     "file": "mfu-cache@hna0HLu0l4NTNNpyGqlW5.md"
+    },
+    {
+     "id": "cEsboPT8nLvo0Zt0_oBq6",
+     "type": "subtopic",
+     "label": "LRU Cache",
+     "body": "LRU cache is a cache that evicts the least recently used item first. It is a very common cache algorithm. It is used in many places, such as in the browser cache, the database cache, and the cache of the operating system.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "The Magic of LRU Cache (100 Days of Google Dev)",
+       "url": "https://www.youtube.com/watch?v=R5ON3iwx78M"
+      },
+      {
+       "kind": "video",
+       "title": "Implementing LRU - Udacity",
+       "url": "https://www.youtube.com/watch?v=bq6N7Ym81iI"
+      },
+      {
+       "kind": "video",
+       "title": "LeetCode | 146 LRU Cache | C++ | Explanation",
+       "url": "https://www.youtube.com/watch?v=8-FZRAjR7qU"
+      }
+     ],
+     "file": "lru-cache@cEsboPT8nLvo0Zt0_oBq6.md"
+    },
+    {
+     "id": "n11ujPI3of-52l2KW2CDQ",
+     "type": "subtopic",
+     "label": "LFU Cache",
+     "body": "LFU Cache is a data structure that stores key-value pairs. It has a fixed size and when it is full, it removes the least frequently used key-value pair. It is a variation of the LRU Cache and is used in many applications such as caching web pages, caching database queries, and caching images.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Least Frequently Used (LFU) Cache Implementation",
+       "url": "https://www.geeksforgeeks.org/least-frequently-used-lfu-cache-implementation/"
+      },
+      {
+       "kind": "article",
+       "title": "1117. Data Structure - LFU Cache",
+       "url": "https://jojozhuang.github.io/algorithm/data-structure-lfu-cache/"
+      }
+     ],
+     "file": "lfu-cache@n11ujPI3of-52l2KW2CDQ.md"
+    }
+   ]
+  },
+  {
+   "heading": "Greedy Algorithms",
+   "nodes": [
+    {
+     "id": "l3X9UrEYTWs5kBXI1NNCf",
+     "type": "subtopic",
+     "label": "Dijkstra's Algorithm",
+     "body": "Dijkstra's algorithm is a greedy algorithm that finds the shortest path between two nodes in a graph. It is a very common algorithm used in computer science and is used in many applications such as GPS navigation, network routing, and finding the shortest path in a maze.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "Dijkstras Algorithm in 3 Minutes",
+       "url": "https://www.youtube.com/watch?v=_lHSawdgXpI"
+      },
+      {
+       "kind": "video",
+       "title": "Dijkstras Algorithm - MIT",
+       "url": "https://www.youtube.com/watch?v=NSHizBK9JD8&t=1731s&ab_channel=MITOpenCourseWare"
+      },
+      {
+       "kind": "video",
+       "title": "Speeding Up Dijkstras Algorithm - MIT",
+       "url": "https://www.youtube.com/watch?v=CHvQ3q_gJ7E&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=18"
+      }
+     ],
+     "file": "dijkstras-algorithm@l3X9UrEYTWs5kBXI1NNCf.md"
+    },
+    {
+     "id": "QrcijPiVT3bgqfkF-6ssi",
+     "type": "subtopic",
+     "label": "Huffman Coding",
+     "body": "Huffman coding is a lossless data compression algorithm. The idea is to assign variable-length codes to input characters, lengths of the assigned codes are based on the frequencies of corresponding characters. The most frequent character gets the smallest code and the least frequent character gets the largest code.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Huffman Coding",
+       "url": "https://www.programiz.com/dsa/huffman-coding"
+      },
+      {
+       "kind": "video",
+       "title": "Huffman Coding - Greedy Method",
+       "url": "https://www.youtube.com/watch?v=co4_ahEDCho"
+      }
+     ],
+     "file": "huffman-coding@QrcijPiVT3bgqfkF-6ssi.md"
+    },
+    {
+     "id": "Wqhg7E-lOz1oNcRXjUej8",
+     "type": "subtopic",
+     "label": "Kruskal's Algorithm",
+     "body": "Kruskal's algorithm is a greedy algorithm that finds a minimum spanning tree for a connected weighted graph. It is a minimum spanning tree algorithm that takes a graph as input and finds the subset of the edges of that graph which form a tree that includes every vertex, where the total weight of all the edges in the tree is minimized. If the graph is not connected, then it finds a minimum spanning forest (a minimum spanning tree for each connected component).",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "Kruskals Algorithm in 2 Minutes",
+       "url": "https://www.youtube.com/watch?v=71UQH7Pr9kU"
+      },
+      {
+       "kind": "video",
+       "title": "Graph Algorithms II - DFS, BFS, Kruskals Algorithm, Union Find Data Structure - Lecture 7",
+       "url": "https://www.youtube.com/watch?v=ufj5_bppBsA&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=8"
+      }
+     ],
+     "file": "kruskals-algorithm@Wqhg7E-lOz1oNcRXjUej8.md"
+    },
+    {
+     "id": "Hqw2eGtgfbVggqXBnIOdI",
+     "type": "subtopic",
+     "label": "Ford-Fulkerson Algorithm",
+     "body": "Ford Fulkerson Algorithm is a greedy algorithm that is used to find the maximum flow in a flow network. It is also known as the Edmonds-Karp Algorithm.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Ford-Fulkerson Algorithm",
+       "url": "https://www.programiz.com/dsa/ford-fulkerson-algorithm"
+      },
+      {
+       "kind": "video",
+       "title": "Ford-Fulkerson in 5 minutes",
+       "url": "https://www.youtube.com/watch?v=Tl90tNtKvxs"
+      }
+     ],
+     "file": "ford-fulkerson-algorithm@Hqw2eGtgfbVggqXBnIOdI.md"
+    },
+    {
+     "id": "znpFIKwMJlepKJ8dH3kvC",
+     "type": "subtopic",
+     "label": "Prim's Algorithm",
+     "body": "Prim's algorithm is a greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. A minimum spanning tree is a subset of the edges of a connected, edge-weighted undirected graph that connects all the vertices together, without any cycles and with the minimum possible total edge weight. A minimum spanning tree for a weighted undirected graph is also called a minimum weight spanning tree or minimum cost spanning tree.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Prims Algorithm",
+       "url": "https://www.programiz.com/dsa/prim-algorithm"
+      },
+      {
+       "kind": "video",
+       "title": "Graph Algorithms I - Topological Sorting, Prims Algorithm - Lecture 6",
+       "url": "https://www.youtube.com/watch?v=i_AQT_XfvD8&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=7"
+      }
+     ],
+     "file": "prims-algorithm@znpFIKwMJlepKJ8dH3kvC.md"
+    }
+   ]
+  },
+  {
+   "heading": "Back Tracking",
+   "nodes": [
+    {
+     "id": "aBjBHpq_OajgQjxdCobXD",
+     "type": "subtopic",
+     "label": "Finding Hamiltonian Paths",
+     "body": "Hamiltonian paths are paths that visit every node in a graph exactly once. They are named after the famous mathematician Hamilton. Hamiltonian paths are a special case of Hamiltonian cycles, which are cycles that visit every node in a graph exactly once.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Hamiltonian Cycles",
+       "url": "https://en.wikipedia.org/wiki/Hamiltonian_cycle"
+      },
+      {
+       "kind": "article",
+       "title": "Hamiltonian Path",
+       "url": "https://www.hackerearth.com/practice/algorithms/graphs/hamiltonian-path/tutorial/"
+      },
+      {
+       "kind": "article",
+       "title": "Hamiltonian Paths and Cycles",
+       "url": "https://medium.com/stamatics-iit-kanpur/hamiltonian-paths-and-cycles-4f233bfbc53a"
+      },
+      {
+       "kind": "article",
+       "title": "Hamiltonian Paths - Lecture 7",
+       "url": "https://people.csail.mit.edu/virgi/6.s078/lecture17.pdf"
+      }
+     ],
+     "file": "finding-hamiltonian-paths@aBjBHpq_OajgQjxdCobXD.md"
+    },
+    {
+     "id": "HlAmTY1udqDT2mTfBU9P-",
+     "type": "subtopic",
+     "label": "Solving N Queen Problem",
+     "body": "N Queen Problem is a famous problem in Computer Science. It is a problem of placing n queens on an n x n chessboard such that no two queens attack each other. The problem is to find all possible solutions to the problem.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "N-Queens problem using backtracking in Java/C++",
+       "url": "https://www.digitalocean.com/community/tutorials/n-queens-problem-java-c-plus-plus"
+      },
+      {
+       "kind": "video",
+       "title": "6.1 N Queens Problem using Backtracking",
+       "url": "https://www.youtube.com/watch?v=xFv_Hl4B83A"
+      }
+     ],
+     "file": "solving-n-queen-problem@HlAmTY1udqDT2mTfBU9P-.md"
+    },
+    {
+     "id": "nODFT-i2YsxUVsgwWkIWn",
+     "type": "subtopic",
+     "label": "Maze Solving Problem",
+     "body": "Maze solving problem is a classic problem in computer science. It is a problem where we have to find a path from a starting point to an end point in a maze. The maze is represented as a grid of cells. Each cell can be either a wall or a path. The path cells are connected to each other. The starting point and the end point are also given. The goal is to find a path from the starting point to the end point. The path can only be made up of path cells. The path cannot go through the wall cells.",
+     "resources": [
+      {
+       "kind": "opensource",
+       "title": "Maze Solving Algorithms",
+       "url": "https://github.com/john-science/mazelib/blob/main/docs/MAZE_SOLVE_ALGOS.md"
+      },
+      {
+       "kind": "article",
+       "title": "Maze Solving Algorithms",
+       "url": "https://kidscodecs.com/maze-solving-algorithms/"
+      },
+      {
+       "kind": "video",
+       "title": "Maze Solving - Computerphile",
+       "url": "https://www.youtube.com/watch?v=rop0W4QDOUI"
+      },
+      {
+       "kind": "video",
+       "title": "Python Maze Solving Tutorial (Using Recursion)",
+       "url": "https://www.youtube.com/watch?v=XP94WC_XnZc"
+      }
+     ],
+     "file": "maze-solving-problem@nODFT-i2YsxUVsgwWkIWn.md"
+    },
+    {
+     "id": "NcKW_3vJWL_rVlDBB_Qjs",
+     "type": "subtopic",
+     "label": "The Knight's Tour Problem",
+     "body": "Knight's Tour Problem is a problem where we have to find a path for a knight to visit all the cells of a chessboard without visiting any cell twice.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Knights Tour",
+       "url": "https://bradfieldcs.com/algos/graphs/knights-tour/"
+      },
+      {
+       "kind": "article",
+       "title": "Knights Tour Problem",
+       "url": "https://www.codesdope.com/course/algorithms-knights-tour-problem/"
+      },
+      {
+       "kind": "article",
+       "title": "Backtracking: The Knight’s Tour Problem",
+       "url": "https://www.codingninjas.com/codestudio/library/backtracking-the-knights-tour-problem"
+      }
+     ],
+     "file": "the-knights-tour-problem@NcKW_3vJWL_rVlDBB_Qjs.md"
+    },
+    {
+     "id": "l5--4opvZoc_seVn__5R3",
+     "type": "subtopic",
+     "label": "Rabin-Karp Algorithm",
+     "body": "Rabin-Karp algorithm is a string searching algorithm that uses hashing to find any one of a set of pattern strings in a text. For strings of average length `n`, it performs in `O(n+m)` time with `O(m)` space, where `m` is the length of the pattern. It is often used in bioinformatics to search for DNA patterns.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "Rabin Karps Algorithm",
+       "url": "https://www.coursera.org/lecture/data-structures/rabin-karps-algorithm-c0Qkw"
+      },
+      {
+       "kind": "course",
+       "title": "Optimization: Precomputation",
+       "url": "https://www.coursera.org/learn/data-structures/lecture/nYrc8/optimization-precomputation"
+      },
+      {
+       "kind": "course",
+       "title": "Optimization: Implementation and Analysis",
+       "url": "https://www.coursera.org/learn/data-structures/lecture/h4ZLc/optimization-implementation-and-analysis"
+      },
+      {
+       "kind": "video",
+       "title": "Lecture 9: Table Doubling, Karp-Rabin",
+       "url": "https://www.youtube.com/watch?v=BRO7mVIFt08&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=9"
+      }
+     ],
+     "file": "rabin-karp-algorithm@l5--4opvZoc_seVn__5R3.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "E9hf1ux1KKGHvvAShm67w",
+     "type": "subtopic",
+     "label": "Substring Search",
+     "body": "Substring search is the problem of finding a substring in a string. This is a very common problem in computer science, and there are many algorithms for solving it.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "Introduction to Substring Search",
+       "url": "https://www.coursera.org/lecture/algorithms-part2/introduction-to-substring-search-n3ZpG"
+      },
+      {
+       "kind": "article",
+       "title": "What is the fastest substring search algorithm?",
+       "url": "https://stackoverflow.com/questions/3183582/what-is-the-fastest-substring-search-algorithm"
+      },
+      {
+       "kind": "article",
+       "title": "Substring Search - Exercises",
+       "url": "https://algs4.cs.princeton.edu/53substring/"
+      }
+     ],
+     "file": "substring-search@E9hf1ux1KKGHvvAShm67w.md"
+    },
+    {
+     "id": "g3b0kt1fCAjjYyS2WelWi",
+     "type": "subtopic",
+     "label": "Brute Force Search",
+     "body": "Brute force search is a simple algorithm that checks for a pattern in a string by comparing each character of the string with the first character of the pattern. If the first character matches, it then compares the next character of the string with the next character of the pattern and so on. If all the characters of the pattern match, then the pattern is found. If the first character does not match, then the algorithm compares the second character of the string with the first character of the pattern and so on.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "Brute-Force Substring Search",
+       "url": "https://www.coursera.org/learn/algorithms-part2/lecture/2Kn5i/brute-force-substring-search"
+      },
+      {
+       "kind": "article",
+       "title": "A Beginner Guide to Brute Force Algorithm for Substring Search",
+       "url": "https://nulpointerexception.com/2019/02/10/a-beginner-guide-to-brute-force-algorithm-for-substring-search/"
+      },
+      {
+       "kind": "article",
+       "title": "Brute Force Algorithm in Cybersecurity and String Search",
+       "url": "https://www.baeldung.com/cs/brute-force-cybersecurity-string-search"
+      }
+     ],
+     "file": "brute-force-search@g3b0kt1fCAjjYyS2WelWi.md"
+    },
+    {
+     "id": "Km5LvcJpyntrW2iA8h5e3",
+     "type": "subtopic",
+     "label": "Robin-Karp",
+     "body": "Rabin-Karp algorithm is a string searching algorithm that uses hashing to find any one of a set of pattern strings in a text. For strings of average length `n`, it performs in `O(n+m)` time with `O(m)` space, where `m` is the length of the pattern. It is often used in bioinformatics to search for DNA patterns.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "Rabin Karps Algorithm",
+       "url": "https://www.coursera.org/lecture/data-structures/rabin-karps-algorithm-c0Qkw"
+      },
+      {
+       "kind": "course",
+       "title": "Optimization: Precomputation",
+       "url": "https://www.coursera.org/learn/data-structures/lecture/nYrc8/optimization-precomputation"
+      },
+      {
+       "kind": "course",
+       "title": "Optimization: Implementation and Analysis",
+       "url": "https://www.coursera.org/learn/data-structures/lecture/h4ZLc/optimization-implementation-and-analysis"
+      },
+      {
+       "kind": "video",
+       "title": "Lecture 9: Table Doubling, Karp-Rabin",
+       "url": "https://www.youtube.com/watch?v=BRO7mVIFt08&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=9"
+      }
+     ],
+     "file": "robin-karp@Km5LvcJpyntrW2iA8h5e3.md"
+    },
+    {
+     "id": "8abFKMfaV9H8F38I0DcMT",
+     "type": "subtopic",
+     "label": "Knuth-Morris Pratt",
+     "body": "The Knuth-Morris-Pratt (KMP) algorithm searches for a pattern in text by preprocessing the pattern into a table that tracks the longest proper prefix that is also a suffix. This lets the algorithm skip re-checking characters it has already matched when a mismatch occurs, giving it O(n + m) time complexity.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "Knuth-Morris Pratt",
+       "url": "https://www.coursera.org/learn/algorithms-part2/lecture/TAtDr/knuth-morris-pratt"
+      },
+      {
+       "kind": "video",
+       "title": "9.1 Knuth-Morris-Pratt KMP String Matching Algorithm",
+       "url": "https://www.youtube.com/watch?v=V5-7GzOfADQ"
+      }
+     ],
+     "file": "knuth-morris-pratt@8abFKMfaV9H8F38I0DcMT.md"
+    },
+    {
+     "id": "p6qub32jcaGloHXUDUrlG",
+     "type": "subtopic",
+     "label": "Boyer-Moore",
+     "body": "Boyer Moore algorithm is a string searching algorithm that is used to find the index of a substring in a string. It is a very efficient algorithm that is used in many applications. It is used in text editors, compilers, and many other applications.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "Boyer Moore Algorithm",
+       "url": "https://www.coursera.org/learn/algorithms-part2/lecture/CYxOT/boyer-moore"
+      },
+      {
+       "kind": "article",
+       "title": "Boyer-Moore String-search Algorithm",
+       "url": "https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm"
+      }
+     ],
+     "file": "boyer-moore@p6qub32jcaGloHXUDUrlG.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "Lwkz7qozXRlVNA20zJbSw",
+     "type": "topic",
+     "label": "NP Complete",
+     "body": "A problem is NP-complete if it is both NP and NP-hard. NP-complete problems are the hard problems in NP.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Trying to understand P vs NP vs NP Complete vs NP Hard",
+       "url": "https://softwareengineering.stackexchange.com/questions/308178/trying-to-understand-p-vs-np-vs-np-complete-vs-np-hard"
+      },
+      {
+       "kind": "video",
+       "title": "Complexity: P, NP, NP-completeness, Reductions",
+       "url": "https://www.youtube.com/watch?v=eHZifpgyH_4&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=22"
+      },
+      {
+       "kind": "video",
+       "title": "P vs. NP and the Computational Complexity Zoo",
+       "url": "https://www.youtube.com/watch?v=YX40hbAHx3s"
+      },
+      {
+       "kind": "video",
+       "title": "Greedy Algs. II & Intro to NP Completeness",
+       "url": "https://youtu.be/qcGnJ47Smlo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=2939"
+      }
+     ],
+     "file": "np-complete@Lwkz7qozXRlVNA20zJbSw.md"
+    },
+    {
+     "id": "ZG-hWjVoS3p9XfrtBL0sD",
+     "type": "subtopic",
+     "label": "Travelling Salesman Problem",
+     "body": "The Travelling Salesman Problem (TSP) is a classic problem in computer science. It is a problem that is NP-complete, which means that it is a problem that is hard to solve. It is also a problem that is used to test the efficiency of algorithms.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Traveling Salesman Problem",
+       "url": "https://en.wikipedia.org/wiki/Travelling_salesman_problem"
+      },
+      {
+       "kind": "video",
+       "title": "What is the Traveling Salesman Problem?",
+       "url": "https://www.youtube.com/watch?v=1pmBjIZ20pE"
+      },
+      {
+       "kind": "video",
+       "title": "4.7 Traveling Salesperson Problem - Dynamic Programming",
+       "url": "https://www.youtube.com/watch?v=XaXsJJh-Q5Y"
+      },
+      {
+       "kind": "video",
+       "title": "Traveling Salesman Problem | Dynamic Programming | Graph Theory",
+       "url": "https://www.youtube.com/watch?v=cY4HiiFHO1o"
+      }
+     ],
+     "file": "travelling-salesman-problem@ZG-hWjVoS3p9XfrtBL0sD.md"
+    },
+    {
+     "id": "yHeCRPhfAOWiggZeUHPU9",
+     "type": "subtopic",
+     "label": "Knapsack Problem",
+     "body": "KnapSack Problem is a classic problem in computer science. It is a problem in which we are given a set of items, each with a weight and a value, and we need to determine which items to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "How to solve the Knapsack Problem with dynamic programming",
+       "url": "https://medium.com/@fabianterh/how-to-solve-the-knapsack-problem-with-dynamic-programming-eb88c706d3cf"
+      },
+      {
+       "kind": "video",
+       "title": "3.1 Knapsack Problem - Greedy Method",
+       "url": "https://www.youtube.com/watch?v=oTTzNMHM05I"
+      }
+     ],
+     "file": "knapsack-problem@yHeCRPhfAOWiggZeUHPU9.md"
+    },
+    {
+     "id": "4QVVYjDODMWsjnrE-4UBs",
+     "type": "subtopic",
+     "label": "Longest Path Problem",
+     "body": "The Longest Path Problem asks for the longest simple path between two vertices in a graph, one that does not repeat any vertex. Unlike the shortest path problem, which has efficient algorithms, finding the longest path is NP-hard in general graphs, though it becomes solvable in polynomial time for special cases like directed acyclic graphs.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "Shortest/Longest path on a Directed Acyclic Graph (DAG) | Graph Theory",
+       "url": "https://www.youtube.com/watch?v=TXkDpqjDMHA"
+      },
+      {
+       "kind": "video",
+       "title": "Longest Simple Path - Intro to Algorithms",
+       "url": "https://www.youtube.com/watch?v=lRH0tax5dFA"
+      }
+     ],
+     "file": "longest-path-problem@4QVVYjDODMWsjnrE-4UBs.md"
     }
    ]
   }

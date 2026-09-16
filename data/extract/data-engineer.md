@@ -9,8 +9,6 @@
 
 ---
 
-## Pre-requisites
-
 ## Data Engineer
 
 #### What is Data Engineering?
@@ -278,31 +276,11 @@ Database fundamentals cover the core concepts that apply across most relational 
 - `@video` [What is Relational Database](https://youtu.be/OqjJjpjDRLc)
 - `@video` [How do NoSQL Databases work](https://www.youtube.com/watch?v=0buKQHokLK8)
 
-## Relational Databases
-
 #### Slowly Changing Dimension - SCD
 
 Slowly Changing Dimensions (SCDs) are a data warehousing technique used to track changes in dimension data over time. Instead of simply overwriting old data with new data, SCDs allow you to maintain historical records of how dimension attributes have changed. This is crucial for accurate analysis of historical trends and business performance.
 
 - `@article` [Implementing Slowly Changing Dimensions (SCDs) in Data Warehouses](https://www.sqlshack.com/implementing-slowly-changing-dimensions-scds-in-data-warehouses/)
-
-#### MySQL
-
-MySQL is an open-source relational database management system (RDBMS) known for its speed, reliability, and ease of use. It uses SQL (Structured Query Language) for database interactions and supports a range of features for data management, including transactions, indexing, and stored procedures. MySQL is widely used for web applications, data warehousing, and various other applications due to its scalability and flexibility. It integrates well with many programming languages and platforms, and is often employed in conjunction with web servers and frameworks in popular software stacks like LAMP (Linux, Apache, MySQL, PHP/Python/Perl). MySQL is maintained by Oracle Corporation and has a large community and ecosystem supporting its development and use.
-
-- `@official` [MySQL](https://www.mysql.com/)
-- `@article` [MySQL for Developers](https://planetscale.com/courses/mysql-for-developers/introduction/course-introduction)
-- `@article` [MySQL Tutorial](https://www.mysqltutorial.org/)
-- `@video` [MySQL Complete Course](https://www.youtube.com/watch?v=5OdVJbNCSso)
-
-#### PostgreSQL
-
-PostgreSQL is an open-source relational database known for its standards compliance, extensibility, and advanced feature set. It supports complex queries, JSON storage, full-text search, and custom data types. PostgreSQL is widely used in both transactional and analytical workloads.
-
-- `@roadmap` [Visit Dedicated PostgreSQL DBA Roadmap](https://roadmap.sh/postgresql-dba)
-- `@official` [PostgreSQL Website](https://www.postgresql.org/)
-- `@article` [Learn PostgreSQL - Full Tutorial for Beginners](https://www.postgresqltutorial.com/)
-- `@video` [Postgres tutorial for Beginners](https://www.youtube.com/watch?v=SpfIwlAYaKk)
 
 ### Relational Databases
 
@@ -320,46 +298,9 @@ Horizontal scaling is the process of adding more machines or nodes to an existin
 - `@article` [Horizontal Vs. Vertical Scaling: Which Should You Choose?](https://www.cloudzero.com/blog/horizontal-vs-vertical-scaling/)
 - `@video` [Vertical Vs Horizontal Scaling: Key Differences You Should Know](https://www.youtube.com/watch?v=dvRFHG2-uYs)
 
-#### MariaDB
-
-MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most feature rich, stable, and sanely licensed open SQL server in the industry. MariaDB was created with the intention of being a more versatile, drop-in replacement version of MySQL
-
-- `@official` [MariaDB](https://mariadb.org/)
-- `@article` [MariaDB vs MySQL](https://www.guru99.com/mariadb-vs-mysql.html)
-- `@video` [MariaDB Tutorial For Beginners in One Hour](https://www.youtube.com/watch?v=_AMj02sANpI)
-
-#### Aurora DB
-
-Amazon Aurora (Aurora) is a fully managed relational database engine that's compatible with MySQL and PostgreSQL. Aurora includes a high-performance storage subsystem. Its MySQL- and PostgreSQL-compatible database engines are customized to take advantage of that fast distributed storage. The underlying storage grows automatically as needed. Aurora also automates and standardizes database clustering and replication, which are typically among the most challenging aspects of database configuration and administration.
-
-- `@official` [SAmazon Aurora](https://aws.amazon.com/rds/aurora/)
-
 #### Star vs Snowflake Schema
 
 Star and snowflake schemas are two approaches to organizing data in a data warehouse. A star schema has a central fact table connected directly to dimension tables, making queries simple and fast. A snowflake schema normalizes dimension tables into multiple related tables, reducing redundancy but requiring more joins. Star schemas are more common in analytical systems due to their query performance.
-
-#### Oracle
-
-Oracle Database is a commercial relational database system widely used in enterprise environments. It is known for its robustness, advanced features, and support for very large-scale deployments. Oracle is common in financial services, healthcare, and government sectors where long-term vendor support and mature tooling are priorities.
-
-- `@official` [Oracle Docs](https://docs.oracle.com/en/database/index.html)
-- `@video` [Oracle SQL Tutorial for Beginners](https://www.youtube.com/watch?v=ObbNGhcxXJA)
-
-#### MS SQL
-
-Microsoft SQL Server (MS SQL) is a relational database developed by Microsoft, commonly used in enterprise and Windows-based environments. It integrates tightly with the Microsoft ecosystem, including Azure, Power BI, and .NET. MS SQL supports T-SQL, Microsoft's extension of SQL with additional procedural capabilities.
-
-- `@roadmap` [Visit Dedicated SQL Roadmap](https://roadmap.sh/sql)
-- `@official` [MS SQL](https://www.microsoft.com/en-ca/sql-server/)
-- `@article` [Tutorials for SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/tutorials-for-sql-server-2016?view=sql-server-ver15)
-- `@video` [SQL Server tutorial for beginners](https://www.youtube.com/watch?v=-EPMOaV7h_Q)
-
-### Document
-
-\*\*Document Databases are a type of No-SQL databases that store data in JSON, BSON, or XML formats, allowing for flexible, semi-structured and hierarchical data structures. These databases are characterized by their dynamic schema, scalability through distribution, and ability to intuitively map data models to application code. Popular examples include MongoDB, which allows for easy storage and retrieval of varied data types without requiring a rigid, predefined schema.
-
-- `@article` [What is a Document Database?](https://www.mongodb.com/resources/basics/databases/document-databases)
-- `@article` [Document-oriented database](https://en.wikipedia.org/wiki/Document-oriented_database)
 
 ### Column
 
@@ -400,101 +341,6 @@ Key value databases, also known as key value stores, are NoSQL database types wh
 - `@article` [What is a Key Value Database? - AWS](https://aws.amazon.com/nosql/key-value/)
 - `@article` [What Is A Key-Value Database? - MongoDB](https://www.mongodb.com/resources/basics/databases/key-value-database)
 
-#### MongoDB
-
-MongoDB is a NoSQL, open-source database designed for storing and managing large volumes of unstructured or semi-structured data. It uses a document-oriented data model where data is stored in BSON (Binary JSON) format, which allows for flexible and hierarchical data representation. Unlike traditional relational databases, MongoDB doesn't require a fixed schema, making it suitable for applications with evolving data requirements or varying data structures. It supports horizontal scaling through sharding and offers high availability with replica sets. MongoDB is commonly used for applications requiring rapid development, real-time analytics, and large-scale data handling, such as content management systems, IoT applications, and big data platforms.
-
-- `@roadmap` [Visit Dedicated MongoDB Roadmap](https://roadmap.sh/mongodb)
-- `@official` [MongoDB Website](https://www.mongodb.com/)
-- `@official` [Learning Path for MongoDB Developers](https://learn.mongodb.com/catalog)
-- `@article` [MongoDB Online Sandbox](https://mongoplayground.net/)
-
-#### Neo4j
-
-Neo4j is the most widely used graph database. It stores data natively as nodes and relationships and uses Cypher, a declarative query language designed for graph traversal. Neo4j is used for applications where relationship-heavy queries are central, such as recommendation systems and network analysis.
-
-- `@official` [Neo4j Website](https://neo4j.com)
-- `@video` [Neo4j in 100 Seconds](https://www.youtube.com/watch?v=T6L9EoBy8Zk)
-- `@video` [Neo4j Course for Beginners](https://www.youtube.com/watch?v=_IgbB24scLI)
-
-#### Cassandra
-
-Apache Cassandra is an open-source distributed wide-column database designed for high availability and linear scalability. It has no single point of failure and is optimized for fast writes across multiple data centers. Cassandra is used for time-series data, IoT workloads, and applications requiring continuous uptime.
-
-- `@official` [Apache Cassandra](https://cassandra.apache.org/_/index.html)
-- `@article` [Cassandra - Quick Guide](https://www.tutorialspoint.com/cassandra/cassandra_quick_guide.htm)
-- `@video` [Apache Cassandra - Course for Beginners](https://www.youtube.com/watch?v=J-cSy5MeMOA)
-
-#### Redis
-
-Redis is an in-memory key-value store known for its extremely low latency. It supports a variety of data structures including strings, lists, sets, sorted sets, and hashes. Redis is widely used for caching, real-time leaderboards, pub/sub messaging, and session storage.
-
-- `@roadmap` [Visit Dedicated Redis Roadmap](https://roadmap.sh/redis)
-- `@course` [Redis Crash Course](https://www.youtube.com/watch?v=XCsS_NVAa1g)
-- `@official` [Redis Documentation](https://redis.io/docs/latest/)
-- `@video` [Redis in 100 Seconds](https://www.youtube.com/watch?v=G1rOthIU-uo)
-
-#### ElasticSearch
-
-Elasticsearch is a distributed search and analytics engine built on Apache Lucene. It is designed for full-text search, log analysis, and real-time data exploration. Elasticsearch is commonly used as the backend for search features in applications and as a centralized store for log and event data, often alongside Kibana.
-
-- `@roadmap` [Visit the Dedicated Elasticsearch Roadmap](https://roadmap.sh/elasticsearch)
-- `@official` [Elasticsearch Website](https://www.elastic.co/elasticsearch/)
-- `@official` [Elasticsearch Documentation](https://www.elastic.co/guide/index.html)
-- `@video` [What is Elasticsearch](https://www.youtube.com/watch?v=ZP0NmfyfsoM)
-
-#### Neptune
-
-Amazon Neptune is a managed graph database service on AWS that supports both the Property Graph model (with Gremlin) and RDF (with SPARQL). It is designed for highly connected datasets and scales to billions of relationships. Neptune is used for knowledge graphs, fraud detection, and identity resolution.
-
-- `@official` [AWS Neptune](https://aws.amazon.com/neptune/)
-- `@article` [Setting Up Amazon Neptune Graph Database](https://cliffordedsouza.medium.com/setting-up-amazon-neptune-graph-database-2b73512a7388)
-- `@video` [Getting Started with Neptune Serverless](https://www.youtube.com/watch?v=b04-jjM9t4g)
-
-#### BigTable
-
-Bigtable is a high-performance, scalable database that excels at capturing, processing, and analyzing data in real-time. It aggregates data as it's written, providing immediate insights into user behavior, A/B testing results, and engagement metrics. This real-time capability also fuels AI/ML models for interactive applications. Bigtable integrates seamlessly with both Dataflow, enriching streaming pipelines with low-latency lookups, and BigQuery, enabling real-time serving of analytics in user-facing applications and ad-hoc querying on the same data.
-
-- `@official` [Bigtable: Fast, Flexible NoSQL](https://cloud.google.com/bigtable?hl=en#scale-your-latency-sensitive-applications-with-the-nosql-pioneer)
-- `@article` [Google Bigtable](https://www.techtarget.com/searchdatamanagement/definition/Google-BigTable)
-
-#### Memcached
-
-Memcached is a high-performance, distributed in-memory caching system. It is simpler than Redis, supporting only key-value string storage, but is very fast and horizontally scalable. Memcached is commonly used to cache database query results and reduce load on backend systems.
-
-- `@opensource` [memcached](https://github.com/memcached/memcached#readme)
-- `@article` [Memcached Tutorial](https://www.tutorialspoint.com/memcached/index.htm)
-- `@video` [Redis vs Memcached](https://www.youtube.com/watch?v=Gyy1SiE8avE)
-
-#### CosmosDB
-
-Azure Cosmos DB is a native No-SQL database service and vector database for working with the document data model. It can arbitrarily store native JSON documents with flexible schema. Data is indexed automatically and is available for query using a flavor of the SQL query language designed for JSON data. It also supports vector search. You can access the API using SDKs for popular frameworks such [as.NET](http://as.NET), Python, Java, and Node.js.
-
-- `@official` [What are Containers?](https://azure.microsoft.com/en-us/products/cosmos-db#FAQ)
-- `@official` [CAzure Cosmos DB - Database for the AI Era](https://learn.microsoft.com/en-us/azure/cosmos-db/introduction)
-- `@video` [What is Azure Cosmos DB?](https://www.youtube.com/watch?v=hBY2YcaIOQM&)
-
-#### HBase
-
-HBase is a column-oriented No-SQL database management system that runs on top of Hadoop Distributed File System (HDFS), a main component of Apache Hadoop. HBase provides a fault-tolerant way of storing sparse data sets, which are common in many big data use cases. It is well-suited for real-time data processing or random read/write access to large volumes of data. HBase applications are written in Java™ much like a typical Apache MapReduce application.
-
-- `@official` [Apacha HBase?](https://hbase.apache.org/)
-- `@article` [What is HBase?](https://www.ibm.com/think/topics/hbase)
-- `@article` [Apache HBase](https://en.wikipedia.org/wiki/Apache_HBase)
-
-#### DynamoDB
-
-Amazon DynamoDB is a fully managed key-value and document database service on AWS. It provides single-digit millisecond performance at any scale and handles replication and scaling automatically. DynamoDB is commonly used for applications that require predictable performance and high availability without database administration.
-
-- `@official` [Amazon DynamoDB](https://aws.amazon.com/dynamodb/)
-
-#### CouchDB
-
-Apache CouchDB is an open-source document database that uses JSON for documents and HTTP as its API. It is designed for reliability and offline-first use cases, with a built-in replication protocol that syncs data between devices and servers. CouchDB is used in scenarios where data needs to be available and writable even without a network connection.
-
-- `@official` [CouchDB Documentation](https://docs.couchdb.org/en/stable/intro/overview.html)
-- `@article` [What is CouchDB?](https://www.ibm.com/think/topics/couchdb)
-
 ### What is Data Warehouse?
 
 A data warehouse is a centralized repository for storing large volumes of structured, historical data from multiple sources. It is optimized for analytical queries rather than transactional operations. Data warehouses power business intelligence, reporting, and data analysis, providing a single source of truth across an organization.
@@ -505,13 +351,6 @@ A data warehouse is a centralized repository for storing large volumes of struct
 ### Data Warehousing Architectures
 
 Data warehousing architectures describe how data is organized, stored, and accessed across a warehouse system. Common patterns include traditional ETL-based warehouses, cloud-native warehouses, data lakehouse architectures, and federated query systems. The choice of architecture affects cost, query performance, scalability, and how fresh the data available for analysis is.
-
-### Data Warehouse
-
-A data warehouse stores structured, processed data from operational systems, optimized for analytical queries. It typically uses columnar storage and is populated through ETL or ELT processes. Common cloud data warehouses include Google BigQuery, Snowflake, and Amazon Redshift.
-
-- `@article` [What Is a Data Warehouse?](https://www.oracle.com/database/what-is-a-data-warehouse/)
-- `@video` [What is a Data Warehouse?](https://www.youtube.com/watch?v=k4tK2ttdSDg)
 
 #### Data Mart
 
@@ -528,6 +367,214 @@ A data mesh is a modern approach to data architecture that shifts data managemen
 - `@article` [What Is a Data Mesh? - AWS](https://aws.amazon.com/what-is/data-mesh)
 - `@video` [Data Mesh Architecture](https://www.datamesh-architecture.com/)
 
+### Cloud Computing
+
+Cloud computing refers to the delivery of computing resources, including servers, storage, databases, networking, and software, over the internet. Major cloud providers offer on-demand infrastructure that scales with usage and is billed per consumption. Cloud platforms are the dominant environment for modern data engineering work.
+
+- `@article` [Cloud Computing - IBM](https://www.ibm.com/think/topics/cloud-computing)
+- `@article` [What is Cloud Computing? - Azure](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-cloud-computing)
+- `@video` [What is Cloud Computing? - Amazon Web Services](https://www.youtube.com/watch?v=mxT233EdY5c)
+
+#### Cloud Architectures
+
+Cloud architectures describe how systems are designed to run on cloud infrastructure. Common patterns include multi-tier architectures, microservices, event-driven designs, and serverless functions. Good cloud architecture balances cost, reliability, scalability, and security.
+
+- `@article` [What is cloud architecture? - Google](https://cloud.google.com/learn/what-is-cloud-architecture)
+- `@video` [WWhat is Cloud Architecture and Common Models?](https://www.youtube.com/watch?v=zTP-bx495hU)
+
+#### Batch
+
+Batch processing is a method in which large volumes of collected data are processed in chunks or batches. This approach is especially effective for resource-intensive jobs, repetitive tasks, and managing extensive datasets where real-time processing isn’t required. It is ideal for applications like data warehousing, ETL (Extract, Transform, Load), and large-scale reporting. Data batch processing is mainly automated, requiring minimal human interaction once the process is set up. Tasks are predefined, and the system executes them according to a scheduled timeline, typically during off-peak hours when computing resources are readily available.
+
+- `@article` [What is Batch Processing?](https://aws.amazon.com/what-is/batch-processing/)
+- `@article` [Batch And Streaming Demystified For Unification](https://towardsdatascience.com/batch-and-streaming-demystified-for-unification-dee0b48f921d/)
+
+#### Hybrid
+
+Hybrid data ingestion combines aspects of both real-time and batch ingestion. This approach gives you the flexibility to adapt your data ingestion strategy as your needs evolve. For example, you could process data in real-time for critical applications and in batches for less time-sensitive tasks. Two common hybrid methods are Lambda architecture-based and micro-batching.
+
+- `@article` [What is Data Ingestion: Types, Tools, and Real-Life Use Cases](https://estuary.dev/blog/data-ingestion/)
+- `@article` [Lambda Architecture](https://www.databricks.com/glossary/lambda-architecture)
+- `@article` [What is Micro Batching: A Comprehensive Guide 101](https://hevodata.com/learn/micro-batching/)
+
+### Types of Data Ingestion
+
+The primary types of data ingestion are Batch, Streaming, and Hybrid. Batch ingestion processes data in large, scheduled chunks, suitable for non-time-sensitive tasks like monthly reports. Streaming (or Real-time) ingestion handles data as it arrives, ideal for time-sensitive applications such as fraud detection or IoT monitoring. Hybrid ingestion combines both methods, offering flexibility for diverse business needs.
+
+#### Realtime
+
+Real-time processing, also known as streaming processing, involves the immediate ingestion, as well as analysis, of data as it is generated, providing instantaneous insights and enabling timely decisions in time-sensitive applications like financial trading, medical monitoring, and autonomous vehicles. This differs from batch processing, which handles data in later batches, and typically involves continuous data streaming, low latency, and high availability to deliver immediate outcomes for critical tasks.
+
+### Data Pipelines
+
+Data pipelines are a series of automated processes that transport and transform data from various sources to a destination for analysis or storage. They typically involve steps like data extraction, cleaning, transformation, and loading (ETL) into databases, data lakes, or warehouses. Pipelines can handle batch or real-time data, ensuring that large-scale datasets are processed efficiently and consistently. They play a crucial role in ensuring data integrity and enabling businesses to derive insights from raw data for reporting, analytics, or machine learning.
+
+- `@article` [What is a Data Pipeline? - IBM](https://www.ibm.com/topics/data-pipeline)
+- `@video` [What are Data Pipelines?](https://www.youtube.com/watch?v=oKixNpz6jNo)
+
+### Cluster Computing Basics
+
+Cluster computing refers to using a group of connected machines that work together as a single system to process data. It enables workloads that are too large or slow for a single machine by distributing computation across multiple nodes. Concepts like job scheduling, distributed file systems, and resource management are central to working with clusters.
+
+## Relational Databases
+
+#### MySQL
+
+MySQL is an open-source relational database management system (RDBMS) known for its speed, reliability, and ease of use. It uses SQL (Structured Query Language) for database interactions and supports a range of features for data management, including transactions, indexing, and stored procedures. MySQL is widely used for web applications, data warehousing, and various other applications due to its scalability and flexibility. It integrates well with many programming languages and platforms, and is often employed in conjunction with web servers and frameworks in popular software stacks like LAMP (Linux, Apache, MySQL, PHP/Python/Perl). MySQL is maintained by Oracle Corporation and has a large community and ecosystem supporting its development and use.
+
+- `@official` [MySQL](https://www.mysql.com/)
+- `@article` [MySQL for Developers](https://planetscale.com/courses/mysql-for-developers/introduction/course-introduction)
+- `@article` [MySQL Tutorial](https://www.mysqltutorial.org/)
+- `@video` [MySQL Complete Course](https://www.youtube.com/watch?v=5OdVJbNCSso)
+
+#### PostgreSQL
+
+PostgreSQL is an open-source relational database known for its standards compliance, extensibility, and advanced feature set. It supports complex queries, JSON storage, full-text search, and custom data types. PostgreSQL is widely used in both transactional and analytical workloads.
+
+- `@roadmap` [Visit Dedicated PostgreSQL DBA Roadmap](https://roadmap.sh/postgresql-dba)
+- `@official` [PostgreSQL Website](https://www.postgresql.org/)
+- `@article` [Learn PostgreSQL - Full Tutorial for Beginners](https://www.postgresqltutorial.com/)
+- `@video` [Postgres tutorial for Beginners](https://www.youtube.com/watch?v=SpfIwlAYaKk)
+
+#### MariaDB
+
+MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most feature rich, stable, and sanely licensed open SQL server in the industry. MariaDB was created with the intention of being a more versatile, drop-in replacement version of MySQL
+
+- `@official` [MariaDB](https://mariadb.org/)
+- `@article` [MariaDB vs MySQL](https://www.guru99.com/mariadb-vs-mysql.html)
+- `@video` [MariaDB Tutorial For Beginners in One Hour](https://www.youtube.com/watch?v=_AMj02sANpI)
+
+#### Aurora DB
+
+Amazon Aurora (Aurora) is a fully managed relational database engine that's compatible with MySQL and PostgreSQL. Aurora includes a high-performance storage subsystem. Its MySQL- and PostgreSQL-compatible database engines are customized to take advantage of that fast distributed storage. The underlying storage grows automatically as needed. Aurora also automates and standardizes database clustering and replication, which are typically among the most challenging aspects of database configuration and administration.
+
+- `@official` [SAmazon Aurora](https://aws.amazon.com/rds/aurora/)
+
+#### Oracle
+
+Oracle Database is a commercial relational database system widely used in enterprise environments. It is known for its robustness, advanced features, and support for very large-scale deployments. Oracle is common in financial services, healthcare, and government sectors where long-term vendor support and mature tooling are priorities.
+
+- `@official` [Oracle Docs](https://docs.oracle.com/en/database/index.html)
+- `@video` [Oracle SQL Tutorial for Beginners](https://www.youtube.com/watch?v=ObbNGhcxXJA)
+
+#### MS SQL
+
+Microsoft SQL Server (MS SQL) is a relational database developed by Microsoft, commonly used in enterprise and Windows-based environments. It integrates tightly with the Microsoft ecosystem, including Azure, Power BI, and .NET. MS SQL supports T-SQL, Microsoft's extension of SQL with additional procedural capabilities.
+
+- `@roadmap` [Visit Dedicated SQL Roadmap](https://roadmap.sh/sql)
+- `@official` [MS SQL](https://www.microsoft.com/en-ca/sql-server/)
+- `@article` [Tutorials for SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/tutorials-for-sql-server-2016?view=sql-server-ver15)
+- `@video` [SQL Server tutorial for beginners](https://www.youtube.com/watch?v=-EPMOaV7h_Q)
+
+### Document
+
+\*\*Document Databases are a type of No-SQL databases that store data in JSON, BSON, or XML formats, allowing for flexible, semi-structured and hierarchical data structures. These databases are characterized by their dynamic schema, scalability through distribution, and ability to intuitively map data models to application code. Popular examples include MongoDB, which allows for easy storage and retrieval of varied data types without requiring a rigid, predefined schema.
+
+- `@article` [What is a Document Database?](https://www.mongodb.com/resources/basics/databases/document-databases)
+- `@article` [Document-oriented database](https://en.wikipedia.org/wiki/Document-oriented_database)
+
+#### MongoDB
+
+MongoDB is a NoSQL, open-source database designed for storing and managing large volumes of unstructured or semi-structured data. It uses a document-oriented data model where data is stored in BSON (Binary JSON) format, which allows for flexible and hierarchical data representation. Unlike traditional relational databases, MongoDB doesn't require a fixed schema, making it suitable for applications with evolving data requirements or varying data structures. It supports horizontal scaling through sharding and offers high availability with replica sets. MongoDB is commonly used for applications requiring rapid development, real-time analytics, and large-scale data handling, such as content management systems, IoT applications, and big data platforms.
+
+- `@roadmap` [Visit Dedicated MongoDB Roadmap](https://roadmap.sh/mongodb)
+- `@official` [MongoDB Website](https://www.mongodb.com/)
+- `@official` [Learning Path for MongoDB Developers](https://learn.mongodb.com/catalog)
+- `@article` [MongoDB Online Sandbox](https://mongoplayground.net/)
+
+#### ElasticSearch
+
+Elasticsearch is a distributed search and analytics engine built on Apache Lucene. It is designed for full-text search, log analysis, and real-time data exploration. Elasticsearch is commonly used as the backend for search features in applications and as a centralized store for log and event data, often alongside Kibana.
+
+- `@roadmap` [Visit the Dedicated Elasticsearch Roadmap](https://roadmap.sh/elasticsearch)
+- `@official` [Elasticsearch Website](https://www.elastic.co/elasticsearch/)
+- `@official` [Elasticsearch Documentation](https://www.elastic.co/guide/index.html)
+- `@video` [What is Elasticsearch](https://www.youtube.com/watch?v=ZP0NmfyfsoM)
+
+#### CosmosDB
+
+Azure Cosmos DB is a native No-SQL database service and vector database for working with the document data model. It can arbitrarily store native JSON documents with flexible schema. Data is indexed automatically and is available for query using a flavor of the SQL query language designed for JSON data. It also supports vector search. You can access the API using SDKs for popular frameworks such [as.NET](http://as.NET), Python, Java, and Node.js.
+
+- `@official` [What are Containers?](https://azure.microsoft.com/en-us/products/cosmos-db#FAQ)
+- `@official` [CAzure Cosmos DB - Database for the AI Era](https://learn.microsoft.com/en-us/azure/cosmos-db/introduction)
+- `@video` [What is Azure Cosmos DB?](https://www.youtube.com/watch?v=hBY2YcaIOQM&)
+
+#### CouchDB
+
+Apache CouchDB is an open-source document database that uses JSON for documents and HTTP as its API. It is designed for reliability and offline-first use cases, with a built-in replication protocol that syncs data between devices and servers. CouchDB is used in scenarios where data needs to be available and writable even without a network connection.
+
+- `@official` [CouchDB Documentation](https://docs.couchdb.org/en/stable/intro/overview.html)
+- `@article` [What is CouchDB?](https://www.ibm.com/think/topics/couchdb)
+
+#### Neo4j
+
+Neo4j is the most widely used graph database. It stores data natively as nodes and relationships and uses Cypher, a declarative query language designed for graph traversal. Neo4j is used for applications where relationship-heavy queries are central, such as recommendation systems and network analysis.
+
+- `@official` [Neo4j Website](https://neo4j.com)
+- `@video` [Neo4j in 100 Seconds](https://www.youtube.com/watch?v=T6L9EoBy8Zk)
+- `@video` [Neo4j Course for Beginners](https://www.youtube.com/watch?v=_IgbB24scLI)
+
+#### Neptune
+
+Amazon Neptune is a managed graph database service on AWS that supports both the Property Graph model (with Gremlin) and RDF (with SPARQL). It is designed for highly connected datasets and scales to billions of relationships. Neptune is used for knowledge graphs, fraud detection, and identity resolution.
+
+- `@official` [AWS Neptune](https://aws.amazon.com/neptune/)
+- `@article` [Setting Up Amazon Neptune Graph Database](https://cliffordedsouza.medium.com/setting-up-amazon-neptune-graph-database-2b73512a7388)
+- `@video` [Getting Started with Neptune Serverless](https://www.youtube.com/watch?v=b04-jjM9t4g)
+
+#### Cassandra
+
+Apache Cassandra is an open-source distributed wide-column database designed for high availability and linear scalability. It has no single point of failure and is optimized for fast writes across multiple data centers. Cassandra is used for time-series data, IoT workloads, and applications requiring continuous uptime.
+
+- `@official` [Apache Cassandra](https://cassandra.apache.org/_/index.html)
+- `@article` [Cassandra - Quick Guide](https://www.tutorialspoint.com/cassandra/cassandra_quick_guide.htm)
+- `@video` [Apache Cassandra - Course for Beginners](https://www.youtube.com/watch?v=J-cSy5MeMOA)
+
+#### BigTable
+
+Bigtable is a high-performance, scalable database that excels at capturing, processing, and analyzing data in real-time. It aggregates data as it's written, providing immediate insights into user behavior, A/B testing results, and engagement metrics. This real-time capability also fuels AI/ML models for interactive applications. Bigtable integrates seamlessly with both Dataflow, enriching streaming pipelines with low-latency lookups, and BigQuery, enabling real-time serving of analytics in user-facing applications and ad-hoc querying on the same data.
+
+- `@official` [Bigtable: Fast, Flexible NoSQL](https://cloud.google.com/bigtable?hl=en#scale-your-latency-sensitive-applications-with-the-nosql-pioneer)
+- `@article` [Google Bigtable](https://www.techtarget.com/searchdatamanagement/definition/Google-BigTable)
+
+#### HBase
+
+HBase is a column-oriented No-SQL database management system that runs on top of Hadoop Distributed File System (HDFS), a main component of Apache Hadoop. HBase provides a fault-tolerant way of storing sparse data sets, which are common in many big data use cases. It is well-suited for real-time data processing or random read/write access to large volumes of data. HBase applications are written in Java™ much like a typical Apache MapReduce application.
+
+- `@official` [Apacha HBase?](https://hbase.apache.org/)
+- `@article` [What is HBase?](https://www.ibm.com/think/topics/hbase)
+- `@article` [Apache HBase](https://en.wikipedia.org/wiki/Apache_HBase)
+
+#### Redis
+
+Redis is an in-memory key-value store known for its extremely low latency. It supports a variety of data structures including strings, lists, sets, sorted sets, and hashes. Redis is widely used for caching, real-time leaderboards, pub/sub messaging, and session storage.
+
+- `@roadmap` [Visit Dedicated Redis Roadmap](https://roadmap.sh/redis)
+- `@course` [Redis Crash Course](https://www.youtube.com/watch?v=XCsS_NVAa1g)
+- `@official` [Redis Documentation](https://redis.io/docs/latest/)
+- `@video` [Redis in 100 Seconds](https://www.youtube.com/watch?v=G1rOthIU-uo)
+
+#### Memcached
+
+Memcached is a high-performance, distributed in-memory caching system. It is simpler than Redis, supporting only key-value string storage, but is very fast and horizontally scalable. Memcached is commonly used to cache database query results and reduce load on backend systems.
+
+- `@opensource` [memcached](https://github.com/memcached/memcached#readme)
+- `@article` [Memcached Tutorial](https://www.tutorialspoint.com/memcached/index.htm)
+- `@video` [Redis vs Memcached](https://www.youtube.com/watch?v=Gyy1SiE8avE)
+
+#### DynamoDB
+
+Amazon DynamoDB is a fully managed key-value and document database service on AWS. It provides single-digit millisecond performance at any scale and handles replication and scaling automatically. DynamoDB is commonly used for applications that require predictable performance and high availability without database administration.
+
+- `@official` [Amazon DynamoDB](https://aws.amazon.com/dynamodb/)
+
+### Data Warehouse
+
+A data warehouse stores structured, processed data from operational systems, optimized for analytical queries. It typically uses columnar storage and is populated through ETL or ELT processes. Common cloud data warehouses include Google BigQuery, Snowflake, and Amazon Redshift.
+
+- `@article` [What Is a Data Warehouse?](https://www.oracle.com/database/what-is-a-data-warehouse/)
+- `@video` [What is a Data Warehouse?](https://www.youtube.com/watch?v=k4tK2ttdSDg)
+
 #### Google BigQuery
 
 BigQuery is a managed, serverless data warehouse product by Google, offering scalable analysis over large quantities of data. It is a Platform as a Service (PaaS) that supports querying using a dialect of SQL. BigQuery is NoOps, meaning there is no infrastructure to manage and you don't need a database administrator. BigQuery lets you focus on analyzing data to find meaningful insights while using familiar SQL and built-in machine learning at unmatched price-performance.
@@ -535,6 +582,21 @@ BigQuery is a managed, serverless data warehouse product by Google, offering sca
 - `@official` [BigQuery overview](https://cloud.google.com/bigquery/docs/introduction)
 - `@official` [From data warehouse to autonomous data and AI platform](https://cloud.google.com/bigquery)
 - `@video` [What is BigQuery?](https://www.youtube.com/watch?v=d3MDxC_iuaw)
+
+#### Snowflake
+
+Snowflake is a cloud-based data platform that provides a data warehouse as a service. It allows organizations to store, analyze, and share data, offering features like data engineering, data governance, and collaboration capabilities. Snowflake is known for its scalability, ease of use, and ability to handle diverse workloads, including data warehousing, data lakes, and machine learning.
+
+- `@official` [Snowflake Docs](https://docs.snowflake.com/)
+- `@official` [Snowflake in 20 minutes](https://docs.snowflake.com/en/user-guide/tutorials/snowflake-in-20minutes)
+- `@video` [Learn Snowflake in 2 Hours](https://www.youtube.com/watch?v=mP3QbYURT9k)
+
+#### Amazon Redshift
+
+Amazon Redshift is a cloud-based data warehouse service from Amazon that lets you store and analyze large amounts of data quickly. It’s designed for running complex queries on huge datasets, so businesses can use it to turn raw data into useful reports and insights. You can load data into Redshift from many sources, and then use SQL to explore it, just like you would with a regular database — but it’s optimized to handle much bigger data and run faster.
+
+- `@official` [Amazon Redshift](https://aws.amazon.com/redshift/)
+- `@video` [Getting Started with Amazon Redshift - AWS Online Tech Talks](https://www.youtube.com/watch?v=dfo4J5ZhlKI)
 
 ## Other Data Architectures
 
@@ -553,24 +615,9 @@ A data hub is a centralized platform that acts as an integration point for data 
 - `@article` [Data hub](https://en.wikipedia.org/wiki/Data_hub)
 - `@article` [What is a Data Hub? Definition, 7 Key Benefits & Why You Might Need One](https://www.cdata.com/blog/what-is-a-data-hub)
 
-#### Snowflake
-
-Snowflake is a cloud-based data platform that provides a data warehouse as a service. It allows organizations to store, analyze, and share data, offering features like data engineering, data governance, and collaboration capabilities. Snowflake is known for its scalability, ease of use, and ability to handle diverse workloads, including data warehousing, data lakes, and machine learning.
-
-- `@official` [Snowflake Docs](https://docs.snowflake.com/)
-- `@official` [Snowflake in 20 minutes](https://docs.snowflake.com/en/user-guide/tutorials/snowflake-in-20minutes)
-- `@video` [Learn Snowflake in 2 Hours](https://www.youtube.com/watch?v=mP3QbYURT9k)
-
 #### Metadata-first Architecture
 
 A metadata-first architecture treats metadata as a first-class citizen in data system design. Rather than just documenting data after the fact, metadata is captured and used actively to govern, discover, and lineage-track data across the organization. This approach supports better data quality, compliance, and self-service analytics.
-
-#### Amazon Redshift
-
-Amazon Redshift is a cloud-based data warehouse service from Amazon that lets you store and analyze large amounts of data quickly. It’s designed for running complex queries on huge datasets, so businesses can use it to turn raw data into useful reports and insights. You can load data into Redshift from many sources, and then use SQL to explore it, just like you would with a regular database — but it’s optimized to handle much bigger data and run faster.
-
-- `@official` [Amazon Redshift](https://aws.amazon.com/redshift/)
-- `@video` [Getting Started with Amazon Redshift - AWS Online Tech Talks](https://www.youtube.com/watch?v=dfo4J5ZhlKI)
 
 #### Serverless Options
 
@@ -593,21 +640,6 @@ Delta Lake is the optimized storage layer that provides the foundation for table
 - `@official` [What is Delta Lake in Databricks?](https://docs.databricks.com/aws/en/delta)
 - `@video` [Delta Lake](https://www.databricks.com/resources/demos/videos/lakehouse-platform/delta-lake)
 
-### Cloud Computing
-
-Cloud computing refers to the delivery of computing resources, including servers, storage, databases, networking, and software, over the internet. Major cloud providers offer on-demand infrastructure that scales with usage and is billed per consumption. Cloud platforms are the dominant environment for modern data engineering work.
-
-- `@article` [Cloud Computing - IBM](https://www.ibm.com/think/topics/cloud-computing)
-- `@article` [What is Cloud Computing? - Azure](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-cloud-computing)
-- `@video` [What is Cloud Computing? - Amazon Web Services](https://www.youtube.com/watch?v=mxT233EdY5c)
-
-#### Cloud Architectures
-
-Cloud architectures describe how systems are designed to run on cloud infrastructure. Common patterns include multi-tier architectures, microservices, event-driven designs, and serverless functions. Good cloud architecture balances cost, reliability, scalability, and security.
-
-- `@article` [What is cloud architecture? - Google](https://cloud.google.com/learn/what-is-cloud-architecture)
-- `@video` [WWhat is Cloud Architecture and Common Models?](https://www.youtube.com/watch?v=zTP-bx495hU)
-
 #### Snowflake
 
 Snowflake is a cloud-based data platform that provides a data warehouse as a service. It allows organizations to store, analyze, and share data, offering features like data engineering, data governance, and collaboration capabilities. Snowflake is known for its scalability, ease of use, and ability to handle diverse workloads, including data warehousing, data lakes, and machine learning.
@@ -616,18 +648,20 @@ Snowflake is a cloud-based data platform that provides a data warehouse as a ser
 - `@official` [Snowflake in 20 minutes](https://docs.snowflake.com/en/user-guide/tutorials/snowflake-in-20minutes)
 - `@video` [Learn Snowflake in 2 Hours](https://www.youtube.com/watch?v=mP3QbYURT9k)
 
+#### Onehouse
+
+Onehouse Managed Lakehouse is a cloud-native SaaS product built on top of Apache Hudi. It replaces painful, inefficient do-iy-yourseld data lake management around file sizing, masking, deletion, clustering, access control, caching, etc. with foundational data infrastructure as a service, to ingest, store, optimize and transform your data on industry-leading open data formats.
+
+- `@official` [Onehouse](https://www.onehouse.ai/)
+
+## AWS
+
 #### Amazon EC2 ( Compute)
 
 Amazon EC2 (Elastic Compute Cloud) provides virtual servers in the AWS cloud. Users can choose instance types optimized for compute, memory, or storage, and pay only for what they run. EC2 is used for running data processing jobs, hosting databases, and building custom data infrastructure on AWS.
 
 - `@official` [EC2 - User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
 - `@video` [Introduction to Amazon EC2](https://www.youtube.com/watch?v=eaicwmnSdCs)
-
-#### Onehouse
-
-Onehouse Managed Lakehouse is a cloud-native SaaS product built on top of Apache Hudi. It replaces painful, inefficient do-iy-yourseld data lake management around file sizing, masking, deletion, clustering, access control, caching, etc. with foundational data infrastructure as a service, to ingest, store, optimize and transform your data on industry-leading open data formats.
-
-- `@official` [Onehouse](https://www.onehouse.ai/)
 
 #### S3 (Storage)
 
@@ -641,36 +675,11 @@ Amazon RDS (Relational Database Service) is a managed relational database servic
 
 - `@official` [Amazon RDS](https://aws.amazon.com/rds/)
 
-#### Batch
-
-Batch processing is a method in which large volumes of collected data are processed in chunks or batches. This approach is especially effective for resource-intensive jobs, repetitive tasks, and managing extensive datasets where real-time processing isn’t required. It is ideal for applications like data warehousing, ETL (Extract, Transform, Load), and large-scale reporting. Data batch processing is mainly automated, requiring minimal human interaction once the process is set up. Tasks are predefined, and the system executes them according to a scheduled timeline, typically during off-peak hours when computing resources are readily available.
-
-- `@article` [What is Batch Processing?](https://aws.amazon.com/what-is/batch-processing/)
-- `@article` [Batch And Streaming Demystified For Unification](https://towardsdatascience.com/batch-and-streaming-demystified-for-unification-dee0b48f921d/)
-
 #### Glue (ETL)
 
 AWS Glue is a fully managed ETL service that automates the discovery, cataloging, and transformation of data. It includes a data catalog for storing metadata, a job scheduler, and a serverless Spark environment for running transformations. Glue is commonly used to move and transform data between S3, Redshift, and other AWS services.
 
 - `@official` [Amazon RDS](https://aws.amazon.com/rds/)
-
-#### Hybrid
-
-Hybrid data ingestion combines aspects of both real-time and batch ingestion. This approach gives you the flexibility to adapt your data ingestion strategy as your needs evolve. For example, you could process data in real-time for critical applications and in batches for less time-sensitive tasks. Two common hybrid methods are Lambda architecture-based and micro-batching.
-
-- `@article` [What is Data Ingestion: Types, Tools, and Real-Life Use Cases](https://estuary.dev/blog/data-ingestion/)
-- `@article` [Lambda Architecture](https://www.databricks.com/glossary/lambda-architecture)
-- `@article` [What is Micro Batching: A Comprehensive Guide 101](https://hevodata.com/learn/micro-batching/)
-
-### Types of Data Ingestion
-
-The primary types of data ingestion are Batch, Streaming, and Hybrid. Batch ingestion processes data in large, scheduled chunks, suitable for non-time-sensitive tasks like monthly reports. Streaming (or Real-time) ingestion handles data as it arrives, ideal for time-sensitive applications such as fraud detection or IoT monitoring. Hybrid ingestion combines both methods, offering flexibility for diverse business needs.
-
-## AWS
-
-#### Realtime
-
-Real-time processing, also known as streaming processing, involves the immediate ingestion, as well as analysis, of data as it is generated, providing instantaneous insights and enabling timely decisions in time-sensitive applications like financial trading, medical monitoring, and autonomous vehicles. This differs from batch processing, which handles data in later batches, and typically involves continuous data streaming, low latency, and high availability to deliver immediate outcomes for critical tasks.
 
 #### Azure Virtual Machines
 
@@ -680,13 +689,6 @@ Azure Virtual Machines (VMs) enable virtualization without requiring hardware in
 - `@official` [Virtual Machines in Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/overview)
 - `@video` [AVirtual Machines in Azure | Beginner's Guide](https://www.youtube.com/watch?v=_abaWXoQFZU)
 
-### Data Pipelines
-
-Data pipelines are a series of automated processes that transport and transform data from various sources to a destination for analysis or storage. They typically involve steps like data extraction, cleaning, transformation, and loading (ETL) into databases, data lakes, or warehouses. Pipelines can handle batch or real-time data, ensuring that large-scale datasets are processed efficiently and consistently. They play a crucial role in ensuring data integrity and enabling businesses to derive insights from raw data for reporting, analytics, or machine learning.
-
-- `@article` [What is a Data Pipeline? - IBM](https://www.ibm.com/topics/data-pipeline)
-- `@video` [What are Data Pipelines?](https://www.youtube.com/watch?v=oKixNpz6jNo)
-
 #### Azure Blob Storage
 
 Azure Blob Storage is Microsoft's object storage solution for the cloud. “Blob” stands for Binary Large Object, a term used to describe storage for unstructured data like text, images, and video. Azure Blob Storage is Microsoft Azure’s solution for storing these blobs in the cloud. It offers flexible storage—you only pay based on your usage. Depending on the access speed you need for your data, you can choose from various storage tiers (hot, cool, and archive). Being cloud-based, it is scalable, secure, and easy to manage.
@@ -694,8 +696,6 @@ Azure Blob Storage is Microsoft's object storage solution for the cloud. “Blob
 - `@official` [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs)
 - `@official` [Introduction to Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction)
 - `@video` [A Beginners Guide to Azure Blob Storage](https://www.youtube.com/watch?v=ah1XqItWkuc&t=300s)
-
-## ETL Process
 
 #### Azure SQL Database
 
@@ -705,14 +705,6 @@ Azure SQL Database is a fully managed Platform as a Service (PaaS) offering. It 
 - `@official` [What is Azure SQL Database?](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview?view=azuresql)
 - `@video` [Azure SQL for Beginners](https://www.youtube.com/playlist?list=PLlrxD0HtieHi5c9-i_Dnxw9vxBY-TqaeN)
 
-### Cluster Computing Basics
-
-Cluster computing refers to using a group of connected machines that work together as a single system to process data. It enables workloads that are too large or slow for a single machine by distributing computation across multiple nodes. Concepts like job scheduling, distributed file systems, and resource management are central to working with clusters.
-
-#### Extract Data
-
-The first step in ETL processes involves extract data from data sources to a staging area. Data can come in various types and formats, from SQL or NoSQL databases and plan text to image and video files.
-
 #### Data Factory (ETL)
 
 Data Factory, most commonly referring to Microsoft's Azure Data Factory, is a cloud-based data integration service that allows you to create, schedule, and orchestrate workflows to move and transform data from various sources into a centralized location for analysis. It provides tools for building Extract, Transform, and Load (ETL) pipelines, enabling businesses to prepare data for analytics, business intelligence, and other data-driven initiatives without extensive coding, thanks to its visual, code-free interface and native connectors.
@@ -720,24 +712,6 @@ Data Factory, most commonly referring to Microsoft's Azure Data Factory, is a cl
 - `@course` [Microsoft Azure - Data Factory](https://www.coursera.org/learn/microsoft-azure---data-factory)
 - `@official` [What is Azure Data Factory?](https://learn.microsoft.com/en-us/azure/data-factory/introduction)
 - `@official` [Azure Data Factory Documentation](https://learn.microsoft.com/en-gb/azure/data-factory/)
-
-#### Transform Data
-
-In the second step, ETL tools transform and consolidate the raw data in the staging area to prepare it for the target data warehouse. The data transformation phase is normally the most complex and prone to errors, as it can involved multiple transformations, including basic data cleaning operations, deduplication, cata casting, filtering, grouping, encrypting, and many more.
-
-## Azure
-
-#### What is Cluster Computing
-
-Cluster computing is a model where multiple computers are networked together to act as a unified processing system. Tasks are split across nodes in the cluster and executed in parallel. This approach is used in big data processing, scientific computing, and any workload that exceeds single-machine capacity.
-
-- `@article` [What is cluster computing? - IBM](https://www.ibm.com/think/topics/cluster-computing)
-- `@article` [Computer cluster - Wikipedia](http://en.wikipedia.org/wiki/Computer_cluster)
-- `@video` [WUnderstand the Basic Cluster Concepts](https://www.youtube.com/watch?v=8BBDxzJL6fY)
-
-#### Load Data
-
-In the third step, the transformed data is moved from the staging area into the targe data storage solution, such as a data warehouse or data lake. For most organizations, the data loading process is automated, well-defined, continuous and batch-driven.
 
 #### Compute Engine (Compute)
 
@@ -747,14 +721,6 @@ Google Cloud Compute Engine provides virtual machine instances on Google's infra
 - `@official` [Compute Engine overview](https://cloud.google.com/compute/docs/overview)
 - `@video` [WCompute Engine in a minute](https://www.youtube.com/watch?v=IuK4gQeHRcI)
 
-#### Distributed File Systems
-
-A Distributed File System (DFS) allows multiple computers to access and share files across a network as if they were stored on a single local machine. It distributes data across multiple servers, enhancing accessibility and data redundancy. This enables users to access files from various locations and devices, promoting collaboration and data availability.
-
-- `@article` [What is a Distributed File System (DFS)? A Complete Guide](http://starwindsoftware.com/blog/what-is-a-distributed-file-system-dfs-a-complete-guide/)
-
-## Data Pipeline Tools
-
 #### Google Cloud Storage
 
 Google Cloud Storage (GCS) is a scalable, secure, and durable object storage service within Google Cloud Platform (GCP) designed for storing and retrieving unstructured data of any type or size. It allows users to store data in "buckets" and access it through APIs, web interfaces, or command-line tools for applications, backups, media hosting, and big data analytics. GCS offers different storage classes to optimize costs based on data access frequency, strong security with encryption, and high availability through redundant data storage across multiple locations.
@@ -763,20 +729,6 @@ Google Cloud Storage (GCS) is a scalable, secure, and durable object storage ser
 - `@article` [Google Cloud Storage](https://en.wikipedia.org/wiki/Google_Cloud_Storage)
 - `@article` [Cloud Storage in a minute](https://www.youtube.com/watch?v=wNOs3LlsH6k)
 
-#### HDFS
-
-HDFS (Hadoop Distributed File System) is Hadoop’s primary storage system. It is designed to reliably store data across a cluster of machines. Its architecture is set up for this type of access to large datasets and is optimized for fault tolerance, scalability, and data locality.
-
-- `@official` [HDFS Architecture Guide](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html)
-- `@article` [Hadoop Distributed File System (HDFS)](https://www.databricks.com/glossary/hadoop-distributed-file-system-hdfs)
-- `@article` [What is Hadoop Distributed File System (HDFS)?](https://www.ibm.com/think/topics/hdfs)
-
-#### Apache Airflow
-
-Apache Airflow is an open-source tool that helps you schedule, organize, and monitor workflows. Think of it like a to-do list for your data tasks, but smarter — you can set tasks to run in a specific order, track their progress, and see what happens if something fails. It’s often used for automating data pipelines so that data moves, gets processed, and is ready for use without manual work.
-
-- `@official` [Apache Airflow](https://airflow.apache.org/)
-
 #### Cloud SQL (Database)
 
 Google Cloud SQL is a fully-managed, cost-effective and scalable database service that makes it easy to set-up, maintain, manage and administer MySQL, PostgreSQL, and SQL Server databases in the cloud. Hosted on Google Cloud Platform, Cloud SQL provides a database infrastructure for applications running anywhere.
@@ -784,6 +736,34 @@ Google Cloud SQL is a fully-managed, cost-effective and scalable database servic
 - `@course` [Cloud SQL](https://www.cloudskillsboost.google/course_templates/701)
 - `@official` [Cloud SQL](https://cloud.google.com/sql)
 - `@official` [Cloud SQL overview](https://cloud.google.com/sql/docs/introduction)
+
+#### Dataflow
+
+Dataflow is a Google Cloud service that provides unified stream and batch data processing at scale. Typical use cases for Dataflow include Data movement,ETL processes, BI dashboarding, and applying ML in real time to streaming data.
+
+- `@official` [Dataflow](https://cloud.google.com/products/dataflow)
+- `@article` [Dataflow](https://en.wikipedia.org/wiki/Google_Cloud_Dataflow)
+- `@video` [What is Google Dataflow](https://www.youtube.com/watch?v=KalJ0VuEM7s)
+
+## ETL Process
+
+#### Extract Data
+
+The first step in ETL processes involves extract data from data sources to a staging area. Data can come in various types and formats, from SQL or NoSQL databases and plan text to image and video files.
+
+#### Transform Data
+
+In the second step, ETL tools transform and consolidate the raw data in the staging area to prepare it for the target data warehouse. The data transformation phase is normally the most complex and prone to errors, as it can involved multiple transformations, including basic data cleaning operations, deduplication, cata casting, filtering, grouping, encrypting, and many more.
+
+#### Load Data
+
+In the third step, the transformed data is moved from the staging area into the targe data storage solution, such as a data warehouse or data lake. For most organizations, the data loading process is automated, well-defined, continuous and batch-driven.
+
+#### Apache Airflow
+
+Apache Airflow is an open-source tool that helps you schedule, organize, and monitor workflows. Think of it like a to-do list for your data tasks, but smarter — you can set tasks to run in a specific order, track their progress, and see what happens if something fails. It’s often used for automating data pipelines so that data moves, gets processed, and is ready for use without manual work.
+
+- `@official` [Apache Airflow](https://airflow.apache.org/)
 
 #### dbt
 
@@ -799,21 +779,6 @@ Luigi is a powerful, easy-to-use open-source framework for building data pipelin
 - `@official` [Luigi Docs](https://luigi.readthedocs.io/)
 - `@article` [Getting Started with Luigi—What, Why & How](https://medium.com/big-data-processing/getting-started-with-luigi-what-why-how-f8e639a1f2a5)
 
-#### Job Scheduling
-
-A scheduling system manages and distributes computational jobs across multiple interconnected computers (a cluster) to optimize resource utilization and job completion. The goal is to efficiently allocate cluster resources (like processors and memory) to incoming jobs based on factors such as user priority, job requirements, and deadlines.
-
-- `@article` [Job scheduler](https://en.wikipedia.org/wiki/Job_scheduler)
-- `@article` [Cluster Resources — Job Scheduling](https://supun-kamburugamuve.medium.com/cluster-resources-job-scheduling-bb63644476bc)
-
-#### Dataflow
-
-Dataflow is a Google Cloud service that provides unified stream and batch data processing at scale. Typical use cases for Dataflow include Data movement,ETL processes, BI dashboarding, and applying ML in real time to streaming data.
-
-- `@official` [Dataflow](https://cloud.google.com/products/dataflow)
-- `@article` [Dataflow](https://en.wikipedia.org/wiki/Google_Cloud_Dataflow)
-- `@video` [What is Google Dataflow](https://www.youtube.com/watch?v=KalJ0VuEM7s)
-
 #### Prefect
 
 Prefect is an open-source orchestration engine that turns your Python functions into production-grade data pipelines with minimal friction. You can build and schedule workflows in pure Python—no DSLs or complex config files—and run them anywhere you can run Python. Prefect handles the heavy lifting for you out of the box: automatic state tracking, failure handling, real-time monitoring, and more.
@@ -821,13 +786,42 @@ Prefect is an open-source orchestration engine that turns your Python functions 
 - `@official` [Prefect Docs](https://docs.prefect.io/v3/get-started)
 - `@video` [Getting Started with Prefect](https://www.youtube.com/watch?v=D5DhwVNHWeU)
 
+## Azure
+
+#### What is Cluster Computing
+
+Cluster computing is a model where multiple computers are networked together to act as a unified processing system. Tasks are split across nodes in the cluster and executed in parallel. This approach is used in big data processing, scientific computing, and any workload that exceeds single-machine capacity.
+
+- `@article` [What is cluster computing? - IBM](https://www.ibm.com/think/topics/cluster-computing)
+- `@article` [Computer cluster - Wikipedia](http://en.wikipedia.org/wiki/Computer_cluster)
+- `@video` [WUnderstand the Basic Cluster Concepts](https://www.youtube.com/watch?v=8BBDxzJL6fY)
+
+#### Distributed File Systems
+
+A Distributed File System (DFS) allows multiple computers to access and share files across a network as if they were stored on a single local machine. It distributes data across multiple servers, enhancing accessibility and data redundancy. This enables users to access files from various locations and devices, promoting collaboration and data availability.
+
+- `@article` [What is a Distributed File System (DFS)? A Complete Guide](http://starwindsoftware.com/blog/what-is-a-distributed-file-system-dfs-a-complete-guide/)
+
+#### HDFS
+
+HDFS (Hadoop Distributed File System) is Hadoop’s primary storage system. It is designed to reliably store data across a cluster of machines. Its architecture is set up for this type of access to large datasets and is optimized for fault tolerance, scalability, and data locality.
+
+- `@official` [HDFS Architecture Guide](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html)
+- `@article` [Hadoop Distributed File System (HDFS)](https://www.databricks.com/glossary/hadoop-distributed-file-system-hdfs)
+- `@article` [What is Hadoop Distributed File System (HDFS)?](https://www.ibm.com/think/topics/hdfs)
+
+## Data Pipeline Tools
+
+#### Job Scheduling
+
+A scheduling system manages and distributes computational jobs across multiple interconnected computers (a cluster) to optimize resource utilization and job completion. The goal is to efficiently allocate cluster resources (like processors and memory) to incoming jobs based on factors such as user priority, job requirements, and deadlines.
+
+- `@article` [Job scheduler](https://en.wikipedia.org/wiki/Job_scheduler)
+- `@article` [Cluster Resources — Job Scheduling](https://supun-kamburugamuve.medium.com/cluster-resources-job-scheduling-bb63644476bc)
+
 #### Cluster Management Tools
 
 Cluster management software maximizes the work that a cluster of computers can perform. A cluster manager balances workload to reduce bottlenecks, monitors the health of the elements of the cluster, and manages failover when an element fails. A cluster manager can also help a system administrator to perform administration tasks on elements in the cluster.
-
-## Google Cloud
-
-## Cloud Providers
 
 #### Kubernetes
 
@@ -844,6 +838,8 @@ Apache Hadoop YARN (Yet Another Resource Negotiator) is the part of Hadoop that 
 
 - `@video` [Hadoop Yarn Tutorial](https://www.youtube.com/watch?v=6bIF9VwRwE0)
 
+## Cloud Providers
+
 #### Apache Spark
 
 Apache Spark is a distributed data processing engine for large-scale batch and streaming workloads. It processes data in memory across a cluster, making it significantly faster than MapReduce for many workloads. Spark supports Python, Scala, Java, and R, and provides APIs for SQL, streaming, machine learning, and graph processing.
@@ -857,8 +853,6 @@ Big data tools are designed to process and analyze datasets too large to handle 
 
 - `@article` [What is Big Data?](https://cloud.google.com/learn/what-is-big-data?hl=en)
 - `@video` [Introduction to Big Data with Spark and Hadoop](http://youtube.com/watch?v=vHlwg4ciCsI&t=80s&ab_channel=freeCodeAcademy)
-
-## Hadoop Ecosystem
 
 #### Docker
 
@@ -878,20 +872,6 @@ Kubernetes is an open-source system for automating the deployment, scaling, and 
 - `@article` [Kubernetes: An Overview](https://thenewstack.io/kubernetes-an-overview/)
 - `@video` [Kubernetes Crash Course for Absolute Beginners](https://www.youtube.com/watch?v=s_o8dwzRlu4)
 
-#### HDFS
-
-HDFS (Hadoop Distributed File System) is Hadoop’s primary storage system. It is designed to reliably store data across a cluster of machines. Its architecture is set up for this type of access to large datasets and is optimized for fault tolerance, scalability, and data locality.
-
-- `@official` [HDFS Architecture Guide](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html)
-- `@article` [Hadoop Distributed File System (HDFS)](https://www.databricks.com/glossary/hadoop-distributed-file-system-hdfs)
-- `@article` [What is Hadoop Distributed File System (HDFS)?](https://www.ibm.com/think/topics/hdfs)
-
-#### YARN
-
-Apache Hadoop YARN (Yet Another Resource Negotiator) is the part of Hadoop that manages resources and runs jobs on a cluster. It has a ResourceManager that controls all cluster resources and an ApplicationMaster for each job that schedules and runs tasks. YARN lets different tools like MapReduce and Spark share the same cluster, making it more efficient, flexible, and reliable.
-
-- `@video` [Hadoop Yarn Tutorial](https://www.youtube.com/watch?v=6bIF9VwRwE0)
-
 ### Containers & Orchestration
 
 Containers package an application and its dependencies into a portable, isolated unit that runs consistently across environments. Container orchestration automates the deployment, scaling, and management of these containers across a cluster. Together, containers and orchestration form the foundation for running modern data workloads in cloud and hybrid environments.
@@ -907,13 +887,6 @@ Google Kubernetes Engine (GKE) is Google Cloud's managed Kubernetes service. It 
 
 - `@official` [GKE](https://cloud.google.com/kubernetes-engine)
 - `@video` [What is Google Kubernetes Engine (GKE)?](https://www.youtube.com/watch?v=Rl5M1CzgEH4)
-
-#### MapReduce
-
-MapReduce is a prominent data processing technique used by Data Analysts around the world. It allows them to handle large data sets with complex, unstructured data efficiently. MapReduce breaks down a big data problem into smaller sub-tasks (Map) and then takes those results to create an output in a more usable format (Reduce). This technique is particularly useful in conducting exploratory analysis, as well as in handling big data operations such as text processing, graph processing, or more complicated machine learning algorithms.
-
-- `@article` [MapReduce](https://www.databricks.com/glossary/mapreduce)
-- `@article` [What is Apache MapReduce?](https://www.ibm.com/topics/mapreduce)
 
 #### AWS EKS
 
@@ -1073,25 +1046,6 @@ Smoke Testing is a software testing process that determines whether the deployed
 
 - `@article` [Smoke Testing | Software Testing](https://www.guru99.com/smoke-testing.html)
 
-## Common Tools
-
-#### Apache Kafka
-
-Apache Kafka is an open-source stream-processing software platform developed by LinkedIn and donated to the Apache Software Foundation. It is written in Scala and Java and operates based on a message queue, designed to handle real-time data feeds. Kafka functions as a kind of message broker service in between the data producers and the consumers, facilitating efficient transmission of data. It can be viewed as a durable message broker where applications can process and reprocess streamed data. Kafka is a highly scalable and fault-tolerant system which ensures data delivery without loss.
-
-- `@official` [Apache Kafka Docs](https://kafka.apache.org/43/getting-started/introduction/)
-- `@article` [Kafka Streams Confluent](https://kafka.apache.org/documentation/streams/)
-- `@video` [Apache Kafka Fundamentals](https://www.youtube.com/watch?v=B5j3uNBH8X4)
-- `@video` [Kafka in 100 Seconds](https://www.youtube.com/watch?v=uvb00oaa3k8)
-
-#### RabbitMQ
-
-RabbitMQ is an open-source message broker that implements the AMQP protocol. It routes messages between producers and consumers using exchanges and queues, supporting patterns like publish/subscribe, work queues, and routing. RabbitMQ is used for task queues, service-to-service communication, and event notification systems.
-
-- `@official` [RabbitMQ Tutorials](https://www.rabbitmq.com/getstarted.html)
-- `@video` [RabbitMQ Tutorial - Message Queues and Distributed Systems](https://www.youtube.com/watch?v=nFxjaVmFj5E)
-- `@video` [RabbitMQ in 100 Seconds](https://m.youtube.com/watch?v=NQ3fZtyXji0)
-
 ### Infrastructure as Code - IaC
 
 Infrastructure as Code (IaC) is the practice of managing and provisioning infrastructure through machine-readable configuration files rather than manual processes. Tools like Terraform, AWS CloudFormation, and Pulumi allow teams to define infrastructure declaratively and version it in Git. IaC makes infrastructure reproducible, auditable, and easier to manage at scale.
@@ -1111,27 +1065,12 @@ In **declarative IaC**, you specify the name and properties of the infrastructur
 - `@article` [Infrastructure as Code: From Imperative to Declarative and Back Again](https://thenewstack.io/infrastructure-as-code-from-imperative-to-declarative-and-back-again/)
 - `@article` [Declarative vs Imperative Programming for Infrastructure as Code (IaC)](https://www.copado.com/resources/blog/declarative-vs-imperative-programming-for-infrastructure-as-code-iac)
 
-#### AWS SQS
-
-Amazon Simple Queue Service (Amazon SQS) offers a secure, durable, and available hosted queue that lets you integrate and decouple distributed software systems and components. Amazon SQS offers common constructs such as dead-letter queues and cost allocation tags. It provides a generic web services API that you can access using any programming language that the AWS SDK supports.
-
-- `@official` [Amazon Simple Queue Service](https://aws.amazon.com/sqs/)
-- `@official` [What is Amazon Simple Queue Service?](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)
-
 #### Idempotency
 
 Idempotency is a crucial concept in IaC. An idempotent operation produces the same result regardless of how many times it’s executed. In the context of IaC, this means that applying the same configuration multiple times should not change the end state of the system. The role of idempotency in IaC scripts is to ensure consistency and prevent unintended side effects. For example, if a script to create a virtual machine (VM) is run twice, it should not create two VMs. Instead, it should recognize that the VM already exists and take no action.
 
 - `@article` [Why idempotence was important to DevOps](https://dev.to/startpher/why-idempotence-was-important-to-devops-2jn3)
 - `@article` [Idempotency: The Secret to Seamless DevOps and Infrastructure](https://medium.com/@tiwari.sushil/idempotency-the-secret-to-seamless-devops-and-infrastructure-bf22e63e1be5)
-
-#### AWS SNS
-
-Amazon SNS (Simple Notification Service) is a fully managed pub/sub messaging service from AWS. It allows a single message to be sent to multiple subscribers simultaneously through topics. SNS is commonly used alongside SQS to fan out messages to multiple queues or trigger downstream processing in Lambda functions and data pipelines.
-
-- `@official` [Amazon Simple Notification Service (SNS)](http://aws.amazon.com/sns/)
-- `@official` [Send Fanout Event Notifications](https://aws.amazon.com/getting-started/hands-on/send-fanout-event-notifications/)
-- `@article` [What is Pub/Sub Messaging?](https://aws.amazon.com/what-is/pub-sub-messaging/)
 
 #### Reusability
 
@@ -1145,19 +1084,6 @@ Environmental management, or Environment as Code (EaC) takes the concept of Infr
 
 - `@article` [EWhat Is Environment as Code (EaaC)?](https://www.bunnyshell.com/blog/what-is-environment-as-code-eaac/)
 
-## Common Tools
-
-#### Terraform
-
-Terraform is an open-source infrastructure as code (IaC) tool developed by HashiCorp, used to define, provision, and manage cloud and on-premises infrastructure using declarative configuration files. It supports multiple cloud providers like AWS, Azure, and Google Cloud, as well as various services and platforms, enabling infrastructure automation across diverse environments. Terraform's state management and modular structure allow for efficient scaling, reusability, and version control of infrastructure. It is widely used for automating infrastructure provisioning, reducing manual errors, and improving infrastructure consistency and repeatability.
-
-- `@roadmap` [Visit Dedicated Terraform Roadmap](https://roadmap.sh/terraform)
-- `@course` [Complete Terraform Course](https://www.youtube.com/watch?v=7xngnjfIlK4)
-- `@official` [Terraform Documentation](https://www.terraform.io/docs)
-- `@official` [Terraform Tutorials](https://learn.hashicorp.com/terraform)
-- `@article` [How to Scale Your Terraform Infrastructure](https://thenewstack.io/how-to-scale-your-terraform-infrastructure/)
-- `@feed` [Explore top posts about Terraform](https://app.daily.dev/tags/terraform?ref=roadmapsh)
-
 ### Data Analytics
 
 Data analytics is the process of examining datasets to draw conclusions and support decision-making. It covers a spectrum from descriptive analytics (what happened) to diagnostic (why it happened), predictive (what might happen), and prescriptive (what to do). Data engineers build the infrastructure that makes analytics possible by ensuring clean, accessible, and timely data.
@@ -1166,13 +1092,6 @@ Data analytics is the process of examining datasets to draw conclusions and supp
 - `@article` [The 4 Types of Data Analysis: Ultimate Guide](https://careerfoundry.com/en/blog/data-analytics/different-types-of-data-analysis/)
 - `@video` [Descriptive vs Diagnostic vs Predictive vs Prescriptive Analytics: What's the Difference?](https://www.youtube.com/watch?v=QoEpC7jUb9k)
 - `@video` [Types of Data Analytics](https://www.youtube.com/watch?v=lsZnSgxMwBA)
-
-#### OpenTofu
-
-OpenTofu is an infrastructure as code tool that lets you define both cloud and on-prem resources in human-readable configuration files that you can version, reuse, and share. You can then use a consistent workflow to provision and manage all of your infrastructure throughout its lifecycle. OpenTofu can manage low-level components like compute, storage, and networking resources, as well as high-level components like DNS entries and SaaS features.
-
-- `@official` [OpenTofu Docs](https://opentofu.org/docs/)
-- `@video` [OpenWhat is OpenTofu ?Explained with Demo](https://www.youtube.com/watch?v=6eHV63BVqmA)
 
 ### Business Intelligence
 
@@ -1183,40 +1102,12 @@ Business intelligence (BI) refers to the tools and processes used to collect, an
 - `@article` [Business intelligence: A complete overview](https://www.tableau.com/business-intelligence/what-is-business-intelligence)
 - `@video` [What is business intelligence?](https://www.youtube.com/watch?v=l98-BcB3UIE)
 
-#### AWS CDK
-
-The AWS Cloud Development Kit (AWS CDK) is an open-source software development framework used to provision cloud infrastructure resources in a safe, repeatable manner through AWS CloudFormation. AWS CDK offers the flexibility to write infrastructure as code in popular languages like Python, Java, Go, and C#.
-
-- `@course` [AWS CDK Crash Course for Beginners](https://www.youtube.com/watch?v=D4Asp5g4fp8)
-- `@official` [AWS CDK](https://aws.amazon.com/cdk/)
-- `@official` [AWS CDK Documentation](https://docs.aws.amazon.com/cdk/index.html)
-- `@opensource` [AWS CDK Examples](https://github.com/aws-samples/aws-cdk-examples)
-- `@feed` [Explore top posts about AWS](https://app.daily.dev/tags/aws?ref=roadmapsh)
-
-## BI Tools
-
 ### Authentication vs Authorization
 
 Authentication and authorization are popular terms in modern computer systems that often confuse people. **Authentication** is the process of confirming the identity of a user or a device (i.e., an entity). During the authentication process, an entity usually relies on some proof to authenticate itself, i.e. an authentication factor. In contrast to authentication, **authorization** refers to the process of verifying what resources entities (users or devices) can access, or what actions they can perform, i.e., their access rights.
 
 - `@article` [Basic Authentication](https://roadmap.sh/guides/basic-authentication)
 - `@article` [What is Authentication vs Authorization?](https://auth0.com/intro-to-iam/authentication-vs-authorization)
-
-#### Google Deployment  Mgr.
-
-Google Cloud Deployment Manager is an infrastructure deployment service that automates the creation and management of Google Cloud resources. It provides users with flexible template and configuration files to create deployments that have a variety of Google Cloud services, such as Cloud Storage, Compute Engine, and Cloud SQL, configured to work together.
-
-Important, Google Deployment Manager will reach end of support on 31 December 2025. An alternative to this tool is **Google Infrastructure Manager**. Infrastructure Manager (Infra Manager) automates the deployment and management of Google Cloud infrastructure resources using Terraform. Infra Manager allows users to deploy programmatically to Google Cloud, allowing to use this service rather than maintaining a different toolchain to work with Terraform on Google Cloud.
-
-- `@official` [Infrastructure Manager Overview](https://cloud.google.com/infrastructure-manager/docs/overview)
-- `@official` [Google Cloud Deployment Manager documentation](https://cloud.google.com/deployment-manager/docs)
-
-#### Microsoft Power BI
-
-Microsoft Power BI is a business intelligence and data visualization platform from Microsoft. It connects to a wide range of data sources and allows users to build interactive dashboards and reports. Power BI integrates tightly with the Microsoft ecosystem including Azure and Excel.
-
-- `@official` [Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi)
-- `@video` [Power BI for beginners](https://www.youtube.com/watch?v=NNSHu0rkew8)
 
 ### Encryption
 
@@ -1225,25 +1116,11 @@ Encryption is used to protect data from being stolen, changed, or compromised an
 - `@article` [What is Encryption?](https://cloud.google.com/learn/what-is-encryption)
 - `@video` [What is Encryption?](https://www.youtube.com/watch?v=9chKCUQ8_VQ)
 
-#### Streamlit
-
-Streamlit is a free and open-source framework to rapidly build and share machine learning and data science web apps. It is a Python-based library specifically designed for data and machine learning engineers. Data scientists or machine learning engineers are not web developers and they're not interested in spending weeks learning to use these frameworks to build web apps. Instead, they want a tool that is easier to learn and to use, as long as it can display data and collect needed parameters for modeling.
-
-- `@official` [Streamlit Docs](https://docs.streamlit.io/)
-- `@video` [EStreamlit Explained: Python Tutorial for Data Scientists](https://www.youtube.com/watch?v=c8QXUrvSSyg)
-
 ### Tokenization
 
 Tokenization replaces sensitive data values with non-sensitive placeholders called tokens. The original value is stored securely in a token vault, and the token can be used in systems that do not need the actual data. Tokenization is used to protect payment card numbers, personal identifiers, and other sensitive field
 
 - `@article` [Explaining Tokens — the Language and Currency of AI](https://blogs.nvidia.com/blog/ai-tokens-explained/)
-
-#### Tableu
-
-Tableau is a powerful data visualization tool utilized extensively by data analysts worldwide. Its primary role is to transform raw, unprocessed data into an understandable format without any technical skills or coding. Data analysts use Tableau to create data visualizations, reports, and dashboards that help businesses make more informed, data-driven decisions. They also use it to perform tasks like trend analysis, pattern identification, and forecasts, all within a user-friendly interface. Moreover, Tableau's data visualization capabilities make it easier for stakeholders to understand complex data and act on insights quickly.
-
-- `@official` [Tableau](https://www.tableau.com/en-gb)
-- `@video` [What is Tableau?](https://www.youtube.com/watch?v=NLCzpPRCc7U)
 
 ### Data Masking
 
@@ -1251,13 +1128,6 @@ Data masking is a process that creates a copy of real data but replaces sensitiv
 
 - `@article` [Data masking](https://en.wikipedia.org/wiki/Data_masking)
 - `@article` [What is data masking?](https://aws.amazon.com/what-is/data-masking/)
-
-#### Looker
-
-Looker is a Google cloud-based business intelligence and data analytics platform. It allows users to explore, analyze, and visualize data to gain insights and make data-driven decisions. Looker is known for its ability to connect to various data sources, create custom dashboards, and generate reports. It also facilitates the integration of analytics, visualizations, and relevant information into business processes.
-
-- `@official` [Looker business intelligence platform embedded analytics](https://cloud.google.com/looker)
-- `@video` [What is Looker?](https://www.youtube.com/watch?v=EmkNPAzla0Y&pp=0gcJCfwAo7VqN5tD)
 
 ### Data Obfuscation
 
@@ -1308,35 +1178,12 @@ Data quality refers to the degree to which a dataset is accurate, complete, cons
 
 Common use cases for reverse ETL include syncing customer health scores to a CRM, pushing segmented user lists to a marketing automation platform, and sending product usage data to customer success tools. It enables business teams to act on insights derived in the data warehouse without needing access to it directly.
 
-## Tools
-
-#### Hightouch
-
-Hightouch is a reverse ETL and AI platform crafted for marketing and personalization, allowing companies to uncover insights, execute campaigns, and develop AI agents using their data. It features an AI Decisioning Platform for lifecycle marketing and a Composable Customer Data Platform (CDP) that is adaptable, secure, and quick to deploy, built on top of a data warehouse.
-
-- `@official` [Hightouch Docs](https://hightouch.com/docs)
-- `@video` [What is Hightouch? - The Data Activation Platform](https://www.youtube.com/watch?v=vMm87-MC7og)
-
-#### Census
-
-Census is a reverse ETL platform that synchronizes data from a data warehouse to various business applications and SaaS apps like Salesforce and Hubspot. It's a crucial part of the modern data stack, enabling businesses to operationalize their data by making it available in the tools where teams work, like CRMs, marketing platforms, and more.
-
-- `@official` [Census Documentation](https://developers.getcensus.com/getting-started/introduction)
-- `@article` [A starter guide to reverse ETL with Census](https://www.getcensus.com/blog/starter-guide-for-first-time-census-users)
-- `@video` [How to "Reverse ETL" with Census](https://www.youtube.com/watch?v=XkS7DQFHzbA)
-
 #### GDPR
 
 GDPR (General Data Protection Regulation) is a data privacy law enacted by the European Union that governs how personal data of EU residents is collected, stored, processed, and shared. It grants individuals rights over their data, including the right to access, correct, and delete it. Data engineers must design systems that support these rights and comply with GDPR requirements such as data minimization and purpose limitation.
 
 - `@official` [GDPR](https://gdpr-info.eu/)
 - `@article` [What is GDPR Compliance in Web Application and API Security?](https://probely.com/blog/what-is-gdpr-compliance-in-web-application-and-api-security/)
-
-#### Segment
-
-Segment is an analytics platform that provides a single API for collecting, storing, and routing customer data from various sources. With Segment, data engineers can easily add analytics tracking to their app, without having to integrate with multiple analytics tools individually. Segment acts as a single point of integration, allowing developers to send data to multiple analytics tools with a single API.
-
-- `@official` [flutter_segment](https://pub.dev/packages/flutter_segment)
 
 #### ECPA
 
@@ -1356,6 +1203,155 @@ Considered the world's first comprehensive regulatory framework for AI, the EU A
 - `@article` [AI Act - European Commission](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
 - `@article` [Artificial Intelligence Act](https://en.wikipedia.org/wiki/Artificial_Intelligence_Act)
 - `@video` [The EU AI Act Explained](https://www.youtube.com/watch?v=s_rxOnCt3HQ)
+
+## Hadoop Ecosystem
+
+#### HDFS
+
+HDFS (Hadoop Distributed File System) is Hadoop’s primary storage system. It is designed to reliably store data across a cluster of machines. Its architecture is set up for this type of access to large datasets and is optimized for fault tolerance, scalability, and data locality.
+
+- `@official` [HDFS Architecture Guide](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html)
+- `@article` [Hadoop Distributed File System (HDFS)](https://www.databricks.com/glossary/hadoop-distributed-file-system-hdfs)
+- `@article` [What is Hadoop Distributed File System (HDFS)?](https://www.ibm.com/think/topics/hdfs)
+
+#### YARN
+
+Apache Hadoop YARN (Yet Another Resource Negotiator) is the part of Hadoop that manages resources and runs jobs on a cluster. It has a ResourceManager that controls all cluster resources and an ApplicationMaster for each job that schedules and runs tasks. YARN lets different tools like MapReduce and Spark share the same cluster, making it more efficient, flexible, and reliable.
+
+- `@video` [Hadoop Yarn Tutorial](https://www.youtube.com/watch?v=6bIF9VwRwE0)
+
+#### MapReduce
+
+MapReduce is a prominent data processing technique used by Data Analysts around the world. It allows them to handle large data sets with complex, unstructured data efficiently. MapReduce breaks down a big data problem into smaller sub-tasks (Map) and then takes those results to create an output in a more usable format (Reduce). This technique is particularly useful in conducting exploratory analysis, as well as in handling big data operations such as text processing, graph processing, or more complicated machine learning algorithms.
+
+- `@article` [MapReduce](https://www.databricks.com/glossary/mapreduce)
+- `@article` [What is Apache MapReduce?](https://www.ibm.com/topics/mapreduce)
+
+## Common Tools
+
+#### Apache Kafka
+
+Apache Kafka is an open-source stream-processing software platform developed by LinkedIn and donated to the Apache Software Foundation. It is written in Scala and Java and operates based on a message queue, designed to handle real-time data feeds. Kafka functions as a kind of message broker service in between the data producers and the consumers, facilitating efficient transmission of data. It can be viewed as a durable message broker where applications can process and reprocess streamed data. Kafka is a highly scalable and fault-tolerant system which ensures data delivery without loss.
+
+- `@official` [Apache Kafka Docs](https://kafka.apache.org/43/getting-started/introduction/)
+- `@article` [Kafka Streams Confluent](https://kafka.apache.org/documentation/streams/)
+- `@video` [Apache Kafka Fundamentals](https://www.youtube.com/watch?v=B5j3uNBH8X4)
+- `@video` [Kafka in 100 Seconds](https://www.youtube.com/watch?v=uvb00oaa3k8)
+
+#### RabbitMQ
+
+RabbitMQ is an open-source message broker that implements the AMQP protocol. It routes messages between producers and consumers using exchanges and queues, supporting patterns like publish/subscribe, work queues, and routing. RabbitMQ is used for task queues, service-to-service communication, and event notification systems.
+
+- `@official` [RabbitMQ Tutorials](https://www.rabbitmq.com/getstarted.html)
+- `@video` [RabbitMQ Tutorial - Message Queues and Distributed Systems](https://www.youtube.com/watch?v=nFxjaVmFj5E)
+- `@video` [RabbitMQ in 100 Seconds](https://m.youtube.com/watch?v=NQ3fZtyXji0)
+
+#### AWS SQS
+
+Amazon Simple Queue Service (Amazon SQS) offers a secure, durable, and available hosted queue that lets you integrate and decouple distributed software systems and components. Amazon SQS offers common constructs such as dead-letter queues and cost allocation tags. It provides a generic web services API that you can access using any programming language that the AWS SDK supports.
+
+- `@official` [Amazon Simple Queue Service](https://aws.amazon.com/sqs/)
+- `@official` [What is Amazon Simple Queue Service?](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)
+
+#### AWS SNS
+
+Amazon SNS (Simple Notification Service) is a fully managed pub/sub messaging service from AWS. It allows a single message to be sent to multiple subscribers simultaneously through topics. SNS is commonly used alongside SQS to fan out messages to multiple queues or trigger downstream processing in Lambda functions and data pipelines.
+
+- `@official` [Amazon Simple Notification Service (SNS)](http://aws.amazon.com/sns/)
+- `@official` [Send Fanout Event Notifications](https://aws.amazon.com/getting-started/hands-on/send-fanout-event-notifications/)
+- `@article` [What is Pub/Sub Messaging?](https://aws.amazon.com/what-is/pub-sub-messaging/)
+
+## Common Tools
+
+#### Terraform
+
+Terraform is an open-source infrastructure as code (IaC) tool developed by HashiCorp, used to define, provision, and manage cloud and on-premises infrastructure using declarative configuration files. It supports multiple cloud providers like AWS, Azure, and Google Cloud, as well as various services and platforms, enabling infrastructure automation across diverse environments. Terraform's state management and modular structure allow for efficient scaling, reusability, and version control of infrastructure. It is widely used for automating infrastructure provisioning, reducing manual errors, and improving infrastructure consistency and repeatability.
+
+- `@roadmap` [Visit Dedicated Terraform Roadmap](https://roadmap.sh/terraform)
+- `@course` [Complete Terraform Course](https://www.youtube.com/watch?v=7xngnjfIlK4)
+- `@official` [Terraform Documentation](https://www.terraform.io/docs)
+- `@official` [Terraform Tutorials](https://learn.hashicorp.com/terraform)
+- `@article` [How to Scale Your Terraform Infrastructure](https://thenewstack.io/how-to-scale-your-terraform-infrastructure/)
+- `@feed` [Explore top posts about Terraform](https://app.daily.dev/tags/terraform?ref=roadmapsh)
+
+#### OpenTofu
+
+OpenTofu is an infrastructure as code tool that lets you define both cloud and on-prem resources in human-readable configuration files that you can version, reuse, and share. You can then use a consistent workflow to provision and manage all of your infrastructure throughout its lifecycle. OpenTofu can manage low-level components like compute, storage, and networking resources, as well as high-level components like DNS entries and SaaS features.
+
+- `@official` [OpenTofu Docs](https://opentofu.org/docs/)
+- `@video` [OpenWhat is OpenTofu ?Explained with Demo](https://www.youtube.com/watch?v=6eHV63BVqmA)
+
+#### AWS CDK
+
+The AWS Cloud Development Kit (AWS CDK) is an open-source software development framework used to provision cloud infrastructure resources in a safe, repeatable manner through AWS CloudFormation. AWS CDK offers the flexibility to write infrastructure as code in popular languages like Python, Java, Go, and C#.
+
+- `@course` [AWS CDK Crash Course for Beginners](https://www.youtube.com/watch?v=D4Asp5g4fp8)
+- `@official` [AWS CDK](https://aws.amazon.com/cdk/)
+- `@official` [AWS CDK Documentation](https://docs.aws.amazon.com/cdk/index.html)
+- `@opensource` [AWS CDK Examples](https://github.com/aws-samples/aws-cdk-examples)
+- `@feed` [Explore top posts about AWS](https://app.daily.dev/tags/aws?ref=roadmapsh)
+
+#### Google Deployment  Mgr.
+
+Google Cloud Deployment Manager is an infrastructure deployment service that automates the creation and management of Google Cloud resources. It provides users with flexible template and configuration files to create deployments that have a variety of Google Cloud services, such as Cloud Storage, Compute Engine, and Cloud SQL, configured to work together.
+
+Important, Google Deployment Manager will reach end of support on 31 December 2025. An alternative to this tool is **Google Infrastructure Manager**. Infrastructure Manager (Infra Manager) automates the deployment and management of Google Cloud infrastructure resources using Terraform. Infra Manager allows users to deploy programmatically to Google Cloud, allowing to use this service rather than maintaining a different toolchain to work with Terraform on Google Cloud.
+
+- `@official` [Infrastructure Manager Overview](https://cloud.google.com/infrastructure-manager/docs/overview)
+- `@official` [Google Cloud Deployment Manager documentation](https://cloud.google.com/deployment-manager/docs)
+
+## BI Tools
+
+#### Microsoft Power BI
+
+Microsoft Power BI is a business intelligence and data visualization platform from Microsoft. It connects to a wide range of data sources and allows users to build interactive dashboards and reports. Power BI integrates tightly with the Microsoft ecosystem including Azure and Excel.
+
+- `@official` [Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi)
+- `@video` [Power BI for beginners](https://www.youtube.com/watch?v=NNSHu0rkew8)
+
+#### Streamlit
+
+Streamlit is a free and open-source framework to rapidly build and share machine learning and data science web apps. It is a Python-based library specifically designed for data and machine learning engineers. Data scientists or machine learning engineers are not web developers and they're not interested in spending weeks learning to use these frameworks to build web apps. Instead, they want a tool that is easier to learn and to use, as long as it can display data and collect needed parameters for modeling.
+
+- `@official` [Streamlit Docs](https://docs.streamlit.io/)
+- `@video` [EStreamlit Explained: Python Tutorial for Data Scientists](https://www.youtube.com/watch?v=c8QXUrvSSyg)
+
+#### Tableu
+
+Tableau is a powerful data visualization tool utilized extensively by data analysts worldwide. Its primary role is to transform raw, unprocessed data into an understandable format without any technical skills or coding. Data analysts use Tableau to create data visualizations, reports, and dashboards that help businesses make more informed, data-driven decisions. They also use it to perform tasks like trend analysis, pattern identification, and forecasts, all within a user-friendly interface. Moreover, Tableau's data visualization capabilities make it easier for stakeholders to understand complex data and act on insights quickly.
+
+- `@official` [Tableau](https://www.tableau.com/en-gb)
+- `@video` [What is Tableau?](https://www.youtube.com/watch?v=NLCzpPRCc7U)
+
+#### Looker
+
+Looker is a Google cloud-based business intelligence and data analytics platform. It allows users to explore, analyze, and visualize data to gain insights and make data-driven decisions. Looker is known for its ability to connect to various data sources, create custom dashboards, and generate reports. It also facilitates the integration of analytics, visualizations, and relevant information into business processes.
+
+- `@official` [Looker business intelligence platform embedded analytics](https://cloud.google.com/looker)
+- `@video` [What is Looker?](https://www.youtube.com/watch?v=EmkNPAzla0Y&pp=0gcJCfwAo7VqN5tD)
+
+## Tools
+
+#### Hightouch
+
+Hightouch is a reverse ETL and AI platform crafted for marketing and personalization, allowing companies to uncover insights, execute campaigns, and develop AI agents using their data. It features an AI Decisioning Platform for lifecycle marketing and a Composable Customer Data Platform (CDP) that is adaptable, secure, and quick to deploy, built on top of a data warehouse.
+
+- `@official` [Hightouch Docs](https://hightouch.com/docs)
+- `@video` [What is Hightouch? - The Data Activation Platform](https://www.youtube.com/watch?v=vMm87-MC7og)
+
+#### Census
+
+Census is a reverse ETL platform that synchronizes data from a data warehouse to various business applications and SaaS apps like Salesforce and Hubspot. It's a crucial part of the modern data stack, enabling businesses to operationalize their data by making it available in the tools where teams work, like CRMs, marketing platforms, and more.
+
+- `@official` [Census Documentation](https://developers.getcensus.com/getting-started/introduction)
+- `@article` [A starter guide to reverse ETL with Census](https://www.getcensus.com/blog/starter-guide-for-first-time-census-users)
+- `@video` [How to "Reverse ETL" with Census](https://www.youtube.com/watch?v=XkS7DQFHzbA)
+
+#### Segment
+
+Segment is an analytics platform that provides a single API for collecting, storing, and routing customer data from various sources. With Segment, data engineers can easily add analytics tracking to their app, without having to integrate with multiple analytics tools individually. Segment acts as a single point of integration, allowing developers to send data to multiple analytics tools with a single API.
+
+- `@official` [flutter_segment](https://pub.dev/packages/flutter_segment)
 
 ## Data and AI Regulations
 

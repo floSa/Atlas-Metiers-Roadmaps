@@ -68,6 +68,48 @@ Metrics are quantifiable measurements used to track and assess the status of a s
 - `@article` [KPIs vs Metrics: Learn The Difference With Tips & Examples](https://www.rib-software.com/en/blogs/kpis-vs-metrics-differences)
 - `@video` [What are KPIs and Metrics? | Data Fundamental for Beginners](https://www.youtube.com/watch?v=ItZlTixh6Bs&vl=en)
 
+#### Operational BI
+
+Operational planning is the starting point for implementing the actions and goals outlined by tactical planning; aiming to achieve the objectives established in strategic decisions. Operational planning focuses on short-term activities, typically with a 3-6 month horizon. All sectors of the organization are involved in this process, dedicating themselves to monitoring daily activities to ensure execution.
+
+#### Supervised Learning
+
+Supervised machine learning forms an integral part of the toolset for a Data Analyst. With a direct focus on building predictive models from labeled datasets, it involves training an algorithm based on these known inputs and outputs, helping Data Analysts establish correlations and make reliable predictions. Fortifying a Data Analyst's role, supervised machine learning enables the accurate interpretation of complex data, enhancing decision-making processes.
+
+- `@article` [What is Supervised Learning?](https://cloud.google.com/discover/what-is-supervised-learning)
+- `@video` [Supervised Machine Learning Explained For Beginners](https://www.youtube.com/watch?v=Mu3POlNoLdc&pp=0gcJCf8Ao7VqN5tD)
+
+#### Unsupervised Learning
+
+Unsupervised learning, as a fundamental aspect of Machine Learning, holds great implications in the realm of data analytics. It is an approach where a model learns to identify patterns and relationships within a dataset that isn't labelled or classified. It is especially useful for a Data Analyst as it can assist in recognizing unforeseen trends, providing new insights or preparing data for other machine learning tasks. This ability to infer without direct supervision allows a vast potential for latent structure discovery and new knowledge derivation from raw data.
+
+- `@article` [What is Unsupervised Learning?](https://cloud.google.com/discover/what-is-unsupervised-learning)
+- `@video` [Unsupervised Machine Learning Explained For Beginners](https://www.youtube.com/watch?v=yteYU_QpUxs&pp=ygUbI3doYXRpc3Vuc3VwZXJ2aXNlZGxlYXJuaW5n)
+
+#### Reinforcement Learning
+
+Reinforcement learning is a type of machine learning where an agent learns to make decisions in an environment to maximize a cumulative reward. It involves the agent taking actions, receiving feedback in the form of rewards or penalties, and adjusting its strategy to improve its performance over time. Unlike supervised learning, it doesn't rely on labeled data but rather learns through trial and error.
+
+- `@course` [Deep Reinforcement Learning Course by HuggingFace](https://huggingface.co/learn/deep-rl-course/unit0/introduction)
+- `@article` [What is reinforcement learning?](https://online.york.ac.uk/resources/what-is-reinforcement-learning/)
+- `@article` [Resources to Learn Reinforcement Learning](https://towardsdatascience.com/best-free-courses-and-resources-to-learn-reinforcement-learning-ed6633608cb2/)
+- `@video` [Reinforcement Learning in 3 Hours | Full Course using Python](https://www.youtube.com/watch?v=Mut_u40Sqz4)
+
+#### Algorithmic Bias
+
+Algorithmic bias occurs when a computer system reflects the implicit values of the humans who created the algorithm or the data used to train it. This can lead to unfair or discriminatory outcomes for certain groups of people, even if the algorithm is not explicitly designed to be biased. It arises from flawed assumptions, incomplete data, or biased data used in the development process, ultimately perpetuating and amplifying existing societal biases.
+
+- `@article` [What Is Algorithmic Bias?](https://www.ibm.com/think/topics/algorithmic-bias)
+- `@video` [AI: Training Data & Bias](https://www.youtube.com/watch?v=x2mRoFNm22g)
+
+#### Mitigation Strategies
+
+Mitigation strategies for bias are the proactive steps taken to reduce or eliminate unfair prejudices within data, algorithms, and decision-making processes. These strategies involve identifying potential sources of bias, implementing techniques to correct or compensate for them, and continuously monitoring outcomes to ensure fairness and equity. The goal is to create more accurate, reliable, and just results by addressing and minimizing the impact of bias.
+
+- `@article` [Addressing AI bias: a human-centric approach to fairness](https://www.ey.com/en_us/insights/emerging-technologies/addressing-ai-bias-a-human-centric-approach-to-fairness)
+- `@article` [When AI Gets It Wrong: Addressing AI Hallucinations and Bias](https://mitsloanedtech.mit.edu/ai/basics/addressing-ai-hallucinations-and-bias/)
+- `@video` [Algorithmic Bias in AI: What It Is and How to Fix It](https://www.youtube.com/watch?v=og67qeTZPYs)
+
 #### Operations
 
 Operations encompass all the activities involved in producing and delivering a company's products or services. This includes managing resources, processes, and people to ensure efficiency, quality, and customer satisfaction. It focuses on the day-to-day activities that keep the business running smoothly and meeting its objectives.
@@ -110,10 +152,6 @@ Predictive analysis is a crucial type of data analytics that any competent data 
 
 - `@article` [What is Predictive Analytics? - Google](https://cloud.google.com/learn/what-is-predictive-analytics)
 - `@video` [hat is Predictive Analytics?](https://www.youtube.com/watch?v=cVibCHRSxB0)
-
-#### Operational BI
-
-Operational planning is the starting point for implementing the actions and goals outlined by tactical planning; aiming to achieve the objectives established in strategic decisions. Operational planning focuses on short-term activities, typically with a 3-6 month horizon. All sectors of the organization are involved in this process, dedicating themselves to monitoring daily activities to ensure execution.
 
 #### Prescriptive Analysis
 
@@ -510,8 +548,6 @@ SQL performance tuning involves optimizing SQL queries and database structures t
 - `@official` [SQL Roadmap](https://roadmap.sh/sql)
 - `@article` [Performance Tuning SQL Queries](https://mode.com/sql-tutorial/sql-performance-tuning)
 
-## Tools for Data Cleaning
-
 ### Data Cleaning
 
 Data cleaning, which is often referred as data cleansing or data scrubbing, is one of the most important and initial steps in the data analysis process. As a BI analyst, the bulk of your work often revolves around understanding, cleaning, and standardizing raw data before analysis. Data cleaning involves identifying, correcting or removing any errors or inconsistencies in datasets in order to improve their quality. The process is crucial because it directly determines the accuracy of the insights you generate - garbage in, garbage out. Even the most sophisticated models and visualizations would not be of much use if they're based on dirty data.
@@ -524,19 +560,6 @@ Exploratory Data Analysis (EDA) is an approach to analyzing data sets to summari
 
 - `@article` [What is Exploratory Data Analysis?](https://www.ibm.com/think/topics/exploratory-data-analysis)
 - `@video` [Exploratory Data Analysis](https://www.youtube.com/watch?v=QiqZliDXCCg)
-
-#### Excel
-
-Excel is a readily available and user-friendly tool that's great for getting a first look at your data. It allows you to quickly sort, filter, and calculate basic statistics like averages and sums. You can also create simple charts and graphs to visualize trends and patterns, helping you understand your data's main characteristics and identify potential areas for deeper investigation, all without needing specialized programming knowledge.
-
-- `@article` [Exploratory Data Analysis in Excel](https://www.scaler.com/topics/exploratory-data-analysis-projects/)
-- `@video` [Exploratory Data Analysis With Excel](https://www.youtube.com/watch?v=1zEFJHbG0aE&list=PLTJTBoU5HOCRFQhfU1gg2ciNpS_evWKR7)
-
-#### SQL
-
-SQL is a powerful tool for exploring data because it lets you quickly look at large datasets. You can use SQL to filter data based on specific conditions, calculate summary statistics like averages and counts, and group data to see patterns. Its simple syntax makes it easy to write queries to understand the characteristics of your data, identify potential issues, and prepare it for further analysis.
-
-- `@video` [51:14 YouTube · Data with Baraa SQL Exploratory Data Analysis (EDA) Project](https://www.youtube.com/watch?v=6cJ5Ji8zSDg)
 
 ### Data Transformation Techniques
 
@@ -552,20 +575,6 @@ Data transformation techniques involve changing data from one format or structur
 
 - `@article` [Data Transformation](https://www.qlik.com/us/data-management/data-transformation)
 - `@video` [What is Data Transformation? (Types of Data Transformations and Examples!)](https://www.youtube.com/watch?v=TY0NAPAWR3M)
-
-#### Pandas
-
-Pandas is a powerful Python library that makes exploring and understanding data much easier. It provides data structures like DataFrames, which are like spreadsheets but much more versatile. With Pandas, you can quickly clean, transform, and analyze your data. It allows you to easily filter rows, select columns, calculate summary statistics (like mean and median), and handle missing values. This makes it a go-to tool for getting a feel for your data and uncovering initial insights before diving into more complex analysis.
-
-- `@official` [Pandas Docs](https://pandas.pydata.org/docs/index.html)
-- `@video` [Exploratory Data Analysis in Pandas | Python Pandas Tutorials](https://www.youtube.com/watch?v=Liv6eeb1VfE)
-
-#### dplyr
-
-dplyr is an R package that makes data manipulation and exploration easier. It provides a consistent set of verbs, like `filter`, `select`, `mutate`, `summarize`, and `arrange`, that allow you to quickly perform common data analysis tasks. These functions are designed to be intuitive and work together seamlessly, letting you chain operations to efficiently clean, transform, and gain insights from your data. This streamlined approach helps you understand your data's structure, identify patterns, and prepare it for further analysis or visualization.
-
-- `@official` [dplyr](https://dplyr.tidyverse.org/)
-- `@article` [Exploratory Data Analysis with dplyr](https://www.gastonsanchez.com/intro2cwd/eda-dplyr.html)
 
 #### Standardisation
 
@@ -592,6 +601,35 @@ Outliers are unusual or surprising data points that deviate significantly from t
 
 - `@article` [Outliers](https://www.mathsisfun.com/data/outliers.html)
 - `@article` [Outliers in Data Analysis... and how to deal with them!](https://www.youtube.com/watch?v=3lQydBqWYk0&pp=0gcJCfwAo7VqN5tD)
+
+## Tools for Data Cleaning
+
+#### Excel
+
+Excel is a readily available and user-friendly tool that's great for getting a first look at your data. It allows you to quickly sort, filter, and calculate basic statistics like averages and sums. You can also create simple charts and graphs to visualize trends and patterns, helping you understand your data's main characteristics and identify potential areas for deeper investigation, all without needing specialized programming knowledge.
+
+- `@article` [Exploratory Data Analysis in Excel](https://www.scaler.com/topics/exploratory-data-analysis-projects/)
+- `@video` [Exploratory Data Analysis With Excel](https://www.youtube.com/watch?v=1zEFJHbG0aE&list=PLTJTBoU5HOCRFQhfU1gg2ciNpS_evWKR7)
+
+#### SQL
+
+SQL is a powerful tool for exploring data because it lets you quickly look at large datasets. You can use SQL to filter data based on specific conditions, calculate summary statistics like averages and counts, and group data to see patterns. Its simple syntax makes it easy to write queries to understand the characteristics of your data, identify potential issues, and prepare it for further analysis.
+
+- `@video` [51:14 YouTube · Data with Baraa SQL Exploratory Data Analysis (EDA) Project](https://www.youtube.com/watch?v=6cJ5Ji8zSDg)
+
+#### Pandas
+
+Pandas is a powerful Python library that makes exploring and understanding data much easier. It provides data structures like DataFrames, which are like spreadsheets but much more versatile. With Pandas, you can quickly clean, transform, and analyze your data. It allows you to easily filter rows, select columns, calculate summary statistics (like mean and median), and handle missing values. This makes it a go-to tool for getting a feel for your data and uncovering initial insights before diving into more complex analysis.
+
+- `@official` [Pandas Docs](https://pandas.pydata.org/docs/index.html)
+- `@video` [Exploratory Data Analysis in Pandas | Python Pandas Tutorials](https://www.youtube.com/watch?v=Liv6eeb1VfE)
+
+#### dplyr
+
+dplyr is an R package that makes data manipulation and exploration easier. It provides a consistent set of verbs, like `filter`, `select`, `mutate`, `summarize`, and `arrange`, that allow you to quickly perform common data analysis tasks. These functions are designed to be intuitive and work together seamlessly, letting you chain operations to efficiently clean, transform, and gain insights from your data. This streamlined approach helps you understand your data's structure, identify patterns, and prepare it for further analysis or visualization.
+
+- `@official` [dplyr](https://dplyr.tidyverse.org/)
+- `@article` [Exploratory Data Analysis with dplyr](https://www.gastonsanchez.com/intro2cwd/eda-dplyr.html)
 
 ## Popular Plots
 
@@ -938,13 +976,6 @@ Machine learning fundamentals encompass the key concepts and techniques that ena
 - `@course` [MLCourse.ai](https://mlcourse.ai/)
 - `@article` [What Is Machine Learning (ML)?](https://www.ibm.com/think/topics/machine-learning)
 
-#### Supervised Learning
-
-Supervised machine learning forms an integral part of the toolset for a Data Analyst. With a direct focus on building predictive models from labeled datasets, it involves training an algorithm based on these known inputs and outputs, helping Data Analysts establish correlations and make reliable predictions. Fortifying a Data Analyst's role, supervised machine learning enables the accurate interpretation of complex data, enhancing decision-making processes.
-
-- `@article` [What is Supervised Learning?](https://cloud.google.com/discover/what-is-supervised-learning)
-- `@video` [Supervised Machine Learning Explained For Beginners](https://www.youtube.com/watch?v=Mu3POlNoLdc&pp=0gcJCf8Ao7VqN5tD)
-
 #### Business Acumen
 
 Business acumen is the ability to quickly understand how a business operates and makes money. It involves grasping the key financial drivers, competitive landscape, and strategic priorities of an organization. This understanding allows individuals to make informed decisions and contribute effectively to achieving business goals.
@@ -952,25 +983,9 @@ Business acumen is the ability to quickly understand how a business operates and
 - `@article` [Business acumen](https://en.wikipedia.org/wiki/Business_acumen)
 - `@video` [Business Acumen 101](https://www.youtube.com/watch?v=JwhPhS26Mos)
 
-#### Unsupervised Learning
-
-Unsupervised learning, as a fundamental aspect of Machine Learning, holds great implications in the realm of data analytics. It is an approach where a model learns to identify patterns and relationships within a dataset that isn't labelled or classified. It is especially useful for a Data Analyst as it can assist in recognizing unforeseen trends, providing new insights or preparing data for other machine learning tasks. This ability to infer without direct supervision allows a vast potential for latent structure discovery and new knowledge derivation from raw data.
-
-- `@article` [What is Unsupervised Learning?](https://cloud.google.com/discover/what-is-unsupervised-learning)
-- `@video` [Unsupervised Machine Learning Explained For Beginners](https://www.youtube.com/watch?v=yteYU_QpUxs&pp=ygUbI3doYXRpc3Vuc3VwZXJ2aXNlZGxlYXJuaW5n)
-
 #### Critical Thinking
 
 Critical thinking involves analyzing information objectively and forming a reasoned judgment. It's about evaluating evidence, identifying assumptions, and considering different perspectives to arrive at well-supported conclusions. This process helps in problem-solving and decision-making by ensuring that conclusions are logical and based on facts rather than emotions or biases.
-
-#### Reinforcement Learning
-
-Reinforcement learning is a type of machine learning where an agent learns to make decisions in an environment to maximize a cumulative reward. It involves the agent taking actions, receiving feedback in the form of rewards or penalties, and adjusting its strategy to improve its performance over time. Unlike supervised learning, it doesn't rely on labeled data but rather learns through trial and error.
-
-- `@course` [Deep Reinforcement Learning Course by HuggingFace](https://huggingface.co/learn/deep-rl-course/unit0/introduction)
-- `@article` [What is reinforcement learning?](https://online.york.ac.uk/resources/what-is-reinforcement-learning/)
-- `@article` [Resources to Learn Reinforcement Learning](https://towardsdatascience.com/best-free-courses-and-resources-to-learn-reinforcement-learning-ed6633608cb2/)
-- `@video` [Reinforcement Learning in 3 Hours | Full Course using Python](https://www.youtube.com/watch?v=Mut_u40Sqz4)
 
 ### Soft Skills
 
@@ -987,24 +1002,9 @@ Project management involves planning, organizing, and overseeing the completion 
 
 Change management is the process, tools, and techniques used to manage the people-side of change to achieve the required business outcome. It involves helping individuals and teams understand, accept, and adapt to changes in their work environment, processes, technologies, or organizational structure. Effective change management minimizes disruption, resistance, and negative impacts, while maximizing adoption and realizing the benefits of the change initiative.
 
-#### Algorithmic Bias
-
-Algorithmic bias occurs when a computer system reflects the implicit values of the humans who created the algorithm or the data used to train it. This can lead to unfair or discriminatory outcomes for certain groups of people, even if the algorithm is not explicitly designed to be biased. It arises from flawed assumptions, incomplete data, or biased data used in the development process, ultimately perpetuating and amplifying existing societal biases.
-
-- `@article` [What Is Algorithmic Bias?](https://www.ibm.com/think/topics/algorithmic-bias)
-- `@video` [AI: Training Data & Bias](https://www.youtube.com/watch?v=x2mRoFNm22g)
-
 #### Stakeholder Management
 
 Stakeholder management involves identifying individuals or groups who have an interest in a project or business outcome and then developing strategies to effectively communicate with and manage their expectations. This includes understanding their needs, addressing their concerns, and ensuring their involvement throughout the project lifecycle to achieve successful results and maintain positive relationships.
-
-#### Mitigation Strategies
-
-Mitigation strategies for bias are the proactive steps taken to reduce or eliminate unfair prejudices within data, algorithms, and decision-making processes. These strategies involve identifying potential sources of bias, implementing techniques to correct or compensate for them, and continuously monitoring outcomes to ensure fairness and equity. The goal is to create more accurate, reliable, and just results by addressing and minimizing the impact of bias.
-
-- `@article` [Addressing AI bias: a human-centric approach to fairness](https://www.ey.com/en_us/insights/emerging-technologies/addressing-ai-bias-a-human-centric-approach-to-fairness)
-- `@article` [When AI Gets It Wrong: Addressing AI Hallucinations and Bias](https://mitsloanedtech.mit.edu/ai/basics/addressing-ai-hallucinations-and-bias/)
-- `@video` [Algorithmic Bias in AI: What It Is and How to Fix It](https://www.youtube.com/watch?v=og67qeTZPYs)
 
 ## Data Governance & Ethics
 

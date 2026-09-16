@@ -9,15 +9,72 @@
 
 ---
 
-## Pre-requisites
+#### Data Structures
+
+Python provides several built-in data structures for organizing and storing data. These structures include lists, which are ordered and mutable collections; tuples, which are ordered and immutable collections; dictionaries, which store data in key-value pairs; and sets, which are unordered collections of unique elements. Each data structure offers different performance characteristics and is suitable for various tasks depending on the specific requirements of the program.
+
+- `@official` [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
+- `@video` [Data Structures and Algorithms in Python - Full Course for Beginners](https://www.youtube.com/watch?v=pkYVOmU3MgA)
+
+#### Feature Engineering
+
+Feature engineering is the process of transforming raw data into features that better represent the underlying problem to the predictive models, resulting in improved model accuracy. This involves selecting, transforming, and creating new features from existing data. The goal is to extract more information from the data and make it easier for machine learning algorithms to learn patterns and make accurate predictions.
+
+- `@article` [What is a feature engineering? | IBM](https://www.ibm.com/think/topics/feature-engineering)
+- `@article` [Feature Engineering in Machine Learning: A Practical Guide](https://www.datacamp.com/tutorial/feature-engineering)
+- `@video` [What is feature engineering | Feature Engineering Tutorial Python](https://www.youtube.com/watch?v=pYVScuY-GPk)
 
 ## Machine Learning
 
-#### What is an ML Engineer?
+#### Exceptions
 
-An ML Engineer focuses on building, deploying, and maintaining machine learning systems in production. They bridge the gap between data science and software engineering, taking models developed by data scientists and making them scalable, reliable, and efficient for real-world applications. This involves tasks like data pipeline construction, model deployment, performance monitoring, and infrastructure management.
+Exceptions in Python are events that disrupt the normal flow of a program's execution. They occur when the interpreter encounters an error during runtime, such as trying to divide by zero or accessing an index that's out of bounds in a list. When an exception occurs, Python creates an exception object. If the exception isn't handled, the program will terminate and display an error message. However, you can use `try` and `except` blocks to catch and handle exceptions, allowing your program to continue running even when errors occur.
 
-- `@article` [What Is a Machine Learning Engineer? (+ How to Get Started)](https://www.coursera.org/articles/what-is-machine-learning-engineer)
+- `@official` [Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
+- `@article` [Python Exceptions: An Introduction](https://realpython.com/python-exceptions/)
+- `@video` [Learn Python EXCEPTION HANDLING in 5 minutes!](https://www.youtube.com/watch?v=V_NXT2-QIlE)
+
+#### Feature Selection
+
+Feature selection is the process of choosing a subset of the most relevant features from your original dataset. The goal is to reduce the dimensionality of the data by removing irrelevant, redundant, or noisy features. This can lead to simpler models, improved model performance (e.g., accuracy, speed), and better understanding of the underlying data.
+
+- `@article` [What is Feature Selection? | IBM](https://www.ibm.com/think/topics/feature-selection)
+
+#### Variables and Data Types
+
+Variables are named storage locations in a computer's memory used to hold data. Data types classify the kind of value a variable can hold, such as numbers (integers, decimals), text (strings), or boolean values (true/false). Understanding variables and data types is fundamental to writing any program, as it dictates how data is stored, manipulated, and used within the code.
+
+- `@article` [Variables in Python](https://realpython.com/python-variables)
+- `@article` [Python for Beginners: Data Types](https://thenewstack.io/python-for-beginners-data-types/)
+- `@video` [Python Variables and Data Types](https://www.youtube.com/playlist?list=PLBlnK6fEyqRhN-sfWgCU1z_Qhakc1AGOn)
+
+#### Data Cleaning
+
+Data cleaning, which is often referred as data cleansing or data scrubbing, is one of the most important and initial steps in the data analysis process. As a data analyst, the bulk of your work often revolves around understanding, cleaning, and standardizing raw data before analysis. Data cleaning involves identifying, correcting or removing any errors or inconsistencies in datasets in order to improve their quality. The process is crucial because it directly determines the accuracy of the insights you generate - garbage in, garbage out. Even the most sophisticated models and visualizations would not be of much use if they're based on dirty data. Therefore, mastering data cleaning techniques is essential for any data analyst.
+
+- `@article` [Data cleaning](https://www.tableau.com/learn/articles/what-is-data-cleaning)
+
+#### Functions, Builtin Functions
+
+Functions are reusable blocks of code that perform a specific task. They take inputs, process them, and return an output. Python provides many built-in functions like `print()` for displaying output, `len()` for finding the length of a sequence, and `type()` for determining the data type of a variable. These built-in functions are readily available for use, while you can also define your own custom functions, also known as user-defined functions (UDFs), to encapsulate specific logic and improve code organization.
+
+- `@official` [Built-in Functions](https://docs.python.org/3/library/functions.html)
+- `@article` [Python Functions: How to Call & Write Functions](https://www.datacamp.com/tutorial/functions-python-tutorial)
+- `@video` [Functions in Python | Python for Beginners](https://www.youtube.com/watch?v=zvzjaqMBEso)
+
+#### Conditionals
+
+Conditional statements in Python allow you to execute different blocks of code based on whether a certain condition is true or false. The most common conditional statements are `if`, `elif` (else if), and `else`. An `if` statement checks a condition, and if it's true, the code block under it runs. `elif` allows you to check additional conditions if the initial `if` condition is false. Finally, `else` provides a block of code to execute if none of the preceding `if` or `elif` conditions are true. These statements enable programs to make decisions and respond differently to various inputs or situations.
+
+- `@article` [Conditional Statements in Python](https://realpython.com/python-conditional-statements/)
+- `@video` [Learn Python CONDITIONAL EXPRESSIONS in 5 minutes!](https://www.youtube.com/watch?v=TYyKQBC4bwE)
+
+#### Dimensionality Reduction
+
+Dimensionality reduction is the process of reducing the number of random variables under consideration by obtaining a set of principal variables. It can be divided into feature selection and feature extraction. Feature selection selects a subset of the original features, while feature extraction transforms the data into a lower-dimensional space. The goal is to simplify the data without losing important information, making it easier to analyze and model.
+
+- `@article` [What is Dimensionality Reduction?](https://www.ibm.com/think/topics/dimensionality-reduction)
+- `@video` [Machine Learning - Dimensionality Reduction](https://www.youtube.com/watch?v=AU_hBML2H1c)
 
 ### Introduction
 
@@ -33,9 +90,29 @@ An ML Engineer primarily concentrates on building, deploying, and maintaining ma
 - `@video` [AI VS ML Engineer What Do They Do?](https://www.youtube.com/watch?v=Ff8HHBITvfs)
 - `@video` [AI vs Machine Learning](https://www.youtube.com/watch?v=4RixMPF4xis)
 
+#### Loops
+
+Loops in Python are a way to repeat a block of code multiple times. They allow you to execute a set of instructions over and over, either a specific number of times or until a certain condition is met. Python has two main types of loops: `for` loops, which are typically used to iterate over a sequence (like a list or string), and `while` loops, which continue executing as long as a given condition remains true.
+
+- `@article` [Loops](https://www.learnpython.org/en/Loops)
+- `@article` [Python While Loops & For Loops | Python tutorial for Beginners](https://www.youtube.com/watch?v=23vCap6iYSs)
+
+#### Feature Scaling & Normalization
+
+Feature scaling is a preprocessing technique in machine learning that transforms numerical features to a common scale, ensuring they contribute equally to the model by preventing features with larger ranges from dominating, which is particularly important for algorithms sensitive to feature scales like gradient descent-based methods. Key methods include Standardization (transforming data to a mean of 0 and a standard deviation of 1, often better for outliers), and Normalization (scaling data to a fixed range, often 0 to 1).
+
+- `@article` [Normalization vs. Standardization: How to Know the Difference](https://www.datacamp.com/tutorial/normalization-vs-standardization)
+- `@video` [Standardization vs Normalization Clearly Explained!](https://www.youtube.com/watch?v=sxEqtjLC0aM)
+
 #### Skills and Responsibilities
 
 Machine learning roles require a blend of technical expertise and practical abilities. These roles involve designing, developing, and deploying machine learning models to solve real-world problems. Key skills include proficiency in programming languages like Python, a strong understanding of statistical concepts, and experience with machine learning frameworks. Responsibilities often encompass data collection and preprocessing, model selection and training, performance evaluation, and continuous model improvement.
+
+#### What is an ML Engineer?
+
+An ML Engineer focuses on building, deploying, and maintaining machine learning systems in production. They bridge the gap between data science and software engineering, taking models developed by data scientists and making them scalable, reliable, and efficient for real-world applications. This involves tasks like data pipeline construction, model deployment, performance monitoring, and infrastructure management.
+
+- `@article` [What Is a Machine Learning Engineer? (+ How to Get Started)](https://www.coursera.org/articles/what-is-machine-learning-engineer)
 
 #### Derivatives, Partial Derivatives
 
@@ -43,6 +120,228 @@ A derivative measures how a function changes as its input changes. Imagine a cur
 
 - `@article` [Derivatives](https://en.wikipedia.org/wiki/Derivative)
 - `@video` [What is a Derivative? Deriving the Power Rule](https://www.youtube.com/watch?v=x3iEEDxrhyE)
+
+#### Matrix & Matrix Operations
+
+A matrix is a rectangular array of numbers, symbols, or expressions, arranged in rows and columns. Matrix operations are the rules and procedures for manipulating these matrices. These operations include addition, subtraction, multiplication, transposition (flipping rows and columns), and finding the inverse of a matrix, each with specific rules about the dimensions of the matrices involved.
+
+- `@article` [Matrix (mathematics)](https://en.wikipedia.org/wiki/Matrix_(mathematics))
+- `@video` [Linear Algebra - Matrix Operations](https://www.youtube.com/watch?v=p48uw2vFWQs)
+
+#### Determinants, inverse of Matrix
+
+A determinant is a scalar value that can be computed from the elements of a square matrix and encodes certain properties of the linear transformation described by the matrix. The inverse of a matrix, denoted as A⁻¹, is another matrix that, when multiplied by the original matrix A, results in the identity matrix. The inverse exists only for square matrices with a non-zero determinant, making the matrix invertible.
+
+- `@article` [Determinant of a Matrix](https://www.mathsisfun.com/algebra/matrix-determinant.html)
+- `@article` [Inverse of a Matrix](https://www.mathsisfun.com/algebra/matrix-inverse.html)
+- `@video` [Determinant of a Matrix](https://www.youtube.com/watch?v=CcbyMH3Noow)
+- `@video` [Inverse Matrices and Their Properties](https://www.youtube.com/watch?v=kWorj5BBy9k)
+
+#### Basic concepts
+
+Statistics is the science of collecting, analyzing, interpreting, and presenting data. It provides the foundation for understanding patterns and making inferences from data, which is crucial for machine learning algorithms. Here are 10 basic statistical concepts:
+
+*   **Mean:** The average value of a dataset, calculated by summing all values and dividing by the number of values.
+*   **Median:** The middle value in a sorted dataset.
+*   **Mode:** The value that appears most frequently in a dataset.
+*   **Standard Deviation:** A measure of the spread or dispersion of data points around the mean.
+*   **Variance:** The square of the standard deviation, representing the average squared difference from the mean.
+*   **Probability:** The likelihood of an event occurring, expressed as a number between 0 and 1.
+*   **Distributions:** A function that shows the possible values for a variable and how often they occur (e.g., normal distribution, uniform distribution).
+*   **Hypothesis Testing:** A method for testing a claim or hypothesis about a population based on a sample of data.
+*   **Correlation:** A statistical measure that describes the extent to which two variables are related.
+*   **Regression:** A statistical method for modeling the relationship between a dependent variable and one or more independent variables.
+
+#### Random Variances, PDFs
+
+A random variable is a variable whose value is a numerical outcome of a random phenomenon. It can be discrete (taking on a finite or countably infinite number of values) or continuous (taking on any value within a given range).
+
+The probability density function (PDF) describes the relative likelihood for a continuous random variable to take on a given value. It's important to note that the value of the PDF at any given point is not a probability itself, but rather the area under the PDF curve over a given interval represents the probability of the random variable falling within that interval.
+
+- `@article` [Random Variable: What is it in Statistics?](https://www.statisticshowto.com/random-variable/)
+- `@article` [The Basics of Probability Density Function (PDF), With an Example](https://www.investopedia.com/terms/p/pdf.asp)
+- `@video` [Sample Variance in Random Population Sampling](https://www.youtube.com/watch?v=yNnUVHfX5yQ)
+
+#### Supervised Learning
+
+Supervised learning is a type of machine learning where an algorithm learns from a labeled dataset. This means that each data point in the dataset is paired with a corresponding correct output, or "label." The algorithm's goal is to learn a function that maps inputs to outputs, so that when given new, unseen inputs, it can predict the correct output based on the patterns it learned from the labeled data.
+
+- `@article` [What is Supervised Learning?](https://cloud.google.com/discover/what-is-supervised-learning)
+- `@article` [Supervised Machine Learning](https://www.datacamp.com/blog/supervised-machine-learning)
+- `@video` [Supervised Machine Learning Explained For Beginners](https://www.youtube.com/watch?v=Mu3POlNoLdc)
+
+#### Self-supervised Learning
+
+Self-supervised learning is a type of machine learning where the model learns from unlabeled data by creating its own supervisory signals. This is achieved by masking parts of the input data and training the model to predict the masked portions based on the remaining data. In essence, the data itself provides the labels, allowing the model to learn useful representations without requiring explicit human annotation.
+
+- `@article` [What Is Self-Supervised Learning?](https://www.ibm.com/think/topics/self-supervised-learning)
+- `@video` [What is Self Supervised Learning?](https://www.youtube.com/watch?v=sJzuNAisXHA)
+- `@video` [Mark Zuckerberg: AI Learns More Efficiently With Self-Supervised Learning](https://www.youtube.com/watch?v=R8DduzhT3-w)
+
+#### K-Nearest Neighbors (KNN)
+
+K-Nearest Neighbors (KNN) is a simple algorithm used for classifying data points based on their proximity to other data points. Given a new, unclassified data point, KNN identifies the 'K' closest data points (neighbors) from the training dataset. The class that appears most frequently among these 'K' neighbors is then assigned as the class of the new data point.
+
+- `@article` [Nearest Neighbors | scikit-learn](https://scikit-learn.org/stable/modules/neighbors.html)
+- `@article` [K-Nearest Neighbors (KNN) Classification with scikit-learn](https://www.datacamp.com/tutorial/k-nearest-neighbor-classification-scikit-learn)
+- `@video` [How to Build Your First KNN Python Model in scikit-learn (K Nearest Neighbors)](https://www.youtube.com/watch?v=Nz73vXn5afE)
+
+#### Decision Trees, Random Forest
+
+Decision Trees are a way to make predictions by learning decision rules from data features. Imagine a flowchart where each internal node represents a test on an attribute (like "Is the color red?"), each branch represents the outcome of the test, and each leaf node represents a class label (like "apple" or "banana"). Random Forests improve upon this by creating multiple decision trees on different subsets of the data and features, then combining their predictions to get a more accurate and robust result.
+
+#### Linear Regression
+
+Linear regression is a simple method used to find the best straight line that describes the relationship between a dependent variable (the one you're trying to predict) and one or more independent variables (the ones you're using to make the prediction). It works by finding the line that minimizes the sum of the squared differences between the actual values and the values predicted by the line. This line can then be used to predict the dependent variable for new values of the independent variables.
+
+- `@article` [Linear Regression | scikit-learn](https://scikit-learn.org/stable/modules/linear_model.html)
+- `@article` [Sklearn Linear Regression: A Complete Guide with Examples](https://www.datacamp.com/tutorial/sklearn-linear-regression)
+- `@video` [Hands-On Linear Regression with Scikit-Learn in Python](https://www.youtube.com/watch?v=ukZn2RJb7TU)
+
+#### Polynomial Regression
+
+Polynomial regression is a type of supervised learning algorithm used when the relationship between the input features and the output variable is non-linear. Instead of fitting a straight line, it fits a polynomial equation to the data. This allows the model to capture curves and more complex relationships, potentially leading to better predictions when a linear model is insufficient. The degree of the polynomial determines the complexity of the curve that can be fitted.
+
+- `@article` [Polynomial Features | scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html)
+- `@article` [Polynomial Regression in Python using scikit-learn (with a practical example)](https://data36.com/polynomial-regression-python-scikit-learn/)
+- `@article` [Build a Polynomial Regression Model in Python using Scikit-Learn](https://medium.com/@renadalhendy/build-a-polynomial-regression-model-in-python-using-scikit-learn-1b5fd31beb02)
+
+#### Exclusive
+
+Exclusive clustering, also known as hard clustering, is a type of clustering where each data point can only belong to one cluster. This means there's no overlap between clusters; a data point is definitively assigned to a single group. The goal is to partition the data into distinct, non-overlapping clusters based on similarity. For example, K-Means is an exclusive clustering algorithm. It aims to partition n data points into k clusters in which each data point belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster.
+
+- `@article` [K-means | scikit-learn](https://scikit-learn.org/stable/modules/clustering.html#k-means)
+- `@article` [Unsupervised Clustering: A Guide](https://builtin.com/articles/unsupervised-clustering)
+
+#### Probabilistic
+
+Probabilistic clustering assumes that the data is generated from a mixture of probability distributions. Instead of assigning each data point to a single cluster, it provides the probability of a data point belonging to each cluster. A common example is the Gaussian Mixture Model (GMM), where it's assumed that the data points are generated from a mixture of Gaussian distributions. Scikit-learn provides an implementation of GMM that can be used for probabilistic clustering.
+
+- `@article` [Gaussian mixture models](https://scikit-learn.org/stable/modules/mixture.html#mixture)
+- `@article` [Gaussian Mixture Model Explained](https://scikit-learn.org/stable/modules/mixture.html#mixture)
+
+#### Principal Component Analysis
+
+Principal Component Analysis (PCA) is a technique used to reduce the number of variables in a dataset while preserving the most important information. It transforms the original variables into a new set of variables called principal components, which are ordered by the amount of variance they explain. The first principal component captures the most variance, the second captures the second most, and so on. By selecting a smaller number of these principal components, you can reduce the dimensionality of the data without losing too much information.
+
+- `@article` [PCA | scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html)
+- `@article` [What is principal component analysis (PCA)?](https://www.ibm.com/think/topics/principal-component-analysis)
+- `@video` [PCA Analysis in Python Explained (Scikit - Learn)](https://www.youtube.com/watch?v=6uwa9EkUqpg)
+
+#### Deep-Q Networks
+
+Deep Q-Networks (DQNs) are a type of reinforcement learning algorithm that combines Q-learning with deep neural networks. Instead of using a traditional Q-table to store Q-values (which represent the expected reward for taking a specific action in a specific state), DQNs use a neural network to approximate the Q-function. This allows DQNs to handle environments with large or continuous state spaces where a Q-table would be impractical. The neural network takes the state as input and outputs the Q-values for each possible action, enabling the agent to learn optimal policies through trial and error.
+
+- `@article` [The Deep Q-Learning Algorithm](https://huggingface.co/learn/deep-rl-course/en/unit3/deep-q-algorithm)
+- `@video` [Deep Q-Learning/Deep Q-Network (DQN) Explained | Python Pytorch Deep Reinforcement Learning](https://www.youtube.com/watch?v=EUrWGTCGzlA)
+
+#### Q-Learning
+
+Q-Learning is a type of reinforcement learning algorithm that aims to find the best action to take given the current state. It works by learning a "Q-function," which estimates the expected cumulative reward for taking a specific action in a particular state and following the optimal policy thereafter. This Q-function is iteratively updated based on the agent's experiences, allowing it to learn the optimal policy without needing a model of the environment.
+
+- `@article` [An Introduction to Q-Learning: A Tutorial For Beginners](https://www.datacamp.com/tutorial/introduction-q-learning-beginner-tutorial)
+- `@article` [A Gentle Introduction to Q-Learning](https://machinelearningmastery.com/a-gentle-introduction-to-q-learning/)
+- `@video` [What is Q-Learning (back to basics)](https://www.youtube.com/watch?v=nOBm4aYEYR4)
+
+#### Confusion Matrix
+
+A confusion matrix is a table that summarizes the performance of a classification model. It displays the counts of true positive, true negative, false positive, and false negative predictions, allowing for a detailed analysis of the model's accuracy and types of errors it makes. This breakdown helps in understanding where the model excels and where it struggles, providing insights beyond simple accuracy scores.
+
+- `@article` [Confusion matrix | scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
+- `@article` [What is A Confusion Matrix in Machine Learning? The Model Evaluation Tool Explained](https://www.datacamp.com/tutorial/what-is-a-confusion-matrix-in-machine-learning)
+
+#### Perceptron, Multi-layer Perceptrons
+
+A perceptron is a fundamental building block of neural networks, acting as a single-layer linear classifier. It takes several inputs, multiplies each by a weight, sums them up, and then applies an activation function to produce an output. Multi-layer perceptrons (MLPs) extend this concept by stacking multiple layers of perceptrons, including an input layer, one or more hidden layers, and an output layer, allowing for the modeling of more complex, non-linear relationships in data.
+
+- `@article` [What is Perceptron](https://www.simplilearn.com/tutorials/deep-learning-tutorial/perceptron)
+- `@video` [The Perceptron Explained](https://www.youtube.com/watch?v=i1G7PXZMnSc)
+
+#### Activation Functions
+
+Activation functions in neural networks determine the output of a node given an input or set of inputs. They introduce non-linearity into the network, allowing it to learn complex patterns and relationships in data. Without activation functions, a neural network would simply be a linear regression model, severely limiting its ability to model intricate data.
+
+- `@article` [Activation Functions in Neural Networks: How to Choose the Right One](https://towardsdatascience.com/activation-functions-in-neural-networks-how-to-choose-the-right-one-cb20414c04e5/)
+- `@article` [Neural networks: Activation functions](https://developers.google.com/machine-learning/crash-course/neural-networks/activation-functions)
+- `@video` [Activation Functions In Neural Networks Explained](https://www.youtube.com/watch?v=Fu273ovPBmQ)
+
+#### Loss Functions
+
+Loss functions measure how well the network's predictions match the actual values. They quantify the difference between the predicted output and the true output for a given input. The goal during training is to minimize this loss, guiding the network to adjust its internal parameters (weights and biases) to make more accurate predictions. Different loss functions are suitable for different types of problems, such as regression or classification.
+
+- `@article` [Loss Functions and Their Use In Neural Networks](https://towardsdatascience.com/loss-functions-and-their-use-in-neural-networks-a470e703f1e9/)
+- `@article` [What is Loss Function? | IBM](https://www.ibm.com/think/topics/loss-function)
+- `@video` [Loss in a Neural Network explained](https://www.youtube.com/watch?v=Skc8nqJirJg)
+
+#### K-Fold Cross Validation
+
+K-Fold Cross Validation is a technique used to assess how well a machine learning model will generalize to an independent dataset. It works by dividing the available data into _k_ equally sized folds or subsets. The model is then trained _k_ times, each time using _k-1_ folds as the training set and the remaining fold as the validation set. The performance metrics from each of the _k_ iterations are then averaged to provide an overall estimate of the model's performance.
+
+- `@article` [Cross-validation: evaluating estimator performance | scikit-learn](https://scikit-learn.org/stable/modules/cross_validation.html)
+- `@article` [A Comprehensive Guide to K-Fold Cross Validation](https://www.datacamp.com/tutorial/k-fold-cross-validation)
+- `@video` [Complete Guide to Cross Validation](https://www.youtube.com/watch?v=-8s9KuNo5SA&t=925s)
+
+#### Convolution
+
+Convolution is a mathematical operation that involves sliding a filter (also known as a kernel) over an input image or feature map. At each location, the filter performs element-wise multiplication with the corresponding part of the input, and then sums the results. This sum becomes a single value in the output feature map. By sliding the filter across the entire input, the convolution operation extracts features and patterns present in the image, such as edges, textures, or shapes.
+
+- `@article` [Convolutional Neural Networks cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks)
+- `@video` [But what is a convolution?](https://www.youtube.com/watch?v=KuXjwB4LzSA)
+
+#### Strides
+
+In convolutional neural networks, a stride determines how many pixels the filter (or kernel) shifts horizontally and vertically during the convolution operation. A stride of 1 means the filter moves one pixel at a time, resulting in a more detailed feature map. A larger stride, like 2 or 3, causes the filter to jump over pixels, producing a smaller feature map and reducing computational cost, but potentially missing finer details in the input image.
+
+- `@article` [Padding and Stride](https://d2l.ai/chapter_convolutional-neural-networks/padding-and-strides.html)
+- `@video` [Convolution padding and stride](https://www.youtube.com/watch?v=oDAPkZ53zKk)
+
+#### Image & Video Recognition
+
+Convolutional Neural Networks (CNNs) are a specialized type of neural network particularly effective at processing images and videos. In image recognition, CNNs can identify objects, scenes, and faces by learning spatial hierarchies of features from pixel data. For video recognition, CNNs analyze sequences of frames to understand actions, events, and even predict future occurrences. This is achieved by extracting relevant spatial and temporal features, enabling applications like video surveillance, autonomous driving, and content analysis.
+
+#### Recommendation Systems
+
+Convolutional Neural Networks (CNNs), typically used for image processing, can also enhance recommendation systems. They do this by extracting features from user-item interaction data, like purchase history or ratings. For example, a CNN can analyze a matrix representing user preferences for different movie genres to identify patterns. These patterns help predict what movies a user might enjoy, even if they haven't explicitly rated them. By learning these complex relationships, CNNs can provide more personalized and accurate recommendations.
+
+#### Self-Attention
+
+Self-attention is a mechanism that allows a model to focus on different parts of the input sequence when processing it. Instead of treating each element in the sequence independently, self-attention calculates a weighted sum of all elements, where the weights are determined by the relationships between the elements themselves. This enables the model to capture dependencies and contextual information within the input sequence, regardless of their distance from each other.
+
+- `@article` [What is self-attention?](https://www.ibm.com/think/topics/self-attention)
+- `@video` [Why is Self Attention called "Self"? | Self Attention Vs Luong Attention in Depth Lecture](https://www.youtube.com/watch?v=o4ZVA0TuDRg)
+
+#### Stemming
+
+Stemming is a text normalization technique in natural language processing that reduces words to their root or base form, known as the stem. This is achieved by removing suffixes (like "-ing", "-ed", "-s") from words. The goal is to treat words with similar meanings as the same, even if they have slightly different forms, which helps to simplify text analysis and improve the efficiency of certain NLP tasks.
+
+- `@article` [What are stemming and lemmatization?](https://www.ibm.com/think/topics/stemming-lemmatization)
+
+#### Embeddings
+
+Embeddings are a way to represent words, phrases, or even entire documents as numerical vectors in a high-dimensional space. The goal is to capture the semantic meaning of the text, so that words with similar meanings are located close to each other in the vector space. This allows machine learning models to understand relationships between words and perform tasks like text classification, sentiment analysis, and machine translation more effectively.
+
+- `@article` [Getting Started With Embeddings](https://huggingface.co/blog/getting-started-with-embeddings)
+- `@article` [A Guide on Word Embeddings in NLP](https://www.turing.com/kb/guide-on-word-embeddings-in-nlp)
+
+#### Attention Models
+
+Attention models in natural language processing allow a neural network to focus on specific parts of the input sequence when producing an output. Instead of relying on a fixed-length vector representation of the entire input, these models learn to assign weights to different input elements, indicating their relevance to the current output. This mechanism enables the model to selectively attend to the most important information, improving performance in tasks like machine translation and text summarization.
+
+- `@article` [What is an attention mechanism?](https://www.ibm.com/think/topics/attention-mechanism)
+
+#### Data Loading
+
+Data loading in Scikit-learn refers to the process of importing datasets into a format that can be used for machine learning tasks. This involves reading data from various sources, such as CSV files, databases, or even directly from NumPy arrays, and structuring it into a format that Scikit-learn's algorithms can understand, typically NumPy arrays or Pandas DataFrames. The loaded data is then usually split into features (independent variables) and a target variable (dependent variable) for training and evaluating machine learning models.
+
+- `@official` [Dataset loading utilities](https://scikit-learn.org/stable/datasets.html)
+- `@video` [Scikit-Learn Full Crash Course - Python Machine Learning](https://www.youtube.com/watch?v=SIEaLBXr0rk)
+
+#### ElasticNet Regularization
+
+Elastic Net is a regularization technique that combines the penalties of both L1 (Lasso) and L2 (Ridge) regularization methods. It aims to improve model performance by addressing limitations of each individual method, particularly in situations where there are many correlated features. By using a linear combination of L1 and L2 penalties, Elastic Net can perform feature selection (like Lasso) and handle multicollinearity (like Ridge) simultaneously.
+
+- `@article` [ElasticNet| scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html)
+- `@video` [https://www.youtube.com/watch?v=xl6KAAVytEk](https://www.youtube.com/watch?v=xl6KAAVytEk)
 
 #### Chain rule of derivation
 
@@ -61,13 +360,6 @@ The gradient, Jacobian, and Hessian are fundamental tools from calculus used to 
 - `@video` [Partial Derivatives and the Gradient of a Function](https://www.youtube.com/watch?v=AXH9Xm6Rbfc&t=320s&pp=ygURZ3JhZGllbnQgY2FsY3VsdXM%3D)
 - `@video` [Change of Variables and the Jacobian](https://www.youtube.com/watch?v=hhFzJvaY__U)
 - `@video` [Multivariable Calculus: Lecture 3 Hessian Matrix : Optimization for a three variable function](https://www.youtube.com/watch?v=zomvvohLwr4)
-
-#### Matrix & Matrix Operations
-
-A matrix is a rectangular array of numbers, symbols, or expressions, arranged in rows and columns. Matrix operations are the rules and procedures for manipulating these matrices. These operations include addition, subtraction, multiplication, transposition (flipping rows and columns), and finding the inverse of a matrix, each with specific rules about the dimensions of the matrices involved.
-
-- `@article` [Matrix (mathematics)](https://en.wikipedia.org/wiki/Matrix_(mathematics))
-- `@video` [Linear Algebra - Matrix Operations](https://www.youtube.com/watch?v=p48uw2vFWQs)
 
 #### Scalars, Vectors, Tensors
 
@@ -102,15 +394,6 @@ Linear algebra is a branch of mathematics that deals with vector spaces and line
 - `@article` [How I learned Linear Algebra, Probability and Statistics for Data Science](https://towardsdatascience.com/how-i-learned-linear-algebra-probability-and-statistics-for-data-science-b9d1c34dfa56/)
 - `@video` [Linear Algebra for Machine Learning](https://www.youtube.com/watch?v=QCPJ0VdpM00)
 
-#### Determinants, inverse of Matrix
-
-A determinant is a scalar value that can be computed from the elements of a square matrix and encodes certain properties of the linear transformation described by the matrix. The inverse of a matrix, denoted as A⁻¹, is another matrix that, when multiplied by the original matrix A, results in the identity matrix. The inverse exists only for square matrices with a non-zero determinant, making the matrix invertible.
-
-- `@article` [Determinant of a Matrix](https://www.mathsisfun.com/algebra/matrix-determinant.html)
-- `@article` [Inverse of a Matrix](https://www.mathsisfun.com/algebra/matrix-inverse.html)
-- `@video` [Determinant of a Matrix](https://www.youtube.com/watch?v=CcbyMH3Noow)
-- `@video` [Inverse Matrices and Their Properties](https://www.youtube.com/watch?v=kWorj5BBy9k)
-
 #### Eigenvalues, Diagonalization
 
 Eigenvalues are special numbers associated with a square matrix that, when multiplied by a corresponding eigenvector, result in the same vector scaled by that eigenvalue. Diagonalization is the process of transforming a square matrix into a diagonal matrix, where all off-diagonal elements are zero, using its eigenvectors and eigenvalues. This transformation simplifies many matrix operations and provides insights into the matrix's properties.
@@ -143,16 +426,6 @@ Discrete mathematics deals with mathematical structures that are fundamentally d
 
 - `@article` [Discrete Mathematics](https://en.wikipedia.org/wiki/Discrete_mathematics)
 - `@article` [Discrete Math (Full Course: Sets, Logic, Proofs, Probability, Graph Theory, etc)](https://www.youtube.com/playlist?list=PLHXZ9OQGMqxersk8fUxiUMSIx0DBqsKZS)
-
-#### Random Variances, PDFs
-
-A random variable is a variable whose value is a numerical outcome of a random phenomenon. It can be discrete (taking on a finite or countably infinite number of values) or continuous (taking on any value within a given range).
-
-The probability density function (PDF) describes the relative likelihood for a continuous random variable to take on a given value. It's important to note that the value of the PDF at any given point is not a probability itself, but rather the area under the PDF curve over a given interval represents the probability of the random variable falling within that interval.
-
-- `@article` [Random Variable: What is it in Statistics?](https://www.statisticshowto.com/random-variable/)
-- `@article` [The Basics of Probability Density Function (PDF), With an Example](https://www.investopedia.com/terms/p/pdf.asp)
-- `@video` [Sample Variance in Random Population Sampling](https://www.youtube.com/watch?v=yNnUVHfX5yQ)
 
 ### Python
 
@@ -189,20 +462,20 @@ Statistics is the science of collecting, analyzing, interpreting, presenting, an
 - `@article` [Introduction to Statistics](https://imp.i384100.net/3eRv4v)
 - `@video` [Statistics - A Full University Course on Data Science Basics](https://www.youtube.com/watch?v=xxpc-HPKN28)
 
-#### Basic concepts
+### Basic Syntax
 
-Statistics is the science of collecting, analyzing, interpreting, and presenting data. It provides the foundation for understanding patterns and making inferences from data, which is crucial for machine learning algorithms. Here are 10 basic statistical concepts:
+Python's basic syntax defines the rules for writing code that the interpreter can understand and execute. This includes how to structure lines of code, use indentation to define code blocks, write comments for explanation, assign values to variables, and perform basic operations using operators. Understanding these fundamental elements is essential for writing any Python program, including those used in machine learning.
 
-*   **Mean:** The average value of a dataset, calculated by summing all values and dividing by the number of values.
-*   **Median:** The middle value in a sorted dataset.
-*   **Mode:** The value that appears most frequently in a dataset.
-*   **Standard Deviation:** A measure of the spread or dispersion of data points around the mean.
-*   **Variance:** The square of the standard deviation, representing the average squared difference from the mean.
-*   **Probability:** The likelihood of an event occurring, expressed as a number between 0 and 1.
-*   **Distributions:** A function that shows the possible values for a variable and how often they occur (e.g., normal distribution, uniform distribution).
-*   **Hypothesis Testing:** A method for testing a claim or hypothesis about a population based on a sample of data.
-*   **Correlation:** A statistical measure that describes the extent to which two variables are related.
-*   **Regression:** A statistical method for modeling the relationship between a dependent variable and one or more independent variables.
+- `@roadmap` [Visit Dedicated Python for Data Analysis Roadmap](https://roadmap.sh/python-data-analysis)
+- `@roadmap` [Visit Dedicated Python Roadmap](https://roadmap.sh/python)
+- `@video` [Learn Python - Full Course](https://www.youtube.com/watch?v=4M87qBgpafk)
+
+### Preprocessing Techniques
+
+Preprocessing techniques in data cleaning involve transforming raw data into a more suitable format for machine learning models. This often includes handling missing values by either imputing them with estimated values or removing rows/columns containing them. It also encompasses scaling numerical features to a similar range to prevent features with larger values from dominating the model, and encoding categorical features into numerical representations that algorithms can understand. These steps aim to improve the quality and consistency of the data, leading to better model performance.
+
+- `@article` [Data Preprocessing: A Complete Guide with Python Examples](https://www.datacamp.com/blog/data-preprocessing)
+- `@video` [16 Data Pre Processing Techniques in 20 Minutes | Data Preprocessing in machine learning](https://www.youtube.com/watch?v=oggHzC_L9uc)
 
 ### Object Oriented Programming
 
@@ -212,14 +485,6 @@ In Python, object-oriented Programming (OOPs) is a programming paradigm that use
 - `@video` [Object Oriented Programming with Python - Full Course for Beginners](https://www.youtube.com/watch?v=Ej_02ICOIgs)
 - `@video` [Object Oriented Programming (OOP) In Python - Beginner Crash Course](https://www.youtube.com/watch?v=-pEs-Bss8Wc/)
 - `@video` [Python OOP Tutorial](https://www.youtube.com/watch?v=IbMDCwVm63M)
-
-### Basic Syntax
-
-Python's basic syntax defines the rules for writing code that the interpreter can understand and execute. This includes how to structure lines of code, use indentation to define code blocks, write comments for explanation, assign values to variables, and perform basic operations using operators. Understanding these fundamental elements is essential for writing any Python program, including those used in machine learning.
-
-- `@roadmap` [Visit Dedicated Python for Data Analysis Roadmap](https://roadmap.sh/python-data-analysis)
-- `@roadmap` [Visit Dedicated Python Roadmap](https://roadmap.sh/python)
-- `@video` [Learn Python - Full Course](https://www.youtube.com/watch?v=4M87qBgpafk)
 
 #### Descriptive Statistics
 
@@ -250,14 +515,6 @@ NumPy is a fundamental Python library used for numerical computing. It provides 
 - `@article` [Python NumPy Array Tutorial](https://www.datacamp.com/tutorial/python-numpy-tutorial)
 - `@video` [Learn NumPy in 1 hour!](https://www.youtube.com/watch?v=VXU4LSAQDSc)
 
-#### Variables and Data Types
-
-Variables are named storage locations in a computer's memory used to hold data. Data types classify the kind of value a variable can hold, such as numbers (integers, decimals), text (strings), or boolean values (true/false). Understanding variables and data types is fundamental to writing any program, as it dictates how data is stored, manipulated, and used within the code.
-
-- `@article` [Variables in Python](https://realpython.com/python-variables)
-- `@article` [Python for Beginners: Data Types](https://thenewstack.io/python-for-beginners-data-types/)
-- `@video` [Python Variables and Data Types](https://www.youtube.com/playlist?list=PLBlnK6fEyqRhN-sfWgCU1z_Qhakc1AGOn)
-
 #### Inferential Statistics
 
 Inferential statistics uses sample data to make inferences or predictions about a larger population. Instead of examining the entire population, which is often impractical or impossible, we analyze a representative subset (the sample) and then use statistical methods to draw conclusions about the characteristics of the whole population. This involves estimating population parameters (like the mean or proportion) and testing hypotheses about these parameters based on the sample data.
@@ -278,26 +535,12 @@ Pandas is a library written for the Python programming language for data manipul
 - `@official` [pandas - Python Data Analysis Library](https://pandas.pydata.org/)
 - `@video` [Complete Python Pandas Data Science Tutorial! (2025 Updated Edition)](https://www.youtube.com/watch?v=2uvysYbKdjM)
 
-#### Data Structures
-
-Python provides several built-in data structures for organizing and storing data. These structures include lists, which are ordered and mutable collections; tuples, which are ordered and immutable collections; dictionaries, which store data in key-value pairs; and sets, which are unordered collections of unique elements. Each data structure offers different performance characteristics and is suitable for various tasks depending on the specific requirements of the program.
-
-- `@official` [Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
-- `@video` [Data Structures and Algorithms in Python - Full Course for Beginners](https://www.youtube.com/watch?v=pkYVOmU3MgA)
-
 #### Databases (SQL, No-SQL)
 
 Databases are organized collections of data, stored and accessed electronically. SQL databases, like MySQL or PostgreSQL, use a structured, table-based format with a predefined schema, enforcing relationships between data through keys. NoSQL databases, such as MongoDB or Cassandra, offer more flexible data models like document, key-value, or graph, allowing for unstructured or semi-structured data and often prioritizing scalability and speed over strict consistency.
 
 - `@article` [Types of Databases: Relational, NoSQL, Cloud, Vector](https://www.datacamp.com/blog/types-of-databases-overview)
 - `@article` [Types of Databases - MongoDB](https://www.mongodb.com/resources/basics/databases/types)
-
-#### Loops
-
-Loops in Python are a way to repeat a block of code multiple times. They allow you to execute a set of instructions over and over, either a specific number of times or until a certain condition is met. Python has two main types of loops: `for` loops, which are typically used to iterate over a sequence (like a list or string), and `while` loops, which continue executing as long as a given condition remains true.
-
-- `@article` [Loops](https://www.learnpython.org/en/Loops)
-- `@article` [Python While Loops & For Loops | Python tutorial for Beginners](https://www.youtube.com/watch?v=23vCap6iYSs)
 
 ### Essential libraries
 
@@ -313,13 +556,6 @@ Application Programming Interfaces, better known as APIs, play a fundamental rol
 
 - `@article` [What is an API?](https://aws.amazon.com/what-is/api/)
 - `@article` [A Beginner's Guide to APIs](https://www.postman.com/what-is-an-api/)
-
-#### Conditionals
-
-Conditional statements in Python allow you to execute different blocks of code based on whether a certain condition is true or false. The most common conditional statements are `if`, `elif` (else if), and `else`. An `if` statement checks a condition, and if it's true, the code block under it runs. `elif` allows you to check additional conditions if the initial `if` condition is false. Finally, `else` provides a block of code to execute if none of the preceding `if` or `elif` conditions are true. These statements enable programs to make decisions and respond differently to various inputs or situations.
-
-- `@article` [Conditional Statements in Python](https://realpython.com/python-conditional-statements/)
-- `@video` [Learn Python CONDITIONAL EXPRESSIONS in 5 minutes!](https://www.youtube.com/watch?v=TYyKQBC4bwE)
 
 #### Mobile Apps
 
@@ -337,22 +573,6 @@ The Internet of Things (IoT) refers to the network of physical devices, vehicles
 - `@article` [Internet of Things](https://en.wikipedia.org/wiki/Internet_of_things)
 - `@video` [What is the IoT](https://www.youtube.com/watch?v=4FxU-xpuCww)
 
-#### Exceptions
-
-Exceptions in Python are events that disrupt the normal flow of a program's execution. They occur when the interpreter encounters an error during runtime, such as trying to divide by zero or accessing an index that's out of bounds in a list. When an exception occurs, Python creates an exception object. If the exception isn't handled, the program will terminate and display an error message. However, you can use `try` and `except` blocks to catch and handle exceptions, allowing your program to continue running even when errors occur.
-
-- `@official` [Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
-- `@article` [Python Exceptions: An Introduction](https://realpython.com/python-exceptions/)
-- `@video` [Learn Python EXCEPTION HANDLING in 5 minutes!](https://www.youtube.com/watch?v=V_NXT2-QIlE)
-
-#### Functions, Builtin Functions
-
-Functions are reusable blocks of code that perform a specific task. They take inputs, process them, and return an output. Python provides many built-in functions like `print()` for displaying output, `len()` for finding the length of a sequence, and `type()` for determining the data type of a variable. These built-in functions are readily available for use, while you can also define your own custom functions, also known as user-defined functions (UDFs), to encapsulate specific logic and improve code organization.
-
-- `@official` [Built-in Functions](https://docs.python.org/3/library/functions.html)
-- `@article` [Python Functions: How to Call & Write Functions](https://www.datacamp.com/tutorial/functions-python-tutorial)
-- `@video` [Functions in Python | Python for Beginners](https://www.youtube.com/watch?v=zvzjaqMBEso)
-
 ### Data Sources
 
 Sources of data are origins or locations from which data is collected, categorized as primary (direct, firsthand information) or secondary (collected by others). Common primary sources include surveys, interviews, experiments, and sensor data. Secondary sources encompass databases, published reports, government data, books, articles, and web data like social media posts. Data sources can also be classified as internal (within an organization) or external (from outside sources).
@@ -360,19 +580,6 @@ Sources of data are origins or locations from which data is collected, categoriz
 ### Data Formats
 
 Data formats define the structure in which data is organized and stored. These formats dictate how information is encoded, allowing computers to interpret and process it effectively. Common examples include CSV (Comma Separated Values) for tabular data, JSON (JavaScript Object Notation) for structured data with key-value pairs, and image formats like JPEG and PNG for visual data. The choice of data format impacts storage efficiency, data accessibility, and the compatibility with different machine learning tools and algorithms.
-
-### Preprocessing Techniques
-
-Preprocessing techniques in data cleaning involve transforming raw data into a more suitable format for machine learning models. This often includes handling missing values by either imputing them with estimated values or removing rows/columns containing them. It also encompasses scaling numerical features to a similar range to prevent features with larger values from dominating the model, and encoding categorical features into numerical representations that algorithms can understand. These steps aim to improve the quality and consistency of the data, leading to better model performance.
-
-- `@article` [Data Preprocessing: A Complete Guide with Python Examples](https://www.datacamp.com/blog/data-preprocessing)
-- `@video` [16 Data Pre Processing Techniques in 20 Minutes | Data Preprocessing in machine learning](https://www.youtube.com/watch?v=oggHzC_L9uc)
-
-#### Data Cleaning
-
-Data cleaning, which is often referred as data cleansing or data scrubbing, is one of the most important and initial steps in the data analysis process. As a data analyst, the bulk of your work often revolves around understanding, cleaning, and standardizing raw data before analysis. Data cleaning involves identifying, correcting or removing any errors or inconsistencies in datasets in order to improve their quality. The process is crucial because it directly determines the accuracy of the insights you generate - garbage in, garbage out. Even the most sophisticated models and visualizations would not be of much use if they're based on dirty data. Therefore, mastering data cleaning techniques is essential for any data analyst.
-
-- `@article` [Data cleaning](https://www.tableau.com/learn/articles/what-is-data-cleaning)
 
 #### CSV
 
@@ -384,14 +591,6 @@ CSV or Comma Separated Values files play an integral role in data collection for
 #### Excel
 
 Excel files are a common way to store data in a structured format using rows and columns. Each cell in the spreadsheet can hold different types of data, like numbers, text, or dates. These files are often used for organizing, analyzing, and visualizing data because they are easy to create and manipulate using spreadsheet software.
-
-#### Feature Engineering
-
-Feature engineering is the process of transforming raw data into features that better represent the underlying problem to the predictive models, resulting in improved model accuracy. This involves selecting, transforming, and creating new features from existing data. The goal is to extract more information from the data and make it easier for machine learning algorithms to learn patterns and make accurate predictions.
-
-- `@article` [What is a feature engineering? | IBM](https://www.ibm.com/think/topics/feature-engineering)
-- `@article` [Feature Engineering in Machine Learning: A Practical Guide](https://www.datacamp.com/tutorial/feature-engineering)
-- `@video` [What is feature engineering | Feature Engineering Tutorial Python](https://www.youtube.com/watch?v=pYVScuY-GPk)
 
 #### JSON
 
@@ -407,31 +606,9 @@ Parquet is a columnar storage format designed for efficient data storage and ret
 - `@official` [Parquet](https://parquet.apache.org/)
 - `@article` [Parquet - Databricks](https://www.databricks.com/glossary/what-is-parquet)
 
-#### Feature Scaling & Normalization
-
-Feature scaling is a preprocessing technique in machine learning that transforms numerical features to a common scale, ensuring they contribute equally to the model by preventing features with larger ranges from dominating, which is particularly important for algorithms sensitive to feature scales like gradient descent-based methods. Key methods include Standardization (transforming data to a mean of 0 and a standard deviation of 1, often better for outliers), and Normalization (scaling data to a fixed range, often 0 to 1).
-
-- `@article` [Normalization vs. Standardization: How to Know the Difference](https://www.datacamp.com/tutorial/normalization-vs-standardization)
-- `@video` [Standardization vs Normalization Clearly Explained!](https://www.youtube.com/watch?v=sxEqtjLC0aM)
-
 #### Other Data Formats
 
 Beyond the common formats like CSV, Excel, JSON, and Parquet, data can exist in a variety of other structures. These include formats optimized for specific applications or data types. For instance, images are often stored as JPEGs or PNGs, while audio data might be in WAV or MP3 format. Relational databases store data in structured tables accessible through SQL. Furthermore, specialized formats like HDF5 are used for large, complex datasets, particularly in scientific computing, and Protocol Buffers offer an efficient way to serialize structured data. Data can also be unstructured, existing as plain text, log files, or even streaming data from sensors.
-
-#### Dimensionality Reduction
-
-Dimensionality reduction is the process of reducing the number of random variables under consideration by obtaining a set of principal variables. It can be divided into feature selection and feature extraction. Feature selection selects a subset of the original features, while feature extraction transforms the data into a lower-dimensional space. The goal is to simplify the data without losing important information, making it easier to analyze and model.
-
-- `@article` [What is Dimensionality Reduction?](https://www.ibm.com/think/topics/dimensionality-reduction)
-- `@video` [Machine Learning - Dimensionality Reduction](https://www.youtube.com/watch?v=AU_hBML2H1c)
-
-#### Supervised Learning
-
-Supervised learning is a type of machine learning where an algorithm learns from a labeled dataset. This means that each data point in the dataset is paired with a corresponding correct output, or "label." The algorithm's goal is to learn a function that maps inputs to outputs, so that when given new, unseen inputs, it can predict the correct output based on the patterns it learned from the labeled data.
-
-- `@article` [What is Supervised Learning?](https://cloud.google.com/discover/what-is-supervised-learning)
-- `@article` [Supervised Machine Learning](https://www.datacamp.com/blog/supervised-machine-learning)
-- `@video` [Supervised Machine Learning Explained For Beginners](https://www.youtube.com/watch?v=Mu3POlNoLdc)
 
 ### What is Machine Learning?
 
@@ -441,12 +618,6 @@ Machine learning is a field of computer science that focuses on enabling compute
 - `@article` [What is Machine Learning (ML)?](https://www.ibm.com/topics/machine-learning)
 - `@video` [What is Machine Learning?](https://www.youtube.com/watch?v=9gGnTQTYNaE)
 - `@video` [Complete Machine Learning in One Video | Machine Learning Tutorial For Beginners 2025 | Simplilearn](https://www.youtube.com/watch?v=PtYRUoJRE9s)
-
-#### Feature Selection
-
-Feature selection is the process of choosing a subset of the most relevant features from your original dataset. The goal is to reduce the dimensionality of the data by removing irrelevant, redundant, or noisy features. This can lead to simpler models, improved model performance (e.g., accuracy, speed), and better understanding of the underlying data.
-
-- `@article` [What is Feature Selection? | IBM](https://www.ibm.com/think/topics/feature-selection)
 
 #### Unsupervised Learning
 
@@ -468,21 +639,6 @@ Semi-supervised learning is a type of machine learning where the training data c
 
 - `@article` [What is Semi-Supervised Learning?](https://www.ibm.com/think/topics/semi-supervised-learning)
 - `@video` [What is Semi-Supervised Learning?](https://www.youtube.com/watch?v=C3Lr6Waw66g)
-
-#### Data Loading
-
-Data loading in Scikit-learn refers to the process of importing datasets into a format that can be used for machine learning tasks. This involves reading data from various sources, such as CSV files, databases, or even directly from NumPy arrays, and structuring it into a format that Scikit-learn's algorithms can understand, typically NumPy arrays or Pandas DataFrames. The loaded data is then usually split into features (independent variables) and a target variable (dependent variable) for training and evaluating machine learning models.
-
-- `@official` [Dataset loading utilities](https://scikit-learn.org/stable/datasets.html)
-- `@video` [Scikit-Learn Full Crash Course - Python Machine Learning](https://www.youtube.com/watch?v=SIEaLBXr0rk)
-
-#### Self-supervised Learning
-
-Self-supervised learning is a type of machine learning where the model learns from unlabeled data by creating its own supervisory signals. This is achieved by masking parts of the input data and training the model to predict the masked portions based on the remaining data. In essence, the data itself provides the labels, allowing the model to learn useful representations without requiring explicit human annotation.
-
-- `@article` [What Is Self-Supervised Learning?](https://www.ibm.com/think/topics/self-supervised-learning)
-- `@video` [What is Self Supervised Learning?](https://www.youtube.com/watch?v=sJzuNAisXHA)
-- `@video` [Mark Zuckerberg: AI Learns More Efficiently With Self-Supervised Learning](https://www.youtube.com/watch?v=R8DduzhT3-w)
 
 #### Train - Test Data
 
@@ -558,22 +714,6 @@ Classification is a type of supervised learning where the goal is to assign data
 
 Regression in supervised learning is a method used to predict a continuous numerical value. It works by finding the relationship between input features (independent variables) and a target variable (dependent variable). The goal is to build a model that can accurately estimate the target variable's value based on the given input features. For example, predicting house prices based on size and location is a regression problem.
 
-#### K-Nearest Neighbors (KNN)
-
-K-Nearest Neighbors (KNN) is a simple algorithm used for classifying data points based on their proximity to other data points. Given a new, unclassified data point, KNN identifies the 'K' closest data points (neighbors) from the training dataset. The class that appears most frequently among these 'K' neighbors is then assigned as the class of the new data point.
-
-- `@article` [Nearest Neighbors | scikit-learn](https://scikit-learn.org/stable/modules/neighbors.html)
-- `@article` [K-Nearest Neighbors (KNN) Classification with scikit-learn](https://www.datacamp.com/tutorial/k-nearest-neighbor-classification-scikit-learn)
-- `@video` [How to Build Your First KNN Python Model in scikit-learn (K Nearest Neighbors)](https://www.youtube.com/watch?v=Nz73vXn5afE)
-
-#### Linear Regression
-
-Linear regression is a simple method used to find the best straight line that describes the relationship between a dependent variable (the one you're trying to predict) and one or more independent variables (the ones you're using to make the prediction). It works by finding the line that minimizes the sum of the squared differences between the actual values and the values predicted by the line. This line can then be used to predict the dependent variable for new values of the independent variables.
-
-- `@article` [Linear Regression | scikit-learn](https://scikit-learn.org/stable/modules/linear_model.html)
-- `@article` [Sklearn Linear Regression: A Complete Guide with Examples](https://www.datacamp.com/tutorial/sklearn-linear-regression)
-- `@video` [Hands-On Linear Regression with Scikit-Learn in Python](https://www.youtube.com/watch?v=ukZn2RJb7TU)
-
 #### Logistic Regression
 
 Logistic Regression is a method used to predict the probability of a categorical outcome. Instead of predicting a continuous value, it predicts whether something belongs to a certain category (like yes/no, true/false, or 0/1). It does this by using a logistic function (also known as a sigmoid function) to squeeze the output of a linear equation between 0 and 1, representing the probability of belonging to that category. The model learns the best coefficients for the linear equation based on the training data.
@@ -581,14 +721,6 @@ Logistic Regression is a method used to predict the probability of a categorical
 - `@article` [Logistic Regression | scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
 - `@article` [Understanding Logistic Regression in Python](https://www.datacamp.com/tutorial/understanding-logistic-regression-python)
 - `@video` [Hands-On Machine Learning: Logistic Regression with Python and Scikit-Learn](https://m.youtube.com/watch?v=aL21Y-u0SRs&pp=0gcJCfwAo7VqN5tD)
-
-#### Polynomial Regression
-
-Polynomial regression is a type of supervised learning algorithm used when the relationship between the input features and the output variable is non-linear. Instead of fitting a straight line, it fits a polynomial equation to the data. This allows the model to capture curves and more complex relationships, potentially leading to better predictions when a linear model is insufficient. The degree of the polynomial determines the complexity of the curve that can be fitted.
-
-- `@article` [Polynomial Features | scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html)
-- `@article` [Polynomial Regression in Python using scikit-learn (with a practical example)](https://data36.com/polynomial-regression-python-scikit-learn/)
-- `@article` [Build a Polynomial Regression Model in Python using Scikit-Learn](https://medium.com/@renadalhendy/build-a-polynomial-regression-model-in-python-using-scikit-learn-1b5fd31beb02)
 
 #### Support Vector Machines
 
@@ -621,17 +753,6 @@ Unsupervised learning is a type of machine learning where the algorithm learns p
 - `@article` [Introduction to Unsupervised Learning](https://www.datacamp.com/blog/introduction-to-unsupervised-learning)
 - `@video` [Unsupervised Machine Learning Explained For Beginners](https://www.youtube.com/watch?v=yteYU_QpUxs)
 
-#### Decision Trees, Random Forest
-
-Decision Trees are a way to make predictions by learning decision rules from data features. Imagine a flowchart where each internal node represents a test on an attribute (like "Is the color red?"), each branch represents the outcome of the test, and each leaf node represents a class label (like "apple" or "banana"). Random Forests improve upon this by creating multiple decision trees on different subsets of the data and features, then combining their predictions to get a more accurate and robust result.
-
-#### ElasticNet Regularization
-
-Elastic Net is a regularization technique that combines the penalties of both L1 (Lasso) and L2 (Ridge) regularization methods. It aims to improve model performance by addressing limitations of each individual method, particularly in situations where there are many correlated features. By using a linear combination of L1 and L2 penalties, Elastic Net can perform feature selection (like Lasso) and handle multicollinearity (like Ridge) simultaneously.
-
-- `@article` [ElasticNet| scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html)
-- `@video` [https://www.youtube.com/watch?v=xl6KAAVytEk](https://www.youtube.com/watch?v=xl6KAAVytEk)
-
 #### Gradient Boosting Machines
 
 Gradient Boosting Machines are a type of ensemble learning method that combines multiple weak learners, typically decision trees, to create a strong predictive model for classification tasks. The algorithm works iteratively, with each new tree trained to correct the errors made by the previous trees. This is achieved by focusing on the instances that were misclassified in the previous iterations, effectively "boosting" the performance of the model. Popular implementations of gradient boosting include XGBoost, LightGBM, CatBoost, and the original GradientBoostingClassifier, each offering variations in regularization, tree growth strategies, and handling of categorical features.
@@ -656,21 +777,6 @@ Dimensionality reduction is the process of reducing the number of random variabl
 - `@article` [What is Dimensionality Reduction?](https://www.ibm.com/think/topics/dimensionality-reduction)
 - `@video` [Machine Learning - Dimensionality Reduction](https://www.youtube.com/watch?v=AU_hBML2H1c)
 
-#### Exclusive
-
-Exclusive clustering, also known as hard clustering, is a type of clustering where each data point can only belong to one cluster. This means there's no overlap between clusters; a data point is definitively assigned to a single group. The goal is to partition the data into distinct, non-overlapping clusters based on similarity. For example, K-Means is an exclusive clustering algorithm. It aims to partition n data points into k clusters in which each data point belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster.
-
-- `@article` [K-means | scikit-learn](https://scikit-learn.org/stable/modules/clustering.html#k-means)
-- `@article` [Unsupervised Clustering: A Guide](https://builtin.com/articles/unsupervised-clustering)
-
-#### Principal Component Analysis
-
-Principal Component Analysis (PCA) is a technique used to reduce the number of variables in a dataset while preserving the most important information. It transforms the original variables into a new set of variables called principal components, which are ordered by the amount of variance they explain. The first principal component captures the most variance, the second captures the second most, and so on. By selecting a smaller number of these principal components, you can reduce the dimensionality of the data without losing too much information.
-
-- `@article` [PCA | scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html)
-- `@article` [What is principal component analysis (PCA)?](https://www.ibm.com/think/topics/principal-component-analysis)
-- `@video` [PCA Analysis in Python Explained (Scikit - Learn)](https://www.youtube.com/watch?v=6uwa9EkUqpg)
-
 #### Overlapping
 
 Overlapping clustering allows data points to belong to multiple clusters simultaneously. Unlike traditional "hard" clustering where each point is assigned to only one cluster, overlapping clustering acknowledges that data points can exhibit characteristics of several groups. This is particularly useful when dealing with complex datasets where boundaries between clusters are not well-defined. One algorithm that implements overlapping clustering is the _Fuzzy C-Means (FCM)_ algorithm. FCM assigns a membership degree to each data point for each cluster, representing the probability of belonging to that cluster. A data point can have non-zero membership degrees for multiple clusters, indicating its partial membership in each.
@@ -690,13 +796,6 @@ Hierarchical clustering is a method of grouping data points into clusters based 
 - `@article` [Hierarchical clustering | scikit-learn](https://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering)
 - `@article` [What is Hierarchical Clustering?](https://www.ibm.com/think/topics/hierarchical-clustering)
 
-#### Probabilistic
-
-Probabilistic clustering assumes that the data is generated from a mixture of probability distributions. Instead of assigning each data point to a single cluster, it provides the probability of a data point belonging to each cluster. A common example is the Gaussian Mixture Model (GMM), where it's assumed that the data points are generated from a mixture of Gaussian distributions. Scikit-learn provides an implementation of GMM that can be used for probabilistic clustering.
-
-- `@article` [Gaussian mixture models](https://scikit-learn.org/stable/modules/mixture.html#mixture)
-- `@article` [Gaussian Mixture Model Explained](https://scikit-learn.org/stable/modules/mixture.html#mixture)
-
 ### What is Reinforcement Learning?
 
 Reinforcement learning is a type of machine learning where an agent learns to make decisions in an environment to maximize a reward. The agent interacts with the environment, takes actions, and receives feedback in the form of rewards or penalties. Through trial and error, the agent learns a policy that maps states to actions, aiming to accumulate the most reward over time.
@@ -705,13 +804,6 @@ Reinforcement learning is a type of machine learning where an agent learns to ma
 - `@article` [Resources to Learn Reinforcement Learning](https://towardsdatascience.com/best-free-courses-and-resources-to-learn-reinforcement-learning-ed6633608cb2/)
 - `@article` [https://huggingface.co/learn/deep-rl-course/unit0/introduction](https://huggingface.co/learn/deep-rl-course/unit0/introduction)
 - `@video` [Reinforcement Learning in 3 Hours | Full Course using Python](https://www.youtube.com/watch?v=Mut_u40Sqz4)
-
-#### Deep-Q Networks
-
-Deep Q-Networks (DQNs) are a type of reinforcement learning algorithm that combines Q-learning with deep neural networks. Instead of using a traditional Q-table to store Q-values (which represent the expected reward for taking a specific action in a specific state), DQNs use a neural network to approximate the Q-function. This allows DQNs to handle environments with large or continuous state spaces where a Q-table would be impractical. The neural network takes the state as input and outputs the Q-values for each possible action, enabling the agent to learn optimal policies through trial and error.
-
-- `@article` [The Deep Q-Learning Algorithm](https://huggingface.co/learn/deep-rl-course/en/unit3/deep-q-algorithm)
-- `@video` [Deep Q-Learning/Deep Q-Network (DQN) Explained | Python Pytorch Deep Reinforcement Learning](https://www.youtube.com/watch?v=EUrWGTCGzlA)
 
 #### Accuracy
 
@@ -775,21 +867,6 @@ Log Loss, also known as cross-entropy loss, quantifies the performance of a clas
 - `@article` [log_loss | scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html)
 - `@article` [Intuition behind Log-loss Score](https://towardsdatascience.com/intuition-behind-log-loss-score-4e0c9979680a/)
 
-#### Q-Learning
-
-Q-Learning is a type of reinforcement learning algorithm that aims to find the best action to take given the current state. It works by learning a "Q-function," which estimates the expected cumulative reward for taking a specific action in a particular state and following the optimal policy thereafter. This Q-function is iteratively updated based on the agent's experiences, allowing it to learn the optimal policy without needing a model of the environment.
-
-- `@article` [An Introduction to Q-Learning: A Tutorial For Beginners](https://www.datacamp.com/tutorial/introduction-q-learning-beginner-tutorial)
-- `@article` [A Gentle Introduction to Q-Learning](https://machinelearningmastery.com/a-gentle-introduction-to-q-learning/)
-- `@video` [What is Q-Learning (back to basics)](https://www.youtube.com/watch?v=nOBm4aYEYR4)
-
-#### Confusion Matrix
-
-A confusion matrix is a table that summarizes the performance of a classification model. It displays the counts of true positive, true negative, false positive, and false negative predictions, allowing for a detailed analysis of the model's accuracy and types of errors it makes. This breakdown helps in understanding where the model excels and where it struggles, providing insights beyond simple accuracy scores.
-
-- `@article` [Confusion matrix | scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
-- `@article` [What is A Confusion Matrix in Machine Learning? The Model Evaluation Tool Explained](https://www.datacamp.com/tutorial/what-is-a-confusion-matrix-in-machine-learning)
-
 ### Metrics to Evaluate
 
 Model evaluation metrics are quantitative measures used to assess the performance of a machine learning model. These metrics provide insights into how well the model is generalizing to unseen data and help in comparing different models or tuning hyperparameters. They quantify various aspects of model behavior, such as accuracy, precision, recall, and error rate, allowing data scientists to make informed decisions about model selection and deployment.
@@ -804,14 +881,6 @@ Validation techniques are methods used to estimate how well a machine learning m
 - `@article` [The 5 Stages of Machine Learning Validation](https://towardsdatascience.com/the-5-stages-of-machine-learning-validation-162193f8e5db/)
 - `@article` [What is the Difference Between Test and Validation Datasets?](https://machinelearningmastery.com/difference-test-validation-datasets/)
 - `@video` [Validating Machine Learning Model and Avoiding Common Challenges](https://www.youtube.com/watch?v=TnIh2b2Rw6%5D(https://www.youtube.com/watch?v=TnIh2b2Rw6Y))
-
-#### K-Fold Cross Validation
-
-K-Fold Cross Validation is a technique used to assess how well a machine learning model will generalize to an independent dataset. It works by dividing the available data into _k_ equally sized folds or subsets. The model is then trained _k_ times, each time using _k-1_ folds as the training set and the remaining fold as the validation set. The performance metrics from each of the _k_ iterations are then averaged to provide an overall estimate of the model's performance.
-
-- `@article` [Cross-validation: evaluating estimator performance | scikit-learn](https://scikit-learn.org/stable/modules/cross_validation.html)
-- `@article` [A Comprehensive Guide to K-Fold Cross Validation](https://www.datacamp.com/tutorial/k-fold-cross-validation)
-- `@video` [Complete Guide to Cross Validation](https://www.youtube.com/watch?v=-8s9KuNo5SA&t=925s)
 
 #### LOOCV
 
@@ -835,13 +904,6 @@ Deep learning relies heavily on specialized Python libraries that provide pre-bu
 Deep learning architectures are the specific arrangements of layers within a neural network that define how data is processed and transformed. These architectures consist of interconnected nodes (neurons) organized in layers, where each layer performs a specific computation. Different architectures are designed to excel at different tasks, such as image recognition, natural language processing, or time series analysis, by employing unique connection patterns, layer types, and activation functions.
 
 - `@article` [What is a neural network?](https://www.cloudflare.com/en-gb/learning/ai/what-is-neural-network/)
-
-#### Perceptron, Multi-layer Perceptrons
-
-A perceptron is a fundamental building block of neural networks, acting as a single-layer linear classifier. It takes several inputs, multiplies each by a weight, sums them up, and then applies an activation function to produce an output. Multi-layer perceptrons (MLPs) extend this concept by stacking multiple layers of perceptrons, including an input layer, one or more hidden layers, and an output layer, allowing for the modeling of more complex, non-linear relationships in data.
-
-- `@article` [What is Perceptron](https://www.simplilearn.com/tutorials/deep-learning-tutorial/perceptron)
-- `@video` [The Perceptron Explained](https://www.youtube.com/watch?v=i1G7PXZMnSc)
 
 #### TensorFlow
 
@@ -890,13 +952,6 @@ Backpropagation is a fundamental algorithm used to train artificial neural netwo
 - `@article` [What is backpropagation?](https://www.ibm.com/think/topics/backpropagation)
 - `@article` [Understanding Backpropagation](https://towardsdatascience.com/understanding-backpropagation-abcc509ca9d0/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 
-#### Convolution
-
-Convolution is a mathematical operation that involves sliding a filter (also known as a kernel) over an input image or feature map. At each location, the filter performs element-wise multiplication with the corresponding part of the input, and then sums the results. This sum becomes a single value in the output feature map. By sliding the filter across the entire input, the convolution operation extracts features and patterns present in the image, such as edges, textures, or shapes.
-
-- `@article` [Convolutional Neural Networks cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks)
-- `@video` [But what is a convolution?](https://www.youtube.com/watch?v=KuXjwB4LzSA)
-
 #### Pooling
 
 Pooling is a downsampling technique used in convolutional neural networks (CNNs) to reduce the spatial dimensions of feature maps. It summarizes the features present in a region of the feature map into a single value. This helps to reduce the computational cost, control overfitting, and make the network more robust to variations in the input, such as small shifts or distortions.
@@ -912,35 +967,12 @@ Convolutional Neural Networks (CNNs) are a specialized type of artificial neural
 - `@article` [An Introduction to Convolutional Neural Networks (CNNs)](https://www.datacamp.com/tutorial/introduction-to-convolutional-neural-networks-cnns)
 - `@video` [Hot Dog or Not Hot Dog – Convolutional Neural Network Course for Beginners](https://www.youtube.com/watch?v=nVhau51w6dM)
 
-#### Activation Functions
-
-Activation functions in neural networks determine the output of a node given an input or set of inputs. They introduce non-linearity into the network, allowing it to learn complex patterns and relationships in data. Without activation functions, a neural network would simply be a linear regression model, severely limiting its ability to model intricate data.
-
-- `@article` [Activation Functions in Neural Networks: How to Choose the Right One](https://towardsdatascience.com/activation-functions-in-neural-networks-how-to-choose-the-right-one-cb20414c04e5/)
-- `@article` [Neural networks: Activation functions](https://developers.google.com/machine-learning/crash-course/neural-networks/activation-functions)
-- `@video` [Activation Functions In Neural Networks Explained](https://www.youtube.com/watch?v=Fu273ovPBmQ)
-
 #### Padding
 
 Padding, in the context of convolutional neural networks, refers to adding extra layers of "pixels" or values around the input image or feature map. This is typically done with zeros (zero-padding), but other values can be used. The primary purpose of padding is to control the spatial size of the output feature maps and to manage boundary effects that arise during convolution operations. By strategically adding padding, we can preserve the original input size, prevent information loss at the edges, and improve the performance of the network.
 
 - `@article` [Padding In Convolutional Neural Networks](https://www.digitalocean.com/community/tutorials/padding-in-convolutional-neural-networks)
 - `@video` [Convolution padding and stride](https://www.youtube.com/watch?v=oDAPkZ53zKk)
-
-#### Strides
-
-In convolutional neural networks, a stride determines how many pixels the filter (or kernel) shifts horizontally and vertically during the convolution operation. A stride of 1 means the filter moves one pixel at a time, resulting in a more detailed feature map. A larger stride, like 2 or 3, causes the filter to jump over pixels, producing a smaller feature map and reducing computational cost, but potentially missing finer details in the input image.
-
-- `@article` [Padding and Stride](https://d2l.ai/chapter_convolutional-neural-networks/padding-and-strides.html)
-- `@video` [Convolution padding and stride](https://www.youtube.com/watch?v=oDAPkZ53zKk)
-
-#### Loss Functions
-
-Loss functions measure how well the network's predictions match the actual values. They quantify the difference between the predicted output and the true output for a given input. The goal during training is to minimize this loss, guiding the network to adjust its internal parameters (weights and biases) to make more accurate predictions. Different loss functions are suitable for different types of problems, such as regression or classification.
-
-- `@article` [Loss Functions and Their Use In Neural Networks](https://towardsdatascience.com/loss-functions-and-their-use-in-neural-networks-a470e703f1e9/)
-- `@article` [What is Loss Function? | IBM](https://www.ibm.com/think/topics/loss-function)
-- `@video` [Loss in a Neural Network explained](https://www.youtube.com/watch?v=Skc8nqJirJg)
 
 ### Recurrent Neural Networks
 
@@ -978,10 +1010,6 @@ LSTMs are a special kind of recurrent neural network (RNN) architecture designed
 - `@video` [Long Short-Term Memory (LSTM), Clearly Explained](https://www.youtube.com/watch?v=YCzL96nL7j0)
 - `@video` [Simple Explanation of LSTM](https://www.youtube.com/watch?v=LfnrRPFhku)
 
-#### Image & Video Recognition
-
-Convolutional Neural Networks (CNNs) are a specialized type of neural network particularly effective at processing images and videos. In image recognition, CNNs can identify objects, scenes, and faces by learning spatial hierarchies of features from pixel data. For video recognition, CNNs analyze sequences of frames to understand actions, events, and even predict future occurrences. This is achieved by extracting relevant spatial and temporal features, enabling applications like video surveillance, autonomous driving, and content analysis.
-
 #### Image Classification
 
 Convolutional Neural Networks (CNNs) are commonly used for image classification tasks. They work by automatically learning relevant features from images through convolutional layers, which detect patterns like edges and textures. These learned features are then used to classify the image into different categories, such as identifying objects like cats, dogs, or cars. CNNs excel at this because they can handle the high dimensionality of image data and are robust to variations in object position, scale, and lighting.
@@ -993,13 +1021,6 @@ Developed by Google researchers, the attention mechanisms allow a neural network
 - `@article` [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 - `@article` [What is an attention mechanism?](https://www.ibm.com/think/topics/attention-mechanism)
 - `@video` [Attention mechanism: Overview](https://www.youtube.com/watch?v=fjJOgb-E41w)
-
-#### Self-Attention
-
-Self-attention is a mechanism that allows a model to focus on different parts of the input sequence when processing it. Instead of treating each element in the sequence independently, self-attention calculates a weighted sum of all elements, where the weights are determined by the relationships between the elements themselves. This enables the model to capture dependencies and contextual information within the input sequence, regardless of their distance from each other.
-
-- `@article` [What is self-attention?](https://www.ibm.com/think/topics/self-attention)
-- `@video` [Why is Self Attention called "Self"? | Self Attention Vs Luong Attention in Depth Lecture](https://www.youtube.com/watch?v=o4ZVA0TuDRg)
 
 #### Image Segmentation
 
@@ -1013,10 +1034,6 @@ Transformers are a type of neural network architecture that rely on attention me
 - `@article` [What is a Transformer Model?](https://www.ibm.com/think/topics/transformer-model)
 - `@article` [How Transformers Work: A Detailed Exploration of Transformer Architecture](https://www.datacamp.com/tutorial/how-transformers-work)
 - `@video` [Transformers, explained: Understand the model behind GPT, BERT, and T5](https://www.youtube.com/watch?v=SZorAJ4I-sA&t)
-
-#### Recommendation Systems
-
-Convolutional Neural Networks (CNNs), typically used for image processing, can also enhance recommendation systems. They do this by extracting features from user-item interaction data, like purchase history or ratings. For example, a CNN can analyze a matrix representing user preferences for different movie genres to identify patterns. These patterns help predict what movies a user might enjoy, even if they haven't explicitly rated them. By learning these complex relationships, CNNs can provide more personalized and accurate recommendations.
 
 #### Multi-head Attention
 
@@ -1072,22 +1089,3 @@ Lemmatization is a text normalization technique in natural language processing u
 
 - `@article` [What Are Stemming and Lemmatization?](https://www.ibm.com/think/topics/stemming-lemmatization)
 - `@article` [Stemming, Lemmatization- Which One is Worth Going For?](https://towardsdatascience.com/stemming-lemmatization-which-one-is-worth-going-for-77e6ec01ad9c/)
-
-#### Embeddings
-
-Embeddings are a way to represent words, phrases, or even entire documents as numerical vectors in a high-dimensional space. The goal is to capture the semantic meaning of the text, so that words with similar meanings are located close to each other in the vector space. This allows machine learning models to understand relationships between words and perform tasks like text classification, sentiment analysis, and machine translation more effectively.
-
-- `@article` [Getting Started With Embeddings](https://huggingface.co/blog/getting-started-with-embeddings)
-- `@article` [A Guide on Word Embeddings in NLP](https://www.turing.com/kb/guide-on-word-embeddings-in-nlp)
-
-#### Attention Models
-
-Attention models in natural language processing allow a neural network to focus on specific parts of the input sequence when producing an output. Instead of relying on a fixed-length vector representation of the entire input, these models learn to assign weights to different input elements, indicating their relevance to the current output. This mechanism enables the model to selectively attend to the most important information, improving performance in tasks like machine translation and text summarization.
-
-- `@article` [What is an attention mechanism?](https://www.ibm.com/think/topics/attention-mechanism)
-
-#### Stemming
-
-Stemming is a text normalization technique in natural language processing that reduces words to their root or base form, known as the stem. This is achieved by removing suffixes (like "-ing", "-ed", "-s") from words. The goal is to treat words with similar meanings as the same, even if they have slightly different forms, which helps to simplify text analysis and improve the efficiency of certain NLP tasks.
-
-- `@article` [What are stemming and lemmatization?](https://www.ibm.com/think/topics/stemming-lemmatization)

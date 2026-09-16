@@ -80,12 +80,7 @@
       }
      ],
      "file": "introduction@jrH1qE6EnFXL4fTyYU8gR.md"
-    }
-   ]
-  },
-  {
-   "heading": "Common Terminology",
-   "nodes": [
+    },
     {
      "id": "43drPbTwPqJQPyzwYUdBT",
      "type": "subtopic",
@@ -111,367 +106,6 @@
      "file": "what-is-prompt-engineering@43drPbTwPqJQPyzwYUdBT.md"
     },
     {
-     "id": "pamV5Z8DRKk2ioZbg6QVK",
-     "type": "subtopic",
-     "label": "LLM",
-     "body": "Large Language Models (LLMs) are AI systems trained on vast text data to understand and generate human-like language. They work as prediction engines, analyzing input and predicting the next most likely token. LLMs perform tasks like text generation, translation, summarization, and Q&A. Understanding token processing is key to effective prompt engineering.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "LLM - Anthropic Glossary",
-       "url": "https://platform.claude.com/docs/en/about-claude/glossary"
-      },
-      {
-       "kind": "article",
-       "title": "Differences Between Chatbots and LLMs - LearnPrompting",
-       "url": "https://learnprompting.org/docs/basics/chatbot_basics"
-      }
-     ],
-     "file": "llm@pamV5Z8DRKk2ioZbg6QVK.md"
-    },
-    {
-     "id": "NPcaSEteeEA5g22wQ7nL_",
-     "type": "subtopic",
-     "label": "Tokens",
-     "body": "Tokens are fundamental units of text that LLMs process, created by breaking down text into smaller components like words, subwords, or characters. Understanding tokens is crucial because models predict the next token in sequences, API costs are based on token count, and models have maximum token limits for input and output.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Understanding tokens - Microsoft Learn",
-       "url": "https://learn.microsoft.com/en-us/dotnet/ai/conceptual/understanding-tokens"
-      },
-      {
-       "kind": "article",
-       "title": "What Are Tokens in LLMs and Why They Matter - LLM Guides",
-       "url": "https://llmguides.ai/learn/what-are-tokens/"
-      }
-     ],
-     "file": "tokens@NPcaSEteeEA5g22wQ7nL_.md"
-    },
-    {
-     "id": "b-Xtkv6rt8QgzJXSShOX-",
-     "type": "subtopic",
-     "label": "Context Window",
-     "body": "Context window refers to the maximum number of tokens an LLM can process in a single interaction, including both input prompt and generated output. When exceeded, older parts are truncated. Understanding this constraint is crucial for prompt engineering—you must balance providing sufficient context with staying within token limits.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Context windows - Anthropic",
-       "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows"
-      },
-      {
-       "kind": "article",
-       "title": "What is a context window? - IBM",
-       "url": "https://www.ibm.com/think/topics/context-window"
-      }
-     ],
-     "file": "context-window@b-Xtkv6rt8QgzJXSShOX-.md"
-    }
-   ]
-  },
-  {
-   "heading": "Models offered by ____",
-   "nodes": [
-    {
-     "id": "Yb5cQiV2ETxPbBYCLOpt2",
-     "type": "subtopic",
-     "label": "OpenAI",
-     "body": "OpenAI develops leading language models including GPT-5.4, o3, and Codex, setting industry standards for prompt engineering. Their API provides access to frontier models with configurable parameters, and their Agents SDK enables building autonomous AI systems. The OpenAI Cookbook and platform documentation are key references for prompt engineering best practices.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "OpenAI API Documentation",
-       "url": "https://developers.openai.com/api/docs"
-      },
-      {
-       "kind": "official",
-       "title": "OpenAI Cookbook (GitHub)",
-       "url": "https://github.com/openai/openai-cookbook"
-      }
-     ],
-     "file": "openai@Yb5cQiV2ETxPbBYCLOpt2.md"
-    },
-    {
-     "id": "o-6UKLZ6oCRbAKgRjH2uI",
-     "type": "subtopic",
-     "label": "Google",
-     "body": "Google develops Gemini, a family of multimodal AI models. The latest flagship, Gemini 3, supports text, image, video, and audio through the Gemini API and Google AI Studio. Google also offers specialized models including Imagen for image generation, Veo for video, and Lyria 3 for music. Their research has advanced many prompt engineering techniques, including Chain of Thought reasoning.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Google AI Studio",
-       "url": "https://ai.google.dev/"
-      },
-      {
-       "kind": "official",
-       "title": "Gemini API Documentation",
-       "url": "https://ai.google.dev/gemini-api/docs"
-      }
-     ],
-     "file": "google@o-6UKLZ6oCRbAKgRjH2uI.md"
-    },
-    {
-     "id": "SWDa3Su3VS815WQbvvNsa",
-     "type": "subtopic",
-     "label": "Hallucination",
-     "body": "Hallucination in LLMs refers to generating plausible-sounding but factually incorrect or fabricated information. This occurs when models fill knowledge gaps or present uncertain information with apparent certainty. Mitigation techniques include requesting sources, asking for confidence levels, providing context, and always verifying critical information independently.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Reduce hallucinations - Anthropic",
-       "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
-      },
-      {
-       "kind": "article",
-       "title": "What are AI hallucinations? - IBM",
-       "url": "https://www.ibm.com/think/topics/ai-hallucinations"
-      }
-     ],
-     "file": "hallucination@SWDa3Su3VS815WQbvvNsa.md"
-    },
-    {
-     "id": "Pw5LWA9vNRY0N2M0FW16f",
-     "type": "subtopic",
-     "label": "Agents",
-     "body": "AI agents are autonomous systems that use LLMs to reason, plan, and take actions to achieve specific goals. They combine language understanding with tool usage, memory, and decision-making to perform complex, multi-step tasks. Agents can interact with external APIs and services while maintaining context across interactions.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Tool use overview - Anthropic",
-       "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
-      },
-      {
-       "kind": "article",
-       "title": "Introduction to AI Agents - DAIR.AI",
-       "url": "https://www.promptingguide.ai/agents/introduction"
-      }
-     ],
-     "file": "agents@Pw5LWA9vNRY0N2M0FW16f.md"
-    },
-    {
-     "id": "V8pDOwrRKKcHBTd4qlSsH",
-     "type": "subtopic",
-     "label": "Anthropic",
-     "body": "Anthropic develops Claude, a family of large language models focused on safety and helpfulness. The current lineup includes Claude Opus 4.7 (most capable, for complex reasoning and agentic coding), Claude Sonnet 4.6 (best speed-intelligence balance), and Claude Haiku 4.5 (fastest, near-frontier intelligence). All models support extended thinking, vision, and 1M token context windows.",
-     "resources": [
-      {
-       "kind": "roadmap",
-       "title": "Visit the Dedicated Claude Code Roadmap",
-       "url": "https://roadmap.sh/claude-code"
-      },
-      {
-       "kind": "official",
-       "title": "Claude API Documentation",
-       "url": "https://docs.anthropic.com/en/docs/intro"
-      },
-      {
-       "kind": "official",
-       "title": "Anthropic Research",
-       "url": "https://www.anthropic.com/research"
-      }
-     ],
-     "file": "anthropic@V8pDOwrRKKcHBTd4qlSsH.md"
-    },
-    {
-     "id": "Td2YzDFT4LPGDw8JMmQSQ",
-     "type": "subtopic",
-     "label": "Meta",
-     "body": "Meta develops the Llama family of open-source large language models. The latest release, Llama 4, comes in Maverick and Scout variants with strong multimodal and long-context capabilities. Llama models are freely available for research and commercial use, providing transparency in training data and architecture without vendor lock-in.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Llama",
-       "url": "https://www.llama.com/"
-      },
-      {
-       "kind": "opensource",
-       "title": "Llama Models (GitHub)",
-       "url": "https://github.com/meta-llama/llama-models"
-      }
-     ],
-     "file": "meta@Td2YzDFT4LPGDw8JMmQSQ.md"
-    },
-    {
-     "id": "6W_ONYREbXHwPigoDx1cW",
-     "type": "subtopic",
-     "label": "Prompt Injection",
-     "body": "Prompt injection is a security vulnerability where malicious users manipulate LLM inputs to override intended behavior, bypass safety measures, or extract sensitive information. Attackers embed instructions within data to make models ignore original prompts and follow malicious commands. Mitigation requires input sanitization, injection-resistant prompt design, and proper security boundaries.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Mitigate jailbreaks and prompt injections - Anthropic",
-       "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks"
-      },
-      {
-       "kind": "official",
-       "title": "LLM01:2025 Prompt Injection - OWASP",
-       "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
-      },
-      {
-       "kind": "course",
-       "title": "Prompt Injection: Hands-on Exercise Against a Live Assistant",
-       "url": "https://ransomleak.com/exercises/clawdbot-prompt-injection/"
-      },
-      {
-       "kind": "video",
-       "title": "What Is a Prompt Injection Attack?",
-       "url": "https://www.youtube.com/watch?v=jrHRe9lSqqA"
-      }
-     ],
-     "file": "prompt-injection@6W_ONYREbXHwPigoDx1cW.md"
-    },
-    {
-     "id": "JgigM7HvmNOuKnp60v1Ce",
-     "type": "topic",
-     "label": "Sampling Parameters",
-     "body": "Sampling parameters (temperature, top-K, top-P) control how LLMs select tokens from probability distributions, determining output randomness and creativity. These parameters interact: at extreme settings, one can override others (temperature 0 makes top-K/top-P irrelevant). A balanced starting point is temperature 0.2, top-P 0.95, top-K 30 for coherent but creative results. Understanding their interactions is crucial for optimal prompting—use temperature 0 for factual tasks, higher values for creativity, and combine settings strategically based on your specific use case.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "LLM Settings (Temperature, Top-K, Top-P) - DAIR.AI",
-       "url": "https://www.promptingguide.ai/introduction/settings"
-      }
-     ],
-     "file": "sampling-parameters@JgigM7HvmNOuKnp60v1Ce.md"
-    },
-    {
-     "id": "3wshuH7_DXgbhxsLzzI4D",
-     "type": "subtopic",
-     "label": "xAI",
-     "body": "xAI develops Grok, a conversational AI model with real-time web access and integration with X (Twitter). The latest model, Grok 4.20, features a 2M token context window, agentic tool calling, and industry-leading low hallucination rates. Grok focuses on delivering truthful, unfiltered responses with strict prompt adherence.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "xAI Documentation",
-       "url": "https://docs.x.ai/"
-      },
-      {
-       "kind": "official",
-       "title": "xAI API Console",
-       "url": "https://console.x.ai"
-      }
-     ],
-     "file": "xai@3wshuH7_DXgbhxsLzzI4D.md"
-    },
-    {
-     "id": "yfsjW1eze8mWT0iHxv078",
-     "type": "subtopic",
-     "label": "Model Weights / Parameters",
-     "body": "Model weights and parameters are the learned values that define an LLM's behavior and knowledge. Parameters are the trainable variables adjusted during training, while weights represent their final values. Understanding parameter count helps gauge model capabilities - larger models typically have more parameters and better performance but require more computational resources.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What are LLM parameters? - IBM",
-       "url": "https://www.ibm.com/think/topics/llm-parameters"
-      }
-     ],
-     "file": "model-weights--parameters@yfsjW1eze8mWT0iHxv078.md"
-    },
-    {
-     "id": "iMwg-I76-Tg5dhu8DGO6U",
-     "type": "subtopic",
-     "label": "Temperature",
-     "body": "Temperature controls the randomness in token selection during text generation. Lower values (0-0.3) produce deterministic, factual outputs. Medium values (0.5-0.7) balance creativity and coherence. Higher values (0.8-1.0) generate creative, diverse outputs but may be less coherent. Use low temperature for math/facts, high for creative writing.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is LLM Temperature? - IBM",
-       "url": "https://www.ibm.com/think/topics/llm-temperature"
-      },
-      {
-       "kind": "article",
-       "title": "Temperature - LLM Parameter Guide - Vellum",
-       "url": "https://www.vellum.ai/llm-parameters/temperature"
-      }
-     ],
-     "file": "temperature@iMwg-I76-Tg5dhu8DGO6U.md"
-    },
-    {
-     "id": "Ke5GT163k_ek9SzbcbBGE",
-     "type": "subtopic",
-     "label": "Fine-Tuning vs Prompt Engg.",
-     "body": "Fine-tuning trains models on specific data to specialize behavior, while prompt engineering achieves customization through input design without model modification. Prompt engineering is faster, cheaper, and more accessible. Fine-tuning offers deeper customization but requires significant resources and expertise.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "When to use prompt engineering vs. fine-tuning - TechTarget",
-       "url": "https://www.techtarget.com/searchEnterpriseAI/tip/Prompt-engineering-vs-fine-tuning-Whats-the-difference"
-      },
-      {
-       "kind": "article",
-       "title": "Prompt Engineering vs Fine Tuning: When to Use Each - Codecademy",
-       "url": "https://www.codecademy.com/article/prompt-engineering-vs-fine-tuning"
-      }
-     ],
-     "file": "fine-tuning-vs-prompt-engg@Ke5GT163k_ek9SzbcbBGE.md"
-    },
-    {
-     "id": "FF8ai1v5GDzxXLQhpwuPj",
-     "type": "subtopic",
-     "label": "Top-K",
-     "body": "Top-K restricts token selection to the K most likely tokens from the probability distribution. Low values (1-10) produce conservative, factual outputs. Medium values (20-50) balance creativity and quality. High values (50+) enable diverse, creative outputs. Use low K for technical tasks, high K for creative writing.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Gemini API Prompting Strategies - Google",
-       "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies"
-      },
-      {
-       "kind": "article",
-       "title": "Top K - LLM Parameter Guide - Vellum",
-       "url": "https://www.vellum.ai/llm-parameters/top-k"
-      }
-     ],
-     "file": "top-k@FF8ai1v5GDzxXLQhpwuPj.md"
-    },
-    {
-     "id": "-G1U1jDN5st1fTUtQmMl1",
-     "type": "subtopic",
-     "label": "Top-P",
-     "body": "Top-P (nucleus sampling) selects tokens from the smallest set whose cumulative probability exceeds threshold P. Unlike Top-K's fixed number, Top-P dynamically adjusts based on probability distribution. Low values (0.1-0.5) produce focused outputs, medium (0.6-0.9) balance creativity and coherence, high (0.9-0.99) enable creative diversity.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Top P - LLM Parameter Guide - Vellum",
-       "url": "https://www.vellum.ai/llm-parameters/top-p"
-      }
-     ],
-     "file": "top-p@-G1U1jDN5st1fTUtQmMl1.md"
-    },
-    {
-     "id": "Sj1CMZzZp8kF-LuHcd_UU",
-     "type": "subtopic",
-     "label": "AI vs AGI",
-     "body": "AI (Artificial Intelligence) refers to systems that perform specific tasks intelligently, while AGI (Artificial General Intelligence) represents hypothetical AI with human-level reasoning across all domains. Current LLMs are narrow AI - powerful at language tasks but lacking true understanding or general intelligence like AGI would possess.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Artificial general intelligence - Wikipedia",
-       "url": "https://en.wikipedia.org/wiki/Artificial_general_intelligence"
-      }
-     ],
-     "file": "ai-vs-agi@Sj1CMZzZp8kF-LuHcd_UU.md"
-    },
-    {
-     "id": "gxydtFKmnXNY9I5kpTwjP",
-     "type": "subtopic",
-     "label": "RAG",
-     "body": "Retrieval-Augmented Generation (RAG) combines LLMs with external knowledge retrieval to ground responses in verified, current information. RAG retrieves relevant documents before generating responses, reducing hallucinations and enabling access to information beyond the model's training cutoff. This approach improves accuracy and provides source attribution.",
-     "resources": [
-      {
-       "kind": "opensource",
-       "title": "Introduction to RAG - LlamaIndex",
-       "url": "https://developers.llamaindex.ai/python/framework/understanding/rag/"
-      },
-      {
-       "kind": "article",
-       "title": "Retrieval Augmented Generation (RAG) - DAIR.AI",
-       "url": "https://www.promptingguide.ai/techniques/rag"
-      }
-     ],
-     "file": "rag@gxydtFKmnXNY9I5kpTwjP.md"
-    },
-    {
      "id": "wSf7Zr8ZYBuKWX0GQX6J3",
      "type": "topic",
      "label": "Output Control",
@@ -489,44 +123,6 @@
       }
      ],
      "file": "output-control@wSf7Zr8ZYBuKWX0GQX6J3.md"
-    },
-    {
-     "id": "vK9Gf8dGu2UvvJJhhuHG9",
-     "type": "subtopic",
-     "label": "Max Tokens",
-     "body": "Max tokens setting controls the maximum number of tokens an LLM can generate in response, directly impacting computation cost, response time, and energy consumption. Setting lower limits doesn't make models more concise—it simply stops generation when the limit is reached. This parameter is crucial for techniques like ReAct where models might generate unnecessary tokens after the desired response. Balancing max tokens involves considering cost efficiency, response completeness, and application requirements while ensuring critical information isn't truncated.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Token Counting - Anthropic",
-       "url": "https://platform.claude.com/docs/en/build-with-claude/token-counting"
-      },
-      {
-       "kind": "article",
-       "title": "Max Tokens - LLM Parameter Guide - Vellum",
-       "url": "https://www.vellum.ai/llm-parameters/max-tokens"
-      }
-     ],
-     "file": "max-tokens@vK9Gf8dGu2UvvJJhhuHG9.md"
-    },
-    {
-     "id": "v3CylRlojeltcwnE76j8Q",
-     "type": "subtopic",
-     "label": "Stop Sequences",
-     "body": "Stop sequences are specific strings that signal the LLM to stop generating text when encountered, providing precise control over output length and format. Common examples include newlines, periods, or custom markers like \"###\" or \"END\". This parameter is particularly useful for structured outputs, preventing models from generating beyond intended boundaries. Stop sequences are essential for ReAct prompting and other scenarios where you need clean, precisely bounded responses. They offer more control than max tokens by stopping at logical breakpoints rather than arbitrary token limits.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Handling Stop Reasons - Anthropic",
-       "url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons"
-      },
-      {
-       "kind": "article",
-       "title": "Stop Sequence - LLM Parameter Guide - Vellum",
-       "url": "https://www.vellum.ai/llm-parameters/stop-sequence"
-      }
-     ],
-     "file": "stop-sequences@v3CylRlojeltcwnE76j8Q.md"
     },
     {
      "id": "j-PWO-ZmF9Oi9A5bwMRto",
@@ -556,48 +152,6 @@
       }
      ],
      "file": "structured-outputs@j-PWO-ZmF9Oi9A5bwMRto.md"
-    },
-    {
-     "id": "g8ylIg4Zh567u-E3yVVY4",
-     "type": "topic",
-     "label": "Repetition Penalties",
-     "body": "Repetition penalties discourage LLMs from repeating words or phrases by reducing the probability of selecting previously used tokens. This includes frequency penalty (scales with usage count) and presence penalty (applies equally to any used token). These parameters improve output quality by promoting vocabulary diversity and preventing redundant phrasing.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Tips for Writing Better Prompts - LearnPrompting",
-       "url": "https://learnprompting.org/docs/basics/ai_prompt_tips"
-      }
-     ],
-     "file": "repetition-penalties@g8ylIg4Zh567u-E3yVVY4.md"
-    },
-    {
-     "id": "YIVNjkmTOY61VmL0md9Pj",
-     "type": "subtopic",
-     "label": "Frequency Penalty",
-     "body": "Frequency penalty reduces token probability based on how frequently they have appeared in the text, with higher penalties for more frequent tokens. This prevents excessive repetition and encourages varied language use. The penalty scales with usage frequency, making overused words less likely to be selected again, improving content diversity.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Frequency Penalty - LLM Parameter Guide - Vellum",
-       "url": "https://www.vellum.ai/llm-parameters/frequency-penalty"
-      }
-     ],
-     "file": "frequency-penalty@YIVNjkmTOY61VmL0md9Pj.md"
-    },
-    {
-     "id": "WpO8V5caudySVehOcuDvK",
-     "type": "subtopic",
-     "label": "Presence Penalty",
-     "body": "Presence penalty reduces the likelihood of repeating tokens that have already appeared in the text, encouraging diverse vocabulary usage. Unlike frequency penalty which considers how often tokens appear, presence penalty applies the same penalty to any previously used token, promoting varied content and creativity.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Presence Penalty - LLM Parameter Guide - Vellum",
-       "url": "https://www.vellum.ai/llm-parameters/presence-penalty"
-      }
-     ],
-     "file": "presence-penalty@WpO8V5caudySVehOcuDvK.md"
     },
     {
      "id": "2MboHh8ugkoH8dSd9d4Mk",
@@ -726,11 +280,468 @@
    ]
   },
   {
-   "heading": "System / Role / Contextual",
-   "nodes": []
+   "heading": "Common Terminology",
+   "nodes": [
+    {
+     "id": "pamV5Z8DRKk2ioZbg6QVK",
+     "type": "subtopic",
+     "label": "LLM",
+     "body": "Large Language Models (LLMs) are AI systems trained on vast text data to understand and generate human-like language. They work as prediction engines, analyzing input and predicting the next most likely token. LLMs perform tasks like text generation, translation, summarization, and Q&A. Understanding token processing is key to effective prompt engineering.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "LLM - Anthropic Glossary",
+       "url": "https://platform.claude.com/docs/en/about-claude/glossary"
+      },
+      {
+       "kind": "article",
+       "title": "Differences Between Chatbots and LLMs - LearnPrompting",
+       "url": "https://learnprompting.org/docs/basics/chatbot_basics"
+      }
+     ],
+     "file": "llm@pamV5Z8DRKk2ioZbg6QVK.md"
+    },
+    {
+     "id": "NPcaSEteeEA5g22wQ7nL_",
+     "type": "subtopic",
+     "label": "Tokens",
+     "body": "Tokens are fundamental units of text that LLMs process, created by breaking down text into smaller components like words, subwords, or characters. Understanding tokens is crucial because models predict the next token in sequences, API costs are based on token count, and models have maximum token limits for input and output.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Understanding tokens - Microsoft Learn",
+       "url": "https://learn.microsoft.com/en-us/dotnet/ai/conceptual/understanding-tokens"
+      },
+      {
+       "kind": "article",
+       "title": "What Are Tokens in LLMs and Why They Matter - LLM Guides",
+       "url": "https://llmguides.ai/learn/what-are-tokens/"
+      }
+     ],
+     "file": "tokens@NPcaSEteeEA5g22wQ7nL_.md"
+    },
+    {
+     "id": "b-Xtkv6rt8QgzJXSShOX-",
+     "type": "subtopic",
+     "label": "Context Window",
+     "body": "Context window refers to the maximum number of tokens an LLM can process in a single interaction, including both input prompt and generated output. When exceeded, older parts are truncated. Understanding this constraint is crucial for prompt engineering—you must balance providing sufficient context with staying within token limits.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Context windows - Anthropic",
+       "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows"
+      },
+      {
+       "kind": "article",
+       "title": "What is a context window? - IBM",
+       "url": "https://www.ibm.com/think/topics/context-window"
+      }
+     ],
+     "file": "context-window@b-Xtkv6rt8QgzJXSShOX-.md"
+    },
+    {
+     "id": "SWDa3Su3VS815WQbvvNsa",
+     "type": "subtopic",
+     "label": "Hallucination",
+     "body": "Hallucination in LLMs refers to generating plausible-sounding but factually incorrect or fabricated information. This occurs when models fill knowledge gaps or present uncertain information with apparent certainty. Mitigation techniques include requesting sources, asking for confidence levels, providing context, and always verifying critical information independently.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Reduce hallucinations - Anthropic",
+       "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+      },
+      {
+       "kind": "article",
+       "title": "What are AI hallucinations? - IBM",
+       "url": "https://www.ibm.com/think/topics/ai-hallucinations"
+      }
+     ],
+     "file": "hallucination@SWDa3Su3VS815WQbvvNsa.md"
+    },
+    {
+     "id": "Pw5LWA9vNRY0N2M0FW16f",
+     "type": "subtopic",
+     "label": "Agents",
+     "body": "AI agents are autonomous systems that use LLMs to reason, plan, and take actions to achieve specific goals. They combine language understanding with tool usage, memory, and decision-making to perform complex, multi-step tasks. Agents can interact with external APIs and services while maintaining context across interactions.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Tool use overview - Anthropic",
+       "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
+      },
+      {
+       "kind": "article",
+       "title": "Introduction to AI Agents - DAIR.AI",
+       "url": "https://www.promptingguide.ai/agents/introduction"
+      }
+     ],
+     "file": "agents@Pw5LWA9vNRY0N2M0FW16f.md"
+    },
+    {
+     "id": "6W_ONYREbXHwPigoDx1cW",
+     "type": "subtopic",
+     "label": "Prompt Injection",
+     "body": "Prompt injection is a security vulnerability where malicious users manipulate LLM inputs to override intended behavior, bypass safety measures, or extract sensitive information. Attackers embed instructions within data to make models ignore original prompts and follow malicious commands. Mitigation requires input sanitization, injection-resistant prompt design, and proper security boundaries.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Mitigate jailbreaks and prompt injections - Anthropic",
+       "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks"
+      },
+      {
+       "kind": "official",
+       "title": "LLM01:2025 Prompt Injection - OWASP",
+       "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
+      },
+      {
+       "kind": "course",
+       "title": "Prompt Injection: Hands-on Exercise Against a Live Assistant",
+       "url": "https://ransomleak.com/exercises/clawdbot-prompt-injection/"
+      },
+      {
+       "kind": "video",
+       "title": "What Is a Prompt Injection Attack?",
+       "url": "https://www.youtube.com/watch?v=jrHRe9lSqqA"
+      }
+     ],
+     "file": "prompt-injection@6W_ONYREbXHwPigoDx1cW.md"
+    },
+    {
+     "id": "yfsjW1eze8mWT0iHxv078",
+     "type": "subtopic",
+     "label": "Model Weights / Parameters",
+     "body": "Model weights and parameters are the learned values that define an LLM's behavior and knowledge. Parameters are the trainable variables adjusted during training, while weights represent their final values. Understanding parameter count helps gauge model capabilities - larger models typically have more parameters and better performance but require more computational resources.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What are LLM parameters? - IBM",
+       "url": "https://www.ibm.com/think/topics/llm-parameters"
+      }
+     ],
+     "file": "model-weights--parameters@yfsjW1eze8mWT0iHxv078.md"
+    },
+    {
+     "id": "Ke5GT163k_ek9SzbcbBGE",
+     "type": "subtopic",
+     "label": "Fine-Tuning vs Prompt Engg.",
+     "body": "Fine-tuning trains models on specific data to specialize behavior, while prompt engineering achieves customization through input design without model modification. Prompt engineering is faster, cheaper, and more accessible. Fine-tuning offers deeper customization but requires significant resources and expertise.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "When to use prompt engineering vs. fine-tuning - TechTarget",
+       "url": "https://www.techtarget.com/searchEnterpriseAI/tip/Prompt-engineering-vs-fine-tuning-Whats-the-difference"
+      },
+      {
+       "kind": "article",
+       "title": "Prompt Engineering vs Fine Tuning: When to Use Each - Codecademy",
+       "url": "https://www.codecademy.com/article/prompt-engineering-vs-fine-tuning"
+      }
+     ],
+     "file": "fine-tuning-vs-prompt-engg@Ke5GT163k_ek9SzbcbBGE.md"
+    },
+    {
+     "id": "Sj1CMZzZp8kF-LuHcd_UU",
+     "type": "subtopic",
+     "label": "AI vs AGI",
+     "body": "AI (Artificial Intelligence) refers to systems that perform specific tasks intelligently, while AGI (Artificial General Intelligence) represents hypothetical AI with human-level reasoning across all domains. Current LLMs are narrow AI - powerful at language tasks but lacking true understanding or general intelligence like AGI would possess.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Artificial general intelligence - Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Artificial_general_intelligence"
+      }
+     ],
+     "file": "ai-vs-agi@Sj1CMZzZp8kF-LuHcd_UU.md"
+    },
+    {
+     "id": "gxydtFKmnXNY9I5kpTwjP",
+     "type": "subtopic",
+     "label": "RAG",
+     "body": "Retrieval-Augmented Generation (RAG) combines LLMs with external knowledge retrieval to ground responses in verified, current information. RAG retrieves relevant documents before generating responses, reducing hallucinations and enabling access to information beyond the model's training cutoff. This approach improves accuracy and provides source attribution.",
+     "resources": [
+      {
+       "kind": "opensource",
+       "title": "Introduction to RAG - LlamaIndex",
+       "url": "https://developers.llamaindex.ai/python/framework/understanding/rag/"
+      },
+      {
+       "kind": "article",
+       "title": "Retrieval Augmented Generation (RAG) - DAIR.AI",
+       "url": "https://www.promptingguide.ai/techniques/rag"
+      }
+     ],
+     "file": "rag@gxydtFKmnXNY9I5kpTwjP.md"
+    }
+   ]
   },
   {
-   "heading": "Use LLM to generate Prompts",
+   "heading": "Models offered by ____",
+   "nodes": [
+    {
+     "id": "Yb5cQiV2ETxPbBYCLOpt2",
+     "type": "subtopic",
+     "label": "OpenAI",
+     "body": "OpenAI develops leading language models including GPT-5.4, o3, and Codex, setting industry standards for prompt engineering. Their API provides access to frontier models with configurable parameters, and their Agents SDK enables building autonomous AI systems. The OpenAI Cookbook and platform documentation are key references for prompt engineering best practices.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "OpenAI API Documentation",
+       "url": "https://developers.openai.com/api/docs"
+      },
+      {
+       "kind": "official",
+       "title": "OpenAI Cookbook (GitHub)",
+       "url": "https://github.com/openai/openai-cookbook"
+      }
+     ],
+     "file": "openai@Yb5cQiV2ETxPbBYCLOpt2.md"
+    },
+    {
+     "id": "o-6UKLZ6oCRbAKgRjH2uI",
+     "type": "subtopic",
+     "label": "Google",
+     "body": "Google develops Gemini, a family of multimodal AI models. The latest flagship, Gemini 3, supports text, image, video, and audio through the Gemini API and Google AI Studio. Google also offers specialized models including Imagen for image generation, Veo for video, and Lyria 3 for music. Their research has advanced many prompt engineering techniques, including Chain of Thought reasoning.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Google AI Studio",
+       "url": "https://ai.google.dev/"
+      },
+      {
+       "kind": "official",
+       "title": "Gemini API Documentation",
+       "url": "https://ai.google.dev/gemini-api/docs"
+      }
+     ],
+     "file": "google@o-6UKLZ6oCRbAKgRjH2uI.md"
+    },
+    {
+     "id": "V8pDOwrRKKcHBTd4qlSsH",
+     "type": "subtopic",
+     "label": "Anthropic",
+     "body": "Anthropic develops Claude, a family of large language models focused on safety and helpfulness. The current lineup includes Claude Opus 4.7 (most capable, for complex reasoning and agentic coding), Claude Sonnet 4.6 (best speed-intelligence balance), and Claude Haiku 4.5 (fastest, near-frontier intelligence). All models support extended thinking, vision, and 1M token context windows.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit the Dedicated Claude Code Roadmap",
+       "url": "https://roadmap.sh/claude-code"
+      },
+      {
+       "kind": "official",
+       "title": "Claude API Documentation",
+       "url": "https://docs.anthropic.com/en/docs/intro"
+      },
+      {
+       "kind": "official",
+       "title": "Anthropic Research",
+       "url": "https://www.anthropic.com/research"
+      }
+     ],
+     "file": "anthropic@V8pDOwrRKKcHBTd4qlSsH.md"
+    },
+    {
+     "id": "Td2YzDFT4LPGDw8JMmQSQ",
+     "type": "subtopic",
+     "label": "Meta",
+     "body": "Meta develops the Llama family of open-source large language models. The latest release, Llama 4, comes in Maverick and Scout variants with strong multimodal and long-context capabilities. Llama models are freely available for research and commercial use, providing transparency in training data and architecture without vendor lock-in.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Llama",
+       "url": "https://www.llama.com/"
+      },
+      {
+       "kind": "opensource",
+       "title": "Llama Models (GitHub)",
+       "url": "https://github.com/meta-llama/llama-models"
+      }
+     ],
+     "file": "meta@Td2YzDFT4LPGDw8JMmQSQ.md"
+    },
+    {
+     "id": "3wshuH7_DXgbhxsLzzI4D",
+     "type": "subtopic",
+     "label": "xAI",
+     "body": "xAI develops Grok, a conversational AI model with real-time web access and integration with X (Twitter). The latest model, Grok 4.20, features a 2M token context window, agentic tool calling, and industry-leading low hallucination rates. Grok focuses on delivering truthful, unfiltered responses with strict prompt adherence.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "xAI Documentation",
+       "url": "https://docs.x.ai/"
+      },
+      {
+       "kind": "official",
+       "title": "xAI API Console",
+       "url": "https://console.x.ai"
+      }
+     ],
+     "file": "xai@3wshuH7_DXgbhxsLzzI4D.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "JgigM7HvmNOuKnp60v1Ce",
+     "type": "topic",
+     "label": "Sampling Parameters",
+     "body": "Sampling parameters (temperature, top-K, top-P) control how LLMs select tokens from probability distributions, determining output randomness and creativity. These parameters interact: at extreme settings, one can override others (temperature 0 makes top-K/top-P irrelevant). A balanced starting point is temperature 0.2, top-P 0.95, top-K 30 for coherent but creative results. Understanding their interactions is crucial for optimal prompting—use temperature 0 for factual tasks, higher values for creativity, and combine settings strategically based on your specific use case.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "LLM Settings (Temperature, Top-K, Top-P) - DAIR.AI",
+       "url": "https://www.promptingguide.ai/introduction/settings"
+      }
+     ],
+     "file": "sampling-parameters@JgigM7HvmNOuKnp60v1Ce.md"
+    },
+    {
+     "id": "iMwg-I76-Tg5dhu8DGO6U",
+     "type": "subtopic",
+     "label": "Temperature",
+     "body": "Temperature controls the randomness in token selection during text generation. Lower values (0-0.3) produce deterministic, factual outputs. Medium values (0.5-0.7) balance creativity and coherence. Higher values (0.8-1.0) generate creative, diverse outputs but may be less coherent. Use low temperature for math/facts, high for creative writing.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is LLM Temperature? - IBM",
+       "url": "https://www.ibm.com/think/topics/llm-temperature"
+      },
+      {
+       "kind": "article",
+       "title": "Temperature - LLM Parameter Guide - Vellum",
+       "url": "https://www.vellum.ai/llm-parameters/temperature"
+      }
+     ],
+     "file": "temperature@iMwg-I76-Tg5dhu8DGO6U.md"
+    },
+    {
+     "id": "FF8ai1v5GDzxXLQhpwuPj",
+     "type": "subtopic",
+     "label": "Top-K",
+     "body": "Top-K restricts token selection to the K most likely tokens from the probability distribution. Low values (1-10) produce conservative, factual outputs. Medium values (20-50) balance creativity and quality. High values (50+) enable diverse, creative outputs. Use low K for technical tasks, high K for creative writing.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Gemini API Prompting Strategies - Google",
+       "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies"
+      },
+      {
+       "kind": "article",
+       "title": "Top K - LLM Parameter Guide - Vellum",
+       "url": "https://www.vellum.ai/llm-parameters/top-k"
+      }
+     ],
+     "file": "top-k@FF8ai1v5GDzxXLQhpwuPj.md"
+    },
+    {
+     "id": "-G1U1jDN5st1fTUtQmMl1",
+     "type": "subtopic",
+     "label": "Top-P",
+     "body": "Top-P (nucleus sampling) selects tokens from the smallest set whose cumulative probability exceeds threshold P. Unlike Top-K's fixed number, Top-P dynamically adjusts based on probability distribution. Low values (0.1-0.5) produce focused outputs, medium (0.6-0.9) balance creativity and coherence, high (0.9-0.99) enable creative diversity.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Top P - LLM Parameter Guide - Vellum",
+       "url": "https://www.vellum.ai/llm-parameters/top-p"
+      }
+     ],
+     "file": "top-p@-G1U1jDN5st1fTUtQmMl1.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "vK9Gf8dGu2UvvJJhhuHG9",
+     "type": "subtopic",
+     "label": "Max Tokens",
+     "body": "Max tokens setting controls the maximum number of tokens an LLM can generate in response, directly impacting computation cost, response time, and energy consumption. Setting lower limits doesn't make models more concise—it simply stops generation when the limit is reached. This parameter is crucial for techniques like ReAct where models might generate unnecessary tokens after the desired response. Balancing max tokens involves considering cost efficiency, response completeness, and application requirements while ensuring critical information isn't truncated.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Token Counting - Anthropic",
+       "url": "https://platform.claude.com/docs/en/build-with-claude/token-counting"
+      },
+      {
+       "kind": "article",
+       "title": "Max Tokens - LLM Parameter Guide - Vellum",
+       "url": "https://www.vellum.ai/llm-parameters/max-tokens"
+      }
+     ],
+     "file": "max-tokens@vK9Gf8dGu2UvvJJhhuHG9.md"
+    },
+    {
+     "id": "v3CylRlojeltcwnE76j8Q",
+     "type": "subtopic",
+     "label": "Stop Sequences",
+     "body": "Stop sequences are specific strings that signal the LLM to stop generating text when encountered, providing precise control over output length and format. Common examples include newlines, periods, or custom markers like \"###\" or \"END\". This parameter is particularly useful for structured outputs, preventing models from generating beyond intended boundaries. Stop sequences are essential for ReAct prompting and other scenarios where you need clean, precisely bounded responses. They offer more control than max tokens by stopping at logical breakpoints rather than arbitrary token limits.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Handling Stop Reasons - Anthropic",
+       "url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons"
+      },
+      {
+       "kind": "article",
+       "title": "Stop Sequence - LLM Parameter Guide - Vellum",
+       "url": "https://www.vellum.ai/llm-parameters/stop-sequence"
+      }
+     ],
+     "file": "stop-sequences@v3CylRlojeltcwnE76j8Q.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "g8ylIg4Zh567u-E3yVVY4",
+     "type": "topic",
+     "label": "Repetition Penalties",
+     "body": "Repetition penalties discourage LLMs from repeating words or phrases by reducing the probability of selecting previously used tokens. This includes frequency penalty (scales with usage count) and presence penalty (applies equally to any used token). These parameters improve output quality by promoting vocabulary diversity and preventing redundant phrasing.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Tips for Writing Better Prompts - LearnPrompting",
+       "url": "https://learnprompting.org/docs/basics/ai_prompt_tips"
+      }
+     ],
+     "file": "repetition-penalties@g8ylIg4Zh567u-E3yVVY4.md"
+    },
+    {
+     "id": "YIVNjkmTOY61VmL0md9Pj",
+     "type": "subtopic",
+     "label": "Frequency Penalty",
+     "body": "Frequency penalty reduces token probability based on how frequently they have appeared in the text, with higher penalties for more frequent tokens. This prevents excessive repetition and encourages varied language use. The penalty scales with usage frequency, making overused words less likely to be selected again, improving content diversity.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Frequency Penalty - LLM Parameter Guide - Vellum",
+       "url": "https://www.vellum.ai/llm-parameters/frequency-penalty"
+      }
+     ],
+     "file": "frequency-penalty@YIVNjkmTOY61VmL0md9Pj.md"
+    },
+    {
+     "id": "WpO8V5caudySVehOcuDvK",
+     "type": "subtopic",
+     "label": "Presence Penalty",
+     "body": "Presence penalty reduces the likelihood of repeating tokens that have already appeared in the text, encouraging diverse vocabulary usage. Unlike frequency penalty which considers how often tokens appear, presence penalty applies the same penalty to any previously used token, promoting varied content and creativity.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Presence Penalty - LLM Parameter Guide - Vellum",
+       "url": "https://www.vellum.ai/llm-parameters/presence-penalty"
+      }
+     ],
+     "file": "presence-penalty@WpO8V5caudySVehOcuDvK.md"
+    }
+   ]
+  },
+  {
+   "heading": "System / Role / Contextual",
    "nodes": [
     {
      "id": "fWo39-hehRgwmx7CF36mM",
@@ -750,20 +761,6 @@
       }
      ],
      "file": "system-prompting@fWo39-hehRgwmx7CF36mM.md"
-    },
-    {
-     "id": "ob9D0W9B9145Da64nbi1M",
-     "type": "subtopic",
-     "label": "Tree of Thoughts (ToT) Prompting",
-     "body": "Tree of Thoughts (ToT) generalizes Chain of Thought by allowing LLMs to explore multiple reasoning paths simultaneously rather than following a single linear chain. This approach maintains a tree structure where each thought represents a coherent step toward solving a problem, enabling the model to branch out and explore different reasoning directions. ToT is particularly effective for complex tasks requiring exploration and is well-suited for problems that benefit from considering multiple solution approaches before converging on the best answer.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Tree of Thoughts - DAIR.AI",
-       "url": "https://www.promptingguide.ai/techniques/tot"
-      }
-     ],
-     "file": "tree-of-thoughts-tot-prompting@ob9D0W9B9145Da64nbi1M.md"
     },
     {
      "id": "XHWKGaSRBYT4MsCHwV-iR",
@@ -790,6 +787,44 @@
      "file": "role-prompting@XHWKGaSRBYT4MsCHwV-iR.md"
     },
     {
+     "id": "5TNK1KcSzh9GTKiEJnM-y",
+     "type": "subtopic",
+     "label": "Contextual Prompting",
+     "body": "Contextual prompting provides specific background information or situational details relevant to the current task, helping LLMs understand nuances and tailor responses accordingly. Unlike system or role prompts, contextual prompts supply immediate, task-specific information that's dynamic and changes based on the situation. For example: \"Context: You are writing for a blog about retro 80's arcade video games. Suggest 3 topics to write articles about.\" This technique ensures responses are relevant, accurate, and appropriately framed for the specific context provided.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Prompting Best Practices - Anthropic",
+       "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+      },
+      {
+       "kind": "article",
+       "title": "Prompt Structure and Key Parts - LearnPrompting",
+       "url": "https://learnprompting.org/docs/basics/prompt_structure"
+      }
+     ],
+     "file": "contextual-prompting@5TNK1KcSzh9GTKiEJnM-y.md"
+    }
+   ]
+  },
+  {
+   "heading": "Use LLM to generate Prompts",
+   "nodes": [
+    {
+     "id": "ob9D0W9B9145Da64nbi1M",
+     "type": "subtopic",
+     "label": "Tree of Thoughts (ToT) Prompting",
+     "body": "Tree of Thoughts (ToT) generalizes Chain of Thought by allowing LLMs to explore multiple reasoning paths simultaneously rather than following a single linear chain. This approach maintains a tree structure where each thought represents a coherent step toward solving a problem, enabling the model to branch out and explore different reasoning directions. ToT is particularly effective for complex tasks requiring exploration and is well-suited for problems that benefit from considering multiple solution approaches before converging on the best answer.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Tree of Thoughts - DAIR.AI",
+       "url": "https://www.promptingguide.ai/techniques/tot"
+      }
+     ],
+     "file": "tree-of-thoughts-tot-prompting@ob9D0W9B9145Da64nbi1M.md"
+    },
+    {
      "id": "8Ks6txRSUfMK7VotSQ4sC",
      "type": "subtopic",
      "label": "ReAct Prompting",
@@ -814,25 +849,6 @@
      "file": "react-prompting@8Ks6txRSUfMK7VotSQ4sC.md"
     },
     {
-     "id": "5TNK1KcSzh9GTKiEJnM-y",
-     "type": "subtopic",
-     "label": "Contextual Prompting",
-     "body": "Contextual prompting provides specific background information or situational details relevant to the current task, helping LLMs understand nuances and tailor responses accordingly. Unlike system or role prompts, contextual prompts supply immediate, task-specific information that's dynamic and changes based on the situation. For example: \"Context: You are writing for a blog about retro 80's arcade video games. Suggest 3 topics to write articles about.\" This technique ensures responses are relevant, accurate, and appropriately framed for the specific context provided.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Prompting Best Practices - Anthropic",
-       "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
-      },
-      {
-       "kind": "article",
-       "title": "Prompt Structure and Key Parts - LearnPrompting",
-       "url": "https://learnprompting.org/docs/basics/prompt_structure"
-      }
-     ],
-     "file": "contextual-prompting@5TNK1KcSzh9GTKiEJnM-y.md"
-    },
-    {
      "id": "VjuUq6nEz3Wyx5NJWNaxr",
      "type": "subtopic",
      "label": "Prompt Tuning",
@@ -855,34 +871,6 @@
      "file": "ai-red-teaming@Wvu9Q_kNhH1_JlOgxAjP6.md"
     }
    ]
-  },
-  {
-   "heading": "— Provide few-shot examples for structure or  output style you need",
-   "nodes": []
-  },
-  {
-   "heading": "—  Keep your prompts short and concise",
-   "nodes": []
-  },
-  {
-   "heading": "—  Ask for structured output if it helps e.g. JSON, XML, Markdown, CSV etc",
-   "nodes": []
-  },
-  {
-   "heading": "— Use variables / placeholders in your prompts for easier configuration",
-   "nodes": []
-  },
-  {
-   "heading": "— Prioritize giving clearer instructions over adding constraints",
-   "nodes": []
-  },
-  {
-   "heading": "— Control the maximum output length",
-   "nodes": []
-  },
-  {
-   "heading": "Improving Reliability",
-   "nodes": []
   },
   {
    "heading": "— Experiment with input formats and writing styles",
@@ -923,10 +911,6 @@
    ]
   },
   {
-   "heading": "— Guard against prompt injection; sanitize user text",
-   "nodes": []
-  },
-  {
    "heading": "— Automate evaluation; integrate unit tests for outputs",
    "nodes": [
     {
@@ -963,18 +947,6 @@
      "file": "calibrating-llms@P5nDyQbME53DOEfSkcY6I.md"
     }
    ]
-  },
-  {
-   "heading": "— Optimize for latency & cost in production pipelines",
-   "nodes": []
-  },
-  {
-   "heading": "— Document decisions, failures, and learnings for future devs",
-   "nodes": []
-  },
-  {
-   "heading": "— Delimit different sections with triple backticks or XML tags",
-   "nodes": []
   }
  ]
 }

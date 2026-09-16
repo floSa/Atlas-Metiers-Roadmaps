@@ -21,10 +21,6 @@
  ],
  "sections": [
   {
-   "heading": "AI Agents",
-   "nodes": []
-  },
-  {
    "heading": "Learn the Pre-requisites",
    "nodes": [
     {
@@ -203,12 +199,7 @@
       }
      ],
      "file": "embeddings-and-vector-search@UIm54UmICKgep6s8Itcyv.md"
-    }
-   ]
-  },
-  {
-   "heading": "Model Mechanis",
-   "nodes": [
+    },
     {
      "id": "DSJAhQhc1dQmBHQ8ZkTau",
      "type": "topic",
@@ -273,25 +264,6 @@
      "file": "understand-the-basics-of-rag@qwVQOwBTLA2yUgRISzC8k.md"
     },
     {
-     "id": "GAjuWyJl9CI1nqXBp6XCf",
-     "type": "subtopic",
-     "label": "Tokenization",
-     "body": "Tokenization is the process of breaking text into smaller units called tokens, which can be whole words, parts of words, or individual characters depending on the tokenizer. A language model does not read raw text, it reads a sequence of token IDs mapped from these units. The choice of tokenizer affects how many tokens a piece of text uses, which in turn affects cost and context limits.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Explaining Tokens — the Language and Currency of AI",
-       "url": "https://blogs.nvidia.com/blog/ai-tokens-explained/"
-      },
-      {
-       "kind": "article",
-       "title": "What is Tokenization? Types, Use Cases, Implementation",
-       "url": "https://www.datacamp.com/blog/what-is-tokenization"
-      }
-     ],
-     "file": "tokenization@GAjuWyJl9CI1nqXBp6XCf.md"
-    },
-    {
      "id": "tJYmEDDwK0LtEux-kwp9B",
      "type": "topic",
      "label": "Closed Weight Models",
@@ -348,6 +320,49 @@
       }
      ],
      "file": "pricing-of-common-models@B8dzg61TGaknuruBgkEJd.md"
+    },
+    {
+     "id": "LU76AhCYDjxdBhpMQ4eMU",
+     "type": "subtopic",
+     "label": "Perception / User Input",
+     "body": "Perception, also called user input, is the first step in an agent loop. The agent listens and gathers data from the outside world. This data can be text typed by a user, spoken words, camera images, sensor readings, or web content pulled through an API. The goal is to turn raw signals into a clear, usable form. The agent may clean the text, translate speech to text, resize an image, or drop noise from sensor values. Good perception means the agent starts its loop with facts, not guesses. If the input is wrong or unclear, later steps will also fail. So careful handling of perception keeps the whole agent loop on track.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Perception in AI: Understanding Its Types and Importance",
+       "url": "https://marktalks.com/perception-in-ai-understanding-its-types-and-importance/"
+      },
+      {
+       "kind": "article",
+       "title": "What Is AI Agent Perception? - IBM",
+       "url": "https://www.ibm.com/think/topics/ai-agent-perception"
+      }
+     ],
+     "file": "perception--user-input@LU76AhCYDjxdBhpMQ4eMU.md"
+    }
+   ]
+  },
+  {
+   "heading": "Model Mechanis",
+   "nodes": [
+    {
+     "id": "GAjuWyJl9CI1nqXBp6XCf",
+     "type": "subtopic",
+     "label": "Tokenization",
+     "body": "Tokenization is the process of breaking text into smaller units called tokens, which can be whole words, parts of words, or individual characters depending on the tokenizer. A language model does not read raw text, it reads a sequence of token IDs mapped from these units. The choice of tokenizer affects how many tokens a piece of text uses, which in turn affects cost and context limits.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Explaining Tokens — the Language and Currency of AI",
+       "url": "https://blogs.nvidia.com/blog/ai-tokens-explained/"
+      },
+      {
+       "kind": "article",
+       "title": "What is Tokenization? Types, Use Cases, Implementation",
+       "url": "https://www.datacamp.com/blog/what-is-tokenization"
+      }
+     ],
+     "file": "tokenization@GAjuWyJl9CI1nqXBp6XCf.md"
     },
     {
      "id": "dyn1LSioema-Bf9lLTgUZ",
@@ -470,30 +485,6 @@
      "file": "frequency-penalty@z_N-Y0zGkv8_qHPuVtimL.md"
     },
     {
-     "id": "LU76AhCYDjxdBhpMQ4eMU",
-     "type": "subtopic",
-     "label": "Perception / User Input",
-     "body": "Perception, also called user input, is the first step in an agent loop. The agent listens and gathers data from the outside world. This data can be text typed by a user, spoken words, camera images, sensor readings, or web content pulled through an API. The goal is to turn raw signals into a clear, usable form. The agent may clean the text, translate speech to text, resize an image, or drop noise from sensor values. Good perception means the agent starts its loop with facts, not guesses. If the input is wrong or unclear, later steps will also fail. So careful handling of perception keeps the whole agent loop on track.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Perception in AI: Understanding Its Types and Importance",
-       "url": "https://marktalks.com/perception-in-ai-understanding-its-types-and-importance/"
-      },
-      {
-       "kind": "article",
-       "title": "What Is AI Agent Perception? - IBM",
-       "url": "https://www.ibm.com/think/topics/ai-agent-perception"
-      }
-     ],
-     "file": "perception--user-input@LU76AhCYDjxdBhpMQ4eMU.md"
-    }
-   ]
-  },
-  {
-   "heading": "1",
-   "nodes": [
-    {
      "id": "Vd8ycw8pW-ZKvg5WYFtoh",
      "type": "subtopic",
      "label": "Presence Penalty",
@@ -518,30 +509,6 @@
      "file": "presence-penalty@Vd8ycw8pW-ZKvg5WYFtoh.md"
     },
     {
-     "id": "ycPRgRYR4lEBQr_xxHKnM",
-     "type": "subtopic",
-     "label": "Reason and Plan",
-     "body": "Reason and Plan is the moment when an AI agent thinks before it acts. The agent starts with a goal and the facts it already knows. It looks at these facts and asks, “What do I need to do next to reach the goal?” It breaks the goal into smaller steps, checks if each step makes sense, and orders them in a clear path. The agent may also guess what could go wrong and prepare backup steps. Once the plan feels solid, the agent is ready to move on and take the first action.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
-       "url": "https://react-lm.github.io/"
-      },
-      {
-       "kind": "article",
-       "title": "ReAct Systems: Enhancing LLMs with Reasoning and Action",
-       "url": "https://learnprompting.org/docs/agents/react"
-      }
-     ],
-     "file": "reason-and-plan@ycPRgRYR4lEBQr_xxHKnM.md"
-    }
-   ]
-  },
-  {
-   "heading": "2",
-   "nodes": [
-    {
      "id": "K0G-Lw069jXUJwZqHtybd",
      "type": "subtopic",
      "label": "Stopping Criteria",
@@ -555,30 +522,6 @@
      ],
      "file": "stopping-criteria@K0G-Lw069jXUJwZqHtybd.md"
     },
-    {
-     "id": "sHYd4KsKlmw5Im3nQ19W8",
-     "type": "subtopic",
-     "label": "Acting / Tool Invocation",
-     "body": "Acting, also called tool invocation, is the step where the AI chooses a tool and runs it to get real-world data or to change something. The agent looks at its current goal and the plan it just made. It then picks the best tool, such as a web search, a database query, or a calculator. The agent fills in the needed inputs and sends the call. The external system does the heavy work and returns a result. Acting ends when the agent stores that result so it can think about the next move.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What are Tools in AI Agents?",
-       "url": "https://huggingface.co/learn/agents-course/en/unit1/tools"
-      },
-      {
-       "kind": "article",
-       "title": "What is Tool Calling in Agents?",
-       "url": "https://www.useparagon.com/blog/ai-building-blocks-what-is-tool-calling-a-guide-for-pms"
-      }
-     ],
-     "file": "acting--tool-invocation@sHYd4KsKlmw5Im3nQ19W8.md"
-    }
-   ]
-  },
-  {
-   "heading": "3",
-   "nodes": [
     {
      "id": "Bn_BkthrVX_vOuwQzvPZa",
      "type": "subtopic",
@@ -607,7 +550,60 @@
       }
      ],
      "file": "max-length@Bn_BkthrVX_vOuwQzvPZa.md"
-    },
+    }
+   ]
+  },
+  {
+   "heading": "1",
+   "nodes": [
+    {
+     "id": "ycPRgRYR4lEBQr_xxHKnM",
+     "type": "subtopic",
+     "label": "Reason and Plan",
+     "body": "Reason and Plan is the moment when an AI agent thinks before it acts. The agent starts with a goal and the facts it already knows. It looks at these facts and asks, “What do I need to do next to reach the goal?” It breaks the goal into smaller steps, checks if each step makes sense, and orders them in a clear path. The agent may also guess what could go wrong and prepare backup steps. Once the plan feels solid, the agent is ready to move on and take the first action.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+       "url": "https://react-lm.github.io/"
+      },
+      {
+       "kind": "article",
+       "title": "ReAct Systems: Enhancing LLMs with Reasoning and Action",
+       "url": "https://learnprompting.org/docs/agents/react"
+      }
+     ],
+     "file": "reason-and-plan@ycPRgRYR4lEBQr_xxHKnM.md"
+    }
+   ]
+  },
+  {
+   "heading": "2",
+   "nodes": [
+    {
+     "id": "sHYd4KsKlmw5Im3nQ19W8",
+     "type": "subtopic",
+     "label": "Acting / Tool Invocation",
+     "body": "Acting, also called tool invocation, is the step where the AI chooses a tool and runs it to get real-world data or to change something. The agent looks at its current goal and the plan it just made. It then picks the best tool, such as a web search, a database query, or a calculator. The agent fills in the needed inputs and sends the call. The external system does the heavy work and returns a result. Acting ends when the agent stores that result so it can think about the next move.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What are Tools in AI Agents?",
+       "url": "https://huggingface.co/learn/agents-course/en/unit1/tools"
+      },
+      {
+       "kind": "article",
+       "title": "What is Tool Calling in Agents?",
+       "url": "https://www.useparagon.com/blog/ai-building-blocks-what-is-tool-calling-a-guide-for-pms"
+      }
+     ],
+     "file": "acting--tool-invocation@sHYd4KsKlmw5Im3nQ19W8.md"
+    }
+   ]
+  },
+  {
+   "heading": "3",
+   "nodes": [
     {
      "id": "ZJTrun3jK3zBGOTm1jdMI",
      "type": "subtopic",
@@ -693,30 +689,6 @@
       }
      ],
      "file": "what-are-tools@2zsOUWJQ8e7wnoHmq1icG.md"
-    }
-   ]
-  },
-  {
-   "heading": "Example Usecases",
-   "nodes": [
-    {
-     "id": "PPdAutqJF5G60Eg9lYBND",
-     "type": "subtopic",
-     "label": "Personal assistant",
-     "body": "A personal assistant AI agent is a smart program that helps one person manage daily tasks. It can check a calendar, set reminders, and send alerts so you never miss a meeting. It can read emails, highlight key points, and even draft quick replies. If you ask a question, it searches trusted sources and gives a short answer. It can order food, book rides, or shop online when you give simple voice or text commands. Because it learns your habits, it suggests the best time to work, rest, or travel. All these actions run in the background, saving you time and reducing stress.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "A Complete Guide on AI-powered Personal Assistants",
-       "url": "https://medium.com/@alexander_clifford/a-complete-guide-on-ai-powered-personal-assistants-with-examples-2f5cd894d566"
-      },
-      {
-       "kind": "article",
-       "title": "9 Best AI Personal Assistants for Work, Chat and Home",
-       "url": "https://saner.ai/best-ai-personal-assistants/"
-      }
-     ],
-     "file": "personal-assistant@PPdAutqJF5G60Eg9lYBND.md"
     },
     {
      "id": "Y8EqzFx3qxtrSh7bWbbV8",
@@ -743,30 +715,6 @@
      "file": "what-is-prompt-engineering@Y8EqzFx3qxtrSh7bWbbV8.md"
     },
     {
-     "id": "PK8w31GlvtmAuU92sHaqr",
-     "type": "subtopic",
-     "label": "Code generation",
-     "body": "Code-generation agents take a plain language request, understand the goal, and then write or edit source code to meet it. They can build small apps, add features, fix bugs, refactor old code, write tests, or translate code from one language to another. This saves time for developers, helps beginners learn, and reduces human error. Teams use these agents inside code editors, chat tools, and automated pipelines. By handling routine coding tasks, the agents free people to focus on design, logic, and user needs.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "GitHub Copilot",
-       "url": "https://github.com/features/copilot"
-      },
-      {
-       "kind": "article",
-       "title": "Multi-Agent-based Code Generation",
-       "url": "https://arxiv.org/abs/2312.13010"
-      },
-      {
-       "kind": "article",
-       "title": "From Prompt to Production: GitHub Blog",
-       "url": "https://github.blog/ai-and-ml/github-copilot/from-prompt-to-production-building-a-landing-page-with-copilot-agent-mode/"
-      }
-     ],
-     "file": "code-generation@PK8w31GlvtmAuU92sHaqr.md"
-    },
-    {
      "id": "Nmy1PoB32DcWZnPM8l8jT",
      "type": "topic",
      "label": "Tree-of-Thought",
@@ -791,6 +739,92 @@
      "file": "tree-of-thought@Nmy1PoB32DcWZnPM8l8jT.md"
     },
     {
+     "id": "qwdh5pkBbrF8LKPxbZp4F",
+     "type": "topic",
+     "label": "Chain of Thought (CoT)",
+     "body": "Chain of Thought (CoT) is a way for an AI agent to think out loud. Before giving its final answer, the agent writes short notes that show each step it takes. These notes can list facts, name sub-tasks, or do small bits of math. By seeing the steps, the agent stays organized and is less likely to make a mistake. People who read the answer can also check the logic and spot any weak points. The same written steps can be fed back into the agent so it can plan, reflect, or fix itself. Because it is easy to use and boosts trust, CoT is one of the most common designs for language-based agents today.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+       "url": "https://arxiv.org/abs/2201.11903"
+      },
+      {
+       "kind": "article",
+       "title": "Evoking Chain of Thought Reasoning in LLMs - Prompting Guide",
+       "url": "https://www.promptingguide.ai/techniques/cot"
+      }
+     ],
+     "file": "chain-of-thought-cot@qwdh5pkBbrF8LKPxbZp4F.md"
+    },
+    {
+     "id": "qakbxB8xe7Y8gejC5cZnK",
+     "type": "topic",
+     "label": "Tool Definition",
+     "body": "A tool definition describes a function an agent can call, including its name, purpose, and the parameters it accepts, usually specified in a structured format like JSON schema. The language model reads this definition to decide when the tool is relevant and how to fill in its arguments. Clear, well documented tool definitions directly affect how reliably an agent chooses and uses the right tool.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What are Tools?",
+       "url": "https://huggingface.co/learn/agents-course/en/unit1/tools"
+      },
+      {
+       "kind": "article",
+       "title": "Understanding the Agent Function in AI: Key Roles and Responsibilities",
+       "url": "https://genezio.com/blog/ai-agents-101-understanding-their-role-and-functionality/"
+      }
+     ],
+     "file": "tool-definition@qakbxB8xe7Y8gejC5cZnK.md"
+    }
+   ]
+  },
+  {
+   "heading": "Example Usecases",
+   "nodes": [
+    {
+     "id": "PPdAutqJF5G60Eg9lYBND",
+     "type": "subtopic",
+     "label": "Personal assistant",
+     "body": "A personal assistant AI agent is a smart program that helps one person manage daily tasks. It can check a calendar, set reminders, and send alerts so you never miss a meeting. It can read emails, highlight key points, and even draft quick replies. If you ask a question, it searches trusted sources and gives a short answer. It can order food, book rides, or shop online when you give simple voice or text commands. Because it learns your habits, it suggests the best time to work, rest, or travel. All these actions run in the background, saving you time and reducing stress.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "A Complete Guide on AI-powered Personal Assistants",
+       "url": "https://medium.com/@alexander_clifford/a-complete-guide-on-ai-powered-personal-assistants-with-examples-2f5cd894d566"
+      },
+      {
+       "kind": "article",
+       "title": "9 Best AI Personal Assistants for Work, Chat and Home",
+       "url": "https://saner.ai/best-ai-personal-assistants/"
+      }
+     ],
+     "file": "personal-assistant@PPdAutqJF5G60Eg9lYBND.md"
+    },
+    {
+     "id": "PK8w31GlvtmAuU92sHaqr",
+     "type": "subtopic",
+     "label": "Code generation",
+     "body": "Code-generation agents take a plain language request, understand the goal, and then write or edit source code to meet it. They can build small apps, add features, fix bugs, refactor old code, write tests, or translate code from one language to another. This saves time for developers, helps beginners learn, and reduces human error. Teams use these agents inside code editors, chat tools, and automated pipelines. By handling routine coding tasks, the agents free people to focus on design, logic, and user needs.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "GitHub Copilot",
+       "url": "https://github.com/features/copilot"
+      },
+      {
+       "kind": "article",
+       "title": "Multi-Agent-based Code Generation",
+       "url": "https://arxiv.org/abs/2312.13010"
+      },
+      {
+       "kind": "article",
+       "title": "From Prompt to Production: GitHub Blog",
+       "url": "https://github.blog/ai-and-ml/github-copilot/from-prompt-to-production-building-a-landing-page-with-copilot-agent-mode/"
+      }
+     ],
+     "file": "code-generation@PK8w31GlvtmAuU92sHaqr.md"
+    },
+    {
      "id": "wKYEaPWNsR30TIpHaxSsq",
      "type": "subtopic",
      "label": "Data analysis",
@@ -808,12 +842,7 @@
       }
      ],
      "file": "data-analysis@wKYEaPWNsR30TIpHaxSsq.md"
-    }
-   ]
-  },
-  {
-   "heading": "Writing Good Prompts",
-   "nodes": [
+    },
     {
      "id": "5oLc-235bvKhApxzYFkEc",
      "type": "subtopic",
@@ -844,6 +873,30 @@
      "file": "web-scraping--crawling@5oLc-235bvKhApxzYFkEc.md"
     },
     {
+     "id": "ok8vN7VtCgyef5x6aoQaL",
+     "type": "subtopic",
+     "label": "NPC / Game AI",
+     "body": "Game studios use AI agents to control non-player characters (NPCs). The agent observes the game state and decides actions like moving, speaking, or fighting. It can shift tactics when the player changes strategy, keeping battles fresh instead of predictable. A quest giver might use an agent to offer hints that fit the player’s progress. In open-world games, agents guide crowds to move around obstacles, set new goals, and react to threats, making towns feel alive. Designers save time by writing broad rules and letting agents fill in details instead of hand-coding every scene. Smarter NPC behavior keeps players engaged and boosts replay value.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Unity – AI for NPCs",
+       "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/artificial-intelligence-in-unreal-engine?application_version=5.3"
+      },
+      {
+       "kind": "article",
+       "title": "AI-Driven NPCs: The Future of Gaming Explained",
+       "url": "https://www.capermint.com/blog/everything-you-need-to-know-about-non-player-character-npc/"
+      }
+     ],
+     "file": "npc--game-ai@ok8vN7VtCgyef5x6aoQaL.md"
+    }
+   ]
+  },
+  {
+   "heading": "Writing Good Prompts",
+   "nodes": [
+    {
      "id": "qFKFM2qNPEN7EoD0V-1SM",
      "type": "subtopic",
      "label": "Be specific in what you want",
@@ -866,44 +919,6 @@
       }
      ],
      "file": "be-specific-in-what-you-want@qFKFM2qNPEN7EoD0V-1SM.md"
-    },
-    {
-     "id": "qwdh5pkBbrF8LKPxbZp4F",
-     "type": "topic",
-     "label": "Chain of Thought (CoT)",
-     "body": "Chain of Thought (CoT) is a way for an AI agent to think out loud. Before giving its final answer, the agent writes short notes that show each step it takes. These notes can list facts, name sub-tasks, or do small bits of math. By seeing the steps, the agent stays organized and is less likely to make a mistake. People who read the answer can also check the logic and spot any weak points. The same written steps can be fed back into the agent so it can plan, reflect, or fix itself. Because it is easy to use and boosts trust, CoT is one of the most common designs for language-based agents today.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
-       "url": "https://arxiv.org/abs/2201.11903"
-      },
-      {
-       "kind": "article",
-       "title": "Evoking Chain of Thought Reasoning in LLMs - Prompting Guide",
-       "url": "https://www.promptingguide.ai/techniques/cot"
-      }
-     ],
-     "file": "chain-of-thought-cot@qwdh5pkBbrF8LKPxbZp4F.md"
-    },
-    {
-     "id": "ok8vN7VtCgyef5x6aoQaL",
-     "type": "subtopic",
-     "label": "NPC / Game AI",
-     "body": "Game studios use AI agents to control non-player characters (NPCs). The agent observes the game state and decides actions like moving, speaking, or fighting. It can shift tactics when the player changes strategy, keeping battles fresh instead of predictable. A quest giver might use an agent to offer hints that fit the player’s progress. In open-world games, agents guide crowds to move around obstacles, set new goals, and react to threats, making towns feel alive. Designers save time by writing broad rules and letting agents fill in details instead of hand-coding every scene. Smarter NPC behavior keeps players engaged and boosts replay value.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Unity – AI for NPCs",
-       "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/artificial-intelligence-in-unreal-engine?application_version=5.3"
-      },
-      {
-       "kind": "article",
-       "title": "AI-Driven NPCs: The Future of Gaming Explained",
-       "url": "https://www.capermint.com/blog/everything-you-need-to-know-about-non-player-character-npc/"
-      }
-     ],
-     "file": "npc--game-ai@ok8vN7VtCgyef5x6aoQaL.md"
     },
     {
      "id": "6I42CoeWX-kkFXTKAY7rw",
@@ -952,12 +967,7 @@
       }
      ],
      "file": "use-relevant-technical-terms@sUwdtOX550tSdceaeFPmF.md"
-    }
-   ]
-  },
-  {
-   "heading": "Examples of Tools",
-   "nodes": [
+    },
     {
      "id": "yulzE4ZNLhXOgHhG7BtZQ",
      "type": "subtopic",
@@ -983,44 +993,6 @@
      "file": "use-examples-in-your-prompt@yulzE4ZNLhXOgHhG7BtZQ.md"
     },
     {
-     "id": "kBtqT8AduLoYDWopj-V9_",
-     "type": "subtopic",
-     "label": "Web Search",
-     "body": "Web search lets an AI agent pull fresh facts, news, and examples from the internet while it is working. The agent turns a user request into search words, sends them to a search engine, and reads the list of results. It then follows the most promising links, grabs the page text, and picks out the parts that answer the task. This helps the agent handle topics that were not in its training data, update old knowledge, or double-check details. Web search covers almost any subject and is much faster than manual research, but the agent must watch for ads, bias, or wrong pages and cross-check sources to stay accurate.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "8 Best AI Search Engines for 2025",
-       "url": "https://usefulai.com/tools/ai-search-engines"
-      },
-      {
-       "kind": "article",
-       "title": "Web Search Agent - PraisonAI Documentation",
-       "url": "https://docs.praison.ai/agents/websearch"
-      }
-     ],
-     "file": "web-search@kBtqT8AduLoYDWopj-V9_.md"
-    },
-    {
-     "id": "qakbxB8xe7Y8gejC5cZnK",
-     "type": "topic",
-     "label": "Tool Definition",
-     "body": "A tool definition describes a function an agent can call, including its name, purpose, and the parameters it accepts, usually specified in a structured format like JSON schema. The language model reads this definition to decide when the tool is relevant and how to fill in its arguments. Clear, well documented tool definitions directly affect how reliably an agent chooses and uses the right tool.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What are Tools?",
-       "url": "https://huggingface.co/learn/agents-course/en/unit1/tools"
-      },
-      {
-       "kind": "article",
-       "title": "Understanding the Agent Function in AI: Key Roles and Responsibilities",
-       "url": "https://genezio.com/blog/ai-agents-101-understanding-their-role-and-functionality/"
-      }
-     ],
-     "file": "tool-definition@qakbxB8xe7Y8gejC5cZnK.md"
-    },
-    {
      "id": "noTuUFnHSBzn7GKG9UZEi",
      "type": "subtopic",
      "label": "Iterate and Test your Prompts",
@@ -1043,6 +1015,49 @@
       }
      ],
      "file": "iterate-and-test-your-prompts@noTuUFnHSBzn7GKG9UZEi.md"
+    },
+    {
+     "id": "wwHHlEoPAx0TLxbtY6nMA",
+     "type": "subtopic",
+     "label": "Specify Length, format etc",
+     "body": "When you give a task to an AI, make clear how long the answer should be and what shape it must take. Say “Write 120 words” or “Give the steps as a numbered list.” If you need a table, state the column names and order. If you want bullet points, mention that. Telling the AI to use plain text, JSON, or markdown stops guesswork and saves time. Clear limits on length keep the reply focused. A fixed format makes it easier for people or other software to read and use the result. Always put these rules near the start of your prompt so the AI sees them as important.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Mastering Prompt Engineering: Format, Length, and Audience",
+       "url": "https://techlasi.com/savvy/mastering-prompt-engineering-format-length-and-audience-examples-for-2024/"
+      },
+      {
+       "kind": "article",
+       "title": "Ultimate Guide to Prompt Engineering",
+       "url": "https://promptdrive.ai/prompt-engineering/"
+      }
+     ],
+     "file": "specify-length-format-etc@wwHHlEoPAx0TLxbtY6nMA.md"
+    }
+   ]
+  },
+  {
+   "heading": "Examples of Tools",
+   "nodes": [
+    {
+     "id": "kBtqT8AduLoYDWopj-V9_",
+     "type": "subtopic",
+     "label": "Web Search",
+     "body": "Web search lets an AI agent pull fresh facts, news, and examples from the internet while it is working. The agent turns a user request into search words, sends them to a search engine, and reads the list of results. It then follows the most promising links, grabs the page text, and picks out the parts that answer the task. This helps the agent handle topics that were not in its training data, update old knowledge, or double-check details. Web search covers almost any subject and is much faster than manual research, but the agent must watch for ads, bias, or wrong pages and cross-check sources to stay accurate.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "8 Best AI Search Engines for 2025",
+       "url": "https://usefulai.com/tools/ai-search-engines"
+      },
+      {
+       "kind": "article",
+       "title": "Web Search Agent - PraisonAI Documentation",
+       "url": "https://docs.praison.ai/agents/websearch"
+      }
+     ],
+     "file": "web-search@kBtqT8AduLoYDWopj-V9_.md"
     },
     {
      "id": "mS0EVCkWuPN_GkVPng4A2",
@@ -1072,36 +1087,7 @@
       }
      ],
      "file": "code-execution--repl@mS0EVCkWuPN_GkVPng4A2.md"
-    }
-   ]
-  },
-  {
-   "heading": "Name and Description",
-   "nodes": [
-    {
-     "id": "wwHHlEoPAx0TLxbtY6nMA",
-     "type": "subtopic",
-     "label": "Specify Length, format etc",
-     "body": "When you give a task to an AI, make clear how long the answer should be and what shape it must take. Say “Write 120 words” or “Give the steps as a numbered list.” If you need a table, state the column names and order. If you want bullet points, mention that. Telling the AI to use plain text, JSON, or markdown stops guesswork and saves time. Clear limits on length keep the reply focused. A fixed format makes it easier for people or other software to read and use the result. Always put these rules near the start of your prompt so the AI sees them as important.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Mastering Prompt Engineering: Format, Length, and Audience",
-       "url": "https://techlasi.com/savvy/mastering-prompt-engineering-format-length-and-audience-examples-for-2024/"
-      },
-      {
-       "kind": "article",
-       "title": "Ultimate Guide to Prompt Engineering",
-       "url": "https://promptdrive.ai/prompt-engineering/"
-      }
-     ],
-     "file": "specify-length-format-etc@wwHHlEoPAx0TLxbtY6nMA.md"
-    }
-   ]
-  },
-  {
-   "heading": "Input / Output Schema",
-   "nodes": [
+    },
     {
      "id": "sV1BnA2-qBnXoKpUn-8Ub",
      "type": "subtopic",
@@ -1115,16 +1101,7 @@
       }
      ],
      "file": "database-queries@sV1BnA2-qBnXoKpUn-8Ub.md"
-    }
-   ]
-  },
-  {
-   "heading": "Error Handling",
-   "nodes": []
-  },
-  {
-   "heading": "Usage Examples",
-   "nodes": [
+    },
     {
      "id": "52qxjZILV-X1isup6dazC",
      "type": "subtopic",
@@ -1164,6 +1141,40 @@
      "file": "email--slack--sms@qaNr5I-NQPnfrRH7ynGTl.md"
     },
     {
+     "id": "BoJqZvdGam4cd6G6yK2IV",
+     "type": "subtopic",
+     "label": "File System Access",
+     "body": "File system access lets an AI agent read, create, change, or delete files and folders on a computer or server. With this power, the agent can open a text file to pull data, write a new report, save logs, or tidy up old files without human help. It can also move files between folders to keep things organized. This tool is useful for tasks such as data processing, report generation, and backup jobs. Strong safety checks are needed so the agent touches only the right files, avoids private data, and cannot harm the system by mistake.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Filesystem MCP server for AI Agents",
+       "url": "https://playbooks.com/mcp/mateicanavra-filesystem"
+      },
+      {
+       "kind": "article",
+       "title": "File System Access API",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API"
+      },
+      {
+       "kind": "article",
+       "title": "Understanding File Permissions and Security",
+       "url": "https://linuxize.com/post/understanding-linux-file-permissions/"
+      },
+      {
+       "kind": "video",
+       "title": "How File Systems Work?",
+       "url": "https://www.youtube.com/watch?v=KN8YgJnShPM"
+      }
+     ],
+     "file": "file-system-access@BoJqZvdGam4cd6G6yK2IV.md"
+    }
+   ]
+  },
+  {
+   "heading": "Usage Examples",
+   "nodes": [
+    {
      "id": "1B0IqRNYdtbHDi1jHSXuI",
      "type": "topic",
      "label": "Model Context Protocol (MCP)",
@@ -1198,35 +1209,6 @@
      "file": "model-context-protocol-mcp@1B0IqRNYdtbHDi1jHSXuI.md"
     },
     {
-     "id": "BoJqZvdGam4cd6G6yK2IV",
-     "type": "subtopic",
-     "label": "File System Access",
-     "body": "File system access lets an AI agent read, create, change, or delete files and folders on a computer or server. With this power, the agent can open a text file to pull data, write a new report, save logs, or tidy up old files without human help. It can also move files between folders to keep things organized. This tool is useful for tasks such as data processing, report generation, and backup jobs. Strong safety checks are needed so the agent touches only the right files, avoids private data, and cannot harm the system by mistake.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Filesystem MCP server for AI Agents",
-       "url": "https://playbooks.com/mcp/mateicanavra-filesystem"
-      },
-      {
-       "kind": "article",
-       "title": "File System Access API",
-       "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API"
-      },
-      {
-       "kind": "article",
-       "title": "Understanding File Permissions and Security",
-       "url": "https://linuxize.com/post/understanding-linux-file-permissions/"
-      },
-      {
-       "kind": "video",
-       "title": "How File Systems Work?",
-       "url": "https://www.youtube.com/watch?v=KN8YgJnShPM"
-      }
-     ],
-     "file": "file-system-access@BoJqZvdGam4cd6G6yK2IV.md"
-    },
-    {
      "id": "1NXIN-Hbjl5rPy_mqxQYW",
      "type": "topic",
      "label": "Creating MCP Servers",
@@ -1244,6 +1226,64 @@
       }
      ],
      "file": "creating-mcp-servers@1NXIN-Hbjl5rPy_mqxQYW.md"
+    },
+    {
+     "id": "TBH_DZTAfR8Daoh-njNFC",
+     "type": "topic",
+     "label": "What is Agent Memory?",
+     "body": "Agent memory is the part of an AI agent that keeps track of what has already happened. It stores past user messages, facts the agent has learned, and its own previous steps. This helps the agent remember goals, user likes and dislikes, and important details across turns or sessions. Memory can be short-term, lasting only for one conversation, or long-term, lasting across many. With a good memory the agent avoids repeating questions, stays consistent, and plans better actions. Without it, the agent would forget everything each time and feel unfocused.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Agentic Memory for LLM Agents",
+       "url": "https://arxiv.org/abs/2502.12110"
+      },
+      {
+       "kind": "article",
+       "title": "Memory Management in AI Agents",
+       "url": "https://python.langchain.com/docs/how_to/chatbots_memory/"
+      },
+      {
+       "kind": "article",
+       "title": "Storing and Retrieving Knowledge for Agents",
+       "url": "https://www.pinecone.io/learn/langchain-retrieval-augmentation/"
+      },
+      {
+       "kind": "article",
+       "title": "Short-Term vs Long-Term Memory in AI Agents",
+       "url": "https://adasci.org/short-term-vs-long-term-memory-in-ai-agents/"
+      },
+      {
+       "kind": "video",
+       "title": "Building Brain-Like Memory for AI Agents",
+       "url": "https://www.youtube.com/watch?v=VKPngyO0iKg"
+      }
+     ],
+     "file": "what-is-agent-memory@TBH_DZTAfR8Daoh-njNFC.md"
+    },
+    {
+     "id": "EfCCNqLMJpWKKtamUa5gK",
+     "type": "topic",
+     "label": "Episodic vs Semantic Memory",
+     "body": "Agent memory often has two parts. Episodic memory is relevant to the context of the current conversation and may be lost after the conversation ends. Semantic memory is relevant to the broader knowledge of the agent and is persistent.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What Is AI Agent Memory? - IBM",
+       "url": "https://www.ibm.com/think/topics/ai-agent-memory"
+      },
+      {
+       "kind": "article",
+       "title": "Episodic Memory vs. Semantic Memory: The Key Differences",
+       "url": "https://www.magneticmemorymethod.com/episodic-vs-semantic-memory/"
+      },
+      {
+       "kind": "article",
+       "title": "Memory Systems in LangChain",
+       "url": "https://python.langchain.com/docs/how_to/chatbots_memory/"
+      }
+     ],
+     "file": "episodic-vs-semantic-memory@EfCCNqLMJpWKKtamUa5gK.md"
     }
    ]
   },
@@ -1309,45 +1349,6 @@
      "file": "mcp-client@CGVstUxVXLJcYZrwk3iNQ.md"
     },
     {
-     "id": "TBH_DZTAfR8Daoh-njNFC",
-     "type": "topic",
-     "label": "What is Agent Memory?",
-     "body": "Agent memory is the part of an AI agent that keeps track of what has already happened. It stores past user messages, facts the agent has learned, and its own previous steps. This helps the agent remember goals, user likes and dislikes, and important details across turns or sessions. Memory can be short-term, lasting only for one conversation, or long-term, lasting across many. With a good memory the agent avoids repeating questions, stays consistent, and plans better actions. Without it, the agent would forget everything each time and feel unfocused.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Agentic Memory for LLM Agents",
-       "url": "https://arxiv.org/abs/2502.12110"
-      },
-      {
-       "kind": "article",
-       "title": "Memory Management in AI Agents",
-       "url": "https://python.langchain.com/docs/how_to/chatbots_memory/"
-      },
-      {
-       "kind": "article",
-       "title": "Storing and Retrieving Knowledge for Agents",
-       "url": "https://www.pinecone.io/learn/langchain-retrieval-augmentation/"
-      },
-      {
-       "kind": "article",
-       "title": "Short-Term vs Long-Term Memory in AI Agents",
-       "url": "https://adasci.org/short-term-vs-long-term-memory-in-ai-agents/"
-      },
-      {
-       "kind": "video",
-       "title": "Building Brain-Like Memory for AI Agents",
-       "url": "https://www.youtube.com/watch?v=VKPngyO0iKg"
-      }
-     ],
-     "file": "what-is-agent-memory@TBH_DZTAfR8Daoh-njNFC.md"
-    }
-   ]
-  },
-  {
-   "heading": "Deployment Modes",
-   "nodes": [
-    {
      "id": "yv_-87FVM7WKn5iv6LW9q",
      "type": "subtopic",
      "label": "MCP Servers",
@@ -1375,7 +1376,12 @@
       }
      ],
      "file": "mcp-servers@yv_-87FVM7WKn5iv6LW9q.md"
-    },
+    }
+   ]
+  },
+  {
+   "heading": "Deployment Modes",
+   "nodes": [
     {
      "id": "iBtJp24F_kJE3YlBsW60s",
      "type": "subtopic",
@@ -1428,7 +1434,12 @@
       }
      ],
      "file": "remote--cloud@dHNMX3_t1KSDdAWqgdJXv.md"
-    },
+    }
+   ]
+  },
+  {
+   "heading": "Within Prompt",
+   "nodes": [
     {
      "id": "M3U6RfIqaiut2nuOibY8W",
      "type": "topic",
@@ -1464,63 +1475,6 @@
      "file": "short-term--memory@M3U6RfIqaiut2nuOibY8W.md"
     },
     {
-     "id": "EfCCNqLMJpWKKtamUa5gK",
-     "type": "topic",
-     "label": "Episodic vs Semantic Memory",
-     "body": "Agent memory often has two parts. Episodic memory is relevant to the context of the current conversation and may be lost after the conversation ends. Semantic memory is relevant to the broader knowledge of the agent and is persistent.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What Is AI Agent Memory? - IBM",
-       "url": "https://www.ibm.com/think/topics/ai-agent-memory"
-      },
-      {
-       "kind": "article",
-       "title": "Episodic Memory vs. Semantic Memory: The Key Differences",
-       "url": "https://www.magneticmemorymethod.com/episodic-vs-semantic-memory/"
-      },
-      {
-       "kind": "article",
-       "title": "Memory Systems in LangChain",
-       "url": "https://python.langchain.com/docs/how_to/chatbots_memory/"
-      }
-     ],
-     "file": "episodic-vs-semantic-memory@EfCCNqLMJpWKKtamUa5gK.md"
-    }
-   ]
-  },
-  {
-   "heading": "Maintaining Memory",
-   "nodes": []
-  },
-  {
-   "heading": "Within Prompt",
-   "nodes": [
-    {
-     "id": "wkS4yOJ3JdZQE_yBID8K7",
-     "type": "subtopic",
-     "label": "RAG and Vector Databases",
-     "body": "Using RAG with a vector database means storing pieces of information as embeddings and retrieving the most relevant ones by similarity search when the agent needs context. This combination lets an agent access a large body of knowledge without keeping it all in the prompt, since only the relevant retrieved pieces get added to context. It is a common way to give agents access to long term or external memory.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Understanding Retrieval-Augmented Generation (RAG) and Vector Databases",
-       "url": "https://pureai.com/Articles/2025/03/03/Understanding-RAG.aspx"
-      },
-      {
-       "kind": "article",
-       "title": "Build Advanced Retrieval-Augmented Generation Systems",
-       "url": "https://learn.microsoft.com/en-us/azure/developer/ai/advanced-retrieval-augmented-generation"
-      },
-      {
-       "kind": "article",
-       "title": "What Is Retrieval-Augmented Generation, aka RAG?",
-       "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/"
-      }
-     ],
-     "file": "rag-and-vector-databases@wkS4yOJ3JdZQE_yBID8K7.md"
-    },
-    {
      "id": "Ue633fz6Xu2wa2-KOAtdP",
      "type": "topic",
      "label": "Long Term Memory",
@@ -1553,6 +1507,35 @@
       }
      ],
      "file": "long-term-memory@Ue633fz6Xu2wa2-KOAtdP.md"
+    }
+   ]
+  },
+  {
+   "heading": "Maintaining Memory",
+   "nodes": [
+    {
+     "id": "wkS4yOJ3JdZQE_yBID8K7",
+     "type": "subtopic",
+     "label": "RAG and Vector Databases",
+     "body": "Using RAG with a vector database means storing pieces of information as embeddings and retrieving the most relevant ones by similarity search when the agent needs context. This combination lets an agent access a large body of knowledge without keeping it all in the prompt, since only the relevant retrieved pieces get added to context. It is a common way to give agents access to long term or external memory.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Understanding Retrieval-Augmented Generation (RAG) and Vector Databases",
+       "url": "https://pureai.com/Articles/2025/03/03/Understanding-RAG.aspx"
+      },
+      {
+       "kind": "article",
+       "title": "Build Advanced Retrieval-Augmented Generation Systems",
+       "url": "https://learn.microsoft.com/en-us/azure/developer/ai/advanced-retrieval-augmented-generation"
+      },
+      {
+       "kind": "article",
+       "title": "What Is Retrieval-Augmented Generation, aka RAG?",
+       "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/"
+      }
+     ],
+     "file": "rag-and-vector-databases@wkS4yOJ3JdZQE_yBID8K7.md"
     },
     {
      "id": "QJqXHV8VHPTnfYfmKPzW7",
@@ -1572,12 +1555,7 @@
       }
      ],
      "file": "user-profile-storage@QJqXHV8VHPTnfYfmKPzW7.md"
-    }
-   ]
-  },
-  {
-   "heading": "Vector DB / SQL / Custom",
-   "nodes": [
+    },
     {
      "id": "jTDC19BTWCqxqMizrIJHr",
      "type": "subtopic",
@@ -1677,12 +1655,7 @@
       }
      ],
      "file": "planner-executor@6YLCMWzystao6byCYCTPO.md"
-    }
-   ]
-  },
-  {
-   "heading": "Evaluation and Testing",
-   "nodes": [
+    },
     {
      "id": "Ep8RoZSy_Iq_zWXlGQLZo",
      "type": "topic",
@@ -1707,6 +1680,54 @@
      ],
      "file": "dag-agents@Ep8RoZSy_Iq_zWXlGQLZo.md"
     },
+    {
+     "id": "FjAYD6ZhAuPcS6gbvBBtE",
+     "type": "subtopic",
+     "label": "Multi-Agents",
+     "body": "Multi-agent systems involve multiple autonomous agents that interact with each other to achieve individual or collective goals. These agents can collaborate, compete, or coordinate their actions within a shared environment. The interactions between these agents can lead to emergent behaviors and solutions that are more complex and sophisticated than what a single agent could achieve on its own.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Guide to multi-agent systems (MAS)",
+       "url": "https://cloud.google.com/discover/what-is-a-multi-agent-system"
+      },
+      {
+       "kind": "article",
+       "title": "What is multi-agent collaboration?",
+       "url": "https://www.ibm.com/think/topics/multi-agent-collaboration"
+      },
+      {
+       "kind": "video",
+       "title": "Multi Agent Systems Explained: How AI Agents & LLMs Work Together",
+       "url": "https://www.youtube.com/watch?v=sWH0T4Zez6I"
+      }
+     ],
+     "file": "multi-agents@FjAYD6ZhAuPcS6gbvBBtE.md"
+    },
+    {
+     "id": "hBW8-z72NcETDn_cearYc",
+     "type": "subtopic",
+     "label": "Self-critique Agents",
+     "body": "Self-critique agents are a type of AI agent designed to evaluate and improve their own performance. They work by generating outputs, then analyzing those outputs to identify weaknesses or errors. Based on this self-analysis, the agent refines its approach and attempts to produce better results in subsequent iterations. This cycle of generation, critique, and refinement allows the agent to learn and adapt over time, improving its ability to solve problems or complete tasks effectively.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Reflection Agents",
+       "url": "https://blog.langchain.com/reflection-agents/"
+      },
+      {
+       "kind": "article",
+       "title": "How Do Agents Learn from Their Own Mistakes? The Role of Reflection in AI",
+       "url": "https://huggingface.co/blog/Kseniase/reflection"
+      }
+     ],
+     "file": "self-critique-agents@hBW8-z72NcETDn_cearYc.md"
+    }
+   ]
+  },
+  {
+   "heading": "Vector DB / SQL / Custom",
+   "nodes": [
     {
      "id": "US6T5dXM8IY9V2qZnTOFW",
      "type": "topic",
@@ -1735,7 +1756,12 @@
       }
      ],
      "file": "manual-from-scratch@US6T5dXM8IY9V2qZnTOFW.md"
-    },
+    }
+   ]
+  },
+  {
+   "heading": "Evaluation and Testing",
+   "nodes": [
     {
      "id": "v8qLnyFRnEumodBYxQSXQ",
      "type": "subtopic",
@@ -1766,35 +1792,6 @@
      "file": "metrics-to-track@v8qLnyFRnEumodBYxQSXQ.md"
     },
     {
-     "id": "FjAYD6ZhAuPcS6gbvBBtE",
-     "type": "subtopic",
-     "label": "Multi-Agents",
-     "body": "Multi-agent systems involve multiple autonomous agents that interact with each other to achieve individual or collective goals. These agents can collaborate, compete, or coordinate their actions within a shared environment. The interactions between these agents can lead to emergent behaviors and solutions that are more complex and sophisticated than what a single agent could achieve on its own.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Guide to multi-agent systems (MAS)",
-       "url": "https://cloud.google.com/discover/what-is-a-multi-agent-system"
-      },
-      {
-       "kind": "article",
-       "title": "What is multi-agent collaboration?",
-       "url": "https://www.ibm.com/think/topics/multi-agent-collaboration"
-      },
-      {
-       "kind": "video",
-       "title": "Multi Agent Systems Explained: How AI Agents & LLMs Work Together",
-       "url": "https://www.youtube.com/watch?v=sWH0T4Zez6I"
-      }
-     ],
-     "file": "multi-agents@FjAYD6ZhAuPcS6gbvBBtE.md"
-    }
-   ]
-  },
-  {
-   "heading": "Direct LLM API calls",
-   "nodes": [
-    {
      "id": "qo_O4YAe4-MTP_ZJoXJHR",
      "type": "subtopic",
      "label": "Unit Testing for Individual Tools",
@@ -1819,30 +1816,6 @@
      "file": "unit-testing-for-individual-tools@qo_O4YAe4-MTP_ZJoXJHR.md"
     },
     {
-     "id": "hBW8-z72NcETDn_cearYc",
-     "type": "subtopic",
-     "label": "Self-critique Agents",
-     "body": "Self-critique agents are a type of AI agent designed to evaluate and improve their own performance. They work by generating outputs, then analyzing those outputs to identify weaknesses or errors. Based on this self-analysis, the agent refines its approach and attempts to produce better results in subsequent iterations. This cycle of generation, critique, and refinement allows the agent to learn and adapt over time, improving its ability to solve problems or complete tasks effectively.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Reflection Agents",
-       "url": "https://blog.langchain.com/reflection-agents/"
-      },
-      {
-       "kind": "article",
-       "title": "How Do Agents Learn from Their Own Mistakes? The Role of Reflection in AI",
-       "url": "https://huggingface.co/blog/Kseniase/reflection"
-      }
-     ],
-     "file": "self-critique-agents@hBW8-z72NcETDn_cearYc.md"
-    }
-   ]
-  },
-  {
-   "heading": "Implementing the agent loop",
-   "nodes": [
-    {
      "id": "P9-SiIda3TSjHsfkI5OUV",
      "type": "subtopic",
      "label": "Integration Testing for Flows",
@@ -1865,16 +1838,7 @@
       }
      ],
      "file": "integration-testing-for-flows@P9-SiIda3TSjHsfkI5OUV.md"
-    }
-   ]
-  },
-  {
-   "heading": "Parsing model output",
-   "nodes": []
-  },
-  {
-   "heading": "Error & Rate-limit handling",
-   "nodes": [
+    },
     {
      "id": "rHxdxN97ZcU7MPl8L1jzN",
      "type": "subtopic",
@@ -1903,41 +1867,7 @@
       }
      ],
      "file": "human-in-the-loop-evaluation@rHxdxN97ZcU7MPl8L1jzN.md"
-    }
-   ]
-  },
-  {
-   "heading": "Frameworks",
-   "nodes": [
-    {
-     "id": "aafZxtjxiwzJH1lwHBODi",
-     "type": "topic",
-     "label": "LLM Native \"Function Calling\"",
-     "body": "LLM native function calling is a capability built directly into a model's API that lets it output a structured call to a predefined function, including the function name and arguments, instead of freeform text. The application executes the actual function and returns the result to the model to continue the conversation. This standardizes how models request actions, removing the need to parse tool calls out of plain text output.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "A Comprehensive Guide to Function Calling in LLMs",
-       "url": "https://thenewstack.io/a-comprehensive-guide-to-function-calling-in-llms/"
-      },
-      {
-       "kind": "article",
-       "title": "Function Calling with LLMs | Prompt Engineering Guide",
-       "url": "https://www.promptingguide.ai/applications/function_calling"
-      },
-      {
-       "kind": "article",
-       "title": "Function Calling with Open-Source LLMs",
-       "url": "https://medium.com/@rushing_andrei/function-calling-with-open-source-llms-594aa5b3a304"
-      }
-     ],
-     "file": "llm-native-function-calling@aafZxtjxiwzJH1lwHBODi.md"
-    }
-   ]
-  },
-  {
-   "heading": "Building Using Frameworks",
-   "nodes": [
+    },
     {
      "id": "xp7TCTRE9HP60_rGzTUF6",
      "type": "subtopic",
@@ -1997,6 +1927,146 @@
      "file": "deepeval@0924QUH1wV7Mp-Xu0FAhF.md"
     },
     {
+     "id": "YzEDtGEaMaMWVt0W03HRt",
+     "type": "subtopic",
+     "label": "Ragas",
+     "body": "Ragas is an evaluation framework focused specifically on retrieval augmented generation pipelines, measuring things like the relevance of retrieved documents and the faithfulness of generated answers to that retrieved content. It provides a standard set of metrics tailored to RAG systems rather than general purpose LLM evaluation. This makes it useful for diagnosing whether errors come from the retrieval step or the generation step.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Ragas Documentation",
+       "url": "https://docs.ragas.io/en/latest/"
+      },
+      {
+       "kind": "opensource",
+       "title": "explodinggradients/ragas",
+       "url": "https://github.com/explodinggradients/ragas"
+      },
+      {
+       "kind": "article",
+       "title": "Evaluating RAG Applications with RAGAs",
+       "url": "https://towardsdatascience.com/evaluating-rag-applications-with-ragas-81d67b0ee31a/n"
+      }
+     ],
+     "file": "ragas@YzEDtGEaMaMWVt0W03HRt.md"
+    }
+   ]
+  },
+  {
+   "heading": "Frameworks",
+   "nodes": [
+    {
+     "id": "aafZxtjxiwzJH1lwHBODi",
+     "type": "topic",
+     "label": "LLM Native \"Function Calling\"",
+     "body": "LLM native function calling is a capability built directly into a model's API that lets it output a structured call to a predefined function, including the function name and arguments, instead of freeform text. The application executes the actual function and returns the result to the model to continue the conversation. This standardizes how models request actions, removing the need to parse tool calls out of plain text output.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "A Comprehensive Guide to Function Calling in LLMs",
+       "url": "https://thenewstack.io/a-comprehensive-guide-to-function-calling-in-llms/"
+      },
+      {
+       "kind": "article",
+       "title": "Function Calling with LLMs | Prompt Engineering Guide",
+       "url": "https://www.promptingguide.ai/applications/function_calling"
+      },
+      {
+       "kind": "article",
+       "title": "Function Calling with Open-Source LLMs",
+       "url": "https://medium.com/@rushing_andrei/function-calling-with-open-source-llms-594aa5b3a304"
+      }
+     ],
+     "file": "llm-native-function-calling@aafZxtjxiwzJH1lwHBODi.md"
+    },
+    {
+     "id": "AQtxTTxmBpfl8BMgJbGzc",
+     "type": "subtopic",
+     "label": "OpenAI Functions Calling",
+     "body": "OpenAI's function calling lets a model choose from a set of functions defined in the API request and return a structured call with the function name and arguments as JSON. The calling application executes the function and sends the result back for the model to use in its next response. It is one of the earliest and most widely adopted implementations of native tool calling.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "OpenAI Documentation – Function Calling",
+       "url": "https://platform.openai.com/docs/guides/function-calling"
+      },
+      {
+       "kind": "official",
+       "title": "OpenAI Cookbook – Using Functions with GPT Models",
+       "url": "https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb"
+      },
+      {
+       "kind": "article",
+       "title": "@officialOpenAI Blog – Announcing Function Calling and Other Updates",
+       "url": "https://openai.com/blog/function-calling-and-other-api-updates"
+      },
+      {
+       "kind": "article",
+       "title": "@officialOpenAI API Reference – Functions Section",
+       "url": "https://platform.openai.com/docs/api-reference/chat/create#functions"
+      },
+      {
+       "kind": "article",
+       "title": "@officialOpenAI Community – Discussions and Examples on Function Calling",
+       "url": "https://community.openai.com/tag/function-calling"
+      }
+     ],
+     "file": "openai-functions-calling@AQtxTTxmBpfl8BMgJbGzc.md"
+    },
+    {
+     "id": "37GBFVZ2J2d5r8bd1ViHq",
+     "type": "subtopic",
+     "label": "OpenAI Assistant API",
+     "body": "The OpenAI Assistants API is a higher level interface for building agents that manages conversation threads, tool calls, and file based context on OpenAI's servers, rather than requiring the developer to track state manually. It handles things like persisting conversation history and running tools like code execution or file search. This reduces the amount of infrastructure a developer needs to build to get a working agent.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "OpenAI Documentation – Assistants API Overview",
+       "url": "https://platform.openai.com/docs/assistants/overview"
+      },
+      {
+       "kind": "official",
+       "title": "OpenAI Blog – Introducing the Assistants API",
+       "url": "https://openai.com/blog/assistants-api"
+      },
+      {
+       "kind": "official",
+       "title": "OpenAI Cookbook – Assistants API Example",
+       "url": "https://github.com/openai/openai-cookbook/blob/main/examples/Assistants_API_overview_python.ipynb"
+      },
+      {
+       "kind": "official",
+       "title": "OpenAI API Reference – Assistants Endpoints",
+       "url": "https://platform.openai.com/docs/api-reference/assistants"
+      }
+     ],
+     "file": "openai-assistant-api@37GBFVZ2J2d5r8bd1ViHq.md"
+    },
+    {
+     "id": "_iIsBJTVS6OBf_dsdmbVO",
+     "type": "subtopic",
+     "label": "Gemini Function Calling",
+     "body": "Gemini function calling is Google's implementation of native tool calling, letting a Gemini model select from provided function definitions and return a structured call with arguments. The application runs the corresponding function and returns the output to continue the interaction. It follows the same general pattern as other providers' function calling, with its own specific request and response format.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Function Calling with the Gemini API",
+       "url": "https://ai.google.dev/gemini-api/docs/function-calling"
+      },
+      {
+       "kind": "article",
+       "title": "Understanding Function Calling in Gemini",
+       "url": "https://medium.com/google-cloud/understanding-function-calling-in-gemini-3097937f1905"
+      }
+     ],
+     "file": "gemini-function-calling@_iIsBJTVS6OBf_dsdmbVO.md"
+    }
+   ]
+  },
+  {
+   "heading": "Building Using Frameworks",
+   "nodes": [
+    {
      "id": "Ka6VpCEnqABvwiF9vba7t",
      "type": "subtopic",
      "label": "LangChain",
@@ -2053,64 +2123,6 @@
       }
      ],
      "file": "langgraph@O53AvUSRB5SI6hhwKxniL.md"
-    },
-    {
-     "id": "YzEDtGEaMaMWVt0W03HRt",
-     "type": "subtopic",
-     "label": "Ragas",
-     "body": "Ragas is an evaluation framework focused specifically on retrieval augmented generation pipelines, measuring things like the relevance of retrieved documents and the faithfulness of generated answers to that retrieved content. It provides a standard set of metrics tailored to RAG systems rather than general purpose LLM evaluation. This makes it useful for diagnosing whether errors come from the retrieval step or the generation step.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Ragas Documentation",
-       "url": "https://docs.ragas.io/en/latest/"
-      },
-      {
-       "kind": "opensource",
-       "title": "explodinggradients/ragas",
-       "url": "https://github.com/explodinggradients/ragas"
-      },
-      {
-       "kind": "article",
-       "title": "Evaluating RAG Applications with RAGAs",
-       "url": "https://towardsdatascience.com/evaluating-rag-applications-with-ragas-81d67b0ee31a/n"
-      }
-     ],
-     "file": "ragas@YzEDtGEaMaMWVt0W03HRt.md"
-    },
-    {
-     "id": "AQtxTTxmBpfl8BMgJbGzc",
-     "type": "subtopic",
-     "label": "OpenAI Functions Calling",
-     "body": "OpenAI's function calling lets a model choose from a set of functions defined in the API request and return a structured call with the function name and arguments as JSON. The calling application executes the function and sends the result back for the model to use in its next response. It is one of the earliest and most widely adopted implementations of native tool calling.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "OpenAI Documentation – Function Calling",
-       "url": "https://platform.openai.com/docs/guides/function-calling"
-      },
-      {
-       "kind": "official",
-       "title": "OpenAI Cookbook – Using Functions with GPT Models",
-       "url": "https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb"
-      },
-      {
-       "kind": "article",
-       "title": "@officialOpenAI Blog – Announcing Function Calling and Other Updates",
-       "url": "https://openai.com/blog/function-calling-and-other-api-updates"
-      },
-      {
-       "kind": "article",
-       "title": "@officialOpenAI API Reference – Functions Section",
-       "url": "https://platform.openai.com/docs/api-reference/chat/create#functions"
-      },
-      {
-       "kind": "article",
-       "title": "@officialOpenAI Community – Discussions and Examples on Function Calling",
-       "url": "https://community.openai.com/tag/function-calling"
-      }
-     ],
-     "file": "openai-functions-calling@AQtxTTxmBpfl8BMgJbGzc.md"
     },
     {
      "id": "XS-FsvtrXGZ8DPrwOsnlI",
@@ -2176,40 +2188,6 @@
      "file": "llamaindex@iEHF-Jm3ck-Iu85EbCoDi.md"
     },
     {
-     "id": "37GBFVZ2J2d5r8bd1ViHq",
-     "type": "subtopic",
-     "label": "OpenAI Assistant API",
-     "body": "The OpenAI Assistants API is a higher level interface for building agents that manages conversation threads, tool calls, and file based context on OpenAI's servers, rather than requiring the developer to track state manually. It handles things like persisting conversation history and running tools like code execution or file search. This reduces the amount of infrastructure a developer needs to build to get a working agent.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "OpenAI Documentation – Assistants API Overview",
-       "url": "https://platform.openai.com/docs/assistants/overview"
-      },
-      {
-       "kind": "official",
-       "title": "OpenAI Blog – Introducing the Assistants API",
-       "url": "https://openai.com/blog/assistants-api"
-      },
-      {
-       "kind": "official",
-       "title": "OpenAI Cookbook – Assistants API Example",
-       "url": "https://github.com/openai/openai-cookbook/blob/main/examples/Assistants_API_overview_python.ipynb"
-      },
-      {
-       "kind": "official",
-       "title": "OpenAI API Reference – Assistants Endpoints",
-       "url": "https://platform.openai.com/docs/api-reference/assistants"
-      }
-     ],
-     "file": "openai-assistant-api@37GBFVZ2J2d5r8bd1ViHq.md"
-    }
-   ]
-  },
-  {
-   "heading": "Debugging and Monitoring",
-   "nodes": [
-    {
      "id": "uFPJqgU4qGvZyxTv-osZA",
      "type": "subtopic",
      "label": "CrewAI",
@@ -2256,49 +2234,6 @@
       }
      ],
      "file": "autogen@7YtnQ9-KIvGPSpDzEDexl.md"
-    },
-    {
-     "id": "zs6LM8WEnb0ERWpiaQCgc",
-     "type": "subtopic",
-     "label": "Structured logging & tracing",
-     "body": "Structured logging and tracing record an agent's execution in a consistent, machine readable format, capturing details like which tool was called, what arguments were used, and how long each step took. Unlike plain text logs, structured data can be filtered, searched, and analyzed programmatically. Tracing connects these individual log entries into a full picture of a single run, which is essential for debugging complex, multi step agent behavior.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Understanding Structured Logging: A Comprehensive Guide",
-       "url": "https://www.graphapp.ai/blog/understanding-structured-logging-a-comprehensive-guide"
-      },
-      {
-       "kind": "article",
-       "title": "Structured Logging & Cloud Logging",
-       "url": "https://cloud.google.com/logging/docs/structured-logging"
-      },
-      {
-       "kind": "article",
-       "title": "Best Practices for Logging in AI Applications",
-       "url": "https://www.restack.io/p/best-ai-practices-software-compliance-answer-logging-best-practices-cat-ai"
-      }
-     ],
-     "file": "structured-logging--tracing@zs6LM8WEnb0ERWpiaQCgc.md"
-    },
-    {
-     "id": "_iIsBJTVS6OBf_dsdmbVO",
-     "type": "subtopic",
-     "label": "Gemini Function Calling",
-     "body": "Gemini function calling is Google's implementation of native tool calling, letting a Gemini model select from provided function definitions and return a structured call with arguments. The application runs the corresponding function and returns the output to continue the interaction. It follows the same general pattern as other providers' function calling, with its own specific request and response format.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Function Calling with the Gemini API",
-       "url": "https://ai.google.dev/gemini-api/docs/function-calling"
-      },
-      {
-       "kind": "article",
-       "title": "Understanding Function Calling in Gemini",
-       "url": "https://medium.com/google-cloud/understanding-function-calling-in-gemini-3097937f1905"
-      }
-     ],
-     "file": "gemini-function-calling@_iIsBJTVS6OBf_dsdmbVO.md"
     },
     {
      "id": "eWxQiBrxIUG2JNcrdfIHS",
@@ -2351,21 +2286,31 @@
    ]
   },
   {
-   "heading": "Observability Tools",
+   "heading": "Debugging and Monitoring",
    "nodes": [
     {
-     "id": "1EZFbDHA5J5_5BPMLMxXb",
+     "id": "zs6LM8WEnb0ERWpiaQCgc",
      "type": "subtopic",
-     "label": "Anthropic Tool Use",
-     "body": "Anthropic tool use is Claude's implementation of native function calling, where the model can choose to call a defined tool with structured arguments as part of its response. The calling application executes the tool and returns the result, which Claude can use to continue reasoning or produce a final answer. It supports patterns like parallel tool calls and forcing a specific tool to be used when needed.",
+     "label": "Structured logging & tracing",
+     "body": "Structured logging and tracing record an agent's execution in a consistent, machine readable format, capturing details like which tool was called, what arguments were used, and how long each step took. Unlike plain text logs, structured data can be filtered, searched, and analyzed programmatically. Tracing connects these individual log entries into a full picture of a single run, which is essential for debugging complex, multi step agent behavior.",
      "resources": [
       {
-       "kind": "official",
-       "title": "Anthropic Tool Use",
-       "url": "https://docs.anthropic.com/en/docs/build-with-claude/tool-use/overview"
+       "kind": "article",
+       "title": "Understanding Structured Logging: A Comprehensive Guide",
+       "url": "https://www.graphapp.ai/blog/understanding-structured-logging-a-comprehensive-guide"
+      },
+      {
+       "kind": "article",
+       "title": "Structured Logging & Cloud Logging",
+       "url": "https://cloud.google.com/logging/docs/structured-logging"
+      },
+      {
+       "kind": "article",
+       "title": "Best Practices for Logging in AI Applications",
+       "url": "https://www.restack.io/p/best-ai-practices-software-compliance-answer-logging-best-practices-cat-ai"
       }
      ],
-     "file": "anthropic-tool-use@1EZFbDHA5J5_5BPMLMxXb.md"
+     "file": "structured-logging--tracing@zs6LM8WEnb0ERWpiaQCgc.md"
     },
     {
      "id": "SS8mGqf9wfrNqenIWvN8Z",
@@ -2477,6 +2422,25 @@
       }
      ],
      "file": "openllmetry@7UqPXUzqKYXklnB3x-tsv.md"
+    }
+   ]
+  },
+  {
+   "heading": "Observability Tools",
+   "nodes": [
+    {
+     "id": "1EZFbDHA5J5_5BPMLMxXb",
+     "type": "subtopic",
+     "label": "Anthropic Tool Use",
+     "body": "Anthropic tool use is Claude's implementation of native function calling, where the model can choose to call a defined tool with structured arguments as part of its response. The calling application executes the tool and returns the result, which Claude can use to continue reasoning or produce a final answer. It supports patterns like parallel tool calls and forcing a specific tool to be used when needed.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Anthropic Tool Use",
+       "url": "https://docs.anthropic.com/en/docs/build-with-claude/tool-use/overview"
+      }
+     ],
+     "file": "anthropic-tool-use@1EZFbDHA5J5_5BPMLMxXb.md"
     },
     {
      "id": "SU2RuicMUo8tiAsQtDI1k",

@@ -7,6 +7,11 @@ Capture de reference : 2026-09-16
 > couverture des roadmaps au format historique (`ai-data-scientist`), dont les
 > noeuds regroupent plusieurs notions sur une meme ligne. A lire comme un
 > signal a verifier, pas comme un verdict.
+>
+> Elle sous-estime aussi les parcours dont les schemas sont rediges en
+> francais : le libelle amont n'a alors aucun equivalent litteral. Pour que
+> la mesure reste exploitable, un schema doit conserver le libelle amont
+> d'origine et porter la traduction dans le texte, pas dans le noeud.
 
 | Note | Noeuds amont | Absents de la note | Couverture |
 |---|---:|---:|---:|
@@ -18,6 +23,11 @@ Capture de reference : 2026-09-16
 | 06 - Roadmap — Prompt Engineering | 47 | 4 | 91 % |
 | 07 - Roadmap — AI Agents | 101 | 3 | 97 % |
 | 08 - Roadmap — MLOps | 62 | 2 | 97 % |
+| forward-deployed-engineer | 20 | 5 | 75 % |
+| ai-red-teaming | 64 | 1 | 98 % |
+| ai-product-builder | 52 | 4 | 92 % |
+| data-analyst | 99 | 0 | 100 % |
+| bi-analyst | 200 | 7 | 96 % |
 
 ## 01 - Roadmap — Computer Science
 
@@ -25,30 +35,30 @@ Slug `computer-science` · derniere modification amont 2026-09-07
 
 **24 noeuds amont absents de la note :**
 
-- Bubble Sort
-- Pre-Order Traversal
-- Selection Sort
-- In-Order Traversal
-- Insertion Sort
-- Bellman Ford's Algorithm
-- Heap Sort
-- Dijkstra's Algorithm
-- Quick Sort
-- A* Algorithm
-- Dijkstra's Algorithm
-- Solving N Queen Problem
-- Kruskal's Algorithm
-- Maze Solving Problem
-- Ford-Fulkerson Algorithm
-- The Knight's Tour Problem
-- Prim's Algorithm
-- Rabin-Karp Algorithm
 - String Search & Manipulations
+- TLS & HTTPS
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
+- Heap Sort
+- Quick Sort
+- Bellman Ford's Algorithm
+- Dijkstra's Algorithm
+- A* Algorithm
+- Pre-Order Traversal
+- In-Order Traversal
+- Dijkstra's Algorithm
+- Kruskal's Algorithm
+- Ford-Fulkerson Algorithm
+- Prim's Algorithm
+- Solving N Queen Problem
+- Maze Solving Problem
+- The Knight's Tour Problem
+- Rabin-Karp Algorithm
 - Robin-Karp
 - Travelling Salesman Problem
 - Knapsack Problem
 - Longest Path Problem
-- TLS & HTTPS
 
 <details><summary>9 libelles de la note sans equivalent amont (ajouts 2026 volontaires, ou noeuds retires)</summary>
 
@@ -81,8 +91,8 @@ Slug `ai-data-scientist` · derniere modification amont 2026-09-04
 - Data understanding, Data Analysis and Visualization
 - Classic ML (Sup., Unsup.), Advanced ML (Ensembles, NNs)
 - Learn SQL
-- Deployment Models, CI/CD
 - AI Engineering
+- Deployment Models, CI/CD
 - Prompt Engineering, LLMs, RAG, Agents, Fine-tuning
 
 <details><summary>234 libelles de la note sans equivalent amont (ajouts 2026 volontaires, ou noeuds retires)</summary>
@@ -412,11 +422,11 @@ Slug `machine-learning` · derniere modification amont 2026-06-17
 
 **5 noeuds amont absents de la note :**
 
+- Feature Scaling & Normalization
 - Matrix & Matrix Operations
+- Image & Video Recognition
 - Singular Value Decomposition
 - Graphs & Charts
-- Feature Scaling & Normalization
-- Image & Video Recognition
 
 <details><summary>38 libelles de la note sans equivalent amont (ajouts 2026 volontaires, ou noeuds retires)</summary>
 
@@ -469,22 +479,23 @@ Slug `ai-engineer` · derniere modification amont 2026-09-11
 **25 noeuds amont absents de la note :**
 
 - Roles and Responsiblities
-- Role & Behavior
 - RAG & Dynamic Filters
+- Role & Behavior
 - Memory Systems
 - modus
 - DataHub
 - Atlan
 - PostHog
-- OpenAI AgentKit & Agent SDK
-- Tracing & logging
 - Know your Customers / Usecases
+- OpenAI AgentKit & Agent SDK
+- LangChain for Multimodal Apps
+- Tracing & logging
 - Cost/latency monitoring
-- LLM Observability
 - LangSmith
 - Langfuse
 - Helicone
 - Arize AI
+- LLM Observability
 - Deterministic Evals
 - Model-Based Evals
 - Regression Testing
@@ -492,7 +503,6 @@ Slug `ai-engineer` · derniere modification amont 2026-09-11
 - DeepEval
 - RAGAS
 - Devin
-- LangChain for Multimodal Apps
 
 <details><summary>59 libelles de la note sans equivalent amont (ajouts 2026 volontaires, ou noeuds retires)</summary>
 
@@ -565,9 +575,9 @@ Slug `prompt-engineering` · derniere modification amont 2026-04-29
 
 **4 noeuds amont absents de la note :**
 
+- One-Shot / Few-Shot Prompting
 - Model Weights / Parameters
 - Fine-Tuning vs Prompt Engg.
-- One-Shot / Few-Shot Prompting
 - Prompt Tuning
 
 <details><summary>104 libelles de la note sans equivalent amont (ajouts 2026 volontaires, ou noeuds retires)</summary>
@@ -928,5 +938,1250 @@ Slug `mlops` · derniere modification amont 2026-01-24
 - traces
 - uv et ruff pour les environnements
 - vLLM, SGLang, TensorRT LLM
+
+</details>
+
+
+## forward-deployed-engineer
+
+Slug `forward-deployed-engineer` · derniere modification amont 2026-06-30
+
+**5 noeuds amont absents de la note :**
+
+- From X to FDE
+- Introduction
+- Roles & Responsabilities
+- Enterprise Workflow
+- Business Acumen
+
+<details><summary>551 libelles de la note sans equivalent amont (ajouts 2026 volontaires, ou noeuds retires)</summary>
+
+- 1 - Audit et cartographie in situ
+- 2 - Rationalisation et arbitrage technologique
+- 3 - Développement et industrialisation
+- 4 - Sortie de mission et transfert
+- API existante
+- API existante - le meilleur cas
+- Accès
+- Accès - qui peut lire quoi, et comment l'obtenir
+- Agent avec outils
+- Agent avec outils, périmètre restreint
+- Agents et outils
+- Ajuster pendant qu'on est encore sur place
+- Alertes utiles
+- Alertes utiles, peu nombreuses
+- Analyse de vulnérabilités et validation sécurité
+- Appel simple
+- Appel simple - prompt et données injectées
+- Après la mission
+- Arbitrage écrit
+- Arbitrage écrit et accepté
+- Architecte de solutions
+- Architecte de solutions, direction technique de compte
+- Architecture
+- Architecture en une page et matrice de flux
+- Assistance
+- Assistance - le système propose, l'humain décide
+- Audit et cartographie
+- Audit et cartographie in situ
+- Autonomie
+- Autonomie - backend et API, Linux, bases de données, DevOps
+- Autonomie sur un sous-ensemble prouvé
+- Bilan
+- Bilan mesuré et périmètre suivant
+- Boucle de retour produit
+- Bus d'échange ou file de messages du client
+- CI/CD
+- Carte du processus
+- Cartographie d'influence
+- Cartographier le processus
+- Cartographier le processus - BPMN
+- Cas limites qui casseraient un agent la première semaine
+- Ce contrôle protège-t-il d'un risque réel ?
+- Ce que réussir veut dire
+- Ce qui est en service et mesuré
+- Ce qui est retenu et pourquoi
+- Ce qui invaliderait la décision
+- Ce qui n'a pas abouti
+- Ce qui n'a pas abouti, et pourquoi
+- Ce qui reste
+- Ce qui reste - arbitrage étape par étape
+- Ce qui reste - candidat à l'automatisation
+- Ce qui reste ouvert
+- Cette information est-elle ressaisie ?
+- Cette étape existe-t-elle encore pour une raison ?
+- Charge supplémentaire pendant la transition
+- Chaîne de livraison sur l'outillage du client
+- Choix d'architecture et de modèle
+- Choix du modèle
+- Choix du modèle - qualité mesurée, coût, latence, confidentialité
+- Classification des données en entrée
+- Compte rendu de décision
+- Compétences relationnelles
+- Compétences relationnelles et politiques
+- Conception d'API
+- Conduire le changement
+- Conformité
+- Conformité - RGPD, gouvernance, registre
+- Connecter les systèmes
+- Construire réellement agents
+- Construire réellement agents, RAG, évaluations — sans framework d'abord
+- Consultant
+- Contacts
+- Contacts - qui appeler pour quoi
+- Conteneurisation
+- Contraintes
+- Contraintes - classification, sortie du territoire, DPO
+- Contraintes d'hébergement client
+- Contraintes d'hébergement client - cloud souverain, air gap
+- Contraintes et attentes réalistes
+- Contrat de maintenance et points de veille
+- Contrats
+- Contrats, versionnement, erreurs typées
+- Contrôle de sortie et politiques
+- Couloirs
+- Couloirs - qui fait quoi
+- Coût complet
+- Coût et latence
+- Coût par requête et budget plafonné
+- Cycle de mission
+- Diagnostic
+- Dire ce que l'IA ne fera pas
+- Dire les limites avant qu'on ne les découvre
+- Dire non fait partie du service
+- Documentation d'exploitation
+- Documentation d'exploitation - écrite au fil de l'eau
+- Documentation qui survit au départ
+- Données
+- Données - volume, fraîcheur, complétude, propriétaire
+- Droits d'accès appliqués à la récupération
+- Déboguage sans outillage graphique
+- Découper en tâches et estimer
+- Découverte et cadrage
+- Découverte et cadrage - définir la réussite
+- Dépôt et chaîne d'intégration du client
+- Dérive
+- Dérive - corpus, usages, volumes
+- Désaccord technique fondé
+- Déterministe
+- Déterministe - script, requête, webhook, moteur de règles
+- Déterministe - script, webhook, règle, RPA
+- Développement et industrialisation
+- Empaquetage et dépendances en environnement contraint
+- En faire une contrainte d'architecture
+- Entretiens
+- Entretiens - utiles mais insuffisants
+- Entrée non structurée
+- Entrée non structurée - texte libre, document, parole ?
+- Environnements
+- Environnements - développement, recette, production
+- Erreur tolérable et détectable ?
+- Escalader vite un blocage
+- Exploitation
+- Exploitation - observabilité, coût, latence
+- Exploitation - qui opérera le système après nous
+- Exploitation et supervision
+- Export périodique
+- Export périodique - fichier, souvent suffisant
+- Expérience d'un projet précédent abandonné
+- Faire prendre une décision
+- Faire prendre une décision, pas exposer un sujet
+- Faire reconnaître le diagnostic avant de proposer
+- Filtrage des données sensibles avant envoi au modèle
+- Forward Deployed Engineer
+- Fusionner ou déplacer
+- Gains
+- Gains - temps, erreurs, délai, revenu, risque
+- Garde-fous et sécurité
+- Garder l'humain
+- Garder l'humain, assister sans décider
+- Go - services à contrainte de latence
+- Goulets
+- Goulets - où le dossier attend
+- Gérer les attentes avant la démonstration
+- Gérer les parties prenantes
+- HTML, CSS, JavaScript
+- IA générative
+- Idempotence
+- Idempotence et reprise
+- Idempotence, journal d'écriture, réversibilité
+- Identifier les sceptiques tôt
+- Identifier qui reprendra
+- Immersion
+- Immersion - observer le travail réel
+- Incidents connus et leur traitement
+- Industrialisation
+- Informer avant que ça ne devienne un problème
+- Inférence et infrastructure
+- Ingénieur logiciel
+- Interfaçage avec l'existant
+- Intégration
+- Intégration - le vrai problème de conception
+- Inventaire
+- Inventorier données et systèmes existants
+- Inverser les rôles
+- Inverser les rôles - le FDE assiste
+- JavaScript
+- Jeu d'évaluation
+- Jeu d'évaluation et procédure de rejeu
+- Jeu de cas
+- Jeu de cas - construit avec le client
+- Journal d'audit exploitable
+- Kubernetes
+- Kubernetes - au niveau usage
+- L'état courant des systèmes et des processus
+- La question posée
+- La source de données à laquelle les gens se fient réellement
+- La tâche demande-t-elle plusieurs actions enchaînées ?
+- Langage
+- Langage, stack et outillage que l'équipe maîtrise
+- Le pilote éternel
+- Le problème à résoudre
+- Le savoir est-il dans un corpus ?
+- Le système automatise un processus qui n'existe pas
+- Le système meurt à la première évolution
+- Lecture de journaux
+- Lecture de journaux - journalctl, fichiers
+- Lecture directe en base
+- Lecture directe en base - réplique, jamais la production
+- Les journaux plutôt que les déclarations
+- Les options examinées
+- Les options examinées, y compris celles écartées
+- Leur donner des preuves
+- Leur donner des preuves - les évaluations
+- Leur faire livrer une modification de bout en bout
+- Leur laisser le clavier sur les incidents réels
+- Lire l'organisation
+- Livraison
+- Livrer une version
+- Loyauté au résultat
+- Loyauté au résultat, pas à un camp
+- Maintenance
+- Maintenance - qui, combien, sur quel périmètre
+- Mesure de la valeur réelle à trois et six mois
+- Mesurer ses compétences et sa charge réelles
+- Mise en service
+- Mise en service progressive
+- Mise à l'épreuve
+- Mise à l'épreuve - le FDE se retire
+- Mode dégradé explicite
+- Modes de défaillance et dégradation
+- Modèle ML classique ou requête analytique
+- Modèles et APIs
+- Modélisation BPMN
+- Métriques
+- Métriques - fidélité, pertinence, non-hallucination
+- Nature de la tâche
+- Navigation
+- Navigation, droits, processus
+- Ne pas devenir la dépendance
+- Ne pas modéliser plus fin que nécessaire
+- Ne rien automatiser
+- Ni employé du client
+- Ni fournisseur qui livre et s'en va
+- Non-régression rejouée à chaque changement
+- Note de décision
+- Notion
+- Notion - réseau bas niveau, systèmes distribués avancés, entraînement de modèles
+- Objets de données
+- Objets de données - ce qui entre et sort de chaque étape
+- Observabilité
+- Observer l'usage réel
+- Observer le travail tel qu'il se fait
+- On fige la complexité au lieu de l'éliminer
+- Ordres de grandeur et coût
+- Outils officieux
+- Outils officieux - tableurs, messageries, notes
+- Ouvertures de flux et comptes de service
+- Parler coût par dossier
+- Parler coût par dossier, pas coût par token
+- Parler d'arbitrages IA à un non-technique
+- Parler d'arbitrages IA à un non-technique, porter une livraison de bout en bout
+- Passerelles
+- Passerelles - les points de décision réels
+- Perte de valeur d'une expertise
+- Peur pour l'emploi
+- Phase 1
+- Phase 1 - Audit et cartographie
+- Phase 1 - cartographier ce qu'on décrit au lieu de ce qu'on fait
+- Phase 2
+- Phase 2 - Rationalisation et arbitrage
+- Phase 2 - coder avant de simplifier
+- Phase 3
+- Phase 3 - Industrialisation
+- Phase 3 - démonstration réussie, mise en service jamais atteinte
+- Phase 4
+- Phase 4 - Sortie de mission
+- Phase 4 - passation en une réunion
+- Pilotage d'interface
+- Pilotage d'interface - dernier recours
+- Pipeline déterministe avec étapes modèle
+- Plus petite unité d'autonomie qui apporte de la valeur
+- Position du FDE
+- Probabiliste
+- Probabiliste - IA générative
+- Processus non documenté
+- Processus réel
+- Processus réel cartographié
+- Procédures
+- Procédures - démarrer, arrêter, rejouer, purger
+- Procédures d'exploitation
+- Product Manager
+- Prompt et context engineering
+- Protocole d'évaluation
+- Protocole d'évaluation et seuil chiffré
+- Prototype livrable sans équipe frontend
+- Présenter ensuite à la direction
+- Présenter la carte aux opérationnels d'abord
+- Prévention des injections de prompt
+- Python
+- Python - défaut pour l'IA
+- Périmètre suivant
+- Périmètre suivant - identifié, pas vendu
+- Qualité et fraîcheur des données
+- Qui décide
+- Qui décide - le mandat réel
+- Qui décide, à quelle date
+- Qui paie
+- Qui paie - le budget et sa logique
+- Qui perd quelque chose
+- Qui peut bloquer sans décider
+- Qui utilisera
+- Qui utilisera - et qui n'a rien demandé
+- Rationalisation et arbitrage
+- Rationalisation et arbitrage technologique
+- Registre d'images interne
+- Registre d'images interne, bases imposées
+- Registre de décisions
+- Registre de décisions - les pourquoi
+- Relationnel
+- Relationnel - SQL, modèle réel contre modèle documenté
+- Reprise des cas d'échec
+- Reprises
+- Reprises - où le travail est refait
+- Repérer goulets et silos
+- Ressaisie manuelle entre deux systèmes
+- Restituer la carte et la faire reconnaître
+- Restitution
+- Retour arrière possible à chaque palier
+- Retour vers le produit
+- Retour vers le produit, avec la connaissance terrain
+- Rogner sur la qualité accélère puis coûte double
+- Règle explicite et stable ?
+- Réduire le périmètre accélère sans coûter en qualité
+- Référence
+- Référence - AI engineering
+- Référence humaine sur les mêmes cas
+- Réseau
+- Réseau - ports, proxy d'entreprise, certificats
+- Résistance
+- Savoir dire que l'IA n'est pas la réponse
+- Savoir s'arrêter avant le produit fini
+- Se faire corriger
+- Se faire corriger - c'est le but
+- Secrets et accès
+- Services
+- Services, systemd, redémarrage
+- Session de formation en fin de mission
+- Seuil de mise en service
+- Seuil de mise en service, chiffré
+- Silos
+- Silos - où l'information est ressaisie
+- Socle technique
+- Socle technique - Linux, backend, frontend, DSA, DevOps, AI engineering
+- Socle technique du FDE
+- Sortie de mission
+- Sortie de mission et transfert
+- Spécification issue du besoin métier
+- Statistique classique suffit ?
+- Structures de données usuelles
+- Supprimer
+- Supprimer les étapes superflues
+- Système en service
+- Systèmes
+- Systèmes - ERP, CRM, GED, outils métier
+- Systèmes patrimoniaux
+- Systèmes patrimoniaux - ERP, CRM, exports
+- Sécurité
+- Sécurité des données et garde-fous
+- Sécurité, DPO, achats, exploitation, représentants du personnel
+- Séquencer par le risque
+- Séquencer par le risque, pas par la facilité
+- Tableau de bord lisible par le client
+- Temps d'attente contre temps de traitement
+- Tenir sa position de tiers
+- Tests de performance sur volumes réels
+- Tiers de confiance
+- Tiers de confiance, temporaire
+- Traces par requête
+- Traces par requête - entrée, contexte, sortie, latence
+- Traduire le technique en enjeu métier
+- Traiter d'abord ce qui peut tuer la mission
+- Transfert
+- Transfert par la pratique
+- Travailler ensemble pendant la phase 3
+- Travailler ensemble pendant la phase 3, pas après
+- TypeScript
+- TypeScript - interfaces et outillage
+- Tâches et leur nature
+- Tâches et leur nature - manuelle, système, décision
+- Un appel avec le bon contexte suffit-il ?
+- Un framework
+- Un framework, un seul
+- Un point de comparaison
+- Un point de comparaison - la performance humaine actuelle
+- Un seuil chiffré
+- Un seuil chiffré, accepté par celui qui décide
+- Une page vaut mieux que dix
+- Usage
+- Usage - frontend, DSA, orchestration de conteneurs
+- Vectoriel
+- Vectoriel - index, filtres, réindexation
+- Veille
+- Veille - montée de version de modèle, dépréciation
+- Vulgariser et défendre un arbitrage
+- accepté par celui qui décide
+- achats
+- air gap
+- arbitrage étape par étape
+- arrêter
+- assister sans décider
+- au niveau usage
+- avec la connaissance terrain
+- backend et API
+- bases de données
+- bases imposées
+- c'est le but
+- c'est souvent le cas limite qui manquait
+- candidat à l'automatisation
+- cartographier ce qu'on décrit au lieu de ce qu'on fait
+- ce qui entre et sort de chaque étape
+- certificats
+- chiffré
+- classification
+- cloud souverain
+- coder avant de simplifier
+- combien
+- complétude
+- confidentialité
+- construit avec le client
+- contexte
+- corpus
+- dernier recours
+- direction technique de compte
+- document
+- droits
+- décision
+- déclencheurs
+- défaut pour l'IA
+- définir la réussite
+- délai
+- délais
+- démarrer
+- démonstration réussie
+- dépréciation
+- développement
+- entraînement de modèles
+- entrée
+- erreurs
+- erreurs typées
+- et comment l'obtenir
+- et pourquoi
+- et qui n'a rien demandé
+- exploitation
+- exports
+- fichier
+- fichiers
+- fidélité
+- filtres
+- fraîcheur
+- gouvernance
+- identifié
+- index
+- interfaces et outillage
+- jamais la production
+- journal d'écriture
+- journalctl
+- l'humain décide
+- la performance humaine actuelle
+- la trace qui protège
+- latence
+- le FDE assiste
+- le FDE se retire
+- le budget et sa logique
+- le mandat réel
+- le meilleur cas
+- le point dur
+- le système propose
+- le vrai problème de conception
+- les points de décision réels
+- les pourquoi
+- les évaluations
+- manuelle
+- messageries
+- mise en service jamais atteinte
+- modèle réel contre modèle documenté
+- montée de version de modèle
+- moteur de règles
+- non-hallucination
+- notes
+- observabilité
+- observer le travail réel
+- orchestration de conteneurs
+- outils métier
+- où l'information est ressaisie
+- où le dossier attend
+- où le travail est refait
+- parole ?
+- pas après
+- pas coût par token
+- pas exposer un sujet
+- pas par la facilité
+- pas vendu
+- pas à un camp
+- passation en une réunion
+- pertinence
+- peu nombreuses
+- porter une livraison de bout en bout
+- ports
+- processus
+- production
+- prompt et données injectées
+- propriétaire
+- proxy d'entreprise
+- purger
+- périmètre restreint
+- qualité mesurée
+- qui appeler pour quoi
+- qui fait quoi
+- qui opérera le système après nous
+- qui peut lire quoi
+- recette
+- redémarrage
+- registre
+- rejouer
+- représentants du personnel
+- requête
+- revenu
+- risque
+- règle
+- réindexation
+- réplique
+- réseau bas niveau
+- réversibilité
+- sans framework d'abord
+- script
+- services à contrainte de latence
+- sortie
+- sortie du territoire
+- souvent suffisant
+- stack et outillage que l'équipe maîtrise
+- sur quel périmètre
+- systemd
+- système
+- systèmes distribués avancés
+- tableurs
+- temporaire
+- temps
+- texte libre
+- un seul
+- usages
+- utiles mais insuffisants
+- versionnement
+- volume
+- volumes
+- webhook
+- y compris celles écartées
+- Écart entre attente et réalité
+- Écouter
+- Écouter - c'est souvent le cas limite qui manquait
+- Écrire
+- Écrire - la trace qui protège
+- Écriture
+- Écriture - le point dur
+- Élargissement du périmètre
+- Équipe de reprise identifiée dès la phase 1
+- Évaluation
+- Événements
+- Événements - déclencheurs, délais, erreurs
+- à quelle date
+- écrite au fil de l'eau
+- évaluations
+
+</details>
+
+
+## ai-red-teaming
+
+Slug `ai-red-teaming` · derniere modification amont 2026-03-20
+
+**1 noeuds amont absents de la note :**
+
+- Agentic AI Security
+
+<details><summary>106 libelles de la note sans equivalent amont (ajouts 2026 volontaires, ou noeuds retires)</summary>
+
+- Adversaires
+- Adversaires - utilisateur curieux, concurrent, insider, acteur étatique
+- Alignement par renforcement
+- Alignement par renforcement - où naissent le reward hacking et la sycophantie
+- Alimentation
+- Alimentation - incidents de production, divulgations publiques, passes manuelles
+- Cas classés par catégorie de préjudice et par surface
+- Chaîne d'approvisionnement
+- Chaîne d'approvisionnement - poids, serveurs d'outils, SDK
+- Community Engagement
+- Community Engagement et pratique
+- Corpus d'évaluation adverse
+- Critère de succès explicite par cas
+- Documentation
+- Documentation, journalisation, supervision humaine
+- Défenses à évaluer
+- Empoisonnement de l'index de récupération
+- Empoisonnement de l'index de récupération - sans toucher aux poids
+- Exfiltration par canal latéral
+- Exfiltration par canal latéral - rendu d'image, lien, appel d'outil
+- Frontière
+- Frontière - ce qui est OWASP habituel, ce qui est propre au modèle
+- Gouvernance
+- ISO/IEC 42001
+- Infrastructure, API, chaîne d'approvisionnement
+- Input sanitization et output filtering
+- Instruction demarcation
+- Instruction demarcation - balisage explicite
+- Juge modèle calibré sur annotations humaines
+- Least privilege sur les capacités et les outils
+- Membership inference
+- Membership inference - la variante la plus réaliste en entreprise
+- Mesure
+- Mesure - taux de réussite sur un corpus, pas exploit unique
+- Model Extraction
+- Méthode
+- Méthode - black, grey, white box
+- Méthode d'engagement
+- NIST AI RMF
+- Parade architecturale
+- Parade architecturale - la seule qui tienne
+- Practical Experience
+- Priorisation par impact métier
+- Priorisation par impact métier, pas par élégance technique
+- Programmes de divulgation et primes
+- Promptfoo
+- Publics
+- PyRIT
+- Reconnaissance
+- Reporting, divulgation, gouvernance
+- Règlement européen sur l'IA
+- Seuil de régression bloquant à chaque changement
+- Socle ML et LLM
+- Sources
+- Sources - page web, document, e-mail, résultat d'outil, ticket
+- Structure - constat, chemin, impact, atténuation
+- Surfaces
+- Surfaces - données d'entraînement, prompt, inférence, outils et APIs connectés
+- Triade létale
+- Triade létale - données privées, contenu non fiable, canal de sortie
+- Vérifiable par programme quand c'est possible
+- acteur étatique
+- appel d'outil
+- atténuation
+- balisage explicite
+- canal de sortie
+- ce qui est OWASP habituel
+- ce qui est propre au modèle
+- chaîne d'approvisionnement
+- chemin
+- concurrent
+- constat
+- contenu non fiable
+- divulgation
+- divulgations publiques
+- document
+- données d'entraînement
+- données privées
+- e-mail
+- extraction
+- filtres
+- gouvernance
+- impact
+- incidents de production
+- inférence
+- insider
+- journalisation
+- la seule qui tienne
+- la variante la plus réaliste en entreprise
+- outils et APIs connectés
+- où naissent le reward hacking et la sycophantie
+- page web
+- pas exploit unique
+- pas par élégance technique
+- passes manuelles
+- poids
+- rejeu en intégration continue
+- rendu d'image
+- résultat d'outil
+- sans toucher aux poids
+- serveurs d'outils
+- supervision humaine
+- taux de réussite sur un corpus
+- ticket
+- utilisateur curieux
+- Évaluation et non-régression
+
+</details>
+
+
+## ai-product-builder
+
+Slug `ai-product-builder` · derniere modification amont 2026-06-25
+
+**4 noeuds amont absents de la note :**
+
+- AI Product Creation Cycle
+- Hope
+- Bit Cloud
+- Bit Cloud
+
+<details><summary>167 libelles de la note sans equivalent amont (ajouts 2026 volontaires, ou noeuds retires)</summary>
+
+- 1. Définition et cadrage
+- 10. Du prototype au produit
+- 11. Quand le produit embarque un modèle
+- 2. Construire
+- 2. Construire, acheter ou assembler
+- 3. Prototypage
+- 4. Génération
+- 5. Raffinement
+- 6. Ce que le vibe coding fait bien et mal
+- 7. Tests et retours
+- 8. Collaboration et intégration continue
+- 9. Déploiement
+- 9. Déploiement, dorsale et données
+- AI Engineer
+- AI Product Builder
+- Acheter
+- Acheter - SaaS existant
+- Assembler
+- Assembler - outil no-code, automatisation, briques gérées
+- Assistant en terminal
+- Aucune fusion sans relecture humaine
+- Autorisations et cloisonnement des données
+- Back end
+- Base de données
+- Catégories d'outils
+- Catégories d'outils de codage assisté
+- Ce qu'il fait bien
+- Ce qu'il fait mal
+- Ce qu'il ne fait pas et ne signale pas
+- Ce qui est utilisé contre ce qui est déclaré
+- Ce qui n'a jamais été conçu
+- Chaîne d'entreprise
+- Chercher les malentendus
+- Chercher les malentendus, pas les avis
+- Complétion en ligne
+- Connect to a Database
+- Construire
+- Construire - génération puis reprise du code
+- Contraintes non fonctionnelles
+- Contraintes non fonctionnelles - volume, données personnelles, budget
+- Contrôle total
+- Contrôle total, coût de maintenance à vie
+- Couche API
+- Coût : payé plus tard
+- Coût : payé plus tard, en incident
+- Coût récurrent
+- Coût récurrent, zéro maintenance, zéro différenciation
+- Critère d'arrêt : ce qui ne sera pas dans la v1
+- Cypress
+- Document
+- Dorsale gérée
+- Décider : je garde ou je régénère
+- Déploiement automatique
+- Entrées
+- Entrées - cadrage, prototype, pile imposée
+- Environnement de prévisualisation par branche
+- Erreurs
+- Erreurs, reprises, indisponibilité d'un tiers
+- Est-elle vraiment probabiliste ?
+- Explorer plusieurs directions à coût nul
+- Figma
+- Franchir la page blanche
+- Front end
+- Garde-fous et sorties non fiables
+- Générateur d'application
+- Générateur d'interface
+- Hébergement du code
+- Infrastructure brute
+- Intégration continue
+- Journalisation et diagnostic d'incident
+- L'IA est l'outil de fabrication
+- L'IA est le composant du système
+- Le besoin est-il déjà un produit du marché ?
+- Le cas particulier métier
+- Le choix se fait sur la forme des données
+- Le code jetable
+- Le code jetable, les scripts, les internes
+- Le produit devient un système IA
+- Le prototype part en production
+- Les décisions durables
+- Les décisions durables - schéma, sécurité, limites
+- Lire le schéma de données avant tout le reste
+- Livrable : un produit utilisé
+- Livrable : un système fiable
+- Maquette statique classique
+- Maquette statique classique - Figma
+- Mesure : adoption
+- Mesure : adoption, rétention, délai de mise en ligne
+- Mesure : qualité de réponse
+- Mesure : qualité de réponse, coût par requête, latence
+- Mesure d'usage instrumentée
+- Migrations de schéma sans perte
+- Mise en ligne en jours
+- Mise en ligne en jours, plafond fonctionnel, dépendance à l'éditeur
+- Observabilité et budget par requête
+- Petites demandes de fusion
+- Petites demandes de fusion, une intention par branche
+- Plateforme applicative
+- Playwright
+- Prompt
+- Prompt, choix de modèle, coût et latence
+- Périphérie et fonctions
+- Quatre niveaux de prise en charge
+- Quelle est la nature du changement ?
+- Relationnel
+- Retour humain
+- Revue de la génération
+- Revue par demande de fusion
+- Règle
+- Règle, script, requête - moins cher et testable
+- Règles de collaboration avec des agents
+- Récupération de contexte si le produit a un corpus
+- SaaS existant
+- Sauvegardes et restauration testée
+- Schéma de base de données
+- Socle à lire soi-même
+- Sortie attendue
+- Suppression de compte et de données
+- Testing & Feedback
+- Tests automatisés
+- Tests à chaque poussée
+- Une fonction intelligente entre au cadrage
+- Vibe coding
+- Vérifier les dépendances et les secrets
+- acheter ou assembler
+- automatisation
+- briques gérées
+- budget
+- cadrage
+- choix de modèle
+- correction localisée
+- coût de maintenance à vie
+- coût et latence
+- coût par requête
+- données personnelles
+- dorsale et données
+- délai de mise en ligne
+- dépendance à l'éditeur
+- en incident
+- entonnoir
+- génération puis reprise du code
+- indisponibilité d'un tiers
+- latence
+- les internes
+- les scripts
+- limites
+- moins cher et testable
+- observer
+- outil no-code
+- pas interroger
+- pas les avis
+- pile imposée
+- plafond fonctionnel
+- reprises
+- requête
+- retour au générateur
+- rétention
+- schéma
+- sécurité
+- une intention par branche
+- volume
+- zéro différenciation
+- zéro maintenance
+- Éditeur augmenté
+- Évaluation et non-régression
+- Événements produit
+- Événements produit, entonnoir, rétention
+
+</details>
+
+
+## data-analyst
+
+Slug `data-analyst` · derniere modification amont 2026-09-04
+
+Aucun noeud amont manquant.
+
+<details><summary>89 libelles de la note sans equivalent amont (ajouts 2026 volontaires, ou noeuds retires)</summary>
+
+- Analyse engagée
+- Analyser
+- Cadrer la question
+- Ce que le résultat ne dit pas
+- Ce qui a changé
+- Ce qui a été exclu et pourquoi
+- Ce qui n'a pas changé
+- Collecter
+- Conditions d'utilisation et cadre légal
+- Confusion
+- Confusion, sélection, causalité inverse, Simpson
+- Connaître la sémantique réelle des colonnes
+- Corrélation n'est pas causalité
+- Demande floue
+- Demande renvoyée : aucune décision n'en dépend
+- Distinguer corrélation et causalité
+- DuckDB
+- DuckDB, Polars, Parquet
+- Définir la clé métier avant de dédoublonner
+- Dégrossir un jeu de données inconnu
+- Déporter l'agrégation dans la base
+- Encodage
+- Encodage, séparateur, format de date
+- Explicabilité exigée par le métier
+- Explorer
+- IA générative dans le métier
+- Interroger en langage naturel une couche sémantique
+- L'analyse rejouable et archivée
+- La décision proposée
+- La réponse en une phrase
+- La réponse en une phrase, en premier
+- Learn Common Functions
+- Liste d'hypothèses à tester
+- Liste d'hypothèses à tester, écrite
+- Mesure et unité
+- Multiplicité des tests
+- Multiplicité des tests, p-hacking
+- Mécanisme du manquant
+- Mécanisme du manquant, pas seulement son taux
+- Nettoyage écrit en script
+- Nettoyage écrit en script, jamais à la main
+- Nettoyer
+- NumPy
+- Outillage
+- Outillage - tableur, SQL, Python ou R, bibliothèques
+- Pagination
+- Pagination, quotas, reprise sur erreur
+- Parquet
+- Polars
+- Popular ML Algorithms
+- Population concernée
+- Pourquoi
+- Provenance
+- Provenance, fraîcheur et périmètre consignés
+- Python
+- Python ou R
+- Période de référence et comparaison
+- Que faut-il faire
+- Que s'est-il passé
+- Que va-t-il se passer
+- Question mesurable
+- Recommandation argumentée
+- Reformulation
+- Restituer
+- Restitution
+- Rédiger le premier jet de la restitution
+- Segmenter avant d'agréger
+- Seuil de bascule du tableur vers le code
+- Seuil qui déclencherait une décision
+- Simpson
+- Taille d'effet et intervalle
+- Taille d'effet et intervalle, pas seulement la p-value
+- Un poste de travail suffit bien plus longtemps qu'on ne le croit
+- bibliothèques
+- causalité inverse
+- en premier
+- format de date
+- fraîcheur et périmètre consignés
+- jamais à la main
+- p-hacking
+- pas seulement la p-value
+- pas seulement son taux
+- quotas
+- reprise sur erreur
+- sélection
+- séparateur
+- tableur
+- Écrire requêtes et code de transformation
+- écrite
+
+</details>
+
+
+## bi-analyst
+
+Slug `bi-analyst` · derniere modification amont 2026-09-04
+
+**7 noeuds amont absents de la note :**
+
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Missing Values
+- Duplicates
+- Outliers
+- Pandas
+- dplyr
+
+<details><summary>251 libelles de la note sans equivalent amont (ajouts 2026 volontaires, ou noeuds retires)</summary>
+
+- 1 à 3 ans
+- 3 à 6 mois
+- 5 à 10 ans
+- Affichage de la requête et des filtres appliqués
+- Airbyte
+- Analyse d'impact avant changement
+- Analyses récurrentes
+- Analyses récurrentes - temps, cohortes, expérimentation
+- Analytics Engineer
+- Analytics Engineer - le titre qui recouvre le cœur du poste
+- Analytique colonnaire
+- Analytique colonnaire - Parquet, Avro, ORC
+- Analytique colonnaire - l'entrepôt, section 5
+- Arbitrer une définition contestée
+- BI conversationnelle
+- Bases transactionnelles
+- Bases transactionnelles - ERP, CRM, applicatif métier
+- BigQuery
+- Branchée sur la couche sémantique
+- Branchée sur les tables brutes
+- Chargement incrémental
+- Choisit parmi des mesures déjà définies
+- Collecte et fiabilisation
+- Communication aux parties prenantes
+- Communiquer
+- Communiquer, arbitrer, faire adopter
+- Comparaison
+- Complétude et unicité
+- Couche sémantique
+- Couche sémantique et définitions partagées
+- Cycle de vie et instrumentation de l'usage
+- Dans l'entrepôt
+- Dans l'entrepôt - vues et tables de présentation
+- Dans l'outil
+- Data Analyst
+- Data Analyst - question ponctuelle, analyse ad hoc
+- Data Engineer
+- Data Engineer - ingestion, pipelines, plateforme
+- Data Governance & Ethics
+- Data Scientist
+- Densité et géographie
+- Descriptive - que s'est-il passé
+- Diagnostic - pourquoi
+- Dimension de date
+- Dimension de date - toujours une table, jamais un calcul
+- Dimensions conformes
+- Dimensions conformes - le partage entre domaines
+- Dimensions et axes d'analyse autorisés
+- Doit deviner le grain
+- Doit deviner le grain, les jointures et le sens
+- Domaines d'application
+- Droits d'accès à la ligne
+- Droits d'accès à la ligne appliqués en amont
+- DuckDB pour les volumes moyens
+- Découplée
+- Définition
+- Définition unique d'une mesure
+- Définition, grain, propriétaire, seuil
+- Dépréciation plutôt que suppression
+- ELT - charger brut puis transformer dans l'entrepôt
+- Entrepôt
+- Erreur possible sur le choix
+- Erreur possible sur le choix, pas sur le calcul
+- Exploration visuelle
+- Extract
+- Fichiers déposés à la main
+- Fichiers déposés à la main - le plus fragile
+- Fivetran
+- Flocon
+- Flocon - dimensions normalisées, jointures multiples
+- Garde-fous
+- Gouvernance des définitions
+- Historisation des dimensions
+- Historisation des dimensions - SCD type 1 et 2
+- Hiérarchies et périodes comparables
+- Iceberg et Delta
+- Idempotence et rejouabilité
+- Intégrées à un écosystème
+- Intégrées à un écosystème - Power BI, Microsoft Fabric
+- Jeu de questions de référence rejoué en continu
+- Jointure
+- Jointure, pivot, dépivotage
+- KPI - la métrique adossée à un objectif
+- Lakehouse
+- Lakehouse - formats de table ouverts, Iceberg et Delta
+- Le besoin
+- Le besoin - fonctions métier, métriques, KPI
+- Le grain
+- Le grain - la décision qui engage tout le reste
+- Le métier et ses frontières
+- Le socle d'entrée
+- Les deux chiffres sont justes
+- Les deux chiffres sont justes, les périmètres diffèrent
+- Les quatre registres et les trois horizons
+- Libres
+- Libres - Metabase, Superset
+- LookML
+- Metabase
+- Microsoft Fabric
+- Moteurs embarqués
+- Moteurs embarqués - DuckDB pour les volumes moyens
+- Métrique
+- Métrique - toute grandeur mesurable
+- Non structuré
+- Non structuré - texte, image, son
+- Operational - 3 à 6 mois, terrain quotidien
+- Outils d'ingestion managés
+- Outils d'ingestion managés - Fivetran, Airbyte
+- Où elle vit
+- Parquet
+- Power BI
+- Predictive - que va-t-il se passer
+- Prescriptive - que faut-il faire
+- Propriétaire par mesure
+- Périmètre restreint aux tables de présentation
+- Qualité
+- Qualité, lignage, gouvernance
+- Qui décide
+- Qui décide, qui subit, qui arbitre
+- Redshift
+- Requête correcte
+- Requête correcte, réponse métier fausse
+- Restituer
+- Rôle, influence, attente réelle
+- SCD type 1 et 2
+- Sales et R&D
+- Se professionnaliser
+- Semi-structuré
+- Source réelle
+- Strategic - 5 à 10 ans, direction générale
+- Structuré - tables
+- Suivi des indicateurs
+- Superset
+- Sémantique en code
+- Séparation stockage et calcul
+- Séparation stockage et calcul - la vraie rupture
+- Table de dimension
+- Table de dimension - attributs descriptifs, hiérarchies
+- Table de faits
+- Tactical - 1 à 3 ans, département
+- Tests en amont du rapport
+- Trancher
+- Trancher, nommer, documenter, annoncer
+- Transactionnel ligne
+- Transformer et orchestrer
+- Traçabilité de la source au rapport
+- Trois familles
+- Typage
+- Typage, filtrage, agrégation
+- Versionnement et journal des changements
+- acquisition
+- agrégation
+- analyse ad hoc
+- annoncer
+- applicatif métier
+- arbitrer
+- attente réelle
+- attribution
+- attributs descriptifs
+- budget
+- campagnes
+- capacité
+- capteurs
+- catégoriel contre numérique
+- charger brut puis transformer dans l'entrepôt
+- cohortes
+- dimensions dénormalisées
+- dimensions normalisées
+- direction générale
+- discret contre continu
+- documenter
+- documentée
+- délais
+- département
+- dépivotage
+- effectif
+- expérimentation
+- facturation
+- faire adopter
+- filtrage
+- fonctions métier
+- formats de table ouverts
+- gouvernance
+- grain
+- hiérarchies
+- image
+- influence
+- ingestion
+- jamais un calcul
+- jointures courtes
+- jointures multiples
+- journaux
+- l'entrepôt
+- la décision qui engage tout le reste
+- la métrique adossée à un objectif
+- la vraie rupture
+- le partage entre domaines
+- le plus fragile
+- le poste de travail réel du métier
+- le titre qui recouvre le cœur du poste
+- les jointures et le sens
+- les périmètres diffèrent
+- lignage
+- marge
+- mesures
+- métriques
+- nommer
+- ordonnancement et dépendances
+- outil décisionnel
+- pas sur le calcul
+- pas un livrable
+- pipelines
+- pivot
+- plateforme
+- pourquoi
+- propriétaire
+- publicité
+- que faut-il faire
+- que s'est-il passé
+- que va-t-il se passer
+- question ponctuelle
+- qui arbitre
+- qui subit
+- recrutement
+- restitution
+- rotation
+- réponse métier fausse
+- schéma à l'écriture
+- schéma à la lecture
+- section 5
+- seuil
+- sous-ensemble par département
+- statistiques
+- support
+- tableur
+- temps
+- terrain quotidien
+- testée
+- texte
+- toujours une table
+- toute grandeur mesurable
+- transformation versionnée
+- trésorerie
+- télémétrie
+- valeur vie client
+- vues et tables de présentation
+- Échange
+- Étoile
+- Étoile - dimensions dénormalisées, jointures courtes
+- Évolution
+- événements
 
 </details>

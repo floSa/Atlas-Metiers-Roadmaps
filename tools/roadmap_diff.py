@@ -28,16 +28,24 @@ import unicodedata
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 EXTRACT = ROOT / "data" / "extract"
 
-# Les huit notes deja redigees, associees a leur slug amont.
+# Le corpus redige, associe a son slug amont. Une valeur peut designer un
+# fichier ou un dossier : le dossier FDE est un parcours eclate en plusieurs pages,
+# et la comparaison porte alors sur la reunion de ses schemas.
 NOTES = {
-    "computer-science": "01 - Roadmap — Computer Science.md",
-    "ai-data-scientist": "02 - Roadmap — AI and Data Scientist.md",
-    "data-engineer": "03 - Roadmap — Data Engineer.md",
-    "machine-learning": "04 - Roadmap — Machine Learning.md",
-    "ai-engineer": "05 - Roadmap — AI Engineer.md",
-    "prompt-engineering": "06 - Roadmap — Prompt Engineering.md",
-    "ai-agents": "07 - Roadmap — AI Agents.md",
-    "mlops": "08 - Roadmap — MLOps.md",
+    "computer-science": "roadmaps/01 - Roadmap — Computer Science.md",
+    "ai-data-scientist": "roadmaps/02 - Roadmap — AI and Data Scientist.md",
+    "data-engineer": "roadmaps/03 - Roadmap — Data Engineer.md",
+    "machine-learning": "roadmaps/04 - Roadmap — Machine Learning.md",
+    "ai-engineer": "roadmaps/05 - Roadmap — AI Engineer.md",
+    "prompt-engineering": "roadmaps/06 - Roadmap — Prompt Engineering.md",
+    "ai-agents": "roadmaps/07 - Roadmap — AI Agents.md",
+    "mlops": "roadmaps/08 - Roadmap — MLOps.md",
+    # Les parcours du lot 1.
+    "forward-deployed-engineer": "parcours/forward-deployed-engineer",
+    "ai-red-teaming": "parcours/ai-red-teaming.md",
+    "ai-product-builder": "parcours/ai-product-builder.md",
+    "data-analyst": "parcours/data-analyst.md",
+    "bi-analyst": "parcours/bi-analyst.md",
 }
 
 MERMAID_BLOCK = re.compile(r"```mermaid\n(.*?)```", re.DOTALL)
@@ -52,6 +60,11 @@ def fold(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
 
 
+def note_files(target: pathlib.Path) -> list[pathlib.Path]:
+    """Les fichiers a comparer : un seul, ou toutes les pages d'un parcours eclate."""
+    return sorted(target.rglob("*.md")) if target.is_dir() else [target]
+
+
 def note_labels(path: pathlib.Path) -> list[str]:
     """Tous les libelles de noeuds cites dans les schemas Mermaid de la note.
 
@@ -60,7 +73,7 @@ def note_labels(path: pathlib.Path) -> list[str]:
     pour que la comparaison reste fine.
     """
     labels: list[str] = []
-    for block in MERMAID_BLOCK.findall(path.read_text(encoding="utf-8")):
+    for block in MERMAID_BLOCK.findall(path.read_text(encoding="utf-8") if path.is_file() else ""):
         for raw in MERMAID_LABEL.findall(block):
             labels.append(raw)
             for part in re.split(r"\s*[,;]\s*|\s+—\s+|\s+-\s+", raw):
@@ -83,8 +96,8 @@ def covered(upstream: str, haystack: list[str]) -> bool:
 
 def report(slug: str) -> dict:
     doc = json.loads((EXTRACT / f"{slug}.json").read_text(encoding="utf-8"))
-    path = ROOT / "content" / "roadmaps" / NOTES[slug]
-    raw_labels = note_labels(path)
+    path = ROOT / "content" / NOTES[slug]
+    raw_labels = [lbl for f in note_files(path) for lbl in note_labels(f)]
     folded = [fold(x) for x in raw_labels if fold(x)]
 
     upstream = [n["label"] for s in doc["sections"] for n in s["nodes"]]
@@ -98,7 +111,7 @@ def report(slug: str) -> dict:
     })
 
     return {
-        "slug": slug, "note": path.name, "upstreamUpdated": doc["updatedAt"][:10],
+        "slug": slug, "note": path.name, "pages": len(note_files(path)), "upstreamUpdated": doc["updatedAt"][:10],
         "upstream": upstream, "missing": missing, "extra": extra,
     }
 
@@ -113,6 +126,11 @@ def main() -> int:
              "> couverture des roadmaps au format historique (`ai-data-scientist`), dont les",
              "> noeuds regroupent plusieurs notions sur une meme ligne. A lire comme un",
              "> signal a verifier, pas comme un verdict.",
+             ">",
+             "> Elle sous-estime aussi les parcours dont les schemas sont rediges en",
+             "> francais : le libelle amont n'a alors aucun equivalent litteral. Pour que",
+             "> la mesure reste exploitable, un schema doit conserver le libelle amont",
+             "> d'origine et porter la traduction dans le texte, pas dans le noeud.",
              "", "| Note | Noeuds amont | Absents de la note | Couverture |",
              "|---|---:|---:|---:|"]
     details = []

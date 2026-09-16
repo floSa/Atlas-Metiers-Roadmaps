@@ -139,14 +139,6 @@
      "file": "analysis--reporting-with-excel@sgXIjVTbwdwdYoaxN3XBM.md"
     },
     {
-     "id": "R12sArWVpbIs_PHxBqVaR",
-     "type": "subtopic",
-     "label": "Key Concepts of Data",
-     "body": "Data analysis is the process of inspecting, cleansing, transforming, and modeling data to discover useful information and support decision-making. In the broadest sense, data can be classified into various types like nominal, ordinal, interval and ratio, each with a specific role and analysis technique. Higher-dimensional data types like time-series, panel data, and multi-dimensional arrays are also critical. On the other hand, data quality and data management are key concepts to ensure clean and reliable datasets. With an understanding of these fundamental concepts, a data analyst can transform raw data into meaningful insights.",
-     "resources": [],
-     "file": "key-concepts-of-data@R12sArWVpbIs_PHxBqVaR.md"
-    },
-    {
      "id": "j7DA2J3speSaBsZAV4M0v",
      "type": "subtopic",
      "label": "Diagnostic Analytics",
@@ -166,42 +158,93 @@
      "file": "diagnostic-analytics@j7DA2J3speSaBsZAV4M0v.md"
     },
     {
-     "id": "wME4MSldOWlMB54ekpReS",
+     "id": "3WZORRCwme3HsaKew23Z5",
      "type": "subtopic",
-     "label": "IF",
-     "body": "The IF function in Excel is a crucial tool for data analysts, enabling them to create conditional statements, clean and validate data, perform calculations based on specific conditions, create custom metrics, apply conditional formatting, automate tasks, and generate dynamic reports. Data analysts use IF to categorize data, handle missing values, calculate bonuses or custom metrics, highlight trends, and enhance visualizations, ultimately facilitating informed decision-making through data analysis.",
+     "label": "Predictive Analytics",
+     "body": "Predictive analytics uses historical data and statistical models to forecast future outcomes. It answers the question \"what is likely to happen?\" Techniques include regression, time series analysis, and machine learning models trained on past data to predict future behavior or events.",
      "resources": [
       {
        "kind": "article",
-       "title": "IF Function",
-       "url": "https://support.microsoft.com/en-gb/office/if-function-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2"
+       "title": "What is Predictive Analytics? - Google",
+       "url": "https://cloud.google.com/learn/what-is-predictive-analytics"
       },
       {
-       "kind": "article",
-       "title": "Excel IF Function",
-       "url": "https://exceljet.net/functions/if-function"
+       "kind": "video",
+       "title": "What is Predictive Analytics?",
+       "url": "https://www.youtube.com/watch?v=cVibCHRSxB0"
       }
      ],
-     "file": "if@wME4MSldOWlMB54ekpReS.md"
+     "file": "predictive-analytics@3WZORRCwme3HsaKew23Z5.md"
     },
     {
-     "id": "yBlJrNo9eO470dLp6OaQZ",
+     "id": "DFMR-0MbmVCCrJu0I9JWG",
      "type": "subtopic",
-     "label": "DATEDIF",
-     "body": "`DATEDIF` calculates the difference between two dates in days, months, or years. It is useful for computing ages, tenures, and durations. Despite being an undocumented legacy function, it remains widely used in practice for date arithmetic.",
+     "label": "Prescriptive Analytics",
+     "body": "Prescriptive analytics recommends actions to achieve a desired outcome, answering \"what should we do?\" It builds on predictive analytics by combining forecasts with optimization and decision logic. Examples include recommendation engines, dynamic pricing systems, and supply chain optimization tools.",
      "resources": [
       {
        "kind": "article",
-       "title": "DATEDIF function",
-       "url": "https://support.microsoft.com/en-gb/office/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c"
+       "title": "What is Prescriptive Analysis?",
+       "url": "https://www.investopedia.com/terms/p/prescriptive-analytics.asp"
+      },
+      {
+       "kind": "video",
+       "title": "Examples of Prescriptive Analysis",
+       "url": "https://www.youtube.com/watch?v=NOo8Nc9zG20"
+      }
+     ],
+     "file": "prescriptive-analytics@DFMR-0MbmVCCrJu0I9JWG.md"
+    },
+    {
+     "id": "Vk3JErqxpnPY44iyfkLMl",
+     "type": "subtopic",
+     "label": "Charting",
+     "body": "Excel charts turn tabular data into visual representations like bar charts, line charts, pie charts, and scatter plots. Charts are created directly from selected data and can be formatted and embedded in reports and dashboards. Knowing which chart type suits different data and messages is an important analytical skill.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Create a chart from start to finish",
+       "url": "https://support.microsoft.com/en-gb/office/create-a-chart-from-start-to-finish-0baf399e-dd61-4e18-8a73-b3fd5d5680c2"
+      },
+      {
+       "kind": "video",
+       "title": "Excel Charts and Graphs Tutorial",
+       "url": "https://www.youtube.com/watch?v=eHtZrIb0oWY"
+      }
+     ],
+     "file": "charting@Vk3JErqxpnPY44iyfkLMl.md"
+    },
+    {
+     "id": "i2uEcaO4bJhcZ5ayRs2CQ",
+     "type": "topic",
+     "label": "Learn a Programming Lang.",
+     "body": "Programming extends the analytical capabilities of a data analyst beyond what spreadsheet tools can handle. Python and R are the two most common languages used in data analysis for data manipulation, statistical modeling, and visualization. Choosing one and learning it well is the foundation for working with large datasets and building repeatable analyses.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Python Data Science Handbook",
+       "url": "https://jakevdp.github.io/PythonDataScienceHandbook/"
       },
       {
        "kind": "article",
-       "title": "How to use DATEDIF in Excel",
-       "url": "https://www.excel-easy.com/examples/datedif.html"
+       "title": "How to Become a Data Analyst with No Experience: My Advice",
+       "url": "https://roadmap.sh/data-analyst/how-to-become"
       }
      ],
-     "file": "datedif@yBlJrNo9eO470dLp6OaQZ.md"
+     "file": "learn-a-programming-lang@i2uEcaO4bJhcZ5ayRs2CQ.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "R12sArWVpbIs_PHxBqVaR",
+     "type": "subtopic",
+     "label": "Key Concepts of Data",
+     "body": "Data analysis is the process of inspecting, cleansing, transforming, and modeling data to discover useful information and support decision-making. In the broadest sense, data can be classified into various types like nominal, ordinal, interval and ratio, each with a specific role and analysis technique. Higher-dimensional data types like time-series, panel data, and multi-dimensional arrays are also critical. On the other hand, data quality and data management are key concepts to ensure clean and reliable datasets. With an understanding of these fundamental concepts, a data analyst can transform raw data into meaningful insights.",
+     "resources": [],
+     "file": "key-concepts-of-data@R12sArWVpbIs_PHxBqVaR.md"
     },
     {
      "id": "mDUSpexdq3ITV6qokwSJl",
@@ -242,44 +285,6 @@
      "file": "cleanup@nC7tViln4UyQFYP_-fyjB.md"
     },
     {
-     "id": "3WZORRCwme3HsaKew23Z5",
-     "type": "subtopic",
-     "label": "Predictive Analytics",
-     "body": "Predictive analytics uses historical data and statistical models to forecast future outcomes. It answers the question \"what is likely to happen?\" Techniques include regression, time series analysis, and machine learning models trained on past data to predict future behavior or events.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is Predictive Analytics? - Google",
-       "url": "https://cloud.google.com/learn/what-is-predictive-analytics"
-      },
-      {
-       "kind": "video",
-       "title": "What is Predictive Analytics?",
-       "url": "https://www.youtube.com/watch?v=cVibCHRSxB0"
-      }
-     ],
-     "file": "predictive-analytics@3WZORRCwme3HsaKew23Z5.md"
-    },
-    {
-     "id": "9sIP-jpNjtA1JPCBjTf-H",
-     "type": "subtopic",
-     "label": "VLOOKUP / HLOOKUP",
-     "body": "`VLOOKUP` searches for a value in the first column of a table and returns a value from a specified column in the same row. `HLOOKUP` does the same horizontally, searching across the first row. Both are used to merge data from different tables, though they have been largely replaced by `XLOOKUP` in modern Excel.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "VLOOKUP Function",
-       "url": "https://support.microsoft.com/en-gb/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1"
-      },
-      {
-       "kind": "article",
-       "title": "HLOOKUP Function",
-       "url": "https://support.microsoft.com/en-gb/office/hlookup-function-a3034eec-b719-4ba3-bb65-e1ad662ed95f"
-      }
-     ],
-     "file": "vlookup--hlookup@9sIP-jpNjtA1JPCBjTf-H.md"
-    },
-    {
      "id": "XFnw4_dQYSzm96-srWa7X",
      "type": "subtopic",
      "label": "Exploration",
@@ -313,44 +318,6 @@
      "file": "visualisation@jowh4CFLQiFzKaaElyCuQ.md"
     },
     {
-     "id": "DFMR-0MbmVCCrJu0I9JWG",
-     "type": "subtopic",
-     "label": "Prescriptive Analytics",
-     "body": "Prescriptive analytics recommends actions to achieve a desired outcome, answering \"what should we do?\" It builds on predictive analytics by combining forecasts with optimization and decision logic. Examples include recommendation engines, dynamic pricing systems, and supply chain optimization tools.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is Prescriptive Analysis?",
-       "url": "https://www.investopedia.com/terms/p/prescriptive-analytics.asp"
-      },
-      {
-       "kind": "video",
-       "title": "Examples of Prescriptive Analysis",
-       "url": "https://www.youtube.com/watch?v=NOo8Nc9zG20"
-      }
-     ],
-     "file": "prescriptive-analytics@DFMR-0MbmVCCrJu0I9JWG.md"
-    },
-    {
-     "id": "dke_pySrqYZZ7K3rprnIT",
-     "type": "subtopic",
-     "label": "REPLACE / SUBSTITUTE",
-     "body": "`REPLACE` replaces a portion of a text string based on position and length. `SUBSTITUTE` replaces all occurrences of a specific substring with another string. Both are used for text cleaning and standardization in Excel.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Replace Function",
-       "url": "https://support.microsoft.com/en-us/office/replace-function-8d799074-2425-4a8a-84bc-82472868878a"
-      },
-      {
-       "kind": "article",
-       "title": "Substitute Function",
-       "url": "https://support.microsoft.com/en-us/office/substitute-function-6434944e-a904-4336-a9b0-1e58df3bc332"
-      }
-     ],
-     "file": "replace--substitute@dke_pySrqYZZ7K3rprnIT.md"
-    },
-    {
      "id": "2pUq-7hu5EjGpowz98YoV",
      "type": "subtopic",
      "label": "Statistical Analysis",
@@ -368,30 +335,6 @@
       }
      ],
      "file": "statistical-analysis@2pUq-7hu5EjGpowz98YoV.md"
-    },
-    {
-     "id": "YReKRRgE_2dWfGGdBQqbf",
-     "type": "subtopic",
-     "label": "UPPER / LOWER / PROPER",
-     "body": "`UPPER` converts text to all uppercase, `LOWER` to all lowercase, and `PROPER` capitalizes the first letter of each word. These functions are used to standardize text formatting in datasets, especially when combining data from multiple sources with inconsistent casing.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "UPPER Function",
-       "url": "https://support.microsoft.com/en-gb/office/upper-function-c11f29b3-d1a3-4537-8df6-04d0049963d6"
-      },
-      {
-       "kind": "article",
-       "title": "LOWER Function",
-       "url": "https://support.microsoft.com/en-gb/office/lower-function-3f21df02-a80c-44b2-afaf-81358f9fdeb4"
-      },
-      {
-       "kind": "article",
-       "title": "PROPER Function",
-       "url": "https://support.microsoft.com/en-gb/office/proper-function-52a5a283-e8b2-49be-8506-b2887b889f94"
-      }
-     ],
-     "file": "upper--lower--proper@YReKRRgE_2dWfGGdBQqbf.md"
     },
     {
      "id": "U55hwR0HRCIz2cveVR8FZ",
@@ -421,6 +364,111 @@
       }
      ],
      "file": "machine-learning@U55hwR0HRCIz2cveVR8FZ.md"
+    }
+   ]
+  },
+  {
+   "heading": "Learn Common Functions",
+   "nodes": [
+    {
+     "id": "wME4MSldOWlMB54ekpReS",
+     "type": "subtopic",
+     "label": "IF",
+     "body": "The IF function in Excel is a crucial tool for data analysts, enabling them to create conditional statements, clean and validate data, perform calculations based on specific conditions, create custom metrics, apply conditional formatting, automate tasks, and generate dynamic reports. Data analysts use IF to categorize data, handle missing values, calculate bonuses or custom metrics, highlight trends, and enhance visualizations, ultimately facilitating informed decision-making through data analysis.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "IF Function",
+       "url": "https://support.microsoft.com/en-gb/office/if-function-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2"
+      },
+      {
+       "kind": "article",
+       "title": "Excel IF Function",
+       "url": "https://exceljet.net/functions/if-function"
+      }
+     ],
+     "file": "if@wME4MSldOWlMB54ekpReS.md"
+    },
+    {
+     "id": "yBlJrNo9eO470dLp6OaQZ",
+     "type": "subtopic",
+     "label": "DATEDIF",
+     "body": "`DATEDIF` calculates the difference between two dates in days, months, or years. It is useful for computing ages, tenures, and durations. Despite being an undocumented legacy function, it remains widely used in practice for date arithmetic.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "DATEDIF function",
+       "url": "https://support.microsoft.com/en-gb/office/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c"
+      },
+      {
+       "kind": "article",
+       "title": "How to use DATEDIF in Excel",
+       "url": "https://www.excel-easy.com/examples/datedif.html"
+      }
+     ],
+     "file": "datedif@yBlJrNo9eO470dLp6OaQZ.md"
+    },
+    {
+     "id": "9sIP-jpNjtA1JPCBjTf-H",
+     "type": "subtopic",
+     "label": "VLOOKUP / HLOOKUP",
+     "body": "`VLOOKUP` searches for a value in the first column of a table and returns a value from a specified column in the same row. `HLOOKUP` does the same horizontally, searching across the first row. Both are used to merge data from different tables, though they have been largely replaced by `XLOOKUP` in modern Excel.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "VLOOKUP Function",
+       "url": "https://support.microsoft.com/en-gb/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1"
+      },
+      {
+       "kind": "article",
+       "title": "HLOOKUP Function",
+       "url": "https://support.microsoft.com/en-gb/office/hlookup-function-a3034eec-b719-4ba3-bb65-e1ad662ed95f"
+      }
+     ],
+     "file": "vlookup--hlookup@9sIP-jpNjtA1JPCBjTf-H.md"
+    },
+    {
+     "id": "dke_pySrqYZZ7K3rprnIT",
+     "type": "subtopic",
+     "label": "REPLACE / SUBSTITUTE",
+     "body": "`REPLACE` replaces a portion of a text string based on position and length. `SUBSTITUTE` replaces all occurrences of a specific substring with another string. Both are used for text cleaning and standardization in Excel.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Replace Function",
+       "url": "https://support.microsoft.com/en-us/office/replace-function-8d799074-2425-4a8a-84bc-82472868878a"
+      },
+      {
+       "kind": "article",
+       "title": "Substitute Function",
+       "url": "https://support.microsoft.com/en-us/office/substitute-function-6434944e-a904-4336-a9b0-1e58df3bc332"
+      }
+     ],
+     "file": "replace--substitute@dke_pySrqYZZ7K3rprnIT.md"
+    },
+    {
+     "id": "YReKRRgE_2dWfGGdBQqbf",
+     "type": "subtopic",
+     "label": "UPPER / LOWER / PROPER",
+     "body": "`UPPER` converts text to all uppercase, `LOWER` to all lowercase, and `PROPER` capitalizes the first letter of each word. These functions are used to standardize text formatting in datasets, especially when combining data from multiple sources with inconsistent casing.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "UPPER Function",
+       "url": "https://support.microsoft.com/en-gb/office/upper-function-c11f29b3-d1a3-4537-8df6-04d0049963d6"
+      },
+      {
+       "kind": "article",
+       "title": "LOWER Function",
+       "url": "https://support.microsoft.com/en-gb/office/lower-function-3f21df02-a80c-44b2-afaf-81358f9fdeb4"
+      },
+      {
+       "kind": "article",
+       "title": "PROPER Function",
+       "url": "https://support.microsoft.com/en-gb/office/proper-function-52a5a283-e8b2-49be-8506-b2887b889f94"
+      }
+     ],
+     "file": "upper--lower--proper@YReKRRgE_2dWfGGdBQqbf.md"
     },
     {
      "id": "SIiIfcy-jeiRoDlxw385V",
@@ -461,25 +509,6 @@
      "file": "trim@D5Q6o6ydr1j51kB0ASFPE.md"
     },
     {
-     "id": "Vk3JErqxpnPY44iyfkLMl",
-     "type": "subtopic",
-     "label": "Charting",
-     "body": "Excel charts turn tabular data into visual representations like bar charts, line charts, pie charts, and scatter plots. Charts are created directly from selected data and can be formatted and embedded in reports and dashboards. Knowing which chart type suits different data and messages is an important analytical skill.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Create a chart from start to finish",
-       "url": "https://support.microsoft.com/en-gb/office/create-a-chart-from-start-to-finish-0baf399e-dd61-4e18-8a73-b3fd5d5680c2"
-      },
-      {
-       "kind": "video",
-       "title": "Excel Charts and Graphs Tutorial",
-       "url": "https://www.youtube.com/watch?v=eHtZrIb0oWY"
-      }
-     ],
-     "file": "charting@Vk3JErqxpnPY44iyfkLMl.md"
-    },
-    {
      "id": "FDYunL9KJkR_tHEcUV2iC",
      "type": "subtopic",
      "label": "AVERAGE",
@@ -518,54 +547,6 @@
      "file": "count@uAdxP1ZkgzcU8JcWjvw6d.md"
     },
     {
-     "id": "i2uEcaO4bJhcZ5ayRs2CQ",
-     "type": "topic",
-     "label": "Learn a Programming Lang.",
-     "body": "Programming extends the analytical capabilities of a data analyst beyond what spreadsheet tools can handle. Python and R are the two most common languages used in data analysis for data manipulation, statistical modeling, and visualization. Choosing one and learning it well is the foundation for working with large datasets and building repeatable analyses.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Python Data Science Handbook",
-       "url": "https://jakevdp.github.io/PythonDataScienceHandbook/"
-      },
-      {
-       "kind": "article",
-       "title": "How to Become a Data Analyst with No Experience: My Advice",
-       "url": "https://roadmap.sh/data-analyst/how-to-become"
-      }
-     ],
-     "file": "learn-a-programming-lang@i2uEcaO4bJhcZ5ayRs2CQ.md"
-    }
-   ]
-  },
-  {
-   "heading": "1",
-   "nodes": [
-    {
-     "id": "2DDJUFr0AJTVR2Whj8zub",
-     "type": "subtopic",
-     "label": "Pivot Tables",
-     "body": "Pivot tables are one of Excel's most powerful features for summarizing and analyzing large datasets. They allow data to be grouped, filtered, and aggregated across multiple dimensions without writing formulas. Pivot tables are used to quickly explore data and build summary reports by dragging and dropping fields.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Create a Pivot Table",
-       "url": "https://support.microsoft.com/en-gb/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576"
-      },
-      {
-       "kind": "article",
-       "title": "Pivot Tables in Excel",
-       "url": "https://www.excel-easy.com/data-analysis/pivot-tables.html"
-      },
-      {
-       "kind": "video",
-       "title": "How to Create a Pivot Table in Excel",
-       "url": "https://www.youtube.com/watch?v=PdJzy956wo4"
-      }
-     ],
-     "file": "pivot-tables@2DDJUFr0AJTVR2Whj8zub.md"
-    },
-    {
      "id": "_FO80Cm2iAD_bThmnsEgp",
      "type": "subtopic",
      "label": "SUM",
@@ -602,6 +583,35 @@
       }
      ],
      "file": "min--max@F3-cr5onkWqKKPRdxu8lV.md"
+    }
+   ]
+  },
+  {
+   "heading": "1",
+   "nodes": [
+    {
+     "id": "2DDJUFr0AJTVR2Whj8zub",
+     "type": "subtopic",
+     "label": "Pivot Tables",
+     "body": "Pivot tables are one of Excel's most powerful features for summarizing and analyzing large datasets. They allow data to be grouped, filtered, and aggregated across multiple dimensions without writing formulas. Pivot tables are used to quickly explore data and build summary reports by dragging and dropping fields.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Create a Pivot Table",
+       "url": "https://support.microsoft.com/en-gb/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576"
+      },
+      {
+       "kind": "article",
+       "title": "Pivot Tables in Excel",
+       "url": "https://www.excel-easy.com/data-analysis/pivot-tables.html"
+      },
+      {
+       "kind": "video",
+       "title": "How to Create a Pivot Table in Excel",
+       "url": "https://www.youtube.com/watch?v=PdJzy956wo4"
+      }
+     ],
+     "file": "pivot-tables@2DDJUFr0AJTVR2Whj8zub.md"
     },
     {
      "id": "M1QtGTLyygIjePoCfvjve",
@@ -631,10 +641,6 @@
   },
   {
    "heading": "2",
-   "nodes": []
-  },
-  {
-   "heading": "Learn Common Functions",
    "nodes": [
     {
      "id": "l1SnPc4EMqGdaIAhIQfrT",
@@ -750,39 +756,6 @@
      "file": "apis@4DFcXSSHxg5wv0uXLIRij.md"
     },
     {
-     "id": "tSxtyJhL5wjU0XJcjsJmm",
-     "type": "subtopic",
-     "label": "Range",
-     "body": "Range is the simplest measure of dispersion, calculated as the difference between the maximum and minimum values in a dataset. It gives a quick sense of how wide the data spans but is sensitive to outliers. For a more robust measure, interquartile range (IQR) is preferred.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "How to Find the Range of a Data Set",
-       "url": "https://www.scribbr.co.uk/stats/range-statistics/"
-      }
-     ],
-     "file": "range@tSxtyJhL5wjU0XJcjsJmm.md"
-    },
-    {
-     "id": "ict4JkoVM-AzPbp9bDztg",
-     "type": "subtopic",
-     "label": "Variance",
-     "body": "Variance measures the average squared deviation of each value from the mean. It quantifies how much the data points differ from the average. A higher variance indicates greater spread. Variance is the basis for standard deviation and many inferential statistical tests.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is Variance?",
-       "url": "https://www.investopedia.com/terms/v/variance.asp"
-      },
-      {
-       "kind": "article",
-       "title": "How to Calculate Variance",
-       "url": "https://www.scribbr.co.uk/stats/variance-meaning/"
-      }
-     ],
-     "file": "variance@ict4JkoVM-AzPbp9bDztg.md"
-    },
-    {
      "id": "X9WmfHOks82BIAzs6abqO",
      "type": "subtopic",
      "label": "Handling Missing Data",
@@ -819,25 +792,6 @@
       }
      ],
      "file": "web-scraping@qQ64ZhSlbbWu9pP8KTE67.md"
-    },
-    {
-     "id": "MXIP8ekH4YtczODKM_G_l",
-     "type": "subtopic",
-     "label": "Standard Deviation",
-     "body": "Standard deviation is the square root of variance and expresses dispersion in the same units as the original data. It is the most commonly used measure of spread. A low standard deviation means values are clustered near the mean; a high one means they are more spread out.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Standard Deviation Formula and Uses vs. Variance",
-       "url": "https://www.investopedia.com/terms/s/standarddeviation.asp"
-      },
-      {
-       "kind": "video",
-       "title": "Standard Deviation",
-       "url": "https://www.youtube.com/watch?v=esskJJF8pCc"
-      }
-     ],
-     "file": "standard-deviation@MXIP8ekH4YtczODKM_G_l.md"
     },
     {
      "id": "E6cpb6kvluJM8OGuDcFBT",
@@ -887,6 +841,82 @@
      "file": "finding-outliers@-rQ8h_6NFxEOhxXgo7LHo.md"
     },
     {
+     "id": "t_BRtEharsrOZxoyX0OzV",
+     "type": "subtopic",
+     "label": "Data Transformation",
+     "body": "Data Transformation, also known as Data Wrangling, is an essential part of a Data Analyst's role. This process involves the conversion of data from a raw format into another format to make it more appropriate and valuable for a variety of downstream purposes such as analytics. Data Analysts transform data to make the data more suitable for analysis, ensure accuracy, and to improve data quality. The right transformation techniques can give the data a structure, multiply its value, and enhance the accuracy of the analytics performed by serving meaningful results.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is data transformation?",
+       "url": "https://www.qlik.com/us/data-management/data-transformation"
+      }
+     ],
+     "file": "data-transformation@t_BRtEharsrOZxoyX0OzV.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "tSxtyJhL5wjU0XJcjsJmm",
+     "type": "subtopic",
+     "label": "Range",
+     "body": "Range is the simplest measure of dispersion, calculated as the difference between the maximum and minimum values in a dataset. It gives a quick sense of how wide the data spans but is sensitive to outliers. For a more robust measure, interquartile range (IQR) is preferred.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "How to Find the Range of a Data Set",
+       "url": "https://www.scribbr.co.uk/stats/range-statistics/"
+      }
+     ],
+     "file": "range@tSxtyJhL5wjU0XJcjsJmm.md"
+    },
+    {
+     "id": "ict4JkoVM-AzPbp9bDztg",
+     "type": "subtopic",
+     "label": "Variance",
+     "body": "Variance measures the average squared deviation of each value from the mean. It quantifies how much the data points differ from the average. A higher variance indicates greater spread. Variance is the basis for standard deviation and many inferential statistical tests.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is Variance?",
+       "url": "https://www.investopedia.com/terms/v/variance.asp"
+      },
+      {
+       "kind": "article",
+       "title": "How to Calculate Variance",
+       "url": "https://www.scribbr.co.uk/stats/variance-meaning/"
+      }
+     ],
+     "file": "variance@ict4JkoVM-AzPbp9bDztg.md"
+    },
+    {
+     "id": "MXIP8ekH4YtczODKM_G_l",
+     "type": "subtopic",
+     "label": "Standard Deviation",
+     "body": "Standard deviation is the square root of variance and expresses dispersion in the same units as the original data. It is the most commonly used measure of spread. A low standard deviation means values are clustered near the mean; a high one means they are more spread out.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Standard Deviation Formula and Uses vs. Variance",
+       "url": "https://www.investopedia.com/terms/s/standarddeviation.asp"
+      },
+      {
+       "kind": "video",
+       "title": "Standard Deviation",
+       "url": "https://www.youtube.com/watch?v=esskJJF8pCc"
+      }
+     ],
+     "file": "standard-deviation@MXIP8ekH4YtczODKM_G_l.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
      "id": "BJTVa4ur_bJB7mMtD2-hQ",
      "type": "subtopic",
      "label": "Central Tendency",
@@ -906,34 +936,6 @@
      "file": "central-tendency@BJTVa4ur_bJB7mMtD2-hQ.md"
     },
     {
-     "id": "Fyqg3MRcwY7g-Q3gjiqwK",
-     "type": "subtopic",
-     "label": "Distribution Shape",
-     "body": "Distribution space refers to the full range of values a variable takes and how frequently each value or range of values occurs. Understanding distribution shape (symmetric, skewed, bimodal) informs which statistical methods are appropriate. Tools like histograms and density plots are used to visualize distributions.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Shapes of Distributions: Definitions, Examples",
-       "url": "https://www.statisticshowto.com/shapes-of-distributions/"
-      }
-     ],
-     "file": "distribution-shape@Fyqg3MRcwY7g-Q3gjiqwK.md"
-    },
-    {
-     "id": "t_BRtEharsrOZxoyX0OzV",
-     "type": "subtopic",
-     "label": "Data Transformation",
-     "body": "Data Transformation, also known as Data Wrangling, is an essential part of a Data Analyst's role. This process involves the conversion of data from a raw format into another format to make it more appropriate and valuable for a variety of downstream purposes such as analytics. Data Analysts transform data to make the data more suitable for analysis, ensure accuracy, and to improve data quality. The right transformation techniques can give the data a structure, multiply its value, and enhance the accuracy of the analytics performed by serving meaningful results.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is data transformation?",
-       "url": "https://www.qlik.com/us/data-management/data-transformation"
-      }
-     ],
-     "file": "data-transformation@t_BRtEharsrOZxoyX0OzV.md"
-    },
-    {
      "id": "923KGEUG9ofBm7dYkkrxz",
      "type": "subtopic",
      "label": "Mean",
@@ -951,20 +953,6 @@
       }
      ],
      "file": "mean@923KGEUG9ofBm7dYkkrxz.md"
-    },
-    {
-     "id": "VfcCRRqwLxkYpIX0ZKNNX",
-     "type": "subtopic",
-     "label": "Skewness",
-     "body": "Skewness is a crucial statistical concept driven by data analysis and is a significant parameter in understanding the distribution shape of a dataset. In essence, skewness provides a measure to define the extent and direction of asymmetry in data. A positive skewness indicates a distribution with an asymmetric tail extending towards more positive values, while a negative skew indicates a distribution with an asymmetric tail extending towards more negative values. For a data analyst, recognizing and analyzing skewness is essential as it can greatly influence model selection, prediction accuracy, and interpretation of results.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Skewed Data",
-       "url": "https://www.mathsisfun.com/data/skewness.html"
-      }
-     ],
-     "file": "skewness@VfcCRRqwLxkYpIX0ZKNNX.md"
     },
     {
      "id": "qdXoikVh2xkJkOQNKcyvb",
@@ -1003,6 +991,39 @@
       }
      ],
      "file": "mode@fY8zVG2tVbmtx5OhY7hj-.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "Fyqg3MRcwY7g-Q3gjiqwK",
+     "type": "subtopic",
+     "label": "Distribution Shape",
+     "body": "Distribution space refers to the full range of values a variable takes and how frequently each value or range of values occurs. Understanding distribution shape (symmetric, skewed, bimodal) informs which statistical methods are appropriate. Tools like histograms and density plots are used to visualize distributions.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Shapes of Distributions: Definitions, Examples",
+       "url": "https://www.statisticshowto.com/shapes-of-distributions/"
+      }
+     ],
+     "file": "distribution-shape@Fyqg3MRcwY7g-Q3gjiqwK.md"
+    },
+    {
+     "id": "VfcCRRqwLxkYpIX0ZKNNX",
+     "type": "subtopic",
+     "label": "Skewness",
+     "body": "Skewness is a crucial statistical concept driven by data analysis and is a significant parameter in understanding the distribution shape of a dataset. In essence, skewness provides a measure to define the extent and direction of asymmetry in data. A positive skewness indicates a distribution with an asymmetric tail extending towards more positive values, while a negative skew indicates a distribution with an asymmetric tail extending towards more negative values. For a data analyst, recognizing and analyzing skewness is essential as it can greatly influence model selection, prediction accuracy, and interpretation of results.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Skewed Data",
+       "url": "https://www.mathsisfun.com/data/skewness.html"
+      }
+     ],
+     "file": "skewness@VfcCRRqwLxkYpIX0ZKNNX.md"
     },
     {
      "id": "PqGO8AU1zE2ZdtqrIrOkZ",
@@ -1371,6 +1392,20 @@
      "file": "reinforcement-learning@XdBwqLoYYiLJNlWPBEDUj.md"
     },
     {
+     "id": "f4GuzeokP9w_gwtOquP0g",
+     "type": "topic",
+     "label": "Machine Learning",
+     "body": "Machine learning is the field of building systems that learn from data to make predictions or decisions. For data analysts, understanding ML provides tools to tackle problems that go beyond traditional statistical methods, such as classifying text, detecting anomalies, and building recommendation systems. Analysts typically apply ML algorithms rather than build them from scratch.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit the Dedicated Machine Learning Roadmap",
+       "url": "https://roadmap.sh/machine-learning"
+      }
+     ],
+     "file": "machine-learning@f4GuzeokP9w_gwtOquP0g.md"
+    },
+    {
      "id": "A5YQv7D4qRcskdZ64XldH",
      "type": "subtopic",
      "label": "Scatter Plot",
@@ -1461,18 +1496,18 @@
      "file": "pie-charts@K9xwm_Vpdup9ujYqlD9F3.md"
     },
     {
-     "id": "f4GuzeokP9w_gwtOquP0g",
-     "type": "topic",
-     "label": "Machine Learning",
-     "body": "Machine learning is the field of building systems that learn from data to make predictions or decisions. For data analysts, understanding ML provides tools to tackle problems that go beyond traditional statistical methods, such as classifying text, detecting anomalies, and building recommendation systems. Analysts typically apply ML algorithms rather than build them from scratch.",
+     "id": "7ikA373qH88HBx5irCgIH",
+     "type": "subtopic",
+     "label": "Model Evaluation Techniques",
+     "body": "Model evaluation measures how well a machine learning model performs on unseen data. Common metrics include accuracy, precision, recall, F1 score for classification, and mean squared error for regression. Techniques like cross-validation and train/test splits ensure that evaluation reflects real-world performance rather than overfitting to training data.",
      "resources": [
       {
-       "kind": "roadmap",
-       "title": "Visit the Dedicated Machine Learning Roadmap",
-       "url": "https://roadmap.sh/machine-learning"
+       "kind": "article",
+       "title": "What is Model Evaluation",
+       "url": "https://domino.ai/data-science-dictionary/model-evaluation"
       }
      ],
-     "file": "machine-learning@f4GuzeokP9w_gwtOquP0g.md"
+     "file": "model-evaluation-techniques@7ikA373qH88HBx5irCgIH.md"
     },
     {
      "id": "FIYCkGXofKMsXmsqHSMh9",
@@ -1487,20 +1522,6 @@
       }
      ],
      "file": "supervised-learning@FIYCkGXofKMsXmsqHSMh9.md"
-    },
-    {
-     "id": "7ikA373qH88HBx5irCgIH",
-     "type": "subtopic",
-     "label": "Model Evaluation Techniques",
-     "body": "Model evaluation measures how well a machine learning model performs on unseen data. Common metrics include accuracy, precision, recall, F1 score for classification, and mean squared error for regression. Techniques like cross-validation and train/test splits ensure that evaluation reflects real-world performance rather than overfitting to training data.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is Model Evaluation",
-       "url": "https://domino.ai/data-science-dictionary/model-evaluation"
-      }
-     ],
-     "file": "model-evaluation-techniques@7ikA373qH88HBx5irCgIH.md"
     }
    ]
   },

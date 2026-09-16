@@ -50,11 +50,7 @@ Define the technologies you want to use before generating anything. AI generatio
 - `@roadmap` [Visit the Dedicated Vibe Coding Roadmap](https://roadmap.sh/vibe-coding)
 - `@article` [The Best Tech Stack in the Age of AI](https://thebootstrappedfounder.com/the-best-tech-stack-in-the-age-of-ai/)
 
-## Know your options
-
 ## Product Development Cycle
-
-## AI App Builders
 
 #### Choose a Prototype Tool
 
@@ -62,6 +58,26 @@ Developers are increasingly moving away from traditional design tools like Figma
 
 - `@article` [Best AI Prototyping Tools in 2026: Ranked by Use Case](https://www.banani.co/blog/best-ai-prototyping-tools)
 - `@article` [Prototyping Tools: A Comprehensive Guide Intro](https://www.coursera.org/articles/prototyping-tools)
+
+#### Feedback & Validation
+
+Before generating the full product, share the prototype with your team and some potential users. You are looking for obvious gaps or misunderstandings in the design. Catching these at the prototype stage is much cheaper than fixing them after generation.
+
+### 1. Prototyping
+
+A prototype is a visual representation of your app before any code is generated. It helps you align with stakeholders, catch missing features early, and give the generation tool a concrete reference to work from. It does not need to be detailed; it just needs to be clear enough to communicate intent.
+
+- `@article` [Software prototyping: What it is, its process, and the best tools to use](https://www.hostinger.com/tutorials/software-prototyping#h-can-i-create-prototypes-with-ai)
+
+### 2. Generation
+
+This is the step where your prototype and requirements are turned into a working codebase by an AI tool. The output should include a front end, a back end, a database schema, and an API layer. The quality of the output depends directly on the clarity of your inputs.
+
+### 3. Refinement
+
+Once you have a generated codebase, you will need to adjust it. Some changes are small and targeted; others require regenerating a larger part of the application. Knowing which type of change you are dealing with before you start saves time and reduces the risk of breaking something that already works.
+
+## AI App Builders
 
 #### Lovable
 
@@ -79,16 +95,6 @@ Replit is a browser-based coding environment that also supports AI-assisted app 
 - `@article` [What is Replit? An honest look at the AI app builder in 2025](https://www.eesel.ai/blog/replit)
 - `@video` [Getting Started with Replit](https://www.youtube.com/watch?v=St95nPOwsa8&list=PLto9KpJAqHMTzEMDAFT4r5LlI4NByngyT)
 
-#### Feedback & Validation
-
-Before generating the full product, share the prototype with your team and some potential users. You are looking for obvious gaps or misunderstandings in the design. Catching these at the prototype stage is much cheaper than fixing them after generation.
-
-### 1. Prototyping
-
-A prototype is a visual representation of your app before any code is generated. It helps you align with stakeholders, catch missing features early, and give the generation tool a concrete reference to work from. It does not need to be detailed; it just needs to be clear enough to communicate intent.
-
-- `@article` [Software prototyping: What it is, its process, and the best tools to use](https://www.hostinger.com/tutorials/software-prototyping#h-can-i-create-prototypes-with-ai)
-
 #### Claude Design
 
 #### v0
@@ -98,10 +104,6 @@ v0 is Vercel's UI generation tool. You describe a component or screen, and it pr
 - `@official` [v0 Docs](https://v0.app/docs)
 - `@article` [Transforming how you work with v0 - Vercel](https://vercel.com/blog/transforming-how-you-work-with-v0)
 - `@video` [How To Use v0 by Vercel For Beginners](https://www.youtube.com/watch?v=41SR07p243Q)
-
-### 2. Generation
-
-This is the step where your prototype and requirements are turned into a working codebase by an AI tool. The output should include a front end, a back end, a database schema, and an API layer. The quality of the output depends directly on the clarity of your inputs.
 
 #### Hope
 
@@ -118,13 +120,32 @@ Bolt generates full-stack applications from a prompt and produces clean, readabl
 - `@article` [Bolt.new Review 2025: The Good, Bad, and Surprising Findings for Developers](https://trickle.so/blog/bolt-new-review)
 - `@video` [Bolt.New AI Tutorial for Beginners: Create an App in Under 20 Minutes!](https://www.youtube.com/watch?v=5zfOitaKfmM)
 
+#### Claude Code
+
+Claude Code is a terminal-based AI tool built by Anthropic. It is designed to reason through complex code problems, explain unfamiliar codebases, and help with debugging. It works best when you need to understand what the generated code is doing before modifying it.
+
+- `@roadmap` [Visit the Dedicated Claude Code Roadmap](https://roadmap.sh/claude-code)
+- `@official` [Claude Code Overview](https://code.claude.com/docs/en/overview)
+- `@article` [Claude Code: From Zero to Hero](https://medium.com/@dan.avila7/claude-code-from-zero-to-hero-bebe2436ac32)
+- `@video` [Claude Code Tutorial for Beginners](https://www.youtube.com/watch?v=eMZmDH3T2bY)
+
+#### Gemini CLI
+
+Gemini CLI is Google's command-line AI tool for developers. It integrates with your existing terminal workflow and can assist with code generation, explanation, and refactoring. It is a practical option if you are already working within the Google Cloud infrastructure.
+
+- `@course` [Hands-on with Gemini CLI](https://codelabs.developers.google.com/gemini-cli-hands-on#0)
+- `@official` [Gemini CLI Docs](https://geminicli.com/docs/)
+- `@video` [Gemini CLI: The AI agent that lives in your terminal](https://www.youtube.com/watch?v=C5Cjvpfzc_0)
+
+#### Codex
+
+Codex is OpenAI's code-focused model, available through the API and integrated into tools like GitHub Copilot. It is strong at generating boilerplate and translating natural language descriptions into working code. It works best for well-defined, contained tasks rather than open-ended architectural decisions.
+
+- `@course` [Introduction to OpenAI Codex](https://www.coursera.org/learn/introduction-to-openai-codex)
+- `@official` [Codex Docs](https://developers.openai.com/codex)
+- `@video` [Getting started with Codex](https://www.youtube.com/watch?v=px7XlbYgk7I)
+
 ## Use AI-assisted Coding Tools
-
-### 3. Refinement
-
-Once you have a generated codebase, you will need to adjust it. Some changes are small and targeted; others require regenerating a larger part of the application. Knowing which type of change you are dealing with before you start saves time and reduces the risk of breaking something that already works.
-
-## Technical but Powerful
 
 #### Claude Code
 
@@ -143,15 +164,6 @@ Codex is best for translating a clearly defined requirement into working code. D
 - `@official` [Codex Docs](https://developers.openai.com/codex)
 - `@video` [Getting started with Codex](https://www.youtube.com/watch?v=px7XlbYgk7I)
 
-#### Claude Code
-
-Claude Code is a terminal-based AI tool built by Anthropic. It is designed to reason through complex code problems, explain unfamiliar codebases, and help with debugging. It works best when you need to understand what the generated code is doing before modifying it.
-
-- `@roadmap` [Visit the Dedicated Claude Code Roadmap](https://roadmap.sh/claude-code)
-- `@official` [Claude Code Overview](https://code.claude.com/docs/en/overview)
-- `@article` [Claude Code: From Zero to Hero](https://medium.com/@dan.avila7/claude-code-from-zero-to-hero-bebe2436ac32)
-- `@video` [Claude Code Tutorial for Beginners](https://www.youtube.com/watch?v=eMZmDH3T2bY)
-
 #### Cursor
 
 Cursor lets you select any part of the codebase and ask questions or request changes directly in the editor. It is the most practical tool for navigating AI-generated code you did not write yourself. Use it to understand what a file does, rename a pattern across the codebase, or make a targeted edit without having to read every line around it.
@@ -169,23 +181,7 @@ Copilot works inline as you type and is best used when you know what you want to
 - `@official` [Copilot Tutorials](https://github.com/features/copilot/tutorials)
 - `@video` [Intro to GitHob Copilot in Visual Studio](https://www.youtube.com/watch?v=z1ycDvspv8U)
 
-#### Gemini CLI
-
-Gemini CLI is Google's command-line AI tool for developers. It integrates with your existing terminal workflow and can assist with code generation, explanation, and refactoring. It is a practical option if you are already working within the Google Cloud infrastructure.
-
-- `@course` [Hands-on with Gemini CLI](https://codelabs.developers.google.com/gemini-cli-hands-on#0)
-- `@official` [Gemini CLI Docs](https://geminicli.com/docs/)
-- `@video` [Gemini CLI: The AI agent that lives in your terminal](https://www.youtube.com/watch?v=C5Cjvpfzc_0)
-
-#### Codex
-
-Codex is OpenAI's code-focused model, available through the API and integrated into tools like GitHub Copilot. It is strong at generating boilerplate and translating natural language descriptions into working code. It works best for well-defined, contained tasks rather than open-ended architectural decisions.
-
-- `@course` [Introduction to OpenAI Codex](https://www.coursera.org/learn/introduction-to-openai-codex)
-- `@official` [Codex Docs](https://developers.openai.com/codex)
-- `@video` [Getting started with Codex](https://www.youtube.com/watch?v=px7XlbYgk7I)
-
-## Learn by the need
+## Technical but Powerful
 
 #### Targeted Change
 
@@ -194,6 +190,8 @@ A targeted change is a small, localized fix: a bug in a component, a layout adju
 #### New Feature / Structural Change
 
 When a change affects the architecture of the app, such as adding a new service, reworking the data model, or introducing a new user flow, go back through the generation tool rather than patching the code manually. This keeps the codebase consistent and reduces technical debt.
+
+## Learn by the need
 
 #### HTML / CSS / JavaScript
 
@@ -212,14 +210,6 @@ React is the most widely used library for building web interfaces. Most AI-gener
 - `@official` [React Docs](https://react.dev/reference/react)
 - `@video` [Full Stack React Developer Course](https://www.youtube.com/watch?v=Bvwq_S0n2pk)
 
-## Testing & Feedback
-
-#### User Testing
-
-User testing means putting the app in front of real people and watching how they use it. You are not looking for opinions; you are looking for moments where they hesitate, get confused, or do something unexpected. Each session gives you concrete input for the next refinement cycle.
-
-- `@article` [What is User Testing? Definition, Types & Methods](https://trymata.com/blog/what-is-user-testing/)
-
 #### Browsers / DevTools
 
 Browser developer tools let you inspect HTML, debug JavaScript, monitor network requests, and measure performance directly in the browser. They are the first place to look when something in the front end is not working as expected.
@@ -229,13 +219,6 @@ Browser developer tools let you inspect HTML, debug JavaScript, monitor network 
 - `@video` [How Do Web Browsers Work?](https://www.youtube.com/watch?v=5rLFYtXHo9s)
 - `@video` [nderstand Browser Dev Tools Network Tab (and avoid these mistakes...)](https://www.youtube.com/watch?v=2CC0fugc_2o)
 
-#### Unit Testing
-
-A unit test checks that a single function or component behaves as expected in isolation. AI-generated codebases sometimes include unit tests automatically; if they do not, write them for the parts of the code that handle critical business logic. They are the fastest type of test to run and the easiest to debug when they fail.
-
-- `@article` [What is Unit Testing?](https://www.guru99.com/unit-testing-guide.html)
-- `@video` [What is Unit Testing?](https://youtu.be/x95ez7_V7rA?si=JhCVhcEN7zZOkxdp)
-
 #### Node.js
 
 Node.js is the runtime that allows JavaScript to run on a server. Most AI-generated back ends use Node.js. You will need a basic understanding of it when modifying API routes, adding middleware, or debugging server-side logic.
@@ -244,9 +227,20 @@ Node.js is the runtime that allows JavaScript to run on a server. Most AI-genera
 - `@official` [Node.jsLearn Node.js Official WebsiteDocs](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
 - `@video` [Node.js and Express.js Full Course](https://www.youtube.com/watch?v=Oe421EPjeBE)
 
-### 4. Collaboration
+## Change Management & CI
 
-At this stage, you bring other people into the process: teammates, testers, or early users. Their feedback drives the next round of refinement. This node also covers the tools and practices that keep the codebase stable when multiple people are working on it at the same time.
+#### User Testing
+
+User testing means putting the app in front of real people and watching how they use it. You are not looking for opinions; you are looking for moments where they hesitate, get confused, or do something unexpected. Each session gives you concrete input for the next refinement cycle.
+
+- `@article` [What is User Testing? Definition, Types & Methods](https://trymata.com/blog/what-is-user-testing/)
+
+#### Unit Testing
+
+A unit test checks that a single function or component behaves as expected in isolation. AI-generated codebases sometimes include unit tests automatically; if they do not, write them for the parts of the code that handle critical business logic. They are the fastest type of test to run and the easiest to debug when they fail.
+
+- `@article` [What is Unit Testing?](https://www.guru99.com/unit-testing-guide.html)
+- `@video` [What is Unit Testing?](https://youtu.be/x95ez7_V7rA?si=JhCVhcEN7zZOkxdp)
 
 #### Integration Testing
 
@@ -256,35 +250,12 @@ Integration tests check that different parts of the app work correctly together;
 - `@article` [Unit Test vs Integration Test: What's the Difference?](https://www.testim.io/blog/unit-test-vs-integration-test/)
 - `@video` [What is Integration Testing?](https://www.youtube.com/watch?v=kRD6PA6uxiY)
 
-## Serverless Providers
-
 #### E2E Testing
 
 End-to-end tests simulate a real user moving through the app from start to finish. They verify that the full system works as expected in an environment that resembles production. Tools like Playwright or Cypress automate these flows so you can run them on every deployment without manual effort.
 
 - `@article` [End to End Testing](https://microsoft.github.io/code-with-engineering-playbook/automated-testing/e2e-testing/)
 - `@article` [End to End Testing: Importance, Process, Best Practices & Frameworks](https://testgrid.io/blog/end-to-end-testing-a-detailed-guide/)
-
-#### Cloudflare
-
-Cloudflare offers serverless deployment for front-end apps and lightweight back-end functions through Cloudflare Workers and Pages. It has a generous free tier and deploys to a global edge network, which means fast load times for users anywhere in the world.
-
-- `@roadmap` [Visit the Dedicated Cloudflare Roadmap](https://roadmap.sh/cloudflare)
-- `@official` [Getting started with Cloudflare](https://developers.cloudflare.com/pages/get-started/)
-- `@video` [What is Cloudflare?](https://www.youtube.com/watch?v=XHvmX3FhTwU)
-- `@video` [IntroLearn Cloudflare Workers 101 - Full Course for Beginnersduction to Cloudflare](https://www.youtube.com/watch?v=24cml1rKGBs)
-
-## Change Management & CI
-
-#### Vercel
-
-Vercel is a platform designed for deploying and hosting web applications, particularly those built with modern frontend frameworks and static site generators. It provides features like automatic deployments from Git repositories, serverless functions, and a global content delivery network (CDN) to ensure fast and reliable performance. Vercel simplifies the process of taking a frontend project from development to production.
-
-- `@official` [Vercel Documentation](https://vercel.com/docs)
-- `@official` [Vercel Quick Start](https://vercel.com/docs/getting-started-with-vercel)
-- `@video` [Vercel Tutorial - Host a Website for Free](https://www.youtube.com/watch?v=Vx5nPGdsFaU)
-
-#### Bit Cloud
 
 #### GitHub
 
@@ -302,28 +273,12 @@ GitLab is an alternative to GitHub that combines version control with built-in C
 - `@official` [Get Started with Gitlab](https://about.gitlab.com/get-started/)
 - `@video` [GitLab Explained: What is GitLab and Why Use It?](https://www.youtube.com/watch?v=bnF7f1zGpo4)
 
-## Platform as a Service (PaaS)
-
 #### Bit Cloud
 
 Bit Cloud is how humans and AI agents build software autonomously. It enables them to build and maintain software as independent, decoupled building blocks—each owned separately, yet composable into larger systems—so everyone can work in parallel without friction.
 
 - `@official` [Get started with Hope](https://bit.cloud/docs?c=rsh-a)
 - `@official` [Get started with your agent](https://bit.cloud/docs/install-bit/?c=rsh-a)
-
-### 5. Deployment
-
-Deployment is the process of making your app available to real users. The right deployment option depends on your technical experience, expected traffic, and budget. Start with the simplest option that meets your needs and scale up as the product grows.
-
-- `@article` [What is software deployment?](https://www.atlassian.com/agile/software-development/software-deployment)
-
-#### DigitalOcean
-
-DigitalOcean is a cloud provider focused on simplicity and developer experience. Its App Platform lets you deploy a full-stack application from a GitHub repository with minimal configuration. It is a practical middle ground between the simplicity of serverless platforms and the complexity of AWS or GCP.
-
-- `@official` [DigitalOcean](https://www.digitalocean.com/)
-- `@official` [DigitalOcean Tutorials](https://www.digitalocean.com/community/tutorials)
-- `@video` [Getting Started With Kubernetes on DigitalOcean](https://www.youtube.com/watch?v=cJKdo-glRD0)
 
 #### Azure DevOps
 
@@ -332,7 +287,40 @@ Azure DevOps is Microsoft's platform for managing code, pipelines, and project t
 - `@official` [Azure DevOps](https://azure.microsoft.com/en-us/products/devops)
 - `@video` [Azure DevOps Tutorial for Beginners | CI/CD with Azure Pipelines](https://www.youtube.com/watch?v=4BibQ69MD8c)
 
-## Pick one Option for Deployment
+## Testing & Feedback
+
+### 4. Collaboration
+
+At this stage, you bring other people into the process: teammates, testers, or early users. Their feedback drives the next round of refinement. This node also covers the tools and practices that keep the codebase stable when multiple people are working on it at the same time.
+
+## Cloud Providers
+
+#### Cloudflare
+
+Cloudflare offers serverless deployment for front-end apps and lightweight back-end functions through Cloudflare Workers and Pages. It has a generous free tier and deploys to a global edge network, which means fast load times for users anywhere in the world.
+
+- `@roadmap` [Visit the Dedicated Cloudflare Roadmap](https://roadmap.sh/cloudflare)
+- `@official` [Getting started with Cloudflare](https://developers.cloudflare.com/pages/get-started/)
+- `@video` [What is Cloudflare?](https://www.youtube.com/watch?v=XHvmX3FhTwU)
+- `@video` [IntroLearn Cloudflare Workers 101 - Full Course for Beginnersduction to Cloudflare](https://www.youtube.com/watch?v=24cml1rKGBs)
+
+#### Vercel
+
+Vercel is a platform designed for deploying and hosting web applications, particularly those built with modern frontend frameworks and static site generators. It provides features like automatic deployments from Git repositories, serverless functions, and a global content delivery network (CDN) to ensure fast and reliable performance. Vercel simplifies the process of taking a frontend project from development to production.
+
+- `@official` [Vercel Documentation](https://vercel.com/docs)
+- `@official` [Vercel Quick Start](https://vercel.com/docs/getting-started-with-vercel)
+- `@video` [Vercel Tutorial - Host a Website for Free](https://www.youtube.com/watch?v=Vx5nPGdsFaU)
+
+#### Bit Cloud
+
+#### DigitalOcean
+
+DigitalOcean is a cloud provider focused on simplicity and developer experience. Its App Platform lets you deploy a full-stack application from a GitHub repository with minimal configuration. It is a practical middle ground between the simplicity of serverless platforms and the complexity of AWS or GCP.
+
+- `@official` [DigitalOcean](https://www.digitalocean.com/)
+- `@official` [DigitalOcean Tutorials](https://www.digitalocean.com/community/tutorials)
+- `@video` [Getting Started With Kubernetes on DigitalOcean](https://www.youtube.com/watch?v=cJKdo-glRD0)
 
 #### Railway
 
@@ -349,8 +337,6 @@ Render is a cloud platform that supports web services, background workers, cron 
 - `@official` [Render Docs + Quickstarts](https://render.com/docs)
 - `@article` [Render: Cloud Deployment with Less Engineering](https://thenewstack.io/render-cloud-deployment-with-less-engineering/)
 - `@video` [Deploy any application with one click using Render | Cloud Application Platform](https://www.youtube.com/watch?v=yWxBUcG_C7g)
-
-## Cloud Providers
 
 #### AWS
 
@@ -375,8 +361,6 @@ Google Cloud Platform is Google's cloud infrastructure service. It is particular
 - `@official` [Google Cloud Platform](https://cloud.google.com)
 - `@official` [Cloud Computing, Hosting Services, and APIs](https://cloud.google.com/gcp)
 - `@video` [Google Cloud Platform Video Course](https://www.youtube.com/watch?v=fZOz13joN0o)
-
-## Connect to a Database
 
 #### MongoDB / Atlas
 
@@ -403,3 +387,11 @@ Supabase is an open-source alternative to Firebase built on top of PostgreSQL. I
 
 - `@official` [Supabase Docs](https://supabase.com/docs)
 - `@video` [Supabase Full Course 2025 | Become a Supabase Pro in 1.5 Hours](https://www.youtube.com/watch?v=kyphLGnSz6Q)
+
+## Platform as a Service (PaaS)
+
+### 5. Deployment
+
+Deployment is the process of making your app available to real users. The right deployment option depends on your technical experience, expected traffic, and budget. Start with the simplest option that meets your needs and scale up as the product grows.
+
+- `@article` [What is software deployment?](https://www.atlassian.com/agile/software-development/software-deployment)

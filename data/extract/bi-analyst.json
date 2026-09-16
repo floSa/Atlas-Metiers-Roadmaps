@@ -141,6 +141,124 @@
      "file": "metrics-and-kpis@c0ywBrs9u7MciWAXSgVVg.md"
     },
     {
+     "id": "GN6SnI7RXIeW8JeD-qORW",
+     "type": "subtopic",
+     "label": "Operational BI",
+     "body": "Operational planning is the starting point for implementing the actions and goals outlined by tactical planning; aiming to achieve the objectives established in strategic decisions. Operational planning focuses on short-term activities, typically with a 3-6 month horizon. All sectors of the organization are involved in this process, dedicating themselves to monitoring daily activities to ensure execution.",
+     "resources": [],
+     "file": "operational-bi@GN6SnI7RXIeW8JeD-qORW.md"
+    },
+    {
+     "id": "eZN_ty8VDX9mi5KtCWTFL",
+     "type": "subtopic",
+     "label": "Supervised Learning",
+     "body": "Supervised machine learning forms an integral part of the toolset for a Data Analyst. With a direct focus on building predictive models from labeled datasets, it involves training an algorithm based on these known inputs and outputs, helping Data Analysts establish correlations and make reliable predictions. Fortifying a Data Analyst's role, supervised machine learning enables the accurate interpretation of complex data, enhancing decision-making processes.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is Supervised Learning?",
+       "url": "https://cloud.google.com/discover/what-is-supervised-learning"
+      },
+      {
+       "kind": "video",
+       "title": "Supervised Machine Learning Explained For Beginners",
+       "url": "https://www.youtube.com/watch?v=Mu3POlNoLdc&pp=0gcJCf8Ao7VqN5tD"
+      }
+     ],
+     "file": "supervised-learning@eZN_ty8VDX9mi5KtCWTFL.md"
+    },
+    {
+     "id": "6l_tHC1R5zgABHMc_G6RD",
+     "type": "subtopic",
+     "label": "Unsupervised Learning",
+     "body": "Unsupervised learning, as a fundamental aspect of Machine Learning, holds great implications in the realm of data analytics. It is an approach where a model learns to identify patterns and relationships within a dataset that isn't labelled or classified. It is especially useful for a Data Analyst as it can assist in recognizing unforeseen trends, providing new insights or preparing data for other machine learning tasks. This ability to infer without direct supervision allows a vast potential for latent structure discovery and new knowledge derivation from raw data.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is Unsupervised Learning?",
+       "url": "https://cloud.google.com/discover/what-is-unsupervised-learning"
+      },
+      {
+       "kind": "video",
+       "title": "Unsupervised Machine Learning Explained For Beginners",
+       "url": "https://www.youtube.com/watch?v=yteYU_QpUxs&pp=ygUbI3doYXRpc3Vuc3VwZXJ2aXNlZGxlYXJuaW5n"
+      }
+     ],
+     "file": "unsupervised-learning@6l_tHC1R5zgABHMc_G6RD.md"
+    },
+    {
+     "id": "KFONHuJNnCuSOH7-8Ndvm",
+     "type": "subtopic",
+     "label": "Reinforcement Learning",
+     "body": "Reinforcement learning is a type of machine learning where an agent learns to make decisions in an environment to maximize a cumulative reward. It involves the agent taking actions, receiving feedback in the form of rewards or penalties, and adjusting its strategy to improve its performance over time. Unlike supervised learning, it doesn't rely on labeled data but rather learns through trial and error.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "Deep Reinforcement Learning Course by HuggingFace",
+       "url": "https://huggingface.co/learn/deep-rl-course/unit0/introduction"
+      },
+      {
+       "kind": "article",
+       "title": "What is reinforcement learning?",
+       "url": "https://online.york.ac.uk/resources/what-is-reinforcement-learning/"
+      },
+      {
+       "kind": "article",
+       "title": "Resources to Learn Reinforcement Learning",
+       "url": "https://towardsdatascience.com/best-free-courses-and-resources-to-learn-reinforcement-learning-ed6633608cb2/"
+      },
+      {
+       "kind": "video",
+       "title": "Reinforcement Learning in 3 Hours | Full Course using Python",
+       "url": "https://www.youtube.com/watch?v=Mut_u40Sqz4"
+      }
+     ],
+     "file": "reinforcement-learning@KFONHuJNnCuSOH7-8Ndvm.md"
+    },
+    {
+     "id": "_uLtsnyNNNRcz5A29Zpjl",
+     "type": "subtopic",
+     "label": "Algorithmic Bias",
+     "body": "Algorithmic bias occurs when a computer system reflects the implicit values of the humans who created the algorithm or the data used to train it. This can lead to unfair or discriminatory outcomes for certain groups of people, even if the algorithm is not explicitly designed to be biased. It arises from flawed assumptions, incomplete data, or biased data used in the development process, ultimately perpetuating and amplifying existing societal biases.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What Is Algorithmic Bias?",
+       "url": "https://www.ibm.com/think/topics/algorithmic-bias"
+      },
+      {
+       "kind": "video",
+       "title": "AI: Training Data & Bias",
+       "url": "https://www.youtube.com/watch?v=x2mRoFNm22g"
+      }
+     ],
+     "file": "algorithmic-bias@_uLtsnyNNNRcz5A29Zpjl.md"
+    },
+    {
+     "id": "5MUwKGfSTKlam8KCG0A1U",
+     "type": "subtopic",
+     "label": "Mitigation Strategies",
+     "body": "Mitigation strategies for bias are the proactive steps taken to reduce or eliminate unfair prejudices within data, algorithms, and decision-making processes. These strategies involve identifying potential sources of bias, implementing techniques to correct or compensate for them, and continuously monitoring outcomes to ensure fairness and equity. The goal is to create more accurate, reliable, and just results by addressing and minimizing the impact of bias.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Addressing AI bias: a human-centric approach to fairness",
+       "url": "https://www.ey.com/en_us/insights/emerging-technologies/addressing-ai-bias-a-human-centric-approach-to-fairness"
+      },
+      {
+       "kind": "article",
+       "title": "When AI Gets It Wrong: Addressing AI Hallucinations and Bias",
+       "url": "https://mitsloanedtech.mit.edu/ai/basics/addressing-ai-hallucinations-and-bias/"
+      },
+      {
+       "kind": "video",
+       "title": "Algorithmic Bias in AI: What It Is and How to Fix It",
+       "url": "https://www.youtube.com/watch?v=og67qeTZPYs"
+      }
+     ],
+     "file": "mitigation-strategies@5MUwKGfSTKlam8KCG0A1U.md"
+    },
+    {
      "id": "dJZqe47kzRqYIG-4AZTlz",
      "type": "subtopic",
      "label": "Operations",
@@ -242,14 +360,6 @@
       }
      ],
      "file": "predictive-analysis@4zpVE3R0lLyWpHePdBVpl.md"
-    },
-    {
-     "id": "GN6SnI7RXIeW8JeD-qORW",
-     "type": "subtopic",
-     "label": "Operational BI",
-     "body": "Operational planning is the starting point for implementing the actions and goals outlined by tactical planning; aiming to achieve the objectives established in strategic decisions. Operational planning focuses on short-term activities, typically with a 3-6 month horizon. All sectors of the organization are involved in this process, dedicating themselves to monitoring daily activities to ensure execution.",
-     "resources": [],
-     "file": "operational-bi@GN6SnI7RXIeW8JeD-qORW.md"
     },
     {
      "id": "NnbtaO2MiqsHeJ-ds0Q5m",
@@ -1263,12 +1373,7 @@
       }
      ],
      "file": "performance@y9Fnjnbiqt7WkrhjPITpW.md"
-    }
-   ]
-  },
-  {
-   "heading": "Tools for Data Cleaning",
-   "nodes": [
+    },
     {
      "id": "Vo7LJ_W-DBvxvVrnz33BM",
      "type": "topic",
@@ -1303,39 +1408,6 @@
      "file": "exploratory-data-analysis-eda@ETT9eATuyLHQe2jPqaF5I.md"
     },
     {
-     "id": "9BWyA0b4WrmQetSMph_mY",
-     "type": "subtopic",
-     "label": "Excel",
-     "body": "Excel is a readily available and user-friendly tool that's great for getting a first look at your data. It allows you to quickly sort, filter, and calculate basic statistics like averages and sums. You can also create simple charts and graphs to visualize trends and patterns, helping you understand your data's main characteristics and identify potential areas for deeper investigation, all without needing specialized programming knowledge.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Exploratory Data Analysis in Excel",
-       "url": "https://www.scaler.com/topics/exploratory-data-analysis-projects/"
-      },
-      {
-       "kind": "video",
-       "title": "Exploratory Data Analysis With Excel",
-       "url": "https://www.youtube.com/watch?v=1zEFJHbG0aE&list=PLTJTBoU5HOCRFQhfU1gg2ciNpS_evWKR7"
-      }
-     ],
-     "file": "excel@9BWyA0b4WrmQetSMph_mY.md"
-    },
-    {
-     "id": "_iV_5O5Rq07P9qRGrraTM",
-     "type": "subtopic",
-     "label": "SQL",
-     "body": "SQL is a powerful tool for exploring data because it lets you quickly look at large datasets. You can use SQL to filter data based on specific conditions, calculate summary statistics like averages and counts, and group data to see patterns. Its simple syntax makes it easy to write queries to understand the characteristics of your data, identify potential issues, and prepare it for further analysis.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "51:14 YouTube · Data with Baraa SQL Exploratory Data Analysis (EDA) Project",
-       "url": "https://www.youtube.com/watch?v=6cJ5Ji8zSDg"
-      }
-     ],
-     "file": "sql@_iV_5O5Rq07P9qRGrraTM.md"
-    },
-    {
      "id": "hrkMVMYWCedRxhNd2N9wE",
      "type": "topic",
      "label": "Data Transformation Techniques",
@@ -1353,44 +1425,6 @@
       }
      ],
      "file": "data-transformation-techniques@hrkMVMYWCedRxhNd2N9wE.md"
-    },
-    {
-     "id": "25f76eB9-vy3Usta-Pbsi",
-     "type": "subtopic",
-     "label": "Pandas",
-     "body": "Pandas is a powerful Python library that makes exploring and understanding data much easier. It provides data structures like DataFrames, which are like spreadsheets but much more versatile. With Pandas, you can quickly clean, transform, and analyze your data. It allows you to easily filter rows, select columns, calculate summary statistics (like mean and median), and handle missing values. This makes it a go-to tool for getting a feel for your data and uncovering initial insights before diving into more complex analysis.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Pandas Docs",
-       "url": "https://pandas.pydata.org/docs/index.html"
-      },
-      {
-       "kind": "video",
-       "title": "Exploratory Data Analysis in Pandas | Python Pandas Tutorials",
-       "url": "https://www.youtube.com/watch?v=Liv6eeb1VfE"
-      }
-     ],
-     "file": "pandas@25f76eB9-vy3Usta-Pbsi.md"
-    },
-    {
-     "id": "ZAhjB_ghHukD4RPAtNDxh",
-     "type": "subtopic",
-     "label": "dplyr",
-     "body": "dplyr is an R package that makes data manipulation and exploration easier. It provides a consistent set of verbs, like `filter`, `select`, `mutate`, `summarize`, and `arrange`, that allow you to quickly perform common data analysis tasks. These functions are designed to be intuitive and work together seamlessly, letting you chain operations to efficiently clean, transform, and gain insights from your data. This streamlined approach helps you understand your data's structure, identify patterns, and prepare it for further analysis or visualization.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "dplyr",
-       "url": "https://dplyr.tidyverse.org/"
-      },
-      {
-       "kind": "article",
-       "title": "Exploratory Data Analysis with dplyr",
-       "url": "https://www.gastonsanchez.com/intro2cwd/eda-dplyr.html"
-      }
-     ],
-     "file": "dplyr@ZAhjB_ghHukD4RPAtNDxh.md"
     },
     {
      "id": "TCYG6vmFqq1zAPNQWoOH8",
@@ -1457,6 +1491,82 @@
       }
      ],
      "file": "outliers@OqolfBQRQvwg6PI_t8Mrt.md"
+    }
+   ]
+  },
+  {
+   "heading": "Tools for Data Cleaning",
+   "nodes": [
+    {
+     "id": "9BWyA0b4WrmQetSMph_mY",
+     "type": "subtopic",
+     "label": "Excel",
+     "body": "Excel is a readily available and user-friendly tool that's great for getting a first look at your data. It allows you to quickly sort, filter, and calculate basic statistics like averages and sums. You can also create simple charts and graphs to visualize trends and patterns, helping you understand your data's main characteristics and identify potential areas for deeper investigation, all without needing specialized programming knowledge.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Exploratory Data Analysis in Excel",
+       "url": "https://www.scaler.com/topics/exploratory-data-analysis-projects/"
+      },
+      {
+       "kind": "video",
+       "title": "Exploratory Data Analysis With Excel",
+       "url": "https://www.youtube.com/watch?v=1zEFJHbG0aE&list=PLTJTBoU5HOCRFQhfU1gg2ciNpS_evWKR7"
+      }
+     ],
+     "file": "excel@9BWyA0b4WrmQetSMph_mY.md"
+    },
+    {
+     "id": "_iV_5O5Rq07P9qRGrraTM",
+     "type": "subtopic",
+     "label": "SQL",
+     "body": "SQL is a powerful tool for exploring data because it lets you quickly look at large datasets. You can use SQL to filter data based on specific conditions, calculate summary statistics like averages and counts, and group data to see patterns. Its simple syntax makes it easy to write queries to understand the characteristics of your data, identify potential issues, and prepare it for further analysis.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "51:14 YouTube · Data with Baraa SQL Exploratory Data Analysis (EDA) Project",
+       "url": "https://www.youtube.com/watch?v=6cJ5Ji8zSDg"
+      }
+     ],
+     "file": "sql@_iV_5O5Rq07P9qRGrraTM.md"
+    },
+    {
+     "id": "25f76eB9-vy3Usta-Pbsi",
+     "type": "subtopic",
+     "label": "Pandas",
+     "body": "Pandas is a powerful Python library that makes exploring and understanding data much easier. It provides data structures like DataFrames, which are like spreadsheets but much more versatile. With Pandas, you can quickly clean, transform, and analyze your data. It allows you to easily filter rows, select columns, calculate summary statistics (like mean and median), and handle missing values. This makes it a go-to tool for getting a feel for your data and uncovering initial insights before diving into more complex analysis.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Pandas Docs",
+       "url": "https://pandas.pydata.org/docs/index.html"
+      },
+      {
+       "kind": "video",
+       "title": "Exploratory Data Analysis in Pandas | Python Pandas Tutorials",
+       "url": "https://www.youtube.com/watch?v=Liv6eeb1VfE"
+      }
+     ],
+     "file": "pandas@25f76eB9-vy3Usta-Pbsi.md"
+    },
+    {
+     "id": "ZAhjB_ghHukD4RPAtNDxh",
+     "type": "subtopic",
+     "label": "dplyr",
+     "body": "dplyr is an R package that makes data manipulation and exploration easier. It provides a consistent set of verbs, like `filter`, `select`, `mutate`, `summarize`, and `arrange`, that allow you to quickly perform common data analysis tasks. These functions are designed to be intuitive and work together seamlessly, letting you chain operations to efficiently clean, transform, and gain insights from your data. This streamlined approach helps you understand your data's structure, identify patterns, and prepare it for further analysis or visualization.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "dplyr",
+       "url": "https://dplyr.tidyverse.org/"
+      },
+      {
+       "kind": "article",
+       "title": "Exploratory Data Analysis with dplyr",
+       "url": "https://www.gastonsanchez.com/intro2cwd/eda-dplyr.html"
+      }
+     ],
+     "file": "dplyr@ZAhjB_ghHukD4RPAtNDxh.md"
     }
    ]
   },
@@ -2339,25 +2449,6 @@
      "file": "basic-machine-learning@ZGazuCNruu09bd7C-aSFC.md"
     },
     {
-     "id": "eZN_ty8VDX9mi5KtCWTFL",
-     "type": "subtopic",
-     "label": "Supervised Learning",
-     "body": "Supervised machine learning forms an integral part of the toolset for a Data Analyst. With a direct focus on building predictive models from labeled datasets, it involves training an algorithm based on these known inputs and outputs, helping Data Analysts establish correlations and make reliable predictions. Fortifying a Data Analyst's role, supervised machine learning enables the accurate interpretation of complex data, enhancing decision-making processes.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is Supervised Learning?",
-       "url": "https://cloud.google.com/discover/what-is-supervised-learning"
-      },
-      {
-       "kind": "video",
-       "title": "Supervised Machine Learning Explained For Beginners",
-       "url": "https://www.youtube.com/watch?v=Mu3POlNoLdc&pp=0gcJCf8Ao7VqN5tD"
-      }
-     ],
-     "file": "supervised-learning@eZN_ty8VDX9mi5KtCWTFL.md"
-    },
-    {
      "id": "OmhvVSTtzH5sxOIZRVYfQ",
      "type": "subtopic",
      "label": "Business Acumen",
@@ -2377,60 +2468,12 @@
      "file": "business-acumen@OmhvVSTtzH5sxOIZRVYfQ.md"
     },
     {
-     "id": "6l_tHC1R5zgABHMc_G6RD",
-     "type": "subtopic",
-     "label": "Unsupervised Learning",
-     "body": "Unsupervised learning, as a fundamental aspect of Machine Learning, holds great implications in the realm of data analytics. It is an approach where a model learns to identify patterns and relationships within a dataset that isn't labelled or classified. It is especially useful for a Data Analyst as it can assist in recognizing unforeseen trends, providing new insights or preparing data for other machine learning tasks. This ability to infer without direct supervision allows a vast potential for latent structure discovery and new knowledge derivation from raw data.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is Unsupervised Learning?",
-       "url": "https://cloud.google.com/discover/what-is-unsupervised-learning"
-      },
-      {
-       "kind": "video",
-       "title": "Unsupervised Machine Learning Explained For Beginners",
-       "url": "https://www.youtube.com/watch?v=yteYU_QpUxs&pp=ygUbI3doYXRpc3Vuc3VwZXJ2aXNlZGxlYXJuaW5n"
-      }
-     ],
-     "file": "unsupervised-learning@6l_tHC1R5zgABHMc_G6RD.md"
-    },
-    {
      "id": "NFKiPXrkjRre1yUZc27gl",
      "type": "subtopic",
      "label": "Critical Thinking",
      "body": "Critical thinking involves analyzing information objectively and forming a reasoned judgment. It's about evaluating evidence, identifying assumptions, and considering different perspectives to arrive at well-supported conclusions. This process helps in problem-solving and decision-making by ensuring that conclusions are logical and based on facts rather than emotions or biases.",
      "resources": [],
      "file": "critical-thinking@NFKiPXrkjRre1yUZc27gl.md"
-    },
-    {
-     "id": "KFONHuJNnCuSOH7-8Ndvm",
-     "type": "subtopic",
-     "label": "Reinforcement Learning",
-     "body": "Reinforcement learning is a type of machine learning where an agent learns to make decisions in an environment to maximize a cumulative reward. It involves the agent taking actions, receiving feedback in the form of rewards or penalties, and adjusting its strategy to improve its performance over time. Unlike supervised learning, it doesn't rely on labeled data but rather learns through trial and error.",
-     "resources": [
-      {
-       "kind": "course",
-       "title": "Deep Reinforcement Learning Course by HuggingFace",
-       "url": "https://huggingface.co/learn/deep-rl-course/unit0/introduction"
-      },
-      {
-       "kind": "article",
-       "title": "What is reinforcement learning?",
-       "url": "https://online.york.ac.uk/resources/what-is-reinforcement-learning/"
-      },
-      {
-       "kind": "article",
-       "title": "Resources to Learn Reinforcement Learning",
-       "url": "https://towardsdatascience.com/best-free-courses-and-resources-to-learn-reinforcement-learning-ed6633608cb2/"
-      },
-      {
-       "kind": "video",
-       "title": "Reinforcement Learning in 3 Hours | Full Course using Python",
-       "url": "https://www.youtube.com/watch?v=Mut_u40Sqz4"
-      }
-     ],
-     "file": "reinforcement-learning@KFONHuJNnCuSOH7-8Ndvm.md"
     },
     {
      "id": "mi88uLdJBXaxJ2yVOSqqo",
@@ -2468,55 +2511,12 @@
      "file": "change-management@vDQF2oaybSewNu3EMs6zG.md"
     },
     {
-     "id": "_uLtsnyNNNRcz5A29Zpjl",
-     "type": "subtopic",
-     "label": "Algorithmic Bias",
-     "body": "Algorithmic bias occurs when a computer system reflects the implicit values of the humans who created the algorithm or the data used to train it. This can lead to unfair or discriminatory outcomes for certain groups of people, even if the algorithm is not explicitly designed to be biased. It arises from flawed assumptions, incomplete data, or biased data used in the development process, ultimately perpetuating and amplifying existing societal biases.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What Is Algorithmic Bias?",
-       "url": "https://www.ibm.com/think/topics/algorithmic-bias"
-      },
-      {
-       "kind": "video",
-       "title": "AI: Training Data & Bias",
-       "url": "https://www.youtube.com/watch?v=x2mRoFNm22g"
-      }
-     ],
-     "file": "algorithmic-bias@_uLtsnyNNNRcz5A29Zpjl.md"
-    },
-    {
      "id": "r-m88g8xrUnuEpV2lHJfN",
      "type": "subtopic",
      "label": "Stakeholder Management",
      "body": "Stakeholder management involves identifying individuals or groups who have an interest in a project or business outcome and then developing strategies to effectively communicate with and manage their expectations. This includes understanding their needs, addressing their concerns, and ensuring their involvement throughout the project lifecycle to achieve successful results and maintain positive relationships.",
      "resources": [],
      "file": "stakeholder-management@r-m88g8xrUnuEpV2lHJfN.md"
-    },
-    {
-     "id": "5MUwKGfSTKlam8KCG0A1U",
-     "type": "subtopic",
-     "label": "Mitigation Strategies",
-     "body": "Mitigation strategies for bias are the proactive steps taken to reduce or eliminate unfair prejudices within data, algorithms, and decision-making processes. These strategies involve identifying potential sources of bias, implementing techniques to correct or compensate for them, and continuously monitoring outcomes to ensure fairness and equity. The goal is to create more accurate, reliable, and just results by addressing and minimizing the impact of bias.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Addressing AI bias: a human-centric approach to fairness",
-       "url": "https://www.ey.com/en_us/insights/emerging-technologies/addressing-ai-bias-a-human-centric-approach-to-fairness"
-      },
-      {
-       "kind": "article",
-       "title": "When AI Gets It Wrong: Addressing AI Hallucinations and Bias",
-       "url": "https://mitsloanedtech.mit.edu/ai/basics/addressing-ai-hallucinations-and-bias/"
-      },
-      {
-       "kind": "video",
-       "title": "Algorithmic Bias in AI: What It Is and How to Fix It",
-       "url": "https://www.youtube.com/watch?v=og67qeTZPYs"
-      }
-     ],
-     "file": "mitigation-strategies@5MUwKGfSTKlam8KCG0A1U.md"
     }
    ]
   },

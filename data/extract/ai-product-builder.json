@@ -127,15 +127,7 @@
    ]
   },
   {
-   "heading": "Know your options",
-   "nodes": []
-  },
-  {
    "heading": "Product Development Cycle",
-   "nodes": []
-  },
-  {
-   "heading": "AI App Builders",
    "nodes": [
     {
      "id": "mQzAgHoM3DS_zn2zr2FXg",
@@ -156,6 +148,49 @@
      ],
      "file": "choose-a-prototype-tool@mQzAgHoM3DS_zn2zr2FXg.md"
     },
+    {
+     "id": "ZQ-kWlp5v9fimgHmG5hlR",
+     "type": "subtopic",
+     "label": "Feedback & Validation",
+     "body": "Before generating the full product, share the prototype with your team and some potential users. You are looking for obvious gaps or misunderstandings in the design. Catching these at the prototype stage is much cheaper than fixing them after generation.",
+     "resources": [],
+     "file": "feedback--validation@ZQ-kWlp5v9fimgHmG5hlR.md"
+    },
+    {
+     "id": "ZGqeasMGuEiZvrdyjSNuM",
+     "type": "topic",
+     "label": "1. Prototyping",
+     "body": "A prototype is a visual representation of your app before any code is generated. It helps you align with stakeholders, catch missing features early, and give the generation tool a concrete reference to work from. It does not need to be detailed; it just needs to be clear enough to communicate intent.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Software prototyping: What it is, its process, and the best tools to use",
+       "url": "https://www.hostinger.com/tutorials/software-prototyping#h-can-i-create-prototypes-with-ai"
+      }
+     ],
+     "file": "1-prototyping@ZGqeasMGuEiZvrdyjSNuM.md"
+    },
+    {
+     "id": "DCcj2_9a7aYi6qCnI4TMV",
+     "type": "topic",
+     "label": "2. Generation",
+     "body": "This is the step where your prototype and requirements are turned into a working codebase by an AI tool. The output should include a front end, a back end, a database schema, and an API layer. The quality of the output depends directly on the clarity of your inputs.",
+     "resources": [],
+     "file": "2-generation@DCcj2_9a7aYi6qCnI4TMV.md"
+    },
+    {
+     "id": "S9fE9eG1YWSfVRi8h13U1",
+     "type": "topic",
+     "label": "3. Refinement",
+     "body": "Once you have a generated codebase, you will need to adjust it. Some changes are small and targeted; others require regenerating a larger part of the application. Knowing which type of change you are dealing with before you start saves time and reduces the risk of breaking something that already works.",
+     "resources": [],
+     "file": "3-refinement@S9fE9eG1YWSfVRi8h13U1.md"
+    }
+   ]
+  },
+  {
+   "heading": "AI App Builders",
+   "nodes": [
     {
      "id": "T-NUiQvT8dKmg6UDGVSt_",
      "type": "subtopic",
@@ -205,28 +240,6 @@
      "file": "replit@Gf1egAjfyQyAJ4I-aT_Ip.md"
     },
     {
-     "id": "ZQ-kWlp5v9fimgHmG5hlR",
-     "type": "subtopic",
-     "label": "Feedback & Validation",
-     "body": "Before generating the full product, share the prototype with your team and some potential users. You are looking for obvious gaps or misunderstandings in the design. Catching these at the prototype stage is much cheaper than fixing them after generation.",
-     "resources": [],
-     "file": "feedback--validation@ZQ-kWlp5v9fimgHmG5hlR.md"
-    },
-    {
-     "id": "ZGqeasMGuEiZvrdyjSNuM",
-     "type": "topic",
-     "label": "1. Prototyping",
-     "body": "A prototype is a visual representation of your app before any code is generated. It helps you align with stakeholders, catch missing features early, and give the generation tool a concrete reference to work from. It does not need to be detailed; it just needs to be clear enough to communicate intent.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Software prototyping: What it is, its process, and the best tools to use",
-       "url": "https://www.hostinger.com/tutorials/software-prototyping#h-can-i-create-prototypes-with-ai"
-      }
-     ],
-     "file": "1-prototyping@ZGqeasMGuEiZvrdyjSNuM.md"
-    },
-    {
      "id": "Z6x8QhsYOO9LB6fHGMTLL",
      "type": "subtopic",
      "label": "Claude Design",
@@ -257,14 +270,6 @@
       }
      ],
      "file": "v0@xKBoLYQgpLDmOtDweVHei.md"
-    },
-    {
-     "id": "DCcj2_9a7aYi6qCnI4TMV",
-     "type": "topic",
-     "label": "2. Generation",
-     "body": "This is the step where your prototype and requirements are turned into a working codebase by an AI tool. The output should include a front end, a back end, a database schema, and an API layer. The quality of the output depends directly on the clarity of your inputs.",
-     "resources": [],
-     "file": "2-generation@DCcj2_9a7aYi6qCnI4TMV.md"
     },
     {
      "id": "8ePFxmPv_Vm7SKoleM1tT",
@@ -308,24 +313,88 @@
       }
      ],
      "file": "bolt@YZi89ogkfzKIivbdFmcP_.md"
+    },
+    {
+     "id": "G86QePmTB5LX4_dMkVgoK",
+     "type": "subtopic",
+     "label": "Claude Code",
+     "body": "Claude Code is a terminal-based AI tool built by Anthropic. It is designed to reason through complex code problems, explain unfamiliar codebases, and help with debugging. It works best when you need to understand what the generated code is doing before modifying it.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit the Dedicated Claude Code Roadmap",
+       "url": "https://roadmap.sh/claude-code"
+      },
+      {
+       "kind": "official",
+       "title": "Claude Code Overview",
+       "url": "https://code.claude.com/docs/en/overview"
+      },
+      {
+       "kind": "article",
+       "title": "Claude Code: From Zero to Hero",
+       "url": "https://medium.com/@dan.avila7/claude-code-from-zero-to-hero-bebe2436ac32"
+      },
+      {
+       "kind": "video",
+       "title": "Claude Code Tutorial for Beginners",
+       "url": "https://www.youtube.com/watch?v=eMZmDH3T2bY"
+      }
+     ],
+     "file": "claude-code@G86QePmTB5LX4_dMkVgoK.md"
+    },
+    {
+     "id": "vGtnZaa5vH02cTgkVG6A-",
+     "type": "subtopic",
+     "label": "Gemini CLI",
+     "body": "Gemini CLI is Google's command-line AI tool for developers. It integrates with your existing terminal workflow and can assist with code generation, explanation, and refactoring. It is a practical option if you are already working within the Google Cloud infrastructure.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "Hands-on with Gemini CLI",
+       "url": "https://codelabs.developers.google.com/gemini-cli-hands-on#0"
+      },
+      {
+       "kind": "official",
+       "title": "Gemini CLI Docs",
+       "url": "https://geminicli.com/docs/"
+      },
+      {
+       "kind": "video",
+       "title": "Gemini CLI: The AI agent that lives in your terminal",
+       "url": "https://www.youtube.com/watch?v=C5Cjvpfzc_0"
+      }
+     ],
+     "file": "gemini-cli@vGtnZaa5vH02cTgkVG6A-.md"
+    },
+    {
+     "id": "S7uHXLcxvtegkI1kirVS9",
+     "type": "subtopic",
+     "label": "Codex",
+     "body": "Codex is OpenAI's code-focused model, available through the API and integrated into tools like GitHub Copilot. It is strong at generating boilerplate and translating natural language descriptions into working code. It works best for well-defined, contained tasks rather than open-ended architectural decisions.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "Introduction to OpenAI Codex",
+       "url": "https://www.coursera.org/learn/introduction-to-openai-codex"
+      },
+      {
+       "kind": "official",
+       "title": "Codex Docs",
+       "url": "https://developers.openai.com/codex"
+      },
+      {
+       "kind": "video",
+       "title": "Getting started with Codex",
+       "url": "https://www.youtube.com/watch?v=px7XlbYgk7I"
+      }
+     ],
+     "file": "codex@S7uHXLcxvtegkI1kirVS9.md"
     }
    ]
   },
   {
    "heading": "Use AI-assisted Coding Tools",
-   "nodes": [
-    {
-     "id": "S9fE9eG1YWSfVRi8h13U1",
-     "type": "topic",
-     "label": "3. Refinement",
-     "body": "Once you have a generated codebase, you will need to adjust it. Some changes are small and targeted; others require regenerating a larger part of the application. Knowing which type of change you are dealing with before you start saves time and reduces the risk of breaking something that already works.",
-     "resources": [],
-     "file": "3-refinement@S9fE9eG1YWSfVRi8h13U1.md"
-    }
-   ]
-  },
-  {
-   "heading": "Technical but Powerful",
    "nodes": [
     {
      "id": "Fa06GTSwYb9x0QuGsp8et",
@@ -381,35 +450,6 @@
      "file": "codex@xCoG801UzwsRaK0xmI9_B.md"
     },
     {
-     "id": "G86QePmTB5LX4_dMkVgoK",
-     "type": "subtopic",
-     "label": "Claude Code",
-     "body": "Claude Code is a terminal-based AI tool built by Anthropic. It is designed to reason through complex code problems, explain unfamiliar codebases, and help with debugging. It works best when you need to understand what the generated code is doing before modifying it.",
-     "resources": [
-      {
-       "kind": "roadmap",
-       "title": "Visit the Dedicated Claude Code Roadmap",
-       "url": "https://roadmap.sh/claude-code"
-      },
-      {
-       "kind": "official",
-       "title": "Claude Code Overview",
-       "url": "https://code.claude.com/docs/en/overview"
-      },
-      {
-       "kind": "article",
-       "title": "Claude Code: From Zero to Hero",
-       "url": "https://medium.com/@dan.avila7/claude-code-from-zero-to-hero-bebe2436ac32"
-      },
-      {
-       "kind": "video",
-       "title": "Claude Code Tutorial for Beginners",
-       "url": "https://www.youtube.com/watch?v=eMZmDH3T2bY"
-      }
-     ],
-     "file": "claude-code@G86QePmTB5LX4_dMkVgoK.md"
-    },
-    {
      "id": "BEw1Iowb0KMiChtDGvKep",
      "type": "subtopic",
      "label": "Cursor",
@@ -461,59 +501,11 @@
       }
      ],
      "file": "copilot@6HLxaflojoF0-cuIuPDeG.md"
-    },
-    {
-     "id": "vGtnZaa5vH02cTgkVG6A-",
-     "type": "subtopic",
-     "label": "Gemini CLI",
-     "body": "Gemini CLI is Google's command-line AI tool for developers. It integrates with your existing terminal workflow and can assist with code generation, explanation, and refactoring. It is a practical option if you are already working within the Google Cloud infrastructure.",
-     "resources": [
-      {
-       "kind": "course",
-       "title": "Hands-on with Gemini CLI",
-       "url": "https://codelabs.developers.google.com/gemini-cli-hands-on#0"
-      },
-      {
-       "kind": "official",
-       "title": "Gemini CLI Docs",
-       "url": "https://geminicli.com/docs/"
-      },
-      {
-       "kind": "video",
-       "title": "Gemini CLI: The AI agent that lives in your terminal",
-       "url": "https://www.youtube.com/watch?v=C5Cjvpfzc_0"
-      }
-     ],
-     "file": "gemini-cli@vGtnZaa5vH02cTgkVG6A-.md"
-    },
-    {
-     "id": "S7uHXLcxvtegkI1kirVS9",
-     "type": "subtopic",
-     "label": "Codex",
-     "body": "Codex is OpenAI's code-focused model, available through the API and integrated into tools like GitHub Copilot. It is strong at generating boilerplate and translating natural language descriptions into working code. It works best for well-defined, contained tasks rather than open-ended architectural decisions.",
-     "resources": [
-      {
-       "kind": "course",
-       "title": "Introduction to OpenAI Codex",
-       "url": "https://www.coursera.org/learn/introduction-to-openai-codex"
-      },
-      {
-       "kind": "official",
-       "title": "Codex Docs",
-       "url": "https://developers.openai.com/codex"
-      },
-      {
-       "kind": "video",
-       "title": "Getting started with Codex",
-       "url": "https://www.youtube.com/watch?v=px7XlbYgk7I"
-      }
-     ],
-     "file": "codex@S7uHXLcxvtegkI1kirVS9.md"
     }
    ]
   },
   {
-   "heading": "Learn by the need",
+   "heading": "Technical but Powerful",
    "nodes": [
     {
      "id": "ydzaN2EHBVAavHS3iPQ40",
@@ -530,7 +522,12 @@
      "body": "When a change affects the architecture of the app, such as adding a new service, reworking the data model, or introducing a new user flow, go back through the generation tool rather than patching the code manually. This keeps the codebase consistent and reduces technical debt.",
      "resources": [],
      "file": "new-feature--structural-change@HZHzCLbK-oQh7gSokxHWq.md"
-    },
+    }
+   ]
+  },
+  {
+   "heading": "Learn by the need",
+   "nodes": [
     {
      "id": "Cem2u4lHoA8KW-0GqVzcw",
      "type": "subtopic",
@@ -583,25 +580,6 @@
       }
      ],
      "file": "react@aHQ8f3ulEeUxTYCifzcPq.md"
-    }
-   ]
-  },
-  {
-   "heading": "Testing & Feedback",
-   "nodes": [
-    {
-     "id": "aRA5S0Mmmhx9F0nhD3Wcp",
-     "type": "subtopic",
-     "label": "User Testing",
-     "body": "User testing means putting the app in front of real people and watching how they use it. You are not looking for opinions; you are looking for moments where they hesitate, get confused, or do something unexpected. Each session gives you concrete input for the next refinement cycle.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is User Testing? Definition, Types & Methods",
-       "url": "https://trymata.com/blog/what-is-user-testing/"
-      }
-     ],
-     "file": "user-testing@aRA5S0Mmmhx9F0nhD3Wcp.md"
     },
     {
      "id": "iRey4hwJCIraoNsIZELZv",
@@ -633,25 +611,6 @@
      "file": "browsers--devtools@iRey4hwJCIraoNsIZELZv.md"
     },
     {
-     "id": "VxqhYHA9YpWx70GIhKghY",
-     "type": "subtopic",
-     "label": "Unit Testing",
-     "body": "A unit test checks that a single function or component behaves as expected in isolation. AI-generated codebases sometimes include unit tests automatically; if they do not, write them for the parts of the code that handle critical business logic. They are the fastest type of test to run and the easiest to debug when they fail.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is Unit Testing?",
-       "url": "https://www.guru99.com/unit-testing-guide.html"
-      },
-      {
-       "kind": "video",
-       "title": "What is Unit Testing?",
-       "url": "https://youtu.be/x95ez7_V7rA?si=JhCVhcEN7zZOkxdp"
-      }
-     ],
-     "file": "unit-testing@VxqhYHA9YpWx70GIhKghY.md"
-    },
-    {
      "id": "d_2Uq2_Befe1tqM8_Y8lq",
      "type": "subtopic",
      "label": "Node.js",
@@ -674,14 +633,44 @@
       }
      ],
      "file": "nodejs@d_2Uq2_Befe1tqM8_Y8lq.md"
+    }
+   ]
+  },
+  {
+   "heading": "Change Management & CI",
+   "nodes": [
+    {
+     "id": "aRA5S0Mmmhx9F0nhD3Wcp",
+     "type": "subtopic",
+     "label": "User Testing",
+     "body": "User testing means putting the app in front of real people and watching how they use it. You are not looking for opinions; you are looking for moments where they hesitate, get confused, or do something unexpected. Each session gives you concrete input for the next refinement cycle.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is User Testing? Definition, Types & Methods",
+       "url": "https://trymata.com/blog/what-is-user-testing/"
+      }
+     ],
+     "file": "user-testing@aRA5S0Mmmhx9F0nhD3Wcp.md"
     },
     {
-     "id": "rcR8DMzELUnmJ7I_pwWpI",
-     "type": "topic",
-     "label": "4. Collaboration",
-     "body": "At this stage, you bring other people into the process: teammates, testers, or early users. Their feedback drives the next round of refinement. This node also covers the tools and practices that keep the codebase stable when multiple people are working on it at the same time.",
-     "resources": [],
-     "file": "4-collaboration@rcR8DMzELUnmJ7I_pwWpI.md"
+     "id": "VxqhYHA9YpWx70GIhKghY",
+     "type": "subtopic",
+     "label": "Unit Testing",
+     "body": "A unit test checks that a single function or component behaves as expected in isolation. AI-generated codebases sometimes include unit tests automatically; if they do not, write them for the parts of the code that handle critical business logic. They are the fastest type of test to run and the easiest to debug when they fail.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is Unit Testing?",
+       "url": "https://www.guru99.com/unit-testing-guide.html"
+      },
+      {
+       "kind": "video",
+       "title": "What is Unit Testing?",
+       "url": "https://youtu.be/x95ez7_V7rA?si=JhCVhcEN7zZOkxdp"
+      }
+     ],
+     "file": "unit-testing@VxqhYHA9YpWx70GIhKghY.md"
     },
     {
      "id": "MXPA6I8K1_aKKQpgk2EcW",
@@ -706,12 +695,7 @@
       }
      ],
      "file": "integration-testing@MXPA6I8K1_aKKQpgk2EcW.md"
-    }
-   ]
-  },
-  {
-   "heading": "Serverless Providers",
-   "nodes": [
+    },
     {
      "id": "MB_6yVmgPZugbjxGzoq09",
      "type": "subtopic",
@@ -730,72 +714,6 @@
       }
      ],
      "file": "e2e-testing@MB_6yVmgPZugbjxGzoq09.md"
-    },
-    {
-     "id": "Q6PzFpT_4kElowvvB2u_v",
-     "type": "subtopic",
-     "label": "Cloudflare",
-     "body": "Cloudflare offers serverless deployment for front-end apps and lightweight back-end functions through Cloudflare Workers and Pages. It has a generous free tier and deploys to a global edge network, which means fast load times for users anywhere in the world.",
-     "resources": [
-      {
-       "kind": "roadmap",
-       "title": "Visit the Dedicated Cloudflare Roadmap",
-       "url": "https://roadmap.sh/cloudflare"
-      },
-      {
-       "kind": "official",
-       "title": "Getting started with Cloudflare",
-       "url": "https://developers.cloudflare.com/pages/get-started/"
-      },
-      {
-       "kind": "video",
-       "title": "What is Cloudflare?",
-       "url": "https://www.youtube.com/watch?v=XHvmX3FhTwU"
-      },
-      {
-       "kind": "video",
-       "title": "IntroLearn Cloudflare Workers 101 - Full Course for Beginnersduction to Cloudflare",
-       "url": "https://www.youtube.com/watch?v=24cml1rKGBs"
-      }
-     ],
-     "file": "cloudflare@Q6PzFpT_4kElowvvB2u_v.md"
-    }
-   ]
-  },
-  {
-   "heading": "Change Management & CI",
-   "nodes": [
-    {
-     "id": "wUg8ypt4aWXgMYGiaIdgy",
-     "type": "subtopic",
-     "label": "Vercel",
-     "body": "Vercel is a platform designed for deploying and hosting web applications, particularly those built with modern frontend frameworks and static site generators. It provides features like automatic deployments from Git repositories, serverless functions, and a global content delivery network (CDN) to ensure fast and reliable performance. Vercel simplifies the process of taking a frontend project from development to production.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Vercel Documentation",
-       "url": "https://vercel.com/docs"
-      },
-      {
-       "kind": "official",
-       "title": "Vercel Quick Start",
-       "url": "https://vercel.com/docs/getting-started-with-vercel"
-      },
-      {
-       "kind": "video",
-       "title": "Vercel Tutorial - Host a Website for Free",
-       "url": "https://www.youtube.com/watch?v=Vx5nPGdsFaU"
-      }
-     ],
-     "file": "vercel@wUg8ypt4aWXgMYGiaIdgy.md"
-    },
-    {
-     "id": "NCO0PyktX4UzVCsyqZpAO",
-     "type": "subtopic",
-     "label": "Bit Cloud",
-     "body": "",
-     "resources": [],
-     "file": null
     },
     {
      "id": "OFscURhjqJfh8qA3SKSfh",
@@ -844,12 +762,7 @@
       }
      ],
      "file": "gitlab@f_d4JlYSbP9BHuCR0kBpP.md"
-    }
-   ]
-  },
-  {
-   "heading": "Platform as a Service (PaaS)",
-   "nodes": [
+    },
     {
      "id": "AlE1rcdp-5RVihRMpshnh",
      "type": "subtopic",
@@ -870,18 +783,102 @@
      "file": "bit-cloud@AlE1rcdp-5RVihRMpshnh.md"
     },
     {
-     "id": "t03SkyX28SacfP_DpmHUf",
-     "type": "topic",
-     "label": "5. Deployment",
-     "body": "Deployment is the process of making your app available to real users. The right deployment option depends on your technical experience, expected traffic, and budget. Start with the simplest option that meets your needs and scale up as the product grows.",
+     "id": "DAEMRai6FpPrmRkmKTOhV",
+     "type": "subtopic",
+     "label": "Azure DevOps",
+     "body": "Azure DevOps is Microsoft's platform for managing code, pipelines, and project tasks. It integrates tightly with Azure infrastructure and is a common choice in enterprise environments. It covers version control, CI/CD, and issue tracking in a single platform.",
      "resources": [
       {
-       "kind": "article",
-       "title": "What is software deployment?",
-       "url": "https://www.atlassian.com/agile/software-development/software-deployment"
+       "kind": "official",
+       "title": "Azure DevOps",
+       "url": "https://azure.microsoft.com/en-us/products/devops"
+      },
+      {
+       "kind": "video",
+       "title": "Azure DevOps Tutorial for Beginners | CI/CD with Azure Pipelines",
+       "url": "https://www.youtube.com/watch?v=4BibQ69MD8c"
       }
      ],
-     "file": "5-deployment@t03SkyX28SacfP_DpmHUf.md"
+     "file": "azure-devops@DAEMRai6FpPrmRkmKTOhV.md"
+    }
+   ]
+  },
+  {
+   "heading": "Testing & Feedback",
+   "nodes": [
+    {
+     "id": "rcR8DMzELUnmJ7I_pwWpI",
+     "type": "topic",
+     "label": "4. Collaboration",
+     "body": "At this stage, you bring other people into the process: teammates, testers, or early users. Their feedback drives the next round of refinement. This node also covers the tools and practices that keep the codebase stable when multiple people are working on it at the same time.",
+     "resources": [],
+     "file": "4-collaboration@rcR8DMzELUnmJ7I_pwWpI.md"
+    }
+   ]
+  },
+  {
+   "heading": "Cloud Providers",
+   "nodes": [
+    {
+     "id": "Q6PzFpT_4kElowvvB2u_v",
+     "type": "subtopic",
+     "label": "Cloudflare",
+     "body": "Cloudflare offers serverless deployment for front-end apps and lightweight back-end functions through Cloudflare Workers and Pages. It has a generous free tier and deploys to a global edge network, which means fast load times for users anywhere in the world.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit the Dedicated Cloudflare Roadmap",
+       "url": "https://roadmap.sh/cloudflare"
+      },
+      {
+       "kind": "official",
+       "title": "Getting started with Cloudflare",
+       "url": "https://developers.cloudflare.com/pages/get-started/"
+      },
+      {
+       "kind": "video",
+       "title": "What is Cloudflare?",
+       "url": "https://www.youtube.com/watch?v=XHvmX3FhTwU"
+      },
+      {
+       "kind": "video",
+       "title": "IntroLearn Cloudflare Workers 101 - Full Course for Beginnersduction to Cloudflare",
+       "url": "https://www.youtube.com/watch?v=24cml1rKGBs"
+      }
+     ],
+     "file": "cloudflare@Q6PzFpT_4kElowvvB2u_v.md"
+    },
+    {
+     "id": "wUg8ypt4aWXgMYGiaIdgy",
+     "type": "subtopic",
+     "label": "Vercel",
+     "body": "Vercel is a platform designed for deploying and hosting web applications, particularly those built with modern frontend frameworks and static site generators. It provides features like automatic deployments from Git repositories, serverless functions, and a global content delivery network (CDN) to ensure fast and reliable performance. Vercel simplifies the process of taking a frontend project from development to production.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Vercel Documentation",
+       "url": "https://vercel.com/docs"
+      },
+      {
+       "kind": "official",
+       "title": "Vercel Quick Start",
+       "url": "https://vercel.com/docs/getting-started-with-vercel"
+      },
+      {
+       "kind": "video",
+       "title": "Vercel Tutorial - Host a Website for Free",
+       "url": "https://www.youtube.com/watch?v=Vx5nPGdsFaU"
+      }
+     ],
+     "file": "vercel@wUg8ypt4aWXgMYGiaIdgy.md"
+    },
+    {
+     "id": "NCO0PyktX4UzVCsyqZpAO",
+     "type": "subtopic",
+     "label": "Bit Cloud",
+     "body": "",
+     "resources": [],
+     "file": null
     },
     {
      "id": "ZxLukZLdGXGvV4MRHmoGh",
@@ -907,30 +904,6 @@
      ],
      "file": "digitalocean@ZxLukZLdGXGvV4MRHmoGh.md"
     },
-    {
-     "id": "DAEMRai6FpPrmRkmKTOhV",
-     "type": "subtopic",
-     "label": "Azure DevOps",
-     "body": "Azure DevOps is Microsoft's platform for managing code, pipelines, and project tasks. It integrates tightly with Azure infrastructure and is a common choice in enterprise environments. It covers version control, CI/CD, and issue tracking in a single platform.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Azure DevOps",
-       "url": "https://azure.microsoft.com/en-us/products/devops"
-      },
-      {
-       "kind": "video",
-       "title": "Azure DevOps Tutorial for Beginners | CI/CD with Azure Pipelines",
-       "url": "https://www.youtube.com/watch?v=4BibQ69MD8c"
-      }
-     ],
-     "file": "azure-devops@DAEMRai6FpPrmRkmKTOhV.md"
-    }
-   ]
-  },
-  {
-   "heading": "Pick one Option for Deployment",
-   "nodes": [
     {
      "id": "Sv7QfwPKaTsviScn2axhk",
      "type": "subtopic",
@@ -978,12 +951,7 @@
       }
      ],
      "file": "render@OBGQ-1bjYBdYi-_oFpmj8.md"
-    }
-   ]
-  },
-  {
-   "heading": "Cloud Providers",
-   "nodes": [
+    },
     {
      "id": "-MWVEd4dEfGcwBTxKh9WM",
      "type": "subtopic",
@@ -1055,12 +1023,7 @@
       }
      ],
      "file": "gcp@6hl4_ft8onzq80v_nD8Q4.md"
-    }
-   ]
-  },
-  {
-   "heading": "Connect to a Database",
-   "nodes": [
+    },
     {
      "id": "gwHXA4WBrZN0VeAx5NKz7",
      "type": "subtopic",
@@ -1142,6 +1105,25 @@
       }
      ],
      "file": "supabase@p4Ku5RT5uOVYPuduqz80M.md"
+    }
+   ]
+  },
+  {
+   "heading": "Platform as a Service (PaaS)",
+   "nodes": [
+    {
+     "id": "t03SkyX28SacfP_DpmHUf",
+     "type": "topic",
+     "label": "5. Deployment",
+     "body": "Deployment is the process of making your app available to real users. The right deployment option depends on your technical experience, expected traffic, and budget. Start with the simplest option that meets your needs and scale up as the product grows.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is software deployment?",
+       "url": "https://www.atlassian.com/agile/software-development/software-deployment"
+      }
+     ],
+     "file": "5-deployment@t03SkyX28SacfP_DpmHUf.md"
     }
    ]
   }

@@ -20,10 +20,6 @@
  ],
  "sections": [
   {
-   "heading": "Pre-requisites",
-   "nodes": []
-  },
-  {
    "heading": "Data Engineer",
    "nodes": [
     {
@@ -772,12 +768,7 @@
       }
      ],
      "file": "database-fundamentals@g4UC0go7OPCJYJlac9w-i.md"
-    }
-   ]
-  },
-  {
-   "heading": "Relational Databases",
-   "nodes": [
+    },
     {
      "id": "5KgPfywItqLFQRnIZldZH",
      "type": "subtopic",
@@ -791,64 +782,6 @@
       }
      ],
      "file": "slowly-changing-dimension---scd@5KgPfywItqLFQRnIZldZH.md"
-    },
-    {
-     "id": "_bFj6rbLuqeQB5MjJZpd6",
-     "type": "subtopic",
-     "label": "MySQL",
-     "body": "MySQL is an open-source relational database management system (RDBMS) known for its speed, reliability, and ease of use. It uses SQL (Structured Query Language) for database interactions and supports a range of features for data management, including transactions, indexing, and stored procedures. MySQL is widely used for web applications, data warehousing, and various other applications due to its scalability and flexibility. It integrates well with many programming languages and platforms, and is often employed in conjunction with web servers and frameworks in popular software stacks like LAMP (Linux, Apache, MySQL, PHP/Python/Perl). MySQL is maintained by Oracle Corporation and has a large community and ecosystem supporting its development and use.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "MySQL",
-       "url": "https://www.mysql.com/"
-      },
-      {
-       "kind": "article",
-       "title": "MySQL for Developers",
-       "url": "https://planetscale.com/courses/mysql-for-developers/introduction/course-introduction"
-      },
-      {
-       "kind": "article",
-       "title": "MySQL Tutorial",
-       "url": "https://www.mysqltutorial.org/"
-      },
-      {
-       "kind": "video",
-       "title": "MySQL Complete Course",
-       "url": "https://www.youtube.com/watch?v=5OdVJbNCSso"
-      }
-     ],
-     "file": "mysql@_bFj6rbLuqeQB5MjJZpd6.md"
-    },
-    {
-     "id": "__JFgwxeDLvz8p7DAJnsc",
-     "type": "subtopic",
-     "label": "PostgreSQL",
-     "body": "PostgreSQL is an open-source relational database known for its standards compliance, extensibility, and advanced feature set. It supports complex queries, JSON storage, full-text search, and custom data types. PostgreSQL is widely used in both transactional and analytical workloads.",
-     "resources": [
-      {
-       "kind": "roadmap",
-       "title": "Visit Dedicated PostgreSQL DBA Roadmap",
-       "url": "https://roadmap.sh/postgresql-dba"
-      },
-      {
-       "kind": "official",
-       "title": "PostgreSQL Website",
-       "url": "https://www.postgresql.org/"
-      },
-      {
-       "kind": "article",
-       "title": "Learn PostgreSQL - Full Tutorial for Beginners",
-       "url": "https://www.postgresqltutorial.com/"
-      },
-      {
-       "kind": "video",
-       "title": "Postgres tutorial for Beginners",
-       "url": "https://www.youtube.com/watch?v=SpfIwlAYaKk"
-      }
-     ],
-     "file": "postgresql@__JFgwxeDLvz8p7DAJnsc.md"
     },
     {
      "id": "cslVSSKBMO7I6CpO7vG1H",
@@ -899,117 +832,12 @@
      "file": "horizontal-vs-vertical-scaling@k_XSLLwb0Jk0Dd1sw-MpR.md"
     },
     {
-     "id": "p7S_6O9Qq722r-F4bl6G3",
-     "type": "subtopic",
-     "label": "MariaDB",
-     "body": "MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most feature rich, stable, and sanely licensed open SQL server in the industry. MariaDB was created with the intention of being a more versatile, drop-in replacement version of MySQL",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "MariaDB",
-       "url": "https://mariadb.org/"
-      },
-      {
-       "kind": "article",
-       "title": "MariaDB vs MySQL",
-       "url": "https://www.guru99.com/mariadb-vs-mysql.html"
-      },
-      {
-       "kind": "video",
-       "title": "MariaDB Tutorial For Beginners in One Hour",
-       "url": "https://www.youtube.com/watch?v=_AMj02sANpI"
-      }
-     ],
-     "file": "mariadb@p7S_6O9Qq722r-F4bl6G3.md"
-    },
-    {
-     "id": "YZ4G1-6VJ7VdsphdcBTf9",
-     "type": "subtopic",
-     "label": "Aurora DB",
-     "body": "Amazon Aurora (Aurora) is a fully managed relational database engine that's compatible with MySQL and PostgreSQL. Aurora includes a high-performance storage subsystem. Its MySQL- and PostgreSQL-compatible database engines are customized to take advantage of that fast distributed storage. The underlying storage grows automatically as needed. Aurora also automates and standardizes database clustering and replication, which are typically among the most challenging aspects of database configuration and administration.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "SAmazon Aurora",
-       "url": "https://aws.amazon.com/rds/aurora/"
-      }
-     ],
-     "file": "aurora-db@YZ4G1-6VJ7VdsphdcBTf9.md"
-    },
-    {
      "id": "OfH_UXnxvGQgwlNQwOEfS",
      "type": "subtopic",
      "label": "Star vs Snowflake Schema",
      "body": "Star and snowflake schemas are two approaches to organizing data in a data warehouse. A star schema has a central fact table connected directly to dimension tables, making queries simple and fast. A snowflake schema normalizes dimension tables into multiple related tables, reducing redundancy but requiring more joins. Star schemas are more common in analytical systems due to their query performance.",
      "resources": [],
      "file": "star-vs-snowflake-schema@OfH_UXnxvGQgwlNQwOEfS.md"
-    },
-    {
-     "id": "PJcxM60h85Po0AAkSj7nr",
-     "type": "subtopic",
-     "label": "Oracle",
-     "body": "Oracle Database is a commercial relational database system widely used in enterprise environments. It is known for its robustness, advanced features, and support for very large-scale deployments. Oracle is common in financial services, healthcare, and government sectors where long-term vendor support and mature tooling are priorities.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Oracle Docs",
-       "url": "https://docs.oracle.com/en/database/index.html"
-      },
-      {
-       "kind": "video",
-       "title": "Oracle SQL Tutorial for Beginners",
-       "url": "https://www.youtube.com/watch?v=ObbNGhcxXJA"
-      }
-     ],
-     "file": "oracle@PJcxM60h85Po0AAkSj7nr.md"
-    },
-    {
-     "id": "YxnIQh6Y5ic795-YsajB8",
-     "type": "subtopic",
-     "label": "MS SQL",
-     "body": "Microsoft SQL Server (MS SQL) is a relational database developed by Microsoft, commonly used in enterprise and Windows-based environments. It integrates tightly with the Microsoft ecosystem, including Azure, Power BI, and .NET. MS SQL supports T-SQL, Microsoft's extension of SQL with additional procedural capabilities.",
-     "resources": [
-      {
-       "kind": "roadmap",
-       "title": "Visit Dedicated SQL Roadmap",
-       "url": "https://roadmap.sh/sql"
-      },
-      {
-       "kind": "official",
-       "title": "MS SQL",
-       "url": "https://www.microsoft.com/en-ca/sql-server/"
-      },
-      {
-       "kind": "article",
-       "title": "Tutorials for SQL Server",
-       "url": "https://docs.microsoft.com/en-us/sql/sql-server/tutorials-for-sql-server-2016?view=sql-server-ver15"
-      },
-      {
-       "kind": "video",
-       "title": "SQL Server tutorial for beginners",
-       "url": "https://www.youtube.com/watch?v=-EPMOaV7h_Q"
-      }
-     ],
-     "file": "ms-sql@YxnIQh6Y5ic795-YsajB8.md"
-    },
-    {
-     "id": "sGkAOVl3C-xIIAdtDH9jq",
-     "type": "topic",
-     "label": "Document",
-     "body": "\\*\\*Document Databases are a type of No-SQL databases that store data in JSON, BSON, or XML formats, allowing for flexible, semi-structured and hierarchical data structures. These databases are characterized by their dynamic schema, scalability through distribution, and ability to intuitively map data models to application code. Popular examples include MongoDB, which allows for easy storage and retrieval of varied data types without requiring a rigid, predefined schema.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is a Document Database?",
-       "url": "https://www.mongodb.com/resources/basics/databases/document-databases"
-      },
-      {
-       "kind": "article",
-       "title": "Document-oriented database",
-       "url": "https://en.wikipedia.org/wiki/Document-oriented_database"
-      }
-     ],
-     "file": "document@sGkAOVl3C-xIIAdtDH9jq.md"
     },
     {
      "id": "fBD6ZQoMac8w4kMJw_Jrd",
@@ -1108,289 +936,6 @@
      "file": "key-value@fSlBjoNVKstJjWO7rS69V.md"
     },
     {
-     "id": "04V0Bcgjusfqdw0b-Aw4W",
-     "type": "subtopic",
-     "label": "MongoDB",
-     "body": "MongoDB is a NoSQL, open-source database designed for storing and managing large volumes of unstructured or semi-structured data. It uses a document-oriented data model where data is stored in BSON (Binary JSON) format, which allows for flexible and hierarchical data representation. Unlike traditional relational databases, MongoDB doesn't require a fixed schema, making it suitable for applications with evolving data requirements or varying data structures. It supports horizontal scaling through sharding and offers high availability with replica sets. MongoDB is commonly used for applications requiring rapid development, real-time analytics, and large-scale data handling, such as content management systems, IoT applications, and big data platforms.",
-     "resources": [
-      {
-       "kind": "roadmap",
-       "title": "Visit Dedicated MongoDB Roadmap",
-       "url": "https://roadmap.sh/mongodb"
-      },
-      {
-       "kind": "official",
-       "title": "MongoDB Website",
-       "url": "https://www.mongodb.com/"
-      },
-      {
-       "kind": "official",
-       "title": "Learning Path for MongoDB Developers",
-       "url": "https://learn.mongodb.com/catalog"
-      },
-      {
-       "kind": "article",
-       "title": "MongoDB Online Sandbox",
-       "url": "https://mongoplayground.net/"
-      }
-     ],
-     "file": "mongodb@04V0Bcgjusfqdw0b-Aw4W.md"
-    },
-    {
-     "id": "TG63YRbSKL1F9vlUVF1VY",
-     "type": "subtopic",
-     "label": "Neo4j",
-     "body": "Neo4j is the most widely used graph database. It stores data natively as nodes and relationships and uses Cypher, a declarative query language designed for graph traversal. Neo4j is used for applications where relationship-heavy queries are central, such as recommendation systems and network analysis.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Neo4j Website",
-       "url": "https://neo4j.com"
-      },
-      {
-       "kind": "video",
-       "title": "Neo4j in 100 Seconds",
-       "url": "https://www.youtube.com/watch?v=T6L9EoBy8Zk"
-      },
-      {
-       "kind": "video",
-       "title": "Neo4j Course for Beginners",
-       "url": "https://www.youtube.com/watch?v=_IgbB24scLI"
-      }
-     ],
-     "file": "neo4j@TG63YRbSKL1F9vlUVF1VY.md"
-    },
-    {
-     "id": "QYR8ESN7xhi4ZxcoiZbgn",
-     "type": "subtopic",
-     "label": "Cassandra",
-     "body": "Apache Cassandra is an open-source distributed wide-column database designed for high availability and linear scalability. It has no single point of failure and is optimized for fast writes across multiple data centers. Cassandra is used for time-series data, IoT workloads, and applications requiring continuous uptime.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Apache Cassandra",
-       "url": "https://cassandra.apache.org/_/index.html"
-      },
-      {
-       "kind": "article",
-       "title": "Cassandra - Quick Guide",
-       "url": "https://www.tutorialspoint.com/cassandra/cassandra_quick_guide.htm"
-      },
-      {
-       "kind": "video",
-       "title": "Apache Cassandra - Course for Beginners",
-       "url": "https://www.youtube.com/watch?v=J-cSy5MeMOA"
-      }
-     ],
-     "file": "cassandra@QYR8ESN7xhi4ZxcoiZbgn.md"
-    },
-    {
-     "id": "dW_eC4vR8BrvKG9wxmEBc",
-     "type": "subtopic",
-     "label": "Redis",
-     "body": "Redis is an in-memory key-value store known for its extremely low latency. It supports a variety of data structures including strings, lists, sets, sorted sets, and hashes. Redis is widely used for caching, real-time leaderboards, pub/sub messaging, and session storage.",
-     "resources": [
-      {
-       "kind": "roadmap",
-       "title": "Visit Dedicated Redis Roadmap",
-       "url": "https://roadmap.sh/redis"
-      },
-      {
-       "kind": "course",
-       "title": "Redis Crash Course",
-       "url": "https://www.youtube.com/watch?v=XCsS_NVAa1g"
-      },
-      {
-       "kind": "official",
-       "title": "Redis Documentation",
-       "url": "https://redis.io/docs/latest/"
-      },
-      {
-       "kind": "video",
-       "title": "Redis in 100 Seconds",
-       "url": "https://www.youtube.com/watch?v=G1rOthIU-uo"
-      }
-     ],
-     "file": "redis@dW_eC4vR8BrvKG9wxmEBc.md"
-    },
-    {
-     "id": "_F53cV3ln2yu0ics5BFfx",
-     "type": "subtopic",
-     "label": "ElasticSearch",
-     "body": "Elasticsearch is a distributed search and analytics engine built on Apache Lucene. It is designed for full-text search, log analysis, and real-time data exploration. Elasticsearch is commonly used as the backend for search features in applications and as a centralized store for log and event data, often alongside Kibana.",
-     "resources": [
-      {
-       "kind": "roadmap",
-       "title": "Visit the Dedicated Elasticsearch Roadmap",
-       "url": "https://roadmap.sh/elasticsearch"
-      },
-      {
-       "kind": "official",
-       "title": "Elasticsearch Website",
-       "url": "https://www.elastic.co/elasticsearch/"
-      },
-      {
-       "kind": "official",
-       "title": "Elasticsearch Documentation",
-       "url": "https://www.elastic.co/guide/index.html"
-      },
-      {
-       "kind": "video",
-       "title": "What is Elasticsearch",
-       "url": "https://www.youtube.com/watch?v=ZP0NmfyfsoM"
-      }
-     ],
-     "file": "elasticsearch@_F53cV3ln2yu0ics5BFfx.md"
-    },
-    {
-     "id": "atAK4zGXIbxZvfBTzFEIe",
-     "type": "subtopic",
-     "label": "Neptune",
-     "body": "Amazon Neptune is a managed graph database service on AWS that supports both the Property Graph model (with Gremlin) and RDF (with SPARQL). It is designed for highly connected datasets and scales to billions of relationships. Neptune is used for knowledge graphs, fraud detection, and identity resolution.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "AWS Neptune",
-       "url": "https://aws.amazon.com/neptune/"
-      },
-      {
-       "kind": "article",
-       "title": "Setting Up Amazon Neptune Graph Database",
-       "url": "https://cliffordedsouza.medium.com/setting-up-amazon-neptune-graph-database-2b73512a7388"
-      },
-      {
-       "kind": "video",
-       "title": "Getting Started with Neptune Serverless",
-       "url": "https://www.youtube.com/watch?v=b04-jjM9t4g"
-      }
-     ],
-     "file": "neptune@atAK4zGXIbxZvfBTzFEIe.md"
-    },
-    {
-     "id": "ltZftFsiOo12AkQ-04N3B",
-     "type": "subtopic",
-     "label": "BigTable",
-     "body": "Bigtable is a high-performance, scalable database that excels at capturing, processing, and analyzing data in real-time. It aggregates data as it's written, providing immediate insights into user behavior, A/B testing results, and engagement metrics. This real-time capability also fuels AI/ML models for interactive applications. Bigtable integrates seamlessly with both Dataflow, enriching streaming pipelines with low-latency lookups, and BigQuery, enabling real-time serving of analytics in user-facing applications and ad-hoc querying on the same data.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Bigtable: Fast, Flexible NoSQL",
-       "url": "https://cloud.google.com/bigtable?hl=en#scale-your-latency-sensitive-applications-with-the-nosql-pioneer"
-      },
-      {
-       "kind": "article",
-       "title": "Google Bigtable",
-       "url": "https://www.techtarget.com/searchdatamanagement/definition/Google-BigTable"
-      }
-     ],
-     "file": "bigtable@ltZftFsiOo12AkQ-04N3B.md"
-    },
-    {
-     "id": "KYUh29Ok1aeOviboGDS_i",
-     "type": "subtopic",
-     "label": "Memcached",
-     "body": "Memcached is a high-performance, distributed in-memory caching system. It is simpler than Redis, supporting only key-value string storage, but is very fast and horizontally scalable. Memcached is commonly used to cache database query results and reduce load on backend systems.",
-     "resources": [
-      {
-       "kind": "opensource",
-       "title": "memcached",
-       "url": "https://github.com/memcached/memcached#readme"
-      },
-      {
-       "kind": "article",
-       "title": "Memcached Tutorial",
-       "url": "https://www.tutorialspoint.com/memcached/index.htm"
-      },
-      {
-       "kind": "video",
-       "title": "Redis vs Memcached",
-       "url": "https://www.youtube.com/watch?v=Gyy1SiE8avE"
-      }
-     ],
-     "file": "memcached@KYUh29Ok1aeOviboGDS_i.md"
-    },
-    {
-     "id": "goL_GqVVTVxXQMGBw992b",
-     "type": "subtopic",
-     "label": "CosmosDB",
-     "body": "Azure Cosmos DB is a native No-SQL database service and vector database for working with the document data model. It can arbitrarily store native JSON documents with flexible schema. Data is indexed automatically and is available for query using a flavor of the SQL query language designed for JSON data. It also supports vector search. You can access the API using SDKs for popular frameworks such [as.NET](http://as.NET), Python, Java, and Node.js.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "What are Containers?",
-       "url": "https://azure.microsoft.com/en-us/products/cosmos-db#FAQ"
-      },
-      {
-       "kind": "official",
-       "title": "CAzure Cosmos DB - Database for the AI Era",
-       "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
-      },
-      {
-       "kind": "video",
-       "title": "What is Azure Cosmos DB?",
-       "url": "https://www.youtube.com/watch?v=hBY2YcaIOQM&"
-      }
-     ],
-     "file": "cosmosdb@goL_GqVVTVxXQMGBw992b.md"
-    },
-    {
-     "id": "Uho9OOWSG0bUpyH4P6hKk",
-     "type": "subtopic",
-     "label": "HBase",
-     "body": "HBase is a column-oriented No-SQL database management system that runs on top of Hadoop Distributed File System (HDFS), a main component of Apache Hadoop. HBase provides a fault-tolerant way of storing sparse data sets, which are common in many big data use cases. It is well-suited for real-time data processing or random read/write access to large volumes of data. HBase applications are written in Java™ much like a typical Apache MapReduce application.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Apacha HBase?",
-       "url": "https://hbase.apache.org/"
-      },
-      {
-       "kind": "article",
-       "title": "What is HBase?",
-       "url": "https://www.ibm.com/think/topics/hbase"
-      },
-      {
-       "kind": "article",
-       "title": "Apache HBase",
-       "url": "https://en.wikipedia.org/wiki/Apache_HBase"
-      }
-     ],
-     "file": "hbase@Uho9OOWSG0bUpyH4P6hKk.md"
-    },
-    {
-     "id": "BDfpCDOxXZ-Tp0Abj_CVW",
-     "type": "subtopic",
-     "label": "DynamoDB",
-     "body": "Amazon DynamoDB is a fully managed key-value and document database service on AWS. It provides single-digit millisecond performance at any scale and handles replication and scaling automatically. DynamoDB is commonly used for applications that require predictable performance and high availability without database administration.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Amazon DynamoDB",
-       "url": "https://aws.amazon.com/dynamodb/"
-      }
-     ],
-     "file": "dynamodb@BDfpCDOxXZ-Tp0Abj_CVW.md"
-    },
-    {
-     "id": "-IesOBWPSIlbgvTjBqHcb",
-     "type": "subtopic",
-     "label": "CouchDB",
-     "body": "Apache CouchDB is an open-source document database that uses JSON for documents and HTTP as its API. It is designed for reliability and offline-first use cases, with a built-in replication protocol that syncs data between devices and servers. CouchDB is used in scenarios where data needs to be available and writable even without a network connection.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "CouchDB Documentation",
-       "url": "https://docs.couchdb.org/en/stable/intro/overview.html"
-      },
-      {
-       "kind": "article",
-       "title": "What is CouchDB?",
-       "url": "https://www.ibm.com/think/topics/couchdb"
-      }
-     ],
-     "file": "couchdb@-IesOBWPSIlbgvTjBqHcb.md"
-    },
-    {
      "id": "dc3lJI27hJ3zZ45UCVqM1",
      "type": "topic",
      "label": "What is Data Warehouse?",
@@ -1416,25 +961,6 @@
      "body": "Data warehousing architectures describe how data is organized, stored, and accessed across a warehouse system. Common patterns include traditional ETL-based warehouses, cloud-native warehouses, data lakehouse architectures, and federated query systems. The choice of architecture affects cost, query performance, scalability, and how fresh the data available for analysis is.",
      "resources": [],
      "file": "data-warehousing-architectures@J854xPM1X0BWlhtJw7Hs_.md"
-    },
-    {
-     "id": "ArOoKuf9scAURs8NRjAru",
-     "type": "topic",
-     "label": "Data Warehouse",
-     "body": "A data warehouse stores structured, processed data from operational systems, optimized for analytical queries. It typically uses columnar storage and is populated through ETL or ELT processes. Common cloud data warehouses include Google BigQuery, Snowflake, and Amazon Redshift.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What Is a Data Warehouse?",
-       "url": "https://www.oracle.com/database/what-is-a-data-warehouse/"
-      },
-      {
-       "kind": "video",
-       "title": "What is a Data Warehouse?",
-       "url": "https://www.youtube.com/watch?v=k4tK2ttdSDg"
-      }
-     ],
-     "file": "data-warehouse@ArOoKuf9scAURs8NRjAru.md"
     },
     {
      "id": "c6Pf3kFcC4iV4a7mPc-WH",
@@ -1480,6 +1006,630 @@
      "file": "data-mesh@D7qtosIbsQuIY3OWl_Hwc.md"
     },
     {
+     "id": "lDeSL9qvgQgyAMcWXF7Fr",
+     "type": "topic",
+     "label": "Cloud Computing",
+     "body": "Cloud computing refers to the delivery of computing resources, including servers, storage, databases, networking, and software, over the internet. Major cloud providers offer on-demand infrastructure that scales with usage and is billed per consumption. Cloud platforms are the dominant environment for modern data engineering work.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Cloud Computing - IBM",
+       "url": "https://www.ibm.com/think/topics/cloud-computing"
+      },
+      {
+       "kind": "article",
+       "title": "What is Cloud Computing? - Azure",
+       "url": "https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-cloud-computing"
+      },
+      {
+       "kind": "video",
+       "title": "What is Cloud Computing? - Amazon Web Services",
+       "url": "https://www.youtube.com/watch?v=mxT233EdY5c"
+      }
+     ],
+     "file": "cloud-computing@lDeSL9qvgQgyAMcWXF7Fr.md"
+    },
+    {
+     "id": "YLfyb_ycgz1hu0yW8SPNE",
+     "type": "subtopic",
+     "label": "Cloud Architectures",
+     "body": "Cloud architectures describe how systems are designed to run on cloud infrastructure. Common patterns include multi-tier architectures, microservices, event-driven designs, and serverless functions. Good cloud architecture balances cost, reliability, scalability, and security.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is cloud architecture? - Google",
+       "url": "https://cloud.google.com/learn/what-is-cloud-architecture"
+      },
+      {
+       "kind": "video",
+       "title": "WWhat is Cloud Architecture and Common Models?",
+       "url": "https://www.youtube.com/watch?v=zTP-bx495hU"
+      }
+     ],
+     "file": "cloud-architectures@YLfyb_ycgz1hu0yW8SPNE.md"
+    },
+    {
+     "id": "f-a3Hy1ldnvSv8W2mFiJK",
+     "type": "subtopic",
+     "label": "Batch",
+     "body": "Batch processing is a method in which large volumes of collected data are processed in chunks or batches. This approach is especially effective for resource-intensive jobs, repetitive tasks, and managing extensive datasets where real-time processing isn’t required. It is ideal for applications like data warehousing, ETL (Extract, Transform, Load), and large-scale reporting. Data batch processing is mainly automated, requiring minimal human interaction once the process is set up. Tasks are predefined, and the system executes them according to a scheduled timeline, typically during off-peak hours when computing resources are readily available.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is Batch Processing?",
+       "url": "https://aws.amazon.com/what-is/batch-processing/"
+      },
+      {
+       "kind": "article",
+       "title": "Batch And Streaming Demystified For Unification",
+       "url": "https://towardsdatascience.com/batch-and-streaming-demystified-for-unification-dee0b48f921d/"
+      }
+     ],
+     "file": "batch@f-a3Hy1ldnvSv8W2mFiJK.md"
+    },
+    {
+     "id": "4fugNG5sEDl0kgmN3Mezk",
+     "type": "subtopic",
+     "label": "Hybrid",
+     "body": "Hybrid data ingestion combines aspects of both real-time and batch ingestion. This approach gives you the flexibility to adapt your data ingestion strategy as your needs evolve. For example, you could process data in real-time for critical applications and in batches for less time-sensitive tasks. Two common hybrid methods are Lambda architecture-based and micro-batching.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is Data Ingestion: Types, Tools, and Real-Life Use Cases",
+       "url": "https://estuary.dev/blog/data-ingestion/"
+      },
+      {
+       "kind": "article",
+       "title": "Lambda Architecture",
+       "url": "https://www.databricks.com/glossary/lambda-architecture"
+      },
+      {
+       "kind": "article",
+       "title": "What is Micro Batching: A Comprehensive Guide 101",
+       "url": "https://hevodata.com/learn/micro-batching/"
+      }
+     ],
+     "file": "hybrid@4fugNG5sEDl0kgmN3Mezk.md"
+    },
+    {
+     "id": "GN1Xh3kA25ge-wTbdiSio",
+     "type": "topic",
+     "label": "Types of Data Ingestion",
+     "body": "The primary types of data ingestion are Batch, Streaming, and Hybrid. Batch ingestion processes data in large, scheduled chunks, suitable for non-time-sensitive tasks like monthly reports. Streaming (or Real-time) ingestion handles data as it arrives, ideal for time-sensitive applications such as fraud detection or IoT monitoring. Hybrid ingestion combines both methods, offering flexibility for diverse business needs.",
+     "resources": [],
+     "file": "types-of-data-ingestion@GN1Xh3kA25ge-wTbdiSio.md"
+    },
+    {
+     "id": "oqxNr0Lj34mgRi5Z5wJt_",
+     "type": "subtopic",
+     "label": "Realtime",
+     "body": "Real-time processing, also known as streaming processing, involves the immediate ingestion, as well as analysis, of data as it is generated, providing instantaneous insights and enabling timely decisions in time-sensitive applications like financial trading, medical monitoring, and autonomous vehicles. This differs from batch processing, which handles data in later batches, and typically involves continuous data streaming, low latency, and high availability to deliver immediate outcomes for critical tasks.",
+     "resources": [],
+     "file": "realtime@oqxNr0Lj34mgRi5Z5wJt_.md"
+    },
+    {
+     "id": "fqTPu70MJyXBmqYUgCJ_r",
+     "type": "topic",
+     "label": "Data Pipelines",
+     "body": "Data pipelines are a series of automated processes that transport and transform data from various sources to a destination for analysis or storage. They typically involve steps like data extraction, cleaning, transformation, and loading (ETL) into databases, data lakes, or warehouses. Pipelines can handle batch or real-time data, ensuring that large-scale datasets are processed efficiently and consistently. They play a crucial role in ensuring data integrity and enabling businesses to derive insights from raw data for reporting, analytics, or machine learning.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is a Data Pipeline? - IBM",
+       "url": "https://www.ibm.com/topics/data-pipeline"
+      },
+      {
+       "kind": "video",
+       "title": "What are Data Pipelines?",
+       "url": "https://www.youtube.com/watch?v=oKixNpz6jNo"
+      }
+     ],
+     "file": "data-pipelines@fqTPu70MJyXBmqYUgCJ_r.md"
+    },
+    {
+     "id": "hB0y8A2U3owpAbTUb7LN5",
+     "type": "topic",
+     "label": "Cluster Computing Basics",
+     "body": "Cluster computing refers to using a group of connected machines that work together as a single system to process data. It enables workloads that are too large or slow for a single machine by distributing computation across multiple nodes. Concepts like job scheduling, distributed file systems, and resource management are central to working with clusters.",
+     "resources": [],
+     "file": "cluster-computing-basics@hB0y8A2U3owpAbTUb7LN5.md"
+    }
+   ]
+  },
+  {
+   "heading": "Relational Databases",
+   "nodes": [
+    {
+     "id": "_bFj6rbLuqeQB5MjJZpd6",
+     "type": "subtopic",
+     "label": "MySQL",
+     "body": "MySQL is an open-source relational database management system (RDBMS) known for its speed, reliability, and ease of use. It uses SQL (Structured Query Language) for database interactions and supports a range of features for data management, including transactions, indexing, and stored procedures. MySQL is widely used for web applications, data warehousing, and various other applications due to its scalability and flexibility. It integrates well with many programming languages and platforms, and is often employed in conjunction with web servers and frameworks in popular software stacks like LAMP (Linux, Apache, MySQL, PHP/Python/Perl). MySQL is maintained by Oracle Corporation and has a large community and ecosystem supporting its development and use.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "MySQL",
+       "url": "https://www.mysql.com/"
+      },
+      {
+       "kind": "article",
+       "title": "MySQL for Developers",
+       "url": "https://planetscale.com/courses/mysql-for-developers/introduction/course-introduction"
+      },
+      {
+       "kind": "article",
+       "title": "MySQL Tutorial",
+       "url": "https://www.mysqltutorial.org/"
+      },
+      {
+       "kind": "video",
+       "title": "MySQL Complete Course",
+       "url": "https://www.youtube.com/watch?v=5OdVJbNCSso"
+      }
+     ],
+     "file": "mysql@_bFj6rbLuqeQB5MjJZpd6.md"
+    },
+    {
+     "id": "__JFgwxeDLvz8p7DAJnsc",
+     "type": "subtopic",
+     "label": "PostgreSQL",
+     "body": "PostgreSQL is an open-source relational database known for its standards compliance, extensibility, and advanced feature set. It supports complex queries, JSON storage, full-text search, and custom data types. PostgreSQL is widely used in both transactional and analytical workloads.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit Dedicated PostgreSQL DBA Roadmap",
+       "url": "https://roadmap.sh/postgresql-dba"
+      },
+      {
+       "kind": "official",
+       "title": "PostgreSQL Website",
+       "url": "https://www.postgresql.org/"
+      },
+      {
+       "kind": "article",
+       "title": "Learn PostgreSQL - Full Tutorial for Beginners",
+       "url": "https://www.postgresqltutorial.com/"
+      },
+      {
+       "kind": "video",
+       "title": "Postgres tutorial for Beginners",
+       "url": "https://www.youtube.com/watch?v=SpfIwlAYaKk"
+      }
+     ],
+     "file": "postgresql@__JFgwxeDLvz8p7DAJnsc.md"
+    },
+    {
+     "id": "p7S_6O9Qq722r-F4bl6G3",
+     "type": "subtopic",
+     "label": "MariaDB",
+     "body": "MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most feature rich, stable, and sanely licensed open SQL server in the industry. MariaDB was created with the intention of being a more versatile, drop-in replacement version of MySQL",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "MariaDB",
+       "url": "https://mariadb.org/"
+      },
+      {
+       "kind": "article",
+       "title": "MariaDB vs MySQL",
+       "url": "https://www.guru99.com/mariadb-vs-mysql.html"
+      },
+      {
+       "kind": "video",
+       "title": "MariaDB Tutorial For Beginners in One Hour",
+       "url": "https://www.youtube.com/watch?v=_AMj02sANpI"
+      }
+     ],
+     "file": "mariadb@p7S_6O9Qq722r-F4bl6G3.md"
+    },
+    {
+     "id": "YZ4G1-6VJ7VdsphdcBTf9",
+     "type": "subtopic",
+     "label": "Aurora DB",
+     "body": "Amazon Aurora (Aurora) is a fully managed relational database engine that's compatible with MySQL and PostgreSQL. Aurora includes a high-performance storage subsystem. Its MySQL- and PostgreSQL-compatible database engines are customized to take advantage of that fast distributed storage. The underlying storage grows automatically as needed. Aurora also automates and standardizes database clustering and replication, which are typically among the most challenging aspects of database configuration and administration.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "SAmazon Aurora",
+       "url": "https://aws.amazon.com/rds/aurora/"
+      }
+     ],
+     "file": "aurora-db@YZ4G1-6VJ7VdsphdcBTf9.md"
+    },
+    {
+     "id": "PJcxM60h85Po0AAkSj7nr",
+     "type": "subtopic",
+     "label": "Oracle",
+     "body": "Oracle Database is a commercial relational database system widely used in enterprise environments. It is known for its robustness, advanced features, and support for very large-scale deployments. Oracle is common in financial services, healthcare, and government sectors where long-term vendor support and mature tooling are priorities.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Oracle Docs",
+       "url": "https://docs.oracle.com/en/database/index.html"
+      },
+      {
+       "kind": "video",
+       "title": "Oracle SQL Tutorial for Beginners",
+       "url": "https://www.youtube.com/watch?v=ObbNGhcxXJA"
+      }
+     ],
+     "file": "oracle@PJcxM60h85Po0AAkSj7nr.md"
+    },
+    {
+     "id": "YxnIQh6Y5ic795-YsajB8",
+     "type": "subtopic",
+     "label": "MS SQL",
+     "body": "Microsoft SQL Server (MS SQL) is a relational database developed by Microsoft, commonly used in enterprise and Windows-based environments. It integrates tightly with the Microsoft ecosystem, including Azure, Power BI, and .NET. MS SQL supports T-SQL, Microsoft's extension of SQL with additional procedural capabilities.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit Dedicated SQL Roadmap",
+       "url": "https://roadmap.sh/sql"
+      },
+      {
+       "kind": "official",
+       "title": "MS SQL",
+       "url": "https://www.microsoft.com/en-ca/sql-server/"
+      },
+      {
+       "kind": "article",
+       "title": "Tutorials for SQL Server",
+       "url": "https://docs.microsoft.com/en-us/sql/sql-server/tutorials-for-sql-server-2016?view=sql-server-ver15"
+      },
+      {
+       "kind": "video",
+       "title": "SQL Server tutorial for beginners",
+       "url": "https://www.youtube.com/watch?v=-EPMOaV7h_Q"
+      }
+     ],
+     "file": "ms-sql@YxnIQh6Y5ic795-YsajB8.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "sGkAOVl3C-xIIAdtDH9jq",
+     "type": "topic",
+     "label": "Document",
+     "body": "\\*\\*Document Databases are a type of No-SQL databases that store data in JSON, BSON, or XML formats, allowing for flexible, semi-structured and hierarchical data structures. These databases are characterized by their dynamic schema, scalability through distribution, and ability to intuitively map data models to application code. Popular examples include MongoDB, which allows for easy storage and retrieval of varied data types without requiring a rigid, predefined schema.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is a Document Database?",
+       "url": "https://www.mongodb.com/resources/basics/databases/document-databases"
+      },
+      {
+       "kind": "article",
+       "title": "Document-oriented database",
+       "url": "https://en.wikipedia.org/wiki/Document-oriented_database"
+      }
+     ],
+     "file": "document@sGkAOVl3C-xIIAdtDH9jq.md"
+    },
+    {
+     "id": "04V0Bcgjusfqdw0b-Aw4W",
+     "type": "subtopic",
+     "label": "MongoDB",
+     "body": "MongoDB is a NoSQL, open-source database designed for storing and managing large volumes of unstructured or semi-structured data. It uses a document-oriented data model where data is stored in BSON (Binary JSON) format, which allows for flexible and hierarchical data representation. Unlike traditional relational databases, MongoDB doesn't require a fixed schema, making it suitable for applications with evolving data requirements or varying data structures. It supports horizontal scaling through sharding and offers high availability with replica sets. MongoDB is commonly used for applications requiring rapid development, real-time analytics, and large-scale data handling, such as content management systems, IoT applications, and big data platforms.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit Dedicated MongoDB Roadmap",
+       "url": "https://roadmap.sh/mongodb"
+      },
+      {
+       "kind": "official",
+       "title": "MongoDB Website",
+       "url": "https://www.mongodb.com/"
+      },
+      {
+       "kind": "official",
+       "title": "Learning Path for MongoDB Developers",
+       "url": "https://learn.mongodb.com/catalog"
+      },
+      {
+       "kind": "article",
+       "title": "MongoDB Online Sandbox",
+       "url": "https://mongoplayground.net/"
+      }
+     ],
+     "file": "mongodb@04V0Bcgjusfqdw0b-Aw4W.md"
+    },
+    {
+     "id": "_F53cV3ln2yu0ics5BFfx",
+     "type": "subtopic",
+     "label": "ElasticSearch",
+     "body": "Elasticsearch is a distributed search and analytics engine built on Apache Lucene. It is designed for full-text search, log analysis, and real-time data exploration. Elasticsearch is commonly used as the backend for search features in applications and as a centralized store for log and event data, often alongside Kibana.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit the Dedicated Elasticsearch Roadmap",
+       "url": "https://roadmap.sh/elasticsearch"
+      },
+      {
+       "kind": "official",
+       "title": "Elasticsearch Website",
+       "url": "https://www.elastic.co/elasticsearch/"
+      },
+      {
+       "kind": "official",
+       "title": "Elasticsearch Documentation",
+       "url": "https://www.elastic.co/guide/index.html"
+      },
+      {
+       "kind": "video",
+       "title": "What is Elasticsearch",
+       "url": "https://www.youtube.com/watch?v=ZP0NmfyfsoM"
+      }
+     ],
+     "file": "elasticsearch@_F53cV3ln2yu0ics5BFfx.md"
+    },
+    {
+     "id": "goL_GqVVTVxXQMGBw992b",
+     "type": "subtopic",
+     "label": "CosmosDB",
+     "body": "Azure Cosmos DB is a native No-SQL database service and vector database for working with the document data model. It can arbitrarily store native JSON documents with flexible schema. Data is indexed automatically and is available for query using a flavor of the SQL query language designed for JSON data. It also supports vector search. You can access the API using SDKs for popular frameworks such [as.NET](http://as.NET), Python, Java, and Node.js.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "What are Containers?",
+       "url": "https://azure.microsoft.com/en-us/products/cosmos-db#FAQ"
+      },
+      {
+       "kind": "official",
+       "title": "CAzure Cosmos DB - Database for the AI Era",
+       "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+      },
+      {
+       "kind": "video",
+       "title": "What is Azure Cosmos DB?",
+       "url": "https://www.youtube.com/watch?v=hBY2YcaIOQM&"
+      }
+     ],
+     "file": "cosmosdb@goL_GqVVTVxXQMGBw992b.md"
+    },
+    {
+     "id": "-IesOBWPSIlbgvTjBqHcb",
+     "type": "subtopic",
+     "label": "CouchDB",
+     "body": "Apache CouchDB is an open-source document database that uses JSON for documents and HTTP as its API. It is designed for reliability and offline-first use cases, with a built-in replication protocol that syncs data between devices and servers. CouchDB is used in scenarios where data needs to be available and writable even without a network connection.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "CouchDB Documentation",
+       "url": "https://docs.couchdb.org/en/stable/intro/overview.html"
+      },
+      {
+       "kind": "article",
+       "title": "What is CouchDB?",
+       "url": "https://www.ibm.com/think/topics/couchdb"
+      }
+     ],
+     "file": "couchdb@-IesOBWPSIlbgvTjBqHcb.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "TG63YRbSKL1F9vlUVF1VY",
+     "type": "subtopic",
+     "label": "Neo4j",
+     "body": "Neo4j is the most widely used graph database. It stores data natively as nodes and relationships and uses Cypher, a declarative query language designed for graph traversal. Neo4j is used for applications where relationship-heavy queries are central, such as recommendation systems and network analysis.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Neo4j Website",
+       "url": "https://neo4j.com"
+      },
+      {
+       "kind": "video",
+       "title": "Neo4j in 100 Seconds",
+       "url": "https://www.youtube.com/watch?v=T6L9EoBy8Zk"
+      },
+      {
+       "kind": "video",
+       "title": "Neo4j Course for Beginners",
+       "url": "https://www.youtube.com/watch?v=_IgbB24scLI"
+      }
+     ],
+     "file": "neo4j@TG63YRbSKL1F9vlUVF1VY.md"
+    },
+    {
+     "id": "atAK4zGXIbxZvfBTzFEIe",
+     "type": "subtopic",
+     "label": "Neptune",
+     "body": "Amazon Neptune is a managed graph database service on AWS that supports both the Property Graph model (with Gremlin) and RDF (with SPARQL). It is designed for highly connected datasets and scales to billions of relationships. Neptune is used for knowledge graphs, fraud detection, and identity resolution.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "AWS Neptune",
+       "url": "https://aws.amazon.com/neptune/"
+      },
+      {
+       "kind": "article",
+       "title": "Setting Up Amazon Neptune Graph Database",
+       "url": "https://cliffordedsouza.medium.com/setting-up-amazon-neptune-graph-database-2b73512a7388"
+      },
+      {
+       "kind": "video",
+       "title": "Getting Started with Neptune Serverless",
+       "url": "https://www.youtube.com/watch?v=b04-jjM9t4g"
+      }
+     ],
+     "file": "neptune@atAK4zGXIbxZvfBTzFEIe.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "QYR8ESN7xhi4ZxcoiZbgn",
+     "type": "subtopic",
+     "label": "Cassandra",
+     "body": "Apache Cassandra is an open-source distributed wide-column database designed for high availability and linear scalability. It has no single point of failure and is optimized for fast writes across multiple data centers. Cassandra is used for time-series data, IoT workloads, and applications requiring continuous uptime.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Apache Cassandra",
+       "url": "https://cassandra.apache.org/_/index.html"
+      },
+      {
+       "kind": "article",
+       "title": "Cassandra - Quick Guide",
+       "url": "https://www.tutorialspoint.com/cassandra/cassandra_quick_guide.htm"
+      },
+      {
+       "kind": "video",
+       "title": "Apache Cassandra - Course for Beginners",
+       "url": "https://www.youtube.com/watch?v=J-cSy5MeMOA"
+      }
+     ],
+     "file": "cassandra@QYR8ESN7xhi4ZxcoiZbgn.md"
+    },
+    {
+     "id": "ltZftFsiOo12AkQ-04N3B",
+     "type": "subtopic",
+     "label": "BigTable",
+     "body": "Bigtable is a high-performance, scalable database that excels at capturing, processing, and analyzing data in real-time. It aggregates data as it's written, providing immediate insights into user behavior, A/B testing results, and engagement metrics. This real-time capability also fuels AI/ML models for interactive applications. Bigtable integrates seamlessly with both Dataflow, enriching streaming pipelines with low-latency lookups, and BigQuery, enabling real-time serving of analytics in user-facing applications and ad-hoc querying on the same data.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Bigtable: Fast, Flexible NoSQL",
+       "url": "https://cloud.google.com/bigtable?hl=en#scale-your-latency-sensitive-applications-with-the-nosql-pioneer"
+      },
+      {
+       "kind": "article",
+       "title": "Google Bigtable",
+       "url": "https://www.techtarget.com/searchdatamanagement/definition/Google-BigTable"
+      }
+     ],
+     "file": "bigtable@ltZftFsiOo12AkQ-04N3B.md"
+    },
+    {
+     "id": "Uho9OOWSG0bUpyH4P6hKk",
+     "type": "subtopic",
+     "label": "HBase",
+     "body": "HBase is a column-oriented No-SQL database management system that runs on top of Hadoop Distributed File System (HDFS), a main component of Apache Hadoop. HBase provides a fault-tolerant way of storing sparse data sets, which are common in many big data use cases. It is well-suited for real-time data processing or random read/write access to large volumes of data. HBase applications are written in Java™ much like a typical Apache MapReduce application.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Apacha HBase?",
+       "url": "https://hbase.apache.org/"
+      },
+      {
+       "kind": "article",
+       "title": "What is HBase?",
+       "url": "https://www.ibm.com/think/topics/hbase"
+      },
+      {
+       "kind": "article",
+       "title": "Apache HBase",
+       "url": "https://en.wikipedia.org/wiki/Apache_HBase"
+      }
+     ],
+     "file": "hbase@Uho9OOWSG0bUpyH4P6hKk.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "dW_eC4vR8BrvKG9wxmEBc",
+     "type": "subtopic",
+     "label": "Redis",
+     "body": "Redis is an in-memory key-value store known for its extremely low latency. It supports a variety of data structures including strings, lists, sets, sorted sets, and hashes. Redis is widely used for caching, real-time leaderboards, pub/sub messaging, and session storage.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit Dedicated Redis Roadmap",
+       "url": "https://roadmap.sh/redis"
+      },
+      {
+       "kind": "course",
+       "title": "Redis Crash Course",
+       "url": "https://www.youtube.com/watch?v=XCsS_NVAa1g"
+      },
+      {
+       "kind": "official",
+       "title": "Redis Documentation",
+       "url": "https://redis.io/docs/latest/"
+      },
+      {
+       "kind": "video",
+       "title": "Redis in 100 Seconds",
+       "url": "https://www.youtube.com/watch?v=G1rOthIU-uo"
+      }
+     ],
+     "file": "redis@dW_eC4vR8BrvKG9wxmEBc.md"
+    },
+    {
+     "id": "KYUh29Ok1aeOviboGDS_i",
+     "type": "subtopic",
+     "label": "Memcached",
+     "body": "Memcached is a high-performance, distributed in-memory caching system. It is simpler than Redis, supporting only key-value string storage, but is very fast and horizontally scalable. Memcached is commonly used to cache database query results and reduce load on backend systems.",
+     "resources": [
+      {
+       "kind": "opensource",
+       "title": "memcached",
+       "url": "https://github.com/memcached/memcached#readme"
+      },
+      {
+       "kind": "article",
+       "title": "Memcached Tutorial",
+       "url": "https://www.tutorialspoint.com/memcached/index.htm"
+      },
+      {
+       "kind": "video",
+       "title": "Redis vs Memcached",
+       "url": "https://www.youtube.com/watch?v=Gyy1SiE8avE"
+      }
+     ],
+     "file": "memcached@KYUh29Ok1aeOviboGDS_i.md"
+    },
+    {
+     "id": "BDfpCDOxXZ-Tp0Abj_CVW",
+     "type": "subtopic",
+     "label": "DynamoDB",
+     "body": "Amazon DynamoDB is a fully managed key-value and document database service on AWS. It provides single-digit millisecond performance at any scale and handles replication and scaling automatically. DynamoDB is commonly used for applications that require predictable performance and high availability without database administration.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Amazon DynamoDB",
+       "url": "https://aws.amazon.com/dynamodb/"
+      }
+     ],
+     "file": "dynamodb@BDfpCDOxXZ-Tp0Abj_CVW.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "ArOoKuf9scAURs8NRjAru",
+     "type": "topic",
+     "label": "Data Warehouse",
+     "body": "A data warehouse stores structured, processed data from operational systems, optimized for analytical queries. It typically uses columnar storage and is populated through ETL or ELT processes. Common cloud data warehouses include Google BigQuery, Snowflake, and Amazon Redshift.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What Is a Data Warehouse?",
+       "url": "https://www.oracle.com/database/what-is-a-data-warehouse/"
+      },
+      {
+       "kind": "video",
+       "title": "What is a Data Warehouse?",
+       "url": "https://www.youtube.com/watch?v=k4tK2ttdSDg"
+      }
+     ],
+     "file": "data-warehouse@ArOoKuf9scAURs8NRjAru.md"
+    },
+    {
      "id": "Je2in1n8bMaknyeH79Zbv",
      "type": "subtopic",
      "label": "Google BigQuery",
@@ -1502,6 +1652,49 @@
       }
      ],
      "file": "google-bigquery@Je2in1n8bMaknyeH79Zbv.md"
+    },
+    {
+     "id": "W3l1_66fsIqR3MqgBJUmU",
+     "type": "subtopic",
+     "label": "Snowflake",
+     "body": "Snowflake is a cloud-based data platform that provides a data warehouse as a service. It allows organizations to store, analyze, and share data, offering features like data engineering, data governance, and collaboration capabilities. Snowflake is known for its scalability, ease of use, and ability to handle diverse workloads, including data warehousing, data lakes, and machine learning.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Snowflake Docs",
+       "url": "https://docs.snowflake.com/"
+      },
+      {
+       "kind": "official",
+       "title": "Snowflake in 20 minutes",
+       "url": "https://docs.snowflake.com/en/user-guide/tutorials/snowflake-in-20minutes"
+      },
+      {
+       "kind": "video",
+       "title": "Learn Snowflake in 2 Hours",
+       "url": "https://www.youtube.com/watch?v=mP3QbYURT9k"
+      }
+     ],
+     "file": "snowflake@W3l1_66fsIqR3MqgBJUmU.md"
+    },
+    {
+     "id": "omrg8QcYmTdQLBKV47b7o",
+     "type": "subtopic",
+     "label": "Amazon Redshift",
+     "body": "Amazon Redshift is a cloud-based data warehouse service from Amazon that lets you store and analyze large amounts of data quickly. It’s designed for running complex queries on huge datasets, so businesses can use it to turn raw data into useful reports and insights. You can load data into Redshift from many sources, and then use SQL to explore it, just like you would with a regular database — but it’s optimized to handle much bigger data and run faster.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Amazon Redshift",
+       "url": "https://aws.amazon.com/redshift/"
+      },
+      {
+       "kind": "video",
+       "title": "Getting Started with Amazon Redshift - AWS Online Tech Talks",
+       "url": "https://www.youtube.com/watch?v=dfo4J5ZhlKI"
+      }
+     ],
+     "file": "amazon-redshift@omrg8QcYmTdQLBKV47b7o.md"
     }
    ]
   },
@@ -1552,55 +1745,12 @@
      "file": "data-hub@OiWleAdMbPtisrJpk2eSJ.md"
     },
     {
-     "id": "W3l1_66fsIqR3MqgBJUmU",
-     "type": "subtopic",
-     "label": "Snowflake",
-     "body": "Snowflake is a cloud-based data platform that provides a data warehouse as a service. It allows organizations to store, analyze, and share data, offering features like data engineering, data governance, and collaboration capabilities. Snowflake is known for its scalability, ease of use, and ability to handle diverse workloads, including data warehousing, data lakes, and machine learning.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Snowflake Docs",
-       "url": "https://docs.snowflake.com/"
-      },
-      {
-       "kind": "official",
-       "title": "Snowflake in 20 minutes",
-       "url": "https://docs.snowflake.com/en/user-guide/tutorials/snowflake-in-20minutes"
-      },
-      {
-       "kind": "video",
-       "title": "Learn Snowflake in 2 Hours",
-       "url": "https://www.youtube.com/watch?v=mP3QbYURT9k"
-      }
-     ],
-     "file": "snowflake@W3l1_66fsIqR3MqgBJUmU.md"
-    },
-    {
      "id": "14CycunRC1p2qTRn-ncoy",
      "type": "subtopic",
      "label": "Metadata-first Architecture",
      "body": "A metadata-first architecture treats metadata as a first-class citizen in data system design. Rather than just documenting data after the fact, metadata is captured and used actively to govern, discover, and lineage-track data across the organization. This approach supports better data quality, compliance, and self-service analytics.",
      "resources": [],
      "file": "metadata-first-architecture@14CycunRC1p2qTRn-ncoy.md"
-    },
-    {
-     "id": "omrg8QcYmTdQLBKV47b7o",
-     "type": "subtopic",
-     "label": "Amazon Redshift",
-     "body": "Amazon Redshift is a cloud-based data warehouse service from Amazon that lets you store and analyze large amounts of data quickly. It’s designed for running complex queries on huge datasets, so businesses can use it to turn raw data into useful reports and insights. You can load data into Redshift from many sources, and then use SQL to explore it, just like you would with a regular database — but it’s optimized to handle much bigger data and run faster.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Amazon Redshift",
-       "url": "https://aws.amazon.com/redshift/"
-      },
-      {
-       "kind": "video",
-       "title": "Getting Started with Amazon Redshift - AWS Online Tech Talks",
-       "url": "https://www.youtube.com/watch?v=dfo4J5ZhlKI"
-      }
-     ],
-     "file": "amazon-redshift@omrg8QcYmTdQLBKV47b7o.md"
     },
     {
      "id": "ZnGX8pg4GagdSalg_P0oq",
@@ -1615,7 +1765,12 @@
       }
      ],
      "file": "serverless-options@ZnGX8pg4GagdSalg_P0oq.md"
-    },
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
     {
      "id": "y0Lxz_wVyQ6lr1hvCsufa",
      "type": "topic",
@@ -1660,49 +1815,6 @@
      "file": "databricks-delta-lake@fhfyoWekmYvEs-jdP2mJo.md"
     },
     {
-     "id": "lDeSL9qvgQgyAMcWXF7Fr",
-     "type": "topic",
-     "label": "Cloud Computing",
-     "body": "Cloud computing refers to the delivery of computing resources, including servers, storage, databases, networking, and software, over the internet. Major cloud providers offer on-demand infrastructure that scales with usage and is billed per consumption. Cloud platforms are the dominant environment for modern data engineering work.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Cloud Computing - IBM",
-       "url": "https://www.ibm.com/think/topics/cloud-computing"
-      },
-      {
-       "kind": "article",
-       "title": "What is Cloud Computing? - Azure",
-       "url": "https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-cloud-computing"
-      },
-      {
-       "kind": "video",
-       "title": "What is Cloud Computing? - Amazon Web Services",
-       "url": "https://www.youtube.com/watch?v=mxT233EdY5c"
-      }
-     ],
-     "file": "cloud-computing@lDeSL9qvgQgyAMcWXF7Fr.md"
-    },
-    {
-     "id": "YLfyb_ycgz1hu0yW8SPNE",
-     "type": "subtopic",
-     "label": "Cloud Architectures",
-     "body": "Cloud architectures describe how systems are designed to run on cloud infrastructure. Common patterns include multi-tier architectures, microservices, event-driven designs, and serverless functions. Good cloud architecture balances cost, reliability, scalability, and security.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is cloud architecture? - Google",
-       "url": "https://cloud.google.com/learn/what-is-cloud-architecture"
-      },
-      {
-       "kind": "video",
-       "title": "WWhat is Cloud Architecture and Common Models?",
-       "url": "https://www.youtube.com/watch?v=zTP-bx495hU"
-      }
-     ],
-     "file": "cloud-architectures@YLfyb_ycgz1hu0yW8SPNE.md"
-    },
-    {
      "id": "Pf0_CBGkmSEfWDQ2_iFXr",
      "type": "subtopic",
      "label": "Snowflake",
@@ -1727,6 +1839,25 @@
      "file": "snowflake@Pf0_CBGkmSEfWDQ2_iFXr.md"
     },
     {
+     "id": "senZEYC9k-C_C4EAYDNeU",
+     "type": "subtopic",
+     "label": "Onehouse",
+     "body": "Onehouse Managed Lakehouse is a cloud-native SaaS product built on top of Apache Hudi. It replaces painful, inefficient do-iy-yourseld data lake management around file sizing, masking, deletion, clustering, access control, caching, etc. with foundational data infrastructure as a service, to ingest, store, optimize and transform your data on industry-leading open data formats.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Onehouse",
+       "url": "https://www.onehouse.ai/"
+      }
+     ],
+     "file": "onehouse@senZEYC9k-C_C4EAYDNeU.md"
+    }
+   ]
+  },
+  {
+   "heading": "AWS",
+   "nodes": [
+    {
      "id": "AHLsBfPfBJOhLlJ-64GcK",
      "type": "subtopic",
      "label": "Amazon EC2 ( Compute)",
@@ -1744,20 +1875,6 @@
       }
      ],
      "file": "amazon-ec2--compute@AHLsBfPfBJOhLlJ-64GcK.md"
-    },
-    {
-     "id": "senZEYC9k-C_C4EAYDNeU",
-     "type": "subtopic",
-     "label": "Onehouse",
-     "body": "Onehouse Managed Lakehouse is a cloud-native SaaS product built on top of Apache Hudi. It replaces painful, inefficient do-iy-yourseld data lake management around file sizing, masking, deletion, clustering, access control, caching, etc. with foundational data infrastructure as a service, to ingest, store, optimize and transform your data on industry-leading open data formats.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Onehouse",
-       "url": "https://www.onehouse.ai/"
-      }
-     ],
-     "file": "onehouse@senZEYC9k-C_C4EAYDNeU.md"
     },
     {
      "id": "tbut25IZI2aU7TkI9fFYV",
@@ -1788,25 +1905,6 @@
      "file": "amazon-rds-database@GtFk7phYGfXUhxanicYNQ.md"
     },
     {
-     "id": "f-a3Hy1ldnvSv8W2mFiJK",
-     "type": "subtopic",
-     "label": "Batch",
-     "body": "Batch processing is a method in which large volumes of collected data are processed in chunks or batches. This approach is especially effective for resource-intensive jobs, repetitive tasks, and managing extensive datasets where real-time processing isn’t required. It is ideal for applications like data warehousing, ETL (Extract, Transform, Load), and large-scale reporting. Data batch processing is mainly automated, requiring minimal human interaction once the process is set up. Tasks are predefined, and the system executes them according to a scheduled timeline, typically during off-peak hours when computing resources are readily available.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is Batch Processing?",
-       "url": "https://aws.amazon.com/what-is/batch-processing/"
-      },
-      {
-       "kind": "article",
-       "title": "Batch And Streaming Demystified For Unification",
-       "url": "https://towardsdatascience.com/batch-and-streaming-demystified-for-unification-dee0b48f921d/"
-      }
-     ],
-     "file": "batch@f-a3Hy1ldnvSv8W2mFiJK.md"
-    },
-    {
      "id": "nD36-PXHzOXePM7j9u_O_",
      "type": "subtopic",
      "label": "Glue (ETL)",
@@ -1819,51 +1917,6 @@
       }
      ],
      "file": "glue-etl@nD36-PXHzOXePM7j9u_O_.md"
-    },
-    {
-     "id": "4fugNG5sEDl0kgmN3Mezk",
-     "type": "subtopic",
-     "label": "Hybrid",
-     "body": "Hybrid data ingestion combines aspects of both real-time and batch ingestion. This approach gives you the flexibility to adapt your data ingestion strategy as your needs evolve. For example, you could process data in real-time for critical applications and in batches for less time-sensitive tasks. Two common hybrid methods are Lambda architecture-based and micro-batching.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is Data Ingestion: Types, Tools, and Real-Life Use Cases",
-       "url": "https://estuary.dev/blog/data-ingestion/"
-      },
-      {
-       "kind": "article",
-       "title": "Lambda Architecture",
-       "url": "https://www.databricks.com/glossary/lambda-architecture"
-      },
-      {
-       "kind": "article",
-       "title": "What is Micro Batching: A Comprehensive Guide 101",
-       "url": "https://hevodata.com/learn/micro-batching/"
-      }
-     ],
-     "file": "hybrid@4fugNG5sEDl0kgmN3Mezk.md"
-    },
-    {
-     "id": "GN1Xh3kA25ge-wTbdiSio",
-     "type": "topic",
-     "label": "Types of Data Ingestion",
-     "body": "The primary types of data ingestion are Batch, Streaming, and Hybrid. Batch ingestion processes data in large, scheduled chunks, suitable for non-time-sensitive tasks like monthly reports. Streaming (or Real-time) ingestion handles data as it arrives, ideal for time-sensitive applications such as fraud detection or IoT monitoring. Hybrid ingestion combines both methods, offering flexibility for diverse business needs.",
-     "resources": [],
-     "file": "types-of-data-ingestion@GN1Xh3kA25ge-wTbdiSio.md"
-    }
-   ]
-  },
-  {
-   "heading": "AWS",
-   "nodes": [
-    {
-     "id": "oqxNr0Lj34mgRi5Z5wJt_",
-     "type": "subtopic",
-     "label": "Realtime",
-     "body": "Real-time processing, also known as streaming processing, involves the immediate ingestion, as well as analysis, of data as it is generated, providing instantaneous insights and enabling timely decisions in time-sensitive applications like financial trading, medical monitoring, and autonomous vehicles. This differs from batch processing, which handles data in later batches, and typically involves continuous data streaming, low latency, and high availability to deliver immediate outcomes for critical tasks.",
-     "resources": [],
-     "file": "realtime@oqxNr0Lj34mgRi5Z5wJt_.md"
     },
     {
      "id": "-yi-xk-kv0njW9GdytiAQ",
@@ -1890,25 +1943,6 @@
      "file": "azure-virtual-machines@-yi-xk-kv0njW9GdytiAQ.md"
     },
     {
-     "id": "fqTPu70MJyXBmqYUgCJ_r",
-     "type": "topic",
-     "label": "Data Pipelines",
-     "body": "Data pipelines are a series of automated processes that transport and transform data from various sources to a destination for analysis or storage. They typically involve steps like data extraction, cleaning, transformation, and loading (ETL) into databases, data lakes, or warehouses. Pipelines can handle batch or real-time data, ensuring that large-scale datasets are processed efficiently and consistently. They play a crucial role in ensuring data integrity and enabling businesses to derive insights from raw data for reporting, analytics, or machine learning.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is a Data Pipeline? - IBM",
-       "url": "https://www.ibm.com/topics/data-pipeline"
-      },
-      {
-       "kind": "video",
-       "title": "What are Data Pipelines?",
-       "url": "https://www.youtube.com/watch?v=oKixNpz6jNo"
-      }
-     ],
-     "file": "data-pipelines@fqTPu70MJyXBmqYUgCJ_r.md"
-    },
-    {
      "id": "gzbEGCUwMsD1gL4nW668g",
      "type": "subtopic",
      "label": "Azure Blob Storage",
@@ -1931,12 +1965,7 @@
       }
      ],
      "file": "azure-blob-storage@gzbEGCUwMsD1gL4nW668g.md"
-    }
-   ]
-  },
-  {
-   "heading": "ETL Process",
-   "nodes": [
+    },
     {
      "id": "iIZ3g70KRwEJCBNaONd2d",
      "type": "subtopic",
@@ -1960,22 +1989,6 @@
       }
      ],
      "file": "azure-sql-database@iIZ3g70KRwEJCBNaONd2d.md"
-    },
-    {
-     "id": "hB0y8A2U3owpAbTUb7LN5",
-     "type": "topic",
-     "label": "Cluster Computing Basics",
-     "body": "Cluster computing refers to using a group of connected machines that work together as a single system to process data. It enables workloads that are too large or slow for a single machine by distributing computation across multiple nodes. Concepts like job scheduling, distributed file systems, and resource management are central to working with clusters.",
-     "resources": [],
-     "file": "cluster-computing-basics@hB0y8A2U3owpAbTUb7LN5.md"
-    },
-    {
-     "id": "nShDMih1HmubBczxu4cfU",
-     "type": "subtopic",
-     "label": "Extract Data",
-     "body": "The first step in ETL processes involves extract data from data sources to a staging area. Data can come in various types and formats, from SQL or NoSQL databases and plan text to image and video files.",
-     "resources": [],
-     "file": "extract-data@nShDMih1HmubBczxu4cfU.md"
     },
     {
      "id": "BNGdJSmrNE90rwPa4JoWj",
@@ -2002,51 +2015,6 @@
      "file": "data-factory-etl@BNGdJSmrNE90rwPa4JoWj.md"
     },
     {
-     "id": "TjsxMNyWO3YGwg6zEIid4",
-     "type": "subtopic",
-     "label": "Transform Data",
-     "body": "In the second step, ETL tools transform and consolidate the raw data in the staging area to prepare it for the target data warehouse. The data transformation phase is normally the most complex and prone to errors, as it can involved multiple transformations, including basic data cleaning operations, deduplication, cata casting, filtering, grouping, encrypting, and many more.",
-     "resources": [],
-     "file": "transform-data@TjsxMNyWO3YGwg6zEIid4.md"
-    }
-   ]
-  },
-  {
-   "heading": "Azure",
-   "nodes": [
-    {
-     "id": "Ad10evrGQuYRl5GaMhQwu",
-     "type": "subtopic",
-     "label": "What is Cluster Computing",
-     "body": "Cluster computing is a model where multiple computers are networked together to act as a unified processing system. Tasks are split across nodes in the cluster and executed in parallel. This approach is used in big data processing, scientific computing, and any workload that exceeds single-machine capacity.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is cluster computing? - IBM",
-       "url": "https://www.ibm.com/think/topics/cluster-computing"
-      },
-      {
-       "kind": "article",
-       "title": "Computer cluster - Wikipedia",
-       "url": "http://en.wikipedia.org/wiki/Computer_cluster"
-      },
-      {
-       "kind": "video",
-       "title": "WUnderstand the Basic Cluster Concepts",
-       "url": "https://www.youtube.com/watch?v=8BBDxzJL6fY"
-      }
-     ],
-     "file": "what-is-cluster-computing@Ad10evrGQuYRl5GaMhQwu.md"
-    },
-    {
-     "id": "y5Aaxe-P68HC5kNsIi88q",
-     "type": "subtopic",
-     "label": "Load Data",
-     "body": "In the third step, the transformed data is moved from the staging area into the targe data storage solution, such as a data warehouse or data lake. For most organizations, the data loading process is automated, well-defined, continuous and batch-driven.",
-     "resources": [],
-     "file": "load-data@y5Aaxe-P68HC5kNsIi88q.md"
-    },
-    {
      "id": "-cU86vJWJmlmPHXDCo31o",
      "type": "subtopic",
      "label": "Compute Engine (Compute)",
@@ -2070,25 +2038,6 @@
      ],
      "file": "compute-engine-compute@-cU86vJWJmlmPHXDCo31o.md"
     },
-    {
-     "id": "1LLF4466grFDlT9p_WLsi",
-     "type": "subtopic",
-     "label": "Distributed File Systems",
-     "body": "A Distributed File System (DFS) allows multiple computers to access and share files across a network as if they were stored on a single local machine. It distributes data across multiple servers, enhancing accessibility and data redundancy. This enables users to access files from various locations and devices, promoting collaboration and data availability.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "What is a Distributed File System (DFS)? A Complete Guide",
-       "url": "http://starwindsoftware.com/blog/what-is-a-distributed-file-system-dfs-a-complete-guide/"
-      }
-     ],
-     "file": "distributed-file-systems@1LLF4466grFDlT9p_WLsi.md"
-    }
-   ]
-  },
-  {
-   "heading": "Data Pipeline Tools",
-   "nodes": [
     {
      "id": "2lqvArZdwRX0t3P3yovEH",
      "type": "subtopic",
@@ -2114,44 +2063,6 @@
      "file": "google-cloud-storage@2lqvArZdwRX0t3P3yovEH.md"
     },
     {
-     "id": "9lSjQBM2hWrkujxZjhQHE",
-     "type": "subtopic",
-     "label": "HDFS",
-     "body": "HDFS (Hadoop Distributed File System) is Hadoop’s primary storage system. It is designed to reliably store data across a cluster of machines. Its architecture is set up for this type of access to large datasets and is optimized for fault tolerance, scalability, and data locality.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "HDFS Architecture Guide",
-       "url": "https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html"
-      },
-      {
-       "kind": "article",
-       "title": "Hadoop Distributed File System (HDFS)",
-       "url": "https://www.databricks.com/glossary/hadoop-distributed-file-system-hdfs"
-      },
-      {
-       "kind": "article",
-       "title": "What is Hadoop Distributed File System (HDFS)?",
-       "url": "https://www.ibm.com/think/topics/hdfs"
-      }
-     ],
-     "file": "hdfs@9lSjQBM2hWrkujxZjhQHE.md"
-    },
-    {
-     "id": "vfO5Dz6ppsNtbGiQwpUs7",
-     "type": "subtopic",
-     "label": "Apache Airflow",
-     "body": "Apache Airflow is an open-source tool that helps you schedule, organize, and monitor workflows. Think of it like a to-do list for your data tasks, but smarter — you can set tasks to run in a specific order, track their progress, and see what happens if something fails. It’s often used for automating data pipelines so that data moves, gets processed, and is ready for use without manual work.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Apache Airflow",
-       "url": "https://airflow.apache.org/"
-      }
-     ],
-     "file": "apache-airflow@vfO5Dz6ppsNtbGiQwpUs7.md"
-    },
-    {
      "id": "9-wQWQIdAxQmMaJC9ojPg",
      "type": "subtopic",
      "label": "Cloud SQL (Database)",
@@ -2174,6 +2085,73 @@
       }
      ],
      "file": "cloud-sql-database@9-wQWQIdAxQmMaJC9ojPg.md"
+    },
+    {
+     "id": "YWgVUyIvBRW8eTVR5y73P",
+     "type": "subtopic",
+     "label": "Dataflow",
+     "body": "Dataflow is a Google Cloud service that provides unified stream and batch data processing at scale. Typical use cases for Dataflow include Data movement,ETL processes, BI dashboarding, and applying ML in real time to streaming data.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Dataflow",
+       "url": "https://cloud.google.com/products/dataflow"
+      },
+      {
+       "kind": "article",
+       "title": "Dataflow",
+       "url": "https://en.wikipedia.org/wiki/Google_Cloud_Dataflow"
+      },
+      {
+       "kind": "video",
+       "title": "What is Google Dataflow",
+       "url": "https://www.youtube.com/watch?v=KalJ0VuEM7s"
+      }
+     ],
+     "file": "dataflow@YWgVUyIvBRW8eTVR5y73P.md"
+    }
+   ]
+  },
+  {
+   "heading": "ETL Process",
+   "nodes": [
+    {
+     "id": "nShDMih1HmubBczxu4cfU",
+     "type": "subtopic",
+     "label": "Extract Data",
+     "body": "The first step in ETL processes involves extract data from data sources to a staging area. Data can come in various types and formats, from SQL or NoSQL databases and plan text to image and video files.",
+     "resources": [],
+     "file": "extract-data@nShDMih1HmubBczxu4cfU.md"
+    },
+    {
+     "id": "TjsxMNyWO3YGwg6zEIid4",
+     "type": "subtopic",
+     "label": "Transform Data",
+     "body": "In the second step, ETL tools transform and consolidate the raw data in the staging area to prepare it for the target data warehouse. The data transformation phase is normally the most complex and prone to errors, as it can involved multiple transformations, including basic data cleaning operations, deduplication, cata casting, filtering, grouping, encrypting, and many more.",
+     "resources": [],
+     "file": "transform-data@TjsxMNyWO3YGwg6zEIid4.md"
+    },
+    {
+     "id": "y5Aaxe-P68HC5kNsIi88q",
+     "type": "subtopic",
+     "label": "Load Data",
+     "body": "In the third step, the transformed data is moved from the staging area into the targe data storage solution, such as a data warehouse or data lake. For most organizations, the data loading process is automated, well-defined, continuous and batch-driven.",
+     "resources": [],
+     "file": "load-data@y5Aaxe-P68HC5kNsIi88q.md"
+    },
+    {
+     "id": "vfO5Dz6ppsNtbGiQwpUs7",
+     "type": "subtopic",
+     "label": "Apache Airflow",
+     "body": "Apache Airflow is an open-source tool that helps you schedule, organize, and monitor workflows. Think of it like a to-do list for your data tasks, but smarter — you can set tasks to run in a specific order, track their progress, and see what happens if something fails. It’s often used for automating data pipelines so that data moves, gets processed, and is ready for use without manual work.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Apache Airflow",
+       "url": "https://airflow.apache.org/"
+      }
+     ],
+     "file": "apache-airflow@vfO5Dz6ppsNtbGiQwpUs7.md"
     },
     {
      "id": "SgYLIkMtLVPlw8Qo5j0Fb",
@@ -2214,49 +2192,6 @@
      "file": "luigi@_IiKTZDF_b57l79X6lsq6.md"
     },
     {
-     "id": "ccc6_SzDwXpCL1WbFuPNA",
-     "type": "subtopic",
-     "label": "Job Scheduling",
-     "body": "A scheduling system manages and distributes computational jobs across multiple interconnected computers (a cluster) to optimize resource utilization and job completion. The goal is to efficiently allocate cluster resources (like processors and memory) to incoming jobs based on factors such as user priority, job requirements, and deadlines.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "Job scheduler",
-       "url": "https://en.wikipedia.org/wiki/Job_scheduler"
-      },
-      {
-       "kind": "article",
-       "title": "Cluster Resources — Job Scheduling",
-       "url": "https://supun-kamburugamuve.medium.com/cluster-resources-job-scheduling-bb63644476bc"
-      }
-     ],
-     "file": "job-scheduling@ccc6_SzDwXpCL1WbFuPNA.md"
-    },
-    {
-     "id": "YWgVUyIvBRW8eTVR5y73P",
-     "type": "subtopic",
-     "label": "Dataflow",
-     "body": "Dataflow is a Google Cloud service that provides unified stream and batch data processing at scale. Typical use cases for Dataflow include Data movement,ETL processes, BI dashboarding, and applying ML in real time to streaming data.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Dataflow",
-       "url": "https://cloud.google.com/products/dataflow"
-      },
-      {
-       "kind": "article",
-       "title": "Dataflow",
-       "url": "https://en.wikipedia.org/wiki/Google_Cloud_Dataflow"
-      },
-      {
-       "kind": "video",
-       "title": "What is Google Dataflow",
-       "url": "https://www.youtube.com/watch?v=KalJ0VuEM7s"
-      }
-     ],
-     "file": "dataflow@YWgVUyIvBRW8eTVR5y73P.md"
-    },
-    {
      "id": "TAh4__7U58J7fduU9a1Ol",
      "type": "subtopic",
      "label": "Prefect",
@@ -2274,7 +2209,108 @@
       }
      ],
      "file": "prefect@TAh4__7U58J7fduU9a1Ol.md"
+    }
+   ]
+  },
+  {
+   "heading": "Azure",
+   "nodes": [
+    {
+     "id": "Ad10evrGQuYRl5GaMhQwu",
+     "type": "subtopic",
+     "label": "What is Cluster Computing",
+     "body": "Cluster computing is a model where multiple computers are networked together to act as a unified processing system. Tasks are split across nodes in the cluster and executed in parallel. This approach is used in big data processing, scientific computing, and any workload that exceeds single-machine capacity.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is cluster computing? - IBM",
+       "url": "https://www.ibm.com/think/topics/cluster-computing"
+      },
+      {
+       "kind": "article",
+       "title": "Computer cluster - Wikipedia",
+       "url": "http://en.wikipedia.org/wiki/Computer_cluster"
+      },
+      {
+       "kind": "video",
+       "title": "WUnderstand the Basic Cluster Concepts",
+       "url": "https://www.youtube.com/watch?v=8BBDxzJL6fY"
+      }
+     ],
+     "file": "what-is-cluster-computing@Ad10evrGQuYRl5GaMhQwu.md"
     },
+    {
+     "id": "1LLF4466grFDlT9p_WLsi",
+     "type": "subtopic",
+     "label": "Distributed File Systems",
+     "body": "A Distributed File System (DFS) allows multiple computers to access and share files across a network as if they were stored on a single local machine. It distributes data across multiple servers, enhancing accessibility and data redundancy. This enables users to access files from various locations and devices, promoting collaboration and data availability.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "What is a Distributed File System (DFS)? A Complete Guide",
+       "url": "http://starwindsoftware.com/blog/what-is-a-distributed-file-system-dfs-a-complete-guide/"
+      }
+     ],
+     "file": "distributed-file-systems@1LLF4466grFDlT9p_WLsi.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
+    {
+     "id": "9lSjQBM2hWrkujxZjhQHE",
+     "type": "subtopic",
+     "label": "HDFS",
+     "body": "HDFS (Hadoop Distributed File System) is Hadoop’s primary storage system. It is designed to reliably store data across a cluster of machines. Its architecture is set up for this type of access to large datasets and is optimized for fault tolerance, scalability, and data locality.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "HDFS Architecture Guide",
+       "url": "https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html"
+      },
+      {
+       "kind": "article",
+       "title": "Hadoop Distributed File System (HDFS)",
+       "url": "https://www.databricks.com/glossary/hadoop-distributed-file-system-hdfs"
+      },
+      {
+       "kind": "article",
+       "title": "What is Hadoop Distributed File System (HDFS)?",
+       "url": "https://www.ibm.com/think/topics/hdfs"
+      }
+     ],
+     "file": "hdfs@9lSjQBM2hWrkujxZjhQHE.md"
+    }
+   ]
+  },
+  {
+   "heading": "Data Pipeline Tools",
+   "nodes": [
+    {
+     "id": "ccc6_SzDwXpCL1WbFuPNA",
+     "type": "subtopic",
+     "label": "Job Scheduling",
+     "body": "A scheduling system manages and distributes computational jobs across multiple interconnected computers (a cluster) to optimize resource utilization and job completion. The goal is to efficiently allocate cluster resources (like processors and memory) to incoming jobs based on factors such as user priority, job requirements, and deadlines.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "Job scheduler",
+       "url": "https://en.wikipedia.org/wiki/Job_scheduler"
+      },
+      {
+       "kind": "article",
+       "title": "Cluster Resources — Job Scheduling",
+       "url": "https://supun-kamburugamuve.medium.com/cluster-resources-job-scheduling-bb63644476bc"
+      }
+     ],
+     "file": "job-scheduling@ccc6_SzDwXpCL1WbFuPNA.md"
+    }
+   ]
+  },
+  {
+   "heading": null,
+   "nodes": [
     {
      "id": "wpZfbIFtfiUSLMASk4t7f",
      "type": "subtopic",
@@ -2282,16 +2318,7 @@
      "body": "Cluster management software maximizes the work that a cluster of computers can perform. A cluster manager balances workload to reduce bottlenecks, monitors the health of the elements of the cluster, and manages failover when an element fails. A cluster manager can also help a system administrator to perform administration tasks on elements in the cluster.",
      "resources": [],
      "file": "cluster-management-tools@wpZfbIFtfiUSLMASk4t7f.md"
-    }
-   ]
-  },
-  {
-   "heading": "Google Cloud",
-   "nodes": []
-  },
-  {
-   "heading": "Cloud Providers",
-   "nodes": [
+    },
     {
      "id": "I_IueX1DFp-LmBwr1-suX",
      "type": "subtopic",
@@ -2334,7 +2361,12 @@
       }
      ],
      "file": "apache-hadoop-yarn@pjm_qShAiFk3JsX4Z2d8G.md"
-    },
+    }
+   ]
+  },
+  {
+   "heading": "Cloud Providers",
+   "nodes": [
     {
      "id": "qHMtJFYcGmESiz_VwRwiI",
      "type": "subtopic",
@@ -2372,12 +2404,7 @@
       }
      ],
      "file": "big-data-tools@03BHmPhYkZrJwRvQdmxxr.md"
-    }
-   ]
-  },
-  {
-   "heading": "Hadoop Ecosystem",
-   "nodes": [
+    },
     {
      "id": "OQ3RqVgWEMxpAtrrjOG5U",
      "type": "subtopic",
@@ -2437,44 +2464,6 @@
      "file": "kubernetes@kcgDW6AFW7WXzXMTPE6J-.md"
     },
     {
-     "id": "0pH2U4GOj8zK3lgkh_r5M",
-     "type": "subtopic",
-     "label": "HDFS",
-     "body": "HDFS (Hadoop Distributed File System) is Hadoop’s primary storage system. It is designed to reliably store data across a cluster of machines. Its architecture is set up for this type of access to large datasets and is optimized for fault tolerance, scalability, and data locality.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "HDFS Architecture Guide",
-       "url": "https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html"
-      },
-      {
-       "kind": "article",
-       "title": "Hadoop Distributed File System (HDFS)",
-       "url": "https://www.databricks.com/glossary/hadoop-distributed-file-system-hdfs"
-      },
-      {
-       "kind": "article",
-       "title": "What is Hadoop Distributed File System (HDFS)?",
-       "url": "https://www.ibm.com/think/topics/hdfs"
-      }
-     ],
-     "file": "hdfs@0pH2U4GOj8zK3lgkh_r5M.md"
-    },
-    {
-     "id": "KcW4z48pk2x6IjQhZs_Ub",
-     "type": "subtopic",
-     "label": "YARN",
-     "body": "Apache Hadoop YARN (Yet Another Resource Negotiator) is the part of Hadoop that manages resources and runs jobs on a cluster. It has a ResourceManager that controls all cluster resources and an ApplicationMaster for each job that schedules and runs tasks. YARN lets different tools like MapReduce and Spark share the same cluster, making it more efficient, flexible, and reliable.",
-     "resources": [
-      {
-       "kind": "video",
-       "title": "Hadoop Yarn Tutorial",
-       "url": "https://www.youtube.com/watch?v=6bIF9VwRwE0"
-      }
-     ],
-     "file": "yarn@KcW4z48pk2x6IjQhZs_Ub.md"
-    },
-    {
      "id": "eTHitN2erd6z8-MZiXE9s",
      "type": "topic",
      "label": "Containers & Orchestration",
@@ -2521,25 +2510,6 @@
       }
      ],
      "file": "google-cloud-gke@8qEgXYZEbDWC73SQSflDY.md"
-    },
-    {
-     "id": "__tWu5uZYnmnuR-qO9SOR",
-     "type": "subtopic",
-     "label": "MapReduce",
-     "body": "MapReduce is a prominent data processing technique used by Data Analysts around the world. It allows them to handle large data sets with complex, unstructured data efficiently. MapReduce breaks down a big data problem into smaller sub-tasks (Map) and then takes those results to create an output in a more usable format (Reduce). This technique is particularly useful in conducting exploratory analysis, as well as in handling big data operations such as text processing, graph processing, or more complicated machine learning algorithms.",
-     "resources": [
-      {
-       "kind": "article",
-       "title": "MapReduce",
-       "url": "https://www.databricks.com/glossary/mapreduce"
-      },
-      {
-       "kind": "article",
-       "title": "What is Apache MapReduce?",
-       "url": "https://www.ibm.com/topics/mapreduce"
-      }
-     ],
-     "file": "mapreduce@__tWu5uZYnmnuR-qO9SOR.md"
     },
     {
      "id": "eVqcYI2Sy2Dldl3SfxB2C",
@@ -2954,64 +2924,6 @@
       }
      ],
      "file": "smoke-testing@woa5K4Dt9L6aBzlJMNS31.md"
-    }
-   ]
-  },
-  {
-   "heading": "Common Tools",
-   "nodes": [
-    {
-     "id": "fTpx6m8U0506ZLCdDU5OG",
-     "type": "subtopic",
-     "label": "Apache Kafka",
-     "body": "Apache Kafka is an open-source stream-processing software platform developed by LinkedIn and donated to the Apache Software Foundation. It is written in Scala and Java and operates based on a message queue, designed to handle real-time data feeds. Kafka functions as a kind of message broker service in between the data producers and the consumers, facilitating efficient transmission of data. It can be viewed as a durable message broker where applications can process and reprocess streamed data. Kafka is a highly scalable and fault-tolerant system which ensures data delivery without loss.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Apache Kafka Docs",
-       "url": "https://kafka.apache.org/43/getting-started/introduction/"
-      },
-      {
-       "kind": "article",
-       "title": "Kafka Streams Confluent",
-       "url": "https://kafka.apache.org/documentation/streams/"
-      },
-      {
-       "kind": "video",
-       "title": "Apache Kafka Fundamentals",
-       "url": "https://www.youtube.com/watch?v=B5j3uNBH8X4"
-      },
-      {
-       "kind": "video",
-       "title": "Kafka in 100 Seconds",
-       "url": "https://www.youtube.com/watch?v=uvb00oaa3k8"
-      }
-     ],
-     "file": "apache-kafka@fTpx6m8U0506ZLCdDU5OG.md"
-    },
-    {
-     "id": "ERcgPTACqYo9BXoRdLjbd",
-     "type": "subtopic",
-     "label": "RabbitMQ",
-     "body": "RabbitMQ is an open-source message broker that implements the AMQP protocol. It routes messages between producers and consumers using exchanges and queues, supporting patterns like publish/subscribe, work queues, and routing. RabbitMQ is used for task queues, service-to-service communication, and event notification systems.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "RabbitMQ Tutorials",
-       "url": "https://www.rabbitmq.com/getstarted.html"
-      },
-      {
-       "kind": "video",
-       "title": "RabbitMQ Tutorial - Message Queues and Distributed Systems",
-       "url": "https://www.youtube.com/watch?v=nFxjaVmFj5E"
-      },
-      {
-       "kind": "video",
-       "title": "RabbitMQ in 100 Seconds",
-       "url": "https://m.youtube.com/watch?v=NQ3fZtyXji0"
-      }
-     ],
-     "file": "rabbitmq@ERcgPTACqYo9BXoRdLjbd.md"
     },
     {
      "id": "jgz7L8OSuqRNcf9buuMTj",
@@ -3057,25 +2969,6 @@
      "file": "declarative-vs-imperative@GyC2JctG-Gi0R_qx1lTeg.md"
     },
     {
-     "id": "uIU5Yncp6hGDcNO1fpjUS",
-     "type": "subtopic",
-     "label": "AWS SQS",
-     "body": "Amazon Simple Queue Service (Amazon SQS) offers a secure, durable, and available hosted queue that lets you integrate and decouple distributed software systems and components. Amazon SQS offers common constructs such as dead-letter queues and cost allocation tags. It provides a generic web services API that you can access using any programming language that the AWS SDK supports.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Amazon Simple Queue Service",
-       "url": "https://aws.amazon.com/sqs/"
-      },
-      {
-       "kind": "official",
-       "title": "What is Amazon Simple Queue Service?",
-       "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html"
-      }
-     ],
-     "file": "aws-sqs@uIU5Yncp6hGDcNO1fpjUS.md"
-    },
-    {
      "id": "9xoBZgKT9uAGsjc1soelY",
      "type": "subtopic",
      "label": "Idempotency",
@@ -3093,30 +2986,6 @@
       }
      ],
      "file": "idempotency@9xoBZgKT9uAGsjc1soelY.md"
-    },
-    {
-     "id": "uFeiTRobSymkvCinhwmZV",
-     "type": "subtopic",
-     "label": "AWS SNS",
-     "body": "Amazon SNS (Simple Notification Service) is a fully managed pub/sub messaging service from AWS. It allows a single message to be sent to multiple subscribers simultaneously through topics. SNS is commonly used alongside SQS to fan out messages to multiple queues or trigger downstream processing in Lambda functions and data pipelines.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Amazon Simple Notification Service (SNS)",
-       "url": "http://aws.amazon.com/sns/"
-      },
-      {
-       "kind": "official",
-       "title": "Send Fanout Event Notifications",
-       "url": "https://aws.amazon.com/getting-started/hands-on/send-fanout-event-notifications/"
-      },
-      {
-       "kind": "article",
-       "title": "What is Pub/Sub Messaging?",
-       "url": "https://aws.amazon.com/what-is/pub-sub-messaging/"
-      }
-     ],
-     "file": "aws-sns@uFeiTRobSymkvCinhwmZV.md"
     },
     {
      "id": "Rzk6HlMosx3FN_JD5kELZ",
@@ -3145,50 +3014,6 @@
       }
      ],
      "file": "environmental-management@WUfJCLTajyLNK19gAAvoW.md"
-    }
-   ]
-  },
-  {
-   "heading": "Common Tools",
-   "nodes": [
-    {
-     "id": "N-xRhdOTHijAymcTWPXPJ",
-     "type": "subtopic",
-     "label": "Terraform",
-     "body": "Terraform is an open-source infrastructure as code (IaC) tool developed by HashiCorp, used to define, provision, and manage cloud and on-premises infrastructure using declarative configuration files. It supports multiple cloud providers like AWS, Azure, and Google Cloud, as well as various services and platforms, enabling infrastructure automation across diverse environments. Terraform's state management and modular structure allow for efficient scaling, reusability, and version control of infrastructure. It is widely used for automating infrastructure provisioning, reducing manual errors, and improving infrastructure consistency and repeatability.",
-     "resources": [
-      {
-       "kind": "roadmap",
-       "title": "Visit Dedicated Terraform Roadmap",
-       "url": "https://roadmap.sh/terraform"
-      },
-      {
-       "kind": "course",
-       "title": "Complete Terraform Course",
-       "url": "https://www.youtube.com/watch?v=7xngnjfIlK4"
-      },
-      {
-       "kind": "official",
-       "title": "Terraform Documentation",
-       "url": "https://www.terraform.io/docs"
-      },
-      {
-       "kind": "official",
-       "title": "Terraform Tutorials",
-       "url": "https://learn.hashicorp.com/terraform"
-      },
-      {
-       "kind": "article",
-       "title": "How to Scale Your Terraform Infrastructure",
-       "url": "https://thenewstack.io/how-to-scale-your-terraform-infrastructure/"
-      },
-      {
-       "kind": "feed",
-       "title": "Explore top posts about Terraform",
-       "url": "https://app.daily.dev/tags/terraform?ref=roadmapsh"
-      }
-     ],
-     "file": "terraform@N-xRhdOTHijAymcTWPXPJ.md"
     },
     {
      "id": "V30v5RLQrWSMBUIsZQG1o",
@@ -3220,25 +3045,6 @@
      "file": "data-analytics@V30v5RLQrWSMBUIsZQG1o.md"
     },
     {
-     "id": "WdlC0HhJ5YESfjXmdMnLU",
-     "type": "subtopic",
-     "label": "OpenTofu",
-     "body": "OpenTofu is an infrastructure as code tool that lets you define both cloud and on-prem resources in human-readable configuration files that you can version, reuse, and share. You can then use a consistent workflow to provision and manage all of your infrastructure throughout its lifecycle. OpenTofu can manage low-level components like compute, storage, and networking resources, as well as high-level components like DNS entries and SaaS features.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "OpenTofu Docs",
-       "url": "https://opentofu.org/docs/"
-      },
-      {
-       "kind": "video",
-       "title": "OpenWhat is OpenTofu ?Explained with Demo",
-       "url": "https://www.youtube.com/watch?v=6eHV63BVqmA"
-      }
-     ],
-     "file": "opentofu@WdlC0HhJ5YESfjXmdMnLU.md"
-    },
-    {
      "id": "zA5QqqBMsqymdiPGFdUnt",
      "type": "topic",
      "label": "Business Intelligence",
@@ -3268,45 +3074,6 @@
      "file": "business-intelligence@zA5QqqBMsqymdiPGFdUnt.md"
     },
     {
-     "id": "OKJ3HTfreitk2JdrfeLIK",
-     "type": "subtopic",
-     "label": "AWS CDK",
-     "body": "The AWS Cloud Development Kit (AWS CDK) is an open-source software development framework used to provision cloud infrastructure resources in a safe, repeatable manner through AWS CloudFormation. AWS CDK offers the flexibility to write infrastructure as code in popular languages like Python, Java, Go, and C#.",
-     "resources": [
-      {
-       "kind": "course",
-       "title": "AWS CDK Crash Course for Beginners",
-       "url": "https://www.youtube.com/watch?v=D4Asp5g4fp8"
-      },
-      {
-       "kind": "official",
-       "title": "AWS CDK",
-       "url": "https://aws.amazon.com/cdk/"
-      },
-      {
-       "kind": "official",
-       "title": "AWS CDK Documentation",
-       "url": "https://docs.aws.amazon.com/cdk/index.html"
-      },
-      {
-       "kind": "opensource",
-       "title": "AWS CDK Examples",
-       "url": "https://github.com/aws-samples/aws-cdk-examples"
-      },
-      {
-       "kind": "feed",
-       "title": "Explore top posts about AWS",
-       "url": "https://app.daily.dev/tags/aws?ref=roadmapsh"
-      }
-     ],
-     "file": "aws-cdk@OKJ3HTfreitk2JdrfeLIK.md"
-    }
-   ]
-  },
-  {
-   "heading": "BI Tools",
-   "nodes": [
-    {
      "id": "HDVhttLNMLmIAVEOBCOQ3",
      "type": "topic",
      "label": "Authentication vs Authorization",
@@ -3324,44 +3091,6 @@
       }
      ],
      "file": "authentication-vs-authorization@HDVhttLNMLmIAVEOBCOQ3.md"
-    },
-    {
-     "id": "1A98uTo8l_GQSrFxu5N2X",
-     "type": "subtopic",
-     "label": "Google Deployment  Mgr.",
-     "body": "Google Cloud Deployment Manager is an infrastructure deployment service that automates the creation and management of Google Cloud resources. It provides users with flexible template and configuration files to create deployments that have a variety of Google Cloud services, such as Cloud Storage, Compute Engine, and Cloud SQL, configured to work together.\n\nImportant, Google Deployment Manager will reach end of support on 31 December 2025. An alternative to this tool is **Google Infrastructure Manager**. Infrastructure Manager (Infra Manager) automates the deployment and management of Google Cloud infrastructure resources using Terraform. Infra Manager allows users to deploy programmatically to Google Cloud, allowing to use this service rather than maintaining a different toolchain to work with Terraform on Google Cloud.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Infrastructure Manager Overview",
-       "url": "https://cloud.google.com/infrastructure-manager/docs/overview"
-      },
-      {
-       "kind": "official",
-       "title": "Google Cloud Deployment Manager documentation",
-       "url": "https://cloud.google.com/deployment-manager/docs"
-      }
-     ],
-     "file": "google-deployment--mgr@1A98uTo8l_GQSrFxu5N2X.md"
-    },
-    {
-     "id": "6Nr5FAGT_oOPZwZWdv7hl",
-     "type": "subtopic",
-     "label": "Microsoft Power BI",
-     "body": "Microsoft Power BI is a business intelligence and data visualization platform from Microsoft. It connects to a wide range of data sources and allows users to build interactive dashboards and reports. Power BI integrates tightly with the Microsoft ecosystem including Azure and Excel.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Power BI",
-       "url": "https://www.microsoft.com/en-us/power-platform/products/power-bi"
-      },
-      {
-       "kind": "video",
-       "title": "Power BI for beginners",
-       "url": "https://www.youtube.com/watch?v=NNSHu0rkew8"
-      }
-     ],
-     "file": "microsoft-power-bi@6Nr5FAGT_oOPZwZWdv7hl.md"
     },
     {
      "id": "2PqRgrYuJi_pPhOS0AkoP",
@@ -3383,25 +3112,6 @@
      "file": "encryption@2PqRgrYuJi_pPhOS0AkoP.md"
     },
     {
-     "id": "FfU6Vwf0PXva91FoqxFgp",
-     "type": "subtopic",
-     "label": "Streamlit",
-     "body": "Streamlit is a free and open-source framework to rapidly build and share machine learning and data science web apps. It is a Python-based library specifically designed for data and machine learning engineers. Data scientists or machine learning engineers are not web developers and they're not interested in spending weeks learning to use these frameworks to build web apps. Instead, they want a tool that is easier to learn and to use, as long as it can display data and collect needed parameters for modeling.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Streamlit Docs",
-       "url": "https://docs.streamlit.io/"
-      },
-      {
-       "kind": "video",
-       "title": "EStreamlit Explained: Python Tutorial for Data Scientists",
-       "url": "https://www.youtube.com/watch?v=c8QXUrvSSyg"
-      }
-     ],
-     "file": "streamlit@FfU6Vwf0PXva91FoqxFgp.md"
-    },
-    {
      "id": "ZAKo9Svb8TQ6KkmOnfB5x",
      "type": "topic",
      "label": "Tokenization",
@@ -3414,25 +3124,6 @@
       }
      ],
      "file": "tokenization@ZAKo9Svb8TQ6KkmOnfB5x.md"
-    },
-    {
-     "id": "gqEAOwHFrQiYSejNUdV7-",
-     "type": "subtopic",
-     "label": "Tableu",
-     "body": "Tableau is a powerful data visualization tool utilized extensively by data analysts worldwide. Its primary role is to transform raw, unprocessed data into an understandable format without any technical skills or coding. Data analysts use Tableau to create data visualizations, reports, and dashboards that help businesses make more informed, data-driven decisions. They also use it to perform tasks like trend analysis, pattern identification, and forecasts, all within a user-friendly interface. Moreover, Tableau's data visualization capabilities make it easier for stakeholders to understand complex data and act on insights quickly.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Tableau",
-       "url": "https://www.tableau.com/en-gb"
-      },
-      {
-       "kind": "video",
-       "title": "What is Tableau?",
-       "url": "https://www.youtube.com/watch?v=NLCzpPRCc7U"
-      }
-     ],
-     "file": "tableu@gqEAOwHFrQiYSejNUdV7-.md"
     },
     {
      "id": "2Wu1Ufm2l1nrytz1mAxmJ",
@@ -3452,25 +3143,6 @@
       }
      ],
      "file": "data-masking@2Wu1Ufm2l1nrytz1mAxmJ.md"
-    },
-    {
-     "id": "fY0eZzz0aTXm2lelk8l3g",
-     "type": "subtopic",
-     "label": "Looker",
-     "body": "Looker is a Google cloud-based business intelligence and data analytics platform. It allows users to explore, analyze, and visualize data to gain insights and make data-driven decisions. Looker is known for its ability to connect to various data sources, create custom dashboards, and generate reports. It also facilitates the integration of analytics, visualizations, and relevant information into business processes.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Looker business intelligence platform embedded analytics",
-       "url": "https://cloud.google.com/looker"
-      },
-      {
-       "kind": "video",
-       "title": "What is Looker?",
-       "url": "https://www.youtube.com/watch?v=EmkNPAzla0Y&pp=0gcJCfwAo7VqN5tD"
-      }
-     ],
-     "file": "looker@fY0eZzz0aTXm2lelk8l3g.md"
     },
     {
      "id": "rUiYUV4ps6NYYYRwUnjuM",
@@ -3588,54 +3260,6 @@
      "body": "Common use cases for reverse ETL include syncing customer health scores to a CRM, pushing segmented user lists to a marketing automation platform, and sending product usage data to customer success tools. It enables business teams to act on insights derived in the data warehouse without needing access to it directly.",
      "resources": [],
      "file": "reverse-etl-usecases@mBOGrJIUaatBe2PnJM2NK.md"
-    }
-   ]
-  },
-  {
-   "heading": "Tools",
-   "nodes": [
-    {
-     "id": "8NTe5-XQ5tKAWUyg1rnzb",
-     "type": "subtopic",
-     "label": "Hightouch",
-     "body": "Hightouch is a reverse ETL and AI platform crafted for marketing and personalization, allowing companies to uncover insights, execute campaigns, and develop AI agents using their data. It features an AI Decisioning Platform for lifecycle marketing and a Composable Customer Data Platform (CDP) that is adaptable, secure, and quick to deploy, built on top of a data warehouse.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Hightouch Docs",
-       "url": "https://hightouch.com/docs"
-      },
-      {
-       "kind": "video",
-       "title": "What is Hightouch? - The Data Activation Platform",
-       "url": "https://www.youtube.com/watch?v=vMm87-MC7og"
-      }
-     ],
-     "file": "hightouch@8NTe5-XQ5tKAWUyg1rnzb.md"
-    },
-    {
-     "id": "vZGDtlyt_yj4szcPTw3cv",
-     "type": "subtopic",
-     "label": "Census",
-     "body": "Census is a reverse ETL platform that synchronizes data from a data warehouse to various business applications and SaaS apps like Salesforce and Hubspot. It's a crucial part of the modern data stack, enabling businesses to operationalize their data by making it available in the tools where teams work, like CRMs, marketing platforms, and more.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "Census Documentation",
-       "url": "https://developers.getcensus.com/getting-started/introduction"
-      },
-      {
-       "kind": "article",
-       "title": "A starter guide to reverse ETL with Census",
-       "url": "https://www.getcensus.com/blog/starter-guide-for-first-time-census-users"
-      },
-      {
-       "kind": "video",
-       "title": "How to \"Reverse ETL\" with Census",
-       "url": "https://www.youtube.com/watch?v=XkS7DQFHzbA"
-      }
-     ],
-     "file": "census@vZGDtlyt_yj4szcPTw3cv.md"
     },
     {
      "id": "MuPHohc7mJzcH5QdJ-K46",
@@ -3655,20 +3279,6 @@
       }
      ],
      "file": "gdpr@MuPHohc7mJzcH5QdJ-K46.md"
-    },
-    {
-     "id": "8vqjI-uFwJIr_TBEVyM_3",
-     "type": "subtopic",
-     "label": "Segment",
-     "body": "Segment is an analytics platform that provides a single API for collecting, storing, and routing customer data from various sources. With Segment, data engineers can easily add analytics tracking to their app, without having to integrate with multiple analytics tools individually. Segment acts as a single point of integration, allowing developers to send data to multiple analytics tools with a single API.",
-     "resources": [
-      {
-       "kind": "official",
-       "title": "flutter_segment",
-       "url": "https://pub.dev/packages/flutter_segment"
-      }
-     ],
-     "file": "segment@8vqjI-uFwJIr_TBEVyM_3.md"
     },
     {
      "id": "g1VwuSupohuDAT2O4hTXx",
@@ -3722,6 +3332,428 @@
       }
      ],
      "file": "eu-ai-act@tdqhFFvQ2dQVeQh1qTHjV.md"
+    }
+   ]
+  },
+  {
+   "heading": "Hadoop Ecosystem",
+   "nodes": [
+    {
+     "id": "0pH2U4GOj8zK3lgkh_r5M",
+     "type": "subtopic",
+     "label": "HDFS",
+     "body": "HDFS (Hadoop Distributed File System) is Hadoop’s primary storage system. It is designed to reliably store data across a cluster of machines. Its architecture is set up for this type of access to large datasets and is optimized for fault tolerance, scalability, and data locality.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "HDFS Architecture Guide",
+       "url": "https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html"
+      },
+      {
+       "kind": "article",
+       "title": "Hadoop Distributed File System (HDFS)",
+       "url": "https://www.databricks.com/glossary/hadoop-distributed-file-system-hdfs"
+      },
+      {
+       "kind": "article",
+       "title": "What is Hadoop Distributed File System (HDFS)?",
+       "url": "https://www.ibm.com/think/topics/hdfs"
+      }
+     ],
+     "file": "hdfs@0pH2U4GOj8zK3lgkh_r5M.md"
+    },
+    {
+     "id": "KcW4z48pk2x6IjQhZs_Ub",
+     "type": "subtopic",
+     "label": "YARN",
+     "body": "Apache Hadoop YARN (Yet Another Resource Negotiator) is the part of Hadoop that manages resources and runs jobs on a cluster. It has a ResourceManager that controls all cluster resources and an ApplicationMaster for each job that schedules and runs tasks. YARN lets different tools like MapReduce and Spark share the same cluster, making it more efficient, flexible, and reliable.",
+     "resources": [
+      {
+       "kind": "video",
+       "title": "Hadoop Yarn Tutorial",
+       "url": "https://www.youtube.com/watch?v=6bIF9VwRwE0"
+      }
+     ],
+     "file": "yarn@KcW4z48pk2x6IjQhZs_Ub.md"
+    },
+    {
+     "id": "__tWu5uZYnmnuR-qO9SOR",
+     "type": "subtopic",
+     "label": "MapReduce",
+     "body": "MapReduce is a prominent data processing technique used by Data Analysts around the world. It allows them to handle large data sets with complex, unstructured data efficiently. MapReduce breaks down a big data problem into smaller sub-tasks (Map) and then takes those results to create an output in a more usable format (Reduce). This technique is particularly useful in conducting exploratory analysis, as well as in handling big data operations such as text processing, graph processing, or more complicated machine learning algorithms.",
+     "resources": [
+      {
+       "kind": "article",
+       "title": "MapReduce",
+       "url": "https://www.databricks.com/glossary/mapreduce"
+      },
+      {
+       "kind": "article",
+       "title": "What is Apache MapReduce?",
+       "url": "https://www.ibm.com/topics/mapreduce"
+      }
+     ],
+     "file": "mapreduce@__tWu5uZYnmnuR-qO9SOR.md"
+    }
+   ]
+  },
+  {
+   "heading": "Common Tools",
+   "nodes": [
+    {
+     "id": "fTpx6m8U0506ZLCdDU5OG",
+     "type": "subtopic",
+     "label": "Apache Kafka",
+     "body": "Apache Kafka is an open-source stream-processing software platform developed by LinkedIn and donated to the Apache Software Foundation. It is written in Scala and Java and operates based on a message queue, designed to handle real-time data feeds. Kafka functions as a kind of message broker service in between the data producers and the consumers, facilitating efficient transmission of data. It can be viewed as a durable message broker where applications can process and reprocess streamed data. Kafka is a highly scalable and fault-tolerant system which ensures data delivery without loss.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Apache Kafka Docs",
+       "url": "https://kafka.apache.org/43/getting-started/introduction/"
+      },
+      {
+       "kind": "article",
+       "title": "Kafka Streams Confluent",
+       "url": "https://kafka.apache.org/documentation/streams/"
+      },
+      {
+       "kind": "video",
+       "title": "Apache Kafka Fundamentals",
+       "url": "https://www.youtube.com/watch?v=B5j3uNBH8X4"
+      },
+      {
+       "kind": "video",
+       "title": "Kafka in 100 Seconds",
+       "url": "https://www.youtube.com/watch?v=uvb00oaa3k8"
+      }
+     ],
+     "file": "apache-kafka@fTpx6m8U0506ZLCdDU5OG.md"
+    },
+    {
+     "id": "ERcgPTACqYo9BXoRdLjbd",
+     "type": "subtopic",
+     "label": "RabbitMQ",
+     "body": "RabbitMQ is an open-source message broker that implements the AMQP protocol. It routes messages between producers and consumers using exchanges and queues, supporting patterns like publish/subscribe, work queues, and routing. RabbitMQ is used for task queues, service-to-service communication, and event notification systems.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "RabbitMQ Tutorials",
+       "url": "https://www.rabbitmq.com/getstarted.html"
+      },
+      {
+       "kind": "video",
+       "title": "RabbitMQ Tutorial - Message Queues and Distributed Systems",
+       "url": "https://www.youtube.com/watch?v=nFxjaVmFj5E"
+      },
+      {
+       "kind": "video",
+       "title": "RabbitMQ in 100 Seconds",
+       "url": "https://m.youtube.com/watch?v=NQ3fZtyXji0"
+      }
+     ],
+     "file": "rabbitmq@ERcgPTACqYo9BXoRdLjbd.md"
+    },
+    {
+     "id": "uIU5Yncp6hGDcNO1fpjUS",
+     "type": "subtopic",
+     "label": "AWS SQS",
+     "body": "Amazon Simple Queue Service (Amazon SQS) offers a secure, durable, and available hosted queue that lets you integrate and decouple distributed software systems and components. Amazon SQS offers common constructs such as dead-letter queues and cost allocation tags. It provides a generic web services API that you can access using any programming language that the AWS SDK supports.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Amazon Simple Queue Service",
+       "url": "https://aws.amazon.com/sqs/"
+      },
+      {
+       "kind": "official",
+       "title": "What is Amazon Simple Queue Service?",
+       "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html"
+      }
+     ],
+     "file": "aws-sqs@uIU5Yncp6hGDcNO1fpjUS.md"
+    },
+    {
+     "id": "uFeiTRobSymkvCinhwmZV",
+     "type": "subtopic",
+     "label": "AWS SNS",
+     "body": "Amazon SNS (Simple Notification Service) is a fully managed pub/sub messaging service from AWS. It allows a single message to be sent to multiple subscribers simultaneously through topics. SNS is commonly used alongside SQS to fan out messages to multiple queues or trigger downstream processing in Lambda functions and data pipelines.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Amazon Simple Notification Service (SNS)",
+       "url": "http://aws.amazon.com/sns/"
+      },
+      {
+       "kind": "official",
+       "title": "Send Fanout Event Notifications",
+       "url": "https://aws.amazon.com/getting-started/hands-on/send-fanout-event-notifications/"
+      },
+      {
+       "kind": "article",
+       "title": "What is Pub/Sub Messaging?",
+       "url": "https://aws.amazon.com/what-is/pub-sub-messaging/"
+      }
+     ],
+     "file": "aws-sns@uFeiTRobSymkvCinhwmZV.md"
+    }
+   ]
+  },
+  {
+   "heading": "Common Tools",
+   "nodes": [
+    {
+     "id": "N-xRhdOTHijAymcTWPXPJ",
+     "type": "subtopic",
+     "label": "Terraform",
+     "body": "Terraform is an open-source infrastructure as code (IaC) tool developed by HashiCorp, used to define, provision, and manage cloud and on-premises infrastructure using declarative configuration files. It supports multiple cloud providers like AWS, Azure, and Google Cloud, as well as various services and platforms, enabling infrastructure automation across diverse environments. Terraform's state management and modular structure allow for efficient scaling, reusability, and version control of infrastructure. It is widely used for automating infrastructure provisioning, reducing manual errors, and improving infrastructure consistency and repeatability.",
+     "resources": [
+      {
+       "kind": "roadmap",
+       "title": "Visit Dedicated Terraform Roadmap",
+       "url": "https://roadmap.sh/terraform"
+      },
+      {
+       "kind": "course",
+       "title": "Complete Terraform Course",
+       "url": "https://www.youtube.com/watch?v=7xngnjfIlK4"
+      },
+      {
+       "kind": "official",
+       "title": "Terraform Documentation",
+       "url": "https://www.terraform.io/docs"
+      },
+      {
+       "kind": "official",
+       "title": "Terraform Tutorials",
+       "url": "https://learn.hashicorp.com/terraform"
+      },
+      {
+       "kind": "article",
+       "title": "How to Scale Your Terraform Infrastructure",
+       "url": "https://thenewstack.io/how-to-scale-your-terraform-infrastructure/"
+      },
+      {
+       "kind": "feed",
+       "title": "Explore top posts about Terraform",
+       "url": "https://app.daily.dev/tags/terraform?ref=roadmapsh"
+      }
+     ],
+     "file": "terraform@N-xRhdOTHijAymcTWPXPJ.md"
+    },
+    {
+     "id": "WdlC0HhJ5YESfjXmdMnLU",
+     "type": "subtopic",
+     "label": "OpenTofu",
+     "body": "OpenTofu is an infrastructure as code tool that lets you define both cloud and on-prem resources in human-readable configuration files that you can version, reuse, and share. You can then use a consistent workflow to provision and manage all of your infrastructure throughout its lifecycle. OpenTofu can manage low-level components like compute, storage, and networking resources, as well as high-level components like DNS entries and SaaS features.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "OpenTofu Docs",
+       "url": "https://opentofu.org/docs/"
+      },
+      {
+       "kind": "video",
+       "title": "OpenWhat is OpenTofu ?Explained with Demo",
+       "url": "https://www.youtube.com/watch?v=6eHV63BVqmA"
+      }
+     ],
+     "file": "opentofu@WdlC0HhJ5YESfjXmdMnLU.md"
+    },
+    {
+     "id": "OKJ3HTfreitk2JdrfeLIK",
+     "type": "subtopic",
+     "label": "AWS CDK",
+     "body": "The AWS Cloud Development Kit (AWS CDK) is an open-source software development framework used to provision cloud infrastructure resources in a safe, repeatable manner through AWS CloudFormation. AWS CDK offers the flexibility to write infrastructure as code in popular languages like Python, Java, Go, and C#.",
+     "resources": [
+      {
+       "kind": "course",
+       "title": "AWS CDK Crash Course for Beginners",
+       "url": "https://www.youtube.com/watch?v=D4Asp5g4fp8"
+      },
+      {
+       "kind": "official",
+       "title": "AWS CDK",
+       "url": "https://aws.amazon.com/cdk/"
+      },
+      {
+       "kind": "official",
+       "title": "AWS CDK Documentation",
+       "url": "https://docs.aws.amazon.com/cdk/index.html"
+      },
+      {
+       "kind": "opensource",
+       "title": "AWS CDK Examples",
+       "url": "https://github.com/aws-samples/aws-cdk-examples"
+      },
+      {
+       "kind": "feed",
+       "title": "Explore top posts about AWS",
+       "url": "https://app.daily.dev/tags/aws?ref=roadmapsh"
+      }
+     ],
+     "file": "aws-cdk@OKJ3HTfreitk2JdrfeLIK.md"
+    },
+    {
+     "id": "1A98uTo8l_GQSrFxu5N2X",
+     "type": "subtopic",
+     "label": "Google Deployment  Mgr.",
+     "body": "Google Cloud Deployment Manager is an infrastructure deployment service that automates the creation and management of Google Cloud resources. It provides users with flexible template and configuration files to create deployments that have a variety of Google Cloud services, such as Cloud Storage, Compute Engine, and Cloud SQL, configured to work together.\n\nImportant, Google Deployment Manager will reach end of support on 31 December 2025. An alternative to this tool is **Google Infrastructure Manager**. Infrastructure Manager (Infra Manager) automates the deployment and management of Google Cloud infrastructure resources using Terraform. Infra Manager allows users to deploy programmatically to Google Cloud, allowing to use this service rather than maintaining a different toolchain to work with Terraform on Google Cloud.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Infrastructure Manager Overview",
+       "url": "https://cloud.google.com/infrastructure-manager/docs/overview"
+      },
+      {
+       "kind": "official",
+       "title": "Google Cloud Deployment Manager documentation",
+       "url": "https://cloud.google.com/deployment-manager/docs"
+      }
+     ],
+     "file": "google-deployment--mgr@1A98uTo8l_GQSrFxu5N2X.md"
+    }
+   ]
+  },
+  {
+   "heading": "BI Tools",
+   "nodes": [
+    {
+     "id": "6Nr5FAGT_oOPZwZWdv7hl",
+     "type": "subtopic",
+     "label": "Microsoft Power BI",
+     "body": "Microsoft Power BI is a business intelligence and data visualization platform from Microsoft. It connects to a wide range of data sources and allows users to build interactive dashboards and reports. Power BI integrates tightly with the Microsoft ecosystem including Azure and Excel.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Power BI",
+       "url": "https://www.microsoft.com/en-us/power-platform/products/power-bi"
+      },
+      {
+       "kind": "video",
+       "title": "Power BI for beginners",
+       "url": "https://www.youtube.com/watch?v=NNSHu0rkew8"
+      }
+     ],
+     "file": "microsoft-power-bi@6Nr5FAGT_oOPZwZWdv7hl.md"
+    },
+    {
+     "id": "FfU6Vwf0PXva91FoqxFgp",
+     "type": "subtopic",
+     "label": "Streamlit",
+     "body": "Streamlit is a free and open-source framework to rapidly build and share machine learning and data science web apps. It is a Python-based library specifically designed for data and machine learning engineers. Data scientists or machine learning engineers are not web developers and they're not interested in spending weeks learning to use these frameworks to build web apps. Instead, they want a tool that is easier to learn and to use, as long as it can display data and collect needed parameters for modeling.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Streamlit Docs",
+       "url": "https://docs.streamlit.io/"
+      },
+      {
+       "kind": "video",
+       "title": "EStreamlit Explained: Python Tutorial for Data Scientists",
+       "url": "https://www.youtube.com/watch?v=c8QXUrvSSyg"
+      }
+     ],
+     "file": "streamlit@FfU6Vwf0PXva91FoqxFgp.md"
+    },
+    {
+     "id": "gqEAOwHFrQiYSejNUdV7-",
+     "type": "subtopic",
+     "label": "Tableu",
+     "body": "Tableau is a powerful data visualization tool utilized extensively by data analysts worldwide. Its primary role is to transform raw, unprocessed data into an understandable format without any technical skills or coding. Data analysts use Tableau to create data visualizations, reports, and dashboards that help businesses make more informed, data-driven decisions. They also use it to perform tasks like trend analysis, pattern identification, and forecasts, all within a user-friendly interface. Moreover, Tableau's data visualization capabilities make it easier for stakeholders to understand complex data and act on insights quickly.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Tableau",
+       "url": "https://www.tableau.com/en-gb"
+      },
+      {
+       "kind": "video",
+       "title": "What is Tableau?",
+       "url": "https://www.youtube.com/watch?v=NLCzpPRCc7U"
+      }
+     ],
+     "file": "tableu@gqEAOwHFrQiYSejNUdV7-.md"
+    },
+    {
+     "id": "fY0eZzz0aTXm2lelk8l3g",
+     "type": "subtopic",
+     "label": "Looker",
+     "body": "Looker is a Google cloud-based business intelligence and data analytics platform. It allows users to explore, analyze, and visualize data to gain insights and make data-driven decisions. Looker is known for its ability to connect to various data sources, create custom dashboards, and generate reports. It also facilitates the integration of analytics, visualizations, and relevant information into business processes.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Looker business intelligence platform embedded analytics",
+       "url": "https://cloud.google.com/looker"
+      },
+      {
+       "kind": "video",
+       "title": "What is Looker?",
+       "url": "https://www.youtube.com/watch?v=EmkNPAzla0Y&pp=0gcJCfwAo7VqN5tD"
+      }
+     ],
+     "file": "looker@fY0eZzz0aTXm2lelk8l3g.md"
+    }
+   ]
+  },
+  {
+   "heading": "Tools",
+   "nodes": [
+    {
+     "id": "8NTe5-XQ5tKAWUyg1rnzb",
+     "type": "subtopic",
+     "label": "Hightouch",
+     "body": "Hightouch is a reverse ETL and AI platform crafted for marketing and personalization, allowing companies to uncover insights, execute campaigns, and develop AI agents using their data. It features an AI Decisioning Platform for lifecycle marketing and a Composable Customer Data Platform (CDP) that is adaptable, secure, and quick to deploy, built on top of a data warehouse.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Hightouch Docs",
+       "url": "https://hightouch.com/docs"
+      },
+      {
+       "kind": "video",
+       "title": "What is Hightouch? - The Data Activation Platform",
+       "url": "https://www.youtube.com/watch?v=vMm87-MC7og"
+      }
+     ],
+     "file": "hightouch@8NTe5-XQ5tKAWUyg1rnzb.md"
+    },
+    {
+     "id": "vZGDtlyt_yj4szcPTw3cv",
+     "type": "subtopic",
+     "label": "Census",
+     "body": "Census is a reverse ETL platform that synchronizes data from a data warehouse to various business applications and SaaS apps like Salesforce and Hubspot. It's a crucial part of the modern data stack, enabling businesses to operationalize their data by making it available in the tools where teams work, like CRMs, marketing platforms, and more.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "Census Documentation",
+       "url": "https://developers.getcensus.com/getting-started/introduction"
+      },
+      {
+       "kind": "article",
+       "title": "A starter guide to reverse ETL with Census",
+       "url": "https://www.getcensus.com/blog/starter-guide-for-first-time-census-users"
+      },
+      {
+       "kind": "video",
+       "title": "How to \"Reverse ETL\" with Census",
+       "url": "https://www.youtube.com/watch?v=XkS7DQFHzbA"
+      }
+     ],
+     "file": "census@vZGDtlyt_yj4szcPTw3cv.md"
+    },
+    {
+     "id": "8vqjI-uFwJIr_TBEVyM_3",
+     "type": "subtopic",
+     "label": "Segment",
+     "body": "Segment is an analytics platform that provides a single API for collecting, storing, and routing customer data from various sources. With Segment, data engineers can easily add analytics tracking to their app, without having to integrate with multiple analytics tools individually. Segment acts as a single point of integration, allowing developers to send data to multiple analytics tools with a single API.",
+     "resources": [
+      {
+       "kind": "official",
+       "title": "flutter_segment",
+       "url": "https://pub.dev/packages/flutter_segment"
+      }
+     ],
+     "file": "segment@8vqjI-uFwJIr_TBEVyM_3.md"
     }
    ]
   },

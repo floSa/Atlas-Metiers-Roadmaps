@@ -26,8 +26,6 @@ Statistics is the science of collecting, analyzing, interpreting, presenting, an
 - `@course` [Statistics with Python Specialization](https://www.coursera.org/specializations/statistics-with-python)
 - `@video` [StatQuest with Josh Starmer](https://www.youtube.com/@statquest)
 
-## 1
-
 ## 2
 
 #### Linear Algebra, Calculus, Mathematical Analysis
@@ -117,18 +115,14 @@ MLOps is a practice for collaboration and communication between data scientists 
 
 - `@roadmap` [Visit the Dedicated MLOps Roadmap](https://roadmap.sh/mlops)
 
-## 8
-
-#### Deployment Models, CI/CD
+### AI Engineering
 
 ### Vibe Coding
 
-### AI Engineering
-
 ## 10
 
-## 9
-
-#### AI Coding Assitants, AI App Builders
+#### Deployment Models, CI/CD
 
 #### Prompt Engineering, LLMs, RAG, Agents, Fine-tuning
+
+#### AI Coding Assitants, AI App Builders
