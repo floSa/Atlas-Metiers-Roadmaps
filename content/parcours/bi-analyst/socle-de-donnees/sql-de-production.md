@@ -10,13 +10,15 @@ flowchart TD
   EN["Entrepôt de données<br/>ce que le moteur change à l'écriture"]
   TD["Traitement distribué<br/>quand le volume dépasse un seul nœud"]
   TB["Tableur<br/>la frontière où le SQL reprend la main"]
-  PY["Python pour la data<br/>ce que SQL fait mal"]
+  PD["Pandas<br/>ce que SQL fait mal, côté Python"]
+  RT["R et tidyverse<br/>la même place, côté R"]
 
   click SQ "/notions/sql"
   click EN "/notions/entrepot-de-donnees"
   click TD "/notions/traitement-distribue"
   click TB "/notions/tableur"
-  click PY "/notions/python-pour-la-data"
+  click PD "/notions/pandas"
+  click RT "/notions/r-et-tidyverse"
 ```
 
 ## Ce qu'il faut savoir faire
@@ -34,7 +36,8 @@ flowchart TD
 - [[notions/entrepot-de-donnees]] — le stockage colonnaire explique pourquoi la même requête change d'ordre de grandeur selon le moteur.
 - [[notions/traitement-distribue]] — le seuil à partir duquel la question cesse d'être une question de requête.
 - [[notions/tableur]] — la limite au-delà de laquelle un calcul doit remonter dans le SQL pour être tenable.
-- [[notions/python-pour-la-data]] — le complément assumé, cantonné à ce qui ne s'exprime pas en SQL.
+- [[notions/pandas]] — le complément assumé côté Python, cantonné à ce qui ne s'exprime pas en SQL.
+- [[notions/r-et-tidyverse]] — le même rôle côté R, selon l'écosystème déjà en place dans l'entreprise.
 
 > [!tip] La première requête utile
 > Sur une table inconnue, elle n'est pas métier : c'est un inventaire. Combien de lignes, depuis quand, combien de valeurs nulles par colonne, quelles valeurs distinctes sur les colonnes censées être normalisées. Elle prend dix minutes et elle évite de concevoir un modèle sur une hypothèse fausse.
