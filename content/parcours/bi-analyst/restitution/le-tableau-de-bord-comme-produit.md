@@ -6,10 +6,17 @@ Un tableau de bord a des utilisateurs identifiés, une raison d'exister formulé
 
 ```mermaid
 flowchart TD
-  U["Utilisateurs identifiés"] --> R["Raison d'exister<br/>une décision, pas un sujet"]
-  R --> P["Propriétaire nommé"]
-  P --> C["Coût de fonctionnement connu"]
-  C --> D["Date de revue<br/>et retrait si sans usage"]
+  U["Utilisateurs identifiés<br/>et leur usage mesuré"]
+  R["Raison d'exister<br/>une décision, pas un sujet"]
+  P["Propriétaire nommé<br/>une personne, pas une direction"]
+  C["Coût de fonctionnement connu<br/>calcul, stockage, licences"]
+  D["Date de revue<br/>et retrait si sans usage"]
+
+  click U "/notions/mesure-d-usage-produit"
+  click R "/notions/cadrage-besoin"
+  click P "/notions/gouvernance-ia"
+  click C "/parcours/bi-analyst/entrepot-et-architecture/le-cout-de-la-plateforme"
+  click D "/parcours/bi-analyst/restitution/instrumenter-et-retirer"
 ```
 
 ## Ce qu'il faut savoir faire
