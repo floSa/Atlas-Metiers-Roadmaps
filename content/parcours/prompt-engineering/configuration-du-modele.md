@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/prompt-engineering
 ---
 
+**Usage.** Deux ou trois paramètres comptent vraiment, leur documentation est publique et l'arbitrage réel se tranche dans le jeu d'évaluation et non dans le réglage : savoir s'en servir sur un chemin balisé suffit, et prétendre davantage serait de la superstition outillée.
+
 Les paramètres d'appel agissent sur la **sélection** du token, jamais sur la distribution apprise : ce sont des leviers de forme et de variance, pas de qualité de raisonnement.
 
 ```mermaid

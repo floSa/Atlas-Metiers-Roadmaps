@@ -10,19 +10,19 @@ source: https://roadmap.sh/prompt-engineering
 
 ## La roadmap
 
-Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
+Chaque case mène à sa page et porte le niveau attendu chez un profil **confirmé** — de **notion** (reconnaître le sujet, savoir qui appeler) à **référence** (faire autorité dans la salle). Cochez les étapes acquises en bas de page pour suivre votre progression.
 
 ```mermaid
 flowchart TD
-  F["Fondations et vocabulaire<br/>token, fenêtre, échantillonnage"] --> C["Configuration du modèle<br/>sampling, budget de raisonnement"]
-  C --> S["Sorties structurées<br/>du texte libre à la fonction typée"]
-  S --> T["Techniques de prompting<br/>ce qui survit, ce qui est du folklore"]
-  T --> E["Évaluation et fiabilité<br/>le préalable à tout le reste"]
-  E --> CE["Context engineering<br/>quoi mettre, où, quoi retirer"]
-  E --> O["Optimisation automatique<br/>compiler le prompt plutôt que l'écrire"]
-  CE --> P["Prompts en production<br/>versionner, tracer, router"]
+  F["Fondations et vocabulaire<br/>Autonomie<br/>token, fenêtre, échantillonnage"] --> C["Configuration du modèle<br/>Usage<br/>sampling, budget de raisonnement"]
+  C --> S["Sorties structurées<br/>Autonomie<br/>du texte libre à la fonction typée"]
+  S --> T["Techniques de prompting<br/>Autonomie<br/>ce qui survit, ce qui est du folklore"]
+  T --> E["Évaluation et fiabilité<br/>Référence<br/>le préalable à tout le reste"]
+  E --> CE["Context engineering<br/>Référence<br/>quoi mettre, où, quoi retirer"]
+  E --> O["Optimisation automatique<br/>Usage<br/>compiler le prompt plutôt que l'écrire"]
+  CE --> P["Prompts en production<br/>Autonomie<br/>versionner, tracer, router"]
   O --> P
-  SEC["Sécurité du prompt<br/>injection, trio dangereux"] -.-> P
+  SEC["Sécurité du prompt<br/>Autonomie<br/>injection, trio dangereux"] -.-> P
 
   click F "/parcours/prompt-engineering/fondations-et-vocabulaire"
   click C "/parcours/prompt-engineering/configuration-du-modele"

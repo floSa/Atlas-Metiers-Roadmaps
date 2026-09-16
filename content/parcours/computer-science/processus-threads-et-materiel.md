@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/computer-science
 ---
 
+**Autonomie.** L'incident de production d'un pipeline ou d'un entraînement est presque toujours ici, et il faut le diagnostiquer seul, la nuit — la référence restant chez qui écrit les noyaux de calcul, pas chez qui les fait tourner.
+
 Le chapitre qui transforme les incidents mystérieux en diagnostics : un chargeur de données qui bloque, une mémoire qui explose au *fork*, un travail qui n'utilise que quinze pour cent des cœurs.
 
 ```mermaid

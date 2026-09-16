@@ -10,19 +10,19 @@ Les fondations qui ne se périment pas — algorithmique, représentation, index
 
 ## La roadmap
 
-Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
+Chaque case mène à sa page et porte le niveau attendu chez un **ingénieur confirmé qui travaille dans l'IA ou la data** — pas chez un chercheur en informatique. Aucun domaine n'est en **référence** : un socle se maîtrise, il ne se revendique pas comme spécialité. Cochez les étapes acquises en bas de page pour suivre votre progression.
 
 ```mermaid
 flowchart TD
-  L["Langages et structures<br/>le contrat de coûts"] --> A["Complexité et algorithmes<br/>quatre schémas de raisonnement"]
-  A --> R["Représentation en machine<br/>encodages, flottants, chaînes"]
-  A --> I["Index et arbres de recherche<br/>retrouver sans tout lire"]
-  I --> B["Bases de données<br/>transactions, plans, distribution"]
-  R --> M["Processus, threads et matériel<br/>diagnostiquer l'incident mystérieux"]
-  B --> N["Réseau et system design<br/>ce qui casse quand le code marche"]
+  L["Langages et structures<br/>Autonomie<br/>le contrat de coûts"] --> A["Complexité et algorithmes<br/>Usage<br/>quatre schémas de raisonnement"]
+  A --> R["Représentation en machine<br/>Usage<br/>encodages, flottants, chaînes"]
+  A --> I["Index et arbres de recherche<br/>Autonomie<br/>retrouver sans tout lire"]
+  I --> B["Bases de données<br/>Autonomie<br/>transactions, plans, distribution"]
+  R --> M["Processus, threads et matériel<br/>Autonomie<br/>diagnostiquer l'incident mystérieux"]
+  B --> N["Réseau et system design<br/>Autonomie<br/>ce qui casse quand le code marche"]
   M --> N
-  N --> S["Sécurité<br/>encoder, hacher, chiffrer"]
-  C["Conception logicielle<br/>patterns, UML, diagrammes"] -.-> B
+  N --> S["Sécurité<br/>Usage<br/>encoder, hacher, chiffrer"]
+  C["Conception logicielle<br/>Notion<br/>patterns, UML, diagrammes"] -.-> B
   C -.-> N
 
   click L "/parcours/computer-science/langages-et-structures-de-donnees"

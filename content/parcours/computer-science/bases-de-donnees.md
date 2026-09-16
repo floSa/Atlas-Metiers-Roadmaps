@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/computer-science
 ---
 
+**Autonomie.** C'est le composant qu'on maltraite le plus et celui qu'il faut déboguer sous pression — lire un plan d'exécution, choisir un niveau d'isolation, accepter une dénormalisation — sans prétendre au niveau de l'administrateur de base, qui reste la référence.
+
 La base de données est là où vivent réellement les données d'entreprise, et c'est le composant qu'un profil data maltraite le plus.
 
 ```mermaid

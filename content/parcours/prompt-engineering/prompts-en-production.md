@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/prompt-engineering
 ---
 
+**Autonomie.** Versionner, tracer, router et tenir un coût par requête pendant un an relève de la conception et de l'arbitrage, mais la plateforme d'observabilité appartient à l'équipe qui l'exploite : on la conçoit avec elle, on n'en fait pas autorité.
+
 Prise une par une, chaque bonne pratique est évidente ; ce qui ne l'est pas, c'est de les tenir toutes sur un système vivant pendant un an.
 
 ```mermaid

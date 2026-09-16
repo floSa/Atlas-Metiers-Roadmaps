@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/prompt-engineering
 ---
 
+**Usage.** Les optimiseurs se conduisent documentation ouverte, et leur bénéfice dépend surtout de la qualité du jeu d'évaluation en amont : l'attendu est de les avoir fait tourner et de savoir quand ils paient, pas de les réimplémenter.
+
 Dès qu'on dispose d'un jeu d'exemples annotés et d'une métrique, l'écriture d'un prompt devient un problème de recherche que la machine résout mieux et plus vite qu'un humain.
 
 ```mermaid
