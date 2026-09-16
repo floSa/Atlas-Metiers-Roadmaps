@@ -2,7 +2,7 @@
 title: Registres et horizons
 ---
 
-Quatre registres — descriptif, diagnostic, prédictif, prescriptif — qui ne sont pas une échelle de maturité mais quatre questions différentes ; et trois horizons — stratégique, tactique, opérationnel — qui calibrent la fraîcheur et la granularité.
+Quatre registres — descriptif, diagnostic, prédictif, prescriptif — qui ne sont pas une échelle de maturité mais quatre questions différentes ; et trois horizons qui les traversent en calibrant la fraîcheur et la granularité : stratégique à cinq ou dix ans, tactique à un ou trois ans, opérationnel à trois ou six mois.
 
 ```mermaid
 flowchart TD
@@ -16,10 +16,6 @@ flowchart TD
   click D3 "/notions/apprentissage-supervise"
   click D4 "/notions/arbitrage-deterministe-probabiliste"
 ```
-
-Les trois horizons — stratégique à cinq ou dix ans, tactique à un ou trois ans,
-opérationnel à trois ou six mois — traversent les quatre registres et en calibrent
-la fraîcheur et la granularité.
 
 ## Ce qu'il faut savoir faire
 
