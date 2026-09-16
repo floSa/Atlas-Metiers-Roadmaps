@@ -323,3 +323,91 @@ L'inversion ETL vers ELT est l'autre changement structurant. Dans l'ETL classiqu
 > Laisser la logique métier dans l'outil de restitution. Une mesure calculée dans Power BI ou Tableau n'est ni testable, ni versionnée, ni réutilisable par un autre outil, et elle sera réécrite différemment dans le rapport suivant. La règle qui tient : tout ce qui est une **définition** remonte dans la transformation ou la couche sémantique ; l'outil de restitution ne fait que du dessin et de l'interaction.
 
 ---
+
+## 8. La couche sémantique et les définitions partagées
+
+```mermaid
+flowchart TD
+  cf["Calculated Fields & Measures"] --> sem["Couche sémantique"]:::ajout
+  sem --> d1["Définition unique d'une mesure"]:::ajout
+  sem --> d2["Dimensions et axes d'analyse autorisés"]:::ajout
+  sem --> d3["Hiérarchies et périodes comparables"]:::ajout
+  sem --> d4["Droits d'accès à la ligne"]:::ajout
+  sem --> impl["Où elle vit"]:::ajout
+  impl --> i1["Dans l'outil - modèle Power BI, LookML"]:::ajout
+  impl --> i2["Découplée - MetricFlow de dbt, Cube"]:::ajout
+  impl --> i3["Dans l'entrepôt - vues et tables de présentation"]:::ajout
+  sem --> gov["Gouvernance des définitions"]:::ajout
+  gov --> g1["Propriétaire par mesure"]:::ajout
+  gov --> g2["Versionnement et journal des changements"]:::ajout
+  gov --> g3["Dépréciation plutôt que suppression"]:::ajout
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** C'est le vrai travail du métier, et l'amont ne lui consacre qu'un nœud — *Calculated Fields & Measures* — en le traitant comme une fonctionnalité d'outil. C'est bien plus que ça. La couche sémantique est l'endroit où « chiffre d'affaires », « client actif », « marge brute » et « délai de livraison » reçoivent **une** définition, exprimée en une seule fois, et à partir de laquelle tous les rapports sont construits. Sans elle, chaque rapport contient sa propre version du calcul, les versions divergent à mesure que les règles évoluent, et l'entreprise se retrouve avec trois chiffres d'affaires selon l'outil consulté.
+
+Le symptôme se reconnaît immédiatement : une réunion où la direction commerciale et la direction financière affichent deux nombres différents pour la même chose, et où la demi-heure suivante est consacrée à comprendre pourquoi au lieu de décider. Ce qui se joue là n'est pas un bug, c'est l'absence de couche sémantique. Et la cause est presque toujours la même : les deux chiffres sont *tous les deux justes*, calculés sur deux définitions légitimes que personne n'a arbitrées.
+
+Une couche sémantique porte quatre choses. Les **mesures**, avec leur formule et leur règle d'agrégation. Les **dimensions** par lesquelles on a le droit de les découper, ce qui interdit par construction les croisements absurdes. Les **hiérarchies et périodes comparables**, qui donnent un sens univoque à « le mois dernier » et « à la même période l'an dernier ». Et les **droits d'accès à la ligne**, qui font qu'un directeur régional ne voit que sa région sans qu'on ait à dupliquer le rapport.
+
+**Ce qu'il faut savoir**
+
+- Une mesure se définit par sa formule **et** sa règle d'agrégation. « Chiffre d'affaires » se somme, « nombre de clients distincts » ne se somme pas (le distinct ne s'additionne pas entre segments), « taux de marge » se recalcule à chaque niveau depuis ses deux composants. Une couche sémantique correcte sait faire ces trois choses différemment ; un champ calculé dans un rapport n'en sait faire qu'une.
+- Le ratio de ratios est le test décisif — si la marge affichée sur le total national n'est pas la moyenne des marges régionales, ta couche calcule correctement. Si elle l'est, elle somme des pourcentages et tous tes agrégats sont faux. Vérifie-le dès le premier modèle.
+- Trois emplacements possibles, trois compromis. **Dans l'outil de restitution** — le plus rapide à mettre en place, définitions inaccessibles aux autres outils et au SQL direct. **Découplée** — MetricFlow de dbt, Cube et leurs équivalents exposent les mesures à plusieurs consommateurs par une interface commune, au prix d'une brique de plus à opérer. **Dans l'entrepôt**, sous forme de vues et de tables de présentation — le plus universel, puisque tout ce qui parle SQL y a accès, mais incapable de porter les agrégations non additives et les périodes comparables sans démultiplier les vues. En pratique, une combinaison : les tables de présentation portent les mesures additives, la couche découplée ou l'outil portent le reste.
+- Le dictionnaire des métriques (section 2) et la couche sémantique doivent être le même objet. Si la documentation vit dans un tableur et les définitions dans le code, elles divergeront en trois mois. Fais générer la documentation depuis les définitions.
+- Chaque mesure a un propriétaire métier nommé. Pas une direction, une personne. C'est elle qui valide un changement de définition, et c'est aussi elle qu'on cite quand le chiffre est contesté.
+- Changer une définition se fait comme un changement d'interface — annonce, date d'effet, période où l'ancienne et la nouvelle coexistent sous deux noms, journal du changement. Un chiffre historique qui bouge du jour au lendemain sans explication détruit plus de confiance que six mois de retard de livraison.
+- Ne supprime pas, déprécie — marque la mesure comme obsolète, laisse-la fonctionner, mesure qui l'utilise encore, puis retire-la. La suppression brutale casse toujours un rapport dont tu ignorais l'existence.
+
+> [!tip] Ajout 2026
+> La couche sémantique est passée de raffinement à pièce maîtresse, pour une raison extérieure à la BI : elle est devenue l'**interface par laquelle les assistants interrogent les données**. Un modèle de langage branché sur les tables brutes doit devenir sa propre couche sémantique à chaque question, et il le fait mal (section 14) ; branché sur des mesures définies, il choisit parmi des calculs déjà justes. C'est le meilleur argument disponible pour financer ce travail, parce qu'il est enfin visible d'une direction : la même semaine d'effort qui sécurise les tableaux de bord conditionne l'usage des assistants. Le corollaire opérationnel est de traiter les définitions comme une interface publique, avec un contrat et un versionnement.
+
+> [!warning] Piège
+> Construire la couche sémantique comme un exercice d'exhaustivité. Modéliser deux cents mesures dont trente sont utilisées produit un objet que personne ne maîtrise et dont chaque évolution fait peur. Commence par les dix à quinze chiffres qui apparaissent réellement dans les instances de pilotage, verrouille-les complètement — définition, propriétaire, tests, documentation — et n'ajoute une mesure que quand un usage la demande. Le critère de réussite n'est pas le nombre de mesures, c'est le nombre de réunions qui ne discutent plus du chiffre.
+
+---
+
+## 9. Qualité, lignage et gouvernance — rendre un chiffre défendable
+
+```mermaid
+flowchart TD
+  gv["Data Governance & Ethics"] --> dq["Data Quality"]
+  dq --> q1["Accuracy et Coherence"]
+  dq --> q2["Relevance et Timeliness"]
+  dq --> q3["Accesibility et Interpretability"]
+  dq --> q4["Complétude et unicité"]:::ajout
+  gv --> dl["Data Lineage"]
+  dl --> l1["Traçabilité de la source au rapport"]
+  dl --> l2["Analyse d'impact avant changement"]:::ajout
+  gv --> pv["Privacy"]
+  pv --> p1["GDPR"]
+  pv --> p2["CCPA"]
+  gv --> et["Ethical Data Use"]
+  et --> b1["Bias Recognition"]
+  et --> b2["Algorithmic Bias"]
+  et --> b3["Mitigation Strategies"]
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** Il faut sortir la gouvernance du registre de la conformité, où l'amont la range, pour la remettre là où elle sert : **c'est ce qui rend un chiffre défendable**. Un chiffre défendable est un chiffre dont on peut dire, en réunion et sans préparation, d'où il vient, ce qu'il inclut, quand il a été calculé, et ce qui se passerait s'il était faux. Les dimensions de la qualité sont dans [[notions/qualite-des-donnees]], la traçabilité et les catalogues dans [[notions/lignage-des-donnees]], les obligations européennes dans [[notions/rgpd]]. L'angle propre au BI Analyst est celui de la charge de la preuve.
+
+Concrètement, ça se joue en deux moments. Quand un chiffre est contesté, il faut pouvoir remonter en quelques minutes jusqu'à la ligne source — c'est le lignage. Et quand un chiffre va être publié, il faut savoir qu'il est valide avant que quelqu'un le découvre faux — c'est la qualité instrumentée. Ces deux capacités ne s'improvisent pas le jour où on en a besoin : elles se construisent dans la chaîne de transformation (section 7).
+
+**Ce qu'il faut savoir**
+
+- Les six dimensions de la qualité, traduites en tests exécutables — exactitude (comparaison à une source de référence ou à un contrôle métier connu), complétude (aucune valeur manquante sur les colonnes structurantes), unicité (clé sans doublon), fraîcheur (dernière donnée à moins de N heures), validité (valeurs dans la liste autorisée), cohérence (les totaux se réconcilient entre deux tables). Une dimension de qualité qui n'est pas un test automatisé n'est pas gérée, elle est espérée.
+- La réconciliation avec la source métier est le contrôle le plus rentable — comparer chaque nuit le chiffre d'affaires de l'entrepôt à celui du système de facturation, et alerter sur l'écart. Ça attrape les pannes d'ingestion, les doublons et les erreurs de grain d'un seul coup, et c'est le seul contrôle que le métier comprend immédiatement.
+- Lignage en deux sens — descendant pour répondre à « ce chiffre vient d'où », montant pour répondre à « si je modifie cette colonne source, quels rapports cassent ». Le second est celui qui évite les incidents ; il exige que le lignage aille jusqu'aux rapports, pas seulement jusqu'aux tables. Beaucoup de catalogues s'arrêtent à la frontière de l'outil de restitution, et c'est précisément là que se trouve la surprise.
+- Fraîcheur affichée — mets la date et l'heure du dernier rafraîchissement **sur** le tableau de bord, visible. Un chiffre périmé qui se présente comme à jour cause plus de dégâts qu'un chiffre absent, et c'est la correction la moins chère de toute cette section.
+- RGPD vu du poste — trois points reviennent en BI. La **minimisation** : ton modèle n'a presque jamais besoin du nom, seulement d'un identifiant pseudonymisé et d'attributs de segmentation. La **durée de conservation** : l'entrepôt conserve par nature, ce qui entre en tension directe avec l'obligation d'effacement — il faut une politique de purge ou d'agrégation au-delà d'un seuil. Et le **droit d'accès et d'effacement**, qui suppose de savoir retrouver toutes les traces d'une personne, donc suppose le lignage. Le CCPA californien pose des exigences voisines sur le champ des entreprises concernées ; le mécanisme de réponse est le même.
+- Biais et usage éthique — en BI, le biais n'arrive presque jamais par un algorithme, il arrive par le **périmètre**. Un tableau de bord de satisfaction construit sur les répondants à un questionnaire mesure la satisfaction de ceux qui répondent. Un indicateur de productivité par équipe devient un outil d'évaluation individuelle dès qu'il est diffusé, quelle que soit l'intention initiale. Documente le périmètre et les exclusions à côté du chiffre, et pose la question de l'usage avant de publier une mesure par personne.
+- Accessibilité et interprétabilité sont des dimensions de qualité, pas du confort — une donnée juste que personne ne trouve ou dont personne ne comprend le libellé ne sert à rien. Un nom de colonne compréhensible par le métier fait plus pour la qualité perçue que trois tests supplémentaires.
+
+> [!tip] Ajout 2026
+> Deux pratiques valent mieux qu'un programme de gouvernance. **Le contrat de données avec les équipes sources** : une entente écrite, courte, où l'équipe applicative s'engage sur un schéma, une fraîcheur et un préavis en cas de changement. Ça transforme la rupture de schéma d'accident subi en engagement rompu, et c'est ce qui donne au BI Analyst un levier qu'il n'a pas autrement. **La détection d'anomalie sur les volumes et les distributions** : surveiller que le nombre de lignes chargées et la distribution des mesures principales restent dans leur plage habituelle attrape les pannes silencieuses que les tests de schéma laissent passer — la table est bien là, correctement typée, avec un tiers des lignes en moins.
+
+> [!warning] Piège
+> Faire de la gouvernance un projet documentaire. Un catalogue rempli à la main par une équipe dédiée est périmé avant d'être terminé, parce que rien ne force sa mise à jour. Ce qui tient dans le temps est ce qui est **généré depuis le code** — lignage, documentation, tests — et ce qui bloque la chaîne quand c'est faux. La question à se poser devant toute initiative de gouvernance : qu'est-ce qui se passe si personne ne la maintient ? Si la réponse est « rien ne casse, ça se périme », elle ne sera pas maintenue.
+
+---
