@@ -511,3 +511,126 @@ Ce qui appartient au BI Analyst, c'est un déplacement : là où un analyste cal
 > Publier une variation sans indiquer si elle sort du bruit habituel. « Les ventes ont baissé de 4 % » ne veut rien dire tant qu'on ne sait pas que la variation hebdomadaire courante est de plus ou moins 6 %. Un tableau de bord qui affiche des flèches vertes et rouges sur des variations non significatives fabrique de la réaction là où il n'y a rien à décider, et finit par être ignoré — y compris le jour où la variation compte vraiment.
 
 ---
+
+## 12. Les domaines d'application
+
+```mermaid
+flowchart TD
+  fi["Finance"] --> fi1["Financial Performance et Risk Analytics"]
+  fi --> fi2["Sales Performance"]
+  fi --> fi3["Compliance Reporting"]
+  fi --> fi4["Fraud Detection"]
+  re["Retail & E-commerce"] --> re1["Inventory Optimization"]
+  re --> re2["Marketing Campaigns"]
+  re --> re3["CLV - valeur vie client"]
+  re --> re4["Supply Chain Analytics"]
+  he["Healthcare"] --> he1["Patient management"]
+  he --> he2["Hospital Efficiency"]
+  he --> he3["Compliance Reporting et Public Health"]
+  ma["Manufacturing"] --> ma1["Production Efficiency"]
+  ma --> ma2["Quality Control"]
+  ma --> ma3["Predictive Maintenance"]
+  ma --> ma4["Supply chain optimization"]
+```
+
+**À quoi ça sert.** L'amont consacre une vingtaine de nœuds à décrire ces usages un par un, et c'est la partie la moins transférable de la roadmap : la définition du taux de rotation des stocks s'apprend en trois jours dans l'entreprise concernée. Ce qui vaut d'être retenu, c'est que chaque domaine impose des **contraintes de modélisation différentes**, et ce sont elles qu'un BI Analyst doit savoir reconnaître en arrivant sur un nouveau secteur.
+
+**Ce qu'il faut savoir**
+
+- Finance — la contrainte dominante est l'**immuabilité du passé**. Une période comptable close ne bouge plus, et un chiffre publié doit pouvoir être reproduit à l'identique dans deux ans. Conséquence de modélisation : historisation stricte des dimensions (type 2), calendrier fiscal dans la dimension de date, et traçabilité jusqu'à la pièce comptable. Le reporting réglementaire ajoute une exigence d'auditabilité qui interdit les recalculs silencieux.
+- Commerce et e-commerce — la contrainte est la **multiplicité des grains** et des fenêtres d'attribution. Commande, ligne de commande, expédition, retour et paiement sont cinq faits à des grains différents qu'il ne faut surtout pas fusionner. La valeur vie client et l'attribution de campagne reposent sur des conventions de fenêtre (combien de jours après le clic ?) qui sont des décisions métier à documenter, pas des paramètres techniques.
+- Santé — la contrainte est la **sensibilité des données**, qui déplace tout le reste. La donnée de santé est une catégorie particulière au sens du RGPD : pseudonymisation dès l'ingestion, cloisonnement des accès par service, et agrégation minimale avant diffusion — un indicateur sur un effectif de trois patients réidentifie. Les indicateurs d'efficience hospitalière sont par ailleurs très sensibles au codage des séjours, ce qui en fait un cas d'école de dépendance à la qualité de la saisie.
+- Industrie — la contrainte est le **volume et la fréquence** de la télémétrie. Un capteur à la seconde ne se stocke pas comme une commande : agrégation à l'ingestion, conservation dégressive (fine sur quelques semaines, agrégée ensuite), et découplage entre la surveillance temps réel, qui relève d'un autre outillage, et l'analyse décisionnelle. La maintenance prédictive est un projet d'apprentissage automatique, pas un tableau de bord ; le rôle du BI Analyst y est de fournir l'historique propre et de restituer les résultats.
+- Le transverse qui revient partout — le reporting de conformité apparaît dans trois des quatre domaines, et il a toujours la même exigence : reproductibilité et piste d'audit. Si tu construis un indicateur destiné à un régulateur, la question « peut-on reproduire ce chiffre dans deux ans depuis les données brutes archivées » se pose avant toute autre.
+- La détection de fraude est un cas à part — elle exige de la fraîcheur et un retour d'information sur les cas confirmés, ce qui en fait un système opérationnel plutôt qu'un rapport. La BI y contribue par le suivi des taux et des faux positifs, pas par la détection elle-même.
+
+> [!tip] Ajout 2026
+> Sur un domaine nouveau, le raccourci le plus efficace n'est pas la lecture sectorielle : c'est de demander à voir les **cinq rapports que la direction regarde déjà**, même s'ils sont faits à la main dans un tableur. Ils contiennent les définitions réellement en usage, le calendrier qui compte, les segmentations admises et les seuils. Reconstruire ces cinq rapports à l'identique avant d'en proposer de nouveaux est aussi la façon la plus rapide d'établir la confiance — et le moment où l'on découvre les définitions contradictoires qu'il faudra arbitrer.
+
+> [!warning] Piège
+> Importer le modèle d'un secteur dans un autre. Les gabarits d'entrepôt sectoriels vendus comme accélérateurs imposent un grain et des dimensions conçus pour une autre organisation, et le temps passé à les tordre dépasse celui qu'aurait coûté un modèle conçu sur place. Ce qui se transfère d'un secteur à l'autre, ce sont les **patrons** — grain fin, dimensions conformes, dimension de date, historisation — pas les schémas.
+
+---
+
+## 13. Communiquer, arbitrer, faire adopter
+
+```mermaid
+flowchart TD
+  cs["Communication & Storytelling"] --> sf["Storytelling Framework"]
+  cs --> es["Writing Executive Summaries"]
+  cs --> pd["Presentation Design"]
+  ss["Soft Skills"] --> ba["Business Acumen"]
+  ss --> ct["Critical Thinking"]
+  ss --> pm["Project Management"]
+  ss --> cm["Change Management"]
+  ss --> sm["Stakeholder Management"]
+  cs --> ar["Arbitrer une définition contestée"]:::ajout
+  ar --> a1["Les deux chiffres sont justes, les périmètres diffèrent"]:::ajout
+  ar --> a2["Trancher, nommer, documenter, annoncer"]:::ajout
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** Un modèle juste que personne n'utilise ne vaut rien, et un chiffre juste qu'on n'arrive pas à défendre est remplacé par celui d'un tableur. La gestion des intérêts divergents est dans [[notions/gestion-parties-prenantes]], la résistance au changement et l'adoption dans [[notions/conduite-du-changement]]. Ce qui est propre au BI Analyst, c'est une situation qui revient tous les mois et qu'aucune formation ne prépare : **arbitrer un désaccord sur un chiffre**.
+
+Le scénario est toujours le même. Deux services affichent deux nombres différents pour la même chose. Le réflexe est de chercher l'erreur, et il est faux : dans la grande majorité des cas les deux calculs sont corrects et portent sur deux périmètres différents — l'un inclut les avoirs, l'autre non ; l'un date à la commande, l'autre à la facturation. Le travail n'est donc pas de corriger mais de **faire reconnaître** que ce sont deux mesures distinctes, de leur donner deux noms distincts, de désigner celle qui sert au pilotage, et de le consigner. Tant que les deux mesures portent le même nom, le désaccord reviendra.
+
+**Ce qu'il faut savoir**
+
+- Structure de restitution — la conclusion d'abord, puis l'ordre de grandeur, puis la décision proposée, puis la méthode. L'ordre inverse, celui du raisonnement, perd un comité de direction en trois minutes. Un résumé exécutif tient sur une page et énonce quatre choses : le constat, son ampleur chiffrée, l'action recommandée, le bénéfice attendu.
+- Présenter un chiffre, c'est présenter son périmètre — annonce systématiquement ce que le chiffre inclut, exclut, et à quelle date il a été calculé. C'est ce qui désarme par avance la contestation, et c'est ce qui distingue un chiffre d'un argument.
+- Dire l'incertitude sans se décrédibiliser — « la baisse est de 4 %, dans une plage de variation habituelle de 6 %, donc il est trop tôt pour conclure » est une phrase professionnelle. « Les ventes baissent » quand ce n'est pas établi coûte la confiance dès que le mois suivant remonte.
+- Compréhension du métier — c'est la compétence qui sépare un exécutant d'un interlocuteur. Savoir comment l'entreprise gagne de l'argent permet de proposer l'indicateur qui n'a pas été demandé, et de refuser celui qui ne changera aucune décision.
+- Conduite du changement — remplacer un tableur de direction par un tableau de bord, c'est retirer à quelqu'un le contrôle de son chiffre. La résistance est rationnelle et il faut la traiter comme telle : faire coexister les deux pendant un ou deux cycles, montrer que les écarts sont expliqués, et ne basculer qu'après. Basculer d'autorité produit un tableur clandestin.
+- Gestion de projet — en BI, le mode qui marche est incrémental : un domaine, un modèle, deux ou trois tableaux de bord livrés et utilisés, puis le domaine suivant. Le projet d'entrepôt d'entreprise en dix-huit mois avant la première restitution est le format le plus fiable pour perdre son sponsor en route.
+- Esprit critique — la question à se poser devant tout chiffre surprenant est « par quel bug pourrais-je obtenir ce résultat ». Neuf fois sur dix, la découverte spectaculaire est une jointure qui duplique ou un filtre manquant. Vérifier avant de diffuser est peu coûteux ; se rétracter ne l'est pas.
+
+> [!tip] Ajout 2026
+> Tiens un **journal des décisions de définition** dans le dépôt : une entrée par arbitrage, avec la date, les deux positions, ce qui a été tranché et par qui. Ça prend cinq minutes par décision et ça règle par avance la réouverture du débat six mois plus tard, quand les personnes ont changé et que personne ne se souvient pourquoi « client actif » compte quatre-vingt-dix jours et pas trente. C'est aussi le document le plus utile à transmettre lors d'une prise de poste.
+
+> [!warning] Piège
+> Accepter d'arbitrer seul une définition qui a un enjeu politique. Si le choix entre deux définitions du chiffre d'affaires avantage une direction, le BI Analyst qui tranche techniquement sera désavoué à la première réunion tendue. Son rôle est d'instruire — expliciter les deux périmètres, chiffrer l'écart, montrer les conséquences de chaque option — et de faire prendre la décision au bon niveau, puis de la documenter. Instruire est une position solide, décider à la place du métier ne l'est pas.
+
+---
+
+## 14. BI conversationnelle et couche sémantique (hors roadmap)
+
+```mermaid
+flowchart TD
+  cb["BI conversationnelle"]:::ajout --> t2s["Question en langage naturel vers SQL"]:::ajout
+  t2s --> br["Branchée sur les tables brutes"]:::ajout
+  br --> br1["Doit deviner le grain, les jointures et le sens"]:::ajout
+  br1 --> br2["Requête correcte, réponse métier fausse"]:::ajout
+  t2s --> sm["Branchée sur la couche sémantique"]:::ajout
+  sm --> sm1["Choisit parmi des mesures déjà définies"]:::ajout
+  sm1 --> sm2["Erreur possible sur le choix, pas sur le calcul"]:::ajout
+  cb --> gd["Garde-fous"]:::ajout
+  gd --> g1["Périmètre restreint aux tables de présentation"]:::ajout
+  gd --> g2["Affichage de la requête et des filtres appliqués"]:::ajout
+  gd --> g3["Droits d'accès à la ligne appliqués en amont"]:::ajout
+  gd --> g4["Jeu de questions de référence rejoué en continu"]:::ajout
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** L'amont n'en dit rien, et c'est pourtant l'évolution qui a le plus changé les attentes autour du poste. Toutes les grandes plateformes proposent désormais d'interroger les données en langage naturel — Copilot dans Power BI, Pulse chez Tableau, Cortex Analyst chez Snowflake, Genie côté Databricks, Sage chez ThoughtSpot. La promesse est de supprimer l'intermédiaire entre la question et le chiffre. Ce qu'elle produit réellement dépend entièrement de ce sur quoi on la branche, et c'est la raison pour laquelle cette section est dans ce parcours et pas ailleurs.
+
+Un assistant branché sur des tables brutes doit reconstruire, à chaque question, tout le travail de la section 6 et de la section 8 : trouver les bonnes tables, deviner le grain, choisir les jointures, décider si une colonne est une mesure ou un attribut, et savoir qu'un taux ne s'additionne pas. Il produit alors une requête syntaxiquement valide, un résultat plausible, et une erreur métier indétectable par celui qui a posé la question. Branché sur une couche sémantique, le même assistant a un problème beaucoup plus petit : choisir parmi des mesures et des dimensions déjà définies, avec des règles d'agrégation déjà correctes. Il peut encore se tromper de mesure ; il ne peut plus se tromper de calcul.
+
+Ce qui rend le sujet important pour le métier, c'est que ce constat inverse la valeur perçue du travail de modélisation. Pendant vingt ans, la couche sémantique a été un investissement difficile à justifier devant une direction. Elle est devenue la condition pour que l'outil que la direction a déjà acheté fonctionne.
+
+**Ce qu'il faut savoir**
+
+- Les résultats obtenus sur les jeux d'évaluation publics de génération de SQL ne se transposent pas aux schémas d'entreprise réels : ceux-ci ont des centaines de tables, des noms de colonnes hérités et opaques, des règles d'exclusion non écrites et plusieurs tables candidates pour la même notion. C'est le schéma, pas le modèle de langage, qui est le facteur limitant.
+- La documentation des colonnes est devenue du code fonctionnel — descriptions, valeurs admises, exemples de requêtes, mentions explicites de ce qu'il ne faut pas utiliser. Ce qui n'était qu'une bonne pratique conditionne maintenant directement la qualité des réponses.
+- Restreins le périmètre interrogeable aux tables de présentation et aux mesures publiées. Ouvrir tout l'entrepôt à un assistant est la garantie qu'il trouvera la table intermédiaire abandonnée de l'an dernier.
+- Rends la requête visible — affiche le SQL généré, les filtres appliqués et la période retenue à côté de la réponse. Un utilisateur qui voit « du 1er au 31 août, hors avoirs » peut détecter l'erreur de cadrage ; un utilisateur qui voit un nombre seul ne peut rien vérifier.
+- Les droits d'accès s'appliquent en amont, jamais par instruction dans le prompt. Une restriction confiée à la consigne textuelle d'un assistant n'est pas une restriction.
+- Constitue un jeu de questions de référence — trente à cinquante questions métier avec leur réponse attendue, rejouées à chaque évolution du modèle ou de l'outil. C'est le même réflexe que les tests de la section 7 appliqué à l'interface conversationnelle, et c'est la seule façon de savoir qu'une mise à jour n'a rien dégradé.
+- Le besoin ne disparaît pas, il se déplace — moins de rapports à produire à la demande, plus de définitions à tenir, à documenter et à arbitrer. C'est un déplacement vers le cœur du métier, pas une réduction.
+
+> [!tip] Ajout 2026
+> L'usage qui marche le mieux aujourd'hui n'est pas la question ouverte, c'est l'**exploration guidée** : l'assistant propose des questions qu'il sait traiter, sur un périmètre restreint, avec la requête affichée. Moins spectaculaire en démonstration, nettement plus fiable en production. Et il existe un bénéfice indirect à surveiller : les questions posées à l'assistant constituent le meilleur inventaire disponible de ce que le métier cherche à savoir et que le modèle ne couvre pas. Journalise-les, elles valent mieux que n'importe quel recueil de besoins.
+
+> [!warning] Piège
+> Laisser un assistant conversationnel devenir la source des chiffres diffusés à l'extérieur du service, ou reproduits dans une présentation. Le résultat n'est pas reproductible : la même question reformulée peut produire un périmètre différent, et rien n'en garde la trace. Tout chiffre destiné à être publié, cité ou comparé dans le temps doit venir d'une mesure définie et d'un rapport identifié. L'assistant sert à explorer et à cadrer une question ; il ne fait pas foi.
+
+---
