@@ -2,6 +2,8 @@
 title: RGPD, périmètre et éthique
 ---
 
+Niveau attendu : **usage**. Reconnaître le biais de périmètre et appliquer les règles suffit ; la conformité se tranche avec le délégué à la protection des données.
+
 En BI, le biais n'arrive presque jamais par un algorithme : il arrive par le **périmètre**. Un tableau de bord de satisfaction construit sur les répondants à un questionnaire mesure la satisfaction de ceux qui répondent.
 
 ```mermaid

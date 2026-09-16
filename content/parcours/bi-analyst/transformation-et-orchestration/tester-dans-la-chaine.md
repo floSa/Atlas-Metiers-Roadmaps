@@ -2,6 +2,8 @@
 title: Tester dans la chaîne
 ---
 
+Niveau attendu : **autonomie**. Arrêter plutôt qu'alerter est un arbitrage à assumer devant ceux qui préféreraient un rapport faux à un rapport vide.
+
 Un test qui échoue doit **arrêter la chaîne**, pas alerter. Un rapport visiblement vide fait moins de dégâts qu'un rapport plausible et faux : le premier provoque un appel, le second provoque une décision.
 
 ```mermaid

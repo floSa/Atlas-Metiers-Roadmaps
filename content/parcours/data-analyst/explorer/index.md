@@ -10,10 +10,10 @@ Le moment où l'on découvre ce que la donnée contient réellement, par opposit
 
 ```mermaid
 flowchart TD
-  O["L'ordre du premier regard<br/>volumétrie, remplissage, distributions, croisements"]
-  D["La distribution avant la moyenne<br/>une moyenne décrit parfois personne"]
-  S["Segmenter avant d'agréger<br/>l'agrégat masque deux populations"]
-  H["La liste d'hypothèses<br/>ce qu'on s'attend à observer si elle est vraie"]
+  O["L'ordre du premier regard<br/>Référence"]
+  D["La distribution avant la moyenne<br/>Référence"]
+  S["Segmenter avant d'agréger<br/>Référence"]
+  H["La liste d'hypothèses<br/>Autonomie"]
 
   click O "/parcours/data-analyst/explorer/l-ordre-du-premier-regard"
   click D "/parcours/data-analyst/explorer/la-distribution-avant-la-moyenne"

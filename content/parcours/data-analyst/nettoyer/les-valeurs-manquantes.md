@@ -2,6 +2,8 @@
 title: Les valeurs manquantes
 ---
 
+Niveau attendu : **autonomie**. Trancher entre trois mécanismes d'absence engage le résultat, et il n'existe pas de règle générale à appliquer : la décision se prend au cas par cas et se défend.
+
 Le taux ne dit rien, le mécanisme dit tout. Un champ vide parce que la question n'a pas été posée, parce que la personne a refusé de répondre, ou parce que le système ne l'a pas encore renseigné mènent à trois traitements différents.
 
 ```mermaid

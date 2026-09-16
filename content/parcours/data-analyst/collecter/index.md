@@ -10,11 +10,11 @@ L'analyste ne construit pas les flux de données, il en dépend entièrement et 
 
 ```mermaid
 flowchart TD
-  S["Choisir la source<br/>entrepôt, production, export"]
-  F["Les fichiers plats<br/>encodage, séparateur, typage"]
-  A["Les API<br/>pagination, quotas, réponse brute"]
-  W["Le moissonnage et son cadre<br/>ce qui est légal, pas seulement possible"]
-  T["Tracer l'extraction<br/>requête, horodatage, volume"]
+  S["Choisir la source<br/>Autonomie"]
+  F["Les fichiers plats<br/>Autonomie"]
+  A["Les API<br/>Usage"]
+  W["Le moissonnage et son cadre<br/>Notion"]
+  T["Tracer l'extraction<br/>Autonomie"]
 
   click S "/parcours/data-analyst/collecter/choisir-la-source"
   click F "/parcours/data-analyst/collecter/les-fichiers-plats"

@@ -10,9 +10,9 @@ Toutes les grandes plateformes proposent désormais d'interroger les données en
 
 ```mermaid
 flowchart TD
-  B["Sur quoi brancher l'assistant<br/>tables brutes ou couche sémantique"]
-  G["Les garde-fous<br/>périmètre, requête visible, droits en amont"]
-  Q["Le jeu de questions de référence<br/>rejoué à chaque évolution"]
+  B["Sur quoi brancher l'assistant<br/>Autonomie"]
+  G["Les garde-fous<br/>Usage"]
+  Q["Le jeu de questions de référence<br/>Usage"]
 
   click B "/parcours/bi-analyst/bi-conversationnelle/sur-quoi-brancher-l-assistant"
   click G "/parcours/bi-analyst/bi-conversationnelle/les-garde-fous"

@@ -10,12 +10,12 @@ Le vrai travail du métier, auquel l'amont ne consacre qu'un nœud : l'endroit o
 
 ```mermaid
 flowchart TD
-  D["Définir une mesure<br/>formule et règle d'agrégation"]
-  O["Où vit la couche sémantique<br/>trois emplacements, trois compromis"]
-  E["Faire évoluer une définition<br/>comme une interface publique"]
-  Q["La qualité instrumentée<br/>savoir avant que quelqu'un découvre"]
-  L["Lignage et analyse d'impact<br/>d'où vient ce chiffre, qu'est-ce qui casse"]
-  R["RGPD, périmètre et éthique<br/>ce qu'on publie et sur qui"]
+  D["Définir une mesure<br/>Référence"]
+  O["Où vit la couche sémantique<br/>Autonomie"]
+  E["Faire évoluer une définition<br/>Référence"]
+  Q["La qualité instrumentée<br/>Autonomie"]
+  L["Lignage et analyse d'impact<br/>Autonomie"]
+  R["RGPD, périmètre et éthique<br/>Usage"]
 
   click D "/parcours/bi-analyst/semantique-et-gouvernance/definir-une-mesure"
   click O "/parcours/bi-analyst/semantique-et-gouvernance/ou-vit-la-couche-semantique"

@@ -2,6 +2,8 @@
 title: Idempotence et chargement incrémental
 ---
 
+Niveau attendu : **autonomie**. Rejouer sans dégâts est une propriété qu'on conçoit et qu'on vérifie sous pression, un vendredi soir, sur une chaîne en retard.
+
 Rejouer un traitement deux fois doit donner le même résultat. Sans cette propriété, aucune reprise sur incident n'est sûre — et un incident finit toujours par arriver un soir de clôture.
 
 ```mermaid

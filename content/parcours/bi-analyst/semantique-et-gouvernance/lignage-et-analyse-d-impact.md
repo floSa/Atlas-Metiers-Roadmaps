@@ -2,6 +2,8 @@
 title: Lignage et analyse d'impact
 ---
 
+Niveau attendu : **autonomie**. Lire le lignage dans les deux sens s'apprend sur un outil ; répondre à « qu'est-ce qui casse si je modifie cette colonne » engage sa signature.
+
 Le lignage se lit dans deux sens. Descendant pour répondre à « ce chiffre vient d'où » ; **montant** pour répondre à « si je modifie cette colonne source, quels rapports cassent ». Le second est celui qui évite les incidents, et c'est celui que la plupart des catalogues font mal.
 
 ```mermaid

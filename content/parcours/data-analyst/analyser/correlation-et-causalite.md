@@ -2,6 +2,8 @@
 title: Corrélation et causalité
 ---
 
+Niveau attendu : **référence**. Nommer les quatre explications concurrentes devant un décideur pressé est la compétence qui définit le métier, et la seule chose qui empêche l'entreprise de conclure trop vite.
+
 La corrélation établit qu'un lien existe, jamais son sens ni sa cause. Quatre explications concurrentes subsistent toujours, et la compétence du métier consiste à dire laquelle on a écartée, et comment.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Manipuler des tables en code
 ---
 
+Niveau attendu : **autonomie**. L'enchaînement des transformations se conçoit pour être relu et rejoué par quelqu'un d'autre, ce qui suppose des choix de lisibilité qu'aucune documentation ne dicte.
+
 Filtrer, joindre, regrouper, pivoter — les mêmes opérations qu'en SQL, mais dans le langage où vit l'analyse. Pour l'analyste, l'enjeu est la lisibilité de l'enchaînement des transformations bien avant la performance.
 
 ```mermaid

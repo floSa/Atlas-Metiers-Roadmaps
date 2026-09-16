@@ -10,10 +10,10 @@ Une demande arrive presque toujours sous une forme inexploitable. La transformer
 
 ```mermaid
 flowchart TD
-  Q["Les quatre questions<br/>descriptif, diagnostic, prédictif, prescriptif"]
-  M["Rendre la question mesurable<br/>population, mesure, période, seuil"]
-  D["La décision qui en dépend<br/>et si le chiffre sort dans l'autre sens"]
-  C["Chiffrer, renégocier, consigner<br/>le coût avant l'engagement"]
+  Q["Les quatre questions<br/>Référence"]
+  M["Rendre la question mesurable<br/>Référence"]
+  D["La décision qui en dépend<br/>Référence"]
+  C["Chiffrer, renégocier, consigner<br/>Autonomie"]
 
   click Q "/parcours/data-analyst/cadrer-la-question/les-quatre-questions"
   click M "/parcours/data-analyst/cadrer-la-question/rendre-la-question-mesurable"

@@ -2,6 +2,8 @@
 title: Déclarer le grain
 ---
 
+Niveau attendu : **référence**. La phrase qui dit ce que représente une ligne de faits engage dix ans de modèle : c'est le sujet sur lequel ce poste ne délègue à personne.
+
 Écrire en une phrase ce que représente **une ligne** de la table de faits : « une ligne de commande d'un produit par un client à une date ». Tout le reste du modèle en découle, et changer le grain plus tard signifie réécrire le modèle et tous les rapports qui en dépendent.
 
 ```mermaid

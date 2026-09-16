@@ -10,11 +10,11 @@ La mécanique — faits, dimensions, étoile, flocon — est mutualisée dans [[
 
 ```mermaid
 flowchart TD
-  G["Déclarer le grain<br/>la décision qui engage tout le reste"]
-  M["Mesures et additivité<br/>l'erreur la plus difficile à détecter"]
-  C["Dimensions conformes<br/>ce qui rend une comparaison possible"]
-  H["Historiser les dimensions<br/>reclasser le passé, ou pas"]
-  D["La dimension de date<br/>la table la plus rentable de l'entrepôt"]
+  G["Déclarer le grain<br/>Référence"]
+  M["Mesures et additivité<br/>Référence"]
+  C["Dimensions conformes<br/>Référence"]
+  H["Historiser les dimensions<br/>Autonomie"]
+  D["La dimension de date<br/>Autonomie"]
 
   click G "/parcours/bi-analyst/modelisation-dimensionnelle/declarer-le-grain"
   click M "/parcours/bi-analyst/modelisation-dimensionnelle/mesures-et-additivite"

@@ -2,6 +2,8 @@
 title: Prévoir et se comparer au naïf
 ---
 
+Niveau attendu : **usage**. Poser la prévision naïve comme référence à battre suffit à tenir sa place ; la modélisation prédictive appartient au data scientist.
+
 La référence à battre est toujours la prévision naïve : la même valeur que la même période l'an dernier, ou la dernière valeur connue. Beaucoup de modèles sophistiqués ne la battent pas, et le savoir évite de porter une dette de maintenance pour rien.
 
 ```mermaid

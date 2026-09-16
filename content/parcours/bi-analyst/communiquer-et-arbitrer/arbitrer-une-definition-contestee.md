@@ -2,6 +2,8 @@
 title: Arbitrer une définition contestée
 ---
 
+Niveau attendu : **référence**. Sortir d'une réunion où deux chiffres justes s'opposent avec deux noms distincts et une décision consignée : c'est le moment où ce métier fait autorité, ou disparaît.
+
 Deux services affichent deux nombres différents pour la même chose. Le réflexe est de chercher l'erreur, et il est faux : dans la grande majorité des cas les deux calculs sont corrects et portent sur deux périmètres différents.
 
 ```mermaid

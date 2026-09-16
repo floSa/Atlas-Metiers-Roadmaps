@@ -2,6 +2,8 @@
 title: Le périmètre et ses exclusions
 ---
 
+Niveau attendu : **autonomie**. Annoncer période, population et lignes écartées est une rigueur qu'on applique et qu'on assume, pas une autorité qu'on exerce.
+
 Annoncer le périmètre et les exclusions dans la restitution elle-même, pas en annexe : la période, la population, les lignes écartées et leur volume. C'est ce qui rend le chiffre opposable — et ce qui évite qu'il soit démoli par un détail.
 
 ```mermaid

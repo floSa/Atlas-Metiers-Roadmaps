@@ -2,6 +2,8 @@
 title: Faire évoluer une définition
 ---
 
+Niveau attendu : **référence**. Le réflexe de versionner une définition plutôt que de l'écraser n'existe nulle part ailleurs dans l'organisation : s'il n'est pas porté ici, il ne l'est pas du tout.
+
 Changer une définition se fait comme un changement d'interface publique : annonce, date d'effet, période où l'ancienne et la nouvelle coexistent sous deux noms, journal du changement. Un chiffre historique qui bouge du jour au lendemain sans explication détruit plus de confiance que six mois de retard de livraison.
 
 ```mermaid

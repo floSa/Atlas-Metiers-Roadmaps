@@ -2,6 +2,8 @@
 title: Conduire le changement
 ---
 
+Niveau attendu : **autonomie**. Traiter une résistance rationnelle comme telle s'apprend et se pratique, mais le portage politique appartient au commanditaire.
+
 Remplacer un tableur de direction par un tableau de bord, c'est retirer à quelqu'un le contrôle de son chiffre. La résistance est rationnelle et il faut la traiter comme telle.
 
 ```mermaid

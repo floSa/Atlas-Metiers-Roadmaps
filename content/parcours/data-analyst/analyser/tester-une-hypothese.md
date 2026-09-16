@@ -2,6 +2,8 @@
 title: Tester une hypothèse
 ---
 
+Niveau attendu : **référence**. C'est à l'analyste de corriger la salle sur ce qu'une p-value ne dit pas, et d'imposer taille d'effet et fourchette à la place du seuil.
+
 Le test dit si un écart observé est compatible avec le hasard. Il ne dit ni l'importance de l'écart, ni la probabilité que l'hypothèse soit vraie — et ce sont pourtant les deux lectures qu'on entendra faire de votre résultat.
 
 ```mermaid

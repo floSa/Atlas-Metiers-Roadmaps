@@ -2,6 +2,8 @@
 title: Formats et typage
 ---
 
+Niveau attendu : **usage**. Une typologie qu'on applique sur un chemin balisé ; ce qui compte vraiment, la frontière dimension/mesure, se joue à l'étape suivante.
+
 La typologie catégoriel/numérique, discret/continu a un seul usage vraiment utile en BI, et il est décisif : elle préfigure la séparation **dimension contre mesure** du modèle. Une variable catégorielle devient un attribut de dimension, une variable numérique additive devient une mesure.
 
 ```mermaid

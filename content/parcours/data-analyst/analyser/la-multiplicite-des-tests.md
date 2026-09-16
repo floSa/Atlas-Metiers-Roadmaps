@@ -2,6 +2,8 @@
 title: La multiplicité des tests
 ---
 
+Niveau attendu : **autonomie**. Fixer les comparaisons avant de les faire est une discipline de méthode qu'on applique et qu'on défend, pas une expertise qu'on arbitre.
+
 Tester vingt segments jusqu'à en trouver un qui « sort » produit un faux positif par construction. Sur vingt comparaisons indépendantes, une au seuil de 5 % apparaît par pur hasard — et c'est exactement celle qu'on aura envie de raconter.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Les doublons
 ---
 
+Niveau attendu : **autonomie**. Aucune documentation ne donne la clé métier ; il faut la reconstituer avec le métier, puis assumer les lignes qu'on supprime.
+
 Définir la clé métier avant de dédoublonner. Deux lignes identiques sur toutes les colonnes sont probablement un artefact technique ; deux commandes du même client le même jour sont probablement réelles. Supprimer sans clé explicite supprime des faits.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Ordonnancer et reprendre
 ---
 
+Niveau attendu : **usage**. La chaîne BI courante ne demande ni conception ni exploitation d'un ordonnanceur d'entreprise — ce terrain appartient à l'ingénierie de données.
+
 L'ordonnanceur gère les dépendances, les reprises et les alertes. Pour une chaîne BI simple, le planificateur intégré à la plateforme de transformation suffit souvent ; l'orchestrateur dédié se justifie quand la chaîne croise d'autres systèmes.
 
 ```mermaid

@@ -10,10 +10,10 @@ L'entrepôt existe pour une raison précise : découpler la lecture analytique d
 
 ```mermaid
 flowchart TD
-  C["Entrepôt, lac ou moteur embarqué<br/>qui porte le coût du schéma"]
-  Z["L'architecture à zones<br/>atterrissage, intermédiaire, présentation"]
-  S["Stockage, calcul, formats ouverts<br/>la vraie rupture du cloud"]
-  P["Le coût de la plateforme<br/>instrumenté avant d'ouvrir l'accès"]
+  C["Entrepôt, lac ou moteur embarqué<br/>Autonomie"]
+  Z["L'architecture à zones<br/>Autonomie"]
+  S["Stockage, calcul, formats ouverts<br/>Usage"]
+  P["Le coût de la plateforme<br/>Autonomie"]
 
   click C "/parcours/bi-analyst/entrepot-et-architecture/entrepot-lac-ou-moteur-embarque"
   click Z "/parcours/bi-analyst/entrepot-et-architecture/l-architecture-a-zones"

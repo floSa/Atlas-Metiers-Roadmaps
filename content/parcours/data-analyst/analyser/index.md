@@ -10,12 +10,12 @@ Le cœur diagnostique du métier : passer d'un constat à une explication défen
 
 ```mermaid
 flowchart TD
-  C["Corrélation et causalité<br/>quatre explications concurrentes, toujours"]
-  T["Tester une hypothèse<br/>ce que la p-value ne dit pas"]
-  M["La multiplicité des tests<br/>vingt segments, un faux positif"]
-  R["La régression<br/>toutes choses égales parmi les variables incluses"]
-  E["Le protocole expérimental<br/>la seule réponse propre sur l'effet d'une action"]
-  D["L'évolution dans le temps<br/>saisonnalité, cohortes, effet de composition"]
+  C["Corrélation et causalité<br/>Référence"]
+  T["Tester une hypothèse<br/>Référence"]
+  M["La multiplicité des tests<br/>Autonomie"]
+  R["La régression<br/>Autonomie"]
+  E["Le protocole expérimental<br/>Autonomie"]
+  D["L'évolution dans le temps<br/>Référence"]
 
   click C "/parcours/data-analyst/analyser/correlation-et-causalite"
   click T "/parcours/data-analyst/analyser/tester-une-hypothese"

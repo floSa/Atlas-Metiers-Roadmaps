@@ -2,6 +2,8 @@
 title: Restituer à une direction
 ---
 
+Niveau attendu : **autonomie**. Constat, ampleur, action, bénéfice en une page se maîtrise et se répète ; la mise en récit d'une réponse ponctuelle reste le terrain du Data Analyst.
+
 La conclusion d'abord, puis l'ordre de grandeur, puis la décision proposée, puis la méthode. L'ordre inverse — celui du raisonnement — perd un comité de direction en trois minutes.
 
 ```mermaid

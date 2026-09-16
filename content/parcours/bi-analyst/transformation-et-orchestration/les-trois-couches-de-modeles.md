@@ -2,6 +2,8 @@
 title: Les trois couches de modèles
 ---
 
+Niveau attendu : **autonomie**. Le découpage source, intermédiaire, présentation se conçoit et se défend en revue de code, contre la tentation permanente du raccourci.
+
 Une couche de mise en forme minimale par source, une couche intermédiaire pour la logique métier réutilisable, une couche de présentation qui expose faits et dimensions. Cette discipline est ce qui empêche la même règle d'être réécrite dans quinze modèles.
 
 ```mermaid

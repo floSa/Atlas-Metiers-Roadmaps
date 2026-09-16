@@ -2,6 +2,8 @@
 title: Se professionnaliser
 ---
 
+Niveau attendu : **autonomie**. Montrer un socle réutilisable plutôt qu'un graphique suppose de construire un projet de bout en bout et de défendre chacune de ses décisions de modélisation en entretien.
+
 Le portfolio d'un BI Analyst ne se démontre pas comme celui d'un Data Analyst. Un carnet d'analyse bien présenté montre une capacité à répondre ; ce métier-ci doit montrer une capacité à **construire un socle réutilisable** — plus difficile à mettre en vitrine, et beaucoup plus discriminant à l'entretien.
 
 ```mermaid

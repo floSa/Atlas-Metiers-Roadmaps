@@ -2,6 +2,8 @@
 title: L'ordre du premier regard
 ---
 
+Niveau attendu : **référence**. La séquence d'ouverture d'un jeu de données inconnu est le geste propre de l'analyse ad hoc : dans la salle, c'est lui qu'on regarde faire.
+
 Il existe une séquence qui fait gagner une journée, et elle ne commence pas par la variable qui intéresse. Elle commence par ce qui invaliderait l'analyse entière si on le découvrait trop tard.
 
 ```mermaid

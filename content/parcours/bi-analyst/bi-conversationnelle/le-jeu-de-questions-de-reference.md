@@ -2,6 +2,8 @@
 title: Le jeu de questions de référence
 ---
 
+Niveau attendu : **usage**. C'est le réflexe des tests de la chaîne appliqué à l'interface : la compétence est déjà acquise ailleurs, il reste à la transposer.
+
 Trente à cinquante questions métier avec leur réponse attendue, rejouées à chaque évolution du modèle ou de l'outil. C'est le réflexe des tests de la chaîne de transformation, appliqué à l'interface conversationnelle — et la seule façon de savoir qu'une mise à jour n'a rien dégradé.
 
 ```mermaid

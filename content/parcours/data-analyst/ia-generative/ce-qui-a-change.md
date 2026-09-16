@@ -2,6 +2,8 @@
 title: Ce qui a changé, ce qui n'a pas
 ---
 
+Niveau attendu : **usage**. Savoir où passe la frontière entre fabrication et jugement suffit ; ce n'est pas un domaine sur lequel un analyste confirmé doit faire autorité.
+
 L'IA générative a fortement accéléré la partie **fabrication** du travail d'analyse, et n'a rien changé à la partie **jugement**. La conséquence est un déplacement du niveau d'exigence, pas une disparition du poste.
 
 ```mermaid

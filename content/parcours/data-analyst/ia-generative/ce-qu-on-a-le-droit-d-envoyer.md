@@ -2,6 +2,8 @@
 title: Ce qu'on a le droit d'envoyer
 ---
 
+Niveau attendu : **autonomie**. Savoir refuser un envoi et justifier le refus est un arbitrage qu'on assume seul, souvent contre l'urgence de quelqu'un d'autre.
+
 Un extrait de base client ne se colle pas dans un service grand public. La question n'est pas de savoir si c'est techniquement possible, mais ce que l'entreprise autorise, à quel niveau de donnée, et vers quel service.
 
 ```mermaid

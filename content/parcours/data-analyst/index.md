@@ -12,18 +12,18 @@ Le métier de celui à qui on pose une question et qui rend une réponse chiffr�
 
 ## La roadmap
 
-Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
+Chaque case mène à sa page et porte le niveau attendu chez un profil confirmé — de **notion** (reconnaître le sujet, savoir qui appeler) à **usage** (s'en servir sur un chemin balisé), **autonomie** (concevoir, déboguer, arbitrer et défendre l'arbitrage) et **référence** (faire autorité dans la salle). Cochez les étapes acquises en bas de page pour suivre votre progression.
 
 ```mermaid
 flowchart TD
-  S["Socle outillage<br/>tableur, SQL, un langage"] --> Q["Cadrer la question<br/>avant de toucher la donnée"]
-  Q --> C["Collecter<br/>source, périmètre, traçabilité"]
-  C --> N["Nettoyer<br/>comprendre l'état avant de corriger"]
-  N --> E["Explorer<br/>ce que la donnée contient vraiment"]
-  E --> A["Analyser<br/>du constat à l'explication"]
-  A --> R["Restituer<br/>mettre quelqu'un en position de décider"]
-  M["Modélisation appliquée<br/>comprendre ou prédire"] -.-> A
-  G["IA générative au quotidien<br/>la fabrication, pas le jugement"] -.-> S
+  S["Socle outillage<br/>Autonomie"] --> Q["Cadrer la question<br/>Référence"]
+  Q --> C["Collecter<br/>Autonomie"]
+  C --> N["Nettoyer<br/>Autonomie"]
+  N --> E["Explorer<br/>Référence"]
+  E --> A["Analyser<br/>Référence"]
+  A --> R["Restituer<br/>Référence"]
+  M["Modélisation appliquée<br/>Usage"] -.-> A
+  G["IA générative au quotidien<br/>Usage"] -.-> S
   E -.-> Q
   A -.-> N
 

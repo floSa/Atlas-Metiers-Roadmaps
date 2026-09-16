@@ -2,6 +2,8 @@
 title: Comprendre ou prédire
 ---
 
+Niveau attendu : **autonomie**. Ce qui doit être maîtrisé ici est de savoir dire « ce n'est plus mon sujet » — un arbitrage de cadrage, et il se défend.
+
 Une seule question de cadrage tranche l'essentiel : le problème est-il de comprendre ou de prédire ? Si c'est comprendre, une segmentation propre et une régression lisible battent tout le reste. Si c'est prédire, à enjeu sérieux, le sujet change de métier.
 
 ```mermaid

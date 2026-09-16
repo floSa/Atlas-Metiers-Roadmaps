@@ -10,11 +10,11 @@ La seule partie du travail que l'organisation voit, ce qui la rend à la fois su
 
 ```mermaid
 flowchart TD
-  P["Le tableau de bord comme produit<br/>utilisateurs, propriétaire, date de retrait"]
-  C["Choisir sa plateforme<br/>quatre familles, un critère qui départage"]
-  D["Concevoir un tableau de bord<br/>ce qui se regarde et ce qui se creuse"]
-  A["Droits et modes d'accès<br/>à la ligne, en importation ou en direct"]
-  I["Instrumenter et retirer<br/>la seule conversation qui fait baisser la dette"]
+  P["Le tableau de bord comme produit<br/>Autonomie"]
+  C["Choisir sa plateforme<br/>Usage"]
+  D["Concevoir un tableau de bord<br/>Autonomie"]
+  A["Droits et modes d'accès<br/>Autonomie"]
+  I["Instrumenter et retirer<br/>Autonomie"]
 
   click P "/parcours/bi-analyst/restitution/le-tableau-de-bord-comme-produit"
   click C "/parcours/bi-analyst/restitution/choisir-sa-plateforme"

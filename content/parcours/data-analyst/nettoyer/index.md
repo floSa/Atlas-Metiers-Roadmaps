@@ -10,11 +10,11 @@ La moitié du temps d'une mission, et la partie que personne ne voit. Nettoyer n
 
 ```mermaid
 flowchart TD
-  M["Les valeurs manquantes<br/>le mécanisme, pas le taux"]
-  D["Les doublons<br/>définir la clé métier d'abord"]
-  A["Les valeurs aberrantes<br/>saisie, unité, ou extrême légitime"]
-  T["Transformer et documenter<br/>chaque regroupement est un choix d'analyse"]
-  R["Un nettoyage rejouable<br/>brut intact, script par-dessus, assertions"]
+  M["Les valeurs manquantes<br/>Autonomie"]
+  D["Les doublons<br/>Autonomie"]
+  A["Les valeurs aberrantes<br/>Autonomie"]
+  T["Transformer et documenter<br/>Autonomie"]
+  R["Un nettoyage rejouable<br/>Autonomie"]
 
   click M "/parcours/data-analyst/nettoyer/les-valeurs-manquantes"
   click D "/parcours/data-analyst/nettoyer/les-doublons"

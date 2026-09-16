@@ -2,6 +2,8 @@
 title: Stockage, calcul, formats ouverts
 ---
 
+Niveau attendu : **usage**. Il faut savoir s'en servir et lire une facture ; le choix du format de table et sa maintenance appartiennent à l'ingénierie de données.
+
 La rupture réelle des entrepôts cloud n'est pas l'élasticité, c'est la **séparation du stockage et du calcul**. Elle permet de donner un moteur dédié à l'équipe finance sans qu'une de ses requêtes ralentisse le tableau de bord d'exploitation, et de dimensionner le calcul par usage.
 
 ```mermaid

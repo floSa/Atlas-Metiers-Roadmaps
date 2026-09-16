@@ -2,6 +2,8 @@
 title: SQL pour l'analyste
 ---
 
+Niveau attendu : **autonomie**. L'analyste écrit la requête qui répond à une question, pas celle qui tournera dix mille fois : le SQL de production, où le BI Analyst fait référence, n'est pas son terrain.
+
 L'outil le plus rentable du métier, avant tout le reste : il rend inutile la majeure partie de ce qui se fait péniblement en formules, et il conditionne l'accès à la donnée d'entreprise. Viser l'autonomie — écrire seul une requête d'agrégation fenêtrée sur une base réelle.
 
 ```mermaid

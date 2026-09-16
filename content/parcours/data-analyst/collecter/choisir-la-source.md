@@ -2,6 +2,8 @@
 title: Choisir la source
 ---
 
+Niveau attendu : **autonomie**. Trois endroits donnent trois réponses différentes ; choisir entre eux est un compromis qu'il faut savoir expliquer, même si l'analyste n'en construit aucun.
+
 La même question a souvent trois réponses possibles selon l'endroit où l'on tire : la base applicative, l'entrepôt, ou l'export que quelqu'un vous envoie. Le choix se fait avant la requête, et il conditionne ce qu'on pourra affirmer.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Dire ce qu'on ne sait pas
 ---
 
+Niveau attendu : **référence**. Personne d'autre dans la salle n'a intérêt à énoncer les limites du résultat, et c'est pourtant ce qui rend le chiffre opposable.
+
 Dire explicitement ce que le résultat ne permet pas de conclure. C'est contre-intuitif et c'est ce qui construit la confiance : un analyste qui ne dit jamais « je ne sais pas » finit par n'être cru sur rien.
 
 ```mermaid

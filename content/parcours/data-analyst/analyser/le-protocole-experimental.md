@@ -2,6 +2,8 @@
 title: Le protocole expérimental
 ---
 
+Niveau attendu : **autonomie**. L'analyste conçoit le protocole et défend sa taille d'échantillon, mais le produit décide de ce qu'on teste et du moment où l'on arrête.
+
 Quand la question porte sur l'effet d'une action qu'on contrôle, l'expérimentation reste la seule réponse propre. Quand elle est impossible — le cas le plus fréquent —, il existe une gradation de solutions de repli, et il faut savoir ce que chacune vaut.
 
 ```mermaid

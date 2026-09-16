@@ -2,6 +2,8 @@
 title: Le tableur et son seuil
 ---
 
+Niveau attendu : **autonomie**. Ce qui se juge n'est pas la connaissance des formules mais le moment où l'on refuse d'y rester — un arbitrage qu'il faut savoir défendre devant un métier attaché à son classeur.
+
 Le tableur est imbattable pour regarder trois mille lignes et comprendre leur forme en dix minutes. La compétence d'analyste n'est pas d'en connaître les formules — elles s'apprennent en une semaine — mais de savoir à quel moment on n'a plus le droit d'y rester.
 
 ```mermaid

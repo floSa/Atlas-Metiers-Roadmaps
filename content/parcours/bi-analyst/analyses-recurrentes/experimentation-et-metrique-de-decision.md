@@ -2,6 +2,8 @@
 title: Expérimentation
 ---
 
+Niveau attendu : **usage**. Il produit la mesure sur laquelle on tranchera sans concevoir le test — une position confortable, qui devient dangereuse dès qu'on la confond avec l'arbitrage.
+
 Le BI Analyst est rarement celui qui conçoit le test, souvent celui qui produit la mesure sur laquelle il sera tranché. C'est une position qui a ses exigences propres, et elles se posent avant le début du test.
 
 ```mermaid

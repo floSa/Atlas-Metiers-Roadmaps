@@ -2,6 +2,8 @@
 title: Segmenter avant d'agréger
 ---
 
+Niveau attendu : **référence**. C'est le contrôle le moins cher et le plus rentable du métier, et personne d'autre ne pensera à le réclamer avant publication.
+
 Un agrégat global masque presque toujours deux populations qui bougent en sens inverse. Recalculer tout écart segment par segment avant de le publier est le contrôle le moins cher et le plus rentable du métier : il tient en une ligne de code.
 
 ```mermaid

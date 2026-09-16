@@ -2,6 +2,8 @@
 title: Classer un oui-non métier
 ---
 
+Niveau attendu : **usage**. Une régression logistique sur un chemin balisé, documentation ouverte ; au-delà, c'est le data scientist qu'on appelle.
+
 Résiliation, impayé, requalification, fraude : la classification binaire est l'usage de modélisation le plus courant du métier. La régression logistique reste le premier choix, parce qu'elle donne des coefficients qu'on peut expliquer à celui qui décidera.
 
 ```mermaid

@@ -2,6 +2,8 @@
 title: Tracer l'extraction
 ---
 
+Niveau attendu : **autonomie**. C'est un réflexe qu'aucune procédure ne réclame et que personne ne rattrape : sans lui, un écart constaté six mois plus tard reste inexplicable.
+
 Trois métadonnées consignées avec chaque extraction : la requête ou l'URL exacte, l'horodatage, le nombre de lignes obtenu. C'est ce qui permet de rejouer et d'expliquer un écart entre deux versions du même chiffre — et rien de tout cela ne se retrouve après coup.
 
 ```mermaid

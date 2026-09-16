@@ -2,6 +2,8 @@
 title: L'esprit critique devant un chiffre
 ---
 
+Niveau attendu : **référence**. « Par quel bug pourrais-je obtenir ce résultat » est le réflexe que l'organisation vient chercher chez lui, et qu'elle n'a nulle part ailleurs.
+
 La question à se poser devant tout chiffre surprenant est « par quel bug pourrais-je obtenir ce résultat ». Neuf fois sur dix, la découverte spectaculaire est une jointure qui duplique ou un filtre manquant.
 
 ```mermaid

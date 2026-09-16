@@ -2,6 +2,8 @@
 title: Transformer et documenter
 ---
 
+Niveau attendu : **autonomie**. Reconnaître un choix d'analyse là où tout le monde voit une opération technique, puis l'écrire, est précisément ce que ce niveau demande.
+
 Typage, normalisation des libellés, découpage ou regroupement de modalités. Chaque règle de regroupement est un choix d'analyse — pas une opération technique — et elle se documente comme tel, parce qu'elle change le résultat.
 
 ```mermaid

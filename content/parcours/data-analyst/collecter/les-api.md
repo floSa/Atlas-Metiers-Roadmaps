@@ -2,6 +2,8 @@
 title: Les API
 ---
 
+Niveau attendu : **usage**. Lire une documentation de pagination et de quotas suffit ; concevoir l'interface ou industrialiser l'appel n'est pas le sujet.
+
 Lire la pagination, les quotas et la politique de limitation avant d'écrire la boucle, et conserver la réponse brute avant tout traitement. Une extraction relancée trois jours plus tard ne renvoie pas les mêmes données.
 
 ```mermaid

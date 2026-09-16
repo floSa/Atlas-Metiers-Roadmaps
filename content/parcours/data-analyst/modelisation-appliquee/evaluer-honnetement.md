@@ -2,6 +2,8 @@
 title: Évaluer honnêtement
 ---
 
+Niveau attendu : **autonomie**. Imposer la référence triviale avant d'entraîner est une position à tenir seul, face à un modèle que tout le monde veut déjà livrer.
+
 Toujours établir une référence triviale avant de modéliser : la moyenne, la valeur de la période précédente, la règle métier existante. Un modèle qui ne bat pas cette référence n'a aucune raison d'exister, et cela arrive plus souvent qu'on ne le publie.
 
 ```mermaid

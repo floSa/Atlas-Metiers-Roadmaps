@@ -2,6 +2,8 @@
 title: Connaître ses sources
 ---
 
+Niveau attendu : **autonomie**. L'inventaire des modes de défaillance se construit et se tient à jour, mais chaque source a son propriétaire ailleurs dans l'entreprise.
+
 L'inventaire des sources n'est pas une formalité de début de projet : c'est la liste de ce qui cassera, avec la date approximative. Une base transactionnelle change de schéma quand l'applicatif est mis à jour, une API SaaS impose des quotas et réécrit l'historique, un export manuel disparaît quand la personne qui le produit part en congé.
 
 ```mermaid
