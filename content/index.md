@@ -19,7 +19,7 @@ Se former sur les métiers de l'IA et de la data : ce qu'il faut savoir faire, e
 | [[04 - Roadmap — Machine Learning\|Machine Learning]] | Le ML classique : validation, fuite de données, métriques |
 | [[07 - Roadmap — AI Agents\|AI Agents]] | Boucle agentique, outils, MCP, mémoire, évaluation |
 | [[parcours/ai-product-builder\|AI Product Builder]] | Livrer un produit avec des outils d'IA, du prototype à la production |
-| [[parcours/ai-red-teaming\|AI Red Teaming]] | Attaquer un système à base de LLM pour le durcir |
+| [[parcours/ai-red-teaming/index\|AI Red Teaming]] | Attaquer un système à base de LLM pour le durcir |
 | [[06 - Roadmap — Prompt Engineering\|Prompt Engineering]] | Ce qui marche encore, et le context engineering |
 | [[01 - Roadmap — Computer Science\|Computer Science]] | Algorithmique, systèmes, réseau, bases de données, sécurité |
 

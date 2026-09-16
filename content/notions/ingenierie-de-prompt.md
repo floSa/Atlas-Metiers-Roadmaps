@@ -50,6 +50,6 @@ C'est à la fois l'outil du test et son objet : les mêmes leviers qui font suiv
 ## Appelée par
 
 - [[parcours/ai-product-builder|AI Product Builder]]
-- [[parcours/ai-red-teaming|AI Red Teaming]]
+- [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/injection-de-prompt]], [[notions/evaluation-llm]], [[notions/affinage-de-modele]], [[notions/choix-de-modele]].

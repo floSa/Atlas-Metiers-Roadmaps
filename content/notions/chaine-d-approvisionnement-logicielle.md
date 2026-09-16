@@ -49,7 +49,7 @@ La contrainte se présente à l'envers : chez un client, l'accès aux dépôts p
 
 ## Appelée par
 
-- [[parcours/ai-red-teaming|AI Red Teaming]]
+- [[parcours/ai-red-teaming/index|AI Red Teaming]]
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 
 Voisines : [[notions/conteneurisation]], [[notions/mcp]], [[notions/integration-continue]], [[notions/modelisation-de-la-menace]].

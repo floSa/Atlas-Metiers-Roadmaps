@@ -51,6 +51,6 @@ La fonction de récompense est la surface à tester. Le reward hacking est un mo
 
 - [[parcours/data-analyst|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
-- [[parcours/ai-red-teaming|AI Red Teaming]]
+- [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/apprentissage-supervise]], [[notions/affinage-de-modele]], [[notions/ab-testing]].

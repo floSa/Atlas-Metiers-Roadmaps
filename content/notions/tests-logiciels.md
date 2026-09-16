@@ -53,6 +53,6 @@ La simulation structurée — objectif, périmètre et règles d'engagement écr
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-product-builder|AI Product Builder]]
-- [[parcours/ai-red-teaming|AI Red Teaming]]
+- [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/integration-continue]], [[notions/evaluation-llm]], [[notions/conception-d-api]].

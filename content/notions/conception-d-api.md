@@ -55,6 +55,6 @@ Dès qu'une sortie de modèle atteint un interpréteur — SQL, shell, gabarit, 
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-product-builder|AI Product Builder]]
-- [[parcours/ai-red-teaming|AI Red Teaming]]
+- [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/controle-d-acces]], [[notions/systemes-patrimoniaux]], [[notions/mcp]], [[notions/tests-logiciels]].

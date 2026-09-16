@@ -54,6 +54,6 @@ Une frontière de décision apprise est approximative, donc franchissable par un
 
 - [[parcours/data-analyst|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
-- [[parcours/ai-red-teaming|AI Red Teaming]]
+- [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/metriques-evaluation-ml]], [[notions/regression-logistique]], [[notions/regression-lineaire]], [[notions/apprentissage-non-supervise]].

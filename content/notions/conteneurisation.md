@@ -49,6 +49,6 @@ Le conteneur est ici un contrôle à vérifier, pas une commodité. Dès qu'une 
 ## Appelée par
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
-- [[parcours/ai-red-teaming|AI Red Teaming]]
+- [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/integration-continue]], [[notions/plateforme-de-deploiement]], [[notions/chaine-d-approvisionnement-logicielle]].
