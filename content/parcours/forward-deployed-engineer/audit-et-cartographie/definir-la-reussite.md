@@ -2,6 +2,8 @@
 title: Définir la réussite
 ---
 
+Niveau attendu : **référence**. Un système d'IA n'a pas de réussite binaire, et fixer le seuil chiffré avant la première ligne de code est exactement ce que le client ne sait pas faire.
+
 La question qui décide de tout n'est pas « qu'est-ce qu'on construit » mais « à quoi saura-t-on que ça marche ». Un système d'IA n'a pas de réussite binaire : il a une distribution de qualité.
 
 ```mermaid
