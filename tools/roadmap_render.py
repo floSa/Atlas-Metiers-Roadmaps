@@ -85,7 +85,13 @@ CORRESPONDANCES: dict[str, dict[str, str]] = {
 # roadmap.sh -- paragraphes d'ambiance, traits de separation -- est dessine mais
 # n'est pas cliquable.
 CLIQUABLES = {"topic", "subtopic", "button"}
-TEXTES = {"title", "label", "paragraph"}
+# Le canevas roadmap.sh porte aussi des elements de mise en page. Recenses sur
+# les treize captures : `section` un cadre de regroupement vide, `vertical` et
+# `horizontal` des filets pointilles, `todo` une ligne de liste, `resourceButton`
+# un renvoi vers une ressource -- souvent un lien d'affiliation, qu'on dessine
+# sans le rendre cliquable ; la selection des ressources revient au chantier 08.
+FILETS = {"vertical", "horizontal"}
+CADRES = {"section"}
 
 MARGE = 40
 LARGEUR_CAR = 0.55  # largeur moyenne d'un caractere, en fraction de la police
@@ -296,7 +302,9 @@ STYLE_SVG = """<style>
 .carte-roadmap .fond { fill:var(--light, #faf8f8); }
 .carte-roadmap .arete { fill:none; stroke:var(--gray, #b8b8b8); stroke-width:2; stroke-linecap:round; }
 .carte-roadmap .arete.pointille { stroke-dasharray:1 7; }
-.carte-roadmap .filet { stroke:var(--gray, #b8b8b8); stroke-width:3; stroke-linecap:round; stroke-dasharray:1 7; }
+.carte-roadmap .filet { fill:none; stroke:var(--gray, #b8b8b8); stroke-width:3; stroke-linecap:round; }
+.carte-roadmap .filet.pointille { stroke-dasharray:1 7; }
+.carte-roadmap .cadre { fill:none; stroke:var(--lightgray, #e5e5e5); stroke-width:1.5; }
 .carte-roadmap text { fill:var(--darkgray, #4e4e4e); }
 .carte-roadmap .titre text { fill:var(--dark, #2b2b2b); font-weight:700; }
 .carte-roadmap .section text { fill:var(--dark, #2b2b2b); font-weight:600; }
@@ -308,6 +316,9 @@ STYLE_SVG = """<style>
 .carte-roadmap .sous-noeud text { fill:var(--darkgray, #4e4e4e); font-weight:400; }
 .carte-roadmap .renvoi rect { fill:none; stroke:var(--secondary, #284b63); stroke-width:1.5; }
 .carte-roadmap .groupe rect { fill:none; stroke:var(--lightgray, #e5e5e5); stroke-width:1.5; }
+.carte-roadmap .ressource rect { fill:none; stroke:var(--tertiary, #84a59d); stroke-width:1.5; }
+.carte-roadmap .ressource text { fill:var(--gray, #b8b8b8); }
+.carte-roadmap .tache text { fill:var(--darkgray, #4e4e4e); font-weight:600; }
 .carte-roadmap .groupe > text { font-weight:600; }
 .carte-roadmap .lien-groupe text { fill:var(--secondary, #284b63); }
 .carte-roadmap .lien-groupe:hover text { text-decoration:underline; }
@@ -329,12 +340,22 @@ def dessiner_noeud(noeud: dict, href: str | None, existe: bool) -> str:
     type_ = noeud["type"]
     police = float(style.get("fontSize") or 17)
 
-    if type_ == "vertical":
-        return (f'<path class="filet" d="M {x + w / 2:.1f} {y:.1f} '
-                f'L {x + w / 2:.1f} {y + h:.1f}"/>')
+    if type_ in FILETS:
+        if type_ == "vertical":
+            d = f"M {x + w / 2:.1f} {y:.1f} L {x + w / 2:.1f} {y + h:.1f}"
+        else:
+            d = f"M {x:.1f} {y + h / 2:.1f} L {x + w:.1f} {y + h / 2:.1f}"
+        pointille = "" if (style.get("strokeDasharray") or "") == "0" else " pointille"
+        return f'<path class="filet{pointille}" d="{d}"/>'
+
+    if type_ in CADRES:
+        # Un cadre de regroupement : une boite vide posee derriere ses noeuds.
+        return (f'<rect class="cadre" x="{x:.1f}" y="{y:.1f}" '
+                f'width="{w:.1f}" height="{h:.1f}" rx="8"/>')
 
     classes = {
         "topic": "noeud", "subtopic": "sous-noeud", "button": "renvoi",
+        "resourceButton": "ressource", "todo": "tache",
         "linksgroup": "groupe", "title": "titre", "label": "section",
         "paragraph": "paragraphe",
     }.get(type_, "sous-noeud")
@@ -357,7 +378,7 @@ def dessiner_noeud(noeud: dict, href: str | None, existe: bool) -> str:
         depart = y + h / 2 - (len(lignes) - 1) * hauteur_ligne / 2 + police * 0.35
 
     corps = []
-    if type_ not in ("title", "paragraph"):
+    if type_ not in ("title", "paragraph", "todo"):
         corps.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" rx="5"/>')
     for i, ligne in enumerate(lignes):
         corps.append(f'<text x="{tx:.1f}" y="{depart + i * hauteur_ligne:.1f}" '
@@ -401,6 +422,12 @@ def dessiner(capture: dict, resolveur: Resolveur) -> tuple[str, list[tuple[str, 
     morceaux = [f'<rect class="fond" x="{x0:.1f}" y="{y0:.1f}" '
                 f'width="{largeur:.1f}" height="{hauteur:.1f}"/>']
 
+    # Un cadre de regroupement se pose derriere tout le reste, sinon il masque
+    # les noeuds qu'il entoure.
+    for noeud in noeuds:
+        if noeud.get("type") in CADRES:
+            morceaux.append(dessiner_noeud(noeud, None, False))
+
     for arete in capture.get("edges", []):
         source, cible = par_id.get(arete["source"]), par_id.get(arete["target"])
         if not source or not cible:
@@ -413,6 +440,8 @@ def dessiner(capture: dict, resolveur: Resolveur) -> tuple[str, list[tuple[str, 
 
     journal: list[tuple[str, str, bool]] = []
     for noeud in noeuds:
+        if noeud.get("type") in CADRES:
+            continue
         href, existe = resolveur.pour(noeud)
         morceaux.append(dessiner_noeud(noeud, href, existe))
         if href:
