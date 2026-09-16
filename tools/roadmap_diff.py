@@ -83,7 +83,7 @@ def covered(upstream: str, haystack: list[str]) -> bool:
 
 def report(slug: str) -> dict:
     doc = json.loads((EXTRACT / f"{slug}.json").read_text(encoding="utf-8"))
-    path = ROOT / NOTES[slug]
+    path = ROOT / "content" / "roadmaps" / NOTES[slug]
     raw_labels = note_labels(path)
     folded = [fold(x) for x in raw_labels if fold(x)]
 
