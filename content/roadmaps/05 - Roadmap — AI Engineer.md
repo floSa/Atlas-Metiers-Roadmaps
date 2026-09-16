@@ -24,7 +24,7 @@ flowchart TD
   classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
-Pré-requis de la roadmap : « one of these », c'est-à-dire savoir déjà développer côté backend ou frontend. Un AI Engineer est d'abord un ingénieur logiciel — voir [[01 - Roadmap — Computer Science]] si les bases système manquent.
+Pré-requis de la roadmap : « one of these », c'est-à-dire savoir déjà développer côté backend ou frontend. Un AI Engineer est d'abord un ingénieur logiciel — voir [[parcours/computer-science/index|Parcours Computer Science]] si les bases système manquent.
 
 ---
 

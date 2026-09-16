@@ -45,7 +45,7 @@ C'est à la fois l'outil du test et son objet : les mêmes leviers qui font suiv
 - [Prompt Engineering Guide — DAIR.AI](https://www.promptingguide.ai/) — la référence du domaine, tenue à jour et sourcée.
 - [Chain-of-Thought Prompting Elicits Reasoning in LLMs](https://arxiv.org/abs/2201.11903) — l'article d'origine, utile pour savoir ce que la technique démontre réellement.
 - [Context Engineering vs. Prompt Engineering](https://www.youtube.com/watch?v=vD0E3EUb8-8) — le déplacement récent du sujet, expliqué simplement.
-- [[roadmaps/06 - Roadmap — Prompt Engineering]] — la note de fond du corpus.
+- [[parcours/prompt-engineering/index|Parcours Prompt Engineering]] — le parcours métier complet, du vocabulaire aux prompts de production.
 
 ## Appelée par
 

@@ -154,7 +154,7 @@ flowchart TD
 - **Iterate and Test your Prompts** — un jeu de cas figés, rejoué à chaque modification. Sans cela on optimise à l'aveugle et on régresse en silence.
 
 > [!tip] Ajout 2026
-> Sur un agent, ce qui compte le plus dans le prompt système, ce sont les **règles d'usage des outils** : quand appeler quoi, quoi faire en cas d'échec, quand s'arrêter et rendre la main. Une convention s'est répandue côté agents de code : un fichier `AGENTS.md` à la racine du dépôt décrivant commandes et conventions du projet, lu par plusieurs harnais. Voir [[06 - Roadmap — Prompt Engineering]] et [[Claude Cheat Sheet]].
+> Sur un agent, ce qui compte le plus dans le prompt système, ce sont les **règles d'usage des outils** : quand appeler quoi, quoi faire en cas d'échec, quand s'arrêter et rendre la main. Une convention s'est répandue côté agents de code : un fichier `AGENTS.md` à la racine du dépôt décrivant commandes et conventions du projet, lu par plusieurs harnais. Voir [[parcours/prompt-engineering/index|Parcours Prompt Engineering]] et [[Claude Cheat Sheet]].
 
 > [!warning] Piège
 > Empiler les interdictions au fil des incidents. Un prompt système de plusieurs milliers de tokens de « ne fais jamais… » devient contradictoire et coûte cher à chaque tour. Les contraintes dures se codent dans l'application — validation, permissions — pas dans le prompt.
@@ -441,4 +441,4 @@ flowchart TD
 - OWASP Top 10 for LLM Applications — référentiel de menaces, dont la prompt injection
 - Yao et al., *ReAct: Synergizing Reasoning and Acting in Language Models* et Wang et al., *Executable Code Actions Elicit Better LLM Agents* — la boucle fondatrice et le motif code-as-action
 - Chip Huyen, *AI Engineering* — chapitres agents et évaluation
-- [[05 - Roadmap — AI Engineer]] et [[06 - Roadmap — Prompt Engineering]] — les deux roadmaps voisines les plus utiles
+- [[05 - Roadmap — AI Engineer]] et [[parcours/prompt-engineering/index|Parcours Prompt Engineering]] — les deux roadmaps voisines les plus utiles
