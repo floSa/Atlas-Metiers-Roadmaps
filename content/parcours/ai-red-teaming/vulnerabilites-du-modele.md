@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-red-teaming
 ---
 
+Niveau attendu : **usage**. L'empoisonnement de l'index de récupération se teste sur un chemin balisé ; l'inversion, le vol de poids et les attaques par gradient restent au niveau de la notion, faute de profil de déploiement qui les rende atteignables en mission.
+
 Les attaques qui visent le modèle lui-même plutôt que son interface : empoisonnement, exemples adverses, inversion, extraction — et le tri qui dit lesquelles sont dans le périmètre avant d'y consacrer une seule journée.
 
 ```mermaid

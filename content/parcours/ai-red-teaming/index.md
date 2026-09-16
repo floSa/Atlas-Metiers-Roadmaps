@@ -10,20 +10,20 @@ Tester un système d'IA en adversaire pour le rendre défendable : trouver ce qu
 
 ## La roadmap
 
-Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
+Chaque case mène à sa page. La deuxième ligne donne le niveau attendu chez un profil **confirmé** — de *notion* (reconnaître le sujet, savoir qui appeler) à *référence* (faire autorité dans la salle), en passant par *usage* (se servir d'un chemin balisé) et *autonomie* (concevoir, déboguer sous pression, défendre un arbitrage). Cochez les étapes acquises en bas de page pour suivre votre progression.
 
 ```mermaid
 flowchart TD
-  F["Cadrage et socle<br/>ce qui est propre au modèle"] --> M["Modélisation de la menace<br/>surfaces, adversaires, impact"]
-  M --> PH["Prompt hacking<br/>jailbreak et filtres"]
-  M --> PI["Injection de prompt<br/>directe et indirecte"]
-  M --> MV["Vulnérabilités du modèle<br/>empoisonnement, extraction"]
-  M --> IN["Infrastructure et chaîne<br/>API, poids, serveurs d'outils"]
-  PH --> E["Engagement et mesure<br/>boîte noire à blanche, corpus adverse"]
+  F["Cadrage et socle<br/>Usage"] --> M["Modélisation de la menace<br/>Autonomie"]
+  M --> PH["Prompt hacking<br/>Autonomie"]
+  M --> PI["Injection de prompt<br/>Référence"]
+  M --> MV["Vulnérabilités du modèle<br/>Usage"]
+  M --> IN["Infrastructure et chaîne<br/>Autonomie"]
+  PH --> E["Engagement et mesure<br/>Référence"]
   PI --> E
   MV --> E
   IN --> E
-  E --> R["Restitution et gouvernance<br/>rapport, divulgation, conformité"]
+  E --> R["Restitution et gouvernance<br/>Autonomie"]
 
   click F "/parcours/ai-red-teaming/cadrage-et-socle"
   click M "/parcours/ai-red-teaming/modelisation-de-la-menace"

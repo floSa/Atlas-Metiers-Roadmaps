@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/ai-red-teaming
 ---
 
+Niveau attendu : **autonomie**. C'est là que tombe la majorité des constats corrigeables : un confirmé mène la passe applicative seul, sans s'adosser à un testeur d'intrusion, et défend le périmètre qu'il a négocié au cadrage.
+
 La partie du travail qui ressemble le plus à un test d'intrusion classique, et celle qui produit le plus de constats corrigeables : un système d'IA reste une application web avec des dépendances lourdes.
 
 ```mermaid
