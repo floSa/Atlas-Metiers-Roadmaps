@@ -1,7 +1,7 @@
 # Rapport de verification des liens
 
 > Produit par `tools/verifier_liens.py` le 2026-09-16.
-> Perimetre : **corpus redige (content/)** — 241 URL uniques, 241 verifiees.
+> Perimetre : **corpus redige (content/)** — 257 URL uniques, 257 verifiees.
 > Ce rapport ne modifie rien. Il liste ce qu'il y a a decider.
 
 ## Vue d'ensemble
@@ -9,10 +9,10 @@
 | Statut | Nombre | Part | Ce que ca veut dire |
 |---|---:|---:|---|
 | `introuvable` | 3 | 1.2 % | La page a disparu. A remplacer par un equivalent verifie, ou a retirer. |
-| `redirection` | 16 | 6.6 % | Atteignable, mais l'URL citee n'est plus l'URL reelle. A mettre a jour. |
+| `redirection` | 16 | 6.2 % | Atteignable, mais l'URL citee n'est plus l'URL reelle. A mettre a jour. |
 | `delai` | 1 | 0.4 % | Aucune reponse dans le temps imparti. A reverifier. |
-| `bloque` | 11 | 4.6 % | Le serveur refuse les robots. Ne veut pas dire mort : verification humaine requise. |
-| `ok` | 210 | 87.1 % | Atteignable a l'URL citee. |
+| `bloque` | 13 | 5.1 % | Le serveur refuse les robots. Ne veut pas dire mort : verification humaine requise. |
+| `ok` | 224 | 87.2 % | Atteignable a l'URL citee. |
 
 ## introuvable — 3
 
@@ -69,14 +69,14 @@ Aucune reponse dans le temps imparti. A reverifier.
 - `https://hevodata.com/learn/understanding-cohort-analysis-a-guide/` — pas de reponse
   cite par : content/parcours/bi-analyst.md
 
-## bloque — 11
+## bloque — 13
 
 Le serveur refuse les robots. Ne veut pas dire mort : verification humaine requise.
 
 - `https://community.fabric.microsoft.com/t5/Power-BI-forums/ct-p/powerbi` `403` — a verifier a la main dans un navigateur
   cite par : content/parcours/bi-analyst.md
 - `https://dev.mysql.com/doc/` `403` — a verifier a la main dans un navigateur
-  cite par : content/parcours/ai-product-builder.md
+  cite par : content/parcours/ai-product-builder.md, content/ressources/donnees.md
 - `https://docs.getdbt.com/docs/build/documentation` `200` — interstitiel anti-robot, a verifier a la main
   cite par : content/parcours/bi-analyst.md, content/ressources/donnees.md
 - `https://dplyr.tidyverse.org/` `200` — interstitiel anti-robot, a verifier a la main
@@ -85,9 +85,13 @@ Le serveur refuse les robots. Ne veut pas dire mort : verification humaine requi
   cite par : content/parcours/forward-deployed-engineer/industrialisation.md
 - `https://ggplot2.tidyverse.org/` `200` — interstitiel anti-robot, a verifier a la main
   cite par : content/ressources/donnees.md
+- `https://huggingface.co/docs/hub/en/index` `200` — interstitiel anti-robot, a verifier a la main
+  cite par : content/ressources/ia-generative.md
 - `https://huggingface.co/learn/agents-course/en/unit1/tools` `200` — interstitiel anti-robot, a verifier a la main
   cite par : content/ressources/ia-generative.md, content/ressources/index.md
 - `https://huggingface.co/learn/mcp-course/en/unit0/introduction` `200` — interstitiel anti-robot, a verifier a la main
+  cite par : content/ressources/ia-generative.md
+- `https://huggingface.co/models` `200` — interstitiel anti-robot, a verifier a la main
   cite par : content/ressources/ia-generative.md
 - `https://medium.com/free-code-camp/how-to-effectively-scope-your-software-projects-from-planning-to-execution-e96cbcac54b9` `403` — a verifier a la main dans un navigateur
   cite par : content/parcours/forward-deployed-engineer/arbitrage-technologique.md
@@ -96,6 +100,6 @@ Le serveur refuse les robots. Ne veut pas dire mort : verification humaine requi
 - `https://www.iso.org/standard/81230.html` `403` — a verifier a la main dans un navigateur
   cite par : content/parcours/ai-red-teaming.md, content/ressources/ia-generative.md, content/ressources/index.md
 
-## ok — 210
+## ok — 224
 
 Non detaillees : la liste est dans `data/liens/cache.json`.

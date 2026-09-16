@@ -151,7 +151,7 @@ avaient changé de place**, en quelques semaines d'existence du corpus. La véri
 rejouable en une commande, et elle doit l'être régulièrement :
 
 ```bash
-python3 tools/verifier_liens.py --corpus
+python3 tools/verifier_liens.py --selection
 ```
 
 Enfin, elle ne remplace pas les parcours. Une ressource répond à une question qu'on se

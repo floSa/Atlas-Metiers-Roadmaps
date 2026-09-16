@@ -121,8 +121,9 @@ Teste les URL et classe les réponses. Il ne modifie jamais le corpus : il produ
 rapport, et la décision de remplacer ou de retirer reste humaine.
 
 ```bash
-python3 tools/verifier_liens.py --corpus   # les URL citées dans content/
-python3 tools/verifier_liens.py --amont    # les 2 649 URL uniques de l'amont
+python3 tools/verifier_liens.py --selection  # les URL de content/ressources/
+python3 tools/verifier_liens.py --corpus     # toutes les URL citées dans content/
+python3 tools/verifier_liens.py --amont      # les 2 649 URL uniques de l'amont
 python3 tools/verifier_liens.py --url https://exemple.org/page
 ```
 
@@ -179,6 +180,7 @@ Dans cet ordre.
 python3 tools/roadmap_extract.py --sync
 python3 tools/roadmap_extract.py --all-known
 python3 tools/roadmap_diff.py
+python3 tools/verifier_liens.py --selection
 python3 tools/verifier_liens.py --corpus
 ```
 

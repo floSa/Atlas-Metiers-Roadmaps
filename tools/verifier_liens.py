@@ -30,8 +30,9 @@ Les statuts :
   delai         pas de reponse dans le temps imparti
 
 Usage :
-  python3 tools/verifier_liens.py --amont            # les URL de data/extract/*.json
+  python3 tools/verifier_liens.py --selection        # les URL de content/ressources/
   python3 tools/verifier_liens.py --corpus           # les URL citees dans content/
+  python3 tools/verifier_liens.py --amont            # les URL de data/extract/*.json
   python3 tools/verifier_liens.py --url URL [URL...] # une verification ponctuelle
   python3 tools/verifier_liens.py --corpus --revoir 0  # force le retest complet
 
@@ -110,10 +111,23 @@ def urls_amont() -> dict[str, list[str]]:
     return dict(origines)
 
 
+def urls_selection() -> dict[str, list[str]]:
+    """Les URL de la selection commentee, sous content/ressources/.
+
+    C'est le perimetre le plus important a surveiller : ce sont les adresses
+    que l'atlas met en avant. Une source morte y coute plus cher qu'ailleurs.
+    """
+    return _urls_markdown(CONTENT / "ressources")
+
+
 def urls_corpus() -> dict[str, list[str]]:
     """Les URL citees dans les notes redigees, avec les fichiers qui les citent."""
+    return _urls_markdown(CONTENT)
+
+
+def _urls_markdown(racine: pathlib.Path) -> dict[str, list[str]]:
     origines: dict[str, list[str]] = collections.defaultdict(list)
-    for chemin in sorted(CONTENT.rglob("*.md")):
+    for chemin in sorted(racine.rglob("*.md")):
         texte = chemin.read_text(encoding="utf-8")
         relatif = str(chemin.relative_to(ROOT))
         trouvees = set(MD_LINK.findall(texte)) | set(MD_SOURCE.findall(texte)) | set(MD_NUE.findall(texte))
@@ -396,6 +410,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--amont", action="store_true", help="verifier les URL de data/extract/*.json")
     ap.add_argument("--corpus", action="store_true", help="verifier les URL citees dans content/")
+    ap.add_argument("--selection", action="store_true", help="verifier les URL de content/ressources/")
     ap.add_argument("--url", nargs="+", default=[], help="verifier ces URL et rien d'autre")
     ap.add_argument("--limite", type=int, default=0, help="arreter apres N verifications reelles")
     ap.add_argument("--delai", type=float, default=1.5, help="secondes entre deux requetes")
@@ -407,6 +422,9 @@ def main() -> int:
     if args.url:
         origines = {u: ["--url"] for u in args.url}
         perimetre = "verification ponctuelle"
+    elif args.selection:
+        origines = urls_selection()
+        perimetre = "selection commentee (content/ressources/)"
     elif args.corpus:
         origines = urls_corpus()
         perimetre = "corpus redige (content/)"
