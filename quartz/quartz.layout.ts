@@ -13,7 +13,7 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [Component.NavigationArbre()],
   footer: Component.Footer({
     links: {
       "Les roadmaps d'origine": "https://roadmap.sh",

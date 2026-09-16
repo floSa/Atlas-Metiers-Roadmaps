@@ -21,7 +21,7 @@ flowchart TD
 
 - SQL au niveau autonomie — voir [[notions/sql]]. L'angle FDE : la première requête utile n'est pas métier, c'est un inventaire. Combien de lignes, depuis quand, combien de nulls, quelles valeurs distinctes sur les colonnes censées être normalisées.
 - Bases vectorielles — voir [[notions/embeddings-et-bases-vectorielles]]. Angle FDE : choisir celle qui vit déjà dans l'infrastructure du client plutôt que la meilleure sur le papier, parce que c'est une base de plus à sauvegarder et à superviser pour son équipe.
-- Systèmes patrimoniaux — voir [[notions/systemes-patrimoniaux]]. Traité en profondeur dans [[parcours/forward-deployed-engineer/industrialisation]].
+- Systèmes patrimoniaux — voir [[notions/systemes-patrimoniaux]]. Traité en profondeur dans [[parcours/forward-deployed-engineer/industrialisation/index]].
 - Qualité des données — voir [[notions/qualite-des-donnees]]. Angle FDE : le diagnostic qualité est un livrable de la phase d'audit, et souvent le premier résultat qui impressionne le client, avant toute IA.
 
 > [!tip] Ajout 2026

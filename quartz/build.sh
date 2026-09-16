@@ -73,6 +73,14 @@ fi
 cp "$SOCLE/quartz.config.ts" "$SOCLE/quartz.layout.ts" "$CLONE/"
 cp "$SOCLE/styles/custom.scss" "$CLONE/quartz/styles/custom.scss"
 
+# Nos composants maison, plus leur enregistrement dans l'index des composants.
+cp "$SOCLE"/composants/*.tsx "$CLONE/quartz/components/"
+for c in "$SOCLE"/composants/*.tsx; do
+  n="$(basename "$c" .tsx)"
+  grep -q "export { default as $n }" "$CLONE/quartz/components/index.ts" \
+    || echo "export { default as $n } from \"./$n\"" >> "$CLONE/quartz/components/index.ts"
+done
+
 # --- 4. les dependances ---------------------------------------------------
 if [ ! -d "$CLONE/node_modules" ]; then
   echo "==> npm ci"

@@ -39,9 +39,9 @@ flowchart TD
 ## Ma progression
 
 - [ ] [[parcours/forward-deployed-engineer/socle-technique/index|Socle technique]] — ce qu'il faut savoir faire, et à quelle profondeur
-- [ ] [[parcours/forward-deployed-engineer/cycle-mission|Cycle de mission]] — les quatre phases et leurs portes de sortie
-- [ ] [[parcours/forward-deployed-engineer/audit-et-cartographie|Phase 1 — Audit et cartographie]] — observer le travail réel, modéliser le processus
-- [ ] [[parcours/forward-deployed-engineer/arbitrage-technologique|Phase 2 — Arbitrage technologique]] — simplifier avant d'automatiser, déterministe ou probabiliste
+- [ ] [[parcours/forward-deployed-engineer/cycle-mission/index|Cycle de mission]] — les quatre phases et leurs portes de sortie
+- [ ] [[parcours/forward-deployed-engineer/audit-et-cartographie/index|Phase 1 — Audit et cartographie]] — observer le travail réel, modéliser le processus
+- [ ] [[parcours/forward-deployed-engineer/arbitrage-technologique/index|Phase 2 — Arbitrage technologique]] — simplifier avant d'automatiser, déterministe ou probabiliste
 - [ ] [[parcours/forward-deployed-engineer/industrialisation/index|Phase 3 — Industrialisation]] — interfaçage, sécurité, évaluation, exploitation
 - [ ] [[parcours/forward-deployed-engineer/sortie-de-mission/index|Phase 4 — Sortie de mission]] — transfert de compétences, maintenance
-- [ ] [[parcours/forward-deployed-engineer/competences-relationnelles|Compétences relationnelles]] — parties prenantes, politique interne, conduite du changement
+- [ ] [[parcours/forward-deployed-engineer/competences-relationnelles/index|Compétences relationnelles]] — parties prenantes, politique interne, conduite du changement
