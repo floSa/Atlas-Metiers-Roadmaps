@@ -106,3 +106,66 @@ article table {
 pre:has(> code.mermaid) {
   overflow-x: auto;
 }
+
+/* ---------------------------------------------------------------------------
+ * Accueil : la liste des metiers, entiere, sans defilement.
+ *
+ * Quartz reserve une colonne de 320 px a droite meme quand elle est vide, borne
+ * la page a 1500 px et pousse le contenu vers le bas d'un $topSpacing. Sur la
+ * page d'accueil ces trois reglages coutent la moitie de l'ecran pour rien :
+ * on les annule, et le tableau des quatorze metiers tient dans la premiere vue.
+ * ------------------------------------------------------------------------- */
+body[data-slug="index"] {
+  .page {
+    max-width: none;
+  }
+
+  /* Plus de colonne de droite : deux colonnes au lieu de trois. */
+  .page > #quartz-body {
+    grid-template-columns: 320px auto;
+    grid-template-areas:
+      "grid-sidebar-left grid-header"
+      "grid-sidebar-left grid-center"
+      "grid-sidebar-left grid-footer";
+  }
+
+  /* Le contenu demarre en haut de l'ecran. */
+  .page > #quartz-body .page-header {
+    margin-top: 1rem;
+  }
+
+  article > h1:first-child {
+    margin-top: 0;
+    font-size: 1.9rem;
+  }
+
+  article > p:first-of-type {
+    margin: 0.4rem 0 1.2rem;
+    color: var(--darkgray);
+  }
+
+  /* Une ligne par metier : le libelle ne se coupe pas, la description prend
+   * tout ce qui reste. */
+  article table {
+    width: 100%;
+    table-layout: auto;
+    margin-top: 0;
+  }
+
+  article table th,
+  article table td {
+    padding: 0.32rem 0.9rem 0.32rem 0;
+    line-height: 1.35;
+    white-space: nowrap;
+  }
+
+  article table td:last-child,
+  article table th:last-child {
+    width: 100%;
+    white-space: normal;
+  }
+
+  article table td:first-child {
+    font-weight: 600;
+  }
+}

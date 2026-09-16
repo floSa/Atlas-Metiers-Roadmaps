@@ -4,21 +4,22 @@ date: 2026-09-16
 statut: actif
 ---
 
-Se former sur les métiers de l'IA et de la data : ce qu'il faut savoir faire dans chacun, et où l'apprendre gratuitement.
+Se former sur les métiers de l'IA et de la data : ce qu'il faut savoir faire, et où l'apprendre gratuitement.
 
 | Métier | En deux mots |
 |---|---|
-| [[parcours/forward-deployed-engineer/index\|Forward Deployed Engineer]] | Livrer de l'IA chez le client, dans son système d'information et avec ses contraintes |
-| [[02 - Roadmap — AI and Data Scientist\|Data Scientist]] | Maths, stats, code, machine learning, deep learning |
+| [[parcours/forward-deployed-engineer/index\|Forward Deployed Engineer]] | Livrer de l'IA chez le client, dans son système et ses contraintes |
+| [[02 - Roadmap — AI and Data Scientist\|Data Scientist]] | Maths, statistiques, code, machine learning, deep learning |
 | [[03 - Roadmap — Data Engineer\|Data Engineer]] | Ingestion, stockage, transformation, orchestration |
-| [[05 - Roadmap — AI Engineer\|AI Engineer]] | Construire un système sur des modèles pré-entraînés : API, RAG, coût, déploiement |
+| [[05 - Roadmap — AI Engineer\|AI Engineer]] | Bâtir un système sur des modèles pré-entraînés : API, RAG, coût |
 | [[parcours/data-analyst\|Data Analyst]] | De la question métier à la réponse chiffrée |
-| [[parcours/bi-analyst\|BI Analyst]] | Entrepôt, modélisation, définitions partagées, tableaux de bord qui servent à décider |
+| [[parcours/bi-analyst\|BI Analyst]] | Entrepôt, modélisation, définitions partagées, tableaux de bord |
 | [[08 - Roadmap — MLOps\|MLOps]] | Versionnement, CI/CD, supervision, dérive, coûts |
-| [[04 - Roadmap — Machine Learning\|Machine Learning]] | Le ML classique et sa méthodologie : validation, fuite de données, métriques |
+| [[04 - Roadmap — Machine Learning\|Machine Learning]] | Le ML classique : validation, fuite de données, métriques |
 | [[07 - Roadmap — AI Agents\|AI Agents]] | Boucle agentique, outils, MCP, mémoire, évaluation |
-| [[parcours/ai-product-builder\|AI Product Builder]] | Livrer un produit avec des outils d'IA, du prototype à la mise en service |
+| [[parcours/ai-product-builder\|AI Product Builder]] | Livrer un produit avec des outils d'IA, du prototype à la production |
 | [[parcours/ai-red-teaming\|AI Red Teaming]] | Attaquer un système à base de LLM pour le durcir |
-| [[06 - Roadmap — Prompt Engineering\|Prompt Engineering]] | Ce qui marche encore, et le context engineering qui a absorbé le métier |
+| [[06 - Roadmap — Prompt Engineering\|Prompt Engineering]] | Ce qui marche encore, et le context engineering |
 | [[01 - Roadmap — Computer Science\|Computer Science]] | Algorithmique, systèmes, réseau, bases de données, sécurité |
-| [[ressources/index\|Toutes les ressources]] | Les sources de formation gratuites, vérifiées et classées par usage |
+
+[[ressources/index|Toutes les ressources de formation]] — gratuites, vérifiées, classées par usage.
