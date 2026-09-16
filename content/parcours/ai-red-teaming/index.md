@@ -34,7 +34,7 @@ flowchart TD
   click E "/parcours/ai-red-teaming/engagement-et-mesure"
   click R "/parcours/ai-red-teaming/restitution-et-gouvernance"
 
-  classDef surface fill:#fff8e1,stroke:#f9a825,stroke-width:1px
+  classDef surface stroke:#f9a825,stroke-width:1px
   class PH,PI,MV,IN surface
 ```
 

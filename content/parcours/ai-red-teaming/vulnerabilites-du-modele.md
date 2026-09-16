@@ -18,7 +18,7 @@ flowchart TD
   P2["Modèle affiné<br/>sur données internes"] --> A2["+ Inversion et inférence d'appartenance<br/>le corpus contient des données de l'entreprise"]
   P3["Modèle maison<br/>exposé publiquement"] --> A3["+ Empoisonnement de l'entraînement<br/>+ Vol de poids, exemples adverses par gradient"]
 
-  classDef courant fill:#fff8e1,stroke:#f9a825,stroke-width:1px
+  classDef courant stroke:#f9a825,stroke-width:1px
   class P1,A1 courant
 ```
 

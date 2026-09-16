@@ -32,7 +32,7 @@ flowchart TD
   click P4 "/parcours/forward-deployed-engineer/sortie-de-mission"
   click R "/parcours/forward-deployed-engineer/competences-relationnelles"
 
-  classDef transverse fill:#fff8e1,stroke:#f9a825,stroke-width:1px,stroke-dasharray:4 3
+  classDef transverse stroke:#f9a825,stroke-width:1px,stroke-dasharray:4 3
   class R transverse
 ```
 

@@ -25,7 +25,7 @@ flowchart TD
   FDE --> N2["Autonomie - backend et API, Linux, bases de données, DevOps"]:::ajout
   FDE --> N3["Usage - frontend, DSA, orchestration de conteneurs"]:::ajout
   FDE --> N4["Notion - réseau bas niveau, systèmes distribués avancés, entraînement de modèles"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 | Domaine amont | Profondeur attendue | Pourquoi ce niveau et pas un autre |
@@ -55,7 +55,7 @@ flowchart LR
   api --> ctr["Contrats, versionnement, erreurs typées"]:::ajout
   api --> idem["Idempotence et reprise"]:::ajout
   lang --> pkg["Empaquetage et dépendances en environnement contraint"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le brief demande « un développement backend robuste » en Python, TypeScript ou Go. Sur le terrain, la difficulté n'est presque jamais le langage : c'est de livrer un service qui redémarre proprement, journalise assez pour être diagnostiqué à distance, et dont les dépendances s'installent dans un environnement où le dépôt public est filtré par un proxy d'entreprise. Un FDE écrit peu de code très sophistiqué et beaucoup de code très défensif.
@@ -86,7 +86,7 @@ flowchart LR
   lin --> svc["Services, systemd, redémarrage"]
   lin --> net["Réseau - ports, proxy d'entreprise, certificats"]:::ajout
   lin --> deb["Déboguage sans outillage graphique"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont le formule bien : la plupart des logiciels de production tournent sous Linux. Pour un FDE, la précision qui compte est ailleurs — le serveur sur lequel il débogue n'est pas le sien. Pas d'agent d'observabilité installé, pas de droits d'administration, un proxy qui coupe la moitié des requêtes sortantes et un certificat interne que rien ne reconnaît. Le niveau utile est donc celui du diagnostic en environnement hostile, pas celui de l'administration système.
@@ -114,7 +114,7 @@ flowchart TD
   data --> vec["Vectoriel - index, filtres, réindexation"]:::ajout
   data --> leg["Systèmes patrimoniaux - ERP, CRM, exports"]:::ajout
   rel --> qual["Qualité et fraîcheur des données"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le brief place la manipulation de bases relationnelles et vectorielles dans les domaines d'expertise requis, et l'amont n'en parle pas du tout. C'est pourtant là que la plupart des missions se jouent : la qualité d'un système de récupération documentaire est plafonnée par la qualité des données qu'on lui donne, et personne chez le client ne connaît l'état réel de ses données. Le schéma documenté et le contenu effectif divergent toujours.
@@ -142,7 +142,7 @@ flowchart LR
   fe --> fw["Un framework, un seul"]
   fe --> proto["Prototype livrable sans équipe frontend"]
   fe --> lim["Savoir s'arrêter avant le produit fini"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont vise juste : un FDE capable de produire une interface fonctionnelle est autonome dans un engagement, il livre une démonstration de bout en bout sans dépendre d'une équipe frontend. Ce qu'il ne dit pas, c'est que l'interface sert d'abord d'instrument de cadrage. Montrer un écran, même grossier, fait sortir en dix minutes des exigences que trois ateliers de recueil n'ont pas révélées — parce que les gens critiquent mieux qu'ils ne décrivent.
@@ -171,7 +171,7 @@ flowchart LR
   dsa --> sd["System design"]
   sd --> int["Intégration - le vrai problème de conception"]:::ajout
   sd --> fail["Modes de défaillance et dégradation"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont justifie l'algorithmique par la capacité à évaluer la performance d'un code et à déboguer les inefficacités d'un système client. C'est exact et c'est limité : un FDE n'écrit pratiquement jamais un algorithme non trivial. En revanche il conçoit des systèmes d'intégration en permanence, et c'est là que le niveau doit être élevé — un système d'IA en environnement client est un problème de couplage, de mode dégradé et de reprise, pas un problème de complexité algorithmique.
@@ -202,7 +202,7 @@ flowchart TD
   ai --> ctx["Prompt et context engineering"]
   ai --> cost["Coût et latence"]:::ajout
   ai --> guard["Garde-fous et sécurité"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est le seul domaine où le niveau attendu est celui de la référence. Non pas parce qu'il serait plus noble, mais parce que c'est le seul où le client n'a personne pour rattraper une erreur du FDE. Un mauvais choix de découpage documentaire ou un jeu d'évaluation absent ne se voient pas à la livraison ; ils se voient six mois plus tard, quand plus personne ne sait pourquoi le système s'est dégradé.
@@ -235,7 +235,7 @@ flowchart LR
   dev --> obs["Observabilité"]
   dev --> sec["Secrets et accès"]:::ajout
   dev --> host["Contraintes d'hébergement client - cloud souverain, air gap"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le nœud DevOps de l'amont est le seul de la roadmap à ne porter aucun contenu ni aucune ressource. C'est dommage, parce que c'est ce bloc qui décide si le système survit au départ du FDE. Tout ce qui se déploie à la main mourra ; tout ce qui n'est pas observable deviendra une boîte noire que personne n'osera toucher.

@@ -18,7 +18,7 @@ flowchart TD
   R --> V["Vulgariser et défendre un arbitrage"]
   R --> E["Écrire - la trace qui protège"]
   R --> P["Tenir sa position de tiers"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 Une phrase de l'amont résume l'enjeu mieux que n'importe quel développement : *si vous ne savez pas expliquer à un directeur non technique ce que l'IA peut et ne peut pas faire, vous ne pouvez pas être FDE.* Le reste de cette page détaille ce qu'il faut savoir faire autour.
@@ -35,7 +35,7 @@ flowchart TD
   org --> los["Qui perd quelque chose"]:::ajout
   org --> blk["Qui peut bloquer sans décider"]:::ajout
   blk --> sec["Sécurité, DPO, achats, exploitation, représentants du personnel"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le brief demande une « intelligence situationnelle pour naviguer dans la politique interne ». Concrètement, cela commence par un travail d'observation aussi méthodique que la cartographie de processus : identifier qui décide réellement, qui paie, qui utilisera, qui perd quelque chose, et surtout qui peut bloquer sans avoir le pouvoir de décider. Cette dernière catégorie est la plus sous-estimée. Une direction générale peut vouloir le projet et un responsable de la sécurité l'arrêter pendant six semaines — sans mauvaise intention, en appliquant son rôle.
@@ -95,7 +95,7 @@ flowchart TD
   res --> p4["Expérience d'un projet précédent abandonné"]:::ajout
   res --> p5["Désaccord technique fondé"]:::ajout
   p5 --> ec["Écouter - c'est souvent le cas limite qui manquait"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le brief demande de surmonter la résistance au changement. Le verbe est mal choisi et il vaut la peine de le dire : la résistance n'est pas un obstacle à contourner, c'est une information. Cinq causes reviennent, et une seule relève de la communication. Les autres sont des objections fondées — une crainte pour l'emploi qui a une base réelle, une expertise dévaluée, une surcharge de transition réelle, le souvenir d'un projet identique abandonné il y a deux ans. Traiter cela comme un problème de pédagogie, c'est ne pas l'avoir compris.
@@ -125,7 +125,7 @@ flowchart LR
   vul --> lim["Dire les limites avant qu'on ne les découvre"]
   vul --> no["Savoir dire que l'IA n'est pas la réponse"]
   vul --> dec["Faire prendre une décision, pas exposer un sujet"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont pose l'exigence : parler de coût en tokens et de latence dans la même conversation où l'on explique un retour sur investissement à un dirigeant. La difficulté n'est pas de simplifier, c'est de simplifier sans mentir — supprimer la précision inutile en gardant l'arbitrage réel. Le test est simple : après l'explication, l'interlocuteur doit pouvoir **prendre une décision** et la défendre lui-même devant quelqu'un d'autre. S'il a seulement compris, c'était de la pédagogie ; s'il peut décider, c'était de la vulgarisation utile.
@@ -156,7 +156,7 @@ flowchart LR
   ecr --> run["Procédures d'exploitation"]
   ecr --> doc["Documentation qui survit au départ"]
   ecr --> pt["Une page vaut mieux que dix"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont classe la rédaction technique parmi les compétences de terrain et donne la bonne justification : une bonne documentation est ce qui permet au client d'exploiter et de faire évoluer le système après la fin de la mission, sans rappeler le FDE à chaque question. Il y a une seconde fonction, plus immédiate : l'écrit est ce qui fige les décisions dans une organisation où les gens changent de poste et où les réunions se réinterprètent.
@@ -187,7 +187,7 @@ flowchart TD
   t --> l1["Dire non fait partie du service"]:::ajout
   t --> l2["Ne pas devenir la dépendance"]:::ajout
   t --> l3["Loyauté au résultat, pas à un camp"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'immersion crée une ambiguïté permanente : le FDE partage le quotidien des équipes clientes sans en faire partie, et il représente un fournisseur sans être un commercial. Cette position a une valeur propre — c'est celle d'un tiers qui peut dire ce que les gens de l'intérieur ne peuvent pas dire, parce qu'ils ont une carrière à faire dans l'organisation. La tenir demande deux disciplines : ne pas se faire capter par un camp, et ne pas devenir indispensable.

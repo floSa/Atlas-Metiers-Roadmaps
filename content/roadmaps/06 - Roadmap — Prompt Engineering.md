@@ -21,7 +21,7 @@ flowchart TD
   G --> H["8. Sécurité - prompt injection et red teaming"]
   H --> I["9. Bonnes pratiques de production"]
   I --> J["Prompt versionné, testé, monitoré"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 > [!warning] Avertissement de cadrage
@@ -54,7 +54,7 @@ flowchart LR
   prov --> p4["Meta"]
   prov --> p5["xAI"]
   prov --> p6["Modèles à raisonnement et modèles ouverts"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un prompt n'est pas une incantation : c'est le préfixe conditionnant une distribution de probabilité sur le prochain token. Tout ce qui suit dans cette note découle de cette phrase. Comprendre que le modèle échantillonne, qu'il ne « sait » rien de sa propre fiabilité et qu'il n'a accès qu'à ce qui tient dans sa fenêtre de contexte explique 90 % des comportements qu'on trouve surprenants au début.
@@ -97,7 +97,7 @@ flowchart TD
   rep --> r2["Presence Penalty"]
   cfg --> budget["Budget de raisonnement"]:::ajout
   cfg --> seed["Seed et déterminisme"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Ces paramètres agissent sur la *sélection* du token, jamais sur la distribution apprise. Ils sont donc un levier de forme et de variance, pas de qualité de raisonnement. C'est le premier malentendu à dissiper : baisser la température ne rend pas un modèle plus intelligent, elle le rend plus prévisible dans ses erreurs comme dans ses réussites.
@@ -134,7 +134,7 @@ flowchart LR
   m1 --> v["Validation Pydantic et repli"]:::ajout
   m2 --> v
   m3 --> v
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Une sortie structurée est ce qui transforme un modèle de langue en composant logiciel. Tant que la sortie est de la prose, tout le code en aval est du parsing défensif. Dès qu'elle est contrainte par un schéma, le LLM devient une fonction typée, testable et composable.
@@ -173,7 +173,7 @@ flowchart TD
   reas --> d4["Tree of Thoughts (ToT) Prompting"]
   reas --> d5["ReAct Prompting"]
   reas --> d6["Raisonnement natif du modèle"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Ces techniques ont été inventées entre 2022 et 2023 pour compenser ce que les modèles ne savaient pas faire seuls. Une bonne moitié a été absorbée par le post-training et les modes de raisonnement. Il faut les connaître — la littérature et les entretiens s'y réfèrent — mais surtout savoir lesquelles sont encore rentables.
@@ -213,7 +213,7 @@ flowchart TD
   ord --> o2["Critique en fin de prompt"]:::ajout
   comp --> c1["Élagage des résultats d'outils"]:::ajout
   iso --> i1["Une tâche, un contexte propre"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La roadmap ne nomme pas cette discipline ; c'est pourtant elle qui a absorbé le métier. Quand la fenêtre passe à des centaines de milliers de tokens, la question n'est plus « comment formuler » mais « quoi mettre, dans quel ordre, et quoi retirer ». Le prompt devient une politique de gestion d'un budget de contexte rare et dégradant.
@@ -249,7 +249,7 @@ flowchart LR
   mod --> m3["Réécriture guidée par les erreurs"]:::ajout
   g3 --> loop["Boucle fermée avec l'évaluation"]:::ajout
   m3 --> loop
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Écrire des prompts à la main ne passe pas à l'échelle et n'est pas reproductible. Dès qu'on dispose d'un jeu d'exemples annotés et d'une métrique, l'optimisation du prompt devient un problème de recherche que la machine fait mieux et plus vite qu'un humain. C'est l'idée du papier fondateur « Large Language Models are Human-Level Prompt Engineers ».
@@ -283,7 +283,7 @@ flowchart TD
   e0 --> e3["LLM-as-judge calibré"]:::ajout
   e0 --> e4["Tests de non-régression en CI"]:::ajout
   e4 --> e5["Traces et observabilité en production"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est la section qui sépare le bricolage du travail d'ingénieur. Sans évaluation, « améliorer un prompt » signifie « avoir essayé trois exemples qui marchent ». Avec évaluation, chaque modification devient une hypothèse mesurable — et la moitié des idées se révèlent neutres ou négatives.
@@ -321,7 +321,7 @@ flowchart TD
   dfn --> d2["Validation en sortie et allowlist"]:::ajout
   dfn --> d3["Humain dans la boucle sur l'irréversible"]:::ajout
   dfn --> d4["Séparation des privilèges entre agents"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le prompt injection est le seul point de cette roadmap qui soit un problème **non résolu**, et il faut le dire clairement. L'architecture des LLM ne sépare pas les instructions des données : tout est une séquence de tokens. Aucun prompt défensif ne corrige cela. La sécurité se joue donc au niveau système, pas au niveau du prompt.

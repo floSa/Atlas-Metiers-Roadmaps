@@ -21,7 +21,7 @@ flowchart TD
   D --> H["Protocole d'évaluation et seuil chiffré"]:::ajout
   G --> H
   H --> I["Arbitrage écrit et accepté"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **Porte de sortie** : un seuil de réussite chiffré, un protocole pour le mesurer, et un arbitrage écrit signé par celui qui décide. Sans les trois, le développement commence sur un malentendu.
@@ -39,7 +39,7 @@ flowchart LR
   q2 --> q3["Cette information est-elle ressaisie ?"]:::ajout
   q3 --> con["Connecter les systèmes"]:::ajout
   q3 --> rest["Ce qui reste - candidat à l'automatisation"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le brief est catégorique : simplifier le processus en supprimant les étapes superflues **avant toute écriture de code**. C'est la formulation contemporaine d'un principe de réingénierie posé au début des années 1990 — n'automatisez pas, supprimez. La raison est mécanique : automatiser une étape inutile la rend permanente. Ce qui était une lourdeur discutable devient un composant logiciel que plus personne n'osera retirer, avec sa documentation, sa supervision et son coût de maintenance.
@@ -72,7 +72,7 @@ flowchart TD
   r2 -->|"oui"| r4["Erreur tolérable et détectable ?"]:::ajout
   r4 -->|"non"| hum["Garder l'humain, assister sans décider"]:::ajout
   r4 -->|"oui"| gen["IA générative"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est le cœur du métier et l'erreur la plus chère. Un système génératif placé sur une tâche déterministe coûte plus cher, répond plus lentement, se trompe parfois, et remplace un comportement vérifiable par un comportement à surveiller. L'inverse — un moteur de règles sur une tâche qui demande de l'interprétation — produit un arbre de conditions ingérable que personne ne maintiendra. La grille ci-dessus se parcourt étape par étape sur la carte de la phase 1, pas une fois pour le projet entier : un même processus mélange presque toujours les deux natures.
@@ -106,7 +106,7 @@ flowchart TD
   p3 -->|"non"| pipe["Pipeline déterministe avec étapes modèle"]:::ajout
   p3 -->|"oui"| agent["Agent avec outils, périmètre restreint"]:::ajout
   arch --> mod["Choix du modèle - qualité mesurée, coût, latence, confidentialité"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le brief demande de maîtriser les architectures RAG, l'orchestration d'agents, le prompting avancé, l'affinage ciblé et la sélection de modèles. La difficulté en mission n'est pas de savoir faire : c'est de choisir le plus simple qui passe le seuil. Chaque niveau d'autonomie ajouté multiplie les modes de défaillance et le coût de supervision, et ce coût sera porté par le client après le départ du FDE.
@@ -138,7 +138,7 @@ flowchart LR
   ev --> met["Métriques - fidélité, pertinence, non-hallucination"]
   ev --> seuil["Seuil de mise en service, chiffré"]:::ajout
   ev --> reg["Non-régression rejouée à chaque changement"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont fait de l'évaluation une phase à part entière du métier, entre l'audit et le déploiement, et insiste sur un point juste : il ne s'agit pas de vérifier que le système produit une réponse, mais qu'il raisonne sur le problème comme le ferait un professionnel compétent. Ce dossier en fait la porte de sortie de la phase 2 pour une raison précise : le jeu d'évaluation **est** la spécification. Il dit ce qu'on attend mieux que n'importe quel document, il est vérifiable, et il transforme une discussion d'opinion en une discussion sur des cas.
@@ -169,7 +169,7 @@ flowchart TD
   cout --> c2["Exploitation et supervision"]:::ajout
   cout --> c3["Reprise des cas d'échec"]:::ajout
   roi --> hon["Dire ce que l'IA ne fera pas"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont demande de savoir quantifier la valeur et d'être honnête sur ce que l'IA peut réellement livrer. Le calcul est faisable parce que la phase 1 a produit des volumes et des durées. Ce que l'amont ne dit pas, c'est que la moitié du coût est ailleurs que dans l'inférence : la supervision, le traitement des cas d'échec et le temps que l'équipe passera à contrôler les sorties pèsent souvent plus que la facture du fournisseur. Un gain de quinze minutes par dossier qui crée trois minutes de vérification par dossier n'est pas un gain de quinze minutes.
@@ -199,7 +199,7 @@ flowchart LR
   dec --> ret["Ce qui est retenu et pourquoi"]:::ajout
   dec --> inv["Ce qui invaliderait la décision"]:::ajout
   dec --> sig["Qui décide, à quelle date"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Une phase 2 non écrite n'a pas eu lieu. Les arbitrages sont pris en réunion, avec des gens qui changeront de poste, et ils seront rejoués au troisième mois par quelqu'un qui n'était pas là. La note de décision — une page, pas dix — sert à répondre en trente secondes, avec une trace datée, et à distinguer un changement de contexte légitime d'un changement d'avis.

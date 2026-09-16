@@ -32,7 +32,7 @@ flowchart TD
   L --> M["Communiquer, arbitrer, faire adopter"]
   M --> N["BI conversationnelle"]:::ajout
   N --> O["Se professionnaliser"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 L'amont énumère 200 nœuds et beaucoup de produits interchangeables. Cette note traite les **catégories** et cite les produits comme exemples : savoir arbitrer entre un entrepôt et un lac vaut mieux que connaître par cœur la liste des bases relationnelles.
@@ -56,7 +56,7 @@ flowchart TD
   rs --> p3["Tableaux de bord et rapports"]
   rs --> p4["Communication aux parties prenantes"]
   rs --> p5["Suivi des indicateurs"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La BI répond à « que s'est-il passé, et est-ce que ça va dans le bon sens ». Ce n'est pas la partie prestigieuse de la data, c'est celle qui décide des budgets. Le BI Analyst est le seul rôle dont le livrable est *un accord sur les chiffres* : un modèle, des définitions, des tableaux de bord que plusieurs services acceptent comme référence commune. Un Data Analyst produit une réponse, un BI Analyst produit un socle qui produira des réponses sans lui.
@@ -95,7 +95,7 @@ flowchart TD
   st --> s2["Rôle, influence, attente réelle"]
   fn --> mk
   mk --> st
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Tout le reste du parcours est de la mécanique ; cette étape décide si la mécanique sert à quelque chose. Comprendre les fonctions de l'entreprise n'est pas de la culture générale : c'est ce qui permet d'entendre « je veux le chiffre d'affaires » et de demander *hors taxes ou TTC, à la commande ou à la facturation, net des avoirs ou brut, à la date de signature ou de livraison*. Les quatre réponses définissent quatre métriques différentes, et les quatre existent quelque part dans l'entreprise. Le travail d'un BI Analyst commence par transformer une demande en spécification — voir [[notions/cadrage-besoin]], qui décrit le recueil et la reformulation ; ce qui est propre à la BI, c'est que la spécification porte sur une **définition de mesure**, pas sur une fonctionnalité.
@@ -169,7 +169,7 @@ flowchart TD
   sq["SQL Fundamentals"] --> sq1["Basic Queries et Advanced Queries"]
   sq --> sq2["Window Functions"]
   sq --> sq3["Performance et indexation"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Cette étape ne sert pas à collectionner des formats, elle sert à savoir **ce qui va casser**. Chaque source a un mode de défaillance propre et prévisible : une base transactionnelle change de schéma quand l'applicatif est mis à jour, une API SaaS impose des quotas et réécrit l'historique, un export manuel disparaît dès que la personne qui le produit part en congé. Un BI Analyst qui connaît ces modes de défaillance conçoit un modèle qui les absorbe ; celui qui l'ignore découvre chaque panne en réunion.
@@ -210,7 +210,7 @@ flowchart TD
   cl --> cc["Cloud Computing Basics - IaaS, PaaS, SaaS"]
   cdw --> sep["Séparation stockage et calcul - la vraie rupture"]:::ajout
   cdw --> emb["Moteurs embarqués - DuckDB pour les volumes moyens"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'entrepôt existe pour une raison précise : **découpler la lecture analytique de l'écriture transactionnelle**, et fixer un historique que personne ne peut réécrire par accident. Tout le reste — la performance, la modélisation, la gouvernance — en découle. Les définitions de l'entrepôt, du data mart et des schémas sont dans [[notions/entrepot-de-donnees]], celles du stockage brut et du lakehouse dans [[notions/data-lake]]. Ce qui est propre au BI Analyst, c'est le choix et ses conséquences quotidiennes.
@@ -249,7 +249,7 @@ flowchart TD
   dm --> cd["Dimensions conformes - le partage entre domaines"]:::ajout
   dm --> sc["Historisation des dimensions - SCD type 1 et 2"]:::ajout
   dm --> dd["Dimension de date - toujours une table, jamais un calcul"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le modèle dimensionnel est le contrat entre la donnée et ceux qui la consultent. Sa mécanique — faits, dimensions, étoile, flocon, granularité — est dans [[notions/modelisation-dimensionnelle]]. Ce qui appartient au BI Analyst, c'est la conduite des quatre ou cinq décisions qui font qu'un modèle tient dix ans ou se réécrit tous les dix-huit mois.
@@ -291,7 +291,7 @@ flowchart TD
   pd["Data Pipeline Design"] --> p1["Idempotence et rejouabilité"]:::ajout
   pd --> p2["Chargement incrémental"]:::ajout
   pd --> p3["Tests en amont du rapport"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est ici que le modèle de la section 6 devient du code exécuté chaque nuit. La mécanique de dbt — modèles, tests, documentation, matérialisations — est dans [[notions/transformation-dbt]] ; celle de l'ordonnancement, des DAG et de la reprise sur incident dans [[notions/orchestration-de-flux]]. Ce qui est propre au BI Analyst, c'est le déplacement que ces outils ont provoqué dans son métier : la transformation est passée d'un outil graphique administré par l'informatique à du **SQL dans un dépôt Git**, ce qui l'a mise à sa portée et lui a imposé des pratiques de développeur.
@@ -337,7 +337,7 @@ flowchart TD
   gov --> g1["Propriétaire par mesure"]:::ajout
   gov --> g2["Versionnement et journal des changements"]:::ajout
   gov --> g3["Dépréciation plutôt que suppression"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est le vrai travail du métier, et l'amont ne lui consacre qu'un nœud — *Calculated Fields & Measures* — en le traitant comme une fonctionnalité d'outil. C'est bien plus que ça. La couche sémantique est l'endroit où « chiffre d'affaires », « client actif », « marge brute » et « délai de livraison » reçoivent **une** définition, exprimée en une seule fois, et à partir de laquelle tous les rapports sont construits. Sans elle, chaque rapport contient sa propre version du calcul, les versions divergent à mesure que les règles évoluent, et l'entreprise se retrouve avec trois chiffres d'affaires selon l'outil consulté.
@@ -383,7 +383,7 @@ flowchart TD
   et --> b1["Bias Recognition"]
   et --> b2["Algorithmic Bias"]
   et --> b3["Mitigation Strategies"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Il faut sortir la gouvernance du registre de la conformité, où l'amont la range, pour la remettre là où elle sert : **c'est ce qui rend un chiffre défendable**. Un chiffre défendable est un chiffre dont on peut dire, en réunion et sans préparation, d'où il vient, ce qu'il inclut, quand il a été calculé, et ce qui se passerait s'il était faux. Les dimensions de la qualité sont dans [[notions/qualite-des-donnees]], la traçabilité et les catalogues dans [[notions/lignage-des-donnees]], les obligations européennes dans [[notions/rgpd]]. L'angle propre au BI Analyst est celui de la charge de la preuve.
@@ -432,7 +432,7 @@ flowchart TD
   dd --> dd2["Un tableau de bord est un produit, pas un livrable"]:::ajout
   dd --> dd3["Cycle de vie et instrumentation de l'usage"]:::ajout
   pl["Programming Languages"] --> pl1["SQL puis Python ou R selon l'écosystème"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La restitution est la seule partie du travail que l'organisation voit, ce qui la rend à la fois surévaluée et négligée : on juge le BI Analyst sur l'esthétique de ses tableaux de bord, et on ne finance jamais leur maintenance. La grammaire du graphique — quel type pour quelle question, lisibilité, erreurs classiques — est dans [[notions/visualisation-de-donnees]] ; ce qui distingue les plateformes dans [[notions/outils-decisionnels]] ; le tableur dans [[notions/tableur]].
@@ -483,7 +483,7 @@ flowchart TD
   ml --> m3["Reinforcement Learning"]
   ts --> md["Modéliser l'analyse plutôt que la recalculer"]:::ajout
   co --> md
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le contenu statistique de cette étape est mutualisé et ne se réexplique pas ici : [[notions/statistiques-descriptives]] pour les mesures de position et de dispersion, [[notions/tests-hypotheses]] pour l'inférence, les p-values, les intervalles de confiance et les deux types d'erreur, [[notions/analyse-correlation]] pour la corrélation et sa confusion avec la causalité, [[notions/regression-lineaire]] pour la régression, [[notions/ab-testing]] pour le protocole d'expérimentation, et [[notions/apprentissage-supervise]], [[notions/apprentissage-non-supervise]] et [[notions/apprentissage-par-renforcement]] pour les trois familles d'apprentissage automatique que l'amont mentionne.
@@ -563,7 +563,7 @@ flowchart TD
   cs --> ar["Arbitrer une définition contestée"]:::ajout
   ar --> a1["Les deux chiffres sont justes, les périmètres diffèrent"]:::ajout
   ar --> a2["Trancher, nommer, documenter, annoncer"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un modèle juste que personne n'utilise ne vaut rien, et un chiffre juste qu'on n'arrive pas à défendre est remplacé par celui d'un tableur. La gestion des intérêts divergents est dans [[notions/gestion-parties-prenantes]], la résistance au changement et l'adoption dans [[notions/conduite-du-changement]]. Ce qui est propre au BI Analyst, c'est une situation qui revient tous les mois et qu'aucune formation ne prépare : **arbitrer un désaccord sur un chiffre**.
@@ -604,7 +604,7 @@ flowchart TD
   gd --> g2["Affichage de la requête et des filtres appliqués"]:::ajout
   gd --> g3["Droits d'accès à la ligne appliqués en amont"]:::ajout
   gd --> g4["Jeu de questions de référence rejoué en continu"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont n'en dit rien, et c'est pourtant l'évolution qui a le plus changé les attentes autour du poste. Toutes les grandes plateformes proposent désormais d'interroger les données en langage naturel — Copilot dans Power BI, Pulse chez Tableau, Cortex Analyst chez Snowflake, Genie côté Databricks, Sage chez ThoughtSpot. La promesse est de supprimer l'intermédiaire entre la question et le chiffre. Ce qu'elle produit réellement dépend entièrement de ce sur quoi on la branche, et c'est la raison pour laquelle cette section est dans ce parcours et pas ailleurs.

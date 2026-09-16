@@ -21,7 +21,7 @@ flowchart TD
   G --> H["Sécurité et éthique"]
   H --> I["Multimodal et outils de dev"]
   I --> J["Production - évaluation, coût, latence"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 Pré-requis de la roadmap : « one of these », c'est-à-dire savoir déjà développer côté backend ou frontend. Un AI Engineer est d'abord un ingénieur logiciel — voir [[01 - Roadmap — Computer Science]] si les bases système manquent.
@@ -72,7 +72,7 @@ flowchart TD
   smp --> rep["Repetition Penalties"]
   llm --> att["Attention, KV cache, Mixture of Experts"]:::ajout
   llm --> rsn["Modèles de raisonnement et budget de thinking"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un LLM prédit le token suivant, tout le reste en découle. Pas besoin de dériver la backpropagation, mais il faut comprendre pourquoi un appel coûte ce qu'il coûte et pourquoi il répond ce qu'il répond : le tokenizer explique le prix et les bizarreries sur le code, les chiffres et le français accentué ; le KV cache explique pourquoi le premier token est lent et les suivants rapides.
@@ -152,7 +152,7 @@ flowchart TD
   api --> a3["Google Gemini API"]
   api --> a4["Hugging Face Inference SDK"]
   api --> a5["OpenAI-compatible APIs, dont vLLM"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un modèle pré-entraîné est un composant qu'on remplace, pas un choix d'architecture définitif. La décision est un arbitrage à cinq axes — qualité sur tes propres cas, coût, latence, taille de fenêtre, confidentialité — et le débat ouvert contre fermé se tranche souvent sur la dernière ligne : si les données ne peuvent pas sortir, le self-hosted n'est plus une préférence mais une contrainte. La couche plateformes est celle par laquelle passe tout ton trafic.
@@ -193,7 +193,7 @@ flowchart TD
   imp --> i1["Indexing Embeddings"]
   imp --> i2["Performing Similarity Search"]
   imp --> i3["Filtres métadonnées et hybride BM25 plus vecteur"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un embedding projette un texte dans un espace où la proximité géométrique approxime la proximité de sens : c'est ce qui permet de chercher « comment annuler mon abonnement » et de trouver un document qui parle de « résiliation ». La base vectorielle stocke ces vecteurs avec leurs métadonnées et répond aux k plus proches en temps sous-linéaire via un index HNSW ou IVF. Le « pick one » de la roadmap est le bon conseil : les APIs se ressemblent, la migration est peu coûteuse, l'important est de commencer.
@@ -232,7 +232,7 @@ flowchart TD
   ways --> w3["Haystack et RAGFlow"]
   s4 --> ev["Reranking et évaluation du retrieval"]:::ajout
   s5 --> ct["Citations et ancrage des sources"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le RAG fait parler le modèle de données qu'il n'a jamais vues sans toucher aux poids. Le pipeline canonique est linéaire — découper, vectoriser, indexer, récupérer, générer — et chaque étage peut faire échouer l'ensemble. En pratique la quasi-totalité des mauvaises réponses vient du retrieval : si le bon passage n'est pas dans le contexte, aucun modèle ne le devinera.
@@ -276,7 +276,7 @@ flowchart TD
   dev --> d1["Building an MCP Server"]
   dev --> d2["Building an MCP Client"]
   dev --> d3["Connect to Local Server et Connect to Remote Server"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un agent est une boucle : observer, choisir un outil, lire le résultat, recommencer jusqu'à une condition d'arrêt — ReAct en est la formulation classique. L'écart entre une démo et un système fiable tient à la qualité des outils exposés et au traitement des erreurs : un outil dont le message d'erreur est explicite permet au modèle de se corriger seul, un outil qui renvoie une stack trace le fait boucler. MCP standardise cette exposition : un serveur écrit une fois devient consommable par n'importe quel host compatible, au lieu d'un adaptateur maison par fournisseur.
@@ -315,7 +315,7 @@ flowchart TD
   bp --> b5["Know your Customers et Usecases"]
   bp --> b6["Constraining outputs and inputs"]
   saf --> reg["AI Act et classification des usages"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un LLM ne distingue pas les instructions du développeur de celles présentes dans les données qu'il lit. C'est la faille structurelle de toute application LLM et elle n'a pas de correctif définitif : dès qu'un agent lit du contenu non maîtrisé — un e-mail, une page web, un PDF envoyé par un tiers — ce contenu peut contenir des ordres. La défense est architecturale : limiter ce que le système peut faire, pas espérer qu'il ne se laisse pas convaincre.
@@ -356,7 +356,7 @@ flowchart TD
   dtl --> ac["AI Assisted Coding Tools"]
   ac --> c1["Claude Code, Codex, Gemini"]
   ac --> c2["Cursor, Windsurf, Replit"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La multimodalité élargit le périmètre : lire des documents scannés, décrire des captures d'écran, transcrire des réunions, générer des visuels. Pour un ingénieur RAG l'usage le plus rentable n'est pas la génération d'images mais la compréhension de documents — un modèle de vision lit un tableau dans un PDF là où un extracteur textuel produit une bouillie de colonnes. Les outils de codage assisté, eux, sont le meilleur terrain d'observation des agents : boucle, outils, contexte, condition d'arrêt, tout y est.
@@ -385,7 +385,7 @@ flowchart TD
   prod --> obs["Observabilité - traces par requête, tokens et coût, retours utilisateurs"]:::ajout
   prod --> cst["Coût - prompt caching, routage petit vers grand modèle, batching"]:::ajout
   prod --> lat["Latence - streaming, parallélisation des appels outils"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La roadmap s'arrête à la construction ; le travail réel commence à la mise en service. Un système LLM n'a pas de « ça marche » binaire : il a une distribution de qualité qui dérive à chaque changement de prompt, de modèle ou de corpus. Sans mesure automatisée, chaque évolution est un pari.

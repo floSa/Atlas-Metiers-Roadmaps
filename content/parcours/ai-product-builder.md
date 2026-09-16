@@ -23,7 +23,7 @@ flowchart TD
   I --> J["10. Du prototype au produit"]:::ajout
   J --> K["11. Quand le produit embarque un modèle"]:::ajout
   G -.->|"boucle de retour"| A
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 Aucun pré-requis déclaré en amont, et c'est une des rares roadmaps du catalogue dans ce cas. En pratique il en faut deux : savoir lire du code sans l'avoir écrit, et savoir ce qu'est une requête HTTP. Le reste s'apprend dans l'ordre du parcours.
@@ -78,7 +78,7 @@ flowchart TD
   aa --> a4["API"]
   pb --> nf["Contraintes non fonctionnelles - volume, données personnelles, budget"]:::ajout
   fs --> ko["Critère d'arrêt : ce qui ne sera pas dans la v1"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont a raison sur un point qu'il faut prendre au sérieux : la définition du problème en une ou deux phrases est l'entrée la plus déterminante de toute la chaîne. Un générateur ne comble pas un flou, il l'amplifie — il produira une application cohérente qui résout un problème légèrement différent du vôtre, et l'écart ne se verra qu'au premier utilisateur réel. Le cadrage remplace ici la phase de conception qu'on a supprimée : puisqu'on ne dessine plus d'architecture avant de coder, la précision de l'énoncé porte toute la charge. Voir [[notions/cadrage-besoin]] — pour ce métier, le livrable de cadrage n'est pas un cahier des charges mais un paragraphe et une liste de dix fonctions maximum, dont la moitié est barrée.
@@ -109,7 +109,7 @@ flowchart TD
   ach --> c1["Coût récurrent, zéro maintenance, zéro différenciation"]:::ajout
   asm --> c2["Mise en ligne en jours, plafond fonctionnel, dépendance à l'éditeur"]:::ajout
   cst --> c3["Contrôle total, coût de maintenance à vie"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La roadmap amont commence à « vous allez construire » et ne pose jamais la question précédente. C'est son angle mort le plus coûteux : la génération de code a tellement baissé le prix du premier jour qu'on construit désormais des choses qu'on aurait achetées, et dont on paiera la maintenance pendant cinq ans. L'arbitrage se fait sur le coût complet, pas sur le coût de fabrication — un produit généré en un week-end coûte ensuite des mises à jour de dépendances, des correctifs de sécurité, une astreinte et un successeur quand son auteur part. Voir [[notions/roi-des-projets-ia]] — pour ce métier, le calcul se fait sur trois ans et inclut le temps de reprise du code généré, qui est la ligne systématiquement oubliée.
@@ -141,7 +141,7 @@ flowchart TD
   cat --> g3["Maquette statique classique - Figma"]
   pr --> fb["Feedback & Validation"]
   fb --> fb1["Chercher les malentendus, pas les avis"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le prototype n'est pas une étape de design, c'est un instrument de réduction d'incertitude. Son utilité tient à une seule propriété : il rend une incompréhension visible pendant qu'elle coûte encore une demi-journée. Le déplacement réel de 2026 est là — un prototype n'est plus une image cliquable, c'est une application qui répond, et une partie des malentendus ne se révélait qu'à ce niveau de réalisme. Cela ne remplace pas la maquette statique : dessiner reste plus rapide pour explorer dix dispositions d'écran, générer est plus rapide pour valider un enchaînement.
@@ -176,7 +176,7 @@ flowchart TD
   rev --> r1["Lire le schéma de données avant tout le reste"]:::ajout
   rev --> r2["Vérifier les dépendances et les secrets"]:::ajout
   rev --> r3["Décider : je garde ou je régénère"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La génération transforme un énoncé en base de code fonctionnelle. Ce qu'elle change réellement, ce n'est pas la vitesse d'écriture — c'est le déplacement de l'effort, qui passe de l'écriture vers la relecture et la décision. Le travail ne disparaît pas, il devient un travail de revue sur du code qu'on n'a pas écrit, discipline que peu de gens ont exercée. C'est aussi le moment où se fixent les choix les plus durables : le schéma de base de données généré en huit secondes structurera le produit pendant toute sa vie, bien après que le code qui l'entoure aura été réécrit.
@@ -213,7 +213,7 @@ flowchart TD
   soc --> s1["HTML, CSS, JavaScript"]
   soc --> s2["React"]
   soc --> s3["Node.js"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est l'étape où le métier se joue vraiment, et la seule que la roadmap traite avec précision. La question préalable — changement localisé ou changement structurel — vaut plus que le choix d'outil : rapiécer manuellement une modification qui touche le modèle de données produit une base de code où la moitié suit la logique du générateur et l'autre celle du correcteur, état dont on ne ressort plus. L'amont donne ici la bonne règle : correction locale dans le code, changement d'architecture par régénération. Voir [[notions/assistants-de-codage]] — pour ce métier, l'usage dominant n'est pas d'écrire du code neuf mais de **comprendre et modifier du code qu'on n'a pas écrit**, ce qui inverse complètement les critères de choix d'outil.
@@ -248,7 +248,7 @@ flowchart LR
   mal --> m1["Les décisions durables - schéma, sécurité, limites"]:::ajout
   mal --> m2["Le cas particulier métier"]:::ajout
   mal --> m3["Ce qu'il ne fait pas et ne signale pas"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La roadmap amont renvoie vers une roadmap dédiée et ne prend jamais position. Il en faut une, parce que c'est le cœur du métier et que le débat public oscille entre deux positions également fausses : « ça remplace les développeurs » et « ça ne produit que de la dette ». La position tenable est plus ennuyeuse : le vibe coding déplace le goulot d'étranglement de l'écriture vers le jugement, et il est excellent là où se tromper ne coûte rien, mauvais là où l'erreur est silencieuse et durable.
@@ -283,7 +283,7 @@ flowchart TD
   tf --> mes["Mesure d'usage instrumentée"]:::ajout
   mes --> m1["Événements produit, entonnoir, rétention"]:::ajout
   mes --> m2["Ce qui est utilisé contre ce qui est déclaré"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Deux boucles différentes qu'on confond souvent. La boucle technique répond à « est-ce que ça marche encore » et se ferme en secondes ; la boucle produit répond à « est-ce que ça sert » et se ferme en semaines. Sur une base de code générée, la première est vitale pour une raison spécifique : les tests sont le seul retour d'exécution qui empêche un assistant de casser en silence ce qu'il ne comprend pas. Voir [[notions/tests-logiciels]] — pour ce métier, les tests ne servent pas d'abord à prouver la justesse, ils servent de garde-corps aux modifications automatisées, ce qui change ce qu'il faut couvrir en priorité : les parcours, pas les fonctions.
@@ -318,7 +318,7 @@ flowchart TD
   col --> reg["Règles de collaboration avec des agents"]:::ajout
   reg --> r1["Petites demandes de fusion, une intention par branche"]:::ajout
   reg --> r2["Aucune fusion sans relecture humaine"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le versionnement est la première chose à mettre en place après une génération, et l'amont a raison de le dire aussi tôt. La raison est propre à ce métier : quand une part du code est produite par une machine, l'historique devient le seul endroit où l'on peut répondre à « qui a décidé ça, et pourquoi ». Le dépôt n'est plus une sauvegarde, c'est la mémoire des décisions. L'intégration continue apporte le reste — voir [[notions/integration-continue]] — et son usage ici est moins la qualité que la **vitesse de retour** : un environnement de prévisualisation par branche transforme chaque idée en lien cliquable à envoyer à trois utilisateurs.
@@ -354,7 +354,7 @@ flowchart TD
   db --> d2["Document - MongoDB / Atlas"]
   db --> d3["Dorsale gérée - Supabase"]
   db --> d4["Le choix se fait sur la forme des données"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont liste onze produits sans donner de critère, ce qui est le défaut central de cette section. La grille utile n'est pas la marque mais le **niveau de prise en charge** qu'on achète : plus la plateforme en fait, moins on configure et moins on contrôle. Le bon choix est le niveau le plus élevé qui satisfait la contrainte la plus dure du cadrage — et pour un premier produit, cette contrainte est presque toujours le budget ou le délai, jamais l'extensibilité qu'on imagine.
@@ -397,7 +397,7 @@ flowchart TD
   d4 --> c
   d5 --> c
   d6 --> c
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La roadmap s'arrête à « déployer » comme si la mise en ligne finissait le travail. Le scénario le plus fréquent de ce métier est pourtant celui-ci : un prototype validé en démonstration reçoit des utilisateurs réels, personne ne prend la décision de le reconstruire, et il devient le produit par simple absence de décision. Le prototype n'est pas mauvais — il n'a simplement jamais été conçu pour durer, et la différence entre les deux tient à une liste courte et parfaitement connue. Nommer la liste permet de la traiter en une à deux semaines, ou de décider explicitement de ne pas la traiter, ce qui est un choix acceptable tant qu'il est conscient.
@@ -432,7 +432,7 @@ flowchart TD
   ia --> b3["Évaluation et non-régression"]:::ajout
   ia --> b4["Garde-fous et sorties non fiables"]:::ajout
   ia --> b5["Observabilité et budget par requête"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La roadmap amont porte le nom « AI Product Builder » et ne traite que d'une chose : construire un produit **avec** des outils d'IA. Elle ne dit rien du produit qui **contient** un modèle, alors que c'est l'autre moitié de ce que le titre laisse attendre et le cas de la majorité des produits construits aujourd'hui. Cette section pose la frontière et renvoie : rien de ce qui suit n'est expliqué ici, parce que c'est le domaine de l'AI Engineer et que le corpus l'explique déjà une fois — voir [[05 - Roadmap — AI Engineer]].

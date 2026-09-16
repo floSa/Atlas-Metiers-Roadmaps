@@ -23,7 +23,7 @@ flowchart TD
   net --> sec["Security"]
   sec --> osl["Processes, threads, materiel"]
   osl --> ia["Ce qui sert vraiment en data et IA"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 ---
@@ -107,7 +107,7 @@ flowchart LR
   cpx["Complexity Classes"] --> c1["P / NP / Co-NP / P = NP"]
   cpx --> c3["NP Hard / NP Complete"]
   c3 --> c4["Travelling Salesman / Knapsack / Longest Path"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'analyse asymptotique répond à une question : quand la taille des données est multipliée par dix, que devient le temps de calcul. Les classes de complexité, elles, disent quand arrêter de chercher un algorithme exact. Reconnaître qu'un problème métier est un sac à dos déguisé fait basculer immédiatement vers une heuristique ou un solveur.
@@ -247,7 +247,7 @@ flowchart LR
   oth --> o2["K-D Trees"]
   oth --> o3["Skip Lists"]
   oth --> o4["LSM-Tree / HNSW / IVF-PQ"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Tout ce chapitre répond à une question : retrouver une donnée sans tout lire. C'est le plus directement rentable pour un profil data, parce qu'il explique le comportement des index de bases de données, des moteurs de recherche et des bases vectorielles. Un index est toujours un compromis entre coût d'écriture, coût de lecture et espace.
@@ -353,7 +353,7 @@ flowchart LR
   sec --> s3["Hashing Algorithms"]
   sec --> s4["OWASP Top 10"]
   s4 --> s5["OWASP Top 10 for LLM"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Trois notions confondues en permanence — encoder, hacher, chiffrer — expliquent la majorité des erreurs de sécurité amateur. Pour un profil data, le sujet se concentre sur la protection des données personnelles, la gestion des clés d'API, et depuis peu une surface d'attaque entièrement nouvelle du côté des applications LLM.
@@ -385,7 +385,7 @@ flowchart LR
   hcw --> h2["Registers and RAM / CPU Cache"]
   hcw --> h3["How Computers Calculate"]
   h2 --> h4["Hierarchie memoire jusqu'a la VRAM"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est le chapitre qui transforme les incidents mystérieux en diagnostics : un DataLoader qui bloque, une mémoire qui explose au fork, un job qui n'utilise que quinze pour cent des cœurs, un OOM à la seconde epoch. La hiérarchie mémoire explique en prime pourquoi les mêmes FLOPs coûtent dix fois plus cher selon l'organisation des données.

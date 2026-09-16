@@ -24,7 +24,7 @@ flowchart TD
     P8 --> P10["Boucle de retrain"]
     P9 --> P10
     P10 --> P3
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 ---
@@ -81,7 +81,7 @@ flowchart TD
     L1 --> T5["uv et ruff pour les environnements"]:::ajout
     V0 --> V4["Model registry MLflow"]:::ajout
     V0 --> V5["LakeFS ou tables Iceberg versionnees"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un ingénieur MLOps écrit peu d'algorithmes et beaucoup de colle : Python porte les pipelines et le serving, Bash tout ce qui se passe entre deux conteneurs, SQL la réalité des données bien plus souvent que pandas, et Go apparaît dès qu'on débogue l'écosystème Kubernetes. Le versioning, lui, a trois objets et non un — le code, les données et le modèle produit. Git règle le premier proprement, échoue sur le deuxième (un dataset de 40 Go dans un dépôt est une faute) et n'a rien à dire sur le troisième.
@@ -120,7 +120,7 @@ flowchart TD
     S5 --> S6["Deploiement canary ou shadow"]
     CI4 --> S7["Rapport de metriques dans la PR"]
     CI0 --> CT["Continuous Training declenche par le drift"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** En logiciel classique, la CI valide que le code compile et que les tests passent. En ML il faut ajouter deux portes : les données entrantes sont-elles conformes au schéma attendu, et le nouveau modèle est-il meilleur que celui en place sur un jeu de référence figé. Sans ces deux portes, la CI donne une fausse assurance — tout est vert et le modèle est pire.
@@ -157,7 +157,7 @@ flowchart TD
     F4 --> E1["Split temporel, calibration, metriques par segment"]
     TL4 --> E3["Tracking des runs et registry"]
     TL --> E4["Export ONNX et safetensors"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un ingénieur MLOps n'a pas besoin de démontrer un théorème, mais il doit reconnaître un résultat trop beau pour être vrai. Une AUC de 0,99 sur un problème de churn signale presque toujours une fuite de données, pas un bon modèle — et c'est souvent la personne qui met en production qui le voit en premier, parce qu'elle est la seule à regarder le pipeline de bout en bout.
@@ -193,7 +193,7 @@ flowchart TD
     D3 --> DP2["Batch, micro batch, streaming, CDC"]
     D2 --> DP3["Lakehouse : Iceberg, Delta"]:::ajout
     D1 --> DP4["Feature store et point in time correctness"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La qualité d'un modèle est plafonnée par celle de ses données, et la fiabilité d'un système ML par celle de ses pipelines. En pratique, la majorité des incidents « modèle » sont des incidents « données » : une source qui change de format, un job amont qui échoue en silence, un fuseau horaire mal géré.
@@ -231,7 +231,7 @@ flowchart TD
     I2 --> IA1["Configurer machines hors cluster"]
     CN2 --> CD4["KServe ou Ray Serve, autoscaling a zero"]:::ajout
     I0 --> IG["GitOps : Argo CD, Flux"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le cloud fournit l'élasticité dont l'entraînement a besoin par à-coups, le conteneur fournit la reproductibilité de l'environnement d'exécution, Kubernetes ajoute l'ordonnancement et le partage de ressources rares — GPU en tête. L'IaC ferme la boucle : sans elle, la production est un artefact non versionné dont personne ne connaît l'état exact, et une préproduction qui ne lui ressemble pas ne teste rien.
@@ -266,7 +266,7 @@ flowchart TD
     O0 --> OD1["Strategies : blue green, canary, shadow"]
     OD1 --> OD2["Rollback automatique sur metrique"]
     O0 --> OD3["Prefect, Dagster, Flyte, Argo Workflows"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un pipeline ML est une suite d'étapes hétérogènes — extraire, valider, transformer, entraîner, évaluer, publier — dont chacune peut échouer et doit pouvoir être rejouée seule. L'orchestrateur fournit le graphe de dépendances, les reprises, la planification et l'historique. Le déploiement, lui, est le moment où le risque se matérialise : la stratégie choisie détermine combien d'utilisateurs voient un modèle défaillant avant qu'on le retire.
@@ -299,7 +299,7 @@ flowchart TD
     N0 --> NM5["Evidently, NannyML"]:::ajout
     N0 --> NM6["OpenTelemetry comme socle de traces"]:::ajout
     N0 --> NM7["FinOps : cout par prediction"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un service ML peut être parfaitement sain du point de vue infra — latence nominale, zéro erreur HTTP — tout en produisant des prédictions devenues fausses. C'est la spécificité du monitoring ML : il faut superviser trois couches, le système, les données et la qualité prédictive, et seule la troisième dit ce qui intéresse le métier.
@@ -334,7 +334,7 @@ flowchart TD
     G2 --> GB["ExecuTorch comme successeur"]:::ajout
     G3 --> GC["TensorRT sur module embarque"]
     G0 --> GD["ONNX Runtime comme cible portable"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'explicabilité répond à une exigence externe — un client, un auditeur ou un régulateur demande pourquoi une décision a été prise — et à un besoin interne de débogage : les contributions de features révèlent souvent une fuite de données qu'aucune métrique n'avait montrée. L'Edge AI répond à des contraintes de latence, de coût réseau ou de confidentialité : le modèle s'exécute là où la donnée naît, sans aller-retour serveur.
@@ -377,7 +377,7 @@ flowchart TD
     LO5 --> SV1["vLLM, SGLang, TensorRT LLM"]:::ajout
     LO5 --> SV2["Batching continu et paged attention"]:::ajout
     LO5 --> SV3["Quantification et taille du KV cache"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un système à base de LLM n'a pas de fonction de perte en production et pas d'accuracy calculable sur le trafic réel. Sa qualité est un jugement, sa surface de défaillance est textuelle, et son coût est variable par requête au lieu d'être amorti dans un serveur qui tourne. Ces trois différences suffisent à rendre le tableau de bord MLOps classique inopérant.

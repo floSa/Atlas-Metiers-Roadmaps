@@ -20,7 +20,7 @@ flowchart TD
   L -->|"données privées<br/>+ contenu non fiable<br/>+ canal de sortie"| H["Priorité haute<br/>quel que soit l'effort d'attaque"]
   L -->|"une des trois manque"| N["Priorité par impact métier"]
 
-  classDef chaude fill:#ffebee,stroke:#c62828,stroke-width:1px
+  classDef chaude stroke:#c62828,stroke-width:1px
   class S4,H chaude
 ```
 

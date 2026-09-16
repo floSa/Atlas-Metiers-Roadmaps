@@ -28,7 +28,7 @@ flowchart TD
   r2 -->|"oui"| r4["Erreur tolérable et détectable ?"]:::ajout
   r4 -->|"non"| hum["Garder l'humain, assister sans décider"]:::ajout
   r4 -->|"oui"| gen["IA générative"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 Cinq étapes, dans cet ordre : qualifier la nature de la tâche, puis vérifier s'il existe une règle explicite et stable, puis si l'entrée est non structurée, puis si une méthode statistique classique suffit, et enfin si l'erreur est tolérable et détectable.

@@ -22,7 +22,7 @@ flowchart TD
   CI --> S["Alimentation : incidents de production,<br/>divulgations publiques, passes manuelles"]
   S --> C
 
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+  classDef ajout stroke:#2e7d32,stroke-width:1px
   class C,CI,S ajout
 ```
 

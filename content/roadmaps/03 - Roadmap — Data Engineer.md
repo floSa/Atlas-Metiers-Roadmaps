@@ -24,7 +24,7 @@ flowchart TD
   E --> K["Formats de table ouverts - Iceberg, Delta"]:::ajout
   I --> L["Sécurité, gouvernance, privacy"]
   L --> M["MLOps et pipelines RAG"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 ---
@@ -51,7 +51,7 @@ flowchart TD
   l1 --> l2["Data Storage"]
   l2 --> l3["Data Ingestion"]
   l3 --> l4["Data Serving"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le data engineer construit et exploite les systèmes qui rendent la donnée utilisable par d'autres : analystes, data scientists, applications. La frontière avec le data scientist est simple à énoncer — l'un garantit que la donnée arrive, propre, fraîche et au bon format, l'autre en tire un modèle ou une décision — mais elle bouge selon la taille de l'équipe, et c'est souvent le data engineer qui hérite du dernier kilomètre de fiabilité. Le cycle de vie génération, stockage, ingestion, serving est le fil rouge de toute la roadmap : chaque outil appris ensuite occupe une case de ce schéma.
@@ -85,7 +85,7 @@ flowchart TD
   gen --> col["Data Collection Considerations"]
   col --> c1["Volume, fréquence, contrat de schéma"]
   col --> c2["Consentement et rétention"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le point d'entrée détermine tout le reste. Une base transactionnelle se lit en CDC ou par extraction incrémentale, une API impose ses quotas et sa pagination, des logs arrivent en flux continu et non ordonné, l'IoT ajoute des horloges désynchronisées et des pertes de paquets. Se poser les bonnes questions à ce stade — qui produit, à quelle fréquence, avec quelle garantie de schéma, qui a le droit de consommer — évite de repayer trois fois plus loin dans la chaîne.
@@ -123,7 +123,7 @@ flowchart TD
   nos --> gra["Graph - Neo4j, Neptune"]
   nos --> kv["Key-Value - Redis, Memcached, DynamoDB"]
   nos --> vec["Vector - pgvector, Qdrant, Milvus"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le choix du store engage la modélisation, les performances et le coût pour des années. La ligne de partage la plus utile n'est pas SQL contre NoSQL mais OLTP contre OLAP : écritures nombreuses et petites, en ligne, contre lectures analytiques massives en colonnes. Un entrepôt attaqué comme une base transactionnelle, ou l'inverse, produit des factures absurdes. Le modèle dimensionnel — faits, dimensions, étoile ou flocon — reste la manière la plus lisible d'organiser un entrepôt.
@@ -162,7 +162,7 @@ flowchart TD
   cc --> aws["AWS - Amazon EC2 (Compute), S3 (Storage), Amazon RDS (Database), Glue (ETL)"]
   cc --> az["Azure - Virtual Machines, Blob Storage, Azure SQL Database, Data Factory (ETL)"]
   cc --> gcp["Google Cloud - Compute Engine, Google Cloud Storage, Cloud SQL (Database), Dataflow"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'entrepôt est un store analytique où la donnée est modélisée et de qualité contrôlée ; le lac est un espace de stockage brut, peu cher, à schéma tardif. Les deux ont convergé : les entrepôts lisent désormais des fichiers sur object storage, les lacs ont gagné des transactions. Le data mart est une découpe de l'entrepôt par domaine métier ; le data mesh déplace la responsabilité de la donnée vers les équipes qui la produisent, avec des contrats et des SLO — c'est une organisation autant qu'une architecture.
@@ -202,7 +202,7 @@ flowchart TD
   tools --> u4["Luigi"]
   tools --> u5["Dagster et Airflow 3"]:::ajout
   tools --> u6["Airbyte, Fivetran - EL managé"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'ingestion est le cœur du métier : déplacer la donnée de manière fiable, reproductible et observable. Le batch traite des fenêtres closes et se rejoue facilement ; le temps réel traite des événements au fil de l'eau et impose de gérer l'arrivée tardive et l'ordre. L'hybride — micro-batch — couvre la majorité des besoins réels, où « temps réel » signifie en fait quelques minutes. Le passage de ETL à ELT est le changement structurant : on charge d'abord brut dans l'entrepôt, on transforme ensuite en SQL versionné.
@@ -240,7 +240,7 @@ flowchart TD
   ha --> h3["MapReduce"]
   bd --> mono["Moteurs mono-noeud - DuckDB, Polars"]:::ajout
   bd --> st["Streaming - Flink, Spark Structured Streaming"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Quand un jeu de données ne tient plus en mémoire sur une machine, il faut le partitionner et distribuer le calcul. Spark est l'outil dominant : API DataFrame en Python, Scala ou SQL, exécution planifiée sur un cluster, tolérance aux pannes par re-calcul des partitions perdues. Hadoop reste utile à comprendre comme socle conceptuel — stockage distribué HDFS, ordonnancement YARN, modèle MapReduce — même si peu de plateformes neuves le déploient encore.
@@ -280,7 +280,7 @@ flowchart TD
   iac --> i1["Declarative vs Imperative, Idempotency"]
   iac --> i2["Reusability, Environmental Management"]
   iac --> i3["Terraform, OpenTofu, AWS CDK, Google Deployment Mgr"]
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est la partie du métier qui ressemble au DevOps, et elle n'est pas optionnelle : un pipeline non déployable automatiquement, non surveillé et non testé finit maintenu à la main par la seule personne qui le connaît. Docker fige l'environnement d'exécution, Kubernetes le fait tourner, la CI/CD garantit que ce qui passe en production est ce qui a été revu, l'IaC rend l'infrastructure reproductible et jetable, le monitoring dit ce qui casse avant que l'utilisateur ne le signale.
@@ -312,7 +312,7 @@ flowchart TD
   tools --> k1["Apache Kafka"]
   tools --> k2["RabbitMQ, AWS SQS, AWS SNS"]
   ms --> ex["Exactly-once et outbox pattern"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un bus de messages découple producteurs et consommateurs : le producteur n'attend pas, le consommateur absorbe à son rythme, et une panne temporaire d'un côté ne propage pas au reste. La distinction messages contre streams est structurante — une file (RabbitMQ, SQS) distribue un message à un consommateur puis l'oublie ; un log distribué (Kafka) conserve les événements et permet à plusieurs consommateurs indépendants de rejouer l'historique depuis l'offset de leur choix.
@@ -346,7 +346,7 @@ flowchart TD
   se --> ml["Machine Learning"]
   se --> mo["MLOps"]
   se --> ai["Serving pour LLM et RAG"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est le moment où la donnée produit de la valeur : tableaux de bord, exploration ad hoc, modèles entraînés, et retour vers les outils opérationnels. Le reverse ETL renverse la flèche habituelle — l'entrepôt redevient source et pousse des segments enrichis vers le CRM, l'outil de support ou la plateforme d'emailing. Machine learning et MLOps sont la continuité naturelle du pipeline : un modèle n'est qu'un consommateur exigeant de features fraîches et versionnées.
@@ -383,7 +383,7 @@ flowchart TD
   pri --> p2["ECPA"]
   pri --> p3["EU AI Act"]
   gov --> cat["Catalogues - Unity Catalog, DataHub, OpenMetadata"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Ces sujets arrivent en fin de roadmap et devraient arriver au début de vos projets : rattraper une gouvernance absente coûte dix fois plus cher que de la poser d'emblée. L'authentification identifie, l'autorisation décide de ce qui est permis ; le chiffrement protège au repos et en transit ; tokenisation, masquage et obfuscation permettent de travailler sur des données sensibles sans les exposer. La gouvernance ajoute la question du sens : qui produit cette table, d'où viennent ses colonnes, à quel point est-elle fiable.

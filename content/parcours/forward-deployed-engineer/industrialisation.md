@@ -18,7 +18,7 @@ flowchart TD
   D --> E["Exploitation - observabilité, coût, latence"]:::ajout
   E --> F["Boucle de retour produit"]
   F -.->|"ajustement"| D
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **Porte de sortie** : des utilisateurs réels traitent des cas réels avec le système, et l'usage est mesuré. Une démonstration réussie ne franchit pas cette porte.
@@ -34,7 +34,7 @@ flowchart LR
   liv --> env["Environnements - développement, recette, production"]:::ajout
   liv --> flux["Ouvertures de flux et comptes de service"]:::ajout
   liv --> sec["Analyse de vulnérabilités et validation sécurité"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le brief demande de livrer les briques logicielles directement dans l'infrastructure client. C'est ce qui sépare le FDE du prestataire classique, et c'est aussi ce qui rend la phase imprévisible : le chemin de livraison appartient au client, avec ses règles, ses délais et ses équipes. Un système qui ne se déploie pas par la chaîne officielle n'existera jamais en production, quelle que soit sa qualité.
@@ -66,7 +66,7 @@ flowchart TD
   leg --> rpa["Pilotage d'interface - dernier recours"]:::ajout
   leg --> ecr["Écriture - le point dur"]:::ajout
   ecr --> idem["Idempotence, journal d'écriture, réversibilité"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le brief place l'interfaçage avec les ERP, CRM et bases legacy parmi les domaines d'expertise requis ; l'amont n'en dit rien. C'est pourtant l'essentiel du travail d'intégration, et la principale source de mauvaises surprises. Ces systèmes ont dix à trente ans, leur documentation est partielle, leur propriétaire est prudent, et ils portent des données que toute l'organisation utilise. La règle qui structure tout : **lire est négociable, écrire ne l'est pas**. On obtient un accès en lecture en quelques jours, un droit d'écriture en quelques mois — quand on l'obtient.
@@ -100,7 +100,7 @@ flowchart TD
   sec --> acc["Droits d'accès appliqués à la récupération"]:::ajout
   sec --> aud["Journal d'audit exploitable"]:::ajout
   sec --> gov["Conformité - RGPD, gouvernance, registre"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le brief demande d'implémenter des garde-fous, de prévenir les injections de prompt et de filtrer les données sensibles. En mission, ce bloc a une fonction supplémentaire : c'est lui qui décide si le système obtient l'autorisation de mise en service. Le service sécurité du client ne juge pas la qualité des réponses, il juge l'exposition. Un système excellent qui ne passe pas la revue de sécurité ne sert à rien, et un système médiocre qui la passe rend au moins un service.
@@ -133,7 +133,7 @@ flowchart TD
   u3 --> u4["Élargissement du périmètre"]:::ajout
   ms --> deg["Mode dégradé explicite"]:::ajout
   ms --> rev["Retour arrière possible à chaque palier"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont donne ici son meilleur conseil : commencer par la plus petite unité d'autonomie possible et n'ajouter une capacité qu'après avoir prouvé que la précédente fonctionne. C'est une méthode de gestion du risque technique, et tout autant une méthode de gestion du risque politique — chaque palier franchi produit une preuve publique, et les preuves accumulées sont ce qui permet d'obtenir le palier suivant. À l'inverse, un incident sur un système mis en autonomie complète dès le premier jour referme la porte pour des mois.
@@ -164,7 +164,7 @@ flowchart LR
   ops --> pf["Tests de performance sur volumes réels"]
   ops --> al["Alertes utiles, peu nombreuses"]:::ajout
   ops --> tb["Tableau de bord lisible par le client"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le brief demande d'exécuter les tests de performance et d'assurer le support et la maintenance opérationnelle. Ce qui décide vraiment de la suite, c'est l'observabilité : un système d'IA n'a pas de comportement stable, il dérive avec son corpus, ses utilisateurs et les versions de modèle. Sans traces, aucun incident n'est reproductible, et l'équipe du client se retrouve face à une boîte noire qu'elle n'osera pas modifier. L'observabilité est le premier élément du transfert de compétences, avant toute documentation.
@@ -195,7 +195,7 @@ flowchart LR
   use --> gap["Écart entre attente et réalité"]
   gap --> adj["Ajuster pendant qu'on est encore sur place"]
   use --> log["Les journaux plutôt que les déclarations"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont décrit la boucle classique — livrer, collecter, améliorer — et ajoute la précision qui compte pour un FDE : observer comment le produit livré est **réellement** utilisé, pendant qu'on est encore sur place. C'est l'avantage structurel du métier. Une équipe produit distante reçoit des tickets ; un FDE voit l'utilisateur contourner sa fonctionnalité, recopier la sortie dans un tableur et retravailler le résultat. Cette information ne remonte jamais par un formulaire.

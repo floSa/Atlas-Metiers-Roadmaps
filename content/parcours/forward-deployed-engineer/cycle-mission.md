@@ -38,7 +38,7 @@ flowchart TD
   P4 -->|"autonomie du client, périmètre suivant identifié"| P1
   P3 -.->|"boucle de retour produit"| P2
   P2 -.->|"cas limite non anticipé"| P1
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 Les deux flèches en pointillé sont la partie honnête du schéma : les retours arrière sont normaux. Ce qui n'est pas normal, c'est de traverser une porte de sortie sans son livrable.
@@ -68,7 +68,7 @@ flowchart LR
   R["Registre de décisions"]:::ajout -.-> A
   R -.-> B
   R -.-> D
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Une mission produit du code, mais ce n'est pas ce qui a le plus de valeur pour le client. Ce qui reste et se réutilise, ce sont les artefacts intermédiaires : la carte du processus sert encore quand le périmètre s'élargit, le jeu d'évaluation sert à chaque montée de version de modèle, le registre de décisions évite de rejouer trois fois le même débat avec trois interlocuteurs différents. Un FDE qui ne produit que du code laisse un objet muet.
@@ -97,7 +97,7 @@ flowchart TD
   tri["Tradeoffs - Scope, Speed, Quality"] --> s1["Réduire le périmètre accélère sans coûter en qualité"]
   tri --> s2["Rogner sur la qualité accélère puis coûte double"]
   sco --> risk["Traiter d'abord ce qui peut tuer la mission"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont pose le triangle classique périmètre / vitesse / qualité et sa bonne conclusion : réduire le périmètre est le seul levier qui accélère sans dette. Ce qu'il faut y ajouter pour le terrain, c'est l'ordre d'attaque. Un FDE séquence par le risque : ce qui peut faire échouer la mission passe en premier, même si c'est ingrat et peu démontrable. L'ouverture d'un flux réseau vers l'ERP n'impressionne personne en comité, et c'est pourtant elle qui décide du sort du projet.
@@ -126,7 +126,7 @@ flowchart TD
   E2["Phase 2 - coder avant de simplifier"]:::ajout --> R2["On fige la complexité au lieu de l'éliminer"]:::ajout
   E3["Phase 3 - démonstration réussie, mise en service jamais atteinte"]:::ajout --> R3["Le pilote éternel"]:::ajout
   E4["Phase 4 - passation en une réunion"]:::ajout --> R4["Le système meurt à la première évolution"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Chaque phase a son mode d'échec propre, et ils ne se compensent pas : une phase 3 excellente ne rattrape pas une phase 1 bâclée, elle en amplifie les conséquences. Connaître les quatre permet de poser les bonnes questions en revue de mission, à soi-même d'abord.

@@ -23,7 +23,7 @@ flowchart LR
   OUT -->|"écriture en espace partagé"| X
   OUT -->|"aucun"| Z["Impact contenu au système"]
 
-  classDef chaude fill:#ffebee,stroke:#c62828,stroke-width:1px
+  classDef chaude stroke:#c62828,stroke-width:1px
   class X chaude
 ```
 

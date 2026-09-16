@@ -31,7 +31,7 @@ flowchart TD
   out["Outillage - tableur, SQL, Python ou R, bibliothèques"] --- col
   ml["Machine Learning"] --- ana
   bd["Big Data Technologies"] --- col
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 Les flèches en pointillé sont les retours en arrière, et ils sont la norme : l'exploration reformule la question, l'analyse renvoie au nettoyage. Une mission d'analyse qui se déroule en ligne droite est une mission où personne n'a regardé les données.
@@ -52,7 +52,7 @@ flowchart TD
   d2 --> q2["Pourquoi"]:::ajout
   d3 --> q3["Que va-t-il se passer"]:::ajout
   d4 --> q4["Que faut-il faire"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Les quatre types d'analytique ne sont pas quatre niveaux de sophistication qu'on gravit, contrairement à ce que laisse entendre la présentation habituelle en escalier. Ce sont quatre questions différentes, et la seule chose utile qu'elles apportent est un test de cadrage : avant de commencer, savoir laquelle des quatre on vous pose. La confusion la plus fréquente et la plus coûteuse est de répondre au descriptif quand on attendait du diagnostic — livrer un tableau de bord des résiliations à quelqu'un qui demandait pourquoi elles ont augmenté. Le tableau est juste, il ne répond pas.
@@ -110,7 +110,7 @@ flowchart TD
   rr --> gg["ggplot2"]
   db["Databases"] --> sq["SQL"]
   seuil["Seuil de bascule du tableur vers le code"]:::ajout --- xl
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La roadmap amont consacre une trentaine de nœuds à l'outillage, dont une vingtaine à des fonctions Excel prises une par une. Ce volume est trompeur : ces outils s'apprennent en quelques semaines et ne distinguent personne. Ce qui distingue, c'est de savoir **quand basculer de l'un à l'autre**. Le tableur est imbattable pour regarder trois mille lignes et comprendre leur forme en dix minutes ; il devient un risque dès que le même traitement doit être refait le mois prochain, parce qu'il n'y a ni trace ni preuve de ce qui a été fait à la main dans la colonne H. SQL est le langage d'accès à la donnée d'entreprise, et il rend inutile 80 % de ce qui se fait péniblement en formules. Python ou R prennent le relais quand l'analyse doit être reproductible, versionnée et relue.
@@ -147,7 +147,7 @@ flowchart LR
   m4 --> ok
   ok --> go["Analyse engagée"]:::ajout
   ok --> stop["Demande renvoyée : aucune décision n'en dépend"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est la section que la roadmap amont n'a pas, et c'est celle qui sépare un analyste d'un exécutant de requêtes. Une demande arrive presque toujours sous une forme inexploitable : « les clients sont moins actifs », « on perd de l'argent sur le segment pro », « regarde-moi ça ». Le travail consiste à la transformer en une question qui a une réponse vérifiable : de quels clients parle-t-on exactement, actif veut dire quoi et sur quelle fenêtre, comparé à quoi, et à partir de quel écart quelqu'un fera quelque chose. Ce cadrage prend rarement plus d'une heure et détermine l'essentiel de la valeur du livrable. La méthode générale de recueil et de reformulation est traitée dans [[notions/cadrage-besoin]] ; ce qui est propre à l'analyse, c'est que chaque terme de la question doit devenir une colonne, un filtre ou un seuil avant d'écrire la première requête.
@@ -183,7 +183,7 @@ flowchart TD
   api --> pag["Pagination, quotas, reprise sur erreur"]:::ajout
   ws --> leg["Conditions d'utilisation et cadre légal"]:::ajout
   dc --> prov["Provenance, fraîcheur et périmètre consignés"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'analyste ne construit pas les flux de données — c'est le métier du Data Engineer — mais il en dépend entièrement et il est le seul à constater leurs défauts, parce qu'il est le premier à regarder le contenu. Collecter, ici, veut dire rapatrier le bon sous-ensemble dans son environnement de travail en sachant précisément d'où il vient, de quand il date et ce qu'il exclut. Ces trois informations conditionnent la validité de tout ce qui suit, et elles ne se retrouvent pas après coup.
@@ -220,7 +220,7 @@ flowchart TD
   md --> mec["Mécanisme du manquant, pas seulement son taux"]:::ajout
   rd --> gr["Définir la clé métier avant de dédoublonner"]:::ajout
   cu --> jrn["Nettoyage écrit en script, jamais à la main"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est la moitié du temps d'une mission et la partie que personne ne voit. Une donnée d'entreprise porte l'histoire de ses systèmes : une migration de 2021 qui a laissé deux conventions de statut, un champ libre rempli par vingt commerciaux avec vingt orthographes, une réplication qui duplique certaines lignes. Nettoyer, ce n'est pas appliquer une recette de suppression des valeurs manquantes : c'est comprendre pourquoi la donnée est dans cet état, puis décider — en le documentant — ce qu'on en fait. Les critères généraux de complétude, fraîcheur, unicité et validité sont dans [[notions/qualite-des-donnees]] ; ce qui est propre à l'analyste, c'est qu'il nettoie **pour une question précise** et qu'il n'a ni le mandat ni les moyens de corriger la source.
@@ -257,7 +257,7 @@ flowchart TD
   ex --> vd["Visualizing Distributions"]
   ex --> seg["Segmenter avant d'agréger"]:::ajout
   ex --> hyp["Liste d'hypothèses à tester, écrite"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'exploration est le moment où l'on découvre ce que la donnée contient réellement, par opposition à ce que le dictionnaire de données prétend. Elle sert deux objectifs distincts qu'il faut garder séparés : vérifier que les données supportent la question posée, et produire la liste des hypothèses qui seront ensuite testées. Elle ne sert pas à trouver la réponse — si une exploration livre directement la conclusion, c'est presque toujours qu'on a regardé jusqu'à ce qu'elle apparaisse. Le contenu statistique de cette étape — tendance centrale, dispersion, forme de distribution — est dans [[notions/statistiques-descriptives]] ; ce qui est propre à l'analyste, c'est l'ordre dans lequel on regarde et ce qu'on en fait.
@@ -293,7 +293,7 @@ flowchart TD
   caus --> conf["Confusion, sélection, causalité inverse, Simpson"]:::ajout
   ht --> mult["Multiplicité des tests, p-hacking"]:::ajout
   ht --> eff["Taille d'effet et intervalle, pas seulement la p-value"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est le cœur diagnostique du métier : passer d'un constat à une explication défendable. Les trois outils de l'amont se répartissent clairement. La corrélation mesure qu'un lien existe et rien d'autre — voir [[notions/analyse-correlation]]. Le test d'hypothèse dit si un écart observé est compatible avec le hasard — voir [[notions/tests-hypotheses]]. La régression quantifie la relation en tenant compte de plusieurs facteurs à la fois — [[notions/regression-lineaire]] pour une grandeur continue, [[notions/regression-logistique]] pour un oui-non comme la résiliation ou la fraude. Quand la question porte sur l'effet d'une action qu'on contrôle, le protocole expérimental reste la seule réponse propre : [[notions/ab-testing]].
@@ -336,7 +336,7 @@ flowchart TD
   res --> r4["La décision proposée"]:::ajout
   res --> r5["L'analyse rejouable et archivée"]:::ajout
   dv --- res
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est l'étape sur laquelle le métier est jugé, et celle que la roadmap amont réduit à un catalogue de types de graphiques. Restituer n'est pas montrer ce qu'on a fait : c'est mettre quelqu'un en position de décider. Le critère de réussite est net — la personne en face sait ce qu'elle doit faire et ce qu'elle risque en le faisant. Une analyse impeccable mal restituée ne produit aucune décision, donc aucune valeur ; c'est la principale cause de frustration du métier, et elle est entièrement sous ta responsabilité. Le choix du graphique relève de [[notions/visualisation-de-donnees]] et la publication dans un outil partagé de [[notions/outils-decisionnels]] ; ce qui suit est la part que personne d'autre ne fera à ta place.
@@ -378,7 +378,7 @@ flowchart TD
   dl --> dd3["Image Recognition, Natural Language Processing"]
   me --> base["Baseline triviale battue avant tout modèle"]:::ajout
   me --> expl["Explicabilité exigée par le métier"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont consacre une quinzaine de nœuds au machine learning et au deep learning, ce qui est disproportionné pour ce métier : un analyste applique des modèles, il n'en construit pas, et l'essentiel de sa valeur se situe avant le modèle. Ce qu'il faut en retenir tient en une question de cadrage : le problème est-il de **comprendre** ou de **prédire** ? Si c'est comprendre, une segmentation propre et une régression lisible battent tout le reste, parce qu'elles produisent une phrase qu'un directeur peut répéter. Si c'est prédire, à volume et à enjeu sérieux, le sujet change de métier et passe au data scientist — voir [[02 - Roadmap — AI and Data Scientist]].
@@ -418,7 +418,7 @@ flowchart TD
   loc["Un poste de travail suffit bien plus longtemps qu'on ne le croit"]:::ajout --> duck["DuckDB, Polars, Parquet"]:::ajout
   duck --> push["Déporter l'agrégation dans la base"]:::ajout
   loc --- bd
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont place ici Hadoop, Spark, MapReduce et MPI. C'est la partie de la roadmap qui a le plus mal vieilli pour ce métier : MPI relève du calcul scientifique haute performance et n'a rien à faire dans un parcours d'analyste, et MapReduce n'a plus d'intérêt qu'historique. Ce qui reste utile est le principe — quand la donnée ne tient plus sur une machine, le calcul se distribue et l'ordre des opérations devient déterminant pour le coût. Ce qu'il faut surtout savoir, c'est **à partir de quand** le sujet se pose, et la réponse a beaucoup bougé : un poste de travail courant traite aujourd'hui plusieurs dizaines de millions de lignes en mémoire sans effort particulier.
@@ -455,7 +455,7 @@ flowchart TD
   nch --> n2["Connaître la sémantique réelle des colonnes"]:::ajout
   nch --> n3["Distinguer corrélation et causalité"]:::ajout
   nch --> n4["Répondre du chiffre devant quelqu'un"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La roadmap amont n'en dit presque rien, alors que c'est le changement le plus visible du métier sur les deux dernières années. Le constat de terrain est stable : l'IA générative a fortement accéléré la partie **fabrication** du travail d'analyse, et n'a rien changé à la partie **jugement**. Écrire une requête, retrouver la syntaxe d'une fonction de fenêtrage, réécrire une boucle Pandas illisible, produire un premier jet de note de synthèse : ce temps-là a été divisé par deux ou trois. Cadrer une question ambiguë, savoir que la colonne `statut` porte deux conventions depuis une migration, refuser une conclusion causale, assumer un chiffre devant un comité : ce temps-là est identique, et il représente désormais une part bien plus grande du métier.

@@ -20,7 +20,7 @@ flowchart LR
   IDX --> SVC["Compte de service unique<br/>qui voit tout"]
   TOOL --> SVC
 
-  classDef chaude fill:#ffebee,stroke:#c62828,stroke-width:1px
+  classDef chaude stroke:#c62828,stroke-width:1px
   class SVC chaude
 ```
 

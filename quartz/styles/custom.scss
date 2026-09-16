@@ -296,3 +296,68 @@ article .mermaid svg {
   max-width: 100%;
   height: auto;
 }
+
+/* ---------------------------------------------------------------------------
+ * Lisibilite des schemas Mermaid.
+ *
+ * Quartz colore le texte des noeuds en --darkgray sur un fond --light : gris
+ * clair sur blanc, presque illisible. On force le texte a la couleur du corps
+ * de page et on donne aux boites un contour franc, dans les deux themes.
+ * ------------------------------------------------------------------------- */
+article .mermaid {
+  .nodeLabel,
+  .edgeLabel,
+  .cluster-label,
+  span.nodeLabel,
+  span.edgeLabel {
+    color: var(--dark) !important;
+    fill: var(--dark) !important;
+    font-weight: 500;
+  }
+
+  .node rect,
+  .node polygon,
+  .node circle,
+  .node path {
+    fill: var(--light) !important;
+    stroke: var(--gray) !important;
+    stroke-width: 1.2px;
+  }
+
+  /* Les classes du corpus se distinguent par leur contour, pas par leur fond. */
+  .node.ajout rect,
+  .node.transverse rect,
+  .node.surface rect,
+  .node.courant rect,
+  .node.pivot rect {
+    stroke-width: 2px;
+  }
+
+  .edgeLabel {
+    background-color: var(--light) !important;
+    padding: 0 0.25rem;
+  }
+
+  .edgePath path,
+  .flowchart-link {
+    stroke: var(--darkgray) !important;
+  }
+
+  /* Un noeud cliquable doit se voir. */
+  .node.clickable:hover rect {
+    stroke: var(--secondary) !important;
+    stroke-width: 2.4px;
+  }
+}
+
+/* Le fil d'Ariane est le chemin de retour : discret, mais bien visible. */
+.breadcrumb-container {
+  margin: 0 0 0.3rem;
+  font-size: 0.85rem;
+  color: var(--gray);
+
+  a {
+    color: var(--gray);
+    &:hover { color: var(--secondary); }
+  }
+}

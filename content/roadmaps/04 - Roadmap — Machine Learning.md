@@ -26,7 +26,7 @@ flowchart TD
   J --> K["Avancé : autoencoders, GANs, XAI, NLP"]
   I --> L["Mise en production et MLOps"]:::ajout
   K --> L
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 Le fil rouge n'est pas la liste d'algorithmes : c'est la boucle données → modèle → mesure. Qui maîtrise la partie « mesure » rattrape vite les algorithmes qui lui manquent ; l'inverse n'est pas vrai.
@@ -42,7 +42,7 @@ flowchart LR
   intro --> a3["Skills and Responsibilities"]
   intro --> pre["Pre-requisites"]
   pre --> p1["Maths, Python, SQL, Git"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La distinction ML Engineer / AI Engineer structure tout le reste du parcours. Le ML Engineer part de données brutes, construit un jeu d'entraînement, entraîne et valide un modèle qu'il possède de bout en bout. L'AI Engineer part d'un modèle pré-entraîné qu'il ne réentraîne généralement pas et compose autour de lui : prompts, retrieval, outils, garde-fous. Les deux métiers partagent l'exigence d'évaluation mais pas la boîte à outils.
@@ -116,7 +116,7 @@ flowchart TD
   lib --> b2["Matplotlib et Seaborn"]
   lib --> b3["Polars, DuckDB"]:::ajout
   py --> tool["uv, ruff, pytest, type hints"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 ```mermaid
@@ -135,7 +135,7 @@ flowchart TD
   pre --> t3["Feature Scaling et Normalization"]
   pre --> t4["Dimensionality Reduction et Feature Selection"]
   pre --> lk["Fit des transformations sur le train uniquement"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Python est le seul langage réellement nécessaire pour la modélisation, mais l'écrire en data scientist et l'écrire en ingénieur sont deux compétences distinctes : le passage du notebook au module testé décide si un modèle atteint la production. La partie données, elle, consomme le plus de temps et détermine le plus fortement la performance finale — et le préprocessing est l'endroit précis où se produisent la majorité des fuites.
@@ -179,7 +179,7 @@ flowchart TD
   k5 --> k6["Prediction"]
   k3 --> pl["Pipeline et ColumnTransformer"]:::ajout
   k4 --> bl["Baseline triviale obligatoire"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La typologie des apprentissages sert à cadrer un problème avant de choisir un algorithme. La question n'est pas « quel modèle », mais « ai-je des labels, en quelle quantité, et à quel coût puis-je en obtenir plus ». Scikit-learn fournit l'API qui rend tout le reste interchangeable : le même code de validation fonctionne avec une régression logistique ou un gradient boosting.
@@ -218,7 +218,7 @@ flowchart TD
   reg --> r5["ElasticNet Regularization"]
   c5 --> g1["XGBoost, LightGBM, CatBoost"]:::ajout
   reg --> r6["Prédiction conforme pour les intervalles"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est le cœur productif du ML : la grande majorité des modèles réellement déployés en entreprise sont ici, sur données tabulaires. Le compromis biais-variance se lit directement dans cette liste, du modèle linéaire fortement contraint à l'ensemble d'arbres très flexible. La régularisation n'est pas un détail de réglage : c'est le mécanisme central qui contrôle ce compromis.
@@ -257,7 +257,7 @@ flowchart TD
   rl --> q3["Policy Gradient"]
   rl --> q4["Actor-Critic Methods"]
   q3 --> q5["PPO et GRPO pour l alignement des LLM"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Ces deux familles partagent un problème : l'absence de cible étiquetée, donc de métrique arbitre évidente. Le non supervisé sert à explorer, segmenter, réduire le bruit et détecter des anomalies, et ses résultats doivent être validés par un critère externe — stabilité sous rééchantillonnage, ou utilité en aval sur une tâche supervisée. Le RL, lui, traite la décision séquentielle où l'action modifie l'état futur et où la récompense arrive avec retard : peu déployé en entreprise hors robotique, jeux et contrôle, mais devenu incontournable indirectement puisque c'est le mécanisme d'alignement et d'entraînement au raisonnement des LLM actuels.
@@ -300,7 +300,7 @@ flowchart TD
   val --> v3["Split temporel et par groupe"]:::ajout
   met --> m8["PR-AUC et courbe de calibration"]:::ajout
   ev --> lk["Audit de fuite de données"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est la section qui distingue un travail sérieux d'une démonstration. Un protocole d'évaluation faux produit un chiffre flatteur et un modèle qui s'effondre en production, sans qu'aucune alerte ne se déclenche. L'ordre correct est : définir la métrique et le protocole de validation d'abord, entraîner ensuite. L'inverse conduit invariablement à choisir a posteriori la métrique qui arrange.
@@ -384,7 +384,7 @@ flowchart TD
   gan --> df["Modèles de diffusion"]:::ajout
   xai --> sh["SHAP et importance par permutation"]:::ajout
   n4 --> rag["Recherche vectorielle et RAG"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Cette dernière section rassemble ce qui déborde du cadre supervisé classique : la génération, l'interprétation et le traitement du langage. C'est aussi la charnière avec la branche LLM du parcours — les embeddings et les modèles d'attention listés ici sont exactement les briques sur lesquelles reposent les systèmes RAG et agentiques.

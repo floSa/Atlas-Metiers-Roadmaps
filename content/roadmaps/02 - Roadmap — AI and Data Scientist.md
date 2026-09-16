@@ -28,7 +28,7 @@ flowchart TD
     llm --> ops["MLOps"]
     ml --> ops
     ops --> kl["Keep Learning"]
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 L'ordre est pédagogique, pas chronologique. En pratique on écrit du code dès la première semaine et on revient aux maths quand un modèle refuse de converger. Les trois premières étapes forment un socle qu'on approfondit toute sa carrière, les cinq suivantes constituent un métier.
@@ -56,7 +56,7 @@ flowchart LR
     op --> op1["Descente de gradient et variantes"]
     op --> op2["Multiplicateurs de Lagrange"]
     it --> it1["Entropie, cross-entropy, divergence KL"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'algèbre linéaire est le langage dans lequel s'écrivent les données : une table est une matrice, un embedding est un vecteur, une couche de réseau est un produit matriciel. Le calcul différentiel explique pourquoi la backpropagation fonctionne et où elle casse. Les probabilités donnent le vocabulaire de l'incertitude, sans lequel une prédiction n'est qu'un chiffre sans marge. L'optimisation décrit ce que fait réellement un entraînement : minimiser une fonction dans un espace de très grande dimension.
@@ -99,7 +99,7 @@ flowchart LR
     plan --> plan1["Randomisation, A/B testing, taille d'échantillon"]
     caus --> caus1["DAG, confusion, propensity score"]:::ajout
     caus --> caus2["Uplift et effets hétérogènes"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La statistique est ce qui distingue un data scientist d'un utilisateur de scikit-learn. Elle répond à la seule question qui compte devant un décideur : ce que j'observe est-il un signal ou du bruit, et avec quelle marge. C'est aussi la discipline qui fournit le cadre du protocole d'évaluation — validation croisée, intervalle sur une métrique, comparaison de deux modèles.
@@ -141,7 +141,7 @@ flowchart LR
     endo --> endo2["Biais de sélection"]
     cid --> cid1["Différence de différences, RDD, contrôle synthétique"]:::ajout
     fm --> fm1["Prévision globale multi-séries et zero-shot"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'économétrie est la branche de la statistique qui prend au sérieux le fait que les données ne viennent pas d'une expérience contrôlée. Elle apporte deux choses que le machine learning ignore largement : l'interprétation causale d'un coefficient, et le traitement rigoureux de la dépendance temporelle. En entreprise, c'est ce qui permet de répondre à « de combien la promotion a-t-elle augmenté les ventes » plutôt qu'à « combien vais-je vendre demain ».
@@ -185,7 +185,7 @@ flowchart LR
     soft --> soft1["Tests avec pytest"]
     soft --> soft2["Packaging, logging, gestion d'erreurs"]
     perf --> perf1["Polars, DuckDB, Parquet"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le code est le seul artefact qui survit au projet. Un notebook brillant que personne ne peut relancer six mois plus tard a une valeur nulle. La compétence visée n'est pas « savoir programmer » mais « produire un pipeline reproductible » : versionné, testé, paramétré, exécutable par quelqu'un d'autre sur une autre machine.
@@ -228,7 +228,7 @@ flowchart LR
     dim --> dim1["ACP et méthodes factorielles"]
     dim --> dim2["UMAP et t-SNE"]
     prof --> prof1["ydata-profiling, Great Expectations, Pandera"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'EDA est l'étape où l'on découvre que le dataset ne contient pas ce que le cahier des charges affirme : colonnes remplies à 3 %, dates au format américain une année sur deux, variable qui prédit parfaitement la cible parce qu'elle est calculée après. Le temps investi ici est celui qui rapporte le plus — un feature bien construit bat presque toujours un modèle plus sophistiqué.
@@ -272,7 +272,7 @@ flowchart TD
     meth --> meth5["Déséquilibre de classes"]
     meth --> meth6["Calibration des probabilités"]:::ajout
     interp --> interp1["Permutation, SHAP, dépendances partielles"]
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est le cœur opérationnel du métier. Sur données tabulaires — la très grande majorité des problèmes en entreprise — le machine learning classique reste l'outil de référence et le gradient boosting la baseline à battre. La difficulté n'est pas l'algorithme, disponible en trois lignes, mais le protocole : construire un jeu de validation représentatif, choisir une métrique alignée sur la décision métier, résister à la tentation d'optimiser sur le test.
@@ -318,7 +318,7 @@ flowchart TD
     gen --> gen2["LoRA, QLoRA, PEFT"]:::ajout
     gen --> gen3["Diffusion et multimodal"]:::ajout
     gen --> gen4["State space models et Mamba"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le deep learning est l'outil des données non structurées : texte, image, son, signal, séquences. Sur du tabulaire il apporte rarement un gain suffisant pour justifier son coût. La compétence critique n'est pas d'empiler des couches mais de diagnostiquer un entraînement : lire des courbes de loss, distinguer un problème de données d'un problème d'optimisation, savoir quand un modèle plus petit et mieux régularisé bat un modèle plus gros.
@@ -364,7 +364,7 @@ flowchart TD
     lops --> lops1["Évaluations automatisées"]:::ajout
     lops --> lops2["Observabilité des traces"]:::ajout
     lops --> lops3["Garde-fous et coût par requête"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un modèle non déployé n'a produit aucune valeur, et un modèle déployé sans supervision produit de la valeur négative dès que la distribution change. Le MLOps transforme un résultat de notebook en système qui tourne, se surveille et se remplace sans drame. Pour un data scientist, l'objectif n'est pas de devenir ingénieur plateforme mais de livrer quelque chose qu'une équipe d'exploitation peut accepter.

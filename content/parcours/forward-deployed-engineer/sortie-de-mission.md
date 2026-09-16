@@ -17,7 +17,7 @@ flowchart TD
   C --> D["Mise à l'épreuve - le FDE se retire"]:::ajout
   D --> E["Contrat de maintenance et points de veille"]:::ajout
   E --> F["Bilan mesuré et périmètre suivant"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **Porte de sortie** : l'équipe cliente a diagnostiqué et corrigé au moins un incident réel sans le FDE, et a livré une modification par sa propre chaîne. Tout le reste — documentation, réunions de passation, remise de clés — n'est qu'un moyen d'y arriver.
@@ -32,7 +32,7 @@ flowchart LR
   id --> cap["Mesurer ses compétences et sa charge réelles"]:::ajout
   cap --> arch["En faire une contrainte d'architecture"]:::ajout
   arch --> lang["Langage, stack et outillage que l'équipe maîtrise"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La question « qui exploitera ce système après mon départ » se pose en semaine 1, pas en semaine 20. Elle a des conséquences directes sur l'architecture : une équipe de trois personnes déjà saturées, qui fait du Java et n'a jamais exploité de charge de travail IA, ne reprendra pas un système multi-agents en Python avec une base vectorielle de plus à superviser. La contrainte de reprise est une contrainte de conception au même titre que la latence ou le budget — et elle est presque toujours ignorée.
@@ -62,7 +62,7 @@ flowchart TD
   tr --> p3["Leur faire livrer une modification de bout en bout"]:::ajout
   tr --> p4["Inverser les rôles - le FDE assiste"]:::ajout
   tr -.->|"ne fonctionne pas"| ko["Session de formation en fin de mission"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un transfert de compétences ne se fait pas par exposé. Ce qui fonctionne est de travailler à côté pendant la phase 3, puis d'inverser progressivement les rôles : l'équipe fait, le FDE regarde et répond. C'est plus lent au début, et c'est le seul moyen d'obtenir qu'une personne ose modifier le système une fois seule. La confiance technique ne se transmet pas par un document ; elle vient d'avoir déjà réparé quelque chose soi-même.
@@ -93,7 +93,7 @@ flowchart TD
   doc --> arch["Architecture en une page et matrice de flux"]:::ajout
   doc --> ev["Jeu d'évaluation et procédure de rejeu"]:::ajout
   doc --> cont["Contacts - qui appeler pour quoi"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont donne la bonne justification de la rédaction technique : c'est ce qui permet au client d'exploiter et d'étendre le système sans rappeler le FDE à chaque question. Reste à savoir ce qui se lit réellement. L'expérience des passations est constante sur ce point : personne ne lit le document d'architecture de quarante pages, et tout le monde cherche la procédure de redémarrage à deux heures du matin. La documentation utile est faite de choses courtes, trouvables et vérifiées.
@@ -123,7 +123,7 @@ flowchart LR
   ap --> ve["Veille - montée de version de modèle, dépréciation"]:::ajout
   ap --> der["Dérive - corpus, usages, volumes"]:::ajout
   ap --> me["Mesure de la valeur réelle à trois et six mois"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un système d'IA n'est pas un livrable stable. Les modèles sont dépréciés, les corpus vieillissent, les usages dérivent, les volumes augmentent. Le brief demande d'assurer le support et la maintenance opérationnelle ; la question à trancher avant de partir est plus précise : qui fait quoi, avec quel budget, et à quelle échéance se pose la prochaine décision. Un système livré sans cette clarification devient un actif orphelin — utilisé, non maintenu, jusqu'au premier incident qui le fait arrêter.
@@ -152,7 +152,7 @@ flowchart TD
   bil --> nv["Ce qui n'a pas abouti, et pourquoi"]:::ajout
   bil --> ap["Ce qui reste ouvert"]:::ajout
   bil --> su["Périmètre suivant - identifié, pas vendu"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le bilan honnête est la meilleure garantie de continuité, et c'est contre-intuitif : dire ce qui n'a pas marché est ce qui rend crédible ce qui a marché. Un bilan uniquement positif est lu comme un document commercial et n'engage personne. Un bilan qui nomme deux échecs, leurs causes et ce qu'ils coûtent est discuté sérieusement — et c'est dans cette discussion que se décide la suite.

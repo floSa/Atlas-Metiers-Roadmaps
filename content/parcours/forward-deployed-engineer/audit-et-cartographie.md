@@ -18,7 +18,7 @@ flowchart TD
   C --> E["Découverte et cadrage - définir la réussite"]
   D --> E
   E --> F["Restituer la carte et la faire reconnaître"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **Porte de sortie** : le client reconnaît son processus dans la carte, y compris les parties qui le dérangent. Tant que quelqu'un dit « ce n'est pas comme ça que ça se passe », la phase n'est pas finie — et c'est une chance de l'entendre maintenant.
@@ -35,7 +35,7 @@ flowchart LR
   obs --> src["La source de données à laquelle les gens se fient réellement"]
   obs --> edge["Cas limites qui casseraient un agent la première semaine"]
   obs --> shad["Outils officieux - tableurs, messageries, notes"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont pose la bonne phrase : les exigences viennent de l'observation autant que de la conversation, parce que la façon dont les équipes travaillent et la façon dont elles la décrivent sont deux choses différentes. Ce n'est pas de la mauvaise foi. Personne ne décrit spontanément les contournements qu'il a mis en place, parce qu'ils sont devenus le travail normal — le tableur personnel qui corrige les données de l'outil officiel, la validation qu'on obtient par messagerie parce que le circuit formel prend trois jours. C'est exactement là que se trouve le gisement d'automatisation, et c'est invisible en entretien.
@@ -67,7 +67,7 @@ flowchart TD
   bpmn --> evt["Événements - déclencheurs, délais, erreurs"]:::ajout
   bpmn --> data["Objets de données - ce qui entre et sort de chaque étape"]:::ajout
   bpmn --> lim["Ne pas modéliser plus fin que nécessaire"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le brief demande de savoir décortiquer un processus métier complexe et de le modéliser en BPMN. L'amont ne dit rien de la modélisation. Pourtant, sans notation partagée, la discussion sur le processus reste une suite d'anecdotes et chacun garde sa version. Un schéma BPMN sert trois usages simultanés : il force le FDE à admettre ce qu'il n'a pas compris — un trou dans le diagramme se voit —, il donne aux équipes métier un objet qu'elles peuvent corriger, et il rend visibles les points de décision, qui sont précisément là où se pose la question de l'IA.
@@ -98,7 +98,7 @@ flowchart LR
   diag --> rework["Reprises - où le travail est refait"]:::ajout
   bot --> att["Temps d'attente contre temps de traitement"]:::ajout
   silo --> resaisie["Ressaisie manuelle entre deux systèmes"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Le brief demande de cartographier les goulets d'étranglement et les silos d'information. C'est le passage de la description au diagnostic, et c'est ce qui justifie la mission. Le résultat est presque toujours contre-intuitif : dans un processus de bout en bout, le temps passé à traiter est marginal devant le temps passé à attendre — attendre une validation, attendre un retour, attendre le lot de nuit. Optimiser une tâche de trente minutes dans un cycle de onze jours ne se voit pas ; supprimer une attente de trois jours se voit immédiatement.
@@ -128,7 +128,7 @@ flowchart TD
   inv --> dat["Données - volume, fraîcheur, complétude, propriétaire"]:::ajout
   inv --> sec["Contraintes - classification, sortie du territoire, DPO"]:::ajout
   inv --> ops["Exploitation - qui opérera le système après nous"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** L'amont mentionne les *Enterprise Workflows* — approbations, transferts, intégrations, conformité — sans dire comment les inventorier. Or les contraintes d'un environnement d'entreprise décident de la faisabilité bien avant la technique. Savoir dès la deuxième semaine que les données concernées sont classifiées et ne peuvent pas sortir de l'infrastructure interne élimine d'un coup la moitié des architectures envisagées, et fait gagner un mois.
@@ -159,7 +159,7 @@ flowchart TD
   disc --> cons["Contraintes et attentes réalistes"]
   succ --> seuil["Un seuil chiffré, accepté par celui qui décide"]:::ajout
   succ --> ref["Un point de comparaison - la performance humaine actuelle"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est la phase où se joue la suite, dit l'amont, et il a raison. La question qui décide de tout n'est pas « qu'est-ce qu'on construit » mais « à quoi saura-t-on que ça marche ». Un système d'IA n'a pas de réussite binaire : il a une distribution de qualité. Sans seuil chiffré fixé **avant** le développement, la réception se fait à l'impression, et l'impression dépend du dernier cas testé par le directeur devant ses équipes.
@@ -188,7 +188,7 @@ flowchart LR
   pres --> corr["Se faire corriger - c'est le but"]:::ajout
   corr --> dir["Présenter ensuite à la direction"]:::ajout
   dir --> acc["Faire reconnaître le diagnostic avant de proposer"]:::ajout
-  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+  classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** La restitution n'est pas une formalité de fin de phase : c'est le moment où le diagnostic devient partagé, et sans diagnostic partagé aucune proposition ne tient. Un client qui n'a pas reconnu son problème discutera la solution indéfiniment. L'ordre compte : les opérationnels d'abord, parce qu'ils corrigent les erreurs factuelles et qu'être corrigé en petit comité vaut mieux qu'en comité de direction ; la direction ensuite, avec une carte déjà validée par le terrain, ce qui lui donne une autorité qu'aucun slide ne procure.

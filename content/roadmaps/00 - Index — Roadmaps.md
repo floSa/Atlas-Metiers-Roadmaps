@@ -66,7 +66,7 @@ flowchart TD
     DE --> AIE
     ML --> AIE
     AG --> MLO
-    classDef pivot fill:#fff8e1,stroke:#f9a825,stroke-width:2px
+    classDef pivot stroke:#f9a825,stroke-width:2px
     class DS pivot
 ```
 

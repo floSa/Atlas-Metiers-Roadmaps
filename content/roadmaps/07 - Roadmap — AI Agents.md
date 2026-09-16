@@ -21,7 +21,7 @@ flowchart TD
     B --> E["Évaluation, tests et observabilité"]
     E --> S["Sécurité - injection, sandbox, PII, red team"]
     S --> PR["Production - garde-fous, HITL, budget"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 ---
@@ -38,7 +38,7 @@ flowchart LR
     R --> B6["Fine-tuning vs Prompt Engineering"]
     B4 --> C1["SSE et streamable HTTP"]:::ajout
     B6 --> C2["Context engineering"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 ```mermaid
@@ -64,7 +64,7 @@ flowchart TD
     GC --> G6["Max Length"]
     MM --> N1["Context rot et compaction"]:::ajout
     GC --> N2["Structured outputs et grammaires"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un agent n'est pas un objet d'IA : c'est un service backend qui appelle une API payante, gère des timeouts, de la concurrence et de l'état. Les projets échouent presque toujours sur ces fondations, pas sur le modèle. Et comme un agent est un LLM dans une boucle, tout ce qui dégrade le modèle — contexte saturé, sampling trop chaud, tokenisation imprévue — est amplifié à chaque tour.
@@ -105,7 +105,7 @@ flowchart TD
     UC --> U4["Web Scraping / Crawling"]
     UC --> U5["NPC / Game AI"]
     L4 --> ST["Critère d'arrêt et budget de tours"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Ce qui distingue un agent d'un simple appel LLM, c'est la boucle : le modèle choisit une action, observe le résultat réel, et décide de la suite. C'est cette rétroaction sur le monde qui produit la valeur — et toute la difficulté opérationnelle, parce qu'une boucle non bornée est un incident en puissance.
@@ -141,7 +141,7 @@ flowchart TD
     W --> W6["Specify Length, format etc"]
     P --> N1["Prompt système versionné et évalué"]:::ajout
     P --> N2["Raisonnement natif - CoT explicite souvent inutile"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Sur un agent, le prompt système n'est pas un texte d'ambiance : c'est la spécification du comportement, des outils autorisés, des cas de refus et du format de sortie. Ces quelques centaines de mots ont plus d'effet sur la fiabilité que le choix du framework.
@@ -188,7 +188,7 @@ flowchart TD
     MCP --> CS["Creating MCP Servers"]
     MCP --> N1["Streamable HTTP et OAuth"]:::ajout
     TD --> N2["Tool budget - moins de 20 outils par agent"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Les outils sont l'interface entre le modèle et le réel, et leur description est un prompt à part entière. La qualité d'un agent dépend davantage du soin apporté à quinze définitions d'outils qu'au choix du modèle. MCP standardise la façon de les exposer, ce qui évite de réécrire un connecteur par framework.
@@ -229,7 +229,7 @@ flowchart TD
     MM --> M4["Forgetting / Aging Strategies"]
     MM --> N1["Mémoire procédurale - règles apprises"]:::ajout
     MM --> N2["Écriture explicite plutôt qu'implicite"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Sans mémoire, l'agent redemande à chaque session ce qu'on lui a déjà dit ; avec une mauvaise mémoire, il rappelle avec assurance une information périmée, ce qui est pire. C'est le sous-système où les erreurs se cumulent au lieu de s'annuler.
@@ -263,7 +263,7 @@ flowchart TD
     CA --> A6["Self-critique Agents"]
     A5 --> N1["Orchestrateur et sous-agents à contexte isolé"]:::ajout
     A6 --> N2["Critique outillée - tests, linter, schéma"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Choisir une architecture, c'est choisir combien de liberté on laisse au modèle. Règle empirique : prendre le motif le plus contraint qui résout le problème, et ne monter en autonomie que sur preuve d'insuffisance.
@@ -310,7 +310,7 @@ flowchart TD
     FW --> W8["Agno"]
     FC --> N1["Responses API et SDK agents officiels"]:::ajout
     FW --> N2["Pydantic AI, OpenAI Agents SDK"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Trois niveaux d'abstraction, trois compromis. Écrire la boucle à la main une fois est formateur et souvent suffisant ; les frameworks paient sur la persistance d'état, la reprise sur incident et le streaming, pas sur la boucle elle-même.
@@ -354,7 +354,7 @@ flowchart TD
     OT --> O4["openllmetry"]
     ET --> N1["Évaluation de trajectoire, pas seulement de réponse"]:::ajout
     S1 --> N2["OpenTelemetry - conventions GenAI"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** C'est le vrai goulot d'étranglement des projets d'agents. Sans jeu d'évaluation, aucune modification de prompt, de modèle ou d'outil n'est décidable : on navigue à l'impression. Et comme un agent est non déterministe, sans trace complète un incident est irreproductible, donc non corrigeable. Trente cas bien choisis rejoués en CI valent mieux qu'un benchmark académique.
@@ -386,7 +386,7 @@ flowchart TD
     SE --> S5["Safety + Red Team Testing"]
     S1 --> N1["Triade létale - données privées, contenu externe, exfiltration"]:::ajout
     S2 --> N2["Validation humaine sur action irréversible"]:::ajout
-    classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+    classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
 **À quoi ça sert.** Un agent exécute des actions à partir de texte non fiable. C'est un modèle de menace nouveau : la page web qu'il lit, le ticket qu'on lui soumet, le document qu'il ingère peuvent contenir des instructions. Aucune parade purement prompt n'est fiable ; la sécurité passe par l'architecture et les permissions.
