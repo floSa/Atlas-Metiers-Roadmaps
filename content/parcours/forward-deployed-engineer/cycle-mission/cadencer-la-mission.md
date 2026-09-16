@@ -2,6 +2,8 @@
 title: Cadencer la mission
 ---
 
+Niveau attendu : **autonomie**. Séquencer par le risque et renégocier un périmètre se conçoivent et se défendent seul, mais la cadence se partage avec la direction de projet du client — ce n'est pas là que le FDE fait autorité.
+
 Le triangle périmètre, vitesse, qualité — et l'ordre dans lequel on attaque, qui compte davantage.
 
 ```mermaid
