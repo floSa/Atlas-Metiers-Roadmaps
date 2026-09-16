@@ -2,6 +2,8 @@
 title: Algorithmique et conception système
 ---
 
+Niveau attendu : **usage**. Sert à chiffrer un coût et à déboguer une lenteur, pas à réinventer un index.
+
 ```mermaid
 flowchart TD
   N1["Conception d'API"]

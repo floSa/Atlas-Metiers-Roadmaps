@@ -2,6 +2,8 @@
 title: AI engineering
 ---
 
+Niveau attendu : **référence**. C'est ce pour quoi le client paie, et personne chez lui ne pourra rattraper un mauvais arbitrage.
+
 ```mermaid
 flowchart TD
   N1["RAG"]

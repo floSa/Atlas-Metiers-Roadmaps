@@ -2,6 +2,8 @@
 title: Frontend
 ---
 
+Niveau attendu : **usage**. Assez pour livrer une démonstration crédible sans dépendre d'une autre équipe, pas plus.
+
 ```mermaid
 flowchart TD
   N1["Conception d'API"]

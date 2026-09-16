@@ -2,6 +2,8 @@
 title: "Données : relationnel, vectoriel, patrimonial"
 ---
 
+Niveau attendu : **autonomie**. Les données réelles sont là, et leur modèle est presque toujours plus sale que ce que la documentation annonce.
+
 ```mermaid
 flowchart TD
   N1["SQL"]

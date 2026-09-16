@@ -2,6 +2,8 @@
 title: Linux et systèmes
 ---
 
+Niveau attendu : **autonomie**. Le déboguage se fait sur un serveur du client, en SSH, sans outillage ni interface graphique.
+
 ```mermaid
 flowchart TD
   N1["Conteneurisation"]
