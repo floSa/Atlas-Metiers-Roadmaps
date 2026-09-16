@@ -50,4 +50,4 @@ Les **opérateurs bit à bit** — masques, décalages, comptage de bits — son
 - [Unicode HOWTO](https://docs.python.org/3/howto/unicode.html) (Python) — la mise en pratique : décodage, normalisation, pièges de `len()`.
 - [What Every Computer Scientist Should Know About Floating-Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html), David Goldberg — la référence sur IEEE 754, à lire par sections.
 - [Float Exposed](https://float.exposed/) — manipuler exposant et mantisse à la main : dix minutes qui rendent la quantification évidente.
-- [Exact String Matching Algorithms](https://www-igm.univ-mlv.fr/~lecroq/string/) — le catalogue complet des algorithmes de recherche, avec animations et code.
+- [Algorithmes sur les chaînes](https://cp-algorithms.com/string/prefix-function.html) (cp-algorithms) — Knuth-Morris-Pratt, hachage glissant et [tableaux de suffixes](https://cp-algorithms.com/string/suffix-array.html), démontrés et codés.
