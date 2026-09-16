@@ -28,7 +28,7 @@ Les schémas se rendent nativement dans Obsidian. Aucun plugin n'est requis.
 ### Fondations
 
 - [[01 - Roadmap — Computer Science]] — algorithmique, structures de données, systèmes, réseau, bases de données, sécurité. Ce qui ne se périme pas.
-- [[02 - Roadmap — AI and Data Scientist]] — le parcours généraliste maths → stats → code → EDA → ML → deep learning → MLOps. **La note pivot** : commencer ici pour situer les autres.
+- [[parcours/data-scientist/index|Data Scientist]] — le parcours généraliste maths → stats → code → EDA → ML → deep learning → MLOps. **La note pivot** : commencer ici pour situer les autres.
 
 ### Données
 
@@ -36,7 +36,7 @@ Les schémas se rendent nativement dans Obsidian. Aucun plugin n'est requis.
 
 ### Modélisation
 
-- [[04 - Roadmap — Machine Learning]] — le ML classique et la méthodologie : validation, fuite de données, métriques, algorithmes.
+- [[parcours/machine-learning/index|Machine Learning]] — le ML classique et la méthodologie : validation, fuite de données, métriques, algorithmes.
 
 ### Produits sur LLM
 

@@ -497,7 +497,7 @@ Ce qui appartient au BI Analyst, c'est un déplacement : là où un analyste cal
 - Prévision — la référence à battre est toujours la prévision naïve (« la même valeur que la même période l'an dernier », ou la dernière valeur connue). Publie l'erreur de ta prévision contre cette référence ; beaucoup de modèles sophistiqués ne la battent pas, et le savoir évite de porter une dette de maintenance pour rien.
 - Analyse de cohorte — regrouper les utilisateurs par période d'entrée et suivre leur comportement dans le temps. C'est le seul moyen de distinguer une amélioration réelle d'un effet de composition : un taux de rétention global qui monte parce que le recrutement a ralenti n'est pas une amélioration. La définition de la cohorte (quel événement fait entrer ? quelle fenêtre d'observation ?) est une définition métier, donc elle a un propriétaire.
 - Expérimentation — le BI Analyst est rarement celui qui conçoit le test, souvent celui qui produit la mesure sur laquelle il sera tranché. Ce qui compte de son côté : la métrique de décision est définie **avant** le début du test, une seule métrique primaire, et pas de relecture quotidienne des résultats avec arrêt dès que l'écart est favorable.
-- Apprentissage automatique en BI — l'usage réaliste est étroit et ce n'est pas une faiblesse : segmentation de clientèle par regroupement, détection d'anomalie sur des séries, scoring simple d'attrition. Dès que le modèle doit être réentraîné, surveillé et expliqué, ce n'est plus de la BI et il faut passer la main — voir [[04 - Roadmap — Machine Learning]] et [[08 - Roadmap — MLOps]]. L'apprentissage par renforcement, que l'amont liste, n'a aucun usage courant en BI.
+- Apprentissage automatique en BI — l'usage réaliste est étroit et ce n'est pas une faiblesse : segmentation de clientèle par regroupement, détection d'anomalie sur des séries, scoring simple d'attrition. Dès que le modèle doit être réentraîné, surveillé et expliqué, ce n'est plus de la BI et il faut passer la main — voir [[parcours/machine-learning/index|le parcours Machine Learning]] et [[08 - Roadmap — MLOps]]. L'apprentissage par renforcement, que l'amont liste, n'a aucun usage courant en BI.
 - Une moyenne publiée sans dispersion est une information incomplète — le délai de livraison moyen de trois jours cache mal 20 % de livraisons à dix jours, et ce sont elles qui produisent les réclamations. Sur toute distribution asymétrique, affiche la médiane et un quantile haut plutôt que la moyenne seule.
 
 > [!tip] Ajout 2026
@@ -694,8 +694,8 @@ flowchart TD
 
 - [[parcours/data-analyst]] — l'autre versant du métier : exploration, nettoyage, analyse ad hoc et réponse à une question ponctuelle. Ce parcours-ci construit le socle, celui-là s'en sert.
 - [[03 - Roadmap — Data Engineer]] — l'amont de la chaîne : ingestion, pipelines, plateforme, formats de table ouverts. À lire pour savoir où s'arrête la responsabilité du BI Analyst.
-- [[02 - Roadmap — AI and Data Scientist]] — le versant modélisation statistique et apprentissage, pour les sujets que la BI doit savoir passer à quelqu'un d'autre.
-- [[04 - Roadmap — Machine Learning]] — ce qu'implique réellement un modèle prédictif, quand une demande de « prévision » dépasse la série temporelle.
+- [[parcours/data-scientist/index|Data Scientist]] — le versant modélisation statistique et apprentissage, pour les sujets que la BI doit savoir passer à quelqu'un d'autre.
+- [[parcours/machine-learning/index|Machine Learning]] — ce qu'implique réellement un modèle prédictif, quand une demande de « prévision » dépasse la série temporelle.
 - [[08 - Roadmap — MLOps]] — le cycle de vie d'un modèle en production, pour comprendre pourquoi maintenir une prévision coûte plus cher que la construire.
 - [[05 - Roadmap — AI Engineer]] — utile pour la section 14 : ce qu'on peut attendre d'un modèle de langage, et ce que coûte un jeu d'évaluation sérieux.
 - [[00 - Index — Roadmaps]] — la porte d'entrée du corpus.

@@ -77,7 +77,7 @@ En pratique le Data Analyst vit sur les deux premières questions, occasionnelle
 | Data Scientist | « Peut-on prédire qui va résilier ? » | un modèle évalué sur des données non vues, un protocole | ne répond pas à la question d'hier après-midi |
 | Data Engineer | « D'où viennent ces données, pourquoi ont-elles trois heures de retard ? » | des flux fiables et documentés | ne produit pas d'analyse |
 
-La frontière avec le Data Scientist n'est pas une frontière d'outils — les deux écrivent du Python, les deux font des régressions. Elle est dans la nature du livrable. L'analyste livre **une réponse** sur un périmètre et une période donnés ; il optimise le délai et l'explicabilité, et son travail est fini quand quelqu'un décide. Le scientifique livre **un artefact qui généralise** ; il optimise la performance sur des données jamais vues, et son travail commence à l'évaluation. Le détail du second parcours est dans [[02 - Roadmap — AI and Data Scientist]].
+La frontière avec le Data Scientist n'est pas une frontière d'outils — les deux écrivent du Python, les deux font des régressions. Elle est dans la nature du livrable. L'analyste livre **une réponse** sur un périmètre et une période donnés ; il optimise le délai et l'explicabilité, et son travail est fini quand quelqu'un décide. Le scientifique livre **un artefact qui généralise** ; il optimise la performance sur des données jamais vues, et son travail commence à l'évaluation. Le détail du second parcours est dans [[parcours/data-scientist/index|le parcours Data Scientist]].
 
 > [!tip] Ajout 2026
 > Le titre « Data Analyst » recouvre désormais trois postes distincts sur le marché francophone : l'analyste ad hoc rattaché à une direction métier (le vrai sujet de cette note), l'analyste-développeur de rapports qui fait en réalité de la BI, et l'*analytics engineer* qui construit des modèles dbt et ne parle à personne. Lis les missions décrites dans l'offre, pas l'intitulé — et si l'offre parle d'entrepôt, de dbt et de couche sémantique, c'est [[parcours/bi-analyst]] qu'il faut lire.
@@ -381,7 +381,7 @@ flowchart TD
   classDef ajout stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
 ```
 
-**À quoi ça sert.** L'amont consacre une quinzaine de nœuds au machine learning et au deep learning, ce qui est disproportionné pour ce métier : un analyste applique des modèles, il n'en construit pas, et l'essentiel de sa valeur se situe avant le modèle. Ce qu'il faut en retenir tient en une question de cadrage : le problème est-il de **comprendre** ou de **prédire** ? Si c'est comprendre, une segmentation propre et une régression lisible battent tout le reste, parce qu'elles produisent une phrase qu'un directeur peut répéter. Si c'est prédire, à volume et à enjeu sérieux, le sujet change de métier et passe au data scientist — voir [[02 - Roadmap — AI and Data Scientist]].
+**À quoi ça sert.** L'amont consacre une quinzaine de nœuds au machine learning et au deep learning, ce qui est disproportionné pour ce métier : un analyste applique des modèles, il n'en construit pas, et l'essentiel de sa valeur se situe avant le modèle. Ce qu'il faut en retenir tient en une question de cadrage : le problème est-il de **comprendre** ou de **prédire** ? Si c'est comprendre, une segmentation propre et une régression lisible battent tout le reste, parce qu'elles produisent une phrase qu'un directeur peut répéter. Si c'est prédire, à volume et à enjeu sérieux, le sujet change de métier et passe au data scientist — voir [[parcours/data-scientist/index|le parcours Data Scientist]].
 
 L'usage réellement rentable pour un analyste est étroit et bien identifié : la classification supervisée sur un oui-non métier, le regroupement non supervisé pour dégrossir une segmentation, et rien de plus la plupart du temps.
 
@@ -503,9 +503,9 @@ Six à neuf mois pour être opérationnel en travaillant à côté, et l'ordre c
 ## Parcours voisins
 
 - [[parcours/bi-analyst]] — le métier jumeau, côté infrastructure décisionnelle : entrepôt, modélisation dimensionnelle, dbt, couche sémantique, gouvernance. Quand une demande devient un suivi récurrent partagé, elle bascule là.
-- [[02 - Roadmap — AI and Data Scientist]] — la suite naturelle pour qui veut aller vers la modélisation et la généralisation. La frontière est détaillée en section 1.
+- [[parcours/data-scientist/index|Data Scientist]] — la suite naturelle pour qui veut aller vers la modélisation et la généralisation. La frontière est détaillée en section 1.
 - [[03 - Roadmap — Data Engineer]] — l'amont : d'où viennent les tables, pourquoi elles arrivent en retard, et à qui parler quand elles sont fausses.
-- [[04 - Roadmap — Machine Learning]] — l'approfondissement de la section 9 pour qui décide d'y aller sérieusement.
+- [[parcours/machine-learning/index|Machine Learning]] — l'approfondissement de la section 9 pour qui décide d'y aller sérieusement.
 - [[05 - Roadmap — AI Engineer]] — la voie applicative si l'analyse de verbatims donne envie de construire des produits sur des modèles de langage.
 
 ## Pour aller plus loin

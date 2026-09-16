@@ -59,7 +59,7 @@ L'erreur est inversée : on ne met pas trop peu d'IA, on met un LLM dans une fon
 ## Pour aller plus loin
 
 - [Prompt Engineering vs Fine Tuning: When to Use Each](https://www.codecademy.com/article/prompt-engineering-vs-fine-tuning) — un arbitrage voisin, utile pour la méthode de comparaison.
-- [[roadmaps/04 - Roadmap — Machine Learning]] — l'espace intermédiaire entre la règle et le génératif, souvent la bonne réponse.
+- [[parcours/machine-learning/index|Machine Learning]] — l'espace intermédiaire entre la règle et le génératif, souvent la bonne réponse.
 - [[parcours/forward-deployed-engineer/arbitrage-technologique/index|phase 2]] — la grille appliquée à un processus réel, avec ses conséquences de mission.
 
 ## Appelée par

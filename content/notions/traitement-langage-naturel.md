@@ -42,7 +42,7 @@ C'est le seul volet issu de l'apprentissage profond qui touche vraiment le méti
 
 - [A Guide on Word Embeddings in NLP — Turing](https://www.turing.com/kb/guide-on-word-embeddings-in-nlp) — la représentation du texte, socle de tout le reste.
 - [Text Embeddings, Classification, and Semantic Search](https://www.youtube.com/watch?v=sNa_uiqSlJo) — la mise en pratique avec du code.
-- [[roadmaps/04 - Roadmap — Machine Learning]] — le cadre méthodologique, si la tâche doit être traitée par un modèle entraîné.
+- [[parcours/machine-learning/index|Machine Learning]] — le cadre méthodologique, si la tâche doit être traitée par un modèle entraîné.
 
 ## Appelée par
 

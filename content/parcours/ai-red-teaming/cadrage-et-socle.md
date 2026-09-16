@@ -66,4 +66,4 @@ La question qui range un constat dans l'une ou l'autre catégorie tient en une l
 - [Adversarial Testing for Generative AI](https://developers.google.com/machine-learning/guides/adv-testing) — une méthode de test adverse structurée, orientée évaluation plutôt que exploit.
 - [Jailbroken: How Does LLM Safety Training Fail?](https://arxiv.org/abs/2307.02483) — pourquoi l'alignement échoue, mécanisme par mécanisme, plutôt qu'une liste de contournements.
 - [[roadmaps/01 - Roadmap — Computer Science|Roadmap Computer Science]] — réseau, système et bases applicatives : le prérequis réel que l'amont ne formule pas.
-- [[roadmaps/04 - Roadmap — Machine Learning|Roadmap Machine Learning]] — le socle d'apprentissage automatique, si les paradigmes du tableau ci-dessus ne parlent pas.
+- [[parcours/machine-learning/index|Machine Learning]] — le socle d'apprentissage automatique, si les paradigmes du tableau ci-dessus ne parlent pas.
