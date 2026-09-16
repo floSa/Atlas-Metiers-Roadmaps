@@ -48,6 +48,6 @@ Le calcul se fait sur trois ans et inclut le **temps de reprise du code génér�
 ## Appelée par
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
-- [[parcours/ai-product-builder|AI Product Builder]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/cadrage-besoin]], [[notions/cout-et-latence-inference]], [[notions/reingenierie-de-processus]], [[notions/mesure-d-usage-produit]].

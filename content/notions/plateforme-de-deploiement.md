@@ -48,7 +48,7 @@ Le choix n'existe généralement pas : la plateforme est celle du client, souven
 
 ## Appelée par
 
-- [[parcours/ai-product-builder|AI Product Builder]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 
 Voisines : [[notions/conteneurisation]], [[notions/integration-continue]], [[notions/cout-et-latence-inference]], [[notions/controle-d-acces]].

@@ -46,6 +46,6 @@ Le critère dominant n'est pas la qualité de tête de gamme mais le **coût par
 ## Appelée par
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
-- [[parcours/ai-product-builder|AI Product Builder]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/cout-et-latence-inference]], [[notions/affinage-de-modele]], [[notions/evaluation-llm]], [[notions/arbitrage-deterministe-probabiliste]].

@@ -3,7 +3,7 @@ title: Lignage des données
 tags: [notion, lignage, catalogue, tracabilite, gouvernance]
 date: 2026-09-16
 statut: actif
-appelee-par: [bi-analyst]
+appelee-par: [bi-analyst, ai-product-builder]
 ---
 
 Traçabilité du chemin parcouru par une donnée, de sa source jusqu'à l'indicateur affiché : par quelles tables elle passe, quelles transformations lui sont appliquées, et ce qui dépend d'elle en aval.
@@ -47,5 +47,6 @@ L'angle est la charge de la preuve. Un chiffre défendable est un chiffre dont o
 ## Appelée par
 
 - [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/qualite-des-donnees]], [[notions/transformation-dbt]], [[notions/rgpd]], [[notions/entrepot-de-donnees]].

@@ -49,6 +49,6 @@ Nécessaires seulement si le produit a un corpus propre à interroger. Beaucoup 
 ## Appelée par
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
-- [[parcours/ai-product-builder|AI Product Builder]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/rag]], [[notions/traitement-langage-naturel]], [[notions/donnees-sensibles]].

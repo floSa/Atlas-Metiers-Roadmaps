@@ -63,7 +63,7 @@ C'est le cœur du métier. L'angle du testeur porte moins sur la formulation que
 ## Appelée par
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
-- [[parcours/ai-product-builder|AI Product Builder]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/garde-fous]], [[notions/agents-llm]], [[notions/modelisation-de-la-menace]], [[notions/controle-d-acces]].

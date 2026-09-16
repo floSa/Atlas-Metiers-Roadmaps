@@ -58,7 +58,7 @@ Les droits d'accès par ligne dans l'outil de restitution sont à la fois une fo
 
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
-- [[parcours/ai-product-builder|AI Product Builder]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 - [[parcours/bi-analyst|BI Analyst]]
 
 Voisines : [[notions/conception-d-api]], [[notions/donnees-sensibles]], [[notions/garde-fous]], [[notions/mcp]].

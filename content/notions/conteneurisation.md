@@ -3,7 +3,7 @@ title: Conteneurisation
 tags: [notion, conteneurisation, docker, kubernetes, deploiement]
 date: 2026-09-16
 statut: actif
-appelee-par: [forward-deployed-engineer, ai-red-teaming]
+appelee-par: [forward-deployed-engineer, ai-red-teaming, ai-product-builder]
 ---
 
 Empaquetage d'une application avec ses dépendances dans une image exécutable isolée du système hôte, de manière à ce qu'elle se comporte de la même façon partout où elle tourne.
@@ -50,5 +50,6 @@ Le conteneur est ici un contrôle à vérifier, pas une commodité. Dès qu'une 
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/integration-continue]], [[notions/plateforme-de-deploiement]], [[notions/chaine-d-approvisionnement-logicielle]].

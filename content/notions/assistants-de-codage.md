@@ -48,6 +48,6 @@ L'usage dominant n'est pas d'écrire du code neuf mais de **comprendre et modifi
 ## Appelée par
 
 - [[parcours/data-analyst|Data Analyst]]
-- [[parcours/ai-product-builder|AI Product Builder]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/mcp]], [[notions/tests-logiciels]], [[notions/integration-continue]], [[notions/agents-llm]].

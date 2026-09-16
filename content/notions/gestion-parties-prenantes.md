@@ -3,7 +3,7 @@ title: Gestion des parties prenantes
 tags: [notion, parties-prenantes, politique, arbitrage, conseil]
 date: 2026-09-16
 statut: actif
-appelee-par: [forward-deployed-engineer, bi-analyst]
+appelee-par: [forward-deployed-engineer, bi-analyst, ai-product-builder]
 ---
 
 Travail d'identification des personnes que le projet affecte ou qui peuvent l'affecter, de leurs intérêts réels, et d'organisation des arbitrages entre ces intérêts quand ils divergent.
@@ -49,5 +49,6 @@ La ligne de fracture est presque toujours la même : celui qui pilote veut une d
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/conduite-du-changement]], [[notions/cadrage-besoin]], [[notions/redaction-technique]].

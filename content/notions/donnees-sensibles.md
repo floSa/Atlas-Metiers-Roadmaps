@@ -3,7 +3,7 @@ title: Données sensibles
 tags: [notion, donnees-sensibles, classification, anonymisation, cloisonnement]
 date: 2026-09-16
 statut: actif
-appelee-par: [forward-deployed-engineer, ai-red-teaming]
+appelee-par: [forward-deployed-engineer, ai-red-teaming, ai-product-builder]
 ---
 
 Données dont la divulgation, l'altération ou l'usage détourné causerait un préjudice — à une personne, à l'organisation ou à un tiers — et qui appellent pour cette raison un traitement technique distinct des autres.
@@ -50,5 +50,6 @@ La conséquence la plus fréquente en entreprise n'est pas la génération de co
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/rgpd]], [[notions/controle-d-acces]], [[notions/gouvernance-ia]], [[notions/observabilite]].

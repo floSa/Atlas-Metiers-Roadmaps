@@ -3,7 +3,7 @@ title: Analyse de cohorte
 tags: [notion, cohorte, retention, composition, analyse]
 date: 2026-09-16
 statut: actif
-appelee-par: [bi-analyst, data-analyst]
+appelee-par: [bi-analyst, data-analyst, ai-product-builder]
 ---
 
 Méthode qui regroupe les individus par période d'entrée puis suit leur comportement dans le temps, de manière à comparer des groupes ayant le même âge plutôt que la même date.
@@ -50,5 +50,6 @@ L'usage est diagnostique et ponctuel : c'est l'outil à sortir dès qu'un indica
 
 - [[parcours/bi-analyst|BI Analyst]]
 - [[parcours/data-analyst|Data Analyst]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/series-temporelles]], [[notions/mesure-d-usage-produit]], [[notions/ab-testing]], [[notions/apprentissage-non-supervise]].
