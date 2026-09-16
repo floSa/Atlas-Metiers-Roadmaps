@@ -1,61 +1,86 @@
-# Gabarit d'une fiche métier
+# Gabarit — l'arbre et ses pages
 
-> Le modèle de référence est `content/parcours/forward-deployed-engineer/index.md`.
-> Ouvre-le, ouvre la page rendue, et copie sa structure. Ce document en explique les
-> règles ; le fichier en est la preuve qu'elles fonctionnent.
+> Le modèle de référence est `content/parcours/forward-deployed-engineer/`. Ouvre-le,
+> ouvre les pages rendues sur `http://localhost:8080`, et copie leur comportement.
 
-## La page d'entrée d'un métier
+## Le principe
 
-Quatre blocs, dans cet ordre, et rien d'autre.
-
-**1. Une phrase.** Ce qu'est le métier. Pas d'encadré, pas de `> [!abstract]`, pas de
-ligne de provenance, pas de date. Le lecteur doit savoir en cinq secondes s'il est au
-bon endroit.
-
-**2. `## La roadmap`** — un schéma Mermaid dont **chaque nœud est cliquable** :
+Le site est un **arbre à tiroirs**. À chaque étage, le lecteur voit une carte de ce
+qu'il y a à apprendre, clique sur une case, descend d'un cran. Il remonte par le fil
+d'Ariane. Il descend jusqu'à une page unitaire qui explique une chose et renvoie vers
+les ressources pour l'apprendre.
 
 ```
-  click S "/parcours/<metier>/<section>"
+Accueil          les métiers
+ └── Métier      la roadmap du métier
+      └── Domaine        la carte des sous-domaines
+           └── Sous-domaine   la carte des notions
+                └── Notion    la feuille : explication et ressources
 ```
 
-Le chemin est **absolu**, il commence par `/`. Un chemin relatif casse dès qu'on arrive
-depuis une page imbriquée. Le nœud porte un libellé court sur deux lignes :
-`"Titre<br/>précision courte"`.
+Cinq étages au maximum. Une branche peut être moins profonde, jamais plus.
 
-**3. `## Ma progression`** — la même liste, en cases à cocher :
+## La règle qui gouverne tout
+
+**Une case dans un schéma mène toujours quelque part.** Si un sujet n'a pas de page, il
+n'a pas de case : il est dans le texte.
+
+C'est ce qui rend la navigation prévisible. Un lecteur qui voit une boîte doit pouvoir
+cliquer dessus, sans avoir à deviner lesquelles sont actives.
 
 ```
-- [ ] [[parcours/<metier>/<section>|Titre de la section]] — ce qu'on y apprend, en une ligne
+  click N1 "/parcours/<metier>/<domaine>/<sous-domaine>"
+  click N2 "/notions/<slug>"
 ```
 
-Quartz retient l'état des cases dans le navigateur, par page. C'est le suivi de
-progression : le lecteur coche ce qu'il maîtrise.
+Le chemin est **absolu**, il commence par `/`. Un chemin relatif casse dès qu'on y
+arrive depuis une page imbriquée. **Vérifie chaque cible** :
+`curl -o /dev/null -w '%{http_code}\n' http://localhost:8080/<le-chemin>`
 
-**4. Un tableau de positionnement**, facultatif — ce qui distingue ce métier des rôles
-voisins. Trois à cinq lignes, pas plus.
+Seule exception : sur une page-feuille, un schéma qui montre un **mécanisme** — un
+enchaînement, un flux, une boucle — n'est pas une carte et n'a pas à être cliquable.
+Une liste de boîtes côte à côte est toujours une carte.
 
-## Les pages de section
+## Une page d'aiguillage — courte
 
-Une section = une page = **un sujet**. Courte : viser 60 à 120 lignes, jamais 250.
-Si une section dépasse, elle se coupe en sous-sections, chacune avec sa page, et la
-page de section devient à son tour une petite roadmap avec sa liste à cocher.
+Une page qui aiguille ne contient que trois choses, et **tient en 40 lignes** :
 
-Chaque page de section suit le même ordre :
+1. **Une phrase.** Ce que couvre cet étage.
+2. **La carte.** Un schéma Mermaid dont chaque case est cliquable. Le libellé tient sur
+   deux lignes : `"Titre<br/>précision courte"`.
+3. **Ma progression.** La même liste, en cases à cocher, que le navigateur retient :
 
-1. **Une phrase** qui dit de quoi il s'agit.
-2. **Un schéma Mermaid** — seulement s'il montre un mécanisme. Pas de schéma décoratif.
-3. **Ce qu'il faut savoir faire** — des puces courtes, formulées en capacités
+```
+- [ ] [[chemin/vers/la/page|Titre]] — ce qu'on y apprend, en une ligne
+```
+
+Pas de tableau d'explication, pas d'encadré, pas de préambule. Tout ce qui explique
+descend d'un étage. Si une information est déjà dans le libellé d'une case, elle ne se
+répète pas en dessous.
+
+## Une page-feuille
+
+Elle explique **une chose** et donne de quoi l'apprendre. Viser 40 à 90 lignes.
+
+1. **Une phrase** qui dit de quoi il s'agit, et le niveau attendu s'il y a lieu.
+2. **Un schéma de mécanisme**, seulement s'il montre comment ça marche.
+3. **Ce qu'il faut savoir faire** — des puces formulées en capacités
    (« déboguer un service sans accès graphique »), pas en connaissances.
-4. **Les notions mobilisées** — des liens `[[notions/<slug>]]`, avec une ligne d'angle
-   métier chacun. On n'explique jamais une notion ici.
-5. **Pour apprendre** — trois à six ressources gratuites, vérifiées, avec ce qu'elles
+4. **Les notions mobilisées** — des liens `[[notions/<slug>]]` avec une ligne d'angle
+   métier chacun. On n'explique jamais une notion ici : elle a sa propre page.
+5. **Pour apprendre** — trois à six ressources gratuites et vérifiées, avec ce qu'elles
    apportent en une ligne.
 
-## Ce qui est proscrit
+Un ou deux encadrés `> [!warning]` ou `> [!tip]` sont permis s'ils portent une vraie
+mise en garde de terrain.
 
-- Les lignes de provenance, les dates de capture, les mentions de chantier.
-- Les sections « Comment lire », « Ce que c'est et ce que ce n'est pas », « Lire la
-  provenance ». Le lecteur vient pour le métier.
+## Proscrit, partout
+
+- Les lignes de provenance, dates de capture, mentions de chantier ou de roadmap amont.
+- Les sections « Comment lire », « Ce que c'est et ce que ce n'est pas », « En un coup
+  d'œil », « Le métier en une page ».
 - Les encadrés `> [!abstract]` qui répètent le paragraphe suivant.
-- Les titres vides de sens : « Le métier en une page », « En un coup d'œil ».
-- Les pages de plus de 250 lignes.
+- Les comparaisons entre métiers : elles vivent toutes dans `content/ne-pas-confondre.md`.
+- Les couleurs de remplissage écrites en dur dans un `classDef` : elles cassent en thème
+  sombre. Le contour suffit — `classDef ajout stroke:#2e7d32,stroke-dasharray:4 3`.
+- Toute page de plus de 120 lignes.
