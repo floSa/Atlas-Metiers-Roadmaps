@@ -43,6 +43,9 @@ capacités, rarement ses limites.
 | officiel | [OpenAI — Appel de fonctions](https://developers.openai.com/api/docs/guides/function-calling) | le mécanisme qui transforme un modèle en pièce d'un système | intermédiaire |
 | officiel | [Gemini — Sortie structurée](https://ai.google.dev/gemini-api/docs/structured-output) | contraindre la forme de la réponse, la seule façon de chaîner sans analyser du texte libre | intermédiaire |
 | code | [OpenAI Cookbook](https://github.com/openai/openai-cookbook) | des exemples qui tournent, maintenus par l'éditeur — le meilleur point d'entrée pratique | débutant |
+| officiel | [Hugging Face — Hub](https://huggingface.co/docs/hub/en/index) | comment sont distribués modèles, jeux de données et démonstrations | débutant |
+| officiel | [Hugging Face — Modèles](https://huggingface.co/models) | le catalogue à consulter avant de supposer qu'il faut une API propriétaire | débutant |
+| officiel | [Ollama](https://ollama.com/) | faire tourner un modèle ouvert en local. La façon la moins chère de tester une idée, et la seule quand les données ne sortent pas | intermédiaire |
 
 Ce que ces pages veulent dire pour votre travail est expliqué une fois dans
 [[notions/choix-de-modele]] et [[notions/cout-et-latence-inference]].
@@ -58,6 +61,8 @@ qui explique *pourquoi* une formulation change la sortie vaut dix listes d'astuc
 | officiel | [Gemini — Stratégies de prompt](https://ai.google.dev/gemini-api/docs/prompting-strategies) | le même terrain vu par un autre éditeur ; les écarts sont instructifs | débutant |
 | article | [Prompting Guide — Chain of Thought](https://www.promptingguide.ai/techniques/cot) | la technique et ses limites, sans promesse excessive | débutant |
 | article | [Chain-of-Thought Prompting Elicits Reasoning in LLMs](https://arxiv.org/abs/2201.11903) | l'article d'origine (Wei et al., 2022) — à lire plutôt que ses résumés | confirmé |
+| article | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) | Vaswani et al., 2017. L'architecture dont tout le reste descend ; on gagne à l'avoir lue une fois | confirmé |
+| cours | [Hugging Face — LLM Course](https://huggingface.co/learn/llm-course/chapter1/1) | le parcours gratuit le plus complet pour comprendre ce qu'il y a sous l'API | intermédiaire |
 | cours | [Learn Prompting — Introduction](https://learnprompting.org/courses/introduction_to_prompt_engineering) | parcours gratuit et progressif, utile pour cadrer une montée en compétence d'équipe | débutant |
 
 Détail de ce qui marche encore et de ce qui est devenu du folklore :
@@ -73,6 +78,7 @@ Détail de ce qui marche encore et de ce qui est devenu du folklore :
 | officiel | [LangChain](https://docs.langchain.com/oss/python/langchain/overview) | l'écosystème le plus répandu ; utile comme catalogue de motifs même si on n'adopte pas le cadre | intermédiaire |
 | officiel | [Qdrant](https://qdrant.tech/) | base vectorielle libre, documentation honnête sur les compromis d'index | intermédiaire |
 | officiel | [Chroma](https://www.trychroma.com/) | la plus simple pour un prototype local, sans infrastructure | débutant |
+| officiel | [Weaviate](https://weaviate.io/) | recherche hybride vecteur et mot-clé ; la combinaison qui rattrape le plus d'échecs de récupération | intermédiaire |
 | officiel | [FAISS](https://ai.meta.com/tools/faiss/) | la bibliothèque d'index de similarité de référence ; ce que les autres enveloppent | confirmé |
 
 Le découpage, le reclassement et les échecs typiques de récupération sont traités dans
@@ -127,6 +133,13 @@ Les trois angles — négociation client, fonction non binaire, corpus adverse �
 | officiel | [Claude — Réduire les hallucinations](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations) | ce qui marche vraiment : ancrage, citation, autorisation de répondre « je ne sais pas » | intermédiaire |
 | officiel | [OpenAI — Modération](https://developers.openai.com/api/docs/guides/moderation) | un filtre d'entrée et de sortie prêt à l'emploi, gratuit | débutant |
 | article | [Adversarial Testing for Generative AI](https://developers.google.com/machine-learning/guides/adv-testing) | une méthode de test adverse structurée, orientée évaluation plutôt qu'exploit | intermédiaire |
+| article | [Prompt Hacking — Mesures défensives](https://learnprompting.org/docs/prompt_hacking/defensive_measures/introduction) | le pendant défensif, structuré contre-mesure par contre-mesure | intermédiaire |
+| article | [Model Inversion Attacks: A Survey](https://arxiv.org/html/2411.10023v1) | panorama des attaques par inversion et des parades, à jour | confirmé |
+| article | [Detecting and Preventing Data Poisoning Attacks on AI Models](https://arxiv.org/abs/2503.09302) | l'empoisonnement vu du côté de la défense | confirmé |
+| article | [GitHub MCP Exploited](https://invariantlabs.ai/blog/mcp-github-vulnerability) | un cas réel sur la couche de connexion aux outils. Le plus convaincant des arguments pour lire la spécification d'autorisation | intermédiaire |
+| norme | [OWASP — Threat Modeling](https://community.owasp.org/Threat_Modeling) | la méthode de modélisation de la menace, applicable telle quelle à un système à base de modèles | intermédiaire |
+| norme | [NIST SP 800-218 — Secure Software Development Framework](https://csrc.nist.gov/pubs/sp/800/218/final) | les pratiques de développement sécurisé que les marchés publics commencent à exiger | confirmé |
+| article | [Weaknesses and Vulnerabilities in Modern AI](https://www.sei.cmu.edu/blog/weaknesses-and-vulnerabilities-in-modern-ai-why-security-and-safety-are-so-challenging/) | le SEI de Carnegie Mellon sur pourquoi sécurité et sûreté sont si difficiles ici. Sobre, et sans intérêt commercial | confirmé |
 
 Voir [[notions/injection-de-prompt]], [[notions/garde-fous]] et
 [[notions/modelisation-de-la-menace]].
@@ -138,6 +151,8 @@ Voir [[notions/injection-de-prompt]], [[notions/garde-fous]] et
 | code | [PyRIT](https://github.com/Azure/PyRIT) | orchestration de campagnes adverses, rejouable | confirmé |
 | officiel | [Promptfoo — Red team](https://www.promptfoo.dev/docs/red-team/) | des scénarios adverses intégrables à une chaîne d'intégration continue | intermédiaire |
 | officiel | [HackAPrompt](https://www.hackaprompt.com/) | environnement d'entraînement autorisé à l'injection de prompt | débutant |
+| officiel | [Lakera — Agent Breaker](https://play.lakera.ai/agent-breaker) | le successeur de Gandalf : attaquer un agent, légalement et sans conséquence | débutant |
+| officiel | [0din.ai — Politique de divulgation](https://0din.ai/policy) | un cadre de divulgation responsable propre à l'IA générative | confirmé |
 
 ## Cadres, régulation et veille
 
@@ -147,6 +162,7 @@ Voir [[notions/injection-de-prompt]], [[notions/garde-fous]] et
 | norme | [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) | le cadre de gestion du risque, et le vocabulaire commun avec les équipes conformité | intermédiaire |
 | norme | [ISO/IEC 42001](https://www.iso.org/standard/81230.html) | la norme de système de management de l'IA, certifiable — donc opposable en appel d'offres. Payante, et le site refuse toute vérification automatique | confirmé |
 | officiel | [EU AI Act Explorer](https://artificialintelligenceact.eu/ai-act-explorer/) | le règlement article par article, navigable. Un confort de lecture, pas une source de droit | intermédiaire |
+| officiel | [Cadre réglementaire de l'IA — Commission européenne](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) | le calendrier d'application et les actes d'exécution, c'est-à-dire ce qui s'impose et quand | intermédiaire |
 | officiel | [Anthropic Research](https://www.anthropic.com/research) | publications de recherche à suivre en continu | confirmé |
 | officiel | [AI Security Institute](https://www.aisi.gov.uk/) | évaluations publiques de sécurité des modèles, par un organisme public | intermédiaire |
 | officiel | [Center for AI Safety](https://www.safe.ai/) | l'autre pôle de publication à suivre sur le risque | confirmé |
@@ -159,8 +175,9 @@ La lecture réglementaire côté projet est dans [[notions/gouvernance-ia]].
 - **Les pages produit des fournisseurs de bases vectorielles et de plateformes
   d'agents**, quand elles ne documentent rien d'autre que leur propre offre. Il en reste
   trois ci-dessus, retenues pour leur documentation technique, pas pour leur argumentaire.
-- **Les articles à marqueur de campagne.** Quatre-vingt-trois articles d'un même éditeur
-  arrivent dans le catalogue amont avec `utm_campaign=TDS+roadmap+integration`. Certains
-  sont bons ; aucun n'a été choisi pour sa qualité, et ça se voit dans l'URL.
+- **Les articles à marqueur de campagne.** Cinquante-trois des quatre-vingt-trois
+  articles d'un même éditeur arrivent dans le catalogue amont avec
+  `utm_campaign=TDS+roadmap+integration`. Certains sont bons ; aucun n'a été choisi pour
+  sa qualité, et ça se voit dans l'URL.
 - **Les vidéos dont le titre est corrompu dans la capture amont.** Deviner ce que
   « laude Code Tutorial » voulait dire, c'est inventer. Détail dans [[ressources/sources]].

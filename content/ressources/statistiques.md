@@ -32,6 +32,8 @@ soit sa date.
 | livre | [Probability and Statistics: The Science of Uncertainty](https://utstat.utoronto.ca/mikevans/jeffrosenthal/book.pdf) | Evans et Rosenthal, libre. Le versant probabiliste, plus formel | confirmé |
 | livre | [Linear Algebra Done Right](https://linear.axler.net/LADR4e.pdf) | Axler, 4ᵉ édition libre. L'algèbre linéaire par les espaces vectoriels plutôt que par les matrices — le bon ordre pour comprendre les décompositions | confirmé |
 | livre | [Deep Learning](https://www.deeplearningbook.org/) | Goodfellow, Bengio, Courville. Libre en ligne. Daté sur les architectures, toujours juste sur les principes | confirmé |
+| livre | [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) | Jake VanderPlas, libre. Le pont entre les manuels ci-dessus et le code qu'on écrit vraiment | débutant |
+| livre | [Calculus (MIT OpenCourseWare)](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/mitres_18_001_f17_full_book.pdf) | le manuel de Gilbert Strang, libre. Le rattrapage d'analyse quand les gradients cessent d'être une métaphore | intermédiaire |
 
 Voir [[notions/statistiques-descriptives]] et [[notions/tests-hypotheses]].
 
@@ -74,6 +76,7 @@ Voir [[notions/analyse-correlation]], [[notions/ab-testing]],
 | officiel | [scikit-learn — Prétraitement](https://scikit-learn.org/stable/modules/preprocessing.html) | normalisation, encodage, et pourquoi l'ordre par rapport à la découpe compte | intermédiaire |
 | officiel | [scikit-learn — Recherche d'hyperparamètres](https://scikit-learn.org/stable/modules/grid_search.html) | valider sans se mentir : la validation croisée imbriquée expliquée correctement | confirmé |
 | cours | [Practical Deep Learning for Coders](https://course.fast.ai/) | fast.ai. L'approche descendante — on entraîne d'abord, on comprend ensuite | intermédiaire |
+| cours | [mlcourse.ai](https://mlcourse.ai/) | cours libre et complet, avec devoirs corrigés. L'un des rares à traiter sérieusement l'analyse exploratoire avant la modélisation | intermédiaire |
 | cours | [Google ML Crash Course — Classification](https://developers.google.com/machine-learning/crash-course/classification) | court, gratuit, et le passage sur les seuils et la matrice de confusion est le meilleur du lot | débutant |
 | officiel | [PyTorch — Documentation](https://docs.pytorch.org/docs/stable/index.html) | le cadre devenu majoritaire en recherche comme en production | intermédiaire |
 | officiel | [TensorFlow — Tutoriels](https://www.tensorflow.org/tutorials) | l'autre cadre, encore très présent dans les bases de code d'entreprise | intermédiaire |
@@ -89,6 +92,7 @@ Voir [[notions/apprentissage-supervise]], [[notions/apprentissage-non-supervise]
 | code | [LIME](https://github.com/marcotcr/lime) | l'explication locale par approximation ; plus simple, moins solide, utile quand même | intermédiaire |
 | officiel | [MLflow](https://mlflow.org/docs/latest/) | suivi d'expériences, registre de modèles. Le standard de fait | intermédiaire |
 | officiel | [DVC — Prise en main](https://doc.dvc.org/start) | versionner les données et les pipelines, pas seulement le code | intermédiaire |
+| officiel | [Kubeflow](https://www.kubeflow.org/) | l'orchestration de chaînes de ML sur Kubernetes. Lourd, et justifié seulement quand plusieurs équipes partagent l'infrastructure | confirmé |
 
 ## Écarté, et pourquoi
 

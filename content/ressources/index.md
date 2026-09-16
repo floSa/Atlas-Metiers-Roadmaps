@@ -7,7 +7,7 @@ source: https://roadmap.sh
 
 # Ressources
 
-> [!abstract] L'entrée unique vers les sources du corpus, classées par **usage** et non par métier. Deux cents ressources choisies et commentées, extraites d'un catalogue amont de 3 216, toutes vérifiées. Ce qu'on lit pour démarrer, ce qu'on lit pour approfondir, ce qui fait référence, et ce qu'on relit.
+> [!abstract] L'entrée unique vers les sources du corpus, classées par **usage** et non par métier. 199 adresses choisies et commentées dans un catalogue amont de 3 216, toutes vérifiées le jour de la publication. Ce qu'on lit pour démarrer, ce qu'on lit pour approfondir, ce qui fait référence, et ce qu'on relit.
 
 **Source** : capture roadmap.sh du 16 septembre 2026 · **Vérification des liens** : 16 septembre 2026 · **Rédaction** : 16 septembre 2026
 
@@ -17,7 +17,8 @@ source: https://roadmap.sh
 
 Le catalogue amont compte 3 216 ressources, soit 2 649 adresses distinctes. Publiées
 telles quelles, elles ne servent à personne : un annuaire de cette taille se consulte
-comme un moteur de recherche, sauf qu'il est moins bon.
+comme un moteur de recherche, sauf qu'il est moins bon. Il en reste ici **199**, chacune
+vérifiée et assortie d'une ligne qui dit ce qu'elle apporte.
 
 Quatre critères ont servi à trancher.
 
@@ -140,13 +141,14 @@ Et la page qui rend tout ça auditable : [[ressources/sources|d'où vient ce cor
 
 ## Ce que cette sélection ne prétend pas être
 
-Elle n'est ni neutre ni exhaustive. Deux cents ressources commentées, c'est deux cents
-jugements, et ils sont discutables un par un — ce qui est précisément pourquoi chaque
-entrée dit ce qu'elle apporte plutôt que de se contenter d'exister.
+Elle n'est ni neutre ni exhaustive. Cent quatre-vingt-dix-neuf ressources commentées,
+c'est autant de jugements, et ils sont discutables un par un — ce qui est précisément
+pourquoi chaque entrée dit ce qu'elle apporte plutôt que de se contenter d'exister.
 
-Elle n'est pas non plus stable. Sur cette capture, 3 % des adresses citées par le corpus
-rédigé étaient déjà mortes et 13 % avaient changé de place, en quelques semaines. La
-vérification est rejouable en une commande, et elle doit l'être régulièrement :
+Elle n'est pas non plus stable. Sur les 133 adresses citées par les parcours et les huit
+notes historiques, vérifiées le 16 septembre 2026 : **3 étaient déjà mortes** et **13
+avaient changé de place**, en quelques semaines d'existence du corpus. La vérification est
+rejouable en une commande, et elle doit l'être régulièrement :
 
 ```bash
 python3 tools/verifier_liens.py --corpus

@@ -25,6 +25,7 @@ dise ce que *votre* base fait, dialecte compris.
 | officiel | [Documentation PostgreSQL](https://www.postgresql.org/docs/) | la documentation de moteur la plus complète et la mieux écrite du domaine, toutes bases confondues | intermédiaire |
 | officiel | [SQLite](https://www.sqlite.org/index.html) | le moteur le plus déployé au monde, et le plus facile à lire de bout en bout | débutant |
 | officiel | [DuckDB](https://duckdb.org/docs/) | l'analytique en colonnes sur un poste de travail : la réponse à la plupart des « il faut un cluster » | intermédiaire |
+| officiel | [Documentation MySQL](https://dev.mysql.com/doc/) | le moteur qu'on trouve derrière la moitié des applications existantes, dialecte compris | intermédiaire |
 | article | [SQL Window Functions](https://www.thoughtspot.com/sql-tutorial/sql-window-functions) | la meilleure page courte sur le fenêtrage, le sujet SQL qui sépare l'analyste du débutant | intermédiaire |
 | article | [Performance Tuning SQL Queries](https://www.thoughtspot.com/sql-tutorial/sql-performance-tuning) | le pendant sur l'optimisation, concret et sans folklore | intermédiaire |
 
@@ -104,6 +105,7 @@ facturent pour le faire à votre place.
 | Type | Ressource | Ce qu'elle apporte | Niveau |
 |---|---|---|---|
 | article | [What Is Data Lineage?](https://www.ibm.com/think/topics/data-lineage) | la définition de référence. Contenu d'éditeur, correct sur le concept, muet sur le coût | débutant |
+| article | [The Ultimate Guide To Data Lineage](https://montecarlo.ai/blog-data-lineage) | le versant pratique du précédent : ce que ça coûte à maintenir, et ce que ça rapporte quand une table casse | intermédiaire |
 | norme | [Texte du RGPD](https://gdpr-info.eu/) | la source, à consulter plutôt que les résumés commerciaux | intermédiaire |
 | norme | [California Consumer Privacy Act](https://oag.ca.gov/privacy/ccpa) | l'équivalent californien, utile dès qu'un client a des utilisateurs aux États-Unis | intermédiaire |
 | article | [5 Principles of Data Ethics for Business](https://online.hbs.edu/blog/post/data-ethics) | court et exploitable, notamment sur la question du périmètre de collecte | débutant |
@@ -129,7 +131,7 @@ Voir [[notions/pandas]], [[notions/python-pour-la-data]] et [[notions/r-et-tidyv
 - **Les comparatifs « X vs Y » publiés par X.** Il y en a beaucoup dans le catalogue
   amont. Quand un tel article est retenu ici, c'est pour sa définition, et la réserve est
   écrite dans la colonne d'à côté.
-- **Les seize flux d'agrégateur** repris en amont avec `ref=roadmapsh`. Un flux n'est pas
+- **Les quinze flux d'agrégateur** repris en amont avec `ref=roadmapsh`. Un flux n'est pas
   une ressource : il ne dit pas ce qu'on va y trouver ni quand.
 - **Les tutoriels de plateformes payantes sans accès libre.** À qualité égale, le
   gratuit et accessible l'emporte ; à qualité inégale, ça se discute, mais ce n'était pas

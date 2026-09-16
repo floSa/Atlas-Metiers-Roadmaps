@@ -49,19 +49,19 @@ roadmap bouge encore.
 
 | Roadmap | Nœuds | Sujets | Ressources | Amont modifié |
 |---|---:|---:|---:|---|
-| `ai-engineer` | 279 | 189 | 474 | 11 sept. 2026 |
-| `data-engineer` | 268 | 186 | 398 | 7 août 2026 |
-| `bi-analyst` | 255 | 200 | 275 | 4 sept. 2026 |
-| `computer-science` | 244 | 188 | 498 | 7 sept. 2026 |
-| `machine-learning` | 201 | 150 | 330 | 17 juin 2026 |
-| `ai-agents` | 189 | 101 | 305 | 9 mars 2026 |
-| `data-analyst` | 161 | 99 | 192 | 4 sept. 2026 |
-| `ai-data-scientist` | 130 | 29 | 20 | 4 sept. 2026 |
-| `ai-red-teaming` | 105 | 64 | 209 | 20 mars 2026 |
-| `mlops` | 95 | 62 | 275 | 24 janv. 2026 |
-| `prompt-engineering` | 94 | 47 | 90 | 29 avr. 2026 |
-| `ai-product-builder` | 93 | 52 | 120 | 25 juin 2026 |
-| `forward-deployed-engineer` | 44 | 20 | 30 | 30 juin 2026 |
+| [`ai-engineer`](https://roadmap.sh/ai-engineer) | 279 | 189 | 474 | 11 sept. 2026 |
+| [`data-engineer`](https://roadmap.sh/data-engineer) | 268 | 186 | 398 | 7 août 2026 |
+| [`bi-analyst`](https://roadmap.sh/bi-analyst) | 255 | 200 | 275 | 4 sept. 2026 |
+| [`computer-science`](https://roadmap.sh/computer-science) | 244 | 188 | 498 | 7 sept. 2026 |
+| [`machine-learning`](https://roadmap.sh/machine-learning) | 201 | 150 | 330 | 17 juin 2026 |
+| [`ai-agents`](https://roadmap.sh/ai-agents) | 189 | 101 | 305 | 9 mars 2026 |
+| [`data-analyst`](https://roadmap.sh/data-analyst) | 161 | 99 | 192 | 4 sept. 2026 |
+| [`ai-data-scientist`](https://roadmap.sh/ai-data-scientist) | 130 | 29 | 20 | 4 sept. 2026 |
+| [`ai-red-teaming`](https://roadmap.sh/ai-red-teaming) | 105 | 64 | 209 | 20 mars 2026 |
+| [`mlops`](https://roadmap.sh/mlops) | 95 | 62 | 275 | 24 janv. 2026 |
+| [`prompt-engineering`](https://roadmap.sh/prompt-engineering) | 94 | 47 | 90 | 29 avr. 2026 |
+| [`ai-product-builder`](https://roadmap.sh/ai-product-builder) | 93 | 52 | 120 | 25 juin 2026 |
+| [`forward-deployed-engineer`](https://roadmap.sh/forward-deployed-engineer) | 44 | 20 | 30 | 30 juin 2026 |
 | **Total** | **2 158** | **1 387** | **3 216** | |
 
 Deux lectures utiles de ce tableau. `mlops` n'a pas bougé depuis janvier et
@@ -196,7 +196,7 @@ Quatre limites connues, mesurées sur cette capture. Les taire donnerait une fau
 de la fiabilité de l'amont.
 
 **Les titres amont ne sont pas fiables.** Neuf titres de cette capture ont perdu leur
-première lettre — « laude Code Tutorial », « tatistics - A Full University Course ». Cinq
+première lettre — « laude Code Tutorial », « tatistics - A Full University Course ». Six
 autres ont pour titre leur propre URL. Ces ressources sont écartées de la sélection
 plutôt que réparées : deviner ce qu'un titre tronqué voulait dire, c'est inventer.
 
@@ -209,8 +209,8 @@ ne voit rien : les deux répondent 200. Seule la confrontation du titre au docum
 révèle.
 
 **Une part du catalogue amont est un placement commercial.** 76 URL de cette capture
-portent un marqueur de campagne — `utm_campaign=TDS+roadmap+integration` sur 83 articles
-d'un même éditeur, `ref=roadmapsh` sur seize flux d'agrégateur, `?c=rsh-a` et
+portent un marqueur de campagne — `utm_campaign=TDS+roadmap+integration` sur 53 des 83
+articles d'un même éditeur, `ref=roadmapsh` sur quinze flux d'agrégateur, `?c=rsh-a` et
 `utm_campaign=ai-engineer-roadmap` sur des pages produit. Ce n'est pas illégitime de la
 part de roadmap.sh, mais ça n'a pas le même statut qu'une source choisie pour sa qualité,
 et ça se voit dans l'URL.

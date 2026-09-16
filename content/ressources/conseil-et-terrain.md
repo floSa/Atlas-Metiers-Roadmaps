@@ -16,9 +16,9 @@ La méthode de sélection et de vérification est dans [[ressources/sources]].
 
 ## Ce que l'amont propose, et pourquoi c'est mince
 
-La roadmap `forward-deployed-engineer` compte trente ressources, dont sept sont de
-simples renvois vers d'autres roadmaps. Sur les vingt-trois restantes, la majorité sont
-des pages d'éditeurs de logiciels : un fournisseur de gestion des exigences explique le
+La roadmap `forward-deployed-engineer` compte trente ressources pour vingt nœuds de
+contenu, et son socle technique n'est qu'un renvoi vers sept autres roadmaps. Sur ces
+trente ressources, une bonne part sont des pages d'éditeurs de logiciels : un fournisseur de gestion des exigences explique le
 recueil des exigences, un éditeur de flux de travail explique la gestion des flux de
 travail, une agence de formation explique la session de cadrage. Ce n'est pas
 disqualifiant — ces pages sont souvent les seules à traiter le sujet de façon
