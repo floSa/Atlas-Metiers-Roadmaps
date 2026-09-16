@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/mlops
 ---
 
+**Usage.** Instrumenter des traces, plafonner un coût par requête, brancher un juge automatique : un confirmé le fait sur un chemin balisé ; la conception du jeu d'évaluation et des invites appartient à l'AI engineer, et c'est de ce côté-là que se trouve la référence.
+
 Ce qui change quand le modèle n'est plus entraîné mais appelé : pas de fonction de perte en production, pas d'exactitude calculable sur le trafic réel, et un coût variable par requête. Ces trois écarts suffisent à rendre le tableau de bord MLOps classique inopérant.
 
 ```mermaid

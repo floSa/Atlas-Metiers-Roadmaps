@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/mlops
 ---
 
+**Autonomie.** Un confirmé débusque seul une fuite temporelle et un écart entre entraînement et service, sous pression et sans le data scientist ; la référence sur les pipelines eux-mêmes appartient au data engineer, avec qui ce domaine se partage en permanence.
+
 La qualité d'un modèle est plafonnée par celle de ses données, et sa fiabilité par celle de ses pipelines : en pratique, la majorité des incidents « modèle » sont des incidents « données ».
 
 ```mermaid

@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/data-engineer
 ---
 
+**Référence.** Premier des deux domaines où le data engineer fait autorité dans la salle : personne d'autre ne rattrapera un modèle de données bancal, et l'erreur ne se voit qu'au moment où la corriger coûte une migration.
+
 Où la donnée se pose et sous quelle forme : le choix du magasin engage la modélisation, les performances et la facture pour des années, bien plus que le choix de l'orchestrateur.
 
 ```mermaid

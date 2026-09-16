@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/mlops
 ---
 
+**Référence.** Premier des deux domaines où l'ingénieur MLOps fait autorité : les deux portes que le ML ajoute à la chaîne n'ont pas d'autre gardien, et une chaîne toute verte qui promeut un modèle pire que le précédent ne se voit nulle part ailleurs dans l'organisation.
+
 En logiciel, la chaîne d'intégration valide que le code compile et que les tests passent. En ML il faut ajouter deux portes, faute de quoi elle donne une fausse assurance : tout est vert et le modèle est pire.
 
 ```mermaid

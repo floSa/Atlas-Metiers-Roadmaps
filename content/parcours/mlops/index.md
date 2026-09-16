@@ -10,18 +10,18 @@ Mener un modèle du carnet où il marche jusqu'à la production où il tient : l
 
 ## La roadmap
 
-Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
+Chaque case porte le niveau attendu d'un profil confirmé — de **notion** (reconnaître le sujet, savoir qui appeler) à **référence** (faire autorité dans la salle), en passant par **usage** (chemin balisé) et **autonomie** (concevoir, déboguer sous pression, arbitrer). Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
 
 ```mermaid
 flowchart TD
-  P["Principes et versionnement<br/>code, données, modèle : trois objets"] --> D["Données et features<br/>pipelines, lignage, correction temporelle"]
-  D --> E["Évaluation et explicabilité<br/>mesurer, comparer, justifier"]
-  E --> CI["CI/CD et entraînement continu<br/>les deux portes que le ML ajoute"]
-  CI --> O["Orchestration et déploiement<br/>graphe de tâches, canari, ombre"]
-  O --> S["Supervision et dérive<br/>système, données, qualité prédictive"]
+  P["Principes et versionnement<br/>Autonomie<br/>code, données, modèle : trois objets"] --> D["Données et features<br/>Autonomie<br/>pipelines, lignage, correction temporelle"]
+  D --> E["Évaluation et explicabilité<br/>Usage<br/>mesurer, comparer, justifier"]
+  E --> CI["CI/CD et entraînement continu<br/>Référence<br/>les deux portes que le ML ajoute"]
+  CI --> O["Orchestration et déploiement<br/>Autonomie<br/>graphe de tâches, canari, ombre"]
+  O --> S["Supervision et dérive<br/>Référence<br/>système, données, qualité prédictive"]
   S -->|boucle de ré-entraînement| CI
-  S --> L["LLMOps<br/>évaluation, traces, coût par requête"]
-  I["Infrastructure et serving<br/>cloud, conteneurs, GPU, embarqué"] -.-> O
+  S --> L["LLMOps<br/>Usage<br/>évaluation, traces, coût par requête"]
+  I["Infrastructure et serving<br/>Autonomie<br/>cloud, conteneurs, GPU, embarqué"] -.-> O
   I -.-> S
 
   click P "/parcours/mlops/principes-et-versionnement"

@@ -10,19 +10,19 @@ Construire et exploiter les systèmes qui rendent la donnée utilisable par d'au
 
 ## La roadmap
 
-Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
+Chaque case porte le niveau attendu d'un profil confirmé — de **notion** (reconnaître le sujet, savoir qui appeler) à **référence** (faire autorité dans la salle), en passant par **usage** (chemin balisé) et **autonomie** (concevoir, déboguer sous pression, arbitrer). Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
 
 ```mermaid
 flowchart TD
-  S["Socle et cycle de vie<br/>Python, SQL, Linux, systèmes distribués"] --> I["Sources et ingestion<br/>d'où vient la donnée, comment elle entre"]
-  I --> ST["Stockage et modélisation<br/>bases, entrepôt, lac, lakehouse"]
-  ST --> O["Orchestration et transformation<br/>ELT, DAG, dbt, reprise par date"]
-  O --> C["Calcul et flux<br/>Spark, mono-nœud, Kafka"]
-  O --> SV["Serving et consommation<br/>BI, reverse ETL, ML, RAG"]
+  S["Socle et cycle de vie<br/>Autonomie<br/>Python, SQL, Linux, systèmes distribués"] --> I["Sources et ingestion<br/>Autonomie<br/>d'où vient la donnée, comment elle entre"]
+  I --> ST["Stockage et modélisation<br/>Référence<br/>bases, entrepôt, lac, lakehouse"]
+  ST --> O["Orchestration et transformation<br/>Référence<br/>ELT, DAG, dbt, reprise par date"]
+  O --> C["Calcul et flux<br/>Usage<br/>Spark, mono-nœud, Kafka"]
+  O --> SV["Serving et consommation<br/>Autonomie<br/>BI, reverse ETL, ML, RAG"]
   C --> SV
-  P["Plateforme et exploitation<br/>conteneurs, CI/CD, IaC, supervision"] -.-> O
+  P["Plateforme et exploitation<br/>Usage<br/>conteneurs, CI/CD, IaC, supervision"] -.-> O
   P -.-> C
-  G["Sécurité et gouvernance<br/>droits, qualité, lignage, RGPD"] -.-> ST
+  G["Sécurité et gouvernance<br/>Usage<br/>droits, qualité, lignage, RGPD"] -.-> ST
   G -.-> SV
 
   click S "/parcours/data-engineer/socle-et-cycle-de-vie"
