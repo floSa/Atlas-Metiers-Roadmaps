@@ -20,7 +20,7 @@ flowchart TD
 - Lire un journal, suivre un processus, identifier ce qui consomme la mémoire, retrouver quel port écoute quoi : le minimum vital, en ligne de commande, sans installer d'outil.
 - Proxy d'entreprise et certificats internes — la première demi-journée d'une mission passe très souvent là. Savoir configurer les variables d'environnement de proxy et injecter un certificat racine dans un conteneur fait gagner un jour entier.
 - Droits et comptes de service : demander le bon niveau d'accès dès le premier jour, parce que l'obtenir prend des semaines dans une grande organisation.
-- Fondations système et réseau si elles manquent : [[roadmaps/01 - Roadmap — Computer Science]].
+- Fondations système et réseau si elles manquent : [[parcours/computer-science/index|Parcours Computer Science]].
 
 > [!tip] Ajout 2026
 > Prépare une trousse de diagnostic qui tient dans un conteneur unique et ne demande aucune installation sur l'hôte : un shell, les outils réseau de base, un client de base de données. Les environnements clients verrouillés sont la norme et non l'exception ; arriver avec un moyen de travailler sans droits d'administration change le rythme des trois premiers jours.
