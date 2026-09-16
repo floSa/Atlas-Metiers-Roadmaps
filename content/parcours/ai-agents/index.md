@@ -10,17 +10,17 @@ Mettre un agent en production plutôt qu'une démonstration : une boucle bornée
 
 ## La roadmap
 
-Chaque case mène à sa page. Cochez les étapes acquises en bas de page pour suivre votre progression.
+Chaque case mène à sa page, et porte en deuxième ligne le niveau attendu chez un profil confirmé — **notion** (reconnaître le sujet, savoir qui appeler), **usage** (s'en servir sur un chemin balisé), **autonomie** (concevoir, déboguer sous pression, arbitrer et défendre), **référence** (faire autorité dans la salle). Cochez les étapes acquises en bas de page pour suivre votre progression.
 
 ```mermaid
 flowchart TD
-  S["Socle LLM<br/>backend, tokens, échantillonnage"] --> B["La boucle agentique<br/>observer, décider, agir"]
-  B --> O["Outils et MCP<br/>définitions, erreurs, protocole"]
-  O --> M["Mémoire<br/>court terme, long terme, oubli"]
-  M --> A["Architectures<br/>ReAct, DAG, multi-agents"]
-  A --> C["Construire l'agent<br/>à la main, puis framework"]
-  C --> E["Évaluation et observabilité<br/>trajectoire, traces, coût"]
-  SE["Sécurité<br/>injection, bac à sable, validation"] -.-> O
+  S["Socle LLM<br/>Autonomie<br/>backend, tokens, échantillonnage"] --> B["La boucle agentique<br/>Référence<br/>observer, décider, agir"]
+  B --> O["Outils et MCP<br/>Référence<br/>définitions, erreurs, protocole"]
+  O --> M["Mémoire<br/>Autonomie<br/>court terme, long terme, oubli"]
+  M --> A["Architectures<br/>Autonomie<br/>ReAct, DAG, multi-agents"]
+  A --> C["Construire l'agent<br/>Autonomie<br/>à la main, puis framework"]
+  C --> E["Évaluation et observabilité<br/>Autonomie<br/>trajectoire, traces, coût"]
+  SE["Sécurité<br/>Usage<br/>injection, bac à sable, validation"] -.-> O
   SE -.-> C
   SE -.-> E
 
