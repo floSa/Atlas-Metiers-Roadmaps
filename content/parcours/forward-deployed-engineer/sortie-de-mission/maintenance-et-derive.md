@@ -33,7 +33,7 @@ flowchart TD
 - [[notions/observabilite]] — la dérive ne se voit que si quelqu'un regarde, et seulement si l'instrumentation a survécu au départ.
 - [[notions/roi-des-projets-ia]] — la valeur annoncée en phase 2 doit être vérifiée en conditions réelles, sinon elle restera une promesse.
 
-Exploitation et dérive en profondeur : [[roadmaps/08 - Roadmap — MLOps]].
+Exploitation et dérive en profondeur : [[parcours/mlops/supervision-et-derive]].
 
 > [!warning] Piège
 > Partir sans avoir fait tourner le système une fois sans soi. Un système qui n'a jamais connu une semaine sans son auteur n'a pas été testé sur le critère qui compte. Si le calendrier ne le permet pas, il faut le dire explicitement au commanditaire : c'est un risque assumé, pas un détail d'organisation.

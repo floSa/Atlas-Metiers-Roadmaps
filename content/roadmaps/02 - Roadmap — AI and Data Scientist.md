@@ -426,11 +426,11 @@ Douze à dix-huit mois avant d'être opérationnel en travaillant à côté, sp�
 **Roadmaps voisines**
 
 - [[01 - Roadmap — Computer Science]] — les fondations informatiques sous l'étape Coding.
-- [[03 - Roadmap — Data Engineer]] — l'amont : ingestion, stockage, transformation à l'échelle.
+- [[parcours/data-engineer/index|Data Engineer]] — l'amont : ingestion, stockage, transformation à l'échelle.
 - [[04 - Roadmap — Machine Learning]] — l'étape 6 en profondeur.
 - [[05 - Roadmap — AI Engineer]] — la bifurcation applicative : construire des produits sur des modèles existants.
 - [[06 - Roadmap — Prompt Engineering]] et [[07 - Roadmap — AI Agents]] — le prolongement génératif et agentique.
-- [[08 - Roadmap — MLOps]] — l'étape 8 en profondeur.
+- [[parcours/mlops/index|MLOps]] — l'étape 8 en profondeur.
 
 ## Pour aller plus loin
 

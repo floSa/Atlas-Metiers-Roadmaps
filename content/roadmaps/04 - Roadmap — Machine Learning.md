@@ -427,7 +427,7 @@ L'ordre 5 avant 6 est délibéré : apprendre les algorithmes avant le protocole
 ## Liens dans le coffre
 
 - [[02 - Roadmap — AI and Data Scientist]] — recouvrement important sur les fondations ; cette note-ci est plus centrée modélisation, l'autre plus centrée analyse et métier.
-- [[08 - Roadmap — MLOps]] — la suite directe : versionnage, serving, monitoring, dérive. Absente de cette roadmap qui s'arrête à la modélisation.
+- [[parcours/mlops/index|MLOps]] — la suite directe : versionnage, serving, monitoring, dérive. Absente de cette roadmap qui s'arrête à la modélisation.
 - [[Arbre de Décision Méthodologique]] — choisir la famille de méthode selon la nature des données et de la question, en amont de tout code.
 - [[Inférence Statistique et Tests d'Hypothèses]] — le socle qui permet de dire si un écart entre deux modèles est réel.
 - [[Classification Automatique (Clustering)]] — approfondissement de la section 6, avec les critères de validation interne.

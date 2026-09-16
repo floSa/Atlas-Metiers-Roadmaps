@@ -60,5 +60,5 @@ Vérifier la propagation de l'identité **de bout en bout**, y compris jusqu'aux
 - [OWASP API Security Project](https://api-security.owasp.org/) — le référentiel applicable tel quel, et la check-list par laquelle commencer cette partie de l'engagement.
 - [Model Context Protocol — Authorization Specification](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization) — ce que le protocole prévoit pour l'identité entre agent et serveurs d'outils, donc ce qu'on vient vérifier.
 - [MCP Supply Chain Advisory](https://www.ox.security/blog/mcp-supply-chain-advisory-rce-vulnerabilities-across-the-ai-ecosystem/) — le cas réel de la faille propagée par la couche partagée, avec son ampleur.
-- [[roadmaps/08 - Roadmap — MLOps]] — cycle de vie des modèles, provenance des artefacts et déploiement : le terrain de cette page vu du côté de ceux qui l'exploitent.
+- [[parcours/mlops/index|MLOps]] — cycle de vie des modèles, provenance des artefacts et déploiement : le terrain de cette page vu du côté de ceux qui l'exploitent.
 - [[roadmaps/01 - Roadmap — Computer Science]] — réseau, système et bases applicatives, prérequis réel de tout ce qui précède.
