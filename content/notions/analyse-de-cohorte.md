@@ -49,6 +49,6 @@ L'usage est diagnostique et ponctuel : c'est l'outil à sortir dès qu'un indica
 ## Appelée par
 
 - [[parcours/bi-analyst|BI Analyst]]
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 
 Voisines : [[notions/series-temporelles]], [[notions/mesure-d-usage-produit]], [[notions/ab-testing]], [[notions/apprentissage-non-supervise]].

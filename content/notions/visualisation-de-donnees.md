@@ -48,7 +48,7 @@ La contrainte est la durée de vie. Un graphique produit une fois s'accompagne d
 
 ## Appelée par
 
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
 
 Voisines : [[notions/outils-decisionnels]], [[notions/statistiques-descriptives]], [[notions/tableur]].

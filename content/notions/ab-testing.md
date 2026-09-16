@@ -46,7 +46,7 @@ Le BI Analyst est rarement celui qui conçoit le test, souvent celui qui produit
 
 ## Appelée par
 
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
 
 Voisines : [[notions/tests-hypotheses]], [[notions/analyse-correlation]], [[notions/mesure-d-usage-produit]].

@@ -62,7 +62,7 @@ La gouvernance et le RGPD se rejoignent sur un même objet : savoir d'où vient 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
 - [[parcours/ai-product-builder|AI Product Builder]]
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
 
 Voisines : [[notions/donnees-sensibles]], [[notions/gouvernance-ia]], [[notions/controle-d-acces]], [[notions/lignage-des-donnees]].

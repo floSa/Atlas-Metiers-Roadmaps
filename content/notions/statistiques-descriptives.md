@@ -45,7 +45,7 @@ L'angle est la publication. Un indicateur affiché sans dispersion ni référenc
 
 ## Appelée par
 
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
 
 Voisines : [[notions/visualisation-de-donnees]], [[notions/tests-hypotheses]], [[notions/qualite-des-donnees]], [[notions/series-temporelles]].

@@ -47,6 +47,6 @@ Le premier choix, et souvent le dernier : elle donne des coefficients qu'on peut
 
 ## Appelée par
 
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 
 Voisines : [[notions/regression-lineaire]], [[notions/metriques-evaluation-ml]], [[notions/apprentissage-supervise]].

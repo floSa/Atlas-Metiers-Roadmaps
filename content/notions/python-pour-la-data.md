@@ -45,6 +45,6 @@ Ce qui distingue l'usage analyste de l'usage développeur est la destination du 
 
 ## Appelée par
 
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 
 Voisines : [[notions/pandas]], [[notions/r-et-tidyverse]], [[notions/traitement-distribue]], [[notions/assistants-de-codage]].

@@ -48,7 +48,7 @@ L'angle est le coût récurrent plutôt que la faisabilité. Une requête de tab
 
 ## Appelée par
 
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
 
 Voisines : [[notions/pandas]], [[notions/sql]], [[notions/data-lake]], [[notions/collecte-de-donnees]].

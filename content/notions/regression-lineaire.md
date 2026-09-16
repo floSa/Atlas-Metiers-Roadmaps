@@ -47,7 +47,7 @@ L'usage courant est la mesure de contribution : quelle part d'une variation s'ex
 
 ## Appelée par
 
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
 
 Voisines : [[notions/regression-logistique]], [[notions/analyse-correlation]], [[notions/tests-hypotheses]], [[notions/apprentissage-supervise]].

@@ -47,6 +47,6 @@ La métrique se choisit avec le métier avant d'entraîner, parce qu'elle encode
 
 ## Appelée par
 
-- [[parcours/data-analyst|Data Analyst]]
+- [[parcours/data-analyst/index|Data Analyst]]
 
 Voisines : [[notions/apprentissage-supervise]], [[notions/regression-logistique]], [[notions/evaluation-llm]].
