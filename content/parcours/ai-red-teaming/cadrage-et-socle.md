@@ -8,20 +8,28 @@ source: https://roadmap.sh/ai-red-teaming
 
 Savoir trier ce qui, dans un système d'IA, relève de la sécurité applicative ordinaire et ce qui est réellement propre au modèle — et comprendre assez du modèle pour savoir où il est fragile.
 
+```mermaid
+flowchart TD
+  SU["Apprentissage supervisé"]
+  NS["Apprentissage non supervisé"]
+  RL["Apprentissage par renforcement"]
+  RN["Réseaux de neurones"]
+  IP["Ingénierie de prompt<br/>l'outil du test et son objet"]
+  MM["Modélisation de la menace<br/>le cadre qui donne sa forme au tri"]
+
+  click SU "/notions/apprentissage-supervise"
+  click NS "/notions/apprentissage-non-supervise"
+  click RL "/notions/apprentissage-par-renforcement"
+  click RN "/notions/reseaux-de-neurones"
+  click IP "/notions/ingenierie-de-prompt"
+  click MM "/notions/modelisation-de-la-menace"
+```
+
 ## Le tri qui ouvre toute mission
 
 Dans un audit réel, la grande majorité des constats est de la sécurité applicative ordinaire : une clé d'API dans le dépôt, un point d'accès sans authentification, une absence de limitation de débit, un contrôle d'accès manquant sur l'index de récupération. Ce qui est propre aux modèles tient en peu de choses, mais ces choses n'ont pas d'équivalent : la confusion instruction/donnée, la mémorisation du corpus d'entraînement, la sensibilité à des perturbations imperceptibles, et l'absence de frontière nette entre un fonctionnement normal et un fonctionnement détourné.
 
-```mermaid
-flowchart TD
-  C["Un constat"] --> Q{"Cette faille existerait-elle encore<br/>si le LLM était remplacé par<br/>une fonction déterministe ?"}
-  Q -->|oui| A["Sécurité applicative<br/>outillage habituel, équipe existante"]
-  Q -->|non| B["Constat propre au modèle<br/>arbitrage d'architecture"]
-  A --> R["Rapport — deux parties,<br/>deux destinataires"]
-  B --> R
-```
-
-Cette question évite aussi le biais inverse, plus insidieux : imputer au modèle une fuite qui vient en réalité d'un index vectoriel sans filtrage par utilisateur.
+La question qui range un constat dans l'une ou l'autre catégorie tient en une ligne : **cette faille existerait-elle encore si le modèle était remplacé par une fonction déterministe ?** Si oui, c'est de la sécurité applicative — outillage habituel, équipe existante, correction connue. Si non, c'est un constat propre au modèle, et il appelle un arbitrage d'architecture plutôt qu'un correctif. Les deux vont dans le rapport, dans deux parties séparées, parce qu'elles ne s'adressent pas aux mêmes personnes. Cette question évite aussi le biais inverse, plus insidieux : imputer au modèle une fuite qui vient en réalité d'un index vectoriel sans filtrage par utilisateur.
 
 ## Ce qu'il faut savoir faire
 
