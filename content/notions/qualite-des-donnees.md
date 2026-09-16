@@ -65,7 +65,7 @@ L'angle est celui de la charge de la preuve. Un chiffre défendable est un chiff
 
 ## Appelée par
 
-- [[parcours/forward-deployed-engineer|Forward Deployed Engineer]]
+- [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-red-teaming|AI Red Teaming]]
 - [[parcours/data-analyst|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]

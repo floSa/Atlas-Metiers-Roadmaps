@@ -93,7 +93,7 @@ Voir [[notions/gouvernance-ia]], [[notions/rgpd]] et [[notions/donnees-sensibles
 | article | [Forward deployed engineer is AI's hottest job](https://thenewstack.io/forward-deployed-engineer-fde-openai-google/) | The New Stack. Le panorama le plus sobre parmi les articles disponibles sur le rôle | débutant |
 | officiel | [roadmap.sh — Forward Deployed Engineer](https://roadmap.sh/forward-deployed-engineer) | la roadmap d'origine. Vingt nœuds : utile pour voir ce que la source couvre, et surtout ce qu'elle ne couvre pas | débutant |
 
-Le dossier complet est dans [[parcours/forward-deployed-engineer]].
+Le dossier complet est dans [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]].
 
 ## Écarté, et pourquoi
 

@@ -65,7 +65,7 @@ L'erreur est inversée : on ne met pas trop peu d'IA, on met un LLM dans une fon
 
 ## Appelée par
 
-- [[parcours/forward-deployed-engineer|Forward Deployed Engineer]]
+- [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-product-builder|AI Product Builder]]
 
 Voisines : [[notions/reingenierie-de-processus]], [[notions/roi-des-projets-ia]], [[notions/choix-de-modele]], [[notions/bpmn]].

@@ -48,6 +48,6 @@ Le connecteur est le composant qui survivra le plus longtemps et sera repris par
 
 ## Appelée par
 
-- [[parcours/forward-deployed-engineer|Forward Deployed Engineer]]
+- [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 
 Voisines : [[notions/conception-d-api]], [[notions/mcp]], [[notions/qualite-des-donnees]], [[notions/collecte-de-donnees]].

@@ -47,7 +47,7 @@ Le constat est le livrable du métier, et sa structure est fixe : ce qui a été
 
 ## Appelée par
 
-- [[parcours/forward-deployed-engineer|Forward Deployed Engineer]]
+- [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-red-teaming|AI Red Teaming]]
 
 Voisines : [[notions/cadrage-besoin]], [[notions/transfert-de-competences]], [[notions/gestion-parties-prenantes]].

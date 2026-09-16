@@ -54,7 +54,7 @@ Ce qui est propre au red teaming, c'est de tester les garde-fous **dans l'ordre 
 
 ## Appelée par
 
-- [[parcours/forward-deployed-engineer|Forward Deployed Engineer]]
+- [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-product-builder|AI Product Builder]]
 - [[parcours/ai-red-teaming|AI Red Teaming]]
 

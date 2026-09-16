@@ -58,7 +58,7 @@ Les droits d'accès par ligne dans l'outil de restitution sont à la fois une fo
 ## Appelée par
 
 - [[parcours/ai-red-teaming|AI Red Teaming]]
-- [[parcours/forward-deployed-engineer|Forward Deployed Engineer]]
+- [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-product-builder|AI Product Builder]]
 - [[parcours/bi-analyst|BI Analyst]]
 

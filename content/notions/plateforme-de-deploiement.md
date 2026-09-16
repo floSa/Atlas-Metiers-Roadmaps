@@ -50,6 +50,6 @@ Le choix n'existe généralement pas : la plateforme est celle du client, souven
 ## Appelée par
 
 - [[parcours/ai-product-builder|AI Product Builder]]
-- [[parcours/forward-deployed-engineer|Forward Deployed Engineer]]
+- [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 
 Voisines : [[notions/conteneurisation]], [[notions/integration-continue]], [[notions/cout-et-latence-inference]], [[notions/controle-d-acces]].

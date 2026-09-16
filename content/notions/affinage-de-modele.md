@@ -48,7 +48,7 @@ Traiter un affinage comme une opération sans conséquence de sécurité est une
 
 ## Appelée par
 
-- [[parcours/forward-deployed-engineer|Forward Deployed Engineer]]
+- [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-red-teaming|AI Red Teaming]]
 
 Voisines : [[notions/rag]], [[notions/choix-de-modele]], [[notions/donnees-sensibles]], [[notions/apprentissage-supervise]].

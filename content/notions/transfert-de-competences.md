@@ -47,6 +47,6 @@ C'est le cœur de la sortie de mission, et l'angle est temporel : le transfert n
 
 ## Appelée par
 
-- [[parcours/forward-deployed-engineer|Forward Deployed Engineer]]
+- [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 
 Voisines : [[notions/redaction-technique]], [[notions/conduite-du-changement]], [[notions/integration-continue]], [[notions/evaluation-llm]].

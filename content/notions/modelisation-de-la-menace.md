@@ -49,6 +49,6 @@ L'exercice se mène avec le client, pas pour lui, et il produit un livrable que 
 ## Appelée par
 
 - [[parcours/ai-red-teaming|AI Red Teaming]]
-- [[parcours/forward-deployed-engineer|Forward Deployed Engineer]]
+- [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 
 Voisines : [[notions/injection-de-prompt]], [[notions/controle-d-acces]], [[notions/chaine-d-approvisionnement-logicielle]], [[notions/gouvernance-ia]].

@@ -49,7 +49,7 @@ Le budget par utilisateur et par mois est une contrainte de modèle économique,
 
 ## Appelée par
 
-- [[parcours/forward-deployed-engineer|Forward Deployed Engineer]]
+- [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-product-builder|AI Product Builder]]
 
 Voisines : [[notions/choix-de-modele]], [[notions/observabilite]], [[notions/roi-des-projets-ia]], [[notions/agents-llm]].

@@ -58,7 +58,7 @@ L'usage rentable d'un agent dans ce métier est souvent dans l'atelier plutôt q
 
 ## Appelée par
 
-- [[parcours/forward-deployed-engineer|Forward Deployed Engineer]]
+- [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-product-builder|AI Product Builder]]
 
 Voisines : [[notions/mcp]], [[notions/garde-fous]], [[notions/evaluation-llm]], [[notions/cout-et-latence-inference]].

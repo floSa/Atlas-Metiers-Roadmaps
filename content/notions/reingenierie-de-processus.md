@@ -46,6 +46,6 @@ La réingénierie n'est pas un projet séparé, c'est la première semaine du pr
 
 ## Appelée par
 
-- [[parcours/forward-deployed-engineer|Forward Deployed Engineer]]
+- [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 
 Voisines : [[notions/bpmn]], [[notions/arbitrage-deterministe-probabiliste]], [[notions/roi-des-projets-ia]], [[notions/conduite-du-changement]].
