@@ -66,88 +66,59 @@ chaque veille.
 
 ---
 
-## 4. Architecture du contenu
+## 4. Architecture du contenu — l'arbre à tiroirs
 
-Trois niveaux, et une règle qui les gouverne.
+Le site est un arbre. À chaque étage, le lecteur voit une carte cliquable de ce qu'il y
+a à apprendre, descend d'un cran, et remonte par le fil d'Ariane ou par la barre de
+navigation en bas de page.
 
 ```
-content/
-├── index.md                      accueil : les métiers, les trajectoires
-├── parcours/                     un par métier — la carte et le fil conducteur
-│   ├── forward-deployed-engineer/
-│   │   ├── index.md              la carte cliquable et les étapes
-│   │   ├── cycle-mission.md      audit → rationalisation → industrialisation
-│   │   └── ...
-│   ├── ai-red-teaming.md
-│   └── ...
-├── notions/                      une notion = un fichier = écrit une seule fois
-│   ├── rag.md
-│   ├── evaluation-llm.md
-│   ├── bpmn.md
-│   └── ...
-├── ressources/                   les sources, dédupliquées et classées
-└── roadmaps/                     les huit notes historiques
+Accueil          les métiers
+ └── Métier      la roadmap du métier
+      └── Domaine        la carte des sous-domaines
+           └── Sous-domaine   la carte des notions
+                └── Notion    la feuille : explication et ressources
 ```
 
-**La règle anti-duplication.** Une notion transverse — RAG, embeddings, évaluation,
-garde-fous, Docker, CI/CD, SQL — est expliquée **dans un seul fichier**, sous
-`notions/`. Un parcours métier ne la réexplique jamais : il y renvoie par un wikilink
-et se contente d'ajouter *ce que cette notion veut dire pour ce métier-là*, en une ou
-deux phrases. C'est ce qui empêche cinq rédactions parallèles de produire cinq
-explications divergentes du RAG.
+Cinq étages au maximum ; une branche peut être moins profonde.
 
-**Conséquence sur le travail parallèle.** Un agent métier n'écrit **que** dans ses
-propres fichiers. Il pose librement des liens `[[notions/xxx]]` même vers des notions
-qui n'existent pas encore — un lien orphelin est un signal, pas une erreur — et il
-liste ces besoins dans sa synthèse. Une passe de consolidation crée ensuite chaque
-notion manquante, une fois, à partir des besoins collectés. Aucun conflit d'écriture
-possible, parallélisme réel.
+**La règle qui gouverne tout** : une case dans un schéma mène toujours quelque part. Si
+un sujet n'a pas de page, il n'a pas de case — il est dans le texte. C'est ce qui rend
+la navigation prévisible.
 
----
+**La règle anti-duplication** : une notion transverse est expliquée dans un seul
+fichier, sous `notions/`. Un parcours métier n'en redonne jamais l'explication ; il y
+renvoie et ajoute ce que la notion signifie pour ce métier-là. Les slugs sont figés dans
+`content/notions/_registre.md`.
 
-## 5. Le site
+Le détail des deux formes de page — aiguillage et feuille — est dans
+`prompts/_gabarit-metier.md`, qui fait foi.
 
-**Quartz 4**, qui publie un vault Obsidian sans rien réécrire : wikilinks, callouts
-`> [!tip]`, Mermaid, graphe de liens et rétroliens fonctionnent nativement. Le Markdown
-reste la source unique ; le site en est le rendu. Déploiement GitHub Pages par Action,
-dépôt public.
+## 5. État au 16 septembre 2026
 
-**La carte cliquable.** C'est ce qui fait la différence avec un simple site de notes.
-Les captures contiennent la position `(x, y)` de chaque nœud : on peut donc régénérer
-la disposition visuelle de roadmap.sh en SVG, avec un vrai lien par nœud vers la page
-de la notion correspondante. Sans JavaScript, sans dépendance, et reproductible par
-script depuis `data/extract/<slug>.json`.
+| | |
+|---|---|
+| Pages | 363 |
+| Métiers | 13, tous en arbre à tiroirs |
+| Notions | 65, avec leur index |
+| Schémas | 292, dont 220 cliquables |
+| Liens morts | 0 |
 
-> [!warning] Point à lever par un essai avant de s'engager
-> Le `click` natif de Mermaid est souvent neutralisé par la politique de sécurité des
-> générateurs de sites. Le rendu SVG maison contourne le problème par construction,
-> mais il reste à vérifier sur une carte réelle — celle du FDE, la plus petite — avant
-> de généraliser. C'est la première tâche du chantier 01.
+Ce qui reste : 72 schémas muets sur Data Analyst, BI Analyst et AI Product Builder, et
+la grille de séniorité par section, qui n'est encore faite que pour le FDE.
 
----
+## 6. Le site
 
-## 6. Le dossier Forward Deployed Engineer
+**Quartz 4**, cloné au commit épinglé dans `quartz/VERSION` par `quartz/build.sh`, avec
+la configuration et les correctifs de `quartz/`. Le Markdown reste la source unique.
 
-La roadmap amont sert de squelette, pas de plan. Elle couvre le socle technique et le
-bloc *Customer Delivery*. Le brief de commande va plus loin sur cinq points qu'elle
-n'aborde pas du tout, et ce sont eux qui font l'intérêt du dossier :
+Prévisualisation : `bash quartz/build.sh` puis `python3 tools/servir.py`, qui résout les
+adresses sans extension comme le fait GitHub Pages — `python -m http.server` ne le fait
+pas et renvoie 404 sur toutes les pages.
 
-1. **Business Process Re-engineering** — décortiquer un processus, repérer les
-   redondances, simplifier *avant* d'écrire la moindre ligne de code ; modélisation BPMN.
-2. **L'arbitrage déterministe / probabiliste** — quand un script, un webhook ou du RPA
-   suffit, et quand l'IA générative est réellement nécessaire. L'erreur de cadrage la
-   plus coûteuse du métier.
-3. **L'interfaçage avec l'existant** — ERP, CRM, bases legacy, systèmes patrimoniaux.
-4. **La dimension politique** — parties prenantes aux intérêts divergents, résistance au
-   changement, vulgarisation d'arbitrages techniques devant une direction exécutive.
-5. **La sortie de mission** — transfert de compétences, maintenance, ce qui reste quand
-   le FDE part.
-
-S'y ajoutent, repris de l'amont et approfondis : LLMOps et garde-fous (injection de
-prompt, filtrage des données sensibles), protocoles d'évaluation, coût d'inférence et
-latence, architectures RAG et agents.
-
----
+Un composant maison, `quartz/composants/NavigationArbre.tsx`, ajoute en bas de chaque
+page la navigation précédent / niveau supérieur / suivant. L'ordre des voisins est celui
+dans lequel la page parente les énumère, pas l'ordre alphabétique.
 
 ## 7. Découpage en chantiers
 

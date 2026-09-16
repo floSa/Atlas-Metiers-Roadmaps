@@ -11,7 +11,7 @@ name: Construire et publier l'atlas
 
 on:
   push:
-    branches: [main]
+    branches: [master, main]
   # Permet de relancer une publication a la main depuis l'onglet Actions.
   workflow_dispatch:
 
