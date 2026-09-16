@@ -119,6 +119,12 @@ pre:has(> code.mermaid) {
   padding-top: 1rem;
 }
 
+/* Quartz borne la page a 1500 px et la centre : sur un ecran large, le tiers
+ * droit reste vide. On laisse la mise en page occuper la fenetre. */
+.page {
+  max-width: none;
+}
+
 .page > #quartz-body .page-header {
   margin-top: 1rem;
 }
@@ -136,10 +142,6 @@ article > h1:first-child,
  * l'ecran pour rien : on les annule, et le tableau tient dans la premiere vue.
  * ------------------------------------------------------------------------- */
 body[data-slug="index"] {
-  .page {
-    max-width: none;
-  }
-
   /* Plus de colonne de droite : deux colonnes au lieu de trois. */
   .page > #quartz-body {
     grid-template-columns: 320px auto;
