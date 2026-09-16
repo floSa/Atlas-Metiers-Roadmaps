@@ -320,3 +320,124 @@ Ce qui est propre à l'analyste, c'est qu'on lui demandera systématiquement de 
 
 > [!warning] Piège
 > Livrer une phrase causale parce que c'est ce qu'on attendait de toi. « La campagne a fait progresser les ventes de 12 % » est presque toujours faux au sens strict : la campagne a eu lieu pendant que les ventes progressaient de 12 %. La formulation honnête — « les ventes ont progressé de 12 % sur la période de la campagne ; sur le segment non exposé elles ont progressé de 7 % » — est plus longue, moins flatteuse, et c'est la seule que tu pourras défendre six mois plus tard quand la campagne suivante ne produira rien.
+
+---
+
+## 8. Restituer
+
+```mermaid
+flowchart TD
+  dv["Data Visualisation"] --> tech["Learn Different Techniques"]
+  tech --> t1["Bar Charts, Histograms, Line Chart"]
+  tech --> t2["Scatter Plot, Heatmap"]
+  tech --> t3["Stacked Charts, Funnel Charts, Pie Charts"]
+  dv --> vis["Visualisation"]
+  dv --> ch["Charting"]
+  dv --> tls["Matplotlib, Seaborn, ggplot2, Tableau"]
+  res["Restitution"]:::ajout --> r1["La réponse en une phrase, en premier"]:::ajout
+  res --> r2["Ce qui a été exclu et pourquoi"]:::ajout
+  res --> r3["Ce que le résultat ne dit pas"]:::ajout
+  res --> r4["La décision proposée"]:::ajout
+  res --> r5["L'analyse rejouable et archivée"]:::ajout
+  dv --- res
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** C'est l'étape sur laquelle le métier est jugé, et celle que la roadmap amont réduit à un catalogue de types de graphiques. Restituer n'est pas montrer ce qu'on a fait : c'est mettre quelqu'un en position de décider. Le critère de réussite est net — la personne en face sait ce qu'elle doit faire et ce qu'elle risque en le faisant. Une analyse impeccable mal restituée ne produit aucune décision, donc aucune valeur ; c'est la principale cause de frustration du métier, et elle est entièrement sous ta responsabilité. Le choix du graphique relève de [[notions/visualisation-de-donnees]] et la publication dans un outil partagé de [[notions/outils-decisionnels]] ; ce qui suit est la part que personne d'autre ne fera à ta place.
+
+**Ce qu'il faut savoir**
+
+- La réponse en premier, en une phrase, avec son chiffre. Pas la méthode, pas le contexte, pas le cheminement. Le raisonnement vient après, pour ceux qui contestent — et ils existent.
+- Un livrable, un message. Si l'analyse porte trois conclusions, ce sont trois blocs distincts avec chacun sa recommandation, pas une planche unique où le lecteur choisit ce qu'il voit.
+- Annoncer le périmètre et les exclusions dans la restitution elle-même, pas en annexe : la période, la population, les lignes écartées et leur volume. C'est ce qui rend le chiffre opposable.
+- Dire explicitement ce que le résultat ne permet pas de conclure. C'est contre-intuitif et c'est ce qui construit la confiance : un analyste qui ne dit jamais « je ne sais pas » finit par n'être cru sur rien.
+- Donner l'ordre de grandeur de l'incertitude, en langage de décideur : une fourchette, une plage de scénarios, pas un intervalle de confiance à 95 % qui sera mal lu.
+- Proposer une décision, même si elle sera écartée. Un analyste qui livre un constat sans recommandation laisse l'interprétation au plus bavard de la réunion.
+- Adapter le niveau, pas le contenu. Le comité de direction reçoit la conclusion et l'ordre de grandeur, l'équipe métier reçoit le détail par segment, et les deux doivent pouvoir remonter à la même requête.
+- Archiver le livrable avec la question cadrée, le script et la date d'extraction. La question « d'où sort ce chiffre » arrive toujours, et souvent des mois plus tard.
+
+> [!tip] Ajout 2026
+> Écris la phrase de conclusion **avant** de construire le moindre graphique, et construis ensuite le graphique qui la démontre. Cela supprime d'un coup les deux défauts les plus répandus de la restitution : la planche de douze visualisations sans hiérarchie, et le graphique joli qui n'appuie aucune affirmation. Si la phrase ne s'écrit pas, l'analyse n'est pas finie — ce n'est pas un problème de restitution.
+
+> [!warning] Piège
+> Livrer un tableau de bord quand on attendait une réponse. C'est la dérobade classique : au lieu de conclure, on donne des filtres et on laisse le lecteur trouver. Cela déplace la charge d'interprétation sur quelqu'un de moins bien placé pour l'assumer, et cela fabrique en prime un objet que personne ne maintiendra. Si le besoin est réellement un suivi récurrent, ce n'est pas une analyse ad hoc : c'est une commande pour [[parcours/bi-analyst]], et il faut le dire.
+
+---
+
+## 9. Le machine learning à sa juste place
+
+```mermaid
+flowchart TD
+  ml["Machine Learning"] --> mt["Machine Learning Types"]
+  mt --> sup["Supervised Learning"]
+  mt --> uns["Unsupervised Learning"]
+  mt --> rl["Reinforcement Learning"]
+  ml --> alg["Popular ML Algorithms"]
+  alg --> a1["Decision Trees, Naive Byes, KNN"]
+  alg --> a2["Logistic Regression, K-Means Clustering"]
+  alg --> a3["Neural Networks"]
+  ml --> me["Model Evaluation Techniques"]
+  dl["Deep Learning (Optional)"] --> dd1["CNNs, RNN"]
+  dl --> dd2["Tensorflow, Pytorch"]
+  dl --> dd3["Image Recognition, Natural Language Processing"]
+  me --> base["Baseline triviale battue avant tout modèle"]:::ajout
+  me --> expl["Explicabilité exigée par le métier"]:::ajout
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** L'amont consacre une quinzaine de nœuds au machine learning et au deep learning, ce qui est disproportionné pour ce métier : un analyste applique des modèles, il n'en construit pas, et l'essentiel de sa valeur se situe avant le modèle. Ce qu'il faut en retenir tient en une question de cadrage : le problème est-il de **comprendre** ou de **prédire** ? Si c'est comprendre, une segmentation propre et une régression lisible battent tout le reste, parce qu'elles produisent une phrase qu'un directeur peut répéter. Si c'est prédire, à volume et à enjeu sérieux, le sujet change de métier et passe au data scientist — voir [[02 - Roadmap — AI and Data Scientist]].
+
+L'usage réellement rentable pour un analyste est étroit et bien identifié : la classification supervisée sur un oui-non métier, le regroupement non supervisé pour dégrossir une segmentation, et rien de plus la plupart du temps.
+
+**Ce qu'il faut savoir**
+
+- [[notions/apprentissage-supervise]] — pour l'analyste : prédire une étiquette connue (résiliation, impayé, requalification). La régression logistique reste le premier choix, parce qu'elle donne des coefficients qu'on peut expliquer.
+- [[notions/apprentissage-non-supervise]] — le clustering sert à proposer une segmentation, pas à la trancher. Une segmentation statistique qu'aucun responsable métier ne reconnaît ne sera jamais utilisée, quelle que soit sa qualité mathématique.
+- [[notions/apprentissage-par-renforcement]] — hors du périmètre de l'analyste, cité par l'amont pour l'exhaustivité. Le connaître suffit à ne pas le confondre avec le supervisé en réunion.
+- [[notions/metriques-evaluation-ml]] — la métrique se choisit avec le métier avant d'entraîner quoi que ce soit, parce qu'elle encode un arbitrage entre faux positifs et faux négatifs qui n'est pas une décision technique.
+- Algorithmes courants — arbres de décision, Naive Bayes, k plus proches voisins, k-moyennes, régression logistique. Un arbre peu profond est souvent le meilleur livrable d'analyste : moins performant, immédiatement lisible, et il produit des règles que le métier peut appliquer à la main.
+- [[notions/reseaux-de-neurones]] et le deep learning — TensorFlow, PyTorch, reconnaissance d'images, traitement du langage. Sur données tabulaires, qui sont ton quotidien, un modèle à base d'arbres bien réglé reste à l'état de l'art : le deep learning ne se justifie que sur texte, image ou son.
+- [[notions/traitement-langage-naturel]] — le seul volet deep learning qui touche vraiment l'analyste, par ce qu'il permet sur les verbatims clients : classification thématique, détection de sujets, analyse de sentiment. Depuis 2024, un appel à un modèle de langage fait ce travail sans entraînement préalable.
+- Toujours établir une référence triviale avant de modéliser : la moyenne, la valeur de la période précédente, la règle métier existante. Un modèle qui ne bat pas cette référence n'a aucune raison d'exister, et cela arrive plus souvent qu'on ne le publie.
+
+> [!tip] Ajout 2026
+> L'analyse de verbatims est le cas où le rapport valeur sur effort a le plus changé. Classer dix mille commentaires par thème demandait un corpus annoté et un modèle entraîné ; cela demande aujourd'hui une grille de catégories écrite avec le métier, un appel par lot à un modèle de langage, et une vérification manuelle sur un échantillon de deux cents cas pour mesurer le taux d'erreur. L'étape de vérification n'est pas optionnelle : sans elle, tu publies une répartition dont tu ignores la fiabilité.
+
+> [!warning] Piège
+> Sortir un modèle pour répondre à une question descriptive. La demande « quels clients risquent de partir » se traite neuf fois sur dix par trois indicateurs de comportement et un seuil convenu avec le métier — livrable en deux jours, compris par tout le monde, actionnable immédiatement. Le modèle de churn arrive trois semaines plus tard, obtient une AUC honorable, et personne ne s'en sert parce qu'il ne dit pas quoi faire du client identifié.
+
+---
+
+## 10. Le passage à l'échelle
+
+```mermaid
+flowchart TD
+  bd["Big Data Technologies"] --> bc["Big Data Concepts"]
+  bd --> dss["Data Storage Solutions"]
+  bd --> hd["Hadoop"]
+  bd --> sp["Spark"]
+  bd --> pp["Parallel Processing"]
+  pp --> mr["MapReduce"]
+  pp --> mpi["MPI"]
+  loc["Un poste de travail suffit bien plus longtemps qu'on ne le croit"]:::ajout --> duck["DuckDB, Polars, Parquet"]:::ajout
+  duck --> push["Déporter l'agrégation dans la base"]:::ajout
+  loc --- bd
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** L'amont place ici Hadoop, Spark, MapReduce et MPI. C'est la partie de la roadmap qui a le plus mal vieilli pour ce métier : MPI relève du calcul scientifique haute performance et n'a rien à faire dans un parcours d'analyste, et MapReduce n'a plus d'intérêt qu'historique. Ce qui reste utile est le principe — quand la donnée ne tient plus sur une machine, le calcul se distribue et l'ordre des opérations devient déterminant pour le coût. Ce qu'il faut surtout savoir, c'est **à partir de quand** le sujet se pose, et la réponse a beaucoup bougé : un poste de travail courant traite aujourd'hui plusieurs dizaines de millions de lignes en mémoire sans effort particulier.
+
+**Ce qu'il faut savoir**
+
+- Le premier réflexe n'est pas de distribuer, c'est de ne pas rapatrier. Agréger, filtrer et joindre dans la base avec [[notions/sql]], puis descendre un résultat de quelques milliers de lignes. La plupart des problèmes de volume sont des problèmes de requête.
+- DuckDB et Polars couvrent l'essentiel du reste : SQL ou manipulation tabulaire sur des fichiers de plusieurs gigaoctets, sur un seul poste, sans infrastructure. C'est la réponse par défaut en 2026 quand Pandas sature.
+- Spark garde son intérêt sur des volumes réellement distribués ou quand c'est le socle imposé par l'entreprise, généralement via PySpark. L'écrire soi-même depuis rien n'arrive presque jamais dans ce métier.
+- Les trois V (volume, vélocité, variété) sont un vocabulaire de réunion, utile pour se comprendre, sans conséquence technique directe.
+- Le stockage — systèmes de fichiers distribués, stockage objet, formats colonnes. Ce qui te concerne réellement : Parquet, parce qu'il divise les temps de lecture et conserve les types.
+- Le coût du calcul distribué est désormais aussi un coût facturé. Sur un entrepôt cloud, une requête mal écrite se paie à l'octet scanné ; regarder ce que coûte une requête fait partie du métier.
+
+> [!tip] Ajout 2026
+> Avant d'invoquer le passage à l'échelle, mesure. Charge les colonnes utiles au lieu de la table entière, convertis en Parquet, et refais le test. La grande majorité des « il faut du Spark » observés sur le terrain sont un `SELECT *` sur une table large, un type mal choisi, ou une jointure faite côté client alors que la base l'aurait faite. L'infrastructure distribuée ajoute un coût permanent d'exploitation pour résoudre un problème qui dure dix minutes.
+
+> [!warning] Piège
+> Prendre le volume de données de l'entreprise pour le volume de son analyse. Une table de logs de plusieurs téraoctets ne signifie pas que l'analyse porte sur des téraoctets : la question concerne le plus souvent trois mois, deux colonnes et un segment. Formuler le périmètre avant de regarder la taille de la table évite un chantier d'infrastructure entier.
