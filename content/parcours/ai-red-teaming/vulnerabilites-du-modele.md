@@ -8,19 +8,32 @@ source: https://roadmap.sh/ai-red-teaming
 
 Les attaques qui visent le modèle lui-même plutôt que son interface : empoisonnement, exemples adverses, inversion, extraction — et le tri qui dit lesquelles sont dans le périmètre avant d'y consacrer une seule journée.
 
-## Trois profils de déploiement, trois plans de test
-
-C'est la partie la plus étudiée académiquement et la moins souvent applicable en mission. L'erreur habituelle consiste à appliquer le plan du troisième profil au premier.
-
 ```mermaid
 flowchart TD
-  P1["Modèle du commerce,<br/>sans affinage"] --> A1["Empoisonnement de l'index de récupération<br/>Extraction par interrogation"]
-  P2["Modèle affiné<br/>sur données internes"] --> A2["+ Inversion et inférence d'appartenance<br/>le corpus contient des données de l'entreprise"]
-  P3["Modèle maison<br/>exposé publiquement"] --> A3["+ Empoisonnement de l'entraînement<br/>+ Vol de poids, exemples adverses par gradient"]
+  RAG["RAG<br/>l'index, cible d'empoisonnement la plus accessible"]
+  AFF["Affinage de modèle<br/>ce qui décide du périmètre de cette page"]
+  QUA["Qualité des données<br/>la seule parade réelle à l'empoisonnement"]
+  LIG["Lignage des données<br/>instruire un soupçon sur le corpus"]
+  RGP["RGPD<br/>l'inférence d'appartenance est une violation"]
+  MET["Métriques d'évaluation<br/>ce qu'un durcissement a coûté"]
 
-  classDef courant stroke:#f9a825,stroke-width:1px
-  class P1,A1 courant
+  click RAG "/notions/rag"
+  click AFF "/notions/affinage-de-modele"
+  click QUA "/notions/qualite-des-donnees"
+  click LIG "/notions/lignage-des-donnees"
+  click RGP "/notions/rgpd"
+  click MET "/notions/metriques-evaluation-ml"
 ```
+
+## Trois profils de déploiement, trois plans de test
+
+C'est la partie la plus étudiée académiquement et la moins souvent applicable en mission. L'erreur habituelle consiste à appliquer le plan du troisième profil au premier, qui couvre pourtant la quasi-totalité des systèmes rencontrés.
+
+| Profil de déploiement | Ce qui est réellement dans le périmètre |
+|---|---|
+| Modèle du commerce, sans affinage | empoisonnement de l'index de récupération ; extraction par interrogation |
+| Modèle affiné sur données internes | les précédentes, plus inversion et inférence d'appartenance — le corpus contient des données de l'entreprise |
+| Modèle maison exposé publiquement | les précédentes, plus empoisonnement de l'entraînement, vol de poids, exemples adverses par gradient |
 
 ## Ce qu'il faut savoir faire
 

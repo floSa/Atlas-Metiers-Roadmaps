@@ -8,26 +8,30 @@ source: https://roadmap.sh/ai-red-teaming
 
 Le cœur du métier : un modèle ne dispose d'aucun mécanisme pour distinguer une instruction de son concepteur d'une instruction présente dans les données qu'il lit — et sous sa forme indirecte, cette confusion est une élévation de privilèges.
 
+```mermaid
+flowchart TD
+  IJ["Injection de prompt<br/>le mécanisme et ses atténuations"]
+  RG["RAG<br/>entrée non fiable et chemin de fuite"]
+  CA["Contrôle d'accès<br/>filtrer l'index par identité"]
+  DS["Données sensibles<br/>ce qui rend une lecture transversale déclarable"]
+  CT["Conteneurisation<br/>exécution jetable, sans réseau ni secret"]
+  AP["Conception d'API<br/>valider côté serveur l'action proposée"]
+  MC["MCP<br/>descriptions d'outils, confiance entre serveurs"]
+
+  click IJ "/notions/injection-de-prompt"
+  click RG "/notions/rag"
+  click CA "/notions/controle-d-acces"
+  click DS "/notions/donnees-sensibles"
+  click CT "/notions/conteneurisation"
+  click AP "/notions/conception-d-api"
+  click MC "/notions/mcp"
+```
+
 ## Pourquoi la forme indirecte change le modèle de menace
 
 Dans la forme directe, l'utilisateur demande lui-même d'ignorer les consignes : il n'obtient que ce à quoi il avait déjà droit. Dans la forme indirecte, la charge arrive par une page, un document, un ticket, un résultat d'outil, et elle **s'exécute avec les privilèges du système, pas ceux de son auteur**. C'est ce qui rend les agents structurellement exposés. Le mécanisme complet est décrit dans [[notions/injection-de-prompt]] ; ce qui suit est l'angle du testeur.
 
-```mermaid
-flowchart LR
-  E["Entrée non fiable<br/>page, document, ticket,<br/>résultat d'outil, description d'outil"] --> CTX["Contexte du modèle"]
-  CTX --> ACT["Capacité d'action<br/>outils, écritures, requêtes"]
-  ACT --> OUT{"Canal de sortie ?"}
-  OUT -->|"rendu d'image distante"| X["Exfiltration"]
-  OUT -->|"lien construit dynamiquement"| X
-  OUT -->|"appel d'outil externe"| X
-  OUT -->|"écriture en espace partagé"| X
-  OUT -->|"aucun"| Z["Impact contenu au système"]
-
-  classDef chaude stroke:#c62828,stroke-width:1px
-  class X chaude
-```
-
-La donnée n'a pas besoin de s'afficher pour sortir. Vérifier l'existence d'un canal de sortie fait partie du test au même titre que l'injection elle-même.
+Le chemin à démontrer est toujours le même triplet. Une **entrée non fiable** — page récupérée, document indexé, ticket ouvert par un tiers, sortie d'outil, description d'outil exposée par un serveur externe — entre dans le contexte. Le modèle dispose d'une **capacité d'action** : outils, écritures, requêtes. Et il existe un **canal de sortie**, presque jamais là où on le cherche : le rendu d'une image distante, un lien construit dynamiquement, l'appel d'un outil externe, une écriture en espace partagé. La donnée n'a pas besoin de s'afficher pour sortir. Sans canal de sortie l'impact reste contenu au système, et c'est pourquoi vérifier son existence fait partie du test au même titre que l'injection elle-même.
 
 ## Ce qu'il faut savoir faire
 

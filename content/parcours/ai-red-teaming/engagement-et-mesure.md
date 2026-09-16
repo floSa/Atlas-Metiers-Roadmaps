@@ -8,23 +8,24 @@ source: https://roadmap.sh/ai-red-teaming
 
 Choisir le niveau de connaissance accordé au testeur, répartir l'effort entre automatisation et passe manuelle, puis transformer les trouvailles en corpus rejoué à chaque changement — sans quoi un audit ne produit que des anecdotes datées.
 
-## De la passe automatisée au seuil bloquant
-
 ```mermaid
 flowchart TD
-  A["Passe automatisée large<br/>établir la base, repérer les classes présentes"] --> H["Temps humain sur 2 ou 3 chemins<br/>entrée non fiable + capacité d'action"]
-  H --> C["Corpus adverse<br/>cas classés par préjudice et par surface"]
-  C --> K{"Critère de succès"}
-  K -->|"vérifiable par programme"| K1["Appât retrouvé en sortie,<br/>outil interdit appelé,<br/>domaine témoin atteint"]
-  K -->|"irréductiblement subjectif"| K2["Juge modèle,<br/>calibré sur annotations humaines"]
-  K1 --> CI["Rejeu en intégration continue<br/>seuil de régression bloquant"]
-  K2 --> CI
-  CI --> S["Alimentation : incidents de production,<br/>divulgations publiques, passes manuelles"]
-  S --> C
+  EVA["Évaluation LLM<br/>le socle dont ceci est la déclinaison adverse"]
+  TES["Tests logiciels<br/>le corpus est une suite de non-régression"]
+  CIC["Intégration continue<br/>le rejeu à chaque changement, avec blocage"]
+  MET["Métriques d'évaluation<br/>taux de réussite, taux de faux positifs"]
+  DOS["Données sensibles<br/>le corpus est lui-même un actif à cloisonner"]
 
-  classDef ajout stroke:#2e7d32,stroke-width:1px
-  class C,CI,S ajout
+  click EVA "/notions/evaluation-llm"
+  click TES "/notions/tests-logiciels"
+  click CIC "/notions/integration-continue"
+  click MET "/notions/metriques-evaluation-ml"
+  click DOS "/notions/donnees-sensibles"
 ```
+
+## De la passe automatisée au seuil bloquant
+
+L'enchaînement tient en cinq temps. Une **passe automatisée large** établit la base et repère les classes d'attaque présentes. Le **temps humain** se concentre ensuite sur deux ou trois chemins qui cumulent une entrée non fiable et une capacité d'action. Ce qu'ils produisent entre dans un **corpus adverse**, classé par catégorie de préjudice et par surface d'entrée, où chaque cas porte un critère de succès explicite : vérifiable par programme quand c'est possible — l'appât retrouvé en sortie, l'outil interdit appelé, le domaine témoin atteint —, confié à un juge modèle calibré sur annotations humaines seulement quand le jugement est irréductiblement subjectif. Le corpus est ensuite **rejoué en intégration continue**, avec un seuil de régression bloquant. Et il s'**alimente** en continu : incidents de production, divulgations publiques, passes manuelles suivantes.
 
 Tout bouge en permanence : le fournisseur met à jour le modèle sans prévenir, l'équipe produit change le prompt système, un document nouveau entre dans l'index. Sans mesure rejouable, chaque changement remet la sécurité à zéro sans que personne s'en aperçoive.
 

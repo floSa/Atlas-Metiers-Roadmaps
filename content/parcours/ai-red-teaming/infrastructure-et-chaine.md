@@ -8,21 +8,28 @@ source: https://roadmap.sh/ai-red-teaming
 
 La partie du travail qui ressemble le plus à un test d'intrusion classique, et celle qui produit le plus de constats corrigeables : un système d'IA reste une application web avec des dépendances lourdes.
 
+```mermaid
+flowchart TD
+  API["Conception d'API<br/>points d'accès, quotas, validation côté serveur"]
+  IDE["Contrôle d'accès<br/>propager l'identité de bout en bout"]
+  SUP["Chaîne d'approvisionnement<br/>poids, SDK, serveurs d'outils"]
+  CTN["Conteneurisation<br/>l'isolation d'exécution"]
+  OBS["Observabilité<br/>la détection, évaluée comme la prévention"]
+  COU["Coût et latence d'inférence<br/>la disponibilité se lit sur la facture"]
+  MCP["MCP<br/>la couche partagée devenue vecteur"]
+
+  click API "/notions/conception-d-api"
+  click IDE "/notions/controle-d-acces"
+  click SUP "/notions/chaine-d-approvisionnement-logicielle"
+  click CTN "/notions/conteneurisation"
+  click OBS "/notions/observabilite"
+  click COU "/notions/cout-et-latence-inference"
+  click MCP "/notions/mcp"
+```
+
 ## Où l'identité se perd
 
-Le constat le plus fréquent en mission n'est pas une faille du modèle : l'application authentifie correctement l'utilisateur, puis interroge l'index de récupération avec un compte de service unique qui voit tout. L'identité est perdue entre la porte d'entrée et la couche de données.
-
-```mermaid
-flowchart LR
-  U["Utilisateur<br/>authentifié"] --> APP["Application"]
-  APP -->|"identité propagée ?"| IDX["Index de récupération"]
-  APP -->|"identité propagée ?"| TOOL["Serveurs d'outils distants"]
-  IDX --> SVC["Compte de service unique<br/>qui voit tout"]
-  TOOL --> SVC
-
-  classDef chaude stroke:#c62828,stroke-width:1px
-  class SVC chaude
-```
+Le constat le plus fréquent en mission n'est pas une faille du modèle : l'application authentifie correctement l'utilisateur, puis interroge l'index de récupération avec un compte de service unique qui voit tout. L'identité est perdue entre la porte d'entrée et la couche de données, et le même défaut se reproduit un cran plus loin, quand l'application appelle un serveur d'outils distant sous sa propre identité plutôt que sous celle de l'appelant.
 
 Vérifier la propagation de l'identité **de bout en bout**, y compris jusqu'aux serveurs d'outils distants, est le contrôle qui rapporte le plus par heure passée.
 
