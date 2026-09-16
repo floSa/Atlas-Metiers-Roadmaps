@@ -68,7 +68,7 @@ L'évaluation est ce qui transforme un audit en capacité durable. Le corpus est
 ## Appelée par
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
-- [[parcours/ai-product-builder|AI Product Builder]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/observabilite]], [[notions/tests-logiciels]], [[notions/integration-continue]], [[notions/metriques-evaluation-ml]].

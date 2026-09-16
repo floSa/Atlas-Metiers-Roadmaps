@@ -3,7 +3,7 @@ title: Modélisation de la menace
 tags: [notion, menace, threat-modeling, risque, securite]
 date: 2026-09-16
 statut: actif
-appelee-par: [ai-red-teaming, forward-deployed-engineer]
+appelee-par: [ai-red-teaming, forward-deployed-engineer, ai-product-builder]
 ---
 
 Exercice structuré qui répond, dans cet ordre, à trois questions : qui attaque et avec quels moyens, par où il entre, et ce qu'il obtient s'il réussit.
@@ -49,5 +49,6 @@ L'exercice se mène avec le client, pas pour lui, et il produit un livrable que 
 
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/injection-de-prompt]], [[notions/controle-d-acces]], [[notions/chaine-d-approvisionnement-logicielle]], [[notions/gouvernance-ia]].

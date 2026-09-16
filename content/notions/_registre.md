@@ -52,7 +52,7 @@ frappe ou un slug inventé.
 |---|---|---|
 | `statistiques-descriptives` | moyenne, médiane, mode, étendue, variance, dispersion, asymétrie, aplatissement | Data Analyst, BI Analyst |
 | `tests-hypotheses` | hypothèse nulle, p-value, puissance, sensibilité | Data Analyst, BI Analyst |
-| `ab-testing` | protocole, métriques de ratio, sensibilité | Data Analyst, BI Analyst · attendu : Data Engineer |
+| `ab-testing` | protocole, métriques de ratio, sensibilité | Data Analyst, BI Analyst, AI Product Builder · attendu : Data Engineer |
 | `analyse-correlation` | corrélation, causalité, pièges | Data Analyst, BI Analyst |
 | `regression-lineaire` | moindres carrés, hypothèses, diagnostic | Data Analyst, BI Analyst · attendu : Machine Learning |
 | `regression-logistique` | classification binaire, odds ratio | Data Analyst · attendu : Machine Learning |
@@ -66,7 +66,7 @@ frappe ou un slug inventé.
 | `apprentissage-par-renforcement` | politique, récompense, RLHF | AI Red Teaming, Data Analyst, BI Analyst |
 | `reseaux-de-neurones` | perceptron, rétropropagation, architectures | AI Red Teaming, Data Analyst |
 | `series-temporelles` | tendance, saisonnalité, résidu, effets de calendrier, prévision et sa référence naïve | BI Analyst, Data Analyst · à raccorder par le chantier 09 |
-| `analyse-de-cohorte` | regroupement par période d'entrée, fenêtre d'observation, effet de composition | BI Analyst, Data Analyst · à raccorder par le chantier 09 |
+| `analyse-de-cohorte` | regroupement par période d'entrée, fenêtre d'observation, effet de composition | BI Analyst, Data Analyst, AI Product Builder · à raccorder par le chantier 09 |
 | `metriques-evaluation-ml` | exactitude, précision, rappel, F1, AUC | Data Analyst |
 | `traitement-langage-naturel` | tokenisation, plongements, tâches classiques | Data Analyst · attendu : Machine Learning |
 
@@ -76,8 +76,8 @@ frappe ou un slug inventé.
 |---|---|---|
 | `entrepot-de-donnees` | data warehouse, data mart, schéma étoile et flocon | BI Analyst · attendu : Data Engineer |
 | `data-lake` | stockage brut, lakehouse | BI Analyst · attendu : Data Engineer |
-| `qualite-des-donnees` | complétude, fraîcheur, unicité, tests | FDE, AI Red Teaming, Data Analyst, BI Analyst · attendu : Data Engineer |
-| `lignage-des-donnees` | traçabilité, catalogues, impact | BI Analyst · attendu : MLOps |
+| `qualite-des-donnees` | complétude, fraîcheur, unicité, tests | FDE, AI Red Teaming, Data Analyst, BI Analyst, AI Product Builder · attendu : Data Engineer |
+| `lignage-des-donnees` | traçabilité, catalogues, impact | BI Analyst, AI Product Builder · attendu : MLOps |
 | `modelisation-dimensionnelle` | faits, dimensions, granularité | BI Analyst |
 | `sql` | requêtes, jointures, fenêtrage, optimisation | FDE, AI Product Builder, Data Analyst, BI Analyst |
 | `collecte-de-donnees` | base, fichier, API, moissonnage ; fiabilité et métadonnées d'extraction | Data Analyst, BI Analyst · à raccorder par le chantier 09 |
@@ -89,7 +89,7 @@ frappe ou un slug inventé.
 
 | Slug | Recouvre | Appelée par |
 |---|---|---|
-| `visualisation-de-donnees` | choix du graphique, lisibilité, erreurs classiques | Data Analyst, BI Analyst |
+| `visualisation-de-donnees` | choix du graphique, lisibilité, erreurs classiques | Data Analyst, BI Analyst, AI Product Builder |
 | `outils-decisionnels` | Power BI, Tableau, Looker — ce qui les distingue | Data Analyst, BI Analyst |
 | `tableur` | Excel, limites, quand il suffit | Data Analyst, BI Analyst |
 
@@ -122,14 +122,14 @@ frappe ou un slug inventé.
 
 | Slug | Recouvre | Appelée par |
 |---|---|---|
-| `conteneurisation` | Docker, images, Kubernetes | FDE, AI Red Teaming |
+| `conteneurisation` | Docker, images, Kubernetes | FDE, AI Red Teaming, AI Product Builder |
 | `integration-continue` | CI/CD, tests, livraison | FDE, AI Red Teaming, AI Product Builder |
 | `observabilite` | traces, journaux, métriques, LangSmith, Langfuse, Arize | FDE, AI Red Teaming, AI Product Builder |
 | `tests-logiciels` | unitaires, intégration, régression | FDE, AI Red Teaming, AI Product Builder |
 | `conception-d-api` | REST, contrats, versionnement | FDE, AI Red Teaming, AI Product Builder |
 | `controle-d-acces` | authentification, autorisation, moindre privilège, propagation d'identité | Red Teaming, FDE, Product Builder, BI Analyst · à raccorder par le chantier 09 |
 | `plateforme-de-deploiement` | périphérie, plateforme applicative, infrastructure brute, chaîne d'entreprise | Product Builder, FDE · à raccorder par le chantier 09 |
-| `chaine-d-approvisionnement-logicielle` | poids de modèles, SDK, serveurs d'outils tiers | Red Teaming, FDE · à raccorder par le chantier 09 |
+| `chaine-d-approvisionnement-logicielle` | poids de modèles, SDK, serveurs d'outils tiers | Red Teaming, FDE, AI Product Builder · à raccorder par le chantier 09 |
 | `mesure-d-usage-produit` | instrumentation d'événements, entonnoir, activation, rétention | Product Builder, Data Analyst · à raccorder par le chantier 09 |
 | `systemes-patrimoniaux` | ERP, CRM, bases legacy, stratégies d'interfaçage | FDE |
 
@@ -138,9 +138,9 @@ frappe ou un slug inventé.
 | Slug | Recouvre | Appelée par |
 |---|---|---|
 | `rgpd` | bases légales, minimisation, transferts | FDE, AI Red Teaming, AI Product Builder, Data Analyst, BI Analyst |
-| `modelisation-de-la-menace` | adversaires, surfaces d'attaque, priorisation par impact | Red Teaming, FDE · à raccorder par le chantier 09 |
+| `modelisation-de-la-menace` | adversaires, surfaces d'attaque, priorisation par impact | Red Teaming, FDE, AI Product Builder · à raccorder par le chantier 09 |
 | `gouvernance-ia` | AI Act, responsabilité, documentation | FDE, AI Red Teaming |
-| `donnees-sensibles` | classification, anonymisation, cloisonnement | FDE, AI Red Teaming |
+| `donnees-sensibles` | classification, anonymisation, cloisonnement | FDE, AI Red Teaming, AI Product Builder |
 
 ## Conseil et terrain
 
@@ -150,8 +150,8 @@ frappe ou un slug inventé.
 | `bpmn` | notation, cartographie d'un processus | FDE |
 | `reingenierie-de-processus` | BPR, redondances, simplification avant automatisation | FDE |
 | `arbitrage-deterministe-probabiliste` | script, webhook, RPA contre IA générative | FDE, AI Product Builder |
-| `gestion-parties-prenantes` | intérêts divergents, alignement, arbitrage | FDE, BI Analyst |
+| `gestion-parties-prenantes` | intérêts divergents, alignement, arbitrage | FDE, BI Analyst, AI Product Builder |
 | `conduite-du-changement` | résistance, adoption, politique interne | FDE, BI Analyst |
 | `roi-des-projets-ia` | valeur, mesure d'impact, coût complet | FDE, AI Product Builder |
-| `redaction-technique` | spécification, note de décision, documentation | FDE, AI Red Teaming |
+| `redaction-technique` | spécification, note de décision, documentation | FDE, AI Red Teaming, AI Product Builder |
 | `transfert-de-competences` | sortie de mission, maintenance, autonomie du client | FDE |

@@ -30,3 +30,16 @@ Les titres se ressemblent et se recouvrent. Ce qui les sépare n'est pas la list
 | BI Analyst | des définitions partagées et les tableaux de bord qui les portent | quand l'indicateur veut dire la même chose pour tout le monde |
 | Data Engineer | des données disponibles, fraîches et fiables | aux tables de l'entrepôt |
 | Data Scientist | un modèle qui généralise au-delà du cas observé | à la performance mesurée |
+
+## Autour de la fabrication d'un produit
+
+| Rôle | Ce qu'il produit | Où s'arrête sa responsabilité |
+|---|---|---|
+| **AI Product Builder** | un produit en ligne, utilisé, fabriqué avec des outils de génération | quand l'usage est mesuré et que le produit tient sans son auteur |
+| AI Engineer | un système à base de modèle, fiable et évalué | à la qualité de réponse, au coût et à la latence du système |
+| Product Manager | une décision de périmètre argumentée | à l'arbitrage, pas à la livraison |
+| Développeur d'application | du code qui répond à une spécification | au code livré et testé |
+
+La confusion la plus coûteuse est la première ligne contre la deuxième, et elle se tranche en une question : **quelle est votre métrique de succès ?** Si la réponse parle d'utilisateurs actifs et de délai de mise en ligne, c'est un product builder. Si elle parle de taux de réponse correcte et de coût par appel, c'est un AI engineer. Le mot « AI » désigne l'atelier dans un cas, le composant dans l'autre.
+
+Le glissement de carrière le plus fréquent va du produit vers le système, parce que le premier produit livré finit toujours par demander une fonction intelligente — c'est ce que traite [[parcours/ai-product-builder/quand-le-produit-embarque-un-modele/index|Quand le produit embarque un modèle]]. L'inverse est plus rare.

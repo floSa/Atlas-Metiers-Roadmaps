@@ -53,7 +53,7 @@ La couche de connexion aux outils concentre une part croissante des incidents r√
 ## Appel√©e par
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
-- [[parcours/ai-product-builder|AI Product Builder]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/agents-llm]], [[notions/conception-d-api]], [[notions/controle-d-acces]], [[notions/chaine-d-approvisionnement-logicielle]].

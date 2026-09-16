@@ -3,7 +3,7 @@ title: Visualisation de données
 tags: [notion, visualisation, graphique, restitution, lisibilite]
 date: 2026-09-16
 statut: actif
-appelee-par: [data-analyst, bi-analyst]
+appelee-par: [data-analyst, bi-analyst, ai-product-builder]
 ---
 
 Représentation graphique de valeurs, choisie pour qu'une question précise se lise sans calcul mental — et non pour illustrer un propos déjà écrit.
@@ -50,5 +50,6 @@ La contrainte est la durée de vie. Un graphique produit une fois s'accompagne d
 
 - [[parcours/data-analyst/index|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/outils-decisionnels]], [[notions/statistiques-descriptives]], [[notions/tableur]].

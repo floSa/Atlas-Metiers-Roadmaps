@@ -3,7 +3,7 @@ title: Rédaction technique
 tags: [notion, redaction, documentation, decision, communication]
 date: 2026-09-16
 statut: actif
-appelee-par: [forward-deployed-engineer, ai-red-teaming]
+appelee-par: [forward-deployed-engineer, ai-red-teaming, ai-product-builder]
 ---
 
 Production d'écrits destinés à être utilisés — spécification, note de décision, documentation d'exploitation, constat d'audit — dont le critère de qualité est qu'ils permettent d'agir sans leur auteur.
@@ -48,5 +48,6 @@ Le constat est le livrable du métier, et sa structure est fixe : ce qui a été
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/cadrage-besoin]], [[notions/transfert-de-competences]], [[notions/gestion-parties-prenantes]].

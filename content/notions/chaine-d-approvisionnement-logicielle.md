@@ -3,7 +3,7 @@ title: Chaîne d'approvisionnement logicielle
 tags: [notion, supply-chain, dependances, poids-de-modele, provenance]
 date: 2026-09-16
 statut: actif
-appelee-par: [ai-red-teaming, forward-deployed-engineer]
+appelee-par: [ai-red-teaming, forward-deployed-engineer, ai-product-builder]
 ---
 
 Ensemble de ce qu'un système exécute sans l'avoir écrit : bibliothèques, images de base, poids de modèles, serveurs d'outils, extensions — et les mécanismes qui permettent de savoir d'où cela vient et si cela a été altéré.
@@ -51,5 +51,6 @@ La contrainte se présente à l'envers : chez un client, l'accès aux dépôts p
 
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/conteneurisation]], [[notions/mcp]], [[notions/integration-continue]], [[notions/modelisation-de-la-menace]].

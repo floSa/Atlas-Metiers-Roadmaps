@@ -54,7 +54,7 @@ Le red teamer évalue aussi la détection : l'attaque a-t-elle produit une alert
 ## Appelée par
 
 - [[parcours/forward-deployed-engineer/index|Forward Deployed Engineer]]
-- [[parcours/ai-product-builder|AI Product Builder]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
 
 Voisines : [[notions/evaluation-llm]], [[notions/cout-et-latence-inference]], [[notions/integration-continue]], [[notions/mesure-d-usage-produit]].

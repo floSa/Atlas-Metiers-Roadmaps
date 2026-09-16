@@ -3,7 +3,7 @@ title: Qualité des données
 tags: [notion, qualite-des-donnees, gouvernance, data, nettoyage]
 date: 2026-09-16
 statut: actif
-appelee-par: [forward-deployed-engineer, ai-red-teaming, data-analyst, bi-analyst]
+appelee-par: [forward-deployed-engineer, ai-red-teaming, data-analyst, bi-analyst, ai-product-builder]
 ---
 
 Ensemble des propriétés mesurables qui déterminent si une donnée peut porter la décision qu'on lui demande de porter — et des tests qui vérifient ces propriétés en continu plutôt qu'à la découverte d'un écart.
@@ -68,5 +68,6 @@ L'angle est celui de la charge de la preuve. Un chiffre défendable est un chiff
 - [[parcours/ai-red-teaming/index|AI Red Teaming]]
 - [[parcours/data-analyst/index|Data Analyst]]
 - [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 
 Voisines : [[notions/lignage-des-donnees]], [[notions/collecte-de-donnees]], [[notions/transformation-dbt]], [[notions/statistiques-descriptives]].
