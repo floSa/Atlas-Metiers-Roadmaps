@@ -1,4 +1,4 @@
-# Atlas des métiers de l'IA et de la data
+# Atlas Métiers Roadmaps
 
 Un site de parcours d'apprentissage, en français, pour treize métiers de l'intelligence
 artificielle et de la donnée. Pour chaque métier : une roadmap cliquable, ce qu'il faut

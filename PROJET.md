@@ -1,4 +1,4 @@
-# Cadrage — Atlas des métiers de l'IA et de la data
+# Cadrage — Atlas Métiers Roadmaps
 
 > Un site de parcours d'apprentissage inspiré de roadmap.sh, en français, centré sur
 > le métier de **Forward Deployed Engineer**, adossé à un corpus de notes Markdown

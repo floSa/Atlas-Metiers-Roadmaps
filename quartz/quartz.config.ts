@@ -14,7 +14,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Atlas des métiers de l'IA",
+    pageTitle: "Atlas Métiers Roadmaps",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
