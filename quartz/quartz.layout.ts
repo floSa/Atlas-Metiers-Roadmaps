@@ -2,7 +2,7 @@ import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
 /**
- * Atlas des metiers de l'IA -- disposition des pages.
+ * Atlas Metiers Roadmaps -- disposition des pages.
  *
  * Recopie a la racine du clone Quartz par quartz/build.sh. Voir quartz.config.ts.
  *

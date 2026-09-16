@@ -2,7 +2,7 @@ import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
 /**
- * Atlas des metiers de l'IA et de la data -- configuration Quartz.
+ * Atlas Metiers Roadmaps -- configuration Quartz.
  *
  * Ce fichier vit dans quartz/ du depot de contenu ; quartz/build.sh le recopie
  * a la racine du clone Quartz epingle avant de construire. Ne pas l'editer dans
