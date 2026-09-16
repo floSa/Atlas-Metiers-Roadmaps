@@ -6,12 +6,19 @@ Un test qui échoue doit **arrêter la chaîne**, pas alerter. Un rapport visibl
 
 ```mermaid
 flowchart TD
-  UN["Unicité de la clé de grain"]
-  NU["Absence de nul sur les colonnes structurantes"]
-  RE["Intégrité référentielle faits / dimensions"]
-  VA["Valeurs admises sur les colonnes codifiées"]
-  FR["Fraîcheur — dernière donnée à moins de N heures"]
-  VO["Volume et distribution dans leur plage habituelle"]
+  UN["Unicité de la clé de grain<br/>une ligne par événement déclaré"]
+  NU["Absence de nul<br/>sur les colonnes structurantes"]
+  RE["Intégrité référentielle<br/>faits vers dimensions"]
+  VA["Valeurs admises<br/>sur les colonnes codifiées"]
+  FR["Fraîcheur<br/>dernière donnée à moins de N heures"]
+  VO["Volume et distribution<br/>dans leur plage habituelle"]
+
+  click UN "/parcours/bi-analyst/modelisation-dimensionnelle/declarer-le-grain"
+  click NU "/notions/qualite-des-donnees"
+  click RE "/notions/modelisation-dimensionnelle"
+  click VA "/notions/transformation-dbt"
+  click FR "/parcours/bi-analyst/transformation-et-orchestration/ordonnancer-et-reprendre"
+  click VO "/notions/observabilite"
 ```
 
 ## Ce qu'il faut savoir faire

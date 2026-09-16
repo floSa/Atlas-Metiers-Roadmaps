@@ -7,11 +7,18 @@ Un fichier par domaine, une entrée par métrique, cinq lignes chacune, dans le 
 Les cinq lignes d'une entrée complète :
 
 ```mermaid
-flowchart LR
-  L["Libellé métier"] --> F["Formule"]
-  F --> G["Grain<br/>par jour, par client, par commande"]
-  G --> S["Source de vérité"]
-  S --> P["Propriétaire<br/>la personne qui tranche"]
+flowchart TD
+  L["Libellé métier<br/>le nom que le métier emploie"]
+  F["Formule<br/>le calcul, sans ambiguïté"]
+  G["Grain<br/>par jour, par client, par commande"]
+  S["Source de vérité<br/>la table qui fait foi"]
+  P["Propriétaire<br/>la personne qui tranche"]
+
+  click L "/notions/redaction-technique"
+  click F "/parcours/bi-analyst/semantique-et-gouvernance/definir-une-mesure"
+  click G "/parcours/bi-analyst/modelisation-dimensionnelle/declarer-le-grain"
+  click S "/notions/lignage-des-donnees"
+  click P "/notions/gouvernance-ia"
 ```
 
 ## Ce qu'il faut savoir faire
