@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/prompt-engineering
 ---
 
+**Autonomie.** L'attendu n'est pas de réciter le catalogue mais de trancher ce qui reste rentable sur un modèle à raisonnement, et de défendre ce choix devant quelqu'un qui brandit un article de 2023 — un arbitrage, donc, pas une récitation.
+
 Ces techniques ont été inventées entre 2022 et 2023 pour compenser ce que les modèles ne savaient pas faire seuls ; une bonne moitié a été absorbée par le post-entraînement. Il faut les connaître, et surtout savoir lesquelles sont encore rentables.
 
 ```mermaid

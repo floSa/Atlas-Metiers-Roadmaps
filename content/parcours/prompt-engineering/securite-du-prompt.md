@@ -6,6 +6,8 @@ statut: actif
 source: https://roadmap.sh/prompt-engineering
 ---
 
+**Autonomie.** Le problème n'ayant pas de solution au niveau du prompt, l'attendu est de concevoir la contre-mesure architecturale et de défendre un refus de périmètre — la référence, elle, est chez le red teamer et l'équipe sécurité, qu'on appelle tôt.
+
 Le seul point de ce parcours qui soit un problème **non résolu**, et il faut le dire ainsi : l'architecture des modèles ne sépare pas les instructions des données, donc aucun prompt défensif ne corrige le problème.
 
 ```mermaid
