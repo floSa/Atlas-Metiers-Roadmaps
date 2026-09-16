@@ -17,7 +17,7 @@ flowchart TD
 ## Ce qu'il faut savoir faire
 
 - Comprendre pourquoi cela échoue sur des tables brutes : le modèle n'a aucun moyen de savoir laquelle des quatre colonnes de montant est la bonne, ni si le chiffre d'affaires s'entend hors taxes, net de remise, ou après annulations.
-- Reconnaître que le travail préalable est une définition partagée des métriques, pas un choix d'outil. Construire cette couche est le travail de [[parcours/bi-analyst]] — et c'est ce qui décide du succès.
+- Reconnaître que le travail préalable est une définition partagée des métriques, pas un choix d'outil. Construire cette couche est le travail de [[parcours/bi-analyst/index|Bi Analyst]] — et c'est ce qui décide du succès.
 - Utiliser l'interrogation en langage naturel pour ce qu'elle fait bien : les questions simples sur un périmètre bien défini, posées par des gens qui ne savent pas écrire de requête. Cela désencombre réellement une file de demandes.
 - Vérifier systématiquement les réponses des premières semaines, en recalculant. Une couche sémantique incomplète produit des réponses fausses sur les questions qu'elle ne couvre pas, sans le signaler.
 - Expliquer aux utilisateurs ce que l'outil ne couvre pas. Faute de quoi ils poseront la question hors périmètre, obtiendront une réponse, et la croiront.

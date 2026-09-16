@@ -4,7 +4,7 @@ aliases:
   - parcours/ai-product-builder/quand-le-produit-embarque-un-modele
 ---
 
-Jusqu'ici l'IA était l'atelier. À partir du moment où une fonction du produit appelle un modèle, le produit devient aussi un système d'IA — et rien de ce qui suit ne s'explique ici : [[05 - Roadmap — AI Engineer]] le traite une fois pour tout le corpus.
+Jusqu'ici l'IA était l'atelier. À partir du moment où une fonction du produit appelle un modèle, le produit devient aussi un système d'IA — et rien de ce qui suit ne s'explique ici : [[parcours/ai-engineer/index|AI Engineer]] le traite une fois pour tout le corpus.
 
 ## Les cinq sujets
 

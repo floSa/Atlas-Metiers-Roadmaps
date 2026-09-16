@@ -48,7 +48,7 @@ C'est une source de données comme une autre, avec ses défauts propres : évén
 
 ## Appelée par
 
-- [[parcours/ai-product-builder|AI Product Builder]]
+- [[parcours/ai-product-builder/index|AI Product Builder]]
 - [[parcours/data-analyst/index|Data Analyst]]
 
 Voisines : [[notions/analyse-de-cohorte]], [[notions/ab-testing]], [[notions/observabilite]], [[notions/roi-des-projets-ia]].

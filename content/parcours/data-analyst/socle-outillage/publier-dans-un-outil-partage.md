@@ -14,7 +14,7 @@ flowchart TD
   click C "/notions/outils-decisionnels"
   click V "/notions/visualisation-de-donnees"
   click S "/notions/modelisation-dimensionnelle"
-  click B "/parcours/bi-analyst"
+  click B "/parcours/bi-analyst/"
 ```
 
 ## Ce qu'il faut savoir faire
@@ -33,7 +33,7 @@ flowchart TD
 - [[notions/controle-d-acces]] — la propagation des droits jusqu'à la ligne, le point que les publications rapides oublient.
 
 > [!tip] Le test de la commande
-> Demander qui consultera l'objet, à quelle fréquence, et qui le corrigera quand il cassera. Trois réponses nettes : c'est un produit décisionnel, il se commande à [[parcours/bi-analyst]]. Trois réponses floues : c'est une analyse ponctuelle, elle se livre en document et se range.
+> Demander qui consultera l'objet, à quelle fréquence, et qui le corrigera quand il cassera. Trois réponses nettes : c'est un produit décisionnel, il se commande à [[parcours/bi-analyst/index|Bi Analyst]]. Trois réponses floues : c'est une analyse ponctuelle, elle se livre en document et se range.
 
 ## Pour apprendre
 

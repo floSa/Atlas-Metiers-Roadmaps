@@ -29,7 +29,7 @@ flowchart LR
 - [[notions/mesure-d-usage-produit]] — quand la décision porte sur un produit, le dispositif de suivi se prépare avant le déploiement, pas après.
 
 > [!warning] Piège
-> Livrer un tableau de bord quand on attendait une réponse. C'est la dérobade classique : au lieu de conclure, on donne des filtres et on laisse le lecteur trouver. Cela déplace la charge d'interprétation sur quelqu'un de moins bien placé pour l'assumer, et cela fabrique en prime un objet que personne ne maintiendra. Si le besoin est réellement un suivi récurrent, c'est une commande pour [[parcours/bi-analyst]], et il faut le dire.
+> Livrer un tableau de bord quand on attendait une réponse. C'est la dérobade classique : au lieu de conclure, on donne des filtres et on laisse le lecteur trouver. Cela déplace la charge d'interprétation sur quelqu'un de moins bien placé pour l'assumer, et cela fabrique en prime un objet que personne ne maintiendra. Si le besoin est réellement un suivi récurrent, c'est une commande pour [[parcours/bi-analyst/index|Bi Analyst]], et il faut le dire.
 
 ## Pour apprendre
 

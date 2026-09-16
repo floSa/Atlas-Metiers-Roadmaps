@@ -46,6 +46,6 @@ R reste utile pour ce que SQL fait mal : appeler une API, lire un format exotiqu
 ## Appelée par
 
 - [[parcours/data-analyst/index|Data Analyst]]
-- [[parcours/bi-analyst|BI Analyst]]
+- [[parcours/bi-analyst/index|BI Analyst]]
 
 Voisines : [[notions/python-pour-la-data]], [[notions/pandas]], [[notions/visualisation-de-donnees]].
