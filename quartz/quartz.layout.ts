@@ -28,11 +28,7 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Breadcrumbs(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    // Sur l'accueil, le titre du corps repeterait celui de la barre laterale.
-    Component.ConditionalRender({
-      component: Component.ArticleTitle(),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
+    Component.ArticleTitle(),
     // Ni date, ni temps de lecture, ni tags en tete de page : le lecteur doit voir
     // le contenu sans avoir a defiler.
     Component.ConditionalRender({
@@ -41,7 +37,9 @@ export const defaultContentPageLayout: PageLayout = {
     }),
   ],
   left: [
-    Component.PageTitle(),
+    // Le graphe prend la place du titre de site : il sert de reperage permanent,
+    // et le liberer de la colonne de droite rend sa largeur au contenu.
+    Component.Graph(),
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
@@ -53,9 +51,16 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+    // L'accueil n'a ni sommaire ni retroliens utiles : la colonne disparait et le
+    // tableau des metiers occupe toute la largeur.
+    Component.ConditionalRender({
+      component: Component.DesktopOnly(Component.TableOfContents()),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
+    Component.ConditionalRender({
+      component: Component.Backlinks(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
   ],
 }
 
