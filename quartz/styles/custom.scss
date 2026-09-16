@@ -192,15 +192,9 @@ body[data-slug="index"] {
  * tags. Ce sont des metadonnees de fabrication, illisibles et sans interet pour
  * le lecteur. Quand le dossier a son propre index.md, on ne garde que lui.
  * ------------------------------------------------------------------------- */
-.popover-hint > .page-listing,
-article .page-listing .meta,
-article .page-listing .tags {
-  display: none;
-}
-
-/* Le compteur "N elements sous ce dossier" et l'intitule "Dossier: x". */
-article > p.folder-description,
-article > h1 + p:has(+ .page-listing) {
+/* Le dossier a son propre index.md : la liste automatique, ses dates et ses
+ * tags feraient doublon avec lui. */
+.page-listing {
   display: none;
 }
 
@@ -282,4 +276,10 @@ article table td {
 
 article table tr:last-child td {
   border-bottom: none;
+}
+
+/* La colonne de droite n'existe plus dans la grille : son conteneur vide serait
+ * place automatiquement et creerait une colonne fantome. */
+.page > #quartz-body > .right.sidebar {
+  display: none;
 }
