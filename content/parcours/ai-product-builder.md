@@ -273,3 +273,114 @@ flowchart LR
 > Traiter la vitesse de production comme la mesure du progrès. Le débit de code n'a jamais été le facteur limitant d'un produit — la compréhension du besoin et la capacité à faire évoluer l'existant le sont. Multiplier par dix la production de code d'une équipe qui n'a pas augmenté sa capacité de relecture ne va pas dix fois plus vite : elle accumule un stock qu'elle ne peut plus vérifier.
 
 ---
+
+## 7. Tests et retours
+
+```mermaid
+flowchart TD
+  tf["Testing & Feedback"] --> auto["Tests automatisés"]
+  auto --> u["Unit Testing"]
+  auto --> i["Integration Testing"]
+  auto --> e["E2E Testing - Playwright, Cypress"]
+  tf --> hum["Retour humain"]
+  hum --> ut["User Testing - observer, pas interroger"]
+  hum --> dt["Browsers / DevTools"]
+  tf --> mes["Mesure d'usage instrumentée"]:::ajout
+  mes --> m1["Événements produit, entonnoir, rétention"]:::ajout
+  mes --> m2["Ce qui est utilisé contre ce qui est déclaré"]:::ajout
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** Deux boucles différentes qu'on confond souvent. La boucle technique répond à « est-ce que ça marche encore » et se ferme en secondes ; la boucle produit répond à « est-ce que ça sert » et se ferme en semaines. Sur une base de code générée, la première est vitale pour une raison spécifique : les tests sont le seul retour d'exécution qui empêche un assistant de casser en silence ce qu'il ne comprend pas. Voir [[notions/tests-logiciels]] — pour ce métier, les tests ne servent pas d'abord à prouver la justesse, ils servent de garde-corps aux modifications automatisées, ce qui change ce qu'il faut couvrir en priorité : les parcours, pas les fonctions.
+
+**Ce qu'il faut savoir**
+
+- Unitaire, intégration, bout en bout — la pyramide classique s'inverse partiellement ici. Sur une application générée, trois tests de bout en bout sur les parcours qui rapportent de l'argent protègent plus que cinquante tests unitaires sur des fonctions utilitaires que le générateur réécrira de toute façon.
+- Écris les tests de bout en bout des parcours critiques toi-même, ou au moins relis-les ligne à ligne. Ce sont eux qui définissent ce que « le produit fonctionne » veut dire, et c'est une décision, pas une tâche.
+- User testing — l'amont le dit bien : on ne cherche pas des avis, on cherche les moments d'hésitation. Cinq personnes, quinze minutes, une tâche précise à accomplir sans aide, et on se tait pendant qu'elles la font.
+- Outils du navigateur — inspecteur, console, onglet réseau, mesure de performance. C'est le premier endroit où regarder quand le front end se comporte mal, et le moyen le plus rapide de savoir si la panne est côté client ou côté serveur.
+- **Mesurer l'usage, pas la satisfaction déclarée.** Les gens répondent qu'une fonction leur est utile et ne l'ouvrent jamais. Instrumente les événements dès la première mise en ligne — entrée dans le parcours, abandon, complétion, retour — parce que c'est la seule donnée qui arbitre les priorités de la v2. La satisfaction déclarée sert à comprendre un comportement déjà observé, jamais à le prédire.
+- Quatre chiffres suffisent au début : combien de personnes commencent le parcours principal, combien le finissent, combien reviennent la semaine suivante, où exactement se situe l'abandon. Tout le reste est du raffinement.
+
+> [!tip] Ajout 2026
+> Branche l'instrumentation avant la première mise en ligne, pas après le premier désaccord sur les priorités. Rétablir des données d'usage a posteriori demande de re-livrer et d'attendre un mois, pendant lequel les arbitrages se prennent à l'opinion. Une dizaine d'événements nommés proprement, dans un fichier unique, suffisent — et ce fichier est de ceux qu'on écrit soi-même.
+
+> [!warning] Piège
+> Confondre absence de bug et absence de problème. Une application générée sans erreur en production peut n'avoir aucun utilisateur qui atteint la fin du parcours : la boucle technique est verte et le produit est mort. Les deux boucles se surveillent séparément, et c'est la seconde qui décide s'il faut continuer.
+
+---
+
+## 8. Collaboration et intégration continue
+
+```mermaid
+flowchart TD
+  col["4. Collaboration"] --> vcs["Hébergement du code - GitHub, GitLab"]
+  vcs --> pr["Revue par demande de fusion"]
+  col --> ci["Intégration continue"]
+  ci --> c1["Tests à chaque poussée"]
+  ci --> c2["Environnement de prévisualisation par branche"]
+  ci --> c3["Déploiement automatique"]
+  col --> reg["Règles de collaboration avec des agents"]:::ajout
+  reg --> r1["Petites demandes de fusion, une intention par branche"]:::ajout
+  reg --> r2["Aucune fusion sans relecture humaine"]:::ajout
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** Le versionnement est la première chose à mettre en place après une génération, et l'amont a raison de le dire aussi tôt. La raison est propre à ce métier : quand une part du code est produite par une machine, l'historique devient le seul endroit où l'on peut répondre à « qui a décidé ça, et pourquoi ». Le dépôt n'est plus une sauvegarde, c'est la mémoire des décisions. L'intégration continue apporte le reste — voir [[notions/integration-continue]] — et son usage ici est moins la qualité que la **vitesse de retour** : un environnement de prévisualisation par branche transforme chaque idée en lien cliquable à envoyer à trois utilisateurs.
+
+**Ce qu'il faut savoir**
+
+- GitHub et GitLab rendent le même service pour ce métier — hébergement, revue, chaîne d'intégration. Le second intègre la chaîne nativement, le premier a l'écosystème le plus large. Choisis celui que ton organisation utilise déjà et passe à la suite.
+- Une branche, une intention. Quand un assistant modifie quinze fichiers pour deux raisons différentes, la revue devient impossible et personne ne la fait sérieusement. Demande explicitement de séparer.
+- Ce qui tourne à chaque poussée, au minimum : les tests, le typage, le linter. C'est exactement le retour d'exécution dont la section 5 dit qu'il conditionne la qualité des assistants — l'intégration continue le rend systématique au lieu de dépendre de la mémoire de chacun.
+- Environnements de prévisualisation par branche — la fonction la plus sous-estimée des plateformes modernes. Elle raccourcit la boucle produit de la section 7 bien plus que n'importe quelle amélioration d'outil.
+- Verrouille la branche principale, même seul sur le projet. C'est la barrière qui empêche un agent en boucle de livrer directement en production, et elle coûte deux minutes de configuration.
+- Journalise les décisions structurantes dans le dépôt — un fichier court par décision, ce qu'on a choisi et ce qu'on a écarté. Sur un code dont personne ne se souvient de l'écriture, c'est ce qui remplace la mémoire de l'auteur.
+
+> [!tip] Ajout 2026
+> Fais relire les demandes de fusion générées par un second outil avant la relecture humaine : il attrape les oublis mécaniques — secret en clair, route sans contrôle d'accès, dépendance inutile — et laisse à l'humain le jugement d'architecture, qui est le seul qu'il soit irremplaçable à porter. L'ordre compte : machine d'abord pour le mécanique, humain ensuite pour l'intention.
+
+> [!warning] Piège
+> Livrer en production depuis le poste local, « le temps de démarrer ». Cette habitude ne se défait plus une fois prise, et elle supprime la seule trace qui permettra de savoir ce qui tourne réellement. Le premier déploiement automatisé coûte une demi-journée au démarrage et une semaine six mois plus tard.
+
+---
+
+## 9. Déploiement, dorsale et données
+
+```mermaid
+flowchart TD
+  dep["5. Deployment"] --> cat["Quatre niveaux de prise en charge"]:::ajout
+  cat --> n1["Périphérie et fonctions - Cloudflare Pages et Workers"]
+  cat --> n2["Plateforme applicative - Vercel, Railway, Render, DigitalOcean App Platform"]
+  cat --> n3["Infrastructure brute - AWS, Azure, GCP"]
+  cat --> n4["Chaîne d'entreprise - Azure DevOps"]
+  dep --> db["Connect to a Database"]
+  db --> d1["Relationnel - PostgreSQL, MySQL"]
+  db --> d2["Document - MongoDB / Atlas"]
+  db --> d3["Dorsale gérée - Supabase"]
+  db --> d4["Le choix se fait sur la forme des données"]:::ajout
+  classDef ajout fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray:4 3
+```
+
+**À quoi ça sert.** L'amont liste onze produits sans donner de critère, ce qui est le défaut central de cette section. La grille utile n'est pas la marque mais le **niveau de prise en charge** qu'on achète : plus la plateforme en fait, moins on configure et moins on contrôle. Le bon choix est le niveau le plus élevé qui satisfait la contrainte la plus dure du cadrage — et pour un premier produit, cette contrainte est presque toujours le budget ou le délai, jamais l'extensibilité qu'on imagine.
+
+**Ce qu'il faut savoir**
+
+- **Périphérie et fonctions** — code déployé sur un réseau mondial, facturé à l'invocation, sans serveur à maintenir. Adapté au front end et aux traitements courts et sans état. Cloudflare occupe cette case. Limite structurelle : durée d'exécution bornée et pas de processus long.
+- **Plateforme applicative** — on pousse un dépôt, la plateforme construit, héberge et gère les certificats et les mises à l'échelle. C'est la case par défaut d'un produit qui démarre : Vercel côté front end, Railway et Render pour une application complète avec base, DigitalOcean App Platform comme intermédiaire. Limite : le coût cesse d'être compétitif à volume soutenu.
+- **Infrastructure brute** — AWS, Azure, GCP. Contrôle total, tout est possible, tout est à faire. N'y va pas pour un premier produit sauf contrainte imposée : l'écart de temps de mise en ligne se compte en semaines et l'écart de facture en surprises.
+- **Chaîne d'entreprise** — Azure DevOps et équivalents. On ne les choisit pas, on les subit parce que l'organisation les impose. Ce n'est pas une critique, c'est une réalité à intégrer au cadrage.
+- Base de données : le choix se fait sur la forme des données, pas sur la mode. Structure stable avec des relations qui comptent, relationnel — PostgreSQL par défaut, MySQL si l'hébergement l'impose. Documents hétérogènes dont le schéma bouge à chaque itération, document — MongoDB et son service géré Atlas. En cas d'hésitation, relationnel : on migre plus facilement vers le souple que l'inverse.
+- **Dorsale gérée** — la catégorie qui change le plus la vitesse d'un product builder : base relationnelle, authentification, droits d'accès par ligne, API générée et temps réel dans un seul service. Supabase en est l'exemple ici. Ce qu'on achète, c'est de ne pas écrire l'authentification soi-même, et c'est de loin le meilleur rapport valeur sur risque du parcours.
+- L'authentification et les droits d'accès sont le point où une application générée est le plus souvent fausse. Une route qui vérifie l'identité mais pas l'autorisation laisse n'importe quel utilisateur connecté lire les données des autres. Vérifie-le à la main, sur chaque route qui renvoie des données d'utilisateur.
+- Voir [[notions/sql]] pour les requêtes — ici le besoin est modeste mais non nul : savoir lire le schéma généré, comprendre une jointure, et repérer la requête qui lit toute la table à chaque affichage de page.
+
+> [!tip] Ajout 2026
+> Regarde le plafond du palier gratuit avant de choisir, pas la vitrine. Les plateformes applicatives sont généreuses jusqu'à un seuil précis — bande passante, minutes de construction, heures de base de données — et la facture qui suit est brutale et sans préavis. Note le seuil dans le cadrage et pose une alerte de dépense dessus le jour de la mise en ligne.
+>
+> Deuxième point à traiter au moment du déploiement et pas après : si l'application manipule des données personnelles, l'hébergement, les sous-traitants et la durée de conservation sont des décisions de cette section. Voir [[notions/rgpd]] — pour ce métier le piège concret est la dorsale gérée dont les données résident hors Union européenne, choisie en trois clics et impossible à déplacer ensuite.
+
+> [!warning] Piège
+> Choisir l'infrastructure sur la charge imaginée. Le dimensionnement « au cas où ça décolle » fait perdre des semaines à un produit qui aura douze utilisateurs le premier mois, et la migration d'une plateforme applicative vers une infrastructure brute — quand elle devient nécessaire — se fait en connaissant enfin le profil de charge réel. C'est plus rapide dans cet ordre.
+
+---
