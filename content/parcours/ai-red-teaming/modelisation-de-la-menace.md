@@ -8,23 +8,26 @@ source: https://roadmap.sh/ai-red-teaming
 
 Répondre dans l'ordre à trois questions — qui attaque et avec quels moyens, par où il entre, et ce qu'il obtient s'il réussit — pour que l'engagement porte sur ce qui coûterait cher plutôt que sur ce qui est amusant à trouver.
 
-## Les quatre surfaces, et celle qui concentre le risque
-
 ```mermaid
 flowchart TD
-  S1["Données d'entraînement<br/>ou d'affinage"] --> SYS["Le système"]
-  S2["Interface de prompt"] --> SYS
-  S3["Processus d'inférence"] --> SYS
-  S4["Outils et APIs connectés"] --> SYS
-  SYS --> L{"Triade létale ?"}
-  L -->|"données privées<br/>+ contenu non fiable<br/>+ canal de sortie"| H["Priorité haute<br/>quel que soit l'effort d'attaque"]
-  L -->|"une des trois manque"| N["Priorité par impact métier"]
+  MM["Modélisation de la menace<br/>adversaires, surfaces, priorisation"]
+  CA["Contrôle d'accès<br/>ce qui décide de la gravité d'un chemin"]
+  MC["MCP et serveurs d'outils<br/>la surface qui monte"]
+  DS["Données sensibles<br/>ce qui donne son impact à une fuite"]
+  GI["Gouvernance de l'IA<br/>le registre où le constat survit"]
 
-  classDef chaude stroke:#c62828,stroke-width:1px
-  class S4,H chaude
+  click MM "/notions/modelisation-de-la-menace"
+  click CA "/notions/controle-d-acces"
+  click MC "/notions/mcp"
+  click DS "/notions/donnees-sensibles"
+  click GI "/notions/gouvernance-ia"
 ```
 
-Sur un système d'entreprise bâti sur un modèle du commerce, la première surface est hors de portée et la quatrième concentre le risque réel. La triade létale — accès à des données privées, exposition à du contenu non fiable, capacité de communiquer vers l'extérieur — est le critère de priorisation le plus efficace en revue d'architecture.
+## Les quatre surfaces, et celle qui concentre le risque
+
+Une carte de menace d'un système d'IA tient sur quatre surfaces d'entrée : les **données d'entraînement ou d'affinage**, l'**interface de prompt**, le **processus d'inférence**, les **outils et APIs connectés**. Sur un système d'entreprise bâti sur un modèle du commerce, la première est hors de portée et la quatrième concentre le risque réel.
+
+La **triade létale** — accès à des données privées, exposition à du contenu non fiable, capacité de communiquer vers l'extérieur — est le critère de priorisation le plus efficace en revue d'architecture. Un chemin qui cumule les trois propriétés est prioritaire quel que soit l'effort d'attaque qu'il demande ; les autres se classent par impact métier.
 
 ## Ce qu'il faut savoir faire
 
