@@ -307,6 +307,10 @@ STYLE_SVG = """<style>
 .carte-roadmap .sous-noeud rect { fill:var(--light, #faf8f8); stroke:var(--gray, #b8b8b8); stroke-width:1.5; }
 .carte-roadmap .sous-noeud text { fill:var(--darkgray, #4e4e4e); font-weight:400; }
 .carte-roadmap .renvoi rect { fill:none; stroke:var(--secondary, #284b63); stroke-width:1.5; }
+.carte-roadmap .groupe rect { fill:none; stroke:var(--lightgray, #e5e5e5); stroke-width:1.5; }
+.carte-roadmap .groupe > text { font-weight:600; }
+.carte-roadmap .lien-groupe text { fill:var(--secondary, #284b63); }
+.carte-roadmap .lien-groupe:hover text { text-decoration:underline; }
 .carte-roadmap .renvoi text { fill:var(--secondary, #284b63); font-weight:500; }
 .carte-roadmap a { text-decoration:none; }
 .carte-roadmap a:hover rect { stroke:var(--secondary, #284b63); stroke-width:2.5; }
@@ -320,9 +324,10 @@ STYLE_SVG = """<style>
 def dessiner_noeud(noeud: dict, href: str | None, existe: bool) -> str:
     x, y, w, h = boite(noeud)
     data = noeud.get("data") or {}
+    style = data.get("style") or {}
     libelle = data.get("label") or ""
     type_ = noeud["type"]
-    police = float((data.get("style") or {}).get("fontSize") or 17)
+    police = float(style.get("fontSize") or 17)
 
     if type_ == "vertical":
         return (f'<path class="filet" d="M {x + w / 2:.1f} {y:.1f} '
@@ -330,18 +335,26 @@ def dessiner_noeud(noeud: dict, href: str | None, existe: bool) -> str:
 
     classes = {
         "topic": "noeud", "subtopic": "sous-noeud", "button": "renvoi",
-        "linksgroup": "renvoi", "title": "titre", "label": "section",
+        "linksgroup": "groupe", "title": "titre", "label": "section",
         "paragraph": "paragraphe",
     }.get(type_, "sous-noeud")
     if href and not existe:
         classes += " a-ecrire"
 
-    lignes = decouper(libelle, w - 16, police)
+    # Un conteneur -- paragraphe d'ambiance, groupe de renvois -- est bien plus
+    # haut que son texte et abrite d'autres noeuds. Son libelle se cale en haut,
+    # sinon il se centre au milieu de la boite et passe sous ce qu'elle contient.
+    conteneur = type_ in ("paragraph", "linksgroup")
+    aligne = style.get("textAlign") or ("left" if type_ == "paragraph" else "center")
+    ancre_texte = {"left": "start", "right": "end"}.get(aligne, "middle")
+    tx = {"start": x + 10, "end": x + w - 10}.get(ancre_texte, x + w / 2)
+
+    lignes = decouper(libelle, w - 20, police)
     hauteur_ligne = police * 1.25
-    depart = y + h / 2 - (len(lignes) - 1) * hauteur_ligne / 2 + police * 0.35
-    aligne_gauche = type_ == "paragraph"
-    ancre_texte = "start" if aligne_gauche else "middle"
-    tx = x + 8 if aligne_gauche else x + w / 2
+    if conteneur:
+        depart = y + 10 + police * 0.85
+    else:
+        depart = y + h / 2 - (len(lignes) - 1) * hauteur_ligne / 2 + police * 0.35
 
     corps = []
     if type_ not in ("title", "paragraph"):
@@ -350,9 +363,23 @@ def dessiner_noeud(noeud: dict, href: str | None, existe: bool) -> str:
         corps.append(f'<text x="{tx:.1f}" y="{depart + i * hauteur_ligne:.1f}" '
                      f'text-anchor="{ancre_texte}" font-size="{police:.0f}">{echapper(ligne)}</text>')
 
+    # Un groupe de renvois porte sa liste de liens dans ses donnees. La laisser
+    # de cote donnerait une boite vide avec un titre.
+    if type_ == "linksgroup":
+        ligne_y = depart + len(lignes) * hauteur_ligne + 6
+        for lien in data.get("links") or []:
+            url = lien.get("url") or ""
+            texte = lien.get("label") or url
+            if not url or ligne_y > y + h - 4:
+                continue
+            corps.append(f'<a href="{echapper(url)}" class="lien-groupe">'
+                         f'<text x="{x + 12:.1f}" y="{ligne_y:.1f}" text-anchor="start" '
+                         f'font-size="{police * 0.85:.0f}">{echapper(texte)}</text></a>')
+            ligne_y += police * 1.25
+
     interieur = "".join(corps)
     if href:
-        titre = libelle if existe else f"{libelle} - page a ecrire"
+        titre = libelle if existe else f"{libelle} — page à écrire"
         return (f'<a href="{echapper(href)}" class="{classes}">'
                 f'<title>{echapper(titre)}</title>{interieur}</a>')
     return f'<g class="{classes}">{interieur}</g>'
@@ -410,13 +437,13 @@ def en_liste(extrait: dict, resolveur: Resolveur, par_libelle: dict[str, dict]) 
             libelle = noeud["label"]
             source = par_libelle.get(libelle) or {"type": noeud["type"], "data": {"label": libelle}}
             href, existe = resolveur.pour(source)
-            marque = "" if existe else ' <em>(a ecrire)</em>'
+            marque = "" if existe else ' <em>(à écrire)</em>'
             if href:
                 blocs.append(f'<li><a href="{echapper(href)}">{echapper(libelle)}</a>{marque}</li>')
             else:
                 blocs.append(f"<li>{echapper(libelle)}</li>")
         blocs.append("</ul>")
-    return ("<details class=\"carte-en-liste\"><summary>La meme carte en liste</summary>"
+    return ("<details class=\"carte-en-liste\"><summary>La même carte en liste</summary>"
             + "".join(blocs) + "</details>")
 
 
@@ -438,13 +465,12 @@ def rendre(slug: str, parcours: str, liens: dict[str, dict[str, str]]) -> tuple[
     titre = extrait.get("title") or slug
     page = "\n".join([
         "---",
+        f"title: Carte — {titre}",
         "tags: [carte, roadmap, genere]",
         f"date: {capture_path.stem}",
         "statut: actif",
         f"source: https://roadmap.sh/{slug}",
         "---",
-        "",
-        f"# Carte — {titre}",
         "",
         "> [!abstract] La disposition exacte de la roadmap amont, chaque nœud cliquable.",
         "> Les nœuds en pointillé mènent à une page qui reste à écrire.",

@@ -12,7 +12,8 @@ statut: actif
 > l'emporte.
 
 **Verdict : SVG généré.** Mesuré le 16 septembre 2026, Quartz 4.5.2 (`d25a6ea`),
-Chrome for Testing 151, sur une page d'essai réduite aux deux approches.
+Chrome for Testing 151, sur une page d'essai réduite aux deux approches, puis
+confirmé sur la carte réelle du Forward Deployed Engineer — 44 nœuds, 25 arêtes.
 
 ---
 
@@ -121,6 +122,35 @@ carte pointe vers elle.
 
 ---
 
+## Confirmation sur la carte réelle
+
+La comparaison se joue sur deux nœuds ; restait à vérifier qu'elle tient sur les 44
+nœuds du FDE, rendus par `tools/roadmap_render.py` dans une page imbriquée à deux
+niveaux, `parcours/forward-deployed-engineer/carte`.
+
+Mesuré par `verification-carte.mjs` :
+
+| Mesure | Résultat |
+|---|---|
+| Ancres dans la carte | 36 — 32 nœuds, plus les 4 renvois du bloc *Related Roadmaps* |
+| Liens internes / externes | 23 / 13 |
+| Cibles déjà écrites | 3, toutes en 200 |
+| Cibles à écrire | 20, marquées en pointillé, cliquables |
+| Rétroliens de la note AI Engineer | « Carte — Forward Deployed Engineer » |
+| Sans JavaScript | 36 ancres présentes, 20 entrées dans la liste de secours |
+
+Aucun lien cassé. Les 14 cibles « à écrire » qui répondent 200 tombent sur la page de
+dossier du parcours, en attendant que le chantier 02 écrive la note ; les 6 autres
+répondent 404, ce qui est le comportement attendu pour une notion pas encore rédigée.
+
+Le point qui compte : la note `05 - Roadmap — AI Engineer` liste la carte dans ses
+rétroliens **sans qu'aucun wikilink ne les relie**. Le lien vient du SVG.
+
+Captures : `captures/carte-fde-clair.png`, `captures/carte-fde-sombre.png`,
+`captures/carte-fde-telephone.png`.
+
+---
+
 ## Ce que ça engage
 
 Le SVG est généré par `tools/roadmap_render.py` à partir de la capture brute
@@ -130,8 +160,9 @@ nœud — la disposition de roadmap.sh est donc reproduite au pixel, pas réinve
 Deux limites acceptées :
 
 - **Quartz injecte une icône « lien externe » dans les ancres externes**, y compris à
-  l'intérieur d'un SVG, où elle se pose de travers. Le rendu n'émet donc que des liens
-  internes ; les renvois vers roadmap.sh restent dans le texte de la note.
+  l'intérieur d'un SVG, où elle se pose de travers faute de coordonnées. Une règle de
+  `quartz/styles/custom.scss` la masque à l'intérieur d'un SVG ; les renvois vers
+  roadmap.sh restent donc cliquables dans la carte.
 - **Le SVG est du HTML brut dans du Markdown.** Il s'affiche dans Obsidian comme dans
   Quartz, mais il n'est pas lisible à la source. C'est un fichier généré : on le
   régénère, on ne l'édite pas.

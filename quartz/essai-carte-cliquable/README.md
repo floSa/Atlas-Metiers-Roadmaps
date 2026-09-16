@@ -32,7 +32,8 @@ CHROMIUM=/chemin/vers/chrome node quartz/essai-carte-cliquable/essai.mjs
 | `contenu/notions/cadrage-besoin.md` | la cible du clic, qui existe |
 | `essai.mjs` | les trois mesures : où atterrit le clic, survie sans JavaScript, rétroliens |
 | `serveur.mjs` | serveur statique minimal, sans dépendance |
-| `captures/` | le rendu des deux approches, pour mémoire |
+| `verification-carte.mjs` | le contrôle de la carte réelle : chaque lien, les rétroliens, le repli sans JavaScript |
+| `captures/` | le rendu des deux approches et celui de la carte FDE, clair, sombre et téléphone |
 
 ## Quand le rejouer
 
