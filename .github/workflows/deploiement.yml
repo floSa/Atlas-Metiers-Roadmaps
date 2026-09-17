@@ -46,6 +46,10 @@ jobs:
       - name: Declarer le site aupres de Pages
         id: pages
         uses: actions/configure-pages@v5
+        with:
+          # Active Pages et le regle sur GitHub Actions si ce n'est pas deja fait,
+          # ce qui evite d'avoir a le basculer a la main dans Settings.
+          enablement: true
 
       - name: Construire
         env:
